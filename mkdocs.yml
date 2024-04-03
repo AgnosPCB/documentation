@@ -1,0 +1,15 @@
+site_name: AgnosPCB Documentation
+theme:
+  name: material
+  palette:
+    primary: custom
+  font:
+    text: Roboto
+  favicon: assets/cropped-agnosPCB-favicon-192x192.webp
+  logo: assets/cropped-agnosPCB-favicon-192x192.webp
+extra_css:
+  - stylesheets/agnos_colors.css
+plugins:
+  - search
+  - privacy
+copyright: Copyright &copy; 2023 - 2024 AgnosPCB
