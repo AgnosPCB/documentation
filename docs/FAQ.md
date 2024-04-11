@@ -1,4 +1,4 @@
-# >FAQ
+# FAQ
 
 ### **Do we have rental/ trial plan for Online and Offline inspection platform to try it in our lab? If so what is procedure?**
 
