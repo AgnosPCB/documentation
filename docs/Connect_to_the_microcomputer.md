@@ -1,4 +1,4 @@
-# Connect to the microcompuer
+# Connect to the microcomputer
 
  The microcomputer will do everything for you. Just pushing the ACTION button, you will be executing, all the steps needed in most of the inspection processes.
  
