@@ -7,7 +7,7 @@ The main structure of the platform is already assembled, what you will need to d
 
 Slide both upper light diffusers to make room
   
-![alt text](assets/assemble1.PNG)
+![alt text](assets/assembly-1.PNG)
 
 Next tighten the screw to hold the lights and pass the cable under the platform. Repeat this process on both sides
 
@@ -17,7 +17,7 @@ Next tighten the screw to hold the lights and pass the cable under the platform.
 
 Then, once the LED lights are in place, we move on to mount the camera mast. To do this we join the two parts of the mast together as shown in the image and put a cover on the edge.
   
-![alt text](assets/assemble3.PNG)
+![alt text](assets/assembly-3.PNG)
 
   To mount the mast to the platform, use the brackets supplied to secure the mast, ensuring that the screws are tightened securely.
 
@@ -29,9 +29,9 @@ Then, once the LED lights are in place, we move on to mount the camera mast. To 
 
   Finally, connect the camera to the support and secure it by tightening the screw. Then connect the dummy battery and USB cable.
 
-![alt text](assets/assembly6.PNG)
+![alt text](assets/assembly-6.PNG)
 
-  ## SONY CAMERA. Notes.
+## SONY CAMERA. Notes.
 
 You got the SONY camera with the 50 mm 1.8f fixed lens already pre-configured but, if accidentally, its photo settings change you will need to set them again as below:
 
