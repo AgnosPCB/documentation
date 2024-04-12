@@ -41,3 +41,75 @@ Settings : where the configuration ICONs are. Useful tools in your inspection pr
 REFERENCE PANEL (green) : The “golden sample” image. Can be loaded using the LOAD icon (from the Reference area).
 UNIT UNDER INSPECTION (orange): this is the image of the panel to be inspected. Can be loaded using the LOAD icon (from the inspection area)
 Magnification area: this frame will display, the same areas of the REFERENCE, INSPECTED and RESULT circuit/panels. Move the mouse to check different zones of the circuit. Use the mouse’s wheel to modify the zoom magnification.
+
+## USING YOUR PC : INSTALLATION PROCESS
+
+**PC System recommended Requirements**
+
+- OS:Windows 10 (64-bit)
+- CPU: Intel® Core™ i5-7600 or better / Ryzen 5 2500U or better
+- RAM:16GB of system memory
+
+**Internet connection**
+
+- Fiber internet service: 100-1000Mbps*
+
+The processing time is **highly dependent** on the transmission speed of the internet connection. The faster the speed, the faster the inspection. Wired connection to the router is **highly recommended.**
+
+To install it, **download the software**, clicking on the button above.
+
+*Installer only available for Windows OS systems.
+
+After installing the software, you will find several subfolder inside \Programs\AgnosPCB\
+
+
+**FOLDERs use:**
+
+- **REFERENCE**: the suggested location of the GOLDEN SAMPLES / REFERENCES images of the PCBAs
+- **PCB_IN**: the inspection tool will look for new images of the circuit to be inspected inside this folder. If you are not using our inspection platform, you have to set this folder as the default destination for the photographs taken (check image below to see how to do it)
+- **PCB_OUT**: the destination folder of all the inspection results images.
+- **REPORTS**: this folder contains all the REPORTs created by the AOI system operator. Only created with the OFFLINE AOI systems.
+
+AgnosPCB inspection tool: **User interface elements**
+
+Upon launching the AgnosPCB inspection tool software, the user interface will appear. It has different panels and inspection areas:
+
+- Control buttons: all the actions related to the insepction process are triggered here. Take a photo of a REFERENCE PCBA/panel, create an exclusion area….
+- Log box: provides useful information (and tips) about the inspection process.
+REFERENCE Magnification area (green) : The “golden sample” image. The mouse´s cursor dictates what can be seen here.
+- UNIT UNDER INSPECTION Magnification area (orange): this is the image of the panel to be inspected. 
+
+![alt text](assets/pc-instalation-process.PNG)
+
+## INTEL NUC SOFTWARE USER GUIDE (LINUX)
+
+**Internet connection: minimum requirements**
+
+**Wired internet** connection or Fiber internet service speed: 100-1000Mbps*
+
+The processing time is **highly dependent** on the transmission speed of the internet connection. The faster the speed, the faster the inspection. Wired connection to the router is **highly recommended.**
+
+The **INTEL NUC** will be in charge of controlling the camera, adjusting the optical parameters to get the best possible image of the circuit/ panel to be inspected.
+
+Inspection button: Pressing this button, you can trigger the important events of the inspection process: set a REFERENCE image or START the inspection process, taking a new photograph.
+
+
+**NOTE:** you need to connect your Intel NUC to your internet network. To do that, click on the NETWORK icon shown below, pick the right network and type the password. 
+
+![alt text](assets/TURN-OFF-WIFI.PNG)
+
+You can launch the AgnosPCB inspection tool double-clicking on its Desktop´s shortcut.
+
+The user interface has these panels and inspection windows:
+
+- **Control buttons**: all the actions related to the insepction process are triggered here. Take a photo of a REFERENCE PCBA/panel, create an exclusion area….
+- **Log box**: provides useful information (and tips) about the inspection process.
+- **REFERENCE Magnification area (green)** : The “golden sample” image. The mouse´s cursor dictates what can be seen here.
+- **UNIT UNDER INSPECTION Magnification area (orange)**: this is the image of the panel to be inspected. 
+
+![alt text](<assets/nuc installation.PNG>)
+
+### LOG BOX 
+
+The log box will display inspection messages while you carry out inspections: warning, error o info messages. At the same time, the neural network version will be indicated here.
+
