@@ -10,31 +10,83 @@ FUpon launching the Agnospcb inspection tool software, the user interface will a
 - **Activity log**: provides useful information about the inspection process
 - **Settings**: where the configuration ICONs are. Useful tools in your inspection process.
 
-    ![alt text](assets/interface.PNG)
+  ![alt text](assets/ui-pcb.png)
+
+    ![alt text](assets/menu.png)
 
 **Start the inspection process**. This button is enabled only after you have a REFERENCE and TO BE INSPECTED images already set. Keyboard shortcut: **ENTER**. When clicked, the AOI will inspect the image taken for the circuit/panel and look for faults. If the Auto-analysis is enabled, the AOI will automatically inspect the last photo taken, so this button will be disabled
 
-![alt text](assets/start-inspection.PNG)
+![alt text](assets/menu-mosaic.png)
 
-**LOAD photo**: Use this ICON to load a **“reference”** or **“to be inspected”** photo. If you have stored a **“reference”** image and want to retrieve it to use it again, use this button. You can do the same with an image of a **“to be inspected”** circuit/ panel. This button will get non-functional if you have the **AUTO-PROCESSING** option enable, which will automatically process every photo taken with the camera. All the REFERENCE photos can be found inside the folder HOME/APP/REFERENCE. In a folder named after the YEAR-MONTH-DAY-TIME moment when the photo was taken. **You can rename the photos as you please**.
+**Reference moaic:** in the reference mosaic you can store references as files.
 
-![alt text](assets/load_photo.PNG)
 
-**CROP IMAGE**: Useful when the panel/circuit in the photo is too small. Cropping the image will “force” the software to focus in the selected area. Only available in the **REFERENCE** canvas. The software will automatically look for the same area in every photo taken of the panels to be inspected after it has been set. To remove the CROP boundaries, click on the icon again.
+![alt text](assets/menu-load-ref-file.png)
 
-![alt text](assets/crop_image.PNG)
+**LOAD REFERENCE as file**: Use this ICON to load a **“reference”** or **“to be inspected”** photo. If you have stored a **“reference”** image and want to retrieve it to use it again, use this button. You can do the same with an image of a **“to be inspected”** circuit/ panel. This button will get non-functional if you have the **AUTO-PROCESSING** option enable, which will automatically process every photo taken with the camera. All the REFERENCE photos can be found inside the folder HOME/APP/REFERENCE. In a folder named after the YEAR-MONTH-DAY-TIME moment when the photo was taken. **You can rename the photos as you please**.
 
-**Auto-signalling**: In order to **highlight** the faults detected you have two options: **1)** change the color of the faults **mask** using the Action button **“MASK-COLOR”** or **2)** enabling this feature. It will place a yellow cross on top of the faults detected. Not visible in the magnification areas.
+![alt text](assets/menu-tab.png)
 
-![alt text](assets/auto_signling.PNG)
+**Swap:** with this you can swap betewn a reference and an UUI.
+
+![alt text](assets/menu-load-uui-file.png)
+
+**LOAD a UUI file**: Use this ICON to load a **“UUI”** photo
+
+![alt text](assets/menu-exclusion.png)
+
+**Exclusion:** Creates an **¨exclusion area¨** where the system will not look for faults. You can create as many areas as required. All of them will be saves with the REFERENCE
+
+![alt text](assets/menu-sensitivity.png)
+
+**Sensitivity:** Change the system sensitivity (NORMAL/HIGH/VERY HIGH). Set back to normal, automatically after carrying out a new inspection. Shortcut: 1, 2 ,3 Keys
+
+![alt text](assets/menu-barcode.png)
+
+**Barcode reader** Select this button to read any PCB containing a barcode REFERENCE
+
+![alt text](assets/menu-help.png)
+
+**Help:** This button will get you to this **USER GUIDE**
+
+![alt text](assets/menu-report.png)
+
+**Report:** selecting this button will create a report that will include the detected errors
+![alt text](assets/menu-take-ref.png) 
+
+**Take REFERENCE photo:** Take a photo of what will be a REFERENCE PCB/Panel. Shorcut: R
+
+![alt text](assets/menu-uui-to-ref.png)
+
+**UUI to REFERENCE:** 
+
+![alt text](assets/menu-take-uui.png)
+
+**Take an UUI photo:** Takes a photo of a Unit Under Inspection PCBA/Panel. Shortcut: s
+
+![alt text](assets/menu-rm-exclusion.png)
+
+**Eraser:** Erase an **¨exclusion area¨** if you click on it.
+
+![alt text](assets/menu-auto-process.png)
 
 **Auto Analyze**:  if activated, the next photo taken will be **automatically** processed. That means that the image will be analyzed for faults right after being taken. This option reduces the processing time for every inspection.
 
-![alt text](assets/autoanalize.PNG)
+![alt text](assets/menu-settings.png)
 
-Faults **Mask-colors**: Once the analysis of the panel/circuit has been carried out, the results will be shown as a new mask on top of the image. If faults have been detected, they will be highlighted in red/blue or green. Depending on the PCBA´s color / material you are working with, you may need to change the opacity and color of the mask in order to easily see where those faults are. Every time you click on the ICON the mask color will change. Its opacity can be modified spinning the mouse’s wheel when it is placed on top of the ICON.
+**Settings:** you can change some parameters here. 
+
+![alt text](assets/crop_image.PNG)
+
+**CROP IMAGE**: Useful when the panel/circuit in the photo is too small. Cropping the image will “force” the software to focus in the selected area. Only available in the **REFERENCE** canvas. The software will automatically look for the same area in every photo taken of the panels to be inspected after it has been set. To remove the CROP boundaries, click on the icon again.
+
+![alt text](assets/auto_signling.PNG)
+
+**Auto-signalling**: In order to **highlight** the faults detected you have two options: **1)** change the color of the faults **mask** using the Action button **“MASK-COLOR”** or **2)** enabling this feature. It will place a yellow cross on top of the faults detected. Not visible in the magnification areas.
 
 ![alt text](assets/mask-color.PNG)
+
+Faults **Mask-colors**: Once the analysis of the panel/circuit has been carried out, the results will be shown as a new mask on top of the image. If faults have been detected, they will be highlighted in red/blue or green. Depending on the PCBA´s color / material you are working with, you may need to change the opacity and color of the mask in order to easily see where those faults are. Every time you click on the ICON the mask color will change. Its opacity can be modified spinning the mouse’s wheel when it is placed on top of the ICON.
 
 ## THE INSPECTION BUTTON
 
