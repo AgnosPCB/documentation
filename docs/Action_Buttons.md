@@ -4,7 +4,7 @@
 
 These buttons will be enabled or disabled depending on the inspection stage you are in.
 
-![alt text](assets/start-inspection.PNG)
+![alt text](assets/StartButton.PNG)
 
 **Start the inspection process.** This button is enabled only after you have a REFERENCE and TO BE INSPECTED images already set. Keyboard shortcut: ENTER. When clicked, will inspect the image taken for the circuit/panel and look for faults.
 
@@ -20,6 +20,54 @@ If you get false positives or faults not properly detected can be reported to us
 ![alt text](assets/turnoff.PNG)
 
 **Turn it OFF:** This button will turn the Raspberry 400 off. If you need to get the USB DRIVE with the inspection images safely, turn the raspberry 400 off before unplug it.
+
+![alt text](assets/mosaic.PNG)
+
+Open the MOSAIC load windows. It allows you to quick load any REFERENCE image previously stored. Quick load the slot with F1...F8
+
+![alt text](assets/Open-reference.PNG)
+
+Open a REFERENCE image from the /REFERENCE folder
+
+![alt text](assets/reference-photo.PNG)
+
+Take a photo of what will be a REFERENCE PCB/Panel. Shorcut: R
+
+![alt text](assets/Open-UUI.PNG)
+
+Opens a UUI image from the any folder
+
+![alt text](<assets/UUI photo.PNG>)
+
+Takes a photo of a Unit Under Inspection PCBA/Panel. Shortcut: s
+
+![alt text](assets/exclucion-area.PNG)
+
+Creates an ¨exclusion area¨ where the system will not look for faults. You can create as many areas as required. All of them will be saves with the REFERENCE
+
+![alt text](assets/erase.PNG)
+
+Erase an ¨exclusion area¨ if you click on it.
+
+![alt text](assets/sensitiviti.PNG)
+
+Change the system sensitivity (NORMAL/HIGH/VERY HIGH). Set back to normal, automatically after carrying out a new inspection. Shortcut: 1, 2 ,3 Keys
+
+![alt text](assets/UUI-processing.PNG)
+
+Every photo taken (of a UUI) will be automatically processed if enable.
+
+![alt text](assets/User-guide.PNG)
+
+This button will get you to this USER GUIDE
+
+![alt text](assets/settings.PNG)
+
+settings: you can change some parameters here. Listen below
+
+![alt text](assets/swap.PNG)
+
+swap REFERENCE and UUI images. Shortcut: TAB
 
 ## ACTION Buttons
 
