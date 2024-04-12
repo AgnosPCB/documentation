@@ -4,7 +4,7 @@
 
 These buttons will be enabled or disabled depending on the inspection stage you are in.
 
-![alt text](assets/StartButton.PNG)
+![alt text](assets/autoprocess.png)
 
 **Start the inspection process.** This button is enabled only after you have a REFERENCE and TO BE INSPECTED images already set. Keyboard shortcut: ENTER. When clicked, will inspect the image taken for the circuit/panel and look for faults.
 
