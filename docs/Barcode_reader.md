@@ -22,3 +22,8 @@ This action will automatically generate a pdf report that you can find in the PC
 
 ![alt text](assets/barcode-report.png)
 
+In case you already have a stored REFERENCE you can retrieve it and continue with your inspection. To do this press the button ¨read barcode¨
+
+![alt text](assets/read-barcode.png)
+
+Then read the barcode using the hand gun and the REFERENCE is loaded automatically. (poner foto del video) 
