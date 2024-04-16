@@ -42,7 +42,7 @@ REFERENCE PANEL (green) : The “golden sample” image. Can be loaded using the
 UNIT UNDER INSPECTION (orange): this is the image of the panel to be inspected. Can be loaded using the LOAD icon (from the inspection area)
 Magnification area: this frame will display, the same areas of the REFERENCE, INSPECTED and RESULT circuit/panels. Move the mouse to check different zones of the circuit. Use the mouse’s wheel to modify the zoom magnification.
 
-## USING YOUR PC : INSTALLATION PROCESS
+## Using your pc: installation processs
 
 **PC System recommended Requirements**
 
@@ -81,7 +81,7 @@ REFERENCE Magnification area (green) : The “golden sample” image. The mouse�
 
 ![alt text](assets/pc-instalation-process.PNG)
 
-## INTEL NUC SOFTWARE USER GUIDE (LINUX)
+## Intel Nuc software user guide (Linux)
 
 **Internet connection: minimum requirements**
 
@@ -93,8 +93,7 @@ The **INTEL NUC** will be in charge of controlling the camera, adjusting the opt
 
 Inspection button: Pressing this button, you can trigger the important events of the inspection process: set a REFERENCE image or START the inspection process, taking a new photograph.
 
-
-**NOTE:** you need to connect your Intel NUC to your internet network. To do that, click on the NETWORK icon shown below, pick the right network and type the password. 
+<Note> Note: you need to connect your Intel NUC to your internet network. To do that, click on the NETWORK icon shown below, pick the right network and type the password. </Note>
 
 ![alt text](assets/TURN-OFF-WIFI.PNG)
 
@@ -109,7 +108,7 @@ The user interface has these panels and inspection windows:
 
 ![alt text](<assets/nuc installation.PNG>)
 
-### LOG BOX 
+### Log box 
 
 The log box will display inspection messages while you carry out inspections: warning, error o info messages. At the same time, the neural network version will be indicated here.
 
