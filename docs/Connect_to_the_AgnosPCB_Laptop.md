@@ -16,3 +16,5 @@ It does not matter to which USB port you connect the CAMERA and INSPECTION butto
 
 ![alt text](assets/conect_camera.PNG)
 ![alt text](assets/conect-laptop.PNG)
+
+ If you want to lear how to connect the camra you can go to this section **[How to connect the camera](Connect-the-camera.md "Title")**
