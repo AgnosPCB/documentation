@@ -28,8 +28,8 @@ In case you are ussing the offline or online version you can check the **[Asembl
 
 Finally, if you want to learn how to use it, we recommend that you take a look at the user guide. You can also find help in the **[FAQ](FAQ.md "Title")**, **[Trouble shooting](Troubleshooting.md "Title")** and **[Inspection workflow](Inspection_workflow.md "Title")** sections.
 
-<Note> Please note: We recommend uploading photos of 12 Megapixels. The better the photo, the better the results. If you do not have a camera of sufficient quality, we can email you some PCBA photos taken withour inspecƟon plaƞorm. </Note>
+<Note> Please note: We recommend uploading photos of 12 Megapixels. The better the photo, the better the results. If you do not have a camera of sufficient quality, we can email you some PCBA photos taken withour inspection platform. </Note>
 
 During this trial stage, we will be monitoring the results. We will email you with comments about
-how to improve the detection capacities of the soŌware. Keep in mind that they will be heavily influenced by the quality of the photos taken. All the images uploaded to AgnosPCB will be removed from the server within 24h. 
+how to improve the detection capacities of the software. Keep in mind that they will be heavily influenced by the quality of the photos taken. All the images uploaded to AgnosPCB will be removed from the server within 24h. 
 **AgnosPCB inspection service terms of service and conditions (poner link)**
