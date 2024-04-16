@@ -11,27 +11,24 @@ We have created an account for you
 
 This account has **(number of inspections selected)**
 
-**NOTE:** The password and user ID are valid for both the Agnospcb APP and the inspection.
+<Note> NOTE: The password and user ID are valid for both the Agnospcb APP and the inspection.</Note>
 
 ![alt text](assets/log-in.png)
 
 You can use the webapp in here **¨link¨** and here is a short guide on how to use the WebApp with a regular camera **¨link¨**
 
-Also, if you want to know how to install your version you can go to this section **¨link a installation_process¨**
+Also, if you want to know how to install your version you can go to this section  **[Installation process](Installation_process.md "Title")**
 
-In case you are ussing the offline or online version you can check the **¨asambel guide with link¨** to lear how to assamble the version you have. You can also visit **¨How to connect the camera¨** and choose one of the following options:
 
-- How to connect to the AgnosPCB laptop ¨link¨
-- How to connect to the microcomputer
-- How to connect to the Nucc
+In case you are ussing the offline or online version you can check the **[Asembly guide](Assembly_guide.md "Title")** to lear how to assamble the version you have. You can also visit **[How to connect the camera](Connect-the-camera.md "Title")** and choose one of the following options:
 
-Finally, if you want to learn how to use it, we recommend that you take a look at the user guide. You can also find help in the **¨FAQ¨**, **¨Trouble shooting¨** and **¨inspection workflow¨** sections.
+-  **[How to connect to the AgnosPCB laptop](Connect_to_the_AgnosPCB_Laptop.md "Title")**
+-  **[How to connect to the microcomputer](Connect_to_the_microcomputer.md "Title")**
+-  **[How to connect to the Nucc](Connect_to_the_Nucc.md "Title")**
 
-Please note:
+Finally, if you want to learn how to use it, we recommend that you take a look at the user guide. You can also find help in the **[FAQ](FAQ.md "Title")**, **[Trouble shooting](Troubleshooting.md "Title")** and **[Inspection workflow](Inspection_workflow.md "Title")** sections.
 
-We recommend uploading photos of 12 Megapixels. The better the photo, the better the results.
-
-If you do not have a camera of sufficient quality, we can email you some PCBA photos taken withour inspecƟon plaƞorm. 
+<Note> Please note: We recommend uploading photos of 12 Megapixels. The better the photo, the better the results. If you do not have a camera of sufficient quality, we can email you some PCBA photos taken withour inspecƟon plaƞorm. </Note>
 
 During this trial stage, we will be monitoring the results. We will email you with comments about
 how to improve the detection capacities of the soŌware. Keep in mind that they will be heavily influenced by the quality of the photos taken. All the images uploaded to AgnosPCB will be removed from the server within 24h. 
