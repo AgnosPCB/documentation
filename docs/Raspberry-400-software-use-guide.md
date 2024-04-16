@@ -1,4 +1,4 @@
-# RASPBERRY 400 SOFTWARE USER GUIDE (LINUX)
+# Raspberry 400 software use guide (Linux)
 
 **Internet connection: minimum requirements**
 
@@ -20,3 +20,4 @@ Upon powering up the Raspberry 400 microcomputer, the Agnospcb inspection tool s
 - **Magnification area**: this frame will display, the same areas of the REFERENCE, INSPECTED and RESULT circuit/panels. Move the mouse to check different zones of the circuit. Use the mouse’s wheel to modify the zoom magnification.
 
 ![alt text](assets/MAGNIFICATION-AREA.PNG)
+

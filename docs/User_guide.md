@@ -2,7 +2,7 @@
 
 ## User interface
 
-FUpon launching the Agnospcb inspection tool software, the user interface will appear. It has different panels and inspection areas:
+Upon launching the Agnospcb inspection tool software, the user interface will appear. It has different panels and inspection areas:
 
 - **Reference panel (green )**: The “golden sample” image. Can be loaded using the LOAD icon (from the Reference area). 
 - **Unit Under Inspection (orange)**: this is the image of the panel to be inspected. Can be loaded using the LOAD icon (from the inspection area)
@@ -88,7 +88,7 @@ FUpon launching the Agnospcb inspection tool software, the user interface will a
 
 Faults **Mask-colors**: Once the analysis of the panel/circuit has been carried out, the results will be shown as a new mask on top of the image. If faults have been detected, they will be highlighted in red/blue or green. Depending on the PCBA´s color / material you are working with, you may need to change the opacity and color of the mask in order to easily see where those faults are. Every time you click on the ICON the mask color will change. Its opacity can be modified spinning the mouse’s wheel when it is placed on top of the ICON.
 
-## THE INSPECTION BUTTON
+## The inspection button
 
 ![alt text](assets/inspection_button.PNG)
 
@@ -100,7 +100,7 @@ Faults **Mask-colors**: Once the analysis of the panel/circuit has been carried 
 
 2) **INITIALIZE** the inspection process: Just press it for a second and the camera will capture an image of the circuit / panel to be analyzed. Alternatively, you can click, with the mouse, on the INSPECTION BUTTON (icon below) on the user interface to do the same.
 
-## INSPECTION PROCESS
+## Inspection process
 
 At this point, you should have already set up the inspection platform and everything should be connected to the laptop.
 
@@ -124,13 +124,11 @@ The points listed below will guide you through the steps you need to make to ins
 
 All the inspection results will be stored in the PCB_OUT folder you will find in the external USB drive. The REFERENCE images will be moved to the folder called “REFERENCE”. You can find all of them there , in the case you need any of the REFERENCE images previously used.
 
-**NOTE**: the **“R”** key from the keyboard will **work as a camera trigger button too**. “R” will set a REFERENCE image. **“S”** will take a photo of an image to be inspected. 
+<Note> Note: the “R” key from the keyboard will work as a camera trigger button too. “R” will set a REFERENCE image. “S” will take a photo of an image to be inspected.</Note>
 
+<Note> Note: If you activate the AUTO-ANALYSIS option, all the photos taken pressing “R” or the INSPECTION BUTTON for one second, will be automatically processed.</Note>
 
-**NOTE**: If you activate the AUTO-ANALYSIS option, all the photos taken pressing “R” or the INSPECTION BUTTON for one second, will be automatically processed.
-
-
-**IMPORTANT: By default, we send the camera already configured, but from time to time, re-check the camera is operating with the Aperture MODE enabled**
+<Important>IMPORTANT: By default, we send the camera already configured, but from time to time, re-check the camera is operating with the Aperture MODE enabled </Important>
 
 ![alt text](assets/CAMER_INSPECTION.PNG)
 
@@ -140,7 +138,7 @@ With some tips about how to improve the fault detection results and comments abo
 
 ![alt text](assets/TIPS.PNG)
 
-## LIGHT SOURCES AND PANEL/CIRCUIT ORIENTATION
+## Light sources and panel/circuit orientation
 
 The inspection platform uses 2 LED lights and diffuser panels to get rid of cast shadows. But if you take photos of the circuits varying its orientation every inspection, large electronic elements (like capacitors, coils and connectors) present on the circuits/ panels will be seen differently from the camera’s point of view.
 
@@ -150,7 +148,7 @@ The software is capable, within a second, of auto-aligning the images, but the l
 
 ![alt text](assets/optical-digital.PNG)
 
-## OPTICAL / DIGITAL ZOOM
+## Optical/Digital Zoom
 
 When using a DIGITAL ZOOM, the camera’s optics are not adjusted. It is accomplished electronically, so no optical resolution is gained. That means that you are not providing useful info to the software. 
 
@@ -160,7 +158,7 @@ Do **not use the camera controls** to increase the size of the circuit/ panel. T
 
 ![alt text](assets/image.png)
 
-## CROPPING TOOL
+## Cropping tool
 
 Useful when the panel/circuit in the photo is too small. Cropping the image will “force” the software to focus on the selected area and will reduce the inspection time.
  
@@ -168,7 +166,7 @@ Useful when the panel/circuit in the photo is too small. Cropping the image will
 
 The software will automatically look for the same area in every photo taken of the panels to be inspected after the cropping boundary has been set. To remove the CROP boundaries, click on the CROP icon again.
 
-## CIRCUIT / PANEL WITH MANY SMALL ELECTRONIC ELEMENTS
+## Circuit / Panel with many small electronic elements
 
 ![alt text](assets/circuit.PNG)
 
