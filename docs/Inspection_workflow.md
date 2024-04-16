@@ -130,3 +130,10 @@ Finally, you can change other aspects with the **¨settings¨** button. Once cli
 
 ![alt text](assets/settings.2.png)
 
+- In case you want to analyze only a part of the UUI image you can select the part to be analyzed by right-clicking and dragging to include the desired area.
+
+![alt text](assets/reference-area.png)
+
+Once the area is selected in the reference image, loading the UUI automatically inspects only the selected area.
+
+![alt text](assets/UUI-area.png)
