@@ -20,3 +20,7 @@ First, you need to connect everything as indicated below:
 The **SONY camera** will use a battery DUMMY, so it can be ON for unlimited time. That battery dummy needs a 5V and 3A power supply (provided with the **KIT** as a separate unit or integrated in the power strip). At the same time, the camera will be controlled from the computer, so use the provided High-speed 2m USB-micro USB cable to connect the camera to any free **USB port.**
 
  If you want to lear how to connect the camra you can go to this section **[How to connect the camera](Connect-the-camera.md "Title")**
+
+ <Note>Note: When connecting the monitor, be sure to connect it to the HDMI port of the graphics card.</Note> 
+
+![alt text](assets/ofline-assembly.png) 
