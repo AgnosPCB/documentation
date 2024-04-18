@@ -1,4 +1,4 @@
-# Connect to the Nucc
+# Connect to the Nuc
 
 The Intel NUC will be in charge of taking the photos using the best possible camera parameters. The microcomputer will do everything for you. Just pushing the **ACTION button**, you will be executing, all the steps needed in most of the inspection processes.
  
