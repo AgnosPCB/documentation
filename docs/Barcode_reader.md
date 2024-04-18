@@ -1,39 +1,36 @@
 # Barcode reader
 
-In case the **pcb to be inspected has a barcode**, some changes will be generated in the inspection process. 
+If the PCB you're inspecting has a **barcode**, it'll bring some changes to how the inspection process works.
 
-- The start will be the same, you will have to open the application and insert your credentials. 
+First, you'll still need to open the application and log in with your credentials as usual.
 
-- Then you can take a **REFERENCE** photo or upload it directly from the file with the **¨Open reference¨** button. 
+![alt text](assets/use-barcodes.png){ align=right }
 
-- Once you have opened the reference, the first changes start when it comes to the inspection, because when you save the reference in the **mosaic** you have to make sure to set the option **¨use barcodes¨**.
+Next, you can either take a **REFERENCE** photo or upload one directly from your files using the **"Open reference"** button.
 
-![alt text](assets/use-barcodes.png)
+Once you've got the reference open, things start to change a bit. When you save the reference in the mosaic, you'll need to make sure to set the option **"use barcodes"**. 
 
-- Then you must select the **"draw barcode area**" button and **select the barcode** area.
+Then, you'll have to select the **"draw barcode area"** button and choose the barcode area.
 
 ![alt text](assets/barcode-area.png)
 
-After uploading the **REFERENCE**, use the **"Open UUI"** button or take a picture of the **UUI**. Once uploaded it will be **automatically processed** and will start pointing out possible errors. To scroll through them use the **"right"** or **"left"** keys and to mark an error use the **"up"** key.
- 
+After you've uploaded the **REFERENCE**, you can use the **"Open UUI"** button or take a picture of the UUI. Once it's uploaded, it'll be automatically processed, and the software will start pointing out potential errors. You can scroll through them using the **"right"** or **"left"** keys and mark an error using the **"up"** key. Even though you're using a barcode, you can still use other functions mentioned in the Inspection workflow section, like sensitivity, exclusion area, and settings. You can also select the errors and specify them or not.
+
 ![alt text](assets/barcode-errors.png)
 
-Despite using a barcode you can also use the other functions mentioned in the **[Inspection workflow](Inspection_workflow.md "Title")** section such as **sensitivity, exclusion area, settings and so on**. You can also select the errors and specify them or not.
+Once you've selected all the errors, you can finish the inspection by clicking on the **"finish inspection"** button. This will open a window where you can rename the file, add comments, and select if the UUI is OK or if it has unpassable errors. After this, a pdf report will be generated.
 
-- After you have selected all the errors you can finish the inspection by clicking on the **"finish inspection"** button.  Pressing the button will open a window where you can rename the file, add comments and select if the **UUI** is OK or if it has unpassable errors. After this a **pdf report** will be generated.
+![alt text](assets/finish-inspecttion-barcode.png){ align=right }
 
-![alt text](assets/finish-inspecttion-barcode.png)
-
-This action will automatically generate a pdf report that you can find in the **PCB_OUT folder**. Inside the report will appear data such as date, if the pcb has passed or not the inspection, the data, the observations, the UUI and REFERENCE image and the errors together with their specifications. In addition, it will show the **barcode identification number**.
+This action automatically generates a pdf report that you can find in the **PCB_OUT folder**. Inside the report, you'll see data such as the date, whether the PCB passed the inspection or not, the data, observations, the **UUI** and **REFERENCE** image, the errors, and their specifications. Additionally, it'll show the barcode identification number.
 
 ![alt text](assets/barcode-report.png)
 
-In case you already have a stored **REFERENCE** you can retrieve it and continue with your inspection. To do this press the button **¨read barcode¨**
 
-![alt text](assets/read-barcode.png)
+![alt text](assets/barcode-reference.png){ align=right }
+If you already have a stored **REFERENCE**, you can retrieve it and continue with your inspection. To do this, press the **"read barcode"** button, then read the barcode using the handheld reader, and the **REFERENCE** will load automatically.
 
-Then read the barcode using the **handheld reader** and the **REFERENCE** is loaded automatically. 
 
-![alt text](assets/barcode-reference.png)
 ![alt text](assets/barcode-handhold.png)
+
 
