@@ -1,99 +1,80 @@
-# Control panel buttons/Action Buttons
+# Control panel buttons
 
-## Control panel buttons
 
 These buttons will be enabled or disabled depending on the inspection stage you are in.
 
-![alt text](assets/autoprocess.png)
 
-**Start the inspection process.** This button is enabled only after you have a **REFERENCE** and**TO BE INSPECTED** images already set. Keyboard shortcut: **ENTER**. When clicked, will inspect the image taken for the circuit/panel and look for faults.
+**Start the inspection process**. This button is enabled only after you have a REFERENCE and TO BE INSPECTED images already set. Keyboard shortcut: **ENTER**. When clicked, the AOI will inspect the image taken for the circuit/panel and look for faults. If the Auto-analysis is enabled, the AOI will automatically inspect the last photo taken, so this button will be disabled
 
+ ![alt text](assets/menu.png)
 
-<Important> Important: How an Error works. If you get **false positives** or faults not properly detected can be reported to us. It is very important for us to get this information, as the neural network will learn from its mistakes. If you find a reflection on a surface marked as fault, a not perfectly indicated issue anything you want us to review, just report it pressing the **UP arrow key after placing the mouse’s cursor on top of it.** It will take less than a second and will let the software adapt its detection capacities to your particular manufacturing process. </Important>
+**Reference moaic:** in the reference mosaic you can store references as files.
 
+![alt text](assets/menu-mosaic.png)
 
-![alt text](assets/logout.PNG)
+**LOAD REFERENCE as file**: Use this ICON to load a **“reference”** or **“to be inspected”** photo. If you have stored a **“reference”** image and want to retrieve it to use it again, use this button. You can do the same with an image of a **“to be inspected”** circuit/ panel. This button will get non-functional if you have the **AUTO-PROCESSING** option enable, which will automatically process every photo taken with the camera. All the REFERENCE photos can be found inside the folder HOME/APP/REFERENCE. In a folder named after the YEAR-MONTH-DAY-TIME moment when the photo was taken. **You can rename the photos as you please**.
 
+![alt text](assets/menu-load-ref-file.png)
 
-**Log-out button.** Click here to **log out**. You will be asked again for your user credentials next time you launch the software.
+**Swap:** with this you can swap betewn a reference and an UUI.
 
-![alt text](assets/turnoff.PNG)
+![alt text](assets/menu-tab.png)
 
-**Turn it OFF:** This button will turn the **Raspberry 400 off**. If you need to get the **USB DRIVE** with the inspection images safely, turn the raspberry 400 off before unplug it.
+**LOAD a UUI file**: Use this ICON to load a **“UUI”** photo
 
-![alt text](assets/mosaic.PNG)
+![alt text](assets/menu-load-uui-file.png)
 
-Open the **MOSAI**C load windows. It allows you to quick load any **REFERENCE** image previously stored. Quick load the slot with **F1...F8**
+**Exclusion:** Creates an **¨exclusion area¨** where the system will not look for faults. You can create as many areas as required. All of them will be saves with the REFERENCE
 
-![alt text](assets/Open-reference.PNG)
+![alt text](assets/menu-exclusion.png)
 
-Open a **REFERENCE** image from the /**REFERENCE** folder
+**Sensitivity:** Change the system sensitivity (NORMAL/HIGH/VERY HIGH). Set back to normal, automatically after carrying out a new inspection. Shortcut: 1, 2 ,3 Keys
 
-![alt text](assets/reference-photo.PNG)
+![alt text](assets/menu-sensitivity.png)
 
-Take a photo of what will be a **REFERENCE PCB/Panel**. Shorcut: **R**
+**Barcode reader** Select this button to read any PCB containing a barcode REFERENCE
 
-![alt text](assets/Open-UUI.PNG)
+![alt text](assets/menu-barcode.png)
 
-Opens a **UUI** image from the any folder
+**Help:** This button will get you to this **USER GUIDE**
 
-![alt text](<assets/UUI photo.PNG>)
+![alt text](assets/menu-help.png)
 
-Takes a photo of a **Unit Under Inspection PCBA/Pane**l. Shortcut: **S**
+**Report:** selecting this button will create a report that will include the detected errors
 
-![alt text](assets/exclucion-area.PNG)
+![alt text](assets/menu-report.png)
 
-Creates an **¨exclusion area¨** where the system will not look for **faults**. You can create as many areas as required. All of them will be saves with the **REFERENCE**
+**Take REFERENCE photo:** Take a photo of what will be a REFERENCE PCB/Panel. Shorcut: R
 
-![alt text](assets/erase.PNG)
+![alt text](assets/menu-take-ref.png)
 
-Erase an **¨exclusion area¨** if you click on it.
+**UUI to REFERENCE:** 
 
-![alt text](assets/sensitiviti.PNG)
+![alt text](assets/menu-uui-to-ref.png)
 
-Change the system sensitivity **(NORMAL/HIGH/VERY HIGH)**. Set back to normal, automatically after carrying out a new inspection. Shortcut: **1, 2 ,3 Keys**
+**Take an UUI photo:** Takes a photo of a Unit Under Inspection PCBA/Panel. Shortcut: s
 
-![alt text](assets/UUI-processing.PNG)
+![alt text](assets/menu-take-uui.png)
 
-Every photo taken **(of a UUI)** will be automatically processed if enable.
-
-![alt text](assets/User-guide.PNG)
-
-This button will get you to this **USER GUIDE**
-
-![alt text](assets/settings.PNG)
-
-settings: you can change some parameters here. **Listen below**
-
-![alt text](assets/swap.PNG)
-
-swap REFERENCE and UUI** images. Shortcut: **TAB**
-
-## Action Buttons
-
-**The action buttons are located in the upper right corner of the inspection areas.**
-
-![alt text](assets/load_photo.PNG)
-
-**LOAD photo:** Use this ICON to load a **“reference”** or **“to be inspected”** photo. If you have stored a **“reference”** image and want to retrieve it to use it again, use this button. You can do the same with an image of a **“to be inspected”** circuit/ panel. This button will get non-functional if you have the **AUTO-PROCESSING** option enable, which will automatically process every photo taken with the camera.
-
-![alt text](assets/crop_image.PNG)
-
-**CROP IMAGE:** Useful when the panel/circuit in the photo is too small. Cropping the image will “force” the software to focus in the selected area. Only available in the **REFERENCE** canvas. The software will automatically look for the same area in every photo taken of the panels to be inspected after it has been set. To remove the CROP boundaries, click on the icon again.
-
-![alt text](assets/auto_signling.PNG)
-
-**Auto-signalling:** In order to **highlight** the faults detected you have two options: 1) change the color of the faults mask using the Action button **“layers”** (explained below) or 2) enabling this feature. It will place a yellow cross on top of the faults detected. Not visible in the magnification areas.
-
-![alt text](assets/autoanalize.PNG)
-
-**Auto Analyze:** if activated, the next photo taken will be **automatically** processed. That means that the image will be analyzed for faults right after being taken. This option reduces the processing time for every inspection.
+**Eraser:** Erase an **¨exclusion area¨** if you click on it.
 
 
-**Faults Mask-colors:** Once the analysis of the **panel/circuit** has been carried out, the results will be shown as a new mask on top of the image. If faults have been detected, they will be **highlighted** in red/blue or green. Depending on the **PCBA´s color / material** you are working with, you may need to change the opacity and color of the mask in order to easily pinpoint where those faults are. Every time you click on the **ICON** the mask color will change. Its opacity can be modified spinning the mouse’s wheel when it is placed on top of the **ICON.**
+![alt text](assets/menu-rm-exclusion.png)
+
+**Auto Analyze**:  if activated, the next photo taken will be **automatically** processed. That means that the image will be analyzed for faults right after being taken. This option reduces the processing time for every inspection.
+
+![alt text](assets/menu-auto-process.png)
+
+**Settings**: With this button you can change other functions to suit your needs.
+
+![Texto alternativo](assets/menu-settings.png)
 
 ## Other features: Zoom
 
-The **ZOOM** will let you appreciate the faults with more detail. It can be used to check if the photos taken are, or not, **in focus**. In order to use it, spin the mouse’s wheel on any **“REFERENCE”** or **“TO BE INSPECTED”** areas.
 
-<Important> IMPORTANT: How Error Report works. If you get false positives or faults not properly detected can be reported to us. It is very important for us to get this information, as the neural network will learn from its mistakes. If you find a reflection on a surface marked as fault, a not perfectly indicated issue anything you want us to review, just report it pressing the UP arrow key after placing the mouse’s cursor on top of it.** It will take less than a second and will let the software adapt its detection capacities to your particular manufacturing process. </Important>
+The **ZOOM** feature is designed to allow you to closely examine faults with greater precision. Its purpose extends to verifying whether captured photos are sufficiently focused or not. To activate this function, simply rotate the mouse wheel while positioned over either the **"REFERENCE"** or **"TO BE INSPECTED"** areas.
+
+???+ warning "Important"
+
+    How Error Report works. If you get false positives or faults not properly detected can be reported to us. It is very important for us to get this information, as the neural network will learn from its mistakes. If you find a reflection on a surface marked as fault, a not perfectly indicated issue anything you want us to review, just report it pressing the UP arrow key after placing the mouse’s cursor on top of it. It will take less than a second and will let the software adapt its detection capacities to your particular manufacturing process.
+
