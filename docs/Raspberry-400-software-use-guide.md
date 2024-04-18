@@ -6,7 +6,11 @@
 
 The processing time is **highly dependent** on the transmission speed of the internet connection. The faster the speed, the faster the inspection. Wired connection to the router is **highly recommended**.
 
-**The Raspberry 400** will be in charge of controlling the camera, adjusting the optical parameters to get the best possible image of the circuit/ panel to be inspected. The USB drive connected to one of its USB ports will store the results of all the inspections done. This USB drive can be extracted only if the Raspberry is OFF. The operating system (OS) of this device is stored inside the **micro SD** card already provided with the KIT. The Inspection button is connected to this microcomputer. Pressing this button, you can trigger the important events of the inspection process: set a REFERENCE image or START the inspection process, taking a new photograph. More details about its functions explained at the very end of this guide. If you need to update/restore your Raspberry 400 system, get **here**. **NOTE:** you need to connect your raspberry 400 to your internet network. To do that, click on the NETWORK icon shown below, pick the right network and type the password. That should be all.
+**The Raspberry 400** will be in charge of controlling the camera, adjusting the optical parameters to get the best possible image of the circuit/ panel to be inspected. The USB drive connected to one of its USB ports will store the results of all the inspections done. This USB drive can be extracted only if the Raspberry is OFF. The operating system (OS) of this device is stored inside the **micro SD** card already provided with the KIT. The Inspection button is connected to this microcomputer. Pressing this button, you can trigger the important events of the inspection process: set a REFERENCE image or START the inspection process, taking a new photograph. More details about its functions explained at the very end of this guide. If you need to update/restore your Raspberry 400 system, get **here**.
+
+???+ note "Note"
+
+    You need to connect your raspberry 400 to your internet network. To do that, click on the NETWORK icon shown below, pick the right network and type the password. That should be all.
 
 ![alt text](assets/TURN-OFF-WIFI.PNG)
 
@@ -20,4 +24,7 @@ Upon powering up the Raspberry 400 microcomputer, the Agnospcb inspection tool s
 - **Magnification area**: this frame will display, the same areas of the REFERENCE, INSPECTED and RESULT circuit/panels. Move the mouse to check different zones of the circuit. Use the mouse’s wheel to modify the zoom magnification.
 
 ![alt text](assets/MAGNIFICATION-AREA.PNG)
+
+
+
 
