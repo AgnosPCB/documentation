@@ -1,8 +1,9 @@
 # UUI to REFERENCE
 
-In case you are inspecting a **UUI** and you find that it is better than the **REFERENCE** or you think it is better to use it as a reference for any reason you can transform the UUI to a **REFERENCE** with the following button:
 
-![alt text](assets/UUI-to-REF.png)
+When inspecting a **PCB**, if you discover that a **UUI** image is more suitable as a reference than the current one, you have the option to convert it into a reference image with a **single button click**
+
+![alt text](assets/UUI-to-REF.png){ align=right }
 
 For example, in this image we have a **UUI**
 
@@ -12,4 +13,4 @@ And now, after pressing the button **¨UUI to REFERENCE¨** now the same PCB is 
 
 ![alt text](assets/REFERENCE.png)
 
- 
+
