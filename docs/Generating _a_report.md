@@ -1,23 +1,25 @@
 # Generating a report
 
-To generate a **report** you must first perform an **[Inspection](Inspection_workflow.md "Title")**. 
 
-Once you have completed the inspection to generate the report the first step is to click on the **¨finish inspection¨** button.
+Generating a report is a straightforward process that begins with performing an inspection.
 
-![alt text](assets/finish-inspection-button.png)
+![alt text](assets/finish-inspection-button.png){ align=right }
 
-Once you have clicked on the button, the following screen will appear  where you can rename the file, add comments and select if the UUI is OK or if it has unpassable  errors. A **pdf report** will then be generated.
+Once you've completed the inspection and are ready to generate the report, the first step is to locate and click on the **"finish inspection"** button.
+
+After clicking this button, a new screen will appear, providing you with options to customize the report. Here, you can rename the file, add comments, and indicate whether the **UUI** is okay or if it contains unpassable errors. Once you've made your selections, a pdf report will be **automatically generated**
 
 ![alt text](assets/finish-inspecttion-barcode.png)
 
-After generating the report it will be **automatically saved in the PCB_OUT** folder. All generated reports will be automatically stored there.
+Following the generation of the report, it will be conveniently saved in the **PCB_OUT folder**. This folder serves as the default location for all generated reports, ensuring easy access to your **inspection data.**
 
 ![alt text](assets/PCB-OUT.png)
 
-When the report is opened it will **include various data** such as the date, the number of failures, the area of exclusion and the sensitivity used. It also includes more specific data such as the name of the **REFERENCE** and the **UUI**.
+When you open the report, you'll find a wealth of information presented in a clear and organized manner. This includes the date of the inspection, the number of failures detected, the exclusion area, and the sensitivity settings used during the inspection. Additionally, the report provides specific details such as the name of the **REFERENCE** and the **UUI**.
 
 ![alt text](assets/REPORT1.png)
 
-Also, more visually, it includes a picture of the **UUI, the REFERENCE and the exclusion layer**. It also includes the selected errors including the selected remarks or specifications.
+
+Visually, the report offers a comprehensive view of the inspection process, featuring images of the **UUI**, the **REFERENCE**, and the exclusion layer. It also includes a detailed breakdown of the selected errors, along with any accompanying remarks or specifications.
 
 ![alt text](assets/REPORT2.png)
