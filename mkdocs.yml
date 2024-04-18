@@ -11,5 +11,11 @@ extra_css:
   - stylesheets/agnos_colors.css
 plugins:
   - search
-  - privacy
+#  - privacy
 copyright: Copyright &copy; 2023 - 2024 AgnosPCB
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
