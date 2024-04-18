@@ -2,7 +2,7 @@
 
 First, be sure to connect the **USB and battery dummy** to the camera as shown in the picture.
 
-![alt text](assets/assembly-7.PNG)
+![alt text](assets/assembly-7.PNG){ align=right }
 
 ![alt text](assets/conect_camera.PNG)
 
@@ -22,12 +22,15 @@ You got the SONY camera with the 50 mm 1.8f fixed lens already pre-configured bu
 ![alt text](assets/SONY-2.PNG)
 ![alt text](assets/SONY-3.PNG)
 
-<Important> Important: all the PCB to be inspected have to be perfectly leveled. If the panel/circuit has a certain tilt angle, not all the elements shapes will be perfectly defined limiting the software recognition capacities.</Important>
+???+ warning "important"
+
+    All the PCB to be inspected have to be perfectly leveled. If the panel/circuit has a certain tilt angle, not all the elements shapes will be perfectly defined limiting the software recognition capacities.
 
 To capture the whole dimension of the panel / circuit you are inspected, move the camera UP in the mast. For smaller circuits/ panel, move it down but **never use digital zoom**.
 
+???+ warning "important"
 
-**Do not use the DIGITAL ZOOM** with the 50mm optics system. It will only **artificially** increase the size of the digital image not adding real info to the photograph. 
+    Do not use the DIGITAL ZOOM with the 50mm optics system. It will only artificially increase the size of the digital image not adding real info to the photograph.
 
 If you change any parameter or adjust the camera while the system is ON, the camera will get unresponsive. You will need to disconnect it from the laptop and reconnect it again.
 
@@ -41,10 +44,17 @@ In the case you have changed, accidentally, the default camera´s configuration,
 1) Set the mode dial to **A (Aperture Priority)**
 2) Select the value **F7.1** by turning the control dial (see image).
 
-![alt text](assets/note-camera.PNG)
+![alt text](assets/note-camera.PNG){ align=right }
 
-<Note> NOTE:Do not use DIGITAL ZOOM with the 50mm optics system. It will only artificially increase the size of the digital image not adding real info to the photograph.
-If everything is fine, you will get highly detailed photographs of your PCBAs. 
-</Note>
+???+ note "Note"
 
+    Do not use DIGITAL ZOOM with the 50mm optics system. It will only artificially increase the size of the digital image not adding real info to the photograph. 
+    If everything is fine, you will get highly detailed photographs of your PCBAs.
 
+If you want to know how to connect the specific version you are using you can see it in the following sections:
+
+**[How to connect to the microcomputer](Connect_to_the_microcomputer.md "Title")**
+
+**[How to connect to the AgnosPCB Laptop](Connect_to_the_AgnosPCB_Laptop.md "Title")**
+
+**[How to connect to the Nuc](Connect_to_the_Nuc.md "Title")**
