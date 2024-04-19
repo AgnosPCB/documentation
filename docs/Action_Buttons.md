@@ -1,5 +1,16 @@
-# Control panel buttons
+# Action buttons
 
+## Screen Layout
+
+![alt text](assets/screen.png)
+
+
+
+![alt text](assets/screen2.png)
+![alt text](assets/screen3.png)
+![alt text](assets/screen4.png)
+![alt text](assets/screen5.png)
+![alt text](assets/screen6.png)
 
 These buttons will be enabled or disabled depending on the inspection stage you are in.
 
