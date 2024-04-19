@@ -6,8 +6,6 @@ A video always helps at this point. The sequence you need to follow to start the
 
 - Turn on the **LED Panels** using the remote control (ON button). You can adjust the brightness with the UP and DOWN arrows. Set it to maximum if your warehouse lighting environment is dark. Set it to about 80% of its maximum brightness for daylight working conditions.
 - Turn on the **Sony** camera. Previously connected to the microcomputer and with the battery dummy already inserted.
-- Switch on the Raspberry 400. It will check if the camera is OK, sending a set of commands that will prepare the camera for the inspection process.
-- Wait for the system to boot. You will see in your monitor how the OS start and the inspection software gets ready.
 - Insert your user credentials and click on **SUBMIT**. If there was a previous REFERENCE image, it will be loaded.
 - Start your inspection process setting a **REFERENCE** image and then, taking photos of the circuits/ panels to be integrity checked.
 
