@@ -2,34 +2,38 @@
 
 ## Action buttons
 
-Within this section of the interface you can see your unique customer **identifier**. This identifier serves as a distinctive marker, distinguishing you amidst the myriad of clients or users within the system. Positioned prominently on the screen, it acts as a gateway to your **personalized experience**, granting access to a plethora of tailored features and functionalities.
+### Start inspection
 
-![alt text](assets/screen.png)
+In the upper left corner, you'll find the **"Start Inspection"** button. A simple click triggers a sequence of actions to inspect your UUI, making the process faster and easier by detecting any **errors.**
 
-In the upper left side of the scrren you find the button **"start inspection"** to initiate a process of meticulous examination and evaluation. With a simple click, you set into motion a sequence of actions that will culminate in an **inspection** of your UUI detecting any possible errors to make the process **quicker and simpler**.
+![alt text](assets/SCREEN.png)
 
-![alt text](assets/screen2.png)
+### Inner workings
 
-Next, in the right side the area indicated in the image shows an inside at the **application's operational prowess**: the area where all processes are meticulously documented. Here lies a window into the application's inner workings, offering a comprehensive overview of tasks executed, resources allocated, and outcomes achieved. With each entry in the log, a trail of **breadcrumbs** is laid, guiding users through the labyrinth of operations undertaken by the application, providing clarity, transparency, and invaluable insights into its **functionality and performance**.
+On the right side, the highlighted area reveals the application's **operational details**, documenting tasks, resources, and outcomes. This log serves as a guide, offering clarity and insights into the application's **functionality and performance.**
 
-![alt text](assets/screen4.png)
+![alt text](assets/SCRREN2.png)
 
-This is the **focal part**, the main part where the image your are working on is. Being the **REFERENCE** or the **UUI**, here you can work with them, adding functions or simply marking the errors.
+### Main section
 
-![alt text](assets/screen5.png)
+This is the main section where you work with the images, whether it's the **REFERENCE** or the **UUI.** Here, you can add functions or mark errors.
 
-Within this section of the interface, you'll encounter **two distinct parts**. The first part showcases the **REFERENC**E image, serving as a standard for comparison. Here, you'll find a visual representation of what an ideal **PCB** should look like, providing a benchmark against which you'll assess the **UUI**.
+![alt text](assets/SCREEN3.png)
 
-Under the **REFERENCE** image is the second part, where you'll find the **UUI** image. This image presents the actual PCB currently under scrutiny.Together, these images facilitate a **side-by-side comparison**.
+### Side-by-side comparison
 
-![alt text](assets/screen6.png)
+In this interface section, you'll find two parts. The first displays the **REFERENCE**** image, serving as a standard for comparison, while the second part shows the **UUI** image. These images enable a **side-by-side comparison.**
 
-In this part of the screen, you'll see a bunch of **buttons** and options explained below. These buttons are like **tools** that help you do different things in the program. So, take your time to get to know these buttons and what they can do. They're here to help you make the most out of the program and get your work done **faster**.
+![alt text](assets/SCREEN4.png)
 
-![alt text](assets/screen3.png)
+### Buttons panel
+
+Here, you'll find various **buttons and options**, like tools, to help you navigate the program. Take your time to explore them, they're designed to **optimize** your workflow and speed up your tasks.
+
+![alt text](assets/SCREEN5.png)
 
 
-**Start the inspection process**. This button is enabled only after you have a REFERENCE and TO BE INSPECTED images already set. Keyboard shortcut: **ENTER**. When clicked, the AOI will inspect the image taken for the circuit/panel and look for faults. If the Auto-analysis is enabled, the AOI will automatically inspect the last photo taken, so this button will be disabled
+**Start the inspection process**. This button is enabled only after you have a **REFERENCE** and **UUI** images already set. Keyboard shortcut: **ENTER**. When clicked, the AOI will inspect the image taken for the circuit/panel and look for faults. If the Auto-analysis is enabled, the AOI will automatically inspect the last photo taken, so this button will be disabled
 
  ![alt text](assets/menu.png)
 
