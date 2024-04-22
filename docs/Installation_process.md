@@ -67,7 +67,7 @@ To install it, **download the software**, clicking on the button above.
 After installing the software, you will find several subfolder inside \Programs\AgnosPCB\
 
 
-**FOLDERs use:**
+**FOLDER use:**
 
 - **REFERENCE**: the suggested location of the GOLDEN SAMPLES / REFERENCES images of the PCBAs
 - **PCB_IN**: the inspection tool will look for new images of the circuit to be inspected inside this folder. If you are not using our inspection platform, you have to set this folder as the default destination for the photographs taken (check image below to see how to do it)
@@ -78,7 +78,7 @@ AgnosPCB inspection tool: **User interface elements**
 
 Upon launching the AgnosPCB inspection tool software, the user interface will appear. It has different panels and inspection areas:
 
-- **Control buttons:** all the actions related to the insepction process are triggered here. Take a photo of a REFERENCE PCBA/panel, create an exclusion area….
+- **Control buttons:** all the actions related to the inspection process are triggered here. Take a photo of a REFERENCE PCBA/panel, create an exclusion area….
 - **Log box:** provides useful information (and tips) about the inspection process.
 REFERENCE Magnification area (green) : The “golden sample” image. The mouse´s cursor dictates what can be seen here.
 - **UNIT UNDER INSPECTION Magnification area (orange)**: this is the image of the panel to be inspected. 
@@ -91,7 +91,7 @@ REFERENCE Magnification area (green) : The “golden sample” image. The mouse�
 
 **Wired internet** connection or Fiber internet service speed: 100-1000Mbps*
 
-The processing time is **highly dependent** on the transmission speed of the internet connection. The faster the speed, the faster the inspection. Wired connection to the router is **highly recommended.**
+The processing time is **highly dependent** on the transmission speed of the internet connection. The faster the speed, the faster the inspection. Wired connection to the router is highly recommended.
 
 The **INTEL NUC** will be in charge of controlling the camera, adjusting the optical parameters to get the best possible image of the circuit/ panel to be inspected.
 
@@ -107,7 +107,7 @@ You can launch the AgnosPCB inspection tool double-clicking on its Desktop´s sh
 
 The user interface has these panels and inspection windows:
 
-- **Control buttons**: all the actions related to the insepction process are triggered here. Take a photo of a REFERENCE PCBA/panel, create an exclusion area….
+- **Control buttons**: all the actions related to the inspection process are triggered here. Take a photo of a REFERENCE PCBA/panel, create an exclusion area….
 - **Log box**: provides useful information (and tips) about the inspection process.
 - **REFERENCE Magnification area (green)** : The “golden sample” image. The mouse´s cursor dictates what can be seen here.
 - **UNIT UNDER INSPECTION Magnification area (orange)**: this is the image of the panel to be inspected. 

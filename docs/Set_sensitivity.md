@@ -1,18 +1,18 @@
 # Set sensitivity
 
-Sensitivity refers to the degree of **meticulousness or strictness** employed by the inspection system when scanning for errors. Essentially, it governs the system's ability to identify even the smallest discrepancies or anomalies within the **inspected materials.**
+Sensitivity refers to the degree of meticulousness or strictness employed by the inspection system when scanning for errors. Essentially, it governs the system's ability to identify even the smallest discrepancies or anomalies within the inspected materials.
 
 At AgnosPCB, we provide users with the **flexibility** to adjust sensitivity levels according to their specific requirements. We offer three distinct sensitivity settings: **normal, high, and very high**. Each setting represents a different degree of stringency in error detection.
 
-**Normal Sensitivity:** This is the **default** sensitivity setting and is typically sufficient to detect the majority of errors within the inspected components. It strikes a balance between thoroughness and efficiency, making it suitable for most inspection scenarios.
+**Normal Sensitivity:** This is the default sensitivity setting and is typically sufficient to detect the majority of errors within the inspected components. It strikes a balance between thoroughness and efficiency, making it suitable for most inspection scenarios.
 
 ![alt text](assets/normal-sensitivity.png)
 
-**High Sensitivity:** For users who desire a more comprehensive inspection process or are dealing with particularly **intricate or delicate components**, the high sensitivity setting offers an increased level of scrutiny. It is designed to detect even the slightest deviations or abnormalities, ensuring a thorough examination of the materials.
+**High Sensitivity:** For users who desire a more comprehensive inspection process or are dealing with particularly intricate or delicate components, the high sensitivity setting offers an increased level of scrutiny. It is designed to detect even the slightest deviations or abnormalities, ensuring a thorough examination of the materials.
 
 ![alt text](assets/high-sensitivity.png)
 
-**Very High Sensitivity:** This setting represents the highest level of stringency in error detection and is ideal for situations where absolute **precision** is paramount. It leaves no room for error, meticulously scrutinizing every detail to identify even the most minute flaws or inconsistencies.
+**Very High Sensitivity:** This setting represents the highest level of stringency in error detection and is ideal for situations where absolute precision is paramount. It leaves no room for error, meticulously scrutinizing every detail to identify even the most minute flaws or inconsistencies.
 
 ![alt text](assets/very-high-sensitivity.png)
 

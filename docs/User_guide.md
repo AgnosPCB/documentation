@@ -21,7 +21,7 @@ Upon launching the Agnospcb inspection tool software, the user interface will ap
 
  **This button can be used for:**
 
-1) **SET** a **REFERENCE** image: PRESS it for **5 seconds** until you hear the camera shooting. The AOI software will use that image as **REFERENCE** to compare all the next images of the circuits.
+1) **SET** a **REFERENCE** image: PRESS it for 5 seconds until you hear the camera shooting. The AOI software will use that image as **REFERENCE** to compare all the next images of the circuits.
 
 2) **INITIALIZE** the inspection process: Just press it for a second and the camera will capture an image of the circuit / panel to be analyzed. Alternatively, you can click, with the mouse, on the INSPECTION BUTTON (icon below) on the user interface to do the same.
 
@@ -64,7 +64,7 @@ All the inspection results will be stored in the PCB_OUT folder you will find in
 
 ![alt text](assets/CAMER_INSPECTION.PNG)
 
-First, tap on the round button indicated above. The select rotating the dial, the Aperture MODE **(A)**. Then, using the same dial, select the value F8.0 (right image). **Setting the aperture to F8.0 will let you get the most detailed photos of your circuits / panels.**
+First, tap on the round button indicated above. The select rotating the dial, the Aperture MODE **(A)**. Then, using the same dial, select the value F8.0 (right image). Setting the aperture to F8.0 will let you get the most detailed photos of your circuits / panels.
 
 With some tips about how to improve the fault detection results and comments about what not to do.
 

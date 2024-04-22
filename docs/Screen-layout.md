@@ -4,13 +4,13 @@
 
 ### Start inspection
 
-In the upper left corner, you'll find the **"Start Inspection"** button. A simple click triggers a sequence of actions to inspect your UUI, making the process faster and easier by detecting any **errors.**
+In the upper left corner, you'll find the **"Start Inspection"** button. A simple click triggers a sequence of actions to inspect your UUI, making the process faster and easier by detecting any errors.
 
 ![alt text](assets/SCREEN.png)
 
 ### Inner workings
 
-On the right side, the highlighted area reveals the application's **operational details**, documenting tasks, resources, and outcomes. This log serves as a guide, offering clarity and insights into the application's **functionality and performance.**
+On the right side, the highlighted area reveals the application's **operational details**, documenting tasks, resources, and outcomes. This log serves as a guide, offering clarity and insights into the application's functionality and performance.
 
 ![alt text](assets/SCRREN2.png)
 
@@ -22,7 +22,7 @@ This is the main section where you work with the images, whether it's the **REFE
 
 ### Side-by-side comparison
 
-In this interface section, you'll find two parts. The first displays the **REFERENCE**** image, serving as a standard for comparison, while the second part shows the **UUI** image. These images enable a **side-by-side comparison.**
+In this interface section, you'll find two parts. The first displays the **REFERENCE** image, serving as a standard for comparison, while the second part shows the **UUI** image. These images enable a side-by-side comparison.
 
 ![alt text](assets/SCREEN4.png)
 
@@ -37,15 +37,15 @@ Here, you'll find various **buttons and options**, like tools, to help you navig
 
  ![alt text](assets/menu.png)
 
-**Reference moaic:** in the reference mosaic you can store references as files.
+**Reference mosaic:** in the reference mosaic you can store references as files.
 
 ![alt text](assets/menu-mosaic.png)
 
-**LOAD REFERENCE as file**: Use this ICON to load a **“reference”** or **“to be inspected”** photo. If you have stored a **“reference”** image and want to retrieve it to use it again, use this button. You can do the same with an image of a **“to be inspected”** circuit/ panel. This button will get non-functional if you have the **AUTO-PROCESSING** option enable, which will automatically process every photo taken with the camera. All the REFERENCE photos can be found inside the folder HOME/APP/REFERENCE. In a folder named after the YEAR-MONTH-DAY-TIME moment when the photo was taken. **You can rename the photos as you please**.
+**LOAD REFERENCE as file**: Use this ICON to load a **“reference”** or **“to be inspected”** photo. If you have stored a **“reference”** image and want to retrieve it to use it again, use this button. You can do the same with an image of a **“to be inspected”** circuit/ panel. This button will get non-functional if you have the **AUTO-PROCESSING** option enable, which will automatically process every photo taken with the camera. All the REFERENCE photos can be found inside the folder HOME/APP/REFERENCE. In a folder named after the YEAR-MONTH-DAY-TIME moment when the photo was taken. You can rename the photos as you please.
 
 ![alt text](assets/menu-load-ref-file.png)
 
-**Swap:** with this you can swap betewn a reference and an UUI.
+**Swap:** with this you can swap between a reference and an UUI.
 
 ![alt text](assets/menu-tab.png)
 
@@ -73,7 +73,7 @@ Here, you'll find various **buttons and options**, like tools, to help you navig
 
 ![alt text](assets/menu-report.png)
 
-**Take REFERENCE photo:** Take a photo of what will be a REFERENCE PCB/Panel. Shorcut: R
+**Take REFERENCE photo:** Take a photo of what will be a REFERENCE PCB/Panel. Shortcut: R
 
 ![alt text](assets/menu-take-ref.png)
 

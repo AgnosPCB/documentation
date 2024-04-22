@@ -24,15 +24,15 @@ A video always helps at this point. The sequence you need to follow to start the
 
 You need an account **user** ID and **password** to use the Agnospcb Inspection tool. You can get one for **free to test the service capabilities​.**
 
-Populate the **USER** and **PASSWORD** fields with your details and click on **SUBMIT**. Your login info will be stored (encrypted) so you do no have to input them again.
+Populate the USER and PASSWORD fields with your details and click on **SUBMIT**. Your login info will be stored (encrypted) so you do no have to input them again.
 
-The Agnospcb Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit/panel (“golden sample”) with all the photos you will take of the circuit to be inspected (photos to **“ANALYZE“**)
+The Agnospcb Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit/panel (“golden sample”) with all the photos you will take of the circuit to be inspected (photos to “ANALYZE“)
 
 ![alt text](assets/image.png)
 
 All the faults found on the inspected circuit/panel will be highlighted (if any).
 
-To set the **REFERENCE**, click on the ICON **“LOAD”**and select the desired photo or press the key R to order the camera take a photo of what will be the **REFERENCE** circuit/panel. If you are using the Agnospcb microcomputer, you can create a REFERENCE image just pressing the INSPECTION button for 4 seconds. That will take a photo of what will be the “REFERENCE” circuit/panel and set it on the LEFT canvas. 
+To set the **REFERENCE**, click on the ICON **“LOAD”** and select the desired photo or press the key R to order the camera take a photo of what will be the **REFERENCE** circuit/panel. If you are using the Agnospcb microcomputer, you can create a REFERENCE image just pressing the INSPECTION button for 4 seconds. That will take a photo of what will be the “REFERENCE” circuit/panel and set it on the LEFT canvas. 
 
 ???+ note "Note"
 
@@ -54,9 +54,9 @@ After signing-in, the software will automatically retrieve the last REFERENCE ph
 ![alt text](assets/111.PNG){ align=right }
 
 **COMPUTERS USERS: Auto Analyze STEPS:**
-SET your **REFERENCE** image (Button **REFERENCE**)
+SET your **REFERENCE** image (Button REFERENCE)
 ENABLE “AUTO ANALYZE” ticking its box
-Take a photo of a circuit you want to inspect using the **REMOTE app** (You can use the key ” 1″ from your keyboard to take the photo when the **REMOTE tool** is active) or using your own camera system.
+Take a photo of a circuit you want to inspect using the **REMOTE app** (You can use the key ” 1″ from your keyboard to take the photo when the REMOTE tool is active) or using your own camera system.
 The software will display the result of the inspection within seconds
 **REPEAT:** Take another photo of the next PCBA you want to inspect. The software will process it automatically.
 
@@ -83,7 +83,7 @@ Pressing the button will open a window where you can rename the file, add commen
 
 ![alt text](assets/GENERATE-REPORT.png)
 
-To view the generated repote you must go to the **¨PCB_OUT¨ folder**, where all generated reports will be stored.
+To view the generated report you must go to the **¨PCB_OUT¨ folder**, where all generated reports will be stored.
 
 ![alt text](assets/PCB-OUT.png)
 

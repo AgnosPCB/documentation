@@ -7,11 +7,11 @@ Generating a report is a straightforward process that begins with performing an 
 
 Once you've completed the inspection and are ready to generate the report, the first step is to locate and click on the **"finish inspection"** button.
 
-After clicking this button, a new screen will appear, providing you with options to customize the report. Here, you can rename the file, add comments, and indicate whether the **UUI** is okay or if it contains unpassable errors. Once you've made your selections, a pdf report will be **automatically generated**
+After clicking this button, a new screen will appear, providing you with options to customize the report. Here, you can rename the file, add comments, and indicate whether the **UUI** is okay or if it contains unpassable errors. Once you've made your selections, a pdf report will be automatically generated
 
 ![alt text](assets/finish-inspecttion-barcode.png)
 
-Following the generation of the report, it will be conveniently saved in the **PCB_OUT folder**. This folder serves as the default location for all generated reports, ensuring easy access to your **inspection data.**
+Following the generation of the report, it will be conveniently saved in the **PCB_OUT folder**. This folder serves as the default location for all generated reports, ensuring easy access to your inspection data.
 
 ![alt text](assets/PCB-OUT.png)
 
