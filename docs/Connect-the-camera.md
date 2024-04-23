@@ -53,8 +53,8 @@ In the case you have changed, accidentally, the default camera´s configuration,
 
 If you want to know how to connect the specific version you are using you can see it in the following sections:
 
-**[How to connect to the microcomputer](Connect_to_the_microcomputer.md "Title")**
+[How to connect to the microcomputer](Connect_to_the_microcomputer.md "Title")
 
-**[How to connect to the AgnosPCB Laptop](Connect_to_the_AgnosPCB_Laptop.md "Title")**
+[How to connect to the AgnosPCB Laptop](Connect_to_the_AgnosPCB_Laptop.md "Title")
 
-**[How to connect to the Nuc](Connect_to_the_Nuc.md "Title")**
+[How to connect to the Nuc](Connect_to_the_Nuc.md "Title")

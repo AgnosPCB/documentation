@@ -14,7 +14,8 @@ The processing time is highly dependent on the transmission speed of the interne
 To install it, **download the software** clicking on the button above (get the password contacting us).
 
 ![alt text](assets/software.PNG){ align=right }
-Windows OS: **After extracting** and launching the .exe file (“AgnosPCB inspection tool vX.XX.exe), the software will locally create 4 folders: BATCH / MASTER / PCB-IN and PCB_OUT
+
+Windows OS: **After extracting** and launching the .exe file (“AgnosPCB inspection tool vX.XX.exe), the software will locally create 4 folders: 
 
 
 ???+ note "Note"

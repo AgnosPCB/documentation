@@ -40,7 +40,11 @@ To set the **REFERENCE**, click on the ICON **“LOAD”** and select the desire
 
 ![alt text](assets/shot-button.PNG){ align=right }
 
-After signing-in, the software will automatically retrieve the last REFERENCE photograph used. Now, take a photo of the circuit you want to **“ANALYZE“**: 1) If you got the Agnospcb inspection platform with the microcomputer, you just need to push the INSPECTION BUTTON for a second. If the “AUTO-ANALYZE” enabled, the software will automatically process the image, otherwise, press “PROCESS IMAGE” or ENTER on your keyboard. 2) If you are using your own computer and the SONY software, click on the SHOT button.
+After signing-in, the software will automatically retrieve the last REFERENCE photograph used. Now, take a photo of the circuit you want to **“ANALYZE“**: 
+
+1) If you got the Agnospcb inspection platform with the microcomputer, you just need to push the INSPECTION BUTTON for a second. If the “AUTO-ANALYZE” enabled, the software will automatically process the image, otherwise, press “PROCESS IMAGE” or ENTER on your keyboard. 
+
+2) If you are using your own computer and the SONY software, click on the SHOT button.
 
 
 ???+ note "Note"

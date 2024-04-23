@@ -50,7 +50,7 @@ The points listed below will guide you through the steps you need to make to ins
 All the inspection results will be stored in the PCB_OUT folder you will find in the external USB drive. The REFERENCE images will be moved to the folder called “REFERENCE”. You can find all of them there , in the case you need any of the REFERENCE images previously used.
 
 
-???+ note "Note"
+???+ note inline  "Note"
 
     The “R” key from the keyboard will work as a camera trigger button too. “R” will set a REFERENCE image. “S” will take a photo of an image to be inspected.
 
