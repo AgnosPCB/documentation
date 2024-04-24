@@ -1,5 +1,12 @@
 site_name: AgnosPCB Documentation
 theme:
+  features:
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#navigation-tabs
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#anchor-tracking
+    - navigation.tracking
+    - navigation.instant
   name: material
   palette:
     primary: custom
@@ -11,6 +18,33 @@ extra_css:
   - stylesheets/agnos_colors.css
 plugins:
   - search
+   #  - Navigation
+nav:
+  - Getting started:
+    - Produts and services: 'Products-and-services.md'
+    - Account created: 'Account-created.md'
+    - Package content: 'Package_content.md'
+    - Assembly guide:
+      - Assembly guide:  'Assembly_guide.md'
+      - Connect to the Nuc: 'Connect_to_the_Nuc.md'
+      - Connect to the microcomputer: 'Connect_to_the_microcomputer.md'
+      - Connect to the AgnosPCB Laptop: 'Connect_to_the_AgnosPCB_Laptop.md'
+      - Connect to the camera: 'Connect-the-camera.md'
+    - Installation process: 'Installation_process.md'
+  - How to use it:
+    - User guide: 'User_guide.md'
+    - Inspection workflow: 'Inspection_workflow.md'
+    - Screen layout:
+      - Screen layout:  'Screen-layout.md'
+      - Barcode reader: 'Barcode_reader.md'
+      - Generating a report: 'Generating _a_report.md'
+      - Set exclusion area: 'Set_exclusion_area.md'
+      - Set sensitivity: 'Set_sensitivity.md'
+      - UUI to REFERENCE: 'UUI_to_REFERENCE.md'
+  - Help:
+    - FAQ: 'FAQ.md'
+    - Troubleshooting: 'Troubleshooting.md'
+    - Update your AOI computer: 'Update-your-AOI-computer.md'
 #  - privacy
 copyright: Copyright &copy; 2023 - 2024 AgnosPCB
 markdown_extensions:
@@ -19,3 +53,6 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+
+
+

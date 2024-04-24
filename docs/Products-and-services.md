@@ -16,7 +16,7 @@ Furthermore, the inspection area provided by the platform is **27×34 cms** (10.
 
 ![alt text](assets/online.png)
 
-Link to product: https://agnospcb.com/product/agnospcb-online-inspection-plaftorm/
+[Link to product](https://agnospcb.com/product/agnospcb-online-inspection-plaftorm/)
 
 ## OFFLINE AOI inspection platform:
 
@@ -28,7 +28,7 @@ In addition, the OFFLINE AOI inspection platform boasts a generous inspection ar
 
 ![alt text](assets/ofline.png)
 
-Link to product: https://agnospcb.com/product/agnospcb-offline-inspection-plaftorm/
+[Link to product](https://agnospcb.com/product/agnospcb-offline-inspection-plaftorm/)
 
 ## API Service:
 

@@ -105,15 +105,17 @@ With this button you can select one or more areas that will be completely **igno
 ![alt text](assets/exclusion-area.png)
 
 
-![alt text](assets/erase.PNG){ align=right }
 - **Remove area**
 
 In case you have selected an area by mistake with the previous function or you do not want to keep it selected, you can use this button to **deselect it.**
 
-![alt text](assets/swap.PNG){ align=right }
+![alt text](assets/erase.PNG)
+
 - **Swap workplace**
 
 With this button you can switch between **REFERENCE** and **UUI.** You can either press the button or use the **TAB** keyboard shortcut
+
+![alt text](assets/swap.PNG)
 
 - **Sensitivity**
 The app allows you to change the sensitivity levels for error detection from **normal, high and very high**. Note that the higher the sensitivity, the more errors it can detect.
