@@ -1,24 +1,43 @@
 # Connect the camera 
 
-First, be sure to connect the **USB and battery dummy** to the camera as shown in the picture.
+___
+
+## Powering on the camera
+
+___
+
+First, be sure to connect the **micro USB cable and battery dummy** to the camera as shown in the picture:
 
 ![alt text](assets/assembly-7.PNG){ align=right }
 
 ![alt text](assets/conect_camera.PNG)
 
-## SONY Camera
+!!! warning "Important"
+    For convenience, do not mount the camera on the mast until it has been completely copnfigured.
 
-You got the SONY camera with the 50 mm 1.8f fixed lens already pre-configured but, if accidentally, its photo settings change you will need to set them again as below:
+## Parameters
 
-1. Set the mode **dial to A** (Aperture Priority) pressing the round button and selecting the A mode.
+___
 
-2) Select the value **F7.1** by turning the control dial (right image). Setting the aperture to 7.1 will let you get the most detailed photos of your PBCAs
+The SONY camera have a 50 mm 1.8f fixed lens already pre-configured but, if accidentally, its photo settings change you will need to set them again as below:
 
-3) Pressing the **MENU** button, go to setting and set the **AEL w/shutter to ON**
+**1)** Turn on the camera by moving the selector in the top of the camera to "ON".
 
-4) inside the same **MENU**, the last tab has an option called USB connection. Set it to **PC REMOTE**.
+![Camera turn on](assets/camera-on.jpg)
+
+**2)** Set the mode **dial to A** (Aperture Priority) pressing the round button and selecting the A mode.
+
+![alt text](assets/camera_dial.jpg)
+
+**)** Select the value **F7.1** by turning the control dial. Setting the aperture to 7.1 will get the most detailed photos of your PBCAs.
 
 ![alt text](assets/SONY-1.PNG)
+
+**4)** Pressing the **MENU** button, go to setting and set the **AEL w/shutter to ON**
+
+**3)** inside the same **MENU**, the last tab has an option called USB connection. Set it to **PC REMOTE**.
+
+
 ![alt text](assets/SONY-2.PNG)
 ![alt text](assets/SONY-3.PNG)
 

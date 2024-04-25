@@ -21,27 +21,28 @@ plugins:
    #  - Navigation
 nav:
   - Getting started:
-    - Produts and services: 'Products-and-services.md'
     - Account created: 'Account-created.md'
     - Package content: 'Package_content.md'
     - Assembly guide:
-      - Assembly guide:  'Assembly_guide.md'
-      - Connect to the Nuc: 'Connect_to_the_Nuc.md'
-      - Connect to the microcomputer: 'Connect_to_the_microcomputer.md'
-      - Connect to the AgnosPCB Laptop: 'Connect_to_the_AgnosPCB_Laptop.md'
+      - Platform assembly:  'Platform_assembly_guide.md'
+      - Connecting ONLINE units: 'Connect_to_the_Nuc.md'
+      - Connecting OFFLINE units: 'connecting_offline_units.md'
+      #- Connect to the AgnosPCB Laptop: 'Connect_to_the_AgnosPCB_Laptop.md'
       - Connect to the camera: 'Connect-the-camera.md'
     - Installation process: 'Installation_process.md'
   - How to use it:
     - User guide: 'User_guide.md'
     - Inspection workflow: 'Inspection_workflow.md'
-    - Screen layout:
+    - Main functions:
       - Screen layout:  'Screen-layout.md'
       - Barcode reader: 'Barcode_reader.md'
       - Generating a report: 'Generating _a_report.md'
       - Set exclusion area: 'Set_exclusion_area.md'
       - Set sensitivity: 'Set_sensitivity.md'
       - UUI to REFERENCE: 'UUI_to_REFERENCE.md'
+      - Auto processing: 'Auto_processing.md'
   - Help:
+    - General information: 'Products-and-services.md'
     - FAQ: 'FAQ.md'
     - Troubleshooting: 'Troubleshooting.md'
     - Update your AOI computer: 'Update-your-AOI-computer.md'

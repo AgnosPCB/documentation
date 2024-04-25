@@ -1,7 +1,5 @@
 # Screen Layout
 
-## Action buttons
-
 ### Start inspection
 
 In the upper left corner, you'll find the **"Start Inspection"** button. A simple click triggers a sequence of actions to inspect your UUI, making the process faster and easier by detecting any errors.

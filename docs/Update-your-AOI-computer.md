@@ -6,7 +6,7 @@ Firstly, begin by downloading the update file provided to you. This file is typi
 
 Next, you'll need to extract the contents of the ZIP file. Within the ZIP file, you should find a folder named **"AGNOS_UPDATE"**. Extract this folder onto a USB drive that you have prepared for the update process. It's important to ensure that the extracted folder on the USB drive retains the exact name "AGNOS_UPDATE". This specific naming convention ensures that the AOI computer recognizes and processes the update files correctly.
 
-![alt text](assets/AGNOS-UPDATE.png)
+![alt text](assets/AGNOS_UPDATE.png)
 
 Once you've prepared the **USB drive** with the update files, it's time to initiate the update process on your AOI computer. Begin by powering on the computer and waiting for the system desktop to fully load. Ensure that no other applications are running in the background, as this can interfere with the update process.
 
