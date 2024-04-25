@@ -34,13 +34,14 @@ nav:
   - How to use it:
     - User guide: 'User_guide.md'
     - Inspection workflow: 'Inspection_workflow.md'
-    - Screen layout:
+    - Main functions:
       - Screen layout:  'Screen-layout.md'
       - Barcode reader: 'Barcode_reader.md'
       - Generating a report: 'Generating _a_report.md'
       - Set exclusion area: 'Set_exclusion_area.md'
       - Set sensitivity: 'Set_sensitivity.md'
       - UUI to REFERENCE: 'UUI_to_REFERENCE.md'
+      - Auto processing: 'Auto_processing.md'
   - Help:
     - FAQ: 'FAQ.md'
     - Troubleshooting: 'Troubleshooting.md'
