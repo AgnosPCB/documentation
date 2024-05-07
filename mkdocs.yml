@@ -33,7 +33,7 @@ nav:
   - How to use it:
     - User guide: 'User_guide.md'
     - Inspection workflow: 'Inspection_workflow.md'
-    - How to update your unit: ''
+    - How to update your unit: 'updating_your_unit.md'
     - Main functions:
       - Screen layout:  'Screen-layout.md'
       - Barcode reader: 'Barcode_reader.md'
