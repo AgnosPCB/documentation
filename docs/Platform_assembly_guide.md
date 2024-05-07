@@ -47,4 +47,8 @@ Attach the camera bracket and the camera to the **mast** as shown:
 
 ![Attach the camera bracket and camera to the mast by inserting the bracket into the mast and securing it with the nut, followed by the mast cap.](assets/assemble5.PNG)
 
-![Attach the camera to the bracket by tightening the screw and ensuring a secure fit. Then, connect the battery dummy and the USB cable.](assets/assembly-6.jpg)
+![alt text](assets/assembly-6.jpg)
+
+!!! warning "important"
+
+    All the PCB to be inspected have to be perfectly leveled. If the panel/circuit has a certain tilt angle, not all the elements shapes will be perfectly defined limiting the software recognition capacities.
