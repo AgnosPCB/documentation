@@ -10,7 +10,7 @@ We have created an account for you, please take note of the following login cred
 -  User ID: **[Your assigned User ID]**
 - Password: **[Your assigned Password]**
 
-![Upon launching the app, a new tab labeled "User Login" will appear. This is where you will enter your username and password.](assets/log-in.png) 
+![User Login screen](assets/log-in.png) 
 
 
 In addition to your login credentials, your account includes access to **[number of inspections selected]** inspections, empowering you to initiate inspections and make the most of our services.

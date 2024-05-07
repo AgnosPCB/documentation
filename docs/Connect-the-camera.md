@@ -8,9 +8,9 @@ ___
 
 First, be sure to connect the **micro USB cable and battery dummy** to the camera as shown in the picture:
 
-![The camera is mounted on the mast and connects to the USB and battery dummy.](assets/assembly-7.PNG){ align=right }
+![Camera mounted on the mast](assets/assembly-7.PNG){ align=right }
 
-![Connecting USB and battery dummy to the camera, connect the battery dummy to a 5V / 3A USB charger.](assets/conect_camera.PNG)
+![Camera connections](assets/conect_camera.PNG)
 
 !!! warning "Important"
     For convenience, do not mount the camera on the mast until it has been completely copnfigured.
