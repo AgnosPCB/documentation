@@ -14,7 +14,7 @@ In addition, the ONLINE AOI inspection platform prioritizes **data privacy and s
 
 Furthermore, the inspection area provided by the platform is **27×34 cms** (10.6×13.3 inches). 
 
-![alt text](assets/online.png)
+![ONLINE AOI inspection platform](assets/online.png)
 
 [Link to product](https://agnospcb.com/product/agnospcb-online-inspection-plaftorm/)
 
@@ -26,7 +26,7 @@ One of the most compelling aspects of the AOI OFFLINE AgnosPCB system is its lig
 
 In addition, the OFFLINE AOI inspection platform boasts a generous inspection area spanning **27×34 cms** (10.6×13.3 inches). This expansive coverage ensures that a wide array of electronic panels and circuits can be thoroughly examined with precision and accuracy.
 
-![alt text](assets/ofline.png)
+![OFFLINE AOI inspection platform](assets/ofline.png)
 
 [Link to product](https://agnospcb.com/product/agnospcb-offline-inspection-plaftorm/)
 
@@ -36,7 +36,7 @@ The **API Service** represents a dynamic solution meticulously crafted to seamle
 
 For users equipped with a robust **optical system** seeking to augment their capabilities with the unparalleled prowess of AgnosPCB, the API Service offers a straightforward pathway. Simply upload an image of your PCB or panel to our cloud server utilizing the intuitive API, and within moments, receive a comprehensive inspection result that encapsulates the power of AgnosPCB's neural network technology.
 
-![alt text](assets/API.png)
+![API Service](assets/API.png)
 
 ### OFFLINE AOI Rental Program
 

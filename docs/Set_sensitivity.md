@@ -6,20 +6,20 @@ At AgnosPCB, we provide users with the **flexibility** to adjust sensitivity lev
 
 **Normal Sensitivity:** This is the default sensitivity setting and is typically sufficient to detect the majority of errors within the inspected components. It strikes a balance between thoroughness and efficiency, making it suitable for most inspection scenarios.
 
-![alt text](assets/normal-sensitivity.png)
+![PCB with errors in normal sensitivity](assets/normal-sensitivity.png)
 
 **High Sensitivity:** For users who desire a more comprehensive inspection process or are dealing with particularly intricate or delicate components, the high sensitivity setting offers an increased level of scrutiny. It is designed to detect even the slightest deviations or abnormalities, ensuring a thorough examination of the materials.
 
-![alt text](assets/high-sensitivity.png)
+![PCB with errors in high sensitivity](assets/high-sensitivity.png)
 
 **Very High Sensitivity:** This setting represents the highest level of stringency in error detection and is ideal for situations where absolute precision is paramount. It leaves no room for error, meticulously scrutinizing every detail to identify even the most minute flaws or inconsistencies.
 
-![alt text](assets/very-high-sensitivity.png)
+![PCB with errors in very high sensitivity](assets/very-high-sensitivity.png)
 
 It's important to note that while higher sensitivity levels increase the likelihood of detecting errors, they may also result in a higher incidence of **false positives**. Therefore, it's essential to strike a balance between sensitivity and practicality, choosing a level that best aligns with the specific requirements of the inspection task at hand.
 
 Adjusting the sensitivity level during inspection can significantly impact error detection. Increasing sensitivity from normal to very high, as depicted in the images, can potentially double error detection. This adjustment is easily made using the **provided button.**
 
-![alt text](assets/nomal-sensitivity-button.png)
-![alt text](assets/high-sensitivity-button.png)
-![alt text](assets/Very-high-sensitivity-button.png)
+![normal sensitivity button](assets/nomal-sensitivity-button.png)
+![high sensitivity button](assets/high-sensitivity-button.png)
+![very high sensitivity button](assets/Very-high-sensitivity-button.png)

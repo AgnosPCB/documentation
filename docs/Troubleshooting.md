@@ -37,7 +37,7 @@
     
     3. USB Cable Connection: Verify that the USB cable connected from the camera to the CPU unit is the straight cable supplied (not the angled one). Ensure it is connected to a USB 3.0 port of the NUC (identified by blue USB connectors).
     
-    4. Camera Configuration: Confirm that the camera is configured correctly. For detailed instructions on camera setup, including "[How to connect the camera](Connect-the-camera.md "Title")", refer to the user manual for a better and further explanation.
+    4. Camera Configuration: Confirm that the camera is configured correctly. For detailed instructions on camera setup, including "[How to connect the camera](Connect-the-camera.md "How to connect the camera")", refer to the user manual for a better and further explanation.
     
     5. Try Alternate USB Cable and Port: If possible, try using another USB cable and a different USB port on the CPU unit.
     

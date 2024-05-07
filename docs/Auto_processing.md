@@ -8,17 +8,17 @@ This feature is particularly beneficial in manufacturing environments where PCBs
 
 In a scenario where autoprocessing remains deactivated, our inspection process begins with the essential step of loading the **REFERENCE**. This REFERENCE serves as our benchmark, providing a standard against which we'll compare the subsequent **UUI**. 
 
-![alt text](assets/autoprocess-ref.png)
+![REFERENCE photo](assets/autoprocess-ref.png)
 
 Once the **REFERENCE** is loaded, we proceed to introduce the **UUI**. However, since autoprocessing isn't engaged, the program refrains from immediately analyzing the image or initiating fault detection algorithms. 
 
-![alt text](assets/autprocessing.UUI.png)
+![Processing UUI](assets/autprocessing.UUI.png)
 
 This delay requires manual intervention to **activate UUI processing.** In this way, we activate the programme's ability to detect errors within the **UUI**, ensuring a thorough evaluation against the established **REFERENCE**.
 
-![alt text](assets/Autoprocess-faults.png)
+![UUI with errors and autoprocess on](assets/Autoprocess-faults.png)
 
 Conversely, with autoprocessing activated, the workflow undergoes a significant transformation. After saving the **REFERENCE** and loading the **UUI**, the program seamlessly transitions into autoprocessing mode. Here, the program takes the reins, automatically initiating image processing and error detection algorithms. 
 
-![alt text](assets/autoprocess-auto.png)
+![Reference photo to UUI photo automatically processed](assets/autoprocess-auto.png)
 

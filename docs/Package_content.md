@@ -18,5 +18,5 @@ This is what Agnospcb’s neural network needs to be able to perfectly detect an
 10. 2m USB 2.0 micro-USB cable (x2)
 11. **OPTIONAL** 22¨IPS ASUS FULL-HD Light-weight **MONITOR**
 
-![alt text](assets/gvfytf.PNG)
+![Platform](assets/gvfytf.PNG)
 

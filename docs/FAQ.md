@@ -2,7 +2,7 @@
 
 ??? question "Is there a rental/ trial plan for Online and Offline inspection platform to try it?"
 
-    Yes, we have a renting plan for OFFLINE units for a minimum of 2 month. If you finally decide to kept it, the renting cost will be discounted from the final price of the unit. For further information click "[here](Products-and-services.md "Title")"
+    Yes, we have a renting plan for OFFLINE units for a minimum of 2 month. If you finally decide to kept it, the renting cost will be discounted from the final price of the unit. For further information click "[here](Products-and-services.md "Products and services")"
 
 ??? question "if credits are over can we use it as Image capture for manual inspections?"
 

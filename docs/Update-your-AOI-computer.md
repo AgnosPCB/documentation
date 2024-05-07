@@ -4,9 +4,9 @@ To update your **AOI computer**, you'll need to follow a series of steps careful
 
 Firstly, begin by downloading the update file provided to you. This file is typically packaged in a ZIP format for easy downloading. Once the download is complete, locate the ZIP file on your computer.
 
-Next, you'll need to extract the contents of the ZIP file. Within the ZIP file, you should find a folder named **"AGNOS_UPDATE"**. Extract this folder onto a USB drive that you have prepared for the update process. It's important to ensure that the extracted folder on the USB drive retains the exact name "AGNOS_UPDATE". This specific naming convention ensures that the AOI computer recognizes and processes the update files correctly.
+Next, you'll need to extract the contents of the ZIP file. Within the ZIP file, you should find a folder named **"AGNOS_UPDATE"**. Extract this folder onto a USB drive that you have prepared for the update process. It's important to ensure that the extracted folder on the USB drive retains the exact name **"AGNOS_UPDATE"**. This specific naming convention ensures that the AOI computer recognizes and processes the update files correctly.
 
-![alt text](assets/AGNOS_UPDATE.png)
+![AGNOS_UPDATE folder](assets/AGNOS_UPDATE.png)
 
 Once you've prepared the **USB drive** with the update files, it's time to initiate the update process on your AOI computer. Begin by powering on the computer and waiting for the system desktop to fully load. Ensure that no other applications are running in the background, as this can interfere with the update process.
 
@@ -16,6 +16,6 @@ Upon inserting the **USB drive**, you should notice that a terminal window autom
 
 Once the update process is complete, you'll receive a confirmation message within the terminal window. At this point, it's safe to remove the USB drive from the computer. Your AOI computer has now been successfully updated with the latest changes and improvements.
 
-![alt text](assets/cropped-agnosPCB-favicoN.png){ align=right }
+![AgnosPCB logo](assets/cropped-agnosPCB-favicoN.png){ align=right }
 
 By following these steps meticulously, you can ensure that your AOI computer receives the necessary updates without encountering any issues. If you encounter any difficulties or have questions during the update process, don't hesitate to seek further assistance.

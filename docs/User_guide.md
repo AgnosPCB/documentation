@@ -10,12 +10,12 @@ Upon launching the Agnospcb inspection tool software, the user interface will ap
 - **Activity log**: provides useful information about the inspection process
 - **Settings**: where the configuration ICONs are. Useful tools in your inspection process.
 
-  ![alt text](assets/ui-pcb.png)
+  ![Screen](assets/ui-pcb.png)
 
 
 ## The inspection button
 
-![alt text](assets/inspection_button.PNG){ align=right }
+![Inspection button](assets/inspection_button.PNG){ align=right }
 
 **The Inspection button** will let you take the best possible photo of your circuits / panels just pressing it. It will quickly start the process of configuring the camera with the best parameters, prepare the software, so it can use the latest photo taken, and analyze it looking for faults. Just in a matter of a fraction of a second.
 
@@ -50,25 +50,25 @@ The points listed below will guide you through the steps you need to make to ins
 All the inspection results will be stored in the PCB_OUT folder you will find in the external USB drive. The REFERENCE images will be moved to the folder called “REFERENCE”. You can find all of them there , in the case you need any of the REFERENCE images previously used.
 
 
-???+ note inline  "Note"
+!!! note inline  "Note"
 
     The “R” key from the keyboard will work as a camera trigger button too. “R” will set a REFERENCE image. “S” will take a photo of an image to be inspected.
 
-???+ note "Note"
+!!! note "Note"
 
     If you activate the AUTO-ANALYSIS option, all the photos taken pressing “R” or the INSPECTION BUTTON for one second, will be automatically processed.
 
-???+ warning "Important"
+!!! warning "Important"
 
     By default, we send the camera already configured, but from time to time, re-check the camera is operating with the Aperture MODE enabled.
 
-![alt text](assets/CAMER_INSPECTION.PNG)
+![Camera parts](assets/CAMER_INSPECTION.PNG)
 
 First, tap on the round button indicated above. The select rotating the dial, the Aperture MODE **(A)**. Then, using the same dial, select the value F8.0 (right image). Setting the aperture to F8.0 will let you get the most detailed photos of your circuits / panels.
 
 With some tips about how to improve the fault detection results and comments about what not to do.
 
-![alt text](assets/TIPS.PNG)
+![Lights on the sides of the camera and no PCB rotation](assets/TIPS.PNG)
 
 ## Light sources and panel/circuit orientation
 
@@ -78,7 +78,7 @@ The inspection platform uses 2 LED lights and diffuser panels to get rid of cast
 
 The software is capable, within a second, of auto-aligning the images, but the light projected will fall very differently over the electronic components if the circuit is rotated by 90/180 degrees. That will lead the neural network to make mistakes when looking for faults. Try to avoid it always placing the panels/circuits with the same orientation.
 
-![alt text](assets/optical-digital.PNG){ align=right }
+![Optical zoom and digital zoom](assets/optical-digital.PNG){ align=right }
 
 ## Optical/Digital Zoom
 
@@ -88,7 +88,7 @@ If you are using our inspection platform and are inspecting a small circuit/pane
 
 Do **not use the camera controls** to increase the size of the circuit/ panel. That will only degrade the quality of the image taken. The laptop will take control of the camera and set the best configuration under every circumstance.
 
-![alt text](assets/image.png)
+![Selected PCB area](assets/image.png)
 
 ## Cropping tool
 
@@ -100,7 +100,7 @@ The software will automatically look for the same area in every photo taken of t
 
 ## Circuit / Panel with many small electronic elements
 
-![alt text](assets/circuit.PNG)
+![PCB with many small electronic elements](assets/circuit.PNG)
 
 The neural network powering the Agnospcb software behaves as a very skilled technician. But it can only detect faults **that can be seen**. Any minor displacement, solder paste change or short-circuit “hidden” under a shadow or light reflection may become **identifiable** if we **slightly** change **the lighting conditions / orientation of the panel/ circuit.** 
 

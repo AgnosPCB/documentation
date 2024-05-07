@@ -13,12 +13,12 @@ The processing time is highly dependent on the transmission speed of the interne
 
 To install it, **download the software** clicking on the button above (get the password contacting us).
 
-![alt text](assets/software.PNG){ align=right }
+![Folders and contents](assets/software.PNG){ align=right }
 
 Windows OS: **After extracting** and launching the .exe file (“AgnosPCB inspection tool vX.XX.exe), the software will locally create 4 folders: 
 
 
-???+ note "Note"
+!!! note "Note"
 
     Additionally, you need to install the SONY DESKTOP software if you are not using our inspection platform to take the photos of your PCB/As folders
 
@@ -29,7 +29,7 @@ Windows OS: **After extracting** and launching the .exe file (“AgnosPCB inspec
 - **PCB_IN:** the inspection tool will look for new images of the circuit to be inspected inside this folder. If you are using our inspection platform, you have to set this folder as the default destination for the photographs taken (check image below to see how to do it)
 - **PCB_OUT:** the destination folder of all the inspection results images.
 
-![alt text](assets/software-2.PNG)
+![Selecting the FILE menu, then save folder and choose PCB_IN.](assets/software-2.PNG)
 
 In the **REMOTE software**, go to the **File** menu
 
@@ -84,7 +84,7 @@ Upon launching the AgnosPCB inspection tool software, the user interface will ap
 REFERENCE Magnification area (green) : The “golden sample” image. The mouse´s cursor dictates what can be seen here.
 - **UNIT UNDER INSPECTION Magnification area (orange)**: this is the image of the panel to be inspected. 
 
-![alt text](assets/pc-instalation-process.PNG)
+![Screen layout](assets/pc-instalation-process.PNG)
 
 ## Intel Nuc software user guide (Linux)
 
@@ -98,11 +98,11 @@ The **INTEL NUC** will be in charge of controlling the camera, adjusting the opt
 
 **Inspection button**: Pressing this button, you can trigger the important events of the inspection process: set a REFERENCE image or START the inspection process, taking a new photograph.
 
-???+ note "Note"
+!!! note "Note"
 
     You need to connect your Intel NUC to your internet network. To do that, click on the NETWORK icon shown below, pick the right network and type the password.
 
-![alt text](assets/TURN-OFF-WIFI.PNG){ align=right }
+![Internet connection selection screen](assets/TURN-OFF-WIFI.PNG){ align=right }
 
 You can launch the AgnosPCB inspection tool double-clicking on its Desktop´s shortcut.
 
@@ -113,7 +113,7 @@ The user interface has these panels and inspection windows:
 - **REFERENCE Magnification area (green)** : The “golden sample” image. The mouse´s cursor dictates what can be seen here.
 - **UNIT UNDER INSPECTION Magnification area (orange)**: this is the image of the panel to be inspected. 
 
-![alt text](<assets/nuc installation.PNG>)
+![Screen layout](<assets/nuc installation.PNG>)
 
 ### Log box 
 
