@@ -1,4 +1,4 @@
-# Connect the camera 
+# Connecting the camera 
 
 ___
 
@@ -13,7 +13,7 @@ First, be sure to connect the **micro USB cable and battery dummy** to the camer
 ![Camera connections](assets/conect_camera.PNG)
 
 !!! warning "Important"
-    For convenience, do not mount the camera on the mast until it has been completely copnfigured.
+    For convenience, do not mount the camera on the mast until it has been completely configured.
 
 ## Parameters
 

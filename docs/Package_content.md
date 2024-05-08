@@ -4,6 +4,10 @@ Created to make the process of photographing the **panels / PCBAs** as easy as p
 
 This is what Agnospcb’s neural network needs to be able to perfectly detect any kind of fault present.
 
+!!! warning "Important"
+
+    If there is any missing part or defective [send us an email](mailto:support@agnospcb.com).
+
 ## Components
 | Component | Image |
 | --------- | :-----: |
