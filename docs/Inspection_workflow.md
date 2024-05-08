@@ -2,9 +2,11 @@
 
 ## Inspection process
 
-A video always helps at this point. The sequence you need to follow to start the inspection process will be this:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kNLPq8qpwkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Turn on the **LED Panels** using the remote control (ON button). You can adjust the brightness with the UP and DOWN arrows. Set it to maximum if your warehouse lighting environment is dark. Set it to about 80% of its maximum brightness for daylight working conditions.
+The inspection sequence you need to follow to start the inspection process will be this:
+
+- Turn on the **LED Panels** using the remote control (ON button). You can adjust the brightness with the UP and DOWN arrows. Set it to maximum.
 - Turn on the **Sony** camera. Previously connected to the microcomputer and with the battery dummy already inserted.
 - Insert your user credentials and click on **SUBMIT**. If there was a previous REFERENCE image, it will be loaded.
 - Start your inspection process setting a **REFERENCE** image and then, taking photos of the circuits/ panels to be integrity checked.
@@ -17,6 +19,7 @@ A video always helps at this point. The sequence you need to follow to start the
 
     Check this quick guide about how to get the best inspection results with the inspection platform
 
+___
 ## Starting the inspection process
 
 

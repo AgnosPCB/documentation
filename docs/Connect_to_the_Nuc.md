@@ -1,5 +1,4 @@
 # Connecting ONLINE units
-___
 
 
 **ONLINE AOI** machines are powered by the **INTEL NUC** microcomputer and integrate all the software needed to control the camera and manage the **AgnosPCB inspection tool software**.
@@ -25,3 +24,5 @@ The CPU must be connected as indicated below:
 The **SONY camera** uses a battery DUMMY, so it can be ON for unlimited time. That battery dummy needs a 5V and 3A power supply (provided with the KIT as a separate unit or integrated in the power strip). At the same time, the camera will be controlled from the computer, so use the provided high-speed 2m USB-micro USB cable to connect the camera to your **INTEL NUC**.
 
 To install and configure the camera go to following section: [How to connect the camera](Connect-the-camera.md "How to connect the camera")
+
+___
