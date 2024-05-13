@@ -2,7 +2,7 @@
 
 ## Inspection process
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kNLPq8qpwkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/swKwjGZ7zQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The inspection sequence you need to follow to start the inspection process will be this:
 
