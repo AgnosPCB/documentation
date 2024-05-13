@@ -47,8 +47,9 @@ Attach the camera bracket and the camera to the **mast** as shown:
 
 ![Mast with the camera bracket.](assets/assemble5.PNG)
 
-![Camera attached to the mast. ](assets/assembly-6.jpg)
+![alt text](assets/assembly-6.webp)
 
 !!! warning "important"
 
     All the PCB to be inspected have to be perfectly leveled. If the panel/circuit has a certain tilt angle, not all the elements shapes will be perfectly defined limiting the software recognition capacities.
+

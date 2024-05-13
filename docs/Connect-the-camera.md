@@ -21,11 +21,11 @@ The SONY camera have a 50 mm 1.8f fixed lens already pre-configured but, if acci
 
 **1)** Turn on the camera by moving the selector in the top of the camera to "ON".
 
-![Camera top](assets/camera-on.jpg)
+![Camera Top](assets/camera-on.webp)
 
 **2)** Set the mode **dial to A** (Aperture Priority) pressing the round button and selecting the A mode.
 
-![camera top](assets/camera_dial.jpg)
+![Camra Top](assets/camera_dial.webp)
 
 **)** Select the value **F7.1** by turning the control dial. Setting the aperture to 7.1 will get the most detailed photos of your PBCAs.
 
