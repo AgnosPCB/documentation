@@ -31,7 +31,7 @@ nav:
       - Connecting the camera: 'Connect-the-camera.md'
     - Installation process: 'Installation_process.md'
   - How to use it:
-    - AgnosPCB UI: 'Screen-layout.md'
+    - User Interface: 'Screen-layout.md'
     - User guide: 'User_guide.md'
     - Inspection workflow: 'Inspection_workflow.md'
     - How to update your unit: 'updating_your_unit.md'

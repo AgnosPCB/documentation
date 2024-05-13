@@ -7,7 +7,7 @@ This is what Agnospcb’s neural network needs to be able to perfectly detect an
 !!! warning "Important"
 
     If there is any missing part or defective [send us an email](mailto:support@agnospcb.com).
-
+___
 ## Components
 | Component | Image |
 | --------- | :-----: |

@@ -1,10 +1,8 @@
 # Connecting the camera 
 
-___
-
 ## Powering on the camera
 
-___
+
 
 First, be sure to connect the **micro USB cable and battery dummy** to the camera as shown in the picture:
 
@@ -15,9 +13,9 @@ First, be sure to connect the **micro USB cable and battery dummy** to the camer
 !!! warning "Important"
     For convenience, do not mount the camera on the mast until it has been completely configured.
 
+___
 ## Parameters
 
-___
 
 The SONY camera have a 50 mm 1.8f fixed lens already pre-configured but, if accidentally, its photo settings change you will need to set them again as below:
 
@@ -75,4 +73,16 @@ If you want to know how to connect the specific version you are using you can se
 [Connecting ONLINE units](Connect_to_the_Nuc.md "Connecting ONLINE units")
 
 [Connecting OFFLINE units](connecting_offline_units.md "Connecting OFFLINE units")
+
+___
+
+## Optical/Digital Zoom
+
+When using a DIGITAL ZOOM, the camera’s optics are not adjusted. It is accomplished electronically, so no optical resolution is gained. That means that you are not providing useful info to the software. 
+
+If you are using our inspection platform and are inspecting a small circuit/panel: Move the camera DOWN until it is about 45 cm over from the circuit you are inspecting. The structure of the platform will not allow going down further in any case. From that distance, take the photos.
+
+Do **not use the camera controls** to increase the size of the circuit/ panel. That will only degrade the quality of the image taken. The laptop will take control of the camera and set the best configuration under every circumstance.
+
+![Selected PCB area](assets/image.png)
 
