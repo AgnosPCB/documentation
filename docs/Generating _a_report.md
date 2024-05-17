@@ -1,5 +1,5 @@
 # Generating a report
-
+___
 
 Generating a report is a straightforward process that begins with performing an inspection.
 

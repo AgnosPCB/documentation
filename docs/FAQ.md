@@ -72,3 +72,10 @@
     AgnosPCB's AOI system is not specifically designed for Through-Hole Technology (THT) components. This is due to the potential large perspective differences caused by the height of THT components, which may lead to false positives in the Neural Network. Additionally, the soldering of THT components is often concealed, making inspection difficult in most cases 
     
     However, while not optimized for THT components, the AOI system can still be used for such components. It can aid in detecting displacements, incorrect polarity, flipping, or incorrect placement of THT components.
+
+??? question "How can I use the camera to take reference and UUI photo in the inspection tool software? "
+
+    The current Windows version does not support camera control as it has driver issues and was designed just for testing the capabilities of the AOI system. The official version is based on Linux and supports camera control, barcode reading and report generation.
+    
+    However, you can share the PCB_IN folder in your network, put all the pictures in it and the software automatically will process them. You first have to load the PCBA REFERENCE in the software and activate the auto process button.
+    ![alt text](assets/menu-auto-process.png)

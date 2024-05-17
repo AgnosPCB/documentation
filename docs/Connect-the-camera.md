@@ -1,7 +1,8 @@
 # Connecting the camera 
+___
 
-## Powering on the camera
-
+## **Powering on the camera**
+___
 
 
 First, be sure to connect the **micro USB cable and battery dummy** to the camera as shown in the picture:
@@ -13,9 +14,9 @@ First, be sure to connect the **micro USB cable and battery dummy** to the camer
 !!! warning "Important"
     For convenience, do not mount the camera on the mast until it has been completely configured.
 
-___
-## Parameters
 
+## **Parameters**
+___
 
 The SONY camera have a 50 mm 1.8f fixed lens already pre-configured but, if accidentally, its photo settings change you will need to set them again as below:
 
@@ -56,6 +57,7 @@ If you change any parameter or adjust the camera while the system is ON, the cam
 If everything is fine, you will get **highly detailed photographs** of your PCBa. Above, example of two photos taken with the inspection platform. No **shadows cast nor direct light reflections are present**.
 
 ## **Using the 50MM FE 1.8 LENS**
+___
 
 In the case you have changed, accidentally, the default camera´s configuration, follow these steps:
 1) Set the mode dial to **A (Aperture Priority)**
@@ -74,9 +76,8 @@ If you want to know how to connect the specific version you are using you can se
 
 [Connecting OFFLINE units](connecting_offline_units.md "Connecting OFFLINE units")
 
+## **Optical/Digital Zoom**
 ___
-
-## Optical/Digital Zoom
 
 When using a DIGITAL ZOOM, the camera’s optics are not adjusted. It is accomplished electronically, so no optical resolution is gained. That means that you are not providing useful info to the software. 
 

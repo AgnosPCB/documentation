@@ -44,3 +44,11 @@
     6. Reboot CPU Unit: Reboot the CPU unit to refresh its settings.
     
     Following these steps should help resolve the issue.
+
+??? info "How to make a report of undetected errors?"
+
+    You can report an undetected fault by moving the cursor to the fault´s area and pressing DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.
+
+??? info "Remember sensibility between inspections."
+
+    Regarding the sensibility, there is a parameter in the setup.json file called "remember_sensibility". Modify the file and set this value to 1 to hold the sensibility between inspections.

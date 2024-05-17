@@ -1,4 +1,5 @@
 # Barcode reader
+___
 
 The AgnosPCB software incorporates a barcode reader function.
 

@@ -1,4 +1,5 @@
 # Account Created
+___
 
 Upon completing the account creation process, you will promptly receive an email containing vital information to facilitate your interaction with our platform. Here's a detailed breakdown of the email content:
 
