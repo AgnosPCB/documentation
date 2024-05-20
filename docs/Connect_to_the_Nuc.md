@@ -1,5 +1,5 @@
-# Connecting ONLINE units
-
+# **Connecting ONLINE units**
+___
 
 **ONLINE AOI** machines are powered by the **INTEL NUC** microcomputer and integrate all the software needed to control the camera and manage the **AgnosPCB inspection tool software**.
 

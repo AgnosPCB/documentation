@@ -1,4 +1,4 @@
-# FAQ
+# **FAQ**
 
 ??? question "Is there a rental/ trial plan for Online and Offline inspection platform to try it?"
 
@@ -30,7 +30,7 @@
 
 ??? question "How does it inspect?"
 
-    The AOI system works with two images: a REFERENCE and the unit under inspection (UUI). The neuronal network finds differences between both images and marks them. The AOI is capable of assuming small differences that are not errors like: dust, small displacements, Silkscreen variations, light reflections and others. Both images can be taken in the moment with a connected camera or imported by an existing file and the reference can be saved for future inspections. It's is important the reference has no faults in order to take good results. Also, the pictures have to be taken with good and similar light conditions in order to make easy to the neural network recognize the faulty components.  
+    The AOI system works with two images: a REFERENCE and the unit under inspection (UUI). The neuronal network finds differences between both images and marks them. The AOI is capable of assuming small differences that are not errors like: dust, small displacements, Silkscreen variations, light reflections and others. Both images can be taken in the moment with a connected camera or imported by an existing file and the reference can be saved for future inspections. It's is important the reference has no faults in order to take good results. Also, the pictures have to be taken with good and similar light conditions in order to make easy to the neural network recognize the faulty components.
     
     Once it has been inspected, the inspection tool software shows the issues in the PCB and the operator is able to mark them as a fault or a false positive, choosing what kind of fault it is (wrong polarity, missing parts,...) to make a final PDF report, which can be OK or NOT_OK. This report contains the date, the operator ID, both PCB images and their faults.
 
@@ -72,3 +72,10 @@
     AgnosPCB's AOI system is not specifically designed for Through-Hole Technology (THT) components. This is due to the potential large perspective differences caused by the height of THT components, which may lead to false positives in the Neural Network. Additionally, the soldering of THT components is often concealed, making inspection difficult in most cases 
     
     However, while not optimized for THT components, the AOI system can still be used for such components. It can aid in detecting displacements, incorrect polarity, flipping, or incorrect placement of THT components.
+
+??? question "How can I use the camera to take reference and UUI photo in the inspection tool software? "
+
+    The current Windows version does not support camera control as it has driver issues and was designed just for testing the capabilities of the AOI system. The official version is based on Linux and supports camera control, barcode reading and report generation.
+    
+    However, you can share the PCB_IN folder in your network, put all the pictures in it and the software automatically will process them. You first have to load the PCBA REFERENCE in the software and activate the auto process button.
+    ![alt text](assets/menu-auto-process.png)

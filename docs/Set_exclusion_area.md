@@ -1,4 +1,5 @@
-# Set exclusion area
+# **Set exclusion area**
+___ 
 
 The exclusion area is used to analyze the **PCB** by excluding certain items that are not necessary or not wanted to be analyzed. For this we use the button **¨draw exclusion area¨.**
 

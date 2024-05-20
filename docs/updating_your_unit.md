@@ -1,4 +1,5 @@
-# Updating your unit
+# **Updating your unit**
+___
 
 To update your unit (**ONLINE** or **OFFLINE**) follow the steps below:
 

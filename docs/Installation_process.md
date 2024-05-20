@@ -1,4 +1,5 @@
-# Installation process
+# **Installation process**
+___
 
 **PC System recommended Requirements​**
 
@@ -47,9 +48,9 @@ Upon launching the Agnospcb inspection tool software the user interface will app
 - **UNIT UNDER INSPECTION (orange):** this is the image of the panel to be inspected. Can be loaded using the LOAD icon (from the inspection area)
 - **Magnification area:** this frame will display, the same areas of the REFERENCE, INSPECTED and RESULT circuit/panels. Move the mouse to check different zones of the circuit. Use the mouse’s wheel to modify the zoom magnification.
 
-___
 
-## Using your pc: installation processs
+## **Using your pc: installation processs**
+___
 
 **PC System recommended Requirements**
 
@@ -88,9 +89,9 @@ REFERENCE Magnification area (green) : The “golden sample” image. The mouse�
 
 ![Screen layout](assets/pc-instalation-process.PNG)
 
-___
 
-## Intel Nuc software user guide (Linux)
+## **Intel Nuc software user guide (Linux)**
+___
 
 **Internet connection: minimum requirements**
 
@@ -119,9 +120,7 @@ The user interface has these panels and inspection windows:
 
 ![Screen layout](<assets/nuc installation.PNG>)
 
-___
-
-### Log box 
+### **Log box** 
 
 The log box will display inspection messages while you carry out inspections: warning, error o info messages. At the same time, the neural network version will be indicated here.
 

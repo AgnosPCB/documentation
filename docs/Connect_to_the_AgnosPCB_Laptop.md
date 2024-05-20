@@ -1,4 +1,5 @@
-# Connect to the AgnosPCB laptop
+# **Connect to the AgnosPCB laptop**
+___
 
 First, you need to connect everything as indicated below:
 

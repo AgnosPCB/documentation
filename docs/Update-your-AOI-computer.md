@@ -1,4 +1,5 @@
-# Update your AOI computer
+# **Update your AOI computer**
+___
 
 To update your **AOI computer**, you'll need to follow a series of steps carefully to ensure the process goes smoothly.
 

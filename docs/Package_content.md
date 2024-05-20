@@ -1,4 +1,5 @@
-#  Package content
+#  **Package content**
+___
 
 Created to make the process of photographing the **panels / PCBAs** as easy as possible by providing images of the highest quality, detailed pictures with the best illumination.
 
@@ -7,8 +8,10 @@ This is what Agnospcb’s neural network needs to be able to perfectly detect an
 !!! warning "Important"
 
     If there is any missing part or defective [send us an email](mailto:support@agnospcb.com).
+
+## **Components**
 ___
-## Components
+
 | Component | Image |
 | --------- | :-----: |
 | Sony Alpha Camera| ![Sony Alpha Camera](assets/Sony-alpha.PNG) {width=300px} |

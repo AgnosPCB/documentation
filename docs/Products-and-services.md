@@ -1,8 +1,10 @@
-#  Products and services
+#  **Products and services**
+___
 
 AgnosPCB AOI provides three types of products/services:
 
-## ONLINE AOI inspection platform:
+## **ONLINE AOI inspection platform:**
+___
 
 The **ONLINE AOI inspection platform** functionality lies its remarkable ability to simplify and expedite the inspection process. With just a single click, users can initiate the inspection procedure, triggering the platform to automatically adjust the camera settings to optimal values. This **intelligent automation** significantly reduces the time and effort required for setup, enabling users to focus their attention on other critical tasks while the platform swiftly scans for potential errors.
 
@@ -18,7 +20,8 @@ Furthermore, the inspection area provided by the platform is **27×34 cms** (10.
 
 [Link to product](https://agnospcb.com/product/agnospcb-online-inspection-plaftorm/)
 
-## OFFLINE AOI inspection platform:
+## **OFFLINE AOI inspection platform:**
+___
 
 The **OFFLINE AOI inspection platform** stands as a robust counterpart to its online counterpart, boasting the same cutting-edge AI-based error recognition system  but with the added advantage of local processing. This distinctive feature renders it an ideal choice for scenarios where internet connectivity is unreliable or unavailable, or when the need for complete autonomy and data privacy is paramount.
 
@@ -30,7 +33,8 @@ In addition, the OFFLINE AOI inspection platform boasts a generous inspection ar
 
 [Link to product](https://agnospcb.com/product/agnospcb-offline-inspection-plaftorm/)
 
-## API Service:
+## **API Service:**
+___
 
 The **API Service** represents a dynamic solution meticulously crafted to seamlessly integrate the formidable capabilities of the AgnosPCB solution into your existing AOI system. 
 
@@ -38,7 +42,7 @@ For users equipped with a robust **optical system** seeking to augment their cap
 
 ![API Service](assets/API.png)
 
-### OFFLINE AOI Rental Program
+### **OFFLINE AOI Rental Program**
 
  With this program, you have the opportunity to **rent** our state-of-the-art OFFLINE AOI units for a period of up to two months, allowing you to experience the benefits of our cutting-edge technology firsthand before committing to a purchase.
 
@@ -46,7 +50,8 @@ Here's how it works: Upon enrolling in the rental program, you'll gain access to
 
 Should you decide to proceed with **purchasing** the OFFLINE AOI unit after the rental period, we offer a seamless transition process. The rental payment that you've already made will be deducted from the total cost of the unit, ensuring that you receive full credit for your rental investment towards the purchase price. This not only simplifies the purchasing process but also provides you with added peace of mind, knowing that your rental payments are contributing towards the acquisition of the unit.
 
-## Prices
+## **Prices**
+___
 
 **ONLINE AOI System:**
 The ONLINE AOI system provides a seamless inspection experience, with an initial allocation of **200 free inspection credits upon activation**. Once these credits are consumed, a subscription is required to continue accessing the system's capabilities. Subscribers benefit from constant free upgrades and updates to the inspection tool software and neural network architectures, ensuring they always have access to the **latest advancements and improvements**. AgnosPCB periodically releases updates to enhance functionality and address evolving industry needs. Depending on the chosen subscription plan, users gain access to additional features such as Barcode reader or PDF creation report, as well as a specific number of monthly inspections tailored to their requirements.

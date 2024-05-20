@@ -1,6 +1,8 @@
-# User guide
+# **User guide**
+___
 
-## User interface
+## **User interface**
+___
 
 Upon launching the Agnospcb inspection tool software, the user interface will appear. It has different panels and inspection areas:
 
@@ -13,7 +15,8 @@ Upon launching the Agnospcb inspection tool software, the user interface will ap
   ![Screen](assets/ui-pcb.png)
 
 
-## The inspection button
+## **The inspection button**
+___
 
 ![Inspection button](assets/inspection_button.PNG){ align=right }
 
@@ -25,7 +28,8 @@ Upon launching the Agnospcb inspection tool software, the user interface will ap
 
 2) **INITIALIZE** the inspection process: Just press it for a second and the camera will capture an image of the circuit / panel to be analyzed. Alternatively, you can click, with the mouse, on the INSPECTION BUTTON (icon below) on the user interface to do the same.
 
-## Inspection process
+## **Inspection process**
+___
 
 At this point, you should have already set up the inspection platform and everything should be connected to the laptop.
 
@@ -70,7 +74,8 @@ With some tips about how to improve the fault detection results and comments abo
 
 ![Lights on the sides of the camera and no PCB rotation](assets/TIPS.PNG)
 
-## Light sources and panel/circuit orientation
+## **Light sources and panel/circuit orientation**
+___
 
 The inspection platform uses 2 LED lights and diffuser panels to get rid of cast shadows. But if you take photos of the circuits varying its orientation every inspection, large electronic elements (like capacitors, coils and connectors) present on the circuits/ panels will be seen differently from the camera’s point of view.
 
@@ -81,7 +86,8 @@ The software is capable, within a second, of auto-aligning the images, but the l
 ![Optical zoom and digital zoom](assets/optical-digital.PNG){ align=right }
 
 
-## Cropping tool
+## **Cropping tool**
+___
 
 Useful when the panel/circuit in the photo is too small. Cropping the image will “force” the software to focus on the selected area and will reduce the inspection time.
  
@@ -89,7 +95,8 @@ Useful when the panel/circuit in the photo is too small. Cropping the image will
 
 The software will automatically look for the same area in every photo taken of the panels to be inspected after the cropping boundary has been set. To remove the CROP boundaries, click on the CROP icon again.
 
-## Circuit / Panel with many small electronic elements
+## **Circuit / Panel with many small electronic elements**
+___
 
 ![PCB with many small electronic elements](assets/circuit.PNG)
 

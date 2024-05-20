@@ -1,6 +1,8 @@
-# Inspection workflow
+# **Inspection workflow**
+___
 
-## Inspection process
+## **Inspection process**
+___
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/swKwjGZ7zQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -19,9 +21,9 @@ The inspection sequence you need to follow to start the inspection process will 
 
     Check this quick guide about how to get the best inspection results with the inspection platform
 
-___
-## Starting the inspection process
 
+## **Starting the inspection process**
+___
 
 ### **Signing-up + Inspecting your first PCBAs**
 
@@ -67,7 +69,8 @@ Take a photo of a circuit you want to inspect using the **REMOTE app** (You can 
 The software will display the result of the inspection within seconds
 **REPEAT:** Take another photo of the next PCBA you want to inspect. The software will process it automatically.
 
-## How to do an inspection
+## **How to do an inspection**
+___
 
 ![Open reference button](assets/Open-reference.PNG){ align=right }
 Start by opening the** Agnospcb application** and entering your username and password. Once opened, load the reference of your file with the "open reference" button and the reference will be automatically loaded on the screen. Also, save the reference in the mosaic, remember that you can load the different references by using the keys where they are saved such as **F1, F2, F3, F4....**
@@ -99,7 +102,7 @@ The report will show the date, whether or not the pcb has passed the inspection,
 ![Report](assets/REPORT1.png)
 ![Report](assets/REPORT2.png)
 
-### Other functions 
+### **Other functions** 
 
 - **Draw exclusion area**
 
