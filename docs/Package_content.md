@@ -1,4 +1,4 @@
-#  Package content
+#  **Package content**
 ___
 
 Created to make the process of photographing the **panels / PCBAs** as easy as possible by providing images of the highest quality, detailed pictures with the best illumination.

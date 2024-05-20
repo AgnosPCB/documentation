@@ -1,4 +1,4 @@
-# Troubleshooting
+# **Troubleshooting**
 
 
 ??? info "I am getting “time-out” errors when inspecting my circuits. How do I solve it?"

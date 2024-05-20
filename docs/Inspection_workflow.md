@@ -1,4 +1,4 @@
-# Inspection workflow
+# **Inspection workflow**
 ___
 
 ## **Inspection process**

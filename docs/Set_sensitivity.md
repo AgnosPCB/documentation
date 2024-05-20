@@ -1,4 +1,4 @@
-# Set sensitivity
+# **Set sensitivity**
 ___
 
 Sensitivity refers to the degree of meticulousness or strictness employed by the inspection system when scanning for errors. Essentially, it governs the system's ability to identify even the smallest discrepancies or anomalies within the inspected materials.

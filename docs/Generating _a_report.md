@@ -1,4 +1,4 @@
-# Generating a report
+# **Generating a report**
 ___
 
 Generating a report is a straightforward process that begins with performing an inspection.
@@ -23,3 +23,4 @@ When you open the report, you'll find a wealth of information presented in a cle
 Visually, the report offers a comprehensive view of the inspection process, featuring images of the **UUI**, the **REFERENCE**, and the exclusion layer. It also includes a detailed breakdown of the selected errors, along with any accompanying remarks or specifications.
 
 ![Report](assets/REPORT2.png)
+

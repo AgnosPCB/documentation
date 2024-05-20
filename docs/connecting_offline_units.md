@@ -1,4 +1,4 @@
-# Connecting OFFLINE units
+# **Connecting OFFLINE units**
 ___
 
 **OFFLINE AOI** machines are powered by a desktop computer with the **AgnosPCB Neural Network** installed on it, making internet connection not necessary to perform inspections. 

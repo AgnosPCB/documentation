@@ -1,4 +1,4 @@
-# FAQ
+# **FAQ**
 
 ??? question "Is there a rental/ trial plan for Online and Offline inspection platform to try it?"
 
@@ -30,7 +30,7 @@
 
 ??? question "How does it inspect?"
 
-    The AOI system works with two images: a REFERENCE and the unit under inspection (UUI). The neuronal network finds differences between both images and marks them. The AOI is capable of assuming small differences that are not errors like: dust, small displacements, Silkscreen variations, light reflections and others. Both images can be taken in the moment with a connected camera or imported by an existing file and the reference can be saved for future inspections. It's is important the reference has no faults in order to take good results. Also, the pictures have to be taken with good and similar light conditions in order to make easy to the neural network recognize the faulty components.  
+    The AOI system works with two images: a REFERENCE and the unit under inspection (UUI). The neuronal network finds differences between both images and marks them. The AOI is capable of assuming small differences that are not errors like: dust, small displacements, Silkscreen variations, light reflections and others. Both images can be taken in the moment with a connected camera or imported by an existing file and the reference can be saved for future inspections. It's is important the reference has no faults in order to take good results. Also, the pictures have to be taken with good and similar light conditions in order to make easy to the neural network recognize the faulty components.
     
     Once it has been inspected, the inspection tool software shows the issues in the PCB and the operator is able to mark them as a fault or a false positive, choosing what kind of fault it is (wrong polarity, missing parts,...) to make a final PDF report, which can be OK or NOT_OK. This report contains the date, the operator ID, both PCB images and their faults.
 

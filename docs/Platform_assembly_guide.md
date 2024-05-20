@@ -1,5 +1,5 @@
 
-# Platform assembly
+# **Platform assembly**
 ___
 
 The primary framework of the platform has already been constructed, leaving you with the task of assembling supplementary components such as the LED lights and camera. 

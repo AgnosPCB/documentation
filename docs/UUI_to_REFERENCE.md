@@ -1,4 +1,4 @@
-# UUI to REFERENCE
+# **UUI to REFERENCE**
 ___
 
 When inspecting a **PCB**, if you discover that a **UUI** image is more suitable as a reference than the current one, you have the option to convert it into a reference image with a **single button click**

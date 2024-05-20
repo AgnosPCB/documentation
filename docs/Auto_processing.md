@@ -1,4 +1,4 @@
-# Auto processing
+# **Auto processing**
 ___
 
 **"Auto processing"** is a functionality tailored for the inspection and assessment of **PCBs**. When activated, this feature triggers an automated examination of the next UUI photographed or uploaded to the system. The purpose is to swiftly identify any potential faults or defects within the board's design or assembly.

@@ -1,4 +1,4 @@
-# Installation process
+# **Installation process**
 ___
 
 **PC System recommended Requirements​**
