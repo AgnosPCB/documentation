@@ -30,7 +30,7 @@ The SONY camera have a 50 mm 1.8f fixed lens already pre-configured but, if acci
 
 **)** Select the value **F7.1** by turning the control dial. Setting the aperture to 7.1 will get the most detailed photos of your PBCAs.
 
-![alt text](assets/Focus_7.png)
+![alt text](assets/SONY-1.PNG)
 
 **4)** Pressing the **MENU** button, go to setting and set the **AEL w/shutter to ON**
 
