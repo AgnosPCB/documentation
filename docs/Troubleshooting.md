@@ -49,6 +49,20 @@
 
     You can report an undetected fault by moving the cursor to the fault´s area and pressing DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.
 
-??? info "Remember sensibility between inspections."
+??? info "Remember sensitivity between inspections."
 
-    Regarding the sensibility, there is a parameter in the setup.json file called "remember_sensibility". Modify the file and set this value to 1 to hold the sensibility between inspections.
+    Regarding the sensitivity, there is a parameter in the setup.json file called "remember_sensitivity". Modify the file and set this value to 1 to hold the sensitivity between inspections.
+
+??? info  "How to send feedback about undetected errors (online only)?"
+
+    You can report an undetected fault by moving the cursor to the fault´s area and pressing DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.
+
+??? info  "How can I use the camera to take reference and UUI photo in the inspection tool software? I only can make pictures outside the software and then I have to open it in the software."
+
+
+    The current Windows version does not support camera control as it has driver issues and was designed just for testing the capabilities of the AOI system. 
+    The official version is based on Linux and supports camera control, barcode reading and report generation.
+
+    However, you can share the PCB_IN folder in your network, put all the pictures in it and the software will automatically process them. You first have to load the PCBA REFERENCE in the software and activate the auto process button.
+
+    ![auto process button](assets/menu-auto-process.png)
