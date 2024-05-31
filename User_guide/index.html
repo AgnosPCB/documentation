@@ -1109,8 +1109,10 @@
                   
 
 
-<h1 id="user-guide">User guide</h1>
-<h2 id="user-interface">User interface</h2>
+<h1 id="user-guide"><strong>User guide</strong></h1>
+<hr />
+<h2 id="user-interface"><strong>User interface</strong></h2>
+<hr />
 <p>Upon launching the Agnospcb inspection tool software, the user interface will appear. It has different panels and inspection areas:</p>
 <ul>
 <li><strong>Reference panel (green )</strong>: The “golden sample” image. Can be loaded using the LOAD icon (from the Reference area). </li>
@@ -1120,13 +1122,15 @@
 <li><strong>Settings</strong>: where the configuration ICONs are. Useful tools in your inspection process.</li>
 </ul>
 <p><img alt="Screen" src="../assets/ui-pcb.png" /></p>
-<h2 id="the-inspection-button">The inspection button</h2>
+<h2 id="the-inspection-button"><strong>The inspection button</strong></h2>
+<hr />
 <p><img align="right" alt="Inspection button" src="../assets/inspection_button.PNG" /></p>
 <p><strong>The Inspection button</strong> will let you take the best possible photo of your circuits / panels just pressing it. It will quickly start the process of configuring the camera with the best parameters, prepare the software, so it can use the latest photo taken, and analyze it looking for faults. Just in a matter of a fraction of a second.</p>
 <p><strong>This button can be used for:</strong></p>
 <p>1) <strong>SET</strong> a <strong>REFERENCE</strong> image: PRESS it for 5 seconds until you hear the camera shooting. The AOI software will use that image as <strong>REFERENCE</strong> to compare all the next images of the circuits.</p>
 <p>2) <strong>INITIALIZE</strong> the inspection process: Just press it for a second and the camera will capture an image of the circuit / panel to be analyzed. Alternatively, you can click, with the mouse, on the INSPECTION BUTTON (icon below) on the user interface to do the same.</p>
-<h2 id="inspection-process">Inspection process</h2>
+<h2 id="inspection-process"><strong>Inspection process</strong></h2>
+<hr />
 <p>At this point, you should have already set up the inspection platform and everything should be connected to the laptop.</p>
 <p>The points listed below will guide you through the steps you need to make to inspect a circuit/ panel your first time.</p>
 <p><strong>1.</strong> Turn <strong>ON</strong> the <strong>LEDs</strong> panels using the switch and/or remote control. Set, using the UP and DOWN arrows, their brightness. If you are inside a well-lit room, you may not need to set them to their maximum brightness.</p>
@@ -1154,16 +1158,19 @@
 <p>First, tap on the round button indicated above. The select rotating the dial, the Aperture MODE <strong>(A)</strong>. Then, using the same dial, select the value F8.0 (right image). Setting the aperture to F8.0 will let you get the most detailed photos of your circuits / panels.</p>
 <p>With some tips about how to improve the fault detection results and comments about what not to do.</p>
 <p><img alt="Lights on the sides of the camera and no PCB rotation" src="../assets/TIPS.PNG" /></p>
-<h2 id="light-sources-and-panelcircuit-orientation">Light sources and panel/circuit orientation</h2>
+<h2 id="light-sources-and-panelcircuit-orientation"><strong>Light sources and panel/circuit orientation</strong></h2>
+<hr />
 <p>The inspection platform uses 2 LED lights and diffuser panels to get rid of cast shadows. But if you take photos of the circuits varying its orientation every inspection, large electronic elements (like capacitors, coils and connectors) present on the circuits/ panels will be seen differently from the camera’s point of view.</p>
 <p><strong>Try to place the circuit always with the same orientation.</strong> </p>
 <p>The software is capable, within a second, of auto-aligning the images, but the light projected will fall very differently over the electronic components if the circuit is rotated by 90/180 degrees. That will lead the neural network to make mistakes when looking for faults. Try to avoid it always placing the panels/circuits with the same orientation.</p>
 <p><img align="right" alt="Optical zoom and digital zoom" src="../assets/optical-digital.PNG" /></p>
-<h2 id="cropping-tool">Cropping tool</h2>
+<h2 id="cropping-tool"><strong>Cropping tool</strong></h2>
+<hr />
 <p>Useful when the panel/circuit in the photo is too small. Cropping the image will “force” the software to focus on the selected area and will reduce the inspection time.</p>
 <p><strong>You can only crop an image in the REFERENCE canvas.</strong></p>
 <p>The software will automatically look for the same area in every photo taken of the panels to be inspected after the cropping boundary has been set. To remove the CROP boundaries, click on the CROP icon again.</p>
-<h2 id="circuit-panel-with-many-small-electronic-elements">Circuit / Panel with many small electronic elements</h2>
+<h2 id="circuit-panel-with-many-small-electronic-elements"><strong>Circuit / Panel with many small electronic elements</strong></h2>
+<hr />
 <p><img alt="PCB with many small electronic elements" src="../assets/circuit.PNG" /></p>
 <p>The neural network powering the Agnospcb software behaves as a very skilled technician. But it can only detect faults <strong>that can be seen</strong>. Any minor displacement, solder paste change or short-circuit “hidden” under a shadow or light reflection may become <strong>identifiable</strong> if we <strong>slightly</strong> change <strong>the lighting conditions / orientation of the panel/ circuit.</strong> </p>
 <p>If you are inspecting a panel/ circuit with electronic elements casting pronounced shadows over other component/s, elements with very small pins or just obstructing the camera point of view, we recommend following this methodology which can lead to increase the detection rate:</p>

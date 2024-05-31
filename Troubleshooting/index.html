@@ -963,7 +963,7 @@
                   
 
 
-<h1 id="troubleshooting">Troubleshooting</h1>
+<h1 id="troubleshooting"><strong>Troubleshooting</strong></h1>
 <details class="info">
 <summary>I am getting “time-out” errors when inspecting my circuits. How do I solve it?</summary>
 <p>The Agnospcb inspection software needs a fast and reliable internet connection, as some areas of the photos taken will be sent to our neural network server. That means that, an internet wired connection or Fiber internet service (100-1000Mbps) is mandatory. Otherwise, the software will take over 10 seconds to process one inspection and the “time-out” error message will appear. If you need an “off-line” solution, contact us.</p>
@@ -1021,6 +1021,25 @@
 </li>
 </ol>
 <p>Following these steps should help resolve the issue.</p>
+</details>
+<details class="info">
+<summary>How to make a report of undetected errors?</summary>
+<p>You can report an undetected fault by moving the cursor to the fault´s area and pressing DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.</p>
+</details>
+<details class="info">
+<summary>Remember sensitivity between inspections.</summary>
+<p>Regarding the sensitivity, there is a parameter in the setup.json file called "remember_sensitivity". Modify the file and set this value to 1 to hold the sensitivity between inspections.</p>
+</details>
+<details class="info">
+<summary>How to send feedback about undetected errors (online only)?</summary>
+<p>You can report an undetected fault by moving the cursor to the fault´s area and pressing DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.</p>
+</details>
+<details class="info">
+<summary>How can I use the camera to take reference and UUI photo in the inspection tool software? I only can make pictures outside the software and then I have to open it in the software.</summary>
+<p>The current Windows version does not support camera control as it has driver issues and was designed just for testing the capabilities of the AOI system. 
+The official version is based on Linux and supports camera control, barcode reading and report generation.</p>
+<p>However, you can share the PCB_IN folder in your network, put all the pictures in it and the software will automatically process them. You first have to load the PCBA REFERENCE in the software and activate the auto process button.</p>
+<p><img alt="auto process button" src="../assets/menu-auto-process.png" /></p>
 </details>
 
 
