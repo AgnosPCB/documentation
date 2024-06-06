@@ -7,7 +7,7 @@ Generating a report is a straightforward process that begins with performing an 
 
 Once you've completed the inspection and are ready to generate the report, the first step is to locate and click on the **"finish inspection"** button.
 
-After clicking this button, a new screen will appear, providing you with options to customize the report. Here, you can rename the file, add comments, and indicate whether the **UUI** is okay or if it contains unpassable errors. Once you've made your selections, a pdf report will be automatically generated
+After clicking this button, a new screen will appear, providing you with options to customize the report. Here, you can rename the file, add comments, and indicate whether the **UUI** is okay or if the inspected PCB/panel is not compliant with the manufacturing requirements. Once you've made your selections, a pdf report will be automatically generated
 
 ![Finish inspection screen](assets/finish-inspecttion-barcode.png)
 
@@ -15,7 +15,7 @@ Following the generation of the report, it will be conveniently saved in the **P
 
 ![PCB_OUT folder](assets/PCB-OUT.png)
 
-When you open the report, you'll find a wealth of information presented in a clear and organized manner. This includes the date of the inspection, the number of failures detected, the exclusion area, and the sensitivity settings used during the inspection. Additionally, the report provides specific details such as the name of the **REFERENCE** and the **UUI**.
+When you open the report, you'll find a whole set of detailed information presented in a clear and organized manner. This includes the date of the inspection, the number of failures detected, the exclusion area, and the sensitivity settings used during the inspection. Additionally, the report provides specific details such as the name of the **REFERENCE** and the **UUI**.
 
 ![Report](assets/REPORT1.png)
 

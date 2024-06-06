@@ -7,68 +7,55 @@ ___
 
 First, be sure to connect the **micro USB cable and battery dummy** to the camera as shown in the picture:
 
+!!! warning "Important"
+    For convenience, do not mount the camera on the mast until it has been completely configured.
+
+
+!!! warning "important"
+
+    Ensure the camera is not tilted to the left or the right when attaching the camera to the mast, in order to avoid perspective distortion which will impact negatively on the inspection performance.
 ![Camera mounted on the mast](assets/assembly-7.PNG){ align=right }
 
 ![Camera connections](assets/conect_camera.PNG)
-
-!!! warning "Important"
-    For convenience, do not mount the camera on the mast until it has been completely configured.
 
 
 ## **Parameters**
 ___
 
-The SONY camera have a 50 mm 1.8f fixed lens already pre-configured but, if accidentally, its photo settings change you will need to set them again as below:
+The SONY camera has a 50 mm 1.8f fixed lens already pre-configured, but in case its settings are modified or reset, you will need to set them again as below:
 
-**1)** Turn on the camera by moving the selector in the top of the camera to "ON".
+1. Turn on the camera by moving the selector in the top of the camera to "ON".
 
-![Camera Top](assets/camera-on.webp)
+    ![Camera Top](assets/camera-on.webp)
 
-**2)** Set the mode **dial to A** (Aperture Priority) pressing the round button and selecting the A mode.
+2. Set the mode **dial to A** (Aperture Priority) pressing the round button and selecting the A mode.
 
-![Camra Top](assets/camera_dial.webp)
+    ![Camra Top](assets/camera_dial.webp)
 
-**3)** Select the value **F7.1** by turning the control dial. Setting the aperture to 7.1 will get the most detailed photos of your PBCAs.
+3. Select the value **F7.1** by turning the control dial. Setting the aperture to 7.1 will get the most detailed photos of your PBCAs.
 
-![alt text](assets/SONY-1.PNG)
+    ![alt text](assets/SONY-1.PNG)
 
-**4)** Pressing the **MENU** button, go to setting and set the **AEL w/shutter to ON**
+4. Pressing the **MENU** button, go to setting and set the **AEL w/shutter to ON**
 
-**5)** inside the same **MENU**, the last tab has an option called USB connection. Set it to **PC REMOTE**.
+5. inside the same **MENU**, the last tab has an option called USB connection. Set it to **PC REMOTE**.
 
 
 ![camera settings](assets/SONY-2.PNG)
 ![camera settings](assets/SONY-3.PNG)
 
-!!! warning "important"
-
-    All the PCB to be inspected have to be perfectly leveled. If the panel/circuit has a certain tilt angle, not all the elements shapes will be perfectly defined limiting the software recognition capacities.
-
-To capture the whole dimension of the panel / circuit you are inspected, move the camera UP in the mast. For smaller circuits/ panel, move it down but **never use digital zoom**.
+To capture the whole dimension of the panel / circuit you are inspecting, move the camera UP in the mast. For smaller circuits/ panel, move it down but **never use digital zoom**.
 
 !!! warning "important"
 
     Do not use the DIGITAL ZOOM with the 50mm optics system. It will only artificially increase the size of the digital image not adding real info to the photograph.
 
-If you change any parameter or adjust the camera while the system is ON, the camera will get unresponsive. You will need to disconnect it from the laptop and reconnect it again.
+If you change any parameter or adjust the camera while the system is ON, the camera will get unresponsive. You will need to disconnect it from the computer and reconnect it again.
 
 ![Zoomed picture of a PCB](assets/DIGITAL_ZOOM.PNG)
 
-If everything is fine, you will get **highly detailed photographs** of your PCBa. Above, example of two photos taken with the inspection platform. No **shadows cast nor direct light reflections are present**.
+If everything is fine, you will get **highly detailed photographs** of your PCBa. Examples of two photos taken with the inspection platform are shown above. Neither **shadows nor direct light reflections are present**.
 
-## **Using the 50MM FE 1.8 LENS**
-___
-
-In the case you have changed, accidentally, the default camera´s configuration, follow these steps:
-1) Set the mode dial to **A (Aperture Priority)**
-2) Select the value **F7.1** by turning the control dial (see image).
-
-![Camera parts](assets/note-camera.PNG){ align=right }
-
-!!! note "Note"
-
-    Do not use DIGITAL ZOOM with the 50mm optics system. It will only artificially increase the size of the digital image not adding real info to the photograph. 
-    If everything is fine, you will get highly detailed photographs of your PCBAs.
 
 If you want to know how to connect the specific version you are using you can see it in the following sections:
 

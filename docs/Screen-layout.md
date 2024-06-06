@@ -53,7 +53,7 @@ Here are located various **buttons and options**.They're designed to **optimize*
 
 ![Mosaic menu](assets/mosaic2.png){width=600px}
 
-The reference mosaic is used to store REFERENCES as files to quickly find and load any fo them. The mosaic menu automatically appears after taking a REFERENCE by using the software with the [take REFERENCE photo button](#take-reference-photo) or by loading it with [as a file](#load-reference-as-file). A stored REFERENCE stored in the mosaic can be quickly loaded by pressing a **F button** (F1-F10).
+The reference mosaic is used to store REFERENCES as files to quickly find and load any fo them. The mosaic menu automatically appears after taking a REFERENCE by using the software with the [take REFERENCE photo button](#take-reference-photo) or by loading it with [as a file](#load-reference-as-file). A REFERENCE stored in the mosaic can be quickly loaded by pressing a **F button** (F1-F10).
 
 ### **LOAD REFERENCE as file**
 
@@ -103,7 +103,7 @@ This button will get you to this **USER GUIDE**
 
 ![Finish inspection button](assets/menu-report.png)
 
-Selecting this button will create a report that will includes the detected errors. This report could be a **OK** or **NOT OK** inspection depending the manufacturing criteria. To learn more about this feature go to the following [section](Generating%20_a_report.md).
+Selecting this button will create a report that includes the detected errors. This report could be tagged as an **OK** or **NOT OK** inspection, depending on the manufacturing criteria. To learn more about this feature go to the following [section](Generating%20_a_report.md).
 
 ### **Take REFERENCE photo**
 

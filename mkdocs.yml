@@ -29,7 +29,7 @@ nav:
       - Connecting OFFLINE units: 'connecting_offline_units.md'
       #- Connect to the AgnosPCB Laptop: 'Connect_to_the_AgnosPCB_Laptop.md'
       - Connecting the camera: 'Connect-the-camera.md'
-    - Installation process: 'Installation_process.md'
+    #- Installation process: 'Installation_process.md'
   - How to use it:
     - User Interface: 'Screen-layout.md'
     - User guide: 'User_guide.md'
@@ -41,7 +41,7 @@ nav:
       - Set exclusion area: 'Set_exclusion_area.md'
       - Set sensitivity: 'Set_sensitivity.md'
       - UUI to REFERENCE: 'UUI_to_REFERENCE.md'
-      - Auto processing: 'Auto_processing.md'
+      #- Auto processing: 'Auto_processing.md'
   - Help:
     - General information: 'Products-and-services.md'
     - FAQ: 'FAQ.md'

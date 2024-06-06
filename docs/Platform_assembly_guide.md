@@ -2,16 +2,16 @@
 # **Platform assembly**
 ___
 
-The primary framework of the platform has already been constructed, leaving you with the task of assembling supplementary components such as the LED lights and camera. 
+The primary frame of the platform comes pre-assembled, leaving you with the task of assembling supplementary components such as the LED lights and the camera. 
   
 !!! warning "Important"
 
     Before starting the assembly, make sure all the components listed in the section [package content](Package_content.md "package content") have been shipped and are in good condition.
 
-## **How to install LED light panels**
+## **How to install the LED light panels**
 ___
 
-To install the **LED light panels**, start by sliding both upper **light diffusers** to create space for installation.
+To install the **LED light panels**, start by sliding both upper **light diffusers** to provide good access to the mounting area.
   
 ![Platform with upper panels slided](assets/assembly-1.PNG)
 
@@ -22,7 +22,7 @@ To install the **LED light panels**, start by sliding both upper **light diffuse
 ## **How to install the mast** 
 ___
 
-Next, once the LED lights are in place, move on to assembling the camera mast. To do this, join the two parts of the mast as shown in the picture and place a cover on both edges.
+Next, once the LED lights are in place, move on to assemble the camera mast. To do this, join the two parts of the mast as shown in the picture and place a cover on both edges.
 
   
 ![Mast ](assets/assembly-3.PNG)
@@ -49,8 +49,4 @@ Attach the camera bracket and the camera to the **mast** as shown:
 ![Mast with the camera bracket.](assets/assemble5.PNG)
 
 ![alt text](assets/assembly-6.webp)
-
-!!! warning "important"
-
-    All the PCB to be inspected have to be perfectly leveled. If the panel/circuit has a certain tilt angle, not all the elements shapes will be perfectly defined limiting the software recognition capacities.
 

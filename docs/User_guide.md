@@ -51,6 +51,11 @@ The points listed below will guide you through the steps you need to make to ins
 
 **8.** You are ready to go. The system should be now indicating, if any, faults on the UUI (Unit Under Inspection). Go to point 7 and repeat the process  once a new UUI has been placed under the camera.
 
+!!! warning "important"
+
+    All the PCB to be inspected have to be perfectly leveled. If the panel/circuit has a certain tilt angle, not all the elements shapes will be perfectly defined limiting the software recognition capacities.
+
+
 All the inspection results will be stored in the PCB_OUT folder you will find in the external USB drive. The REFERENCE images will be moved to the folder called “REFERENCE”. You can find all of them there , in the case you need any of the REFERENCE images previously used.
 
 
@@ -112,7 +117,3 @@ If you are inspecting a panel/ circuit with electronic elements casting pronounc
 
 
 The vast majority of inspections do not require this methodology, but it is interesting to note the possibility **of increasing the detection capability of the system by carrying out this process.**
-
-**The camera does not respond**
-
-Check if the battery dummy is connected to the correct USB power supply, capable of delivering 3A. Check if the USB cable is properly connected and fully inserted. Does the R and S keys of the keyboard trigger the camera? 

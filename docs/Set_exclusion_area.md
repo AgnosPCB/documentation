@@ -9,11 +9,11 @@ Then, using the **REFERENCE** photo, select the area to be excluded. You can sel
 
 ![PCB with exclucion areas selected](assets/exlucion-area.png)
 
-Now, examining the **UUI** will not detect any errors in the selected areas.
+After an exclusion area has been defined, triggering an inspection on the **UUI** will not detect any errors in the selected areas.
 
 ![UUI with errors](assets/UUI-exclusion-area.png)
 
-In case you have selected the wrong area or you do not want to select it anymore, you can use the **¨remove area¨** button to deselect it.
+In case you have selected the wrong area or you do not want to select it anymore, you can use the **remove area** button to deselect it.
 
 ![Remove area button](assets/erase.PNG){ align=right }
 
