@@ -19,6 +19,9 @@ extra_css:
 plugins:
   - search
    #  - Navigation
+extra:
+  version:
+    provider: mike
 nav:
   - Getting started:
     #- Account created: 'Account-created.md'
@@ -32,9 +35,8 @@ nav:
     #- Installation process: 'Installation_process.md'
   - How to use it:
     - User Interface: 'Screen-layout.md'
-    - User guide: 'User_guide.md'
+    #- User guide: 'User_guide.md'
     - Inspection workflow: 'Inspection_workflow.md'
-    - How to update your unit: 'updating_your_unit.md'
     - Main functions:
       - Barcode reader: 'Barcode_reader.md'
       - Generating a report: 'Generating _a_report.md'
@@ -46,7 +48,7 @@ nav:
     - General information: 'Products-and-services.md'
     - FAQ: 'FAQ.md'
     - Troubleshooting: 'Troubleshooting.md'
-    - Update your AOI computer: 'Update-your-AOI-computer.md'
+    - How to update your unit: 'updating_your_unit.md'
 #  - privacy
 copyright: Copyright &copy; 2023 - 2024 AgnosPCB
 markdown_extensions:
@@ -55,6 +57,7 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+
 
 
 
