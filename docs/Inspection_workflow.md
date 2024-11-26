@@ -8,7 +8,7 @@ ___
 - Turn on the monitor
 - Connect the power supply to the computer and turn on it
 - Once the system have started, open the app by pressing doubleclick in the desktop icon
-- **For ONLINE units only**: a login windows will pop up asking for your AgnosPCB's account credentials. The credentials will be stored in the unit for future use and it will not require to login again.
+- **For ONLINE units only**: a login windows will pop up asking for your AgnosPCB's account credentials. The credentials will be stored in the unmkdit for future use and it will not require to login again.
 
 ![Login window](assets/v7/uui-login.png){.center}
 
@@ -16,7 +16,7 @@ ___
 
 ___
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=FirteJF0U1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
 ### **Generating a REFERENCE**
