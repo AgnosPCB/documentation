@@ -25,16 +25,17 @@ extra:
 nav:
   - Getting started:
     #- Account created: 'Account-created.md'
-    - Assembly guide:
-      - Package content: 'Package_content.md'
-      - Platform assembly:  'Platform_assembly_guide.md'
-      - Connecting ONLINE units: 'Connect_to_the_Nuc.md'
-      - Connecting OFFLINE units: 'connecting_offline_units.md'
+    - Package content: 'Package_content.md'
+    - User Interface: 'Screen-layout.md'
+    #- Assembly guide:
+      #- Platform assembly:  'Platform_assembly_guide.md'
+      #- Connecting ONLINE units: 'Connect_to_the_Nuc.md'
+      #- Connecting OFFLINE units: 'connecting_offline_units.md'
       #- Connect to the AgnosPCB Laptop: 'Connect_to_the_AgnosPCB_Laptop.md'
-      - Connecting the camera: 'Connect-the-camera.md'
+      #- Connecting the camera: 'Connect-the-camera.md'
     #- Installation process: 'Installation_process.md'
   - How to use it:
-    - User Interface: 'Screen-layout.md'
+    
     #- User guide: 'User_guide.md'
     - Inspection workflow: 'Inspection_workflow.md'
     - Main functions:
