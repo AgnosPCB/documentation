@@ -3,7 +3,7 @@ ___
 
 The exclusion area is used to analyze the **PCB** by excluding certain items that are not necessary or not wanted to be analyzed. For this we use the button **¨draw exclusion area¨.**
 
-![Exclucion button](assets/v7/ui-button5.png){.center}
+![Exclucion button](assets/exclucion-area.PNG){ align=right }
 
 Then, using the **REFERENCE** photo, select the area to be excluded. You can select as many areas as you want. 
 
