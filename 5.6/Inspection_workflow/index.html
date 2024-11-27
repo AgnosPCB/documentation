@@ -1,0 +1,1067 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Screen-layout/">
+      
+      
+        <link rel="next" href="../Barcode_reader/">
+      
+      
+      <link rel="icon" href="../assets/cropped-agnosPCB-favicon-192x192.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.14">
+    
+    
+      
+        <title>Inspection workflow - AgnosPCB Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.10ba22f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/agnos_colors.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inspection-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AgnosPCB Documentation" class="md-header__button md-logo" aria-label="AgnosPCB Documentation" data-md-component="logo">
+      
+  <img src="../assets/cropped-agnosPCB-favicon-192x192.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AgnosPCB Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Inspection workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Package_content/" class="md-tabs__link">
+          
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  How to use it
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Products-and-services/" class="md-tabs__link">
+          
+  
+  Help
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AgnosPCB Documentation" class="md-nav__button md-logo" aria-label="AgnosPCB Documentation" data-md-component="logo">
+      
+  <img src="../assets/cropped-agnosPCB-favicon-192x192.webp" alt="logo">
+
+    </a>
+    AgnosPCB Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Package_content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Package content
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Screen-layout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    How to use it
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            How to use it
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Inspection workflow
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Inspection workflow
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inspection-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspection process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-the-inspection-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting the inspection process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting the inspection process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signing-up-inspecting-your-first-pcbas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing-up + Inspecting your first PCBAs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-do-an-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to do an inspection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to do an inspection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Main functions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Main functions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Barcode_reader/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Barcode reader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Generating%20_a_report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating a report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Set_exclusion_area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set exclusion area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Set_sensitivity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set sensitivity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UUI_to_REFERENCE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UUI to REFERENCE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Help
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Help
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Products-and-services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../updating_your_unit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to update your unit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inspection-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspection process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-the-inspection-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting the inspection process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting the inspection process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signing-up-inspecting-your-first-pcbas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing-up + Inspecting your first PCBAs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-do-an-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to do an inspection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to do an inspection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="inspection-workflow"><strong>Inspection workflow</strong></h1>
+<hr />
+<h2 id="inspection-process"><strong>Inspection process</strong></h2>
+<hr />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/swKwjGZ7zQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>The inspection sequence you need to follow to start the inspection process will be this:</p>
+<ul>
+<li>Turn on the <strong>LED Panels</strong> using the remote control (ON button). You can adjust the brightness with the UP and DOWN arrows. Set it to maximum.</li>
+<li>Turn on the <strong>Sony</strong> camera. Previously connected to the microcomputer and with the battery dummy already inserted.</li>
+<li>Insert your user credentials and click on <strong>SUBMIT</strong>. If there was a previous REFERENCE image, it will be loaded.</li>
+<li>Start your inspection process setting a <strong>REFERENCE</strong> image and then, taking photos of the circuits/ panels to be integrity checked.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make use of the REPORT feature. That will dramatically improve the recognition capacity of the system in the long run.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Check this quick guide about how to get the best inspection results with the inspection platform</p>
+</div>
+<h2 id="starting-the-inspection-process"><strong>Starting the inspection process</strong></h2>
+<hr />
+<h3 id="signing-up-inspecting-your-first-pcbas"><strong>Signing-up + Inspecting your first PCBAs</strong></h3>
+<p>You need an account <strong>user</strong> ID and <strong>password</strong> to use the Agnospcb Inspection tool. You can get one for <strong>free to test the service capabilities​.</strong></p>
+<p>Populate the USER and PASSWORD fields with your details and click on <strong>SUBMIT</strong>. Your login info will be stored (encrypted) so you do no have to input them again.</p>
+<p>The Agnospcb Inspection tool software will <strong>“compare”</strong> the photograph of your <strong>REFERENCE</strong> circuit/panel (“golden sample”) with all the photos you will take of the circuit to be inspected (photos to “ANALYZE“)</p>
+<p><img alt="Selected PCB area" src="../assets/image.png" /></p>
+<p>All the faults found on the inspected circuit/panel will be highlighted (if any).</p>
+<p>To set the <strong>REFERENCE</strong>, click on the ICON <strong>“LOAD”</strong> and select the desired photo or press the key R to order the camera take a photo of what will be the <strong>REFERENCE</strong> circuit/panel. If you are using the Agnospcb microcomputer, you can create a REFERENCE image just pressing the INSPECTION button for 4 seconds. That will take a photo of what will be the “REFERENCE” circuit/panel and set it on the LEFT canvas. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We strongly recommend using our inspection platform to get crisp, detailed and shadow-less images of the PCBAs. The REFERENCE photo will remain as GOLDEN SAMPLE as long as you do not change it for another one. </p>
+</div>
+<p><img align="right" alt="Shot button" src="../assets/shot-button.PNG" /></p>
+<p>After signing-in, the software will automatically retrieve the last REFERENCE photograph used. Now, take a photo of the circuit you want to <strong>“ANALYZE“</strong>: </p>
+<p>1) If you got the Agnospcb inspection platform with the microcomputer, you just need to push the INSPECTION BUTTON for a second. If the “AUTO-ANALYZE” enabled, the software will automatically process the image, otherwise, press “PROCESS IMAGE” or ENTER on your keyboard. </p>
+<p>2) If you are using your own computer and the SONY software, click on the SHOT button.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can manually select a “to be inspected” photo, clicking on the LOAD ICON of the “TO BE INSPECTED AREA” and select it using the TO ANALYZE button. The software will automatically rotate and align it</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>While the neural network will discard any minor differences related to lighting conditions, positional or geometric changes among the circuit/elements, we recommend placing the boards to be inspected (within the possibilities) in the same position when taking the photos. The inspection resulting images will be stored in the /PCB_OUT folder.</p>
+</div>
+<p><img align="right" alt="PCB_IN folder" src="../assets/111.PNG" /></p>
+<p><strong>COMPUTERS USERS: Auto Analyze STEPS:</strong>
+SET your <strong>REFERENCE</strong> image (Button REFERENCE)
+ENABLE “AUTO ANALYZE” ticking its box
+Take a photo of a circuit you want to inspect using the <strong>REMOTE app</strong> (You can use the key ” 1″ from your keyboard to take the photo when the REMOTE tool is active) or using your own camera system.
+The software will display the result of the inspection within seconds
+<strong>REPEAT:</strong> Take another photo of the next PCBA you want to inspect. The software will process it automatically.</p>
+<h2 id="how-to-do-an-inspection"><strong>How to do an inspection</strong></h2>
+<hr />
+<p><img align="right" alt="Open reference button" src="../assets/Open-reference.PNG" />
+Start by opening the<strong> Agnospcb application</strong> and entering your username and password. Once opened, load the reference of your file with the "open reference" button and the reference will be automatically loaded on the screen. Also, save the reference in the mosaic, remember that you can load the different references by using the keys where they are saved such as <strong>F1, F2, F3, F4....</strong></p>
+<p><img align="right" alt="Open UUI button" src="../assets/Open-UUI.PNG" />
+After uploading the <strong>REFERENCE</strong>, use the <strong>¨Open UUI¨</strong> button to upload the UUI photo. Once uploaded it will be processed automatically and will start pointing out possible errors. To move through them use the <strong>"right"</strong> or <strong>"left"</strong> keys and to mark an error use the <strong>"up"</strong> key.</p>
+<p><img alt="PCB with errors" src="../assets/ERRORS.png" /></p>
+<p>When marking an error you can either not specify it or you can mark it as one of the following options:</p>
+<p><img alt="Fault selection window" src="../assets/SELECT-FAULT.png" /></p>
+<p>Once you have checked and marked all errors in the <strong>UUI</strong> you can finish the inspection by clicking on the <strong>¨finish inspection¨</strong> button.</p>
+<p><img align="right" alt="Finish inspection button" src="../assets/finish-inspection-button.png" /></p>
+<p>Pressing the button will open a window where you can rename the file, add comments and select if the UUI is OK or if it has unpassable errors. After this a <strong>pdf report</strong> will be generated.</p>
+<p><img alt="Generate report screen" src="../assets/GENERATE-REPORT.png" /></p>
+<p>To view the generated report you must go to the <strong>¨PCB_OUT¨ folder</strong>, where all generated reports will be stored.</p>
+<p><img alt="PCB_OUT folder" src="../assets/PCB-OUT.png" /></p>
+<p>The report will show the date, whether or not the pcb has passed the inspection, the data, the observations, the <strong>UUI</strong> and <strong>REFERENCE</strong> image and the errors together with their specifications.</p>
+<p><img alt="Report" src="../assets/REPORT1.png" />
+<img alt="Report" src="../assets/REPORT2.png" /></p>
+<h3 id="other-functions"><strong>Other functions</strong></h3>
+<ul>
+<li><strong>Draw exclusion area</strong></li>
+</ul>
+<p>With this button you can select one or more areas that will be completely <strong>ignored</strong> by the processor. That is, no errors found in those areas will be detected. You can select as many areas as you want. </p>
+<p><img alt="PCB with an exclusion area" src="../assets/exclusion-area.png" /></p>
+<ul>
+<li><strong>Remove area</strong></li>
+</ul>
+<p>In case you have selected an area by mistake with the previous function or you do not want to keep it selected, you can use this button to <strong>deselect it.</strong></p>
+<p><img alt="erase button" src="../assets/erase.PNG" /></p>
+<ul>
+<li><strong>Swap workplace</strong></li>
+</ul>
+<p>With this button you can switch between <strong>REFERENCE</strong> and <strong>UUI.</strong> You can either press the button or use the <strong>TAB</strong> keyboard shortcut</p>
+<p><img alt="swap button" src="../assets/swap.PNG" /></p>
+<ul>
+<li><strong>Sensitivity</strong>
+The app allows you to change the sensitivity levels for error detection from <strong>normal, high and very high</strong>. Note that the higher the sensitivity, the more errors it can detect.</li>
+</ul>
+<p>Example: <strong>normal sensitivity</strong></p>
+<p><img alt="Errors with normal sensitivity" src="../assets/normal-sensitivity.png" /></p>
+<p>Example: <strong>high sensitivity</strong></p>
+<p><img alt="Errors with high sensitivity" src="../assets/high-sensitivity.png" /></p>
+<p>Example: <strong>very high sensitivity</strong></p>
+<p><img alt="Errors with very high sensitivity" src="../assets/very-high-sensitivity.png" /></p>
+<p>Note how it detects twice as many possible errors at very high sensitivity compared to normal sensitivity.</p>
+<ul>
+<li><strong>UUI to REFERENCE</strong></li>
+</ul>
+<p>This button allows you to change a <strong>UUI</strong> image and convert it into a <strong>REFERENCE.</strong></p>
+<p><img align="right" alt="UUI to REFERENCE button" src="../assets/UUI-to-REF.png" /></p>
+<p>Finally, you can change other aspects with the <strong>¨settings¨</strong> button. Once clicked, the following screen will appear where you can change and adjust factors such as workflow, path and others to your liking.</p>
+<p><img alt="Settings screen" src="../assets/settings.2.png" /></p>
+<ul>
+<li>In case you want to analyze only a part of the <strong>UUI image</strong> you can select the part to be analyzed by <strong>right-clicking</strong> and dragging to include the desired area.</li>
+</ul>
+<p><img alt="Reference selected area" src="../assets/reference-area.png" /></p>
+<p>Once the area is selected in the reference image, loading the <strong>UUI</strong> automatically inspects only the selected area.</p>
+<p><img alt="UUI selected area" src="../assets/UUI-area.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 - 2024 AgnosPCB
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.instant"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
