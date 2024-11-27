@@ -1,159 +1,144 @@
 # **Inspection workflow**
 ___
 
-## **Inspection process**
+## **Launching the software**
 ___
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/swKwjGZ7zQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Connect the power supply to the inspection platform on the rear panel
+- Turn on the monitor
+- Connect the power supply to the computer and turn on it
+- Once the system have started, open the app by pressing doubleclick in the desktop icon
+- **For ONLINE units only**: a login windows will pop up asking for your AgnosPCB's account credentials. The credentials will be stored in the unmkdit for future use and it will not require to login again.
 
-The inspection sequence you need to follow to start the inspection process will be this:
+![Login window](assets/v7/uui-login.png){.center}
 
-- Turn on the **LED Panels** using the remote control (ON button). You can adjust the brightness with the UP and DOWN arrows. Set it to maximum.
-- Turn on the **Sony** camera. Previously connected to the microcomputer and with the battery dummy already inserted.
-- Insert your user credentials and click on **SUBMIT**. If there was a previous REFERENCE image, it will be loaded.
-- Start your inspection process setting a **REFERENCE** image and then, taking photos of the circuits/ panels to be integrity checked.
+## **Inspection procedure**
 
-!!! note "Note"
-
-    Make use of the REPORT feature. That will dramatically improve the recognition capacity of the system in the long run.
-
-!!! info "Info"
-
-    Check this quick guide about how to get the best inspection results with the inspection platform
-
-
-## **Starting the inspection process**
 ___
 
-### **Signing-up + Inspecting your first PCBAs**
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+___
 
-You need an account **user** ID and **password** to use the Agnospcb Inspection tool. You can get one for **free to test the service capabilities​.**
-
-Populate the USER and PASSWORD fields with your details and click on **SUBMIT**. Your login info will be stored (encrypted) so you do no have to input them again.
+### **Generating a REFERENCE**
 
 The Agnospcb Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit/panel (“golden sample”) with all the photos you will take of the circuit to be inspected (photos to “ANALYZE“)
 
-![Selected PCB area](assets/image.png)
+To proceed with the REFERENCE taken, click in the reference icon in the main menu:
 
-All the faults found on the inspected circuit/panel will be highlighted (if any).
+![REF button](assets/v7/ui-button9.png){.center}
 
-To set the **REFERENCE**, click on the ICON **“LOAD”** and select the desired photo or press the key R to order the camera take a photo of what will be the **REFERENCE** circuit/panel. If you are using the Agnospcb microcomputer, you can create a REFERENCE image just pressing the INSPECTION button for 4 seconds. That will take a photo of what will be the “REFERENCE” circuit/panel and set it on the LEFT canvas. 
+A new window will pop up with mutiple tools:
 
-!!! note "Note"
+![REF window](assets/v7/uui-ref_livepreview.png)
 
-     We strongly recommend using our inspection platform to get crisp, detailed and shadow-less images of the PCBAs. The REFERENCE photo will remain as GOLDEN SAMPLE as long as you do not change it for another one. 
+In this window we have to set the images needed to cover all the PCBA.
 
-![Shot button](assets/shot-button.PNG){ align=right }
+![REF dimensions](assets/v7/uui-ref_livepreview-dimensions.png)
 
-After signing-in, the software will automatically retrieve the last REFERENCE photograph used. Now, take a photo of the circuit you want to **“ANALYZE“**: 
+In case you can not determine how many images are needed to cover your PCBA/panel, you can place your PCBA/panel in the middle of the inspection area and press the **AUTO** button. The system will scan the PCBA/panel and 
+**set the optimal proportions automatically.**
 
-1) If you got the Agnospcb inspection platform with the microcomputer, you just need to push the INSPECTION BUTTON for a second. If the “AUTO-ANALYZE” enabled, the software will automatically process the image, otherwise, press “PROCESS IMAGE” or ENTER on your keyboard. 
+![REF AUTO button](assets/v7/uui-ref_livepreview-auto.png){.center}
 
-2) If you are using your own computer and the SONY software, click on the SHOT button.
+In the lower are of the window you can set/unset the grid in the livew preview and set the exposure to take the image.
 
-
-!!! note "Note"
-
-    You can manually select a “to be inspected” photo, clicking on the LOAD ICON of the “TO BE INSPECTED AREA” and select it using the TO ANALYZE button. The software will automatically rotate and align it
+![REF lower bar](assets/v7/uui-ref_livepreview-exposure.png){.center}
 
 !!! warning "Important"
-
-    While the neural network will discard any minor differences related to lighting conditions, positional or geometric changes among the circuit/elements, we recommend placing the boards to be inspected (within the possibilities) in the same position when taking the photos. The inspection resulting images will be stored in the /PCB_OUT folder.
-
-![PCB_IN folder](assets/111.PNG){ align=right }
-
-**COMPUTERS USERS: Auto Analyze STEPS:**
-SET your **REFERENCE** image (Button REFERENCE)
-ENABLE “AUTO ANALYZE” ticking its box
-Take a photo of a circuit you want to inspect using the **REMOTE app** (You can use the key ” 1″ from your keyboard to take the photo when the REMOTE tool is active) or using your own camera system.
-The software will display the result of the inspection within seconds
-**REPEAT:** Take another photo of the next PCBA you want to inspect. The software will process it automatically.
-
-## **How to do an inspection**
-___
-
-![Open reference button](assets/Open-reference.PNG){ align=right }
-Start by opening the** Agnospcb application** and entering your username and password. Once opened, load the reference of your file with the "open reference" button and the reference will be automatically loaded on the screen. Also, save the reference in the mosaic, remember that you can load the different references by using the keys where they are saved such as **F1, F2, F3, F4....**
-
-![Open UUI button](assets/Open-UUI.PNG){ align=right }
-After uploading the **REFERENCE**, use the **¨Open UUI¨** button to upload the UUI photo. Once uploaded it will be processed automatically and will start pointing out possible errors. To move through them use the **"right"** or **"left"** keys and to mark an error use the **"up"** key.
+    The default value (16000) set is **the optimal value in most of the cases.** Ajust this parameter just in case of very clear/dark component that are hardly visible by the software. 
 
 
-![PCB with errors](assets/ERRORS.png)
 
-When marking an error you can either not specify it or you can mark it as one of the following options:
+This window allows to move the camera to any quadrant of the PCBA. Just click in the desired quadrant in the miniature.
 
-![Fault selection window](assets/SELECT-FAULT.png)
+![Quadrants map](assets/v7/uui-ref_livepreview-map.png){.center}
 
-Once you have checked and marked all errors in the **UUI** you can finish the inspection by clicking on the **¨finish inspection¨** button.
+The camera will focus on the selected area once the capture has started.
 
-![Finish inspection button](assets/finish-inspection-button.png){ align=right }
+!!! warning "Important"
+    For a proper focusing, select an area **without tall components.**
 
-Pressing the button will open a window where you can rename the file, add comments and select if the UUI is OK or if it has unpassable errors. After this a **pdf report** will be generated.
+It also possible to focus the optics before start the capture by pressing in the **FOCUS** button. This helps to find a area where the optics focus correctly.
 
-![Generate report screen](assets/GENERATE-REPORT.png)
+![AUTO button](assets/v7/uui-ref_livepreview-focus.png){.center}
 
-To view the generated report you must go to the **¨PCB_OUT¨ folder**, where all generated reports will be stored.
+To start the capture processing simply click in the **CAPTURE REFERENCE** button. The AOI will focus automatically in the selected quadrant and starts capturing the whole PCBA in a matter of seconds.
 
-![PCB_OUT folder](assets/PCB-OUT.png)
+![Capture reference button](assets/v7/uui-ref_livepreview-capture.png){.center}
 
-The report will show the date, whether or not the pcb has passed the inspection, the data, the observations, the **UUI** and **REFERENCE** image and the errors together with their specifications.
+![Capturing process](assets/v7/uui-ref_stitching.png){.center}
 
-![Report](assets/REPORT1.png)
-![Report](assets/REPORT2.png)
+After capturing the PCBA, the mosaic window will pop up allowing to store the image for quick usage.
 
-### **Other functions** 
+!!! note "Note"
+    All taken REFERENCES will be stored automatically. The mosaic helps to quickly load the most used REFERENCES.
 
-- **Draw exclusion area**
+![Capturing process](assets/v7/ui-mosaic_after_ref.png){.center}
 
-With this button you can select one or more areas that will be completely **ignored** by the processor. That is, no errors found in those areas will be detected. You can select as many areas as you want. 
+Once the capture process is finished, the REFERENCE image will be displayed in the main window and will allow you to set [exclusion mask](Set_exclusion_area.md) or [draw a barcode](Barcode_reader.md) area for reading.
 
-![PCB with an exclusion area](assets/exclusion-area.png)
+![Reference image](assets/v7/ui-reference.png){.center}
 
+### **Capturing an UUI**
 
-- **Remove area**
+After generating or uploading a previous REFERENCE image, we can proceed with the capture of the **UUI** (Unit Under Inspection) image by pressing the button.
 
-In case you have selected an area by mistake with the previous function or you do not want to keep it selected, you can use this button to **deselect it.**
+![UUI button](assets/v7/ui-button11.png){.center}
 
-![erase button](assets/erase.PNG)
+A livepreview window will pop up showing a gosthing of the REFERENCE image. This helps to align the UUI PCBA with the REFERENCE.
 
-- **Swap workplace**
+!!! warning "Important"
+    The **AgnosPCB** software is capable to align both images (**REFERENCE** and **UUI**) automatically. However, it is important to position the UUI PCBA correctly to avoid geometric deformations that can cause false positive detections.
 
-With this button you can switch between **REFERENCE** and **UUI.** You can either press the button or use the **TAB** keyboard shortcut
+![UUI livepreview](assets/v7/ui-uui_preview.png){.center}
 
-![swap button](assets/swap.PNG)
+The capturing process will start by clicking in the **START INSPECTION** button.
 
-- **Sensitivity**
-The app allows you to change the sensitivity levels for error detection from **normal, high and very high**. Note that the higher the sensitivity, the more errors it can detect.
+!!! note "Note"
+    Focusing is not necessary as the focus parameter is already stored with the REFERENCE image, making the inspection really fast.
 
-Example: **normal sensitivity**
+The inspection process shall be executed in parallel in case of a multi-image inspection.
 
-![Errors with normal sensitivity](assets/normal-sensitivity.png)
+Once the capturing process have ended the fineal result will be returned showing the detected errors if there is any. It is possible to change the [detection sensitivity](Set_sensitivity.md) by pressing the button in the main window or by pressing **1, 2 or 3 key.**
 
-Example: **high sensitivity**
+![Sensitivity button](assets/v7/ui-button6.png){.center}
 
-![Errors with high sensitivity](assets/high-sensitivity.png)
+![UUI inference](assets/v7/ui-uui_report.png){.center}
 
-Example: **very high sensitivity**
+If errors are detected, a **red frame** will appear around the main window. **Green frame** if there are no errors.
 
-![Errors with very high sensitivity](assets/very-high-sensitivity.png)
+### **Reporting errors**
 
-Note how it detects twice as many possible errors at very high sensitivity compared to normal sensitivity.
+Once the inspection is complete, the operator must monitor the flagged errors, marking them as **actual error** or **false positive detection**.
+To do this, simply scroll through the errors using the **left and right arrows** on the keyboard.
 
-- **UUI to REFERENCE**
+To mark a real error, just move to the fault and press the **up arrow** on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault of the list.
 
-This button allows you to change a **UUI** image and convert it into a **REFERENCE.**
+![Report window](assets/v7/ui-report.png){.center}
 
-![UUI to REFERENCE button](assets/UUI-to-REF.png){ align=right }
+In addition, there is a empty fiel to **add a comment.**
 
-Finally, you can change other aspects with the **¨settings¨** button. Once clicked, the following screen will appear where you can change and adjust factors such as workflow, path and others to your liking.
+In case the operator founds an error **not detected** by the software, it possible to flag and report it by moving the cursor to the fault area and press **up arrow** key. The reporting window will appear as usual. 
 
-![Settings screen](assets/settings.2.png)
+When the software marks an area that is not an actual error, the operator can flagged it as a **false positive** by pressing **down arrow** key. Also a window will appear allowing to add a comment.
 
-- In case you want to analyze only a part of the **UUI image** you can select the part to be analyzed by **right-clicking** and dragging to include the desired area.
+![False positive window](assets/v7/ui-fp_report.png){.center}
 
-![Reference selected area](assets/reference-area.png)
+!!! note "Note"
+    Note the **red icon** ![Red icon](assets/v7/ui-report_red.png){width=20px} marks the actual faults and the **green icon** ![Green icon](assets/v7/ui-report_green.png){width=20px}  the false positive faults.
 
-Once the area is selected in the reference image, loading the **UUI** automatically inspects only the selected area.
+### **Generating a final PDF report**
 
-![UUI selected area](assets/UUI-area.png)
+Once the reporting have finished, the operator can generate a final PDF report by pressing the following button:
+
+![Final report](assets/v7/ui-button8.png){.center}
+
+A window appears allowing you to mark the inspection as **OK** or **NOT OK**. If the PCBA passes the quality check successfully, press the green icon.
+
+![OK NOK](assets/v7/ui-finish_inspection.png){.center}
+
+It is possible to add comments that will be included in the report. The PDF will be generated in the **REPORTS** folder.
+
+![PDF report](assets/v7/pdf-report1.png){.center}
+
+![PDF report](assets/v7/pdf-report2.png){.center}

@@ -1,4 +1,4 @@
-# **Welcome to **AgnosPCB** documentation.**
+# **Welcome to AgnosPCB documentation.**
 ___
 
 
@@ -38,4 +38,4 @@ If you need additional assistance, our support team is here to help. Find contac
 
 Email us to: [support@agnospcb.com](mailto:support@agnospcb.com)
 
-Or visit us at: [AgnosPCB.com](https://agnospcb.com/)
+Or visit our web page: [AgnosPCB.com](https://agnospcb.com/)
