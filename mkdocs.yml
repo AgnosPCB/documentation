@@ -24,20 +24,15 @@ extra:
     provider: mike
 nav:
   - Getting started:
-    #- Account created: 'Account-created.md'
     - Package content: 'Package_content.md'
-    - User Interface: 'Screen-layout.md'
-    #- Assembly guide:
-      #- Platform assembly:  'Platform_assembly_guide.md'
-      #- Connecting ONLINE units: 'Connect_to_the_Nuc.md'
-      #- Connecting OFFLINE units: 'connecting_offline_units.md'
-      #- Connect to the AgnosPCB Laptop: 'Connect_to_the_AgnosPCB_Laptop.md'
-      #- Connecting the camera: 'Connect-the-camera.md'
+    - Unboxing guide: 'Unboxing.md'
+    #- Account created: 'Account-created.md'
     #- Installation process: 'Installation_process.md'
   - How to use it:
-    
+    - User Interface: 'Screen-layout.md'
     #- User guide: 'User_guide.md'
     - Inspection workflow: 'Inspection_workflow.md'
+    #- How to update your unit: 'updating_your_unit.md'
     - Main functions:
       - Barcode reader: 'Barcode_reader.md'
       - Generating a report: 'Generating _a_report.md'
@@ -46,10 +41,11 @@ nav:
       - UUI to REFERENCE: 'UUI_to_REFERENCE.md'
       #- Auto processing: 'Auto_processing.md'
   - Help:
+    - Tips: 'Tips.md'
     - General information: 'Products-and-services.md'
     - FAQ: 'FAQ.md'
     - Troubleshooting: 'Troubleshooting.md'
-    - How to update your unit: 'updating_your_unit.md'
+    - Update your AOI computer: 'Update-your-AOI-computer.md'
 #  - privacy
 copyright: Copyright &copy; 2023 - 2024 AgnosPCB
 markdown_extensions:
@@ -58,7 +54,9 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
-
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 
