@@ -1,51 +1,46 @@
 # **FAQ**
 
-??? question "Are there any rental / trial plans for the Online and Offline inspection platforms?"
+??? question "Are there any rental / trial plans for the ONLINE and OFFLINE inspection platforms?"
 
-    Yes, we have a renting plan for OFFLINE units for a minimum of 2 month. If you finally decide to kept it, the renting cost will be discounted from the final price of the unit. For further information click "[here](Products-and-services.md "Products and services")"
-
-??? question "If we spend all the credits from our subscription plan, can we still use the platform as an Image capture device for manual inspections?"
-
-    Yes, you can take images as a REFERENCE, as much as you want. The credits are spent when you load an UUI and start the inspection procedure.
+    Yes, we have a renting plan for OFFLINE units for **a minimum of 2 month**. If you finally decide to kept it, the renting cost will be discounted from the final price of the unit. [Contact us](mailto:support@agnospcb.com) to require a quote 
 
 ??? question "What is the maximum PCB size that can be inspected with this system?"
 
-    In the current platform the maximum PCB size that can be inspected with a single shot is **23x30cm**. Larger PCBs can be inspected by parts taking various images of the board.
+    The new **AI-4050** allows inspection of PCBA up to 40 x 50 cm (16 x 19").
 
-??? question "Are there firmware updates available for the offline inspection platform? If so, how frequently are these updates provided to enhance the neural network?"
+??? question "What is the difference between "client updates" and "neural network updates"? How frequently are these updates provided?"
 
-    The Neural Network is usually updated every 3-4 months. The OFFLINE unit can be updated easily by a USB drive.
+    Client upgrades refer to the graphical interface used by the operator that includes features to facilitate PCBA inspections. As for the neural network updates, these refer to the architecture that performs the inspections and returns the result to the client software. ONLINE units do not require neural network updates as they use the latest version released on the AgnosPCB's server. The OFFLINE units can also upgrade the neural network architecture with ease with just a USB drive. The neural network is usually updated every 3-4 months.
 
-??? question "Having an online subscription plan, can you change or cancel it based on needs/requirements?"
+??? question "How can I manage my online subscription?"
 
-    Yes, you can update/downgrade/cancel any time you want by simply emailing us at support@agnospcb.com
+    Our customers can manage their subscriptions from our Stripe portal.
 
-??? question "What will be the variation of monthly subscription prices over time?"
+??? question "Does the AgnosPCB AI learn by itself from the inspections it processes?"
 
-    We offer several [plans](https://agnospcb.com/products/subscription-service/) to suit your production volume.
-
-??? question "Are there any other hidden charges?"
-
-     The only additional charge is the shipping cost, which we quote according to the customer's delivery address.
-
-??? question "How does the inspection process works?"
-
-    The AOI system works with two images: a REFERENCE and the unit under inspection (UUI). The neuronal network finds differences between both images and marks them. The AOI is capable of assuming small differences that are not errors like: dust, small displacements, Silkscreen variations, light reflections and others. Both images can be taken in the moment with a connected camera or imported by an existing file and the reference can be saved for future inspections. It's is important that the reference has no faults in order to deliver good results. Also, the pictures have to be taken with good and similar light conditions achieve the best performance of the AI model.
-    
-    Once it has been inspected, the inspection tool software shows the issues in the PCB and the operator is able to mark them as a fault or a false positive, choosing what kind of fault it is (wrong polarity, missing parts,...) to make a final PDF report, which can be OK or NOT_OK. This report contains the date, the operator ID, both PCB images and their faults.
+    No, it does not. We cannot allow the neural network to learn on its own as this could lead to incorrect software behavior and compromise the performance of the system. Our engineers carefully monitor the training samples, implement them in the neural network and perform thorough testing to avoid unwanted behavior.
 
 ??? question "What can I do if the system is not detecting a fault?"
 
-    If you notice the software is not detecting some faults just email us with the images where the error is not detected (REFERENCE and UUI images) and we will implement a fix in the next neural network update.
+    If you notice the software is not detecting some faults or is marking a false positive constantly, just [email us](mailto:support@agnospcb.com) with the images where the error is not detected (REFERENCE and UUI images) and we will implement the fault in the next neural network update.
 
 
 ??? question "What can I do with the detected errors that are false positives?"
 
-    You can move through the detected errors with LEFT and RIGHT arrow keys. To mark as an error press the UP arrow key. Press the DOWN arrow key to flag false positives, and they will be reported to us (on online platforms). This feedback is important to us in order to improve the detection rate.
+    You can move through the detected errors with LEFT and RIGHT arrow keys. To mark as false positive press the UP arrow key and it will be reported to us (on ONLINE units only). For OFFLINE units, you can also flag it as false positive with UP arrwo key. A cropped image will be generated in the REPORTS folder. Then send us by email and we will incorporate it to the next neural network architecture. This feedback is important to us in order to improve the detection rate.
 
 ??? question "How does the system work with QFN style packages?"
 
     Current hardware is not capable of seeing how QFN components are soldered, but it is capable of detecting poor positioning, displacement, twists or contamination near the IC.
+
+??? question "I want to use my own optics and lighting system, how can I integrate the AgnosPCB inspection software?"
+
+    If you plan to use your own hardware you have 2 options:
+
+    - Using our [Windows application](https://agnospcb.com/software-tool-download/) + subscribing to any of [our plans](https://agnospcb.com/pricing-eur/). It requires a Window's computer and a stable Internet conection. This way, you will be able to store the images take by your own camera in a specific folder where the software will capture and inspect them automatically. You can also upload the images manually as this version does not support remote control of the camera.
+
+    - Configuring our [API](https://agnospcb.com/agnospcb-api/) + subscribing to a GOLD [plan](https://agnospcb.com/pricing-eur/) or superior. This is a python script that allows you to integrate our inspection software to your system with ease. It can works in any system that can run a Python script. It requieres a stable Internet conection.
+
 
 ??? question "Do you have any recommendations for setting up a basic lightbox? How should we effectively illuminate the board, particularly from the side?"
 
