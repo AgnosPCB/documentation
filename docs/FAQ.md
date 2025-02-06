@@ -14,7 +14,7 @@
 
 ??? question "How can I manage my online subscription?"
 
-    Our customers can manage their subscriptions from our Stripe portal.
+    [Contact us](mailto:support@agnospcb.com) whenever you need to make a change to your subscription.
 
 ??? question "Does the AgnosPCB AI learn by itself from the inspections it processes?"
 
@@ -42,22 +42,22 @@
     - Configuring our [API](https://agnospcb.com/agnospcb-api/) + subscribing to a GOLD [plan](https://agnospcb.com/pricing-eur/) or superior. This is a python script that allows you to integrate our inspection software to your system with ease. It can works in any system that can run a Python script. It requieres a stable Internet conection.
 
 
-??? question "Do you have any recommendations for setting up a basic lightbox? How should we effectively illuminate the board, particularly from the side?"
+??? question "I would like to build my own lightbox. Do you have any recommendations for setting it up?"
 
-    For optimal results, lighting should be both adequate and consistent, with an aim to eliminate shadows. It is recommended to use white lighting for best clarity. A lighting ring can be employed if it provides enough illumination. However, the key consideration is to maintain consistent lighting conditions at all times.
+    For optimal results, lighting should be both adequate and consistent, with an aim to eliminate shadows. It is recommended to use white lighting for best clarity. A lighting ring can be employed if it provides enough illumination. However, the key consideration is to maintain consistent lighting conditions at all times. Be careful with the influences of external lighting which can vary the conditions between photos. This may cause some problems to the detection algorithm. If you are able to, enclose the inspection area as much as you can.
 
-??? question "Does the offline version allow for unlimited inspections?"
+??? question "Does the OFFLINE version allow for unlimited inspections?"
 
-    The offline version entails a one-time purchase with unlimited inspections.
+    The OFFLINE units entails a one-time purchase with unlimited inspections.
 
 
 ??? question "Can I use my current camera/AOI to inspect?"
 
-    The AgnosPCB software currently supports remote control of Sony cameras exclusively. We cannot guarantee compatibility with all camera models. Optionally, images can be stored in the PCB_IN folder for automatic processing, loaded manually as files, or sent directly to the API service.
+    Yes, you can. The images can be stored in the PCB_IN folder for automatic processing, loaded manually as files, or sent directly to the API service.
 
 ??? question "Which camera is recommended?"
 
-    A camera with a resolution of at least 20MP should provide sufficient detail for component inspection. We recommend Sony cameras to ensure compatibility with AgnosPCB's client software and to avoid potential future compatibility issues
+    A camera with a resolution of at least 20MP should provide sufficient detail for component inspection. As for the lens, you should aim for a focal length that has a balance between displaying components large enough for the neural network to be able to detect faults and that does not produce dwarfing effects on tall components.
 
 ??? question "Is it possible to inspect THT components?"
 
@@ -65,7 +65,7 @@
     
     However, while not optimized for THT components, the AOI system can still be used for such components. It can aid in detecting displacements, incorrect polarity, flipping, or incorrect placement of THT components.
 
-??? question "How can I use the camera to take reference and UUI pictures in the inspection tool software? "
+??? question "How can I use the camera to take REFERENCE and UUI pictures with the inspection tool software? "
 
     The current Windows version does not support camera control as it has driver issues and was designed just for testing the capabilities of the AOI system. The official version is based on Linux and supports camera control, barcode reading and report generation.
     

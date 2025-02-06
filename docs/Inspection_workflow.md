@@ -1,7 +1,7 @@
 # **Inspection workflow**
 ___
 
-## **Launching the software**
+### **Launching the software**
 ___
 
 - Connect the power supply to the inspection platform on the rear panel
@@ -22,6 +22,9 @@ ___
 ### **Generating a REFERENCE**
 
 The Agnospcb Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit/panel (“golden sample”) with all the photos you will take of the circuit to be inspected (photos to “ANALYZE“)
+
+!!!warning "Important"
+    We recommend you to visit our [tips](Tips.md) section before taking your first image.
 
 To proceed with the REFERENCE taken, click in the reference icon in the main menu:
 

@@ -13,7 +13,7 @@ ___
 | Component | Image |
 | --------- | :-----: |
 | Pre-mounted AOI platform| ![AOI platform](assets/v7/4050-frame.jpg) {width=300px} |
-|Platform power supply| ![Power Supply](assets/v7/power-supply.png) {width=300px}|
+|Platform 12V power supply| ![Power Supply](assets/v7/power-supply.png) {width=300px}|
 |2x AC power cord| ![AC power cord](assets/v7/eu-ac-cord.webp) {width=300px}|
 | Socket strip | ![Socket strip](assets/v7/socket-strip.webp) {width=300px}|
 | EU to UK/USA AC adapter if required | ![Socket adapter](assets/v7/ac-adapter.webp) {width=300px}|

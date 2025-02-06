@@ -7,6 +7,7 @@ theme:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#anchor-tracking
     - navigation.tracking
     - navigation.instant
+    - navigation.expand
   name: material
   palette:
     primary: custom
@@ -26,25 +27,23 @@ nav:
   - Getting started:
     - Package content: 'Package_content.md'
     - Unboxing guide: 'Unboxing.md'
+    - Connection guide: 'Connection_guide.md'
     #- Account created: 'Account-created.md'
     #- Installation process: 'Installation_process.md'
   - How to use it:
     - User Interface: 'Screen-layout.md'
-    #- User guide: 'User_guide.md'
-    - Inspection workflow: 'Inspection_workflow.md'
-    #- How to update your unit: 'updating_your_unit.md'
-    - Main functions:
+    - Inspection workflow: Inspection_workflow.md
+    - Other functions:
       - Barcode reader: 'Barcode_reader.md'
-      - Generating a report: 'Generating _a_report.md'
       - Set exclusion area: 'Set_exclusion_area.md'
       - Set sensitivity: 'Set_sensitivity.md'
       - UUI to REFERENCE: 'UUI_to_REFERENCE.md'
       #- Auto processing: 'Auto_processing.md'
   - Help:
-    - Tips: 'Tips.md'
-    - General information: 'Products-and-services.md'
     - FAQ: 'FAQ.md'
-    - Troubleshooting: 'Troubleshooting.md'
+    - Tips: 'Tips.md'
+    #- General information: 'Products-and-services.md'
+    # - Troubleshooting: 'Troubleshooting.md'
     - Update your AOI computer: 'Update-your-AOI-computer.md'
 #  - privacy
 copyright: Copyright &copy; 2023 - 2024 AgnosPCB
