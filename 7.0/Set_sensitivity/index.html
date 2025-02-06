@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Tips/" class="md-tabs__link">
+        <a href="../FAQ/" class="md-tabs__link">
           
   
   Help
@@ -280,7 +280,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -334,6 +336,27 @@
   
   <span class="md-ellipsis">
     Unboxing guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Connection_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connection guide
   </span>
   
 
@@ -461,7 +484,7 @@
             
   
   <span class="md-ellipsis">
-    Main functions
+    Other functions
   </span>
   
 
@@ -471,7 +494,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            Main functions
+            Other functions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -487,27 +510,6 @@
   
   <span class="md-ellipsis">
     Barcode reader
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Generating%20_a_report/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Generating a report
   </span>
   
 
@@ -622,7 +624,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -642,48 +646,6 @@
             Help
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Tips/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Tips
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Products-and-services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    General information
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -713,11 +675,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../Troubleshooting/" class="md-nav__link">
+      <a href="../Tips/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Troubleshooting
+    Tips
   </span>
   
 
@@ -790,19 +752,21 @@
 
 <h1 id="set-sensitivity"><strong>Set sensitivity</strong></h1>
 <hr />
+<p><img alt="Sensitivity button" class="center" src="../assets/v7/ui-button6.png" width="350px;" /></p>
 <p>Sensitivity refers to the degree of meticulousness or strictness employed by the inspection system when scanning for errors. Essentially, it governs the system's ability to identify even the smallest discrepancies or anomalies within the inspected materials.</p>
-<p>At AgnosPCB, we provide users with the <strong>flexibility</strong> to adjust sensitivity levels according to their specific requirements. We offer three distinct sensitivity settings: <strong>normal, high, and very high</strong>. Each setting represents a different degree of stringency in error detection.</p>
-<p><strong>Normal Sensitivity:</strong> This is the default sensitivity setting and is typically sufficient to detect the majority of errors within the inspected components. It strikes a balance between thoroughness and efficiency, making it suitable for most inspection scenarios.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Higher sensivity levels will cause a higher <strong>false positive</strong> detection rate.</p>
+</div>
+<p><img alt="normal sensitivity button" class="center" src="../assets/nomal-sensitivity-button.png" /></p>
+<p><strong>Normal Sensitivity:</strong> This is the default sensitivity setting and <strong>is typically sufficient</strong> to detect the majority of errors within the inspected components. It strikes a balance between thoroughness and efficiency, making it suitable for most inspection scenarios.</p>
 <p><img alt="PCB with errors in normal sensitivity" src="../assets/normal-sensitivity.png" /></p>
+<p><img alt="high sensitivity button" class="center" src="../assets/high-sensitivity-button.png" /></p>
 <p><strong>High Sensitivity:</strong> For users who desire a more comprehensive inspection process or are dealing with particularly intricate or delicate components, the high sensitivity setting offers an increased level of scrutiny. It is designed to detect even the slightest deviations or abnormalities, ensuring a thorough examination of the materials.</p>
 <p><img alt="PCB with errors in high sensitivity" src="../assets/high-sensitivity.png" /></p>
+<p><img alt="very high sensitivity button" class="center" src="../assets/Very-high-sensitivity-button.png" /></p>
 <p><strong>Very High Sensitivity:</strong> This setting represents the highest level of stringency in error detection and is ideal for situations where absolute precision is paramount. It leaves no room for error, meticulously scrutinizing every detail to identify even the most minute flaws or inconsistencies.</p>
 <p><img alt="PCB with errors in very high sensitivity" src="../assets/very-high-sensitivity.png" /></p>
-<p>It's important to note that while higher sensitivity levels increase the likelihood of detecting errors, they may also result in a higher incidence of <strong>false positives</strong>. Therefore, it's essential to strike a balance between sensitivity and practicality, choosing a level that best aligns with the specific requirements of the inspection task at hand.</p>
-<p>Adjusting the sensitivity level during inspection can significantly impact error detection. Increasing sensitivity from normal to very high, as depicted in the images, can potentially double error detection. This adjustment is easily made using the <strong>provided button.</strong></p>
-<p><img alt="normal sensitivity button" src="../assets/nomal-sensitivity-button.png" />
-<img alt="high sensitivity button" src="../assets/high-sensitivity-button.png" />
-<img alt="very high sensitivity button" src="../assets/Very-high-sensitivity-button.png" /></p>
 
 
 
@@ -853,7 +817,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.instant"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.instant", "navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>

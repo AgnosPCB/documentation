@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../UUI_to_REFERENCE/">
+        <link rel="prev" href="../FAQ/">
       
       
-        <link rel="next" href="../Products-and-services/">
+        <link rel="next" href="../Update-your-AOI-computer/">
       
       
       <link rel="icon" href="../assets/cropped-agnosPCB-favicon-192x192.webp">
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../FAQ/" class="md-tabs__link">
           
   
   Help
@@ -280,7 +280,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -343,6 +345,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Connection_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connection guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -367,7 +390,9 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -447,14 +472,16 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Main functions
+    Other functions
   </span>
   
 
@@ -464,7 +491,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            Main functions
+            Other functions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -480,27 +507,6 @@
   
   <span class="md-ellipsis">
     Barcode reader
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Generating%20_a_report/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Generating a report
   </span>
   
 
@@ -635,6 +641,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -705,69 +732,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Products-and-services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    General information
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FAQ/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    FAQ
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Troubleshooting/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Troubleshooting
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -864,12 +828,41 @@
 <hr />
 <h2 id="getting-a-good-reference"><strong>Getting a good REFERENCE</strong></h2>
 <ul>
-<li>Ensure every component is placed correctly</li>
-<li>Avoid using PCBA with contamination. Clean the PCBA before taking the picture</li>
-<li>Avoid mixing different components with same specifications. The software is not able to "read" the labeling and will mark them even if they have the same specifications. If a component have changed during production make a new REFERENCE image to avoid false positive marking.</li>
-<li>Avoid taking images with cables or components with high position variability. This would result in a high false positive rate in the marking.</li>
-<li>Ensure the image has been taken correctly focused and all components looks sharp. If not, repeat the capture.</li>
-<li>Ensure there are no objects other than the PCBA in the image.</li>
+<li>Place the green mat under the platform covering all the inspection area and make sure the table is not visible from the camera.</li>
+<li>Make sure that the PCBA is correctly mounted. This is important because if there is an error on it, it will not be marked on subsequent PCBAs inspected.</li>
+<li>
+<p>Avoid using PCBA with contamination. Clean the PCBA before taking the picture</p>
+<p><img alt="Contamination" class="center" src="../assets/v7/tip-1.jpg" width="400px," /></p>
+</li>
+<li>
+<p>Avoid mixing different components with same specifications. The software is not able to "read" the labeling and will mark them even if they have the same specifications. If a component have changed during production make a new REFERENCE image to avoid false positive marking.</p>
+</li>
+<li>
+<p>Avoid taking images with cables or components with high position variability. This would increase the false positive rate.</p>
+<p><strong>REFERENCE:</strong>
+<img alt="Cables" class="center" src="../assets/v7/tip-2-a.jpg" width="300px," /> </p>
+<p><strong>UUI:</strong>
+<img alt="Cables" class="center" src="../assets/v7/tip-2-b.jpg" width="300px," /></p>
+<p><strong>Result:</strong>
+<img alt="Cables" class="center" src="../assets/v7/tip-2-c.jpg" width="300px," /></p>
+</li>
+<li>
+<p>Ensure the image has been taken correctly focused and all components looks sharp. If not, repeat the capture.</p>
+<p><img alt="Bad focus" class="center" src="../assets/v7/tip-4.jpg" width="400px," /></p>
+</li>
+<li>
+<p>Ensure there are no objects other than the PCBA in the image.</p>
+<p><img alt="Objets" class="center" src="../assets/v7/tip-3.jpg" width="400px," /></p>
+</li>
+<li>
+<p>Select the correct composition of images to avoid taking unnecessary images and to shorten processing time.</p>
+<p><img alt="REF dimensions" class="center" src="../assets/v7/uui-ref_livepreview-dimensions.png" width="600px," /></p>
+<p><img alt="REF dimensions" class="center" src="../assets/v7/tip-5.jpg" width="400px," /></p>
+</li>
+<li>
+<p>Do not mix soldered and pre-soldered PCBAs. If you take a picture of a REFERENCE image with soldered components, do not inspect unsoldered UUI PCBAs, it will result in a marking with a very high false positive rate.</p>
+</li>
+<li>As with soldered/pre-soldered PCBAs, do not mix coated and uncoated PCBAs.</li>
 </ul>
 <h2 id="making-a-good-inspection"><strong>Making a good inspection</strong></h2>
 <ul>
@@ -926,7 +919,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.instant"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.instant", "navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
