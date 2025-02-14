@@ -28,12 +28,9 @@
     1. Place the green mat under the inspection platform. Ensure it is placed correctly and the table is not visible in the inspection area.
     2. Unpackage the computer, open the left panel and **remove the foam** as shown in the video.
 
-        <div style="display: flex; justify-content: center; align-items: center; height: 40vh;">
-            <video width="640" height="360" controls>
-                <source src="/assets/v7/connect-remove-foam.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de vídeo.
-            </video>
-        </div>
+    <div style="display: grid; place-items: center;">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/npedVH6Q4I0?si=yWQ4Yp_C_VUOfj0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     3. Connect the following cables to the back of the computer:
         - USB A to USB B angled to the rear panel of the platform
