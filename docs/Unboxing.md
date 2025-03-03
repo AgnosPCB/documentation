@@ -6,6 +6,16 @@
 
     After completing the unboxing, make sure to remove all the orange parts from the inspection platform.
 
+!!! warning "Important"
+    **For OFFLINE units only** 
+
+    Ensure to remove the GPU protection before booting the computer.
+
+    <div style="display: grid; place-items: center;">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/npedVH6Q4I0?si=yWQ4Yp_C_VUOfj0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
 === "Step 1"
     **Take out the inspection platform**
 
@@ -35,3 +45,5 @@
     Take the blue box that contains all the necessary accessories out of the packaging. Inside, you will find the accessories listed on the website.
 
     ![Box](assets/v7/unpack-5.webp){.center}
+
+    **Continue with the [Conection guide](./Connection_guide.md)**
