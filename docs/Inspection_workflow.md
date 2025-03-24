@@ -23,6 +23,9 @@ ___
 
 The Agnospcb Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit/panel (“golden sample”) with all the photos you will take of the circuit to be inspected (photos to “ANALYZE“)
 
+!!! danger "Important"
+    **For OFFLINE units only:** Ensure to periodically make backups of your images and free up hard disk space, as this may cause the computer to crash if it does not have enough free space.
+
 !!!warning "Important"
     We recommend you to visit our [tips](Tips.md) section before taking your first image.
 
@@ -89,6 +92,9 @@ After generating or uploading a previous REFERENCE image, we can proceed with th
 ![UUI button](assets/v7/ui-button11.png){.center}
 
 A livepreview window will pop up showing a gosthing of the REFERENCE image. This helps to align the UUI PCBA with the REFERENCE.
+
+!!! danger "Important"
+    **For OFFLINE units only:** Ensure to periodically make backups of your images and free up hard disk space, as this may cause the computer to crash if it does not have enough free space.
 
 !!! warning "Important"
     The **AgnosPCB** software is capable to align both images (**REFERENCE** and **UUI**) automatically. However, it is important to position the UUI PCBA correctly to avoid geometric deformations that can cause false positive detections.
