@@ -44,6 +44,7 @@ nav:
     - Terminology: 'how_to/terminology.md'
     - User Interface: 'how_to/Screen-layout.md'
     - Inspection workflow: how_to/Inspection_workflow.md
+    - Settings menu: how_to/Settings_menu.md
     - Other functions:
       - Barcode reader: 'how_to/Barcode_reader.md'
       - Set exclusion area: 'how_to/Set_exclusion_area.md'
