@@ -52,7 +52,7 @@ nav:
       - Network interface configuration: how_to/network_configuration.md
       - Workspace icons: how_to/Workspace_icons.md
 
-  - Assistence:
+  - Support:
     - Maintenance: maintenance/maintenance.md
     - Update software: maintenance/update_software.md
     - Troubleshooting: maintenance/Troubleshooting.md

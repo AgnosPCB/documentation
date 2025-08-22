@@ -75,4 +75,4 @@ ___
     The current Windows version does not support camera control as it has driver issues and was designed just for testing the capabilities of the AOI system. The official version is based on Linux and supports camera control, barcode reading and report generation.
     
     However, you can share the PCB_IN folder in your network, put all the pictures in it and the software automatically will process them. You first have to load the PCBA REFERENCE in the software and activate the auto process button.
-    ![alt text](assets/menu-auto-process.png)
+    ![alt text](../assets/menu-auto-process.png)
