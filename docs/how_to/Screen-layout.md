@@ -25,7 +25,7 @@ The **Inspection start** button triggers the inspection of the current **UUI** i
 
 ![Barcode REFERENCE loading](../assets/v7/ui-bc_ref.png){.center}
 
-This button opens a pop-up window for inserting a barcode number. When generating a REFERENCE, any [barcode it contains can be read](#barcode-area-drawing). This barcode will be associated with the REFERENCE and can be loaded using that number with this function. It is also possible to read the barcode with a handheld reader and insert it into this field.
+This button opens a pop-up window for inserting a barcode number. When generating a REFERENCE, any [barcode it contains can be read](#barcode-area-drawing). This barcode will be associated with the REFERENCE and can be loaded using that number with this function. It is also possible to read the barcode with a handheld reader and insert it into this field. More information about this feature [here](./Barcode_reader.md#load-a-reference-by-barcode).
 
 ## **Activity log**
 

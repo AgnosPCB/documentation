@@ -1,40 +1,33 @@
 # **Barcode reader**
-___
 
-The AgnosPCB software incorporates a barcode reader function.
-
-First, open the application and log in with your credentials as usual.
-
-
+The AgnosPCB software incorporates a barcode reader function that supports **1D barcodes, QR and Datamatrix**.
 
 You can either take a **REFERENCE** photo or upload one directly from your files using the **"Open reference"** button.
 
-Save the reference in the mosaic and make sure to set the option **"use barcodes"** as shown below:
+Select the **"draw barcode area"** button and draw a rectangle in the barcode area.
 
-![Use barcodes selected](../assets/use-barcodes.png)
+![Barcode area selected](../assets/v7/ui-button4.png){.center}
 
-If the barcode is not automatically recognized, select the **"draw barcode area"** button and choose the barcode area.
+![Errors detected](../assets/barcode-errors.png){.center}
 
-![Barcode area selected](../assets/barcode-area.png)
+The code will be shown in the rectangle and in the REFERENCE name in the top left side. The Make sure the barcode has been read before proceeding with the inspection.
 
-Once the **REFERENCE** is loaded, use the **"Open UUI"** button or take a picture of the UUI. The UUI's barcode will be read automatically.
+Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. The UUI's barcode will be read automatically in the same area of the REFERENCE's barcode.
+
 Proceed with the [inspection process](Inspection_workflow.md/#how-to-do-an-inspection) as usual. 
 
-![Errors detected](../assets/barcode-errors.png)
+The scanned code will be included in the final PDF report of the UUI.
 
-Once you've selected all the errors, you can finish the inspection by clicking on the **"finish inspection"** button. This will open a window where you can rename the file, add comments, and select if the UUI is OK or NOT OK if it has unpassable errors.
+![Report with barcode included](../assets/barcode-report.png){.center}
 
-![Finish inspection screen](../assets/finish-inspecttion-barcode.png)
+## Load a REFERENCE by barcode
 
-This action automatically generates a pdf report that you can find in the **PCB_OUT folder**. At the top of the report, you'll see data such as the date, whether the PCB passed the inspection or not, the data, observations, the **UUI** and **REFERENCE** image, the errors, and their specifications. Additionally, it'll show the barcode identification number.
+If you already have a **REFERENCE** stored, you can easily retrieve it using the code associated with it. To do this, press the **"read barcode"** button, then read the barcode using the handheld reader, and the **REFERENCE** will load automatically. It is also possible to enter the code manually.
 
-![Report with barcode included](../assets/barcode-report.png)
+![Barcode REFERENCE loading](../assets/v7/ui-barcode-loading.png){.center}
 
+![Barcode REFERENCE loading](../assets/v7/ui-bc_ref.png){.center}
 
-![Barcode REFERENCE screen](../assets/barcode-reference.png){ align=right }
-If you already have a stored **REFERENCE**, you can retrieve it and continue with your inspection. To do this, press the **"read barcode"** button, then read the barcode using the handheld reader, and the **REFERENCE** will load automatically.
-
-
-![Barcode handhold](../assets/barcode-handhold.png)
+![Barcode handhold](../assets/barcode-handhold.png){.center}
 
 

@@ -22,6 +22,12 @@ This is the result of comparing the REFERENCE and UUI images. Errors, if any, ar
 
 ![Inference image](../assets/v7/inference-example.png){width=500px, .center}
 
+## **Report**
+
+Errors detected by the software must be reviewed and confirmed by an operator. They can be reported as a **real error** or a **false positive** and labeled with the error type. All these reported errors will be used to generate a final inspection PDF report.
+
+![Report window](../assets/v7/ui-report.png){.center}
+
 ## **Error**
 
 We define an error as a component that is not assembled correctly, is damaged, or missing. Any contamination or damage on the board is also considered an error.
@@ -29,3 +35,7 @@ We define an error as a component that is not assembled correctly, is damaged, o
 ## **False positive**
 
 False positive flagging occurs when the AgnosPCB software detects a sufficient difference between the REFERENCE and UUI on a component to flag it as an error, but there is no actual failure affecting the PCBA's operation. This can be caused by a change in the marking, shape, or color of a component that is equivalent to the reference.
+
+
+
+

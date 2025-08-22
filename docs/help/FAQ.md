@@ -5,6 +5,10 @@ ___
 
     Yes, we have a renting plan for OFFLINE units for **a minimum of 2 month**. If you finally decide to kept it, the renting cost will be discounted from the final price of the unit. [Contact us](mailto:support@agnospcb.com) to require a quote 
 
+??? question "How do I generate a report of undetected error?"
+
+    You can report an undetected fault by moving the cursor to the fault´s area and pressing DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.
+
 ??? question "What is the maximum PCB size that can be inspected with this system?"
 
     The new **AI-4050** allows inspection of PCBA up to 40 x 50 cm (16 x 19").

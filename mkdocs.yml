@@ -23,13 +23,13 @@ theme:
 
   font:
     text: Roboto
-  favicon: assets/cropped-agnosPCB-favicon-192x192.webp
+  favicon: assets/cropped-agnosPCB-favicon-192x192-t.webp
   logo: assets/cropped-agnosPCB-favicon-192x192.webp
 extra_css:
   - stylesheets/agnos_colors.css
 plugins:
   - search
-   #  - Navigation
+  #- Navigation
 extra:
   version:
     provider: mike
@@ -38,8 +38,7 @@ nav:
     - Package content: 'getting_started/Package_content.md'
     - Unboxing guide: 'getting_started/Unboxing.md'
     - Connection guide: 'getting_started/Connection_guide.md'
-    #- Account created: 'Account-created.md'
-    #- Installation process: 'Installation_process.md'
+
   - How to use it:
     - Terminology: 'how_to/terminology.md'
     - User Interface: 'how_to/Screen-layout.md'
@@ -47,16 +46,21 @@ nav:
     - Settings menu: how_to/Settings_menu.md
     - Other functions:
       - Barcode reader: 'how_to/Barcode_reader.md'
-      - Set exclusion area: 'how_to/Set_exclusion_area.md'
-      - Set sensitivity: 'how_to/Set_sensitivity.md'
+      - Exclusion area: 'how_to/Set_exclusion_area.md'
+      - Sensitivity: 'how_to/Set_sensitivity.md'
       - UUI to REFERENCE: 'how_to/UUI_to_REFERENCE.md'
-      - Update your AOI computer: 'how_to/Update-your-AOI-computer.md'
-      #- Auto processing: 'Auto_processing.md'
-  - Help:
+      - Network interface configuration: how_to/network_configuration.md
+      - Workspace icons: how_to/Workspace_icons.md
+
+  - Assistence:
+    - Maintenance: maintenance/maintenance.md
+    - Update software: maintenance/update_software.md
+    - Troubleshooting: maintenance/Troubleshooting.md
+
+  - Additional information:
     - FAQ: 'help/FAQ.md'
     - Tips: 'help/Tips.md'
-    #- General information: 'Products-and-services.md'
-    # - Troubleshooting: 'Troubleshooting.md'
+     
     
 #  - privacy
 copyright: Copyright &copy; 2023 - 2025 AgnosPCB
