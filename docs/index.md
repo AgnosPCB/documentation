@@ -4,7 +4,7 @@ ___
 
 ![logo](assets/agnospcb-logo.gif)
 
-[AgnosPCB](https://agnospcb.com/) provides a **Automated Optical Inspection (AOI)** service powered by advanced **Neural Network** technology. 
+[AgnosPCB](https://agnospcb.com/) provides an affordable **Automated Optical Inspection (AOI)** service powered by advanced **Neural Network** technology.
 
 This documentation will guide you through all its features and functionalities.
 

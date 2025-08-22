@@ -10,7 +10,17 @@ theme:
     - navigation.expand
   name: material
   palette:
-    primary: custom
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   font:
     text: Roboto
   favicon: assets/cropped-agnosPCB-favicon-192x192.webp
@@ -25,28 +35,30 @@ extra:
     provider: mike
 nav:
   - Getting started:
-    - Package content: 'Package_content.md'
-    - Unboxing guide: 'Unboxing.md'
-    - Connection guide: 'Connection_guide.md'
+    - Package content: 'getting_started/Package_content.md'
+    - Unboxing guide: 'getting_started/Unboxing.md'
+    - Connection guide: 'getting_started/Connection_guide.md'
     #- Account created: 'Account-created.md'
     #- Installation process: 'Installation_process.md'
   - How to use it:
-    - User Interface: 'Screen-layout.md'
-    - Inspection workflow: Inspection_workflow.md
+    - Terminology: 'how_to/terminology.md'
+    - User Interface: 'how_to/Screen-layout.md'
+    - Inspection workflow: how_to/Inspection_workflow.md
     - Other functions:
-      - Barcode reader: 'Barcode_reader.md'
-      - Set exclusion area: 'Set_exclusion_area.md'
-      - Set sensitivity: 'Set_sensitivity.md'
-      - UUI to REFERENCE: 'UUI_to_REFERENCE.md'
+      - Barcode reader: 'how_to/Barcode_reader.md'
+      - Set exclusion area: 'how_to/Set_exclusion_area.md'
+      - Set sensitivity: 'how_to/Set_sensitivity.md'
+      - UUI to REFERENCE: 'how_to/UUI_to_REFERENCE.md'
+      - Update your AOI computer: 'how_to/Update-your-AOI-computer.md'
       #- Auto processing: 'Auto_processing.md'
   - Help:
-    - FAQ: 'FAQ.md'
-    - Tips: 'Tips.md'
+    - FAQ: 'help/FAQ.md'
+    - Tips: 'help/Tips.md'
     #- General information: 'Products-and-services.md'
     # - Troubleshooting: 'Troubleshooting.md'
-    - Update your AOI computer: 'Update-your-AOI-computer.md'
+    
 #  - privacy
-copyright: Copyright &copy; 2023 - 2024 AgnosPCB
+copyright: Copyright &copy; 2023 - 2025 AgnosPCB
 markdown_extensions:
   - admonition
   - pymdownx.details
