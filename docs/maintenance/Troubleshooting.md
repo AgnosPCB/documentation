@@ -37,3 +37,111 @@
 
     There is a parameter in the **setup.json** file called **"remember_sensitivity"**. Modify the file and set this value to **1** to hold the sensitivity between inspections.
 
+??? info "The application icon has disapeard. How can I restore it?"
+
+    !!! warning "Important"
+
+        Select your AOI version from the tabs below.
+
+    === "ONLINE version"
+        1. Create a text file with the following content:
+            ~~~
+            [Desktop Entry]
+            Type=Application
+            Name=AgnosPCB Client
+            GenericName=AgnosPCB Cliente
+            Icon=/home/agnospcb/APP/icons/circuit.png
+            Exec=/home/agnospcb/APP/AgnosPCB.sh
+            TryExec=/home/agnospcb/APP/AgnosPCB.sh
+            Terminal=No
+            Categories=Development;IDE;Debugger;ParallelComputing
+            ~~~
+        2. Save it as **AgnosPCB.desktop**
+        3. Copy/move the file to the Desktop folder.
+        4. In the desktop, right click on the icon -> **Properties** -> **Permisions** -> **Is executable**
+
+            ![Is executable](../assets/maintance/executable.png)
+    
+    === "OFFLINE version"
+        1. Create a text file with the following content:
+            ~~~
+            [Desktop Entry]
+            Type=Application
+            Name=AgnosPCB Client
+            GenericName=AgnosPCB Cliente
+            Icon=/home/agnospcb/APP/icons/circuit.png
+            Exec=/home/agnospcb/APP/AgnosPCB.sh
+            TryExec=/home/agnospcb/APP/AgnosPCB.sh
+            Terminal=No
+            Categories=Development;IDE;Debugger;ParallelComputing
+            ~~~
+        2. Save it as **AgnosPCB.desktop** and move it to the Desktop folder
+        3. Open the file manager
+
+            ![File manager](../assets/maintance/icon-1.png)
+
+        4. Click on the 3 lines icon and then **Preferences**
+
+            ![Preferences](../assets/maintance/icon-2.png)
+
+        5. Click on Behavior tab and select "Ask me what to do"
+
+            ![Behavior tab](../assets/maintance/icon-3.png)
+
+        6. Reboot the unit.
+
+        7. Right click on the icon > "**Allow launching**"
+
+            ![Allow launching](../assets/maintance/icon-4.png)
+
+??? info "How do I change the system keyboard layout?"
+
+    !!! warning "Important"
+
+        Select your AOI version from the tabs below.
+        
+    === "ONLINE version"
+        1. Open application menu from the top of the desktop or press Windows key. Select **System Settings**.
+            
+            ![Step 1](../assets/maintance/keyboard-online-1.png)
+
+        2. Navigate to **Input Devices** > **Keyboard** > **Layout**. Enable **Configure layouts** and press **Add**
+
+            ![Step 2](../assets/maintance/keyboard-online-2.png)
+
+        3. Look for your keyboard layout and press **Ok**
+
+            ![Step 3](../assets/maintance/keyboard-online-3.png)
+
+        4. Move the layout to the first place by pressing **Move up**
+
+            ![Step 4](../assets/maintance/keyboard-online-4.png)
+
+    === "OFFLINE version"
+        1. Open the settings menu in the top right corner
+
+            ![Step 1](../assets/maintance/keyboard-1.png)
+
+        2. Navigate to **Region & Language** section > **Input Sources** > **+**
+
+            ![Step 2](../assets/maintance/keyboard-2.png)
+
+        3. Press in the 3 dots icon
+
+            ![Step 3](../assets/maintance/keyboard-3.png)
+
+        4. Press in **Other**
+
+            ![Step 4](../assets/maintance/keyboard-4.png)
+
+        5. Look for your language > **Add**
+
+            ![Step 5](../assets/maintance/keyboard-5.png)
+
+        6. Move the layout to the first row
+
+            ![Step 6](../assets/maintance/keyboard-6.png)
+
+        7. Select the layout in the top right corner
+
+            ![Step 7](../assets/maintance/keyboard-7.png)

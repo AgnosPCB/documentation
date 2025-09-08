@@ -1,3 +1,7 @@
+!!! warning "Important"
+
+    Select your AOI version from the tabs below.
+
 === "ONLINE version"
     1. Place the green mat under the inspection platform. Ensure it is placed correctly and the table is not visible in the inspection area.
     2. Attach the mini computer to the right side of the platform inserting the screw and nut provided in the aluminium slot. **Make sure that the plastic part fits into the aluminium slot.**

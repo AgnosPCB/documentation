@@ -33,6 +33,7 @@ plugins:
 extra:
   version:
     provider: mike
+  generator: false
 nav:
   - Getting started:
     - Package content: 'getting_started/Package_content.md'
