@@ -18,7 +18,10 @@ extra_css:
   - stylesheets/agnos_colors.css
 plugins:
   - search
-  - mike
+  - mike:
+      version_selector: true
+      alias_type: symlink
+      canonical_version: latest
    #  - Navigation
 extra:
   version:
