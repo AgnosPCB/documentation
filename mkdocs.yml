@@ -29,6 +29,7 @@ extra_css:
   - stylesheets/agnos_colors.css
 plugins:
   - search
+  - mike
   #- Navigation
 extra:
   version:
