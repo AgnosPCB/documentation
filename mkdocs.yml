@@ -1,4 +1,5 @@
 site_name: AgnosPCB Documentation
+site_url: https://agnospcb.github.io/documentation/
 theme:
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#navigation-tabs
