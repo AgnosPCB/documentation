@@ -14,7 +14,7 @@ The code will be shown in the rectangle and in the REFERENCE name in the top lef
 
 Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. The UUI's barcode will be read automatically in the same area of the REFERENCE's barcode.
 
-Proceed with the [inspection process](Inspection_workflow.md/#how-to-do-an-inspection) as usual. 
+Proceed with the [inspection process](Inspection_workflow.md/) as usual. 
 
 The scanned code will be included in the final PDF report of the UUI.
 

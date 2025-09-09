@@ -6,7 +6,7 @@ The **AgnosPCB AI-4050** AOI requires very little maintenance but it is also imp
 
 | Mainteniance | Periodicity |
 | --------- | :-----: |
-| [Belts tension adjustment](#belts-tension-check) | Monthly |
+| [Belts tension adjustment](#belts-tension-adjustment) | Monthly |
 | [Cleaning](#cleaning) | Monthly |
 | [Rail guide lubrication](#rail-guide-lubrication) | 6 months |
 

@@ -64,7 +64,7 @@ Here are located various **functions and options** designed to **optimize** your
 
 ![Mosaic menu](../assets/v7/2024-11-14_09-27.png){width=600px; .center}
 
-The reference mosaic is used to store REFERENCES as files to quickly find and load any of them. The mosaic menu automatically appears after taking a REFERENCE by using the [take REFERENCE photo button](#take-reference-photo) or by loading it [as a file](#load-reference-as-file). In this windows it is also possible to name the taken REFERENCE in the top right part of the window. A REFERENCE stored in the mosaic can be quickly loaded by pressing a **F button** (F1-F10).
+The reference mosaic is used to store REFERENCES as files to quickly find and load any of them. The mosaic menu automatically appears after taking a REFERENCE by using the [take REFERENCE photo button](#take-reference-image) or by loading it [as a file](#load-reference-as-file). In this windows it is also possible to name the taken REFERENCE in the top right part of the window. A REFERENCE stored in the mosaic can be quickly loaded by pressing a **F button** (F1-F10).
 
 ### **LOAD REFERENCE as file**
 
