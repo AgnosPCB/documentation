@@ -1,5 +1,6 @@
 site_name: AgnosPCB Documentation
-site_url: https://agnospcb.github.io/documentation/
+site_url: ""
+use_directory_urls: false
 theme:
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#navigation-tabs
@@ -34,6 +35,26 @@ plugins:
       version_selector: true
       alias_type: symlink
       canonical_version: latest
+  - i18n:
+      default_language: en
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: es
+          name: Español
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+        - locale: it
+          name: Italiano
+          build: true
+        - locale: de
+          name: Deutsch
+          build: true
+
   #- Navigation
 extra:
   version:
