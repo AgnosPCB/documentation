@@ -1,0 +1,1676 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="terminology.html">
+      
+      
+        <link rel="next" href="Inspection_workflow.html">
+      
+      
+      <link rel="icon" href="../../assets/cropped-agnosPCB-favicon-192x192-t.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>Interface utilisateur - AgnosPCB Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/agnos_colors.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interface-utilisateur" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="AgnosPCB Documentation" class="md-header__button md-logo" aria-label="AgnosPCB Documentation" data-md-component="logo">
+      
+  <img src="../../assets/cropped-agnosPCB-favicon-192x192.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AgnosPCB Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interface utilisateur
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../how_to/Screen-layout.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/how_to/Screen-layout.html" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="Screen-layout.html" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../it/how_to/Screen-layout.html" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../de/how_to/Screen-layout.html" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../getting_started/Package_content.html" class="md-tabs__link">
+          
+  
+  
+  Démarrage
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="terminology.html" class="md-tabs__link">
+          
+  
+  
+  Comment l'utiliser
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../maintenance/maintenance.html" class="md-tabs__link">
+          
+  
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../help/FAQ.html" class="md-tabs__link">
+          
+  
+  
+  Informations supplémentaires
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AgnosPCB Documentation" class="md-nav__button md-logo" aria-label="AgnosPCB Documentation" data-md-component="logo">
+      
+  <img src="../../assets/cropped-agnosPCB-favicon-192x192.webp" alt="logo">
+
+    </a>
+    AgnosPCB Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Démarrage
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Démarrage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/Package_content.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contenu du colis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/Unboxing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guide de déballage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/Connection_guide.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guide de connexion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Comment l'utiliser
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Comment l'utiliser
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="terminology.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terminologie
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Interface utilisateur
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Screen-layout.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interface utilisateur
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zones-de-travail-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zones de travail principales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statut-de-la-plateforme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statut de la plateforme
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statut de la plateforme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demarrer-linspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Démarrer l'inspection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chargement-de-la-reference-par-code-barres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chargement de la RÉFÉRENCE par code-barres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#journal-dactivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Journal d'activité
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espace-de-travail-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espace de travail principal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparaison-cote-a-cote" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparaison côte à côte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panneau-de-boutons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panneau de boutons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Panneau de boutons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mosaique-de-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mosaïque de références
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charger-reference-en-tant-que-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHARGER RÉFÉRENCE en tant que fichier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#echange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Échange
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dessin-de-la-zone-de-code-barres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dessin de la zone de code-barres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exclusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensibilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensibilité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultat-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résultat final
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prendre-une-image-de-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prendre une image de RÉFÉRENCE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uui-vers-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      UUI vers RÉFÉRENCE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prendre-une-image-uui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prendre une image UUI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gomme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gomme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traitement-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traitement automatique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paramètres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Inspection_workflow.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Flux de travail d'inspection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Settings_menu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Menu des paramètres
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Autres fonctions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Autres fonctions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Barcode_reader.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lecteur de code-barres
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Set_exclusion_area.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zone d'exclusion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Set_sensitivity.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sensibilité
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UUI_to_REFERENCE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UUI vers RÉFÉRENCE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="network_configuration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration de l'interface réseau
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Workspace_icons.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Icônes de l'espace de travail
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/maintenance.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Maintenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/update_software.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mise à jour du logiciel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance/Troubleshooting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dépannage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Informations supplémentaires
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Informations supplémentaires
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help/FAQ.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help/Tips.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conseils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zones-de-travail-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zones de travail principales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statut-de-la-plateforme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statut de la plateforme
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statut de la plateforme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demarrer-linspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Démarrer l'inspection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chargement-de-la-reference-par-code-barres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chargement de la RÉFÉRENCE par code-barres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#journal-dactivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Journal d'activité
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#espace-de-travail-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espace de travail principal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparaison-cote-a-cote" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparaison côte à côte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panneau-de-boutons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Panneau de boutons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Panneau de boutons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mosaique-de-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mosaïque de références
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charger-reference-en-tant-que-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHARGER RÉFÉRENCE en tant que fichier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#echange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Échange
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dessin-de-la-zone-de-code-barres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dessin de la zone de code-barres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exclusion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensibilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensibilité
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultat-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résultat final
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prendre-une-image-de-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prendre une image de RÉFÉRENCE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uui-vers-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      UUI vers RÉFÉRENCE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prendre-une-image-uui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prendre une image UUI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gomme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gomme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traitement-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traitement automatique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paramètres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="interface-utilisateur">Interface Utilisateur</h1>
+<h2 id="zones-de-travail-principales"><strong>Zones de travail principales</strong></h2>
+<p>L'image suivante décrit les principales zones de travail du <strong>logiciel d'inspection AgnosPCB</strong>.</p>
+<p><img alt="Section principale" class="center" src="../../assets/v7/ui-layout.png" /></p>
+<h2 id="statut-de-la-plateforme"><strong>Statut de la plateforme</strong></h2>
+<p><img alt="Zone de statut" class="center" src="../../assets/v7/ui-status.png" /></p>
+<p>Cette zone affiche l'état de la connexion avec la plateforme d'inspection et la caméra. Si la connexion échoue, les icônes deviennent rouges. Cette zone contient également les boutons d'action suivants :</p>
+<h3 id="demarrer-linspection"><strong>Démarrer l'inspection</strong></h3>
+<p><img alt="Bouton Démarrer l'inspection" class="center" src="../../assets/autoprocess.png" /></p>
+<p>Le bouton <strong>Démarrer l'inspection</strong> déclenche l'inspection de l'image <strong>UUI</strong> actuelle. Ce bouton est disponible lorsque le <a href="#auto-process">bouton Traitement automatique</a> est réglé sur <strong>OFF</strong>. C'est utile pour éviter de dépenser des crédits lorsque vous testez la manière de prendre des photos de vos PCBA.</p>
+<h3 id="chargement-de-la-reference-par-code-barres"><strong>Chargement de la RÉFÉRENCE par code-barres</strong></h3>
+<p><img alt="Chargement RÉFÉRENCE par code-barres" class="center" src="../../assets/v7/ui-barcode-loading.png" /></p>
+<p><img alt="Chargement RÉFÉRENCE par code-barres" class="center" src="../../assets/v7/ui-bc_ref.png" /></p>
+<p>Ce bouton ouvre une fenêtre contextuelle pour insérer un numéro de code-barres. Lors de la génération d'une RÉFÉRENCE, tout <a href="#barcode-area-drawing">code-barres qu'elle contient peut être lu</a>. Ce code-barres sera associé à la RÉFÉRENCE et pourra être chargé en utilisant ce numéro avec cette fonction. Il est également possible de lire le code-barres avec un lecteur portable et de l'insérer dans ce champ. Plus d'informations sur cette fonctionnalité <a href="Barcode_reader.html#load-a-reference-by-barcode">ici</a>.</p>
+<h2 id="journal-dactivite"><strong>Journal d'activité</strong></h2>
+<p><img alt="Section de fonctionnement interne" class="center" src="../../assets/activity-log.png" /></p>
+<p>La zone du <strong>journal d'activité</strong> est située dans la partie supérieure droite et affiche les <strong>crédits disponibles actuels</strong> et les détails opérationnels de l'application, tels que l'état du processus d'analyse.</p>
+<h2 id="espace-de-travail-principal"><strong>Espace de travail principal</strong></h2>
+<p><img alt="Section principale" class="center" src="../../assets/v7/ui-working-area.png" /></p>
+<p>C'est la section principale où vous travaillez avec les images de <strong>RÉFÉRENCE</strong> et <strong>UUI</strong>, qui peuvent être commutées en appuyant sur la touche TAB du clavier ou <a href="#swap">le bouton sur l'application</a>. Les résultats de l'inspection sont également affichés dans cette zone à l'aide de réticules et de numéros à côté des erreurs détectées.</p>
+<h2 id="comparaison-cote-a-cote"><strong>Comparaison côte à côte</strong></h2>
+<p><img alt="Section de comparaison" class="center" src="../../assets/v7/ui-side_by_side.png" width="400px;" /></p>
+<p>Cette section de l'interface est divisée en deux parties. La partie supérieure affiche l'image de <strong>RÉFÉRENCE</strong>, servant de standard de comparaison, tandis que la partie inférieure montre l'image <strong>UUI</strong>. Ces images sont agrandies et se déplacent en parallèle, montrant exactement la même zone dans la <strong>RÉFÉRENCE</strong> et l'<strong>UUI</strong> où le curseur pointe dans l'espace de travail principal.</p>
+<h2 id="panneau-de-boutons"><strong>Panneau de boutons</strong></h2>
+<p><img alt="Zone de boutons" class="center" src="../../assets/v7/ui-main_buttons.png" /></p>
+<p>Voici diverses <strong>fonctions et options</strong> conçues pour <strong>optimiser</strong> votre flux de travail et accélérer vos tâches. Chaque fonctionnalité est définie ci-dessous :</p>
+<h3 id="mosaique-de-references"><strong>Mosaïque de références</strong></h3>
+<p><img alt="Bouton mosaïque de références" class="center" src="../../assets/v7/ui-button1.png" width="350px;" /></p>
+<p><img alt="Menu Mosaïque" class="center" src="../../assets/v7/2024-11-14_09-27.png" width="600px;" /></p>
+<p>La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le <a href="#take-a-reference-image">bouton prendre une photo RÉFÉRENCE</a> ou en la chargeant <a href="#load-reference-as-file">comme un fichier</a>. Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un <strong>bouton F</strong> (F1-F10).</p>
+<h3 id="charger-reference-en-tant-que-fichier"><strong>CHARGER RÉFÉRENCE en tant que fichier</strong></h3>
+<p><img alt="Bouton Ouvrir référence" class="center" src="../../assets/v7/ui-button2.png" width="350px;" /></p>
+<p><img alt="Menu Charger RÉFÉRENCE" class="center" src="../../assets/v7/ui-ref_search.png" /></p>
+<p>Utilisez cette icône pour charger une image précédemment capturée en tant que <strong>RÉFÉRENCE</strong>, et elle vous permet de les trier par nom ou par date. Toutes les images de <strong>RÉFÉRENCE</strong> se trouvent dans le dossier <strong>APP/REFERENCE</strong> dans un dossier nommé d'après l'heure à laquelle la photo a été prise.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Depuis la version 7, le logiciel <strong>n'autorise pas</strong> le chargement d'images provenant d'une source autre que la plateforme elle-même, car les images contiennent des paramètres spécifiques pour l'optique. Chaque image de RÉFÉRENCE doit être capturée à l'aide de l'<strong>AOI AI-4050</strong>.</p>
+</div>
+<h3 id="echange"><strong>Échange</strong></h3>
+<p><img alt="Bouton Échange" class="center" src="../../assets/v7/ui-button3.png" width="350px;" /></p>
+<p>Bascule entre les images de <strong>RÉFÉRENCE</strong> et <strong>UUI</strong> dans l'<a href="#main-workspace">espace de travail principal</a>.</p>
+<h3 id="dessin-de-la-zone-de-code-barres"><strong>Dessin de la zone de code-barres</strong></h3>
+<p><img alt="Bouton Ouvrir UUI" class="center" src="../../assets/v7/ui-button4.png" width="350px;" /></p>
+<p><img alt="Bouton Ouvrir UUI" class="center" src="../../assets/v7/ui-bc_box.png" /></p>
+<p>Cliquez sur ce bouton pour dessiner manuellement un rectangle dans l'image de <strong>RÉFÉRENCE</strong> où se trouve un code-barres. Le logiciel le lira et utilisera ce code pour nommer les images et l'inclure dans le <strong>rapport PDF</strong> final. Plus d'informations sur la fonction de lecture de code-barres dans la <a href="Barcode_reader.html">section suivante</a>.</p>
+<h3 id="exclusion"><strong>Exclusion</strong></h3>
+<p><img alt="Bouton Exclusion" class="center" src="../../assets/v7/ui-button5.png" width="350px;" /></p>
+<p><img alt="Dessiner une zone d'exclusion" class="center" src="../../assets/v7/ui-draw_exclusion.png" /></p>
+<p>Crée une zone d'exclusion où le système ne recherchera pas de défauts. Vous pouvez créer autant de zones que nécessaire. Cette fonction est détaillée dans la <a href="Set_exclusion_area.html">section suivante</a>.</p>
+<h3 id="sensibilite"><strong>Sensibilité</strong></h3>
+<p><img alt="Bouton Sensibilité" class="center" src="../../assets/v7/ui-button6.png" width="350px;" /></p>
+<p>Si le processus de fabrication nécessite un contrôle qualité plus rigoureux, vous pouvez augmenter la sensibilité de détection d'erreurs avec cette fonctionnalité. En augmentant la sensibilité, le logiciel signalera des erreurs qu'il ne détecterait pas normalement avec un réglage de sensibilité plus faible. Il existe trois niveaux de sensibilité : Normal, Élevé et Très Élevé. Il peut être réglé en utilisant les touches 1, 2, 3 du clavier. Cette fonction est détaillée dans la <a href="Set_sensitivity.html">section suivante</a>.</p>
+<h3 id="aide"><strong>Aide</strong></h3>
+<p><img alt="Bouton Aide" class="center" src="../../assets/v7/ui-button7.png" width="350px;" /></p>
+<p>Ce bouton vous mènera à cette documentation.</p>
+<h3 id="resultat-final"><strong>Résultat final</strong></h3>
+<p><img alt="Bouton Terminer l'inspection" class="center" src="../../assets/v7/ui-button8.png" /></p>
+<p><img alt="OK ou NON OK" class="center" src="../../assets/v7/ui-finish_inspection.png" /></p>
+<p>Une fois que les erreurs détectées ont été supervisées par l'opérateur, l'inspection peut être complétée en appuyant sur ce bouton et, selon les critères de fabrication, en marquant la PCBA inspectée comme <strong>OK</strong> ou <strong>NON OK</strong>. Après cela, le logiciel créera un rapport qui inclut les erreurs signalées par l'opérateur dans un document PDF. Pour en savoir plus sur cette fonctionnalité, rendez-vous à la <a href="Inspection_workflow.html#generating-a-final-pdf-report">section suivante</a>.</p>
+<h3 id="prendre-une-image-de-reference"><strong>Prendre une image de RÉFÉRENCE</strong></h3>
+<p><img alt="Bouton Prendre image RÉFÉRENCE" class="center" src="../../assets/v7/ui-button9.png" /></p>
+<p><img alt="Fenêtre RÉFÉRENCE" class="center" src="../../assets/v7/2024-11-14_09-26.png" /></p>
+<p>Ce bouton ouvre une fenêtre avec les utilitaires pour générer une image de <strong>RÉFÉRENCE</strong> à partir d'une PCB ou d'un panneau. Cette fonction peut être activée en appuyant sur la touche <strong>r</strong> du clavier. Dans la section <a href="Inspection_workflow.html#generating-a-reference">générer une référence</a>, vous en apprendrez davantage sur cette fonction.</p>
+<h3 id="uui-vers-reference"><strong>UUI vers RÉFÉRENCE</strong></h3>
+<p><img alt="Bouton UUI vers RÉFÉRENCE" class="center" src="../../assets/v7/ui-button10.png" /></p>
+<p>Cette fonction convertit l'image <strong>UUI</strong> actuelle en une <strong>RÉFÉRENCE</strong>. C'est utile lorsque certains des composants de la PCBA ont été changés pour un équivalent et que le <strong>Réseau de Neurones</strong> le détecte comme une erreur en raison d'une différence visuelle, mais que la PCBA est correcte. Pour en savoir plus sur cette fonctionnalité, rendez-vous à la <a href="UUI_to_REFERENCE.html">section suivante</a>.</p>
+<h3 id="prendre-une-image-uui"><strong>Prendre une image UUI</strong></h3>
+<p><img alt="Bouton Prendre image UUI" class="center" src="../../assets/v7/ui-button11.png" /></p>
+<p><img alt="Fenêtre UUI" class="center" src="../../assets/v7/ui-uui_preview.png" /></p>
+<p>Cette fonction ouvre une fenêtre avec un aperçu en direct de la zone d'inspection. Une fois la PCBA correctement placée, appuyez sur le bouton <strong>Démarrer l'inspection</strong> pour prendre une photo ou des photos de la PCBA/Panneau de l'<strong>Unité Sous Inspection</strong>. Si le <a href="#auto-process">bouton traitement automatique</a> est actif, l'inspection démarrera automatiquement une fois l'image UUI prise. Cette fonctionnalité peut également être activée en appuyant sur la touche <strong>s</strong> du clavier ou sur le bouton d'action physique situé sur le côté droit de l'AOI. Consultez la <a href="Inspection_workflow.html#capturing-an-uui">section suivante</a> pour en savoir plus sur cette fonctionnalité.</p>
+<h3 id="gomme"><strong>Gomme</strong></h3>
+<p><img alt="Bouton Supprimer zone" class="center" src="../../assets/v7/ui-button12.png" /></p>
+<p>Supprime une <a href="Set_exclusion_area.html"><strong>zone d'exclusion</strong></a> dessinée.</p>
+<h3 id="traitement-automatique"><strong>Traitement automatique</strong></h3>
+<p><img alt="Bouton de traitement automatique" class="center" src="../../assets/v7/ui-button13.png" /></p>
+<p>S'il est activé, la prochaine photo <strong>UUI</strong> prise sera traitée <strong>automatiquement</strong>. Cela signifie que l'image sera analysée à la recherche de défauts juste après avoir été prise. Nous vous recommandons d'activer cette fonctionnalité pour accélérer le processus d'inspection.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Pour les <strong>UNITÉS EN LIGNE</strong>, veuillez noter que chaque image UUI prise sera automatiquement envoyée à notre serveur pour traitement et <strong>consommera des crédits</strong>. Si vous ne faites que tester la manière de prendre vos photos, nous vous recommandons de désactiver cette fonctionnalité jusqu'à ce que vous soyez certain que les photos couvrent correctement la PCBA.</p>
+</div>
+<h3 id="parametres"><strong>Paramètres</strong></h3>
+<p><img alt="Bouton Paramètres" class="center" src="../../assets/v7/ui-button14.png" /></p>
+<p>Ce bouton ouvre le <a href="Settings_menu.html">menu des paramètres</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 - 2025 AgnosPCB
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.instant", "navigation.expand"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
