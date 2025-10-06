@@ -45,15 +45,111 @@ plugins:
         - locale: es
           name: Español
           build: true
+          nav_translations:
+            Getting started: Comenzando
+            Package content: Contenido del paquete
+            Unboxing guide: Guía de desembalaje
+            Connection guide: Guía de conexión
+            How to use it: Cómo usarlo
+            Terminology: Terminología
+            User Interface: Interfaz de Usuario
+            Inspection workflow: Flujo de trabajo de inspección
+            Settings menu: Menú de Configuración
+            Other functions: Otras funciones
+            Barcode reader: Lector de código de barras
+            Exclusion area: Área de exclusión
+            Sensitivity: Sensibilidad
+            UUI to REFERENCE: UUI a REFERENCIA
+            Network interface configuration: Configuración de la interfaz de red
+            Workspace icons: Iconos del espacio de trabajo
+            Support: Soporte
+            Maintenance: Mantenimiento
+            Update software: Actualizar software
+            Troubleshooting: Solución de problemas
+            Additional information: Información adicional
+            FAQ: Preguntas Frecuentes (FAQ)
+            Tips: Consejos
         - locale: fr
           name: Français
           build: true
+          nav_translations:
+            Getting started: Démarrage
+            Package content: Contenu du colis
+            Unboxing guide: Guide de déballage
+            Connection guide: Guide de connexion
+            How to use it: Comment l'utiliser
+            Terminology: Terminologie
+            User Interface: Interface utilisateur
+            Inspection workflow: Flux de travail d'inspection
+            Settings menu: Menu des paramètres
+            Other functions: Autres fonctions
+            Barcode reader: Lecteur de code-barres
+            Exclusion area: Zone d'exclusion
+            Sensitivity: Sensibilité
+            UUI to REFERENCE: UUI vers RÉFÉRENCE
+            Network interface configuration: Configuration de l'interface réseau
+            Workspace icons: Icônes de l'espace de travail
+            Support: Support
+            Maintenance: Maintenance
+            Update software: Mise à jour du logiciel
+            Troubleshooting: Dépannage
+            Additional information: Informations supplémentaires
+            FAQ: FAQ
+            Tips: Conseils
         - locale: it
           name: Italiano
           build: true
+          nav_translations:
+            Getting started: Per iniziare
+            Package content: Contenuto della confezione
+            Unboxing guide: Guida all'unboxing
+            Connection guide: Guida alla connessione
+            How to use it: Come usarlo
+            Terminology: Terminologia
+            User Interface: Interfaccia Utente
+            Inspection workflow: Flusso di lavoro di ispezione
+            Settings menu: Menu Impostazioni
+            Other functions: Altre funzioni
+            Barcode reader: Lettore di codici a barre
+            Exclusion area: Area di esclusione
+            Sensitivity: Sensibilità
+            UUI to REFERENCE: UUI a RIFERIMENTO
+            Network interface configuration: Configurazione interfaccia di rete
+            Workspace icons: Icone dell'area di lavoro
+            Support: Supporto
+            Maintenance: Manutenzione
+            Update software: Aggiornamento software
+            Troubleshooting: Risoluzione dei problemi
+            Additional information: Informazioni aggiuntive
+            FAQ: Domande Frequenti (FAQ)
+            Tips: Suggerimenti
         - locale: de
           name: Deutsch
           build: true
+          nav_translations:
+            Getting started: Erste Schritte
+            Package content: Paketinhalt
+            Unboxing guide: Auspackanleitung
+            Connection guide: Verbindungsanleitung
+            How to use it: Anwendung
+            Terminology: Terminologie
+            User Interface: Benutzeroberfläche
+            Inspection workflow: Inspektions-Workflow
+            Settings menu: Einstellungsmenü
+            Other functions: Weitere Funktionen
+            Barcode reader: Barcode-Lesegerät
+            Exclusion area: Ausschlussbereich
+            Sensitivity: Empfindlichkeit
+            UUI to REFERENCE: UUI zu REFERENZ
+            Network interface configuration: Netzwerkschnittstellen-Konfiguration
+            Workspace icons: Arbeitsbereichs-Symbole
+            Support: Support
+            Maintenance: Wartung
+            Update software: Software-Update
+            Troubleshooting: Fehlerbehebung
+            Additional information: Zusätzliche Informationen
+            FAQ: Häufig gestellte Fragen (FAQ)
+            Tips: Tipps
 
   #- Navigation
 extra:
