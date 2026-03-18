@@ -171,12 +171,15 @@ nav:
       - Barcode reader: 'how_to/Barcode_reader.md'
       - Exclusion area: 'how_to/Set_exclusion_area.md'
       - Sensitivity: 'how_to/Set_sensitivity.md'
-      - UUI to REFERENCE: 'how_to/UUI_to_REFERENCE.md'
-      - Network interface configuration: how_to/network_configuration.md
+      - UUI to REFERENCE: 'how_to/UUI_to_REFERENCE.md'    
       - Workspace icons: how_to/Workspace_icons.md
+      - UV conformal coating inspection: how_to/UV_conformal_coating_inspection.md
 
   - Support:
     - Maintenance: maintenance/maintenance.md
+    - Specific procedures:
+      - UV conformal coating installation guide: maintenance/UV_kit_install.md
+      - Network interface configuration: maintenance/network_configuration.md
     - Update software: maintenance/update_software.md
     - Troubleshooting: maintenance/Troubleshooting.md
 
