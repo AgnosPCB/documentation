@@ -22,7 +22,7 @@ Use the UUI capture button to open the [Live View window](../how_to/Inspection_w
 
 ## 3. Enable UV inspection
 
-In the Live View window, enable the **UV inspection option** located at the bottom of the interface.
+In the Live View window, enable the **UV inspection option** located at the bottom of the interface and start inspection.
 
 ![UV preview](../assets/v7/UV_inspection/UV_buttom.png){.center}
 
@@ -30,7 +30,7 @@ In the Live View window, enable the **UV inspection option** located at the bott
 
 Observe the PCB under UV lighting to verify the correct application and coverage of the conformal coating.
 
-![UV preview](../assets/v7/UV_inspection/UV_buttom.png){.center}
+![UV preview](../assets/v7/UV_inspection/UV_inspection.png){.center}
 
 ## Result
 

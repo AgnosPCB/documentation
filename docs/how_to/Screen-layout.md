@@ -17,7 +17,7 @@ This area displays the connection status with the inspection platform and camera
 
 ![Start inspection button](../assets/autoprocess.png){.center}
 
-The **Inspection start** button triggers the inspection of the current **UUI** image. This buttom is available when the [Auto process button](#auto-process) is set **OFF**. This is useful to avoid spend credits when you are testing how to take pictures of your PCBAs.
+The **Inspection start** button triggers the inspection of the current **UUI** image. This button is available when the [Auto process button](#auto-process) is set **OFF**. This is useful to avoid spend credits when you are testing how to take pictures of your PCBAs.
 
 ### **Loading REFERENCE by barcode**
 
@@ -26,6 +26,12 @@ The **Inspection start** button triggers the inspection of the current **UUI** i
 ![Barcode REFERENCE loading](../assets/v7/ui-bc_ref.png){.center}
 
 This button opens a pop-up window for inserting a barcode number. When generating a REFERENCE, any [barcode it contains can be read](#barcode-area-drawing). This barcode will be associated with the REFERENCE and can be loaded using that number with this function. It is also possible to read the barcode with a handheld reader and insert it into this field. More information about this feature [here](./Barcode_reader.md#load-a-reference-by-barcode).
+
+### **Measurement tool**
+
+![Measurement button](../assets/v7/ui-status-measure-button.png){width=80, .center}
+
+This button allows you to select a region within the PCB to measure an area of interest. More information about this feature can be found [here](./Measurement_tool.md).
 
 ## **Activity log**
 

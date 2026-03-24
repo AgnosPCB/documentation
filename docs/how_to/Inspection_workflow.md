@@ -42,7 +42,7 @@ In this window we have to set the images needed to cover all the PCBA.
 
 In larger PCBAs, the camera field of view may be insufficient to capture the entire board in a single image. In these cases, the system captures multiple images across the PCB and automatically stitches them together using AI into a single image ready for inspection.
 
-![Stitching process](../assets/stitching.png){width=600}
+![Stitching process](../assets/stitching.png){width=600, .center}
 
 In case you can not determine how many images are needed to cover your PCBA/panel, you can place your PCBA/panel in the middle of the inspection area and press the **AUTO** button. The system will scan the PCBA/panel and 
 **set the optimal proportions automatically.**
