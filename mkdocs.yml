@@ -162,6 +162,7 @@ nav:
     - Unboxing guide: 'getting_started/Unboxing.md'
     - Connection guide: 'getting_started/Connection_guide.md'
 
+
   - How to use it:
     - Terminology: 'how_to/terminology.md'
     - User Interface: 'how_to/Screen-layout.md'
@@ -174,6 +175,8 @@ nav:
       - UUI to REFERENCE: 'how_to/UUI_to_REFERENCE.md'    
       - Workspace icons: how_to/Workspace_icons.md
       - UV conformal coating inspection: how_to/UV_conformal_coating_inspection.md
+      - Reference variants: 'how_to\Multivariant_feature.md'
+      - Measurement tool: 'how_to/Measurement_tool.md'
 
   - Support:
     - Maintenance: maintenance/maintenance.md

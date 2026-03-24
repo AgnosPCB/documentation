@@ -38,12 +38,18 @@ In this window we have to set the images needed to cover all the PCBA.
 
 ![REF dimensions](../assets/v7/uui-ref_livepreview-dimensions.png)
 
+#### Stitching
+
+In larger PCBAs, the camera field of view may be insufficient to capture the entire board in a single image. In these cases, the system captures multiple images across the PCB and automatically stitches them together using AI into a single image ready for inspection.
+
+![Stitching process](../assets/stitching.png){width=600}
+
 In case you can not determine how many images are needed to cover your PCBA/panel, you can place your PCBA/panel in the middle of the inspection area and press the **AUTO** button. The system will scan the PCBA/panel and 
 **set the optimal proportions automatically.**
 
 ![REF AUTO button](../assets/v7/uui-ref_livepreview-auto.png){.center}
 
-In the lower are of the window you can set/unset the grid in the livew preview and set the exposure to take the image.
+In the lower area of the window you can set/unset the grid in the live preview and set the exposure to take the image.
 
 ![REF lower bar](../assets/v7/uui-ref_livepreview-exposure.png){.center}
 
@@ -61,11 +67,11 @@ The camera will focus on the selected area once the capture has started.
 !!! warning "Important"
     For a proper focusing, select an area **without tall components.**
 
-It also possible to focus the optics before start the capture by pressing in the **FOCUS** button. This helps to find a area where the optics focus correctly.
+It also possible to focus the optics before starting the capture by pressing in the **FOCUS** button. This helps to find an area where the optics focus correctly.
 
 ![AUTO button](../assets/v7/uui-ref_livepreview-focus.png){.center}
 
-To start the capture processing simply click in the **CAPTURE REFERENCE** button. The AOI will focus automatically in the selected quadrant and starts capturing the whole PCBA in a matter of seconds.
+To start the capture processing simply click the **CAPTURE REFERENCE** button. The AOI will focus automatically on the selected quadrant and start capturing the entire PCBA in a matter of seconds.
 
 ![Capture reference button](../assets/v7/uui-ref_livepreview-capture.png){.center}
 

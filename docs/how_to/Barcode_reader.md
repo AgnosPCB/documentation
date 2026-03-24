@@ -10,7 +10,7 @@ Select the **"draw barcode area"** button and draw a rectangle in the barcode ar
 
 ![Errors detected](../assets/barcode-errors.png){.center}
 
-The code will be shown in the rectangle and in the REFERENCE name in the top left side. The Make sure the barcode has been read before proceeding with the inspection.
+The code will be shown in the rectangle and in the REFERENCE name in the top left side. Make sure the barcode has been read before proceeding with the inspection.
 
 Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. The UUI's barcode will be read automatically in the same area of the REFERENCE's barcode.
 
