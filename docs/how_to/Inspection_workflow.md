@@ -38,16 +38,17 @@ In this window we have to set the images needed to cover all the PCBA.
 
 ![REF dimensions](../assets/v7/uui-ref_livepreview-dimensions.png)
 
+
 #### Stitching
 
-In larger PCBAs, the camera field of view may be insufficient to capture the entire board in a single image. In these cases, the system captures multiple images across the PCB and automatically stitches them together using AI into a single image ready for inspection.
+For larger PCBAs, the camera field of view may not be sufficient to capture the entire board in a single image. In these cases, the system captures multiple images and automatically stitches them together using AI into a single image ready for inspection.
 
 ![Stitching process](../assets/stitching.png){width=600, .center}
 
-In case you can not determine how many images are needed to cover your PCBA/panel, you can place your PCBA/panel in the middle of the inspection area and press the **AUTO** button. The system will scan the PCBA/panel and 
-**set the optimal proportions automatically.**
+If you are unsure how many images are required to cover your PCBA/panel, place it in the center of the inspection area and press the **AUTO** button. The system will scan the PCBA/panel and **set the optimal configuration automatically.**
 
 ![REF AUTO button](../assets/v7/uui-ref_livepreview-auto.png){.center}
+
 
 In the lower area of the window you can set/unset the grid in the live preview and set the exposure to take the image.
 
@@ -64,12 +65,20 @@ This window allows to move the camera to any quadrant of the PCBA. Just click in
 
 The camera will focus on the selected area once the capture has started.
 
-!!! warning "Important"
-    For a proper focusing, select an area **without tall components.**
+#### Focus
 
-It also possible to focus the optics before starting the capture by pressing in the **FOCUS** button. This helps to find an area where the optics focus correctly.
+The system allows manual focusing of the PCB before starting the capture process. Press the **FOCUS** button to adjust the optics and verify that the selected area is correctly focused.
 
 ![AUTO button](../assets/v7/uui-ref_livepreview-focus.png){.center}
+
+For accurate inspection, it is essential to focus on the **base of the PCB**, where the components are mounted. Avoid focusing on tall components, as this may reduce inspection accuracy.
+
+The PCB does not need to be centered during manual focusing. The operator can move it freely and focus on any area, as long as the base of the PCB is clearly in focus.
+
+!!! warning "Important"
+    Select an area without tall components and ensure that the PCB base is sharply focused.
+
+![AUTO button](../assets/v7/uui-ref_livepreview-select_focus.png){.center}
 
 To start the capture processing simply click the **CAPTURE REFERENCE** button. The AOI will focus automatically on the selected quadrant and start capturing the entire PCBA in a matter of seconds.
 

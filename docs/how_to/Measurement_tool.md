@@ -1,25 +1,16 @@
-<!--
-    Integrated component measurement
-
-    Description
-
-    Measure PCB components directly within the inspection software. This tool allows quick verification of component dimensions, distances, areas and placements, helping engineers validate PCB layouts and component positioning with precision.
-    
-    <div class="feature-card-scroll">
-      <img src="URL_DE_TU_GIF_4" alt="Component measurement">
-      <h3>Verify component dimensions</h3>
-      <p>Measure component dimensions and placement directly inside the inspection interface.</p>
-    </div>
-
-
-    WEB Q1:
-    Component measurement tools
-    Measure component dimensions and placement directly inside the inspection interface.
--->
-
 # Measurement tool
 
 The AgnosPCB AOI system includes a Measurement Tool that allows operators to verify component dimensions, measure distances between components and calculate areas directly within the interface, without using external tools.
+
+## Video
+
+For a complete walkthrough of this feature, watch the following video:
+
+<video controls style="display: block; margin: 0 auto; max-width: 100%;">
+  <source src="../assets/measurement-tool-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## 1. Select the image
 
@@ -48,11 +39,3 @@ The system displays the measurement directly on the screen, allowing quick verif
 
 ![Measurement tool test](../assets/measurement-test.png){width=500, .center}
 
-## Video
-
-For a complete walkthrough of this feature, watch the following video:
-
-<video controls style="display: block; margin: 0 auto; max-width: 100%;">
-  <source src="../assets/measurement-tool-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
