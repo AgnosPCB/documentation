@@ -5,11 +5,11 @@ El sistema AOI AgnosPCB incluye una herramienta de medición que permite a los o
 ## Video
 
 Para una explicación completa de esta funcionalidad, mira el siguiente video:
+ 
+___
 
-<video controls style="display: block; margin: 0 auto; max-width: 100%;">
-  <source src="../assets/measurement-tool-video.mp4" type="video/mp4">
-  Tu navegador no admite la etiqueta de video.
-</video>
+<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+___
 
 
 ## 1. Seleccionar la imagen

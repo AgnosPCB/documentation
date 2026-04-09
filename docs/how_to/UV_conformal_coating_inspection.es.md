@@ -14,11 +14,11 @@ Esta función permite a los operadores inspeccionar visualmente el recubrimiento
 ## Video
 
 Para una explicación completa de esta funcionalidad, vea el siguiente video:
+ 
+___
 
-<video width="800" controls style="display: block; margin: 0 auto;">
-  <source src="../assets/v7/UV_inspection/UV-mode-video.mp4" type="video/mp4">
-  Su navegador no soporta la etiqueta de video.
-</video>
+<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+___
 
 ## 1. Generar una imagen de REFERENCIA o cargarla
 

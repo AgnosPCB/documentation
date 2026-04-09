@@ -5,12 +5,11 @@ The AgnosPCB AOI system includes a Measurement Tool that allows operators to ver
 ## Video
 
 For a complete walkthrough of this feature, watch the following video:
+ 
+___
 
-<video controls style="display: block; margin: 0 auto; max-width: 100%;">
-  <source src="../assets/measurement-tool-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+___
 
 ## 1. Select the image
 

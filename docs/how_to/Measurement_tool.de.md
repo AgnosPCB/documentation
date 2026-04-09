@@ -5,12 +5,11 @@ Das AgnosPCB AOI-System enthält ein Messwerkzeug, mit dem Bediener die Abmessun
 ## Video
 
 Eine vollständige Einführung in diese Funktion finden Sie im folgenden Video:
+ 
+___
 
-<video controls style="display: block; margin: 0 auto; max-width: 100%;">
-  <source src="../assets/measurement-tool-video.mp4" type="video/mp4">
-  Ihr Browser unterstützt das Video-Tag nicht.
-</video>
-
+<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+___
 
 ## 1. Bild auswählen
 

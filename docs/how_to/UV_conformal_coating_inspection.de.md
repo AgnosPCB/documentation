@@ -14,11 +14,11 @@ Diese Funktion ermöglicht es den Bedienern, die konforme Beschichtung auf PCBAs
 ## Video
 
 Für eine vollständige Einführung in diese Funktion sehen Sie sich das folgende Video an:
+ 
+___
 
-<video width="800" controls style="display: block; margin: 0 auto;">
-  <source src="../assets/v7/UV_inspection/UV-mode-video.mp4" type="video/mp4">
-  Ihr Browser unterstützt das Video-Tag nicht.
-</video>
+<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+___
 
 ## 1. REFERENZbild erstellen oder laden
 

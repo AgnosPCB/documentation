@@ -14,11 +14,12 @@ Cette fonctionnalité permet aux opérateurs d’inspecter visuellement le revê
 ## Vidéo
 
 Pour une présentation complète de cette fonctionnalité, regardez la vidéo suivante :
+ 
+___
 
-<video width="800" controls style="display: block; margin: 0 auto;">
-  <source src="../assets/v7/UV_inspection/UV-mode-video.mp4" type="video/mp4">
-  Votre navigateur ne prend pas en charge la balise vidéo.
-</video>
+<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+___
+
 
 ## 1. Générer une image de RÉFÉRENCE ou la charger
 
