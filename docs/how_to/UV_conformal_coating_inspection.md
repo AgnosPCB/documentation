@@ -12,12 +12,12 @@ This feature allows operators to visually inspect the conformal coating on PCBAs
 
     ![UV warning](../assets/v7/UV_inspection/warning_icon.png){width=200px, .center}
 
-## Video
- For a complete walkthrough of this feature, watch the following video:
- 
+## Video 
 ___
 
-<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+For a complete walkthrough of this feature, watch the following video:
+ 
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/NfidLIuWdqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
 

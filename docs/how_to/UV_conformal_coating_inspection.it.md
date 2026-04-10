@@ -1,3 +1,4 @@
+# Ispezione del rivestimento conformale UV
 In questa guida impareremo come utilizzare l'ispezione del rivestimento conformale usando **AgnosPCB AOI**.
 
 Questa funzione consente agli operatori di ispezionare visivamente il rivestimento conformale sui PCBA utilizzando l'illuminazione UV.
@@ -12,11 +13,10 @@ Questa funzione consente agli operatori di ispezionare visivamente il rivestimen
     ![Avviso UV](../assets/v7/UV_inspection/warning_icon.png){ width=200px .center }
 
 ## Video
+___
 
 Per una panoramica completa di questa funzionalità, guarda il seguente video:
  
-___
-
 <iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 

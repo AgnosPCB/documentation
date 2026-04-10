@@ -1,3 +1,4 @@
+# Inspección de recubrimiento conformal UV
 En esta guía aprenderemos a realizar la inspección del recubrimiento conformal usando **AgnosPCB AOI**.
 
 Esta función permite a los operadores inspeccionar visualmente el recubrimiento conformal en PCBAs utilizando iluminación UV.
@@ -11,11 +12,10 @@ Esta función permite a los operadores inspeccionar visualmente el recubrimiento
 
     ![Advertencia UV](../assets/v7/UV_inspection/warning_icon.png){ width=200px .center }
 
-## Video
+## Video 
+___
 
 Para una explicación completa de esta funcionalidad, vea el siguiente video:
- 
-___
 
 <iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___

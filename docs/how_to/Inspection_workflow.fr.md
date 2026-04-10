@@ -38,31 +38,48 @@ Dans cette fenêtre, nous devons définir les images nécessaires pour couvrir l
 
 ![Dimensions REF](../assets/v7/uui-ref_livepreview-dimensions.png)
 
-Si vous ne parvenez pas à déterminer le nombre d'images nécessaires pour couvrir votre PCBA/panneau, vous pouvez placer votre PCBA/panneau au milieu de la zone d'inspection et appuyer sur le bouton **AUTO**. Le système scannera la PCBA/le panneau et **définira automatiquement les proportions optimales.**
+---
 
-![Bouton AUTO REF](../assets/v7/uui-ref_livepreview-auto.png){.center}
+#### Capture de la taille du PCB
 
-Dans la partie inférieure de la fenêtre, vous pouvez définir/annuler la grille dans la prévisualisation en direct et régler l'exposition pour prendre l'image.
+Pour les PCBAs de grande taille, le champ de vision de la caméra peut ne pas être suffisant pour capturer toute la carte en une seule image. Dans ce cas, le système capture plusieurs images et les assemble automatiquement à l’aide de l’IA en une seule image prête pour l’inspection.
 
-![Barre inférieure REF](../assets/v7/uui-ref_livepreview-exposure.png){.center}
+![Processus de stitching](../assets/stitching.png){ width=600 .center }
+
+Si vous n’êtes pas sûr du nombre d’images nécessaires, placez le PCBA au centre de la zone d’inspection et appuyez sur le bouton **AUTO**. Le système analysera la carte et configurera automatiquement les paramètres optimaux.
+
+![Bouton AUTO de référence](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+
+Vous pouvez également déplacer la caméra vers n’importe quel quadrant du PCBA en cliquant sur la zone souhaitée dans la vue miniature.
+
+![Carte des quadrants](../assets/v7/uui-ref_livepreview-map.png){ .center }
+
+---
+
+#### Mise au point
+
+Le système permet une mise au point manuelle du PCB avant de démarrer le processus de capture. Appuyez sur le bouton **FOCUS** pour ajuster l’optique et vérifier que la zone sélectionnée est correctement mise au point.
+
+![Bouton FOCUS](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+
+Par défaut, la caméra effectue la mise au point automatiquement sur le centre du PCB. Cependant, ce n’est pas toujours la zone optimale en raison de la présence de composants hauts.
+
+Pour une inspection précise, il est essentiel de faire la mise au point sur la **base du PCB**, où les composants sont montés. Évitez de faire la mise au point sur des composants hauts, car cela peut réduire la précision de l’inspection.
+
+Le PCB n’a pas besoin d’être centré lors de la mise au point manuelle. L’opérateur peut le déplacer librement et sélectionner toute zone appropriée pour obtenir une mise au point correcte, tant que la base du PCB est nettement visible.
+
+Une fois la mise au point terminée, le PCB doit être repositionné au centre de la zone d’inspection avant de capturer l’image de référence.
 
 !!! warning "Important"
-    La valeur par défaut définie (16000) est **la valeur optimale dans la plupart des cas.** Ajustez ce paramètre uniquement en cas de composants très clairs/sombres qui sont difficilement visibles par le logiciel. 
+    Sélectionnez une zone sans composants hauts et assurez-vous que la base du PCB est parfaitement nette.
 
+La partie inférieure de la fenêtre permet d’activer ou de désactiver la grille dans la vue en direct et d’ajuster l’exposition.
 
+![Barre inférieure de référence](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
 
-Cette fenêtre permet de déplacer la caméra vers n'importe quel quadrant de la PCBA. Cliquez simplement sur le quadrant souhaité dans la miniature.
+![Sélection de la mise au point](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
 
-![Carte des quadrants](../assets/v7/uui-ref_livepreview-map.png){.center}
-
-La caméra fera la mise au point sur la zone sélectionnée une fois la capture démarrée.
-
-!!! warning "Important"
-    Pour une mise au point correcte, sélectionnez une zone **sans composants hauts.**
-
-Il est également possible de faire la mise au point de l'optique avant de commencer la capture en appuyant sur le bouton **FOCUS**. Cela aide à trouver une zone où l'optique fait la mise au point correctement.
-
-![Bouton AUTO](../assets/v7/uui-ref_livepreview-focus.png){.center}
+---
 
 Pour démarrer le traitement de la capture, cliquez simplement sur le bouton **CAPTURER RÉFÉRENCE**. L'AOI fera la mise au point automatiquement sur le quadrant sélectionné et commencera à capturer l'ensemble de la PCBA en quelques secondes.
 

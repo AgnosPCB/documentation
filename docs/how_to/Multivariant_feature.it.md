@@ -5,12 +5,11 @@ Durante l'ispezione di un PCB, alcuni componenti possono differire dal riferimen
 Contrassegnando questo tipo di errore come **Variante di riferimento**, il sistema lo riconoscerà nelle future ispezioni e non lo segnalerà più come errore.
 
 ## Video
+___
 
 Per una panoramica completa di questa funzionalità, guarda il seguente video:
  
-___
-
-<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Y79a7xYpsv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
 ## 1. Avviare l'ispezione

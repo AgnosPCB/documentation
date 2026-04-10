@@ -1,3 +1,4 @@
+# UV-Schutzlackinspektion
 In dieser Anleitung lernen wir, wie die Inspektion der konformen Beschichtung mit **AgnosPCB AOI** durchgeführt wird.
 
 Diese Funktion ermöglicht es den Bedienern, die konforme Beschichtung auf PCBAs visuell mithilfe von UV-Beleuchtung zu überprüfen.
@@ -11,11 +12,10 @@ Diese Funktion ermöglicht es den Bedienern, die konforme Beschichtung auf PCBAs
 
     ![UV-Warnung](../assets/v7/UV_inspection/warning_icon.png){ width=200px .center }
 
-## Video
+## Video 
+___
 
 Für eine vollständige Einführung in diese Funktion sehen Sie sich das folgende Video an:
- 
-___
 
 <iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___

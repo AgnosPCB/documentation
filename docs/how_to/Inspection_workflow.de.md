@@ -38,31 +38,48 @@ In diesem Fenster müssen wir die Bilder einstellen, die zur Abdeckung der gesam
 
 ![REF-Abmessungen](../assets/v7/uui-ref_livepreview-dimensions.png)
 
-Falls Sie nicht feststellen können, wie viele Bilder zur Abdeckung Ihrer PCBA/Ihres Panels erforderlich sind, können Sie Ihre PCBA/Ihr Panel in die Mitte des Inspektionsbereichs legen und die Schaltfläche **AUTO** drücken. Das System scannt die PCBA/das Panel und **stellt die optimalen Proportionen automatisch ein.**
+---
 
-![REF AUTO-Schaltfläche](../assets/v7/uui-ref_livepreview-auto.png){.center}
+#### Erfassung der PCB-Größe
 
-Im unteren Bereich des Fensters können Sie das Raster in der Live-Vorschau ein-/ausblenden und die Belichtung für die Bildaufnahme einstellen.
+Bei größeren PCBAs reicht das Sichtfeld der Kamera möglicherweise nicht aus, um die gesamte Leiterplatte in einer einzigen Aufnahme zu erfassen. In solchen Fällen nimmt das System mehrere Bilder auf und fügt sie mithilfe von KI automatisch zu einem einzigen, für die Inspektion geeigneten Bild zusammen.
 
-![REF untere Leiste](../assets/v7/uui-ref_livepreview-exposure.png){.center}
+![Stitching-Prozess](../assets/stitching.png){ width=600 .center }
+
+Wenn Sie sich nicht sicher sind, wie viele Bilder benötigt werden, platzieren Sie das PCBA in der Mitte des Inspektionsbereichs und drücken Sie die Taste **AUTO**. Das System scannt die Leiterplatte und stellt automatisch die optimalen Parameter ein.
+
+![AUTO-Referenztaste](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+
+Sie können die Kamera auch in jeden Quadranten des PCBAs bewegen, indem Sie im Miniaturbild auf den gewünschten Bereich klicken.
+
+![Quadrantenübersicht](../assets/v7/uui-ref_livepreview-map.png){ .center }
+
+---
+
+#### Fokussierung
+
+Das System ermöglicht eine manuelle Fokussierung des PCBs vor dem Start des Aufnahmeprozesses. Drücken Sie die Taste **FOCUS**, um die Optik einzustellen und zu überprüfen, ob der ausgewählte Bereich korrekt fokussiert ist.
+
+![FOCUS-Taste](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+
+Standardmäßig fokussiert die Kamera automatisch auf die Mitte des PCBs. Dies ist jedoch aufgrund hoher Bauteile nicht immer der optimale Bereich.
+
+Für eine präzise Inspektion ist es entscheidend, auf die **Basis des PCBs** zu fokussieren, wo die Bauteile montiert sind. Vermeiden Sie es, auf hohe Bauteile zu fokussieren, da dies die Inspektionsgenauigkeit verringern kann.
+
+Das PCB muss während der manuellen Fokussierung nicht zentriert sein. Der Bediener kann es frei bewegen und einen geeigneten Bereich auswählen, solange die Basis des PCBs klar fokussiert ist.
+
+Nach Abschluss der Fokussierung muss das PCB wieder in die Mitte des Inspektionsbereichs positioniert werden, bevor das Referenzbild aufgenommen wird.
 
 !!! warning "Wichtig"
-    Der eingestellte Standardwert (16000) ist **in den meisten Fällen der optimale Wert.** Passen Sie diesen Parameter nur im Falle von sehr hellen/dunklen Komponenten an, die von der Software kaum sichtbar sind. 
+    Wählen Sie einen Bereich ohne hohe Bauteile und stellen Sie sicher, dass die PCB-Basis scharf fokussiert ist.
 
+Der untere Bereich des Fensters ermöglicht das Ein- und Ausblenden des Rasters in der Live-Ansicht sowie die Anpassung der Belichtung.
 
+![Untere Referenzleiste](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
 
-Dieses Fenster ermöglicht es, die Kamera zu jedem Quadranten der PCBA zu bewegen. Klicken Sie einfach in der Miniaturansicht auf den gewünschten Quadranten.
+![Fokussierungsauswahl](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
 
-![Quadranten-Karte](../assets/v7/uui-ref_livepreview-map.png){.center}
-
-Die Kamera fokussiert auf den ausgewählten Bereich, sobald die Aufnahme begonnen hat.
-
-!!! warning "Wichtig"
-    Wählen Sie für eine korrekte Fokussierung einen Bereich **ohne hohe Komponenten.**
-
-Es ist auch möglich, die Optik vor Beginn der Aufnahme durch Drücken der Schaltfläche **FOCUS** zu fokussieren. Dies hilft, einen Bereich zu finden, in dem die Optik korrekt fokussiert.
-
-![AUTO-Schaltfläche](../assets/v7/uui-ref_livepreview-focus.png){.center}
+---
 
 Um die Aufnahmeverarbeitung zu starten, klicken Sie einfach auf die Schaltfläche **REFERENZ AUFNEHMEN**. Das AOI fokussiert automatisch auf den ausgewählten Quadranten und beginnt innerhalb von Sekunden mit der Aufnahme der gesamten PCBA.
 

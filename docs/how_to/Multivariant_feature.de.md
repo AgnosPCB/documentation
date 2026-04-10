@@ -5,12 +5,11 @@ Bei der Inspektion einer Leiterplatte (PCB) können einige Bauteile vom Referenz
 Durch das Markieren dieses Fehlertyps als **Referenzvariante** erkennt das System ihn bei zukünftigen Inspektionen und meldet ihn nicht mehr als Fehler.
 
 ## Video
+___
 
 Für eine vollständige Einführung in diese Funktion sehen Sie sich das folgende Video an:
  
-___
-
-<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Y79a7xYpsv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
 ## 1. Inspektion starten

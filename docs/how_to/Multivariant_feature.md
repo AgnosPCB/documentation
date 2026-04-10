@@ -4,13 +4,12 @@ When inspecting a PCB, some components may differ from the reference and be dete
 
 By marking this type of error as a **Reference Variant**, the system will recognize it in future inspections and will not flag it as an error again.
 
-## Video
-
-For a complete walkthrough of this feature, watch the following video:
- 
+## Video 
 ___
 
-<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+For a complete walkthrough of this feature, watch the following video:
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Y79a7xYpsv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
 ## 1. Start the inspection

@@ -2,13 +2,12 @@
 
 The AgnosPCB AOI system includes a Measurement Tool that allows operators to verify component dimensions, measure distances between components and calculate areas directly within the interface, without using external tools.
 
-## Video
-
-For a complete walkthrough of this feature, watch the following video:
- 
+## Video 
 ___
 
-<iframe width="100%" height="400" src="." title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+For a complete walkthrough of this feature, watch the following video:
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/OfEmpK2Qjtc?start=39" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
 ## 1. Select the image

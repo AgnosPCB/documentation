@@ -38,31 +38,47 @@ In questa finestra dobbiamo impostare le immagini necessarie per coprire l'inter
 
 ![Dimensioni REF](../assets/v7/uui-ref_livepreview-dimensions.png)
 
-Nel caso in cui non riusciate a determinare quante immagini sono necessarie per coprire la vostra PCBA/pannello, potete posizionare la vostra PCBA/pannello al centro dell'area di ispezione e premere il pulsante **AUTO**. Il sistema scansionerà la PCBA/il pannello e **imposterà automaticamente le proporzioni ottimali.**
+---
+#### Acquisizione delle dimensioni del PCB
 
-![Pulsante AUTO REF](../assets/v7/uui-ref_livepreview-auto.png){.center}
+Per PCBAs di grandi dimensioni, il campo visivo della telecamera potrebbe non essere sufficiente per catturare l'intera scheda in una singola immagine. In questi casi, il sistema acquisisce più immagini e le unisce automaticamente tramite IA in un'unica immagine pronta per l'ispezione.
 
-Nella parte inferiore della finestra è possibile impostare/rimuovere la griglia nell'anteprima live e impostare l'esposizione per scattare l'immagine.
+![Processo di stitching](../assets/stitching.png){ width=600 .center }
 
-![Barra inferiore REF](../assets/v7/uui-ref_livepreview-exposure.png){.center}
+Se non sei sicuro di quante immagini siano necessarie, posiziona il PCBA al centro dell'area di ispezione e premi il pulsante **AUTO**. Il sistema eseguirà la scansione della scheda e configurerà automaticamente i parametri ottimali.
+
+![Pulsante AUTO di riferimento](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+
+Puoi anche spostare la telecamera in qualsiasi quadrante del PCBA facendo clic sull'area desiderata nella vista in miniatura.
+
+![Mappa dei quadranti](../assets/v7/uui-ref_livepreview-map.png){ .center }
+
+---
+
+#### Messa a fuoco
+
+Il sistema consente la messa a fuoco manuale del PCB prima di avviare il processo di acquisizione. Premi il pulsante **FOCUS** per regolare l'ottica e verificare che l'area selezionata sia correttamente a fuoco.
+
+![Pulsante FOCUS](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+
+Per impostazione predefinita, la telecamera mette a fuoco automaticamente il centro del PCB. Tuttavia, questa non è sempre l'area ottimale a causa della presenza di componenti alti.
+
+Per un'ispezione accurata, è essenziale mettere a fuoco la **base del PCB**, dove sono montati i componenti. Evita di mettere a fuoco componenti alti, poiché ciò può ridurre la precisione dell'ispezione.
+
+Il PCB non deve essere centrato durante la messa a fuoco manuale. L'operatore può spostarlo liberamente e selezionare qualsiasi area adatta per ottenere una corretta messa a fuoco, purché la base del PCB sia chiaramente a fuoco.
+
+Una volta completato il processo di messa a fuoco, il PCB deve essere riposizionato al centro dell'area di ispezione prima di acquisire l'immagine di riferimento.
 
 !!! warning "Importante"
-    Il valore predefinito impostato (16000) è **il valore ottimale nella maggior parte dei casi.** Regolare questo parametro solo in caso di componenti molto chiari/scuri che sono difficilmente visibili dal software. 
+    Seleziona un'area senza componenti alti e assicurati che la base del PCB sia perfettamente a fuoco.
 
+La parte inferiore della finestra consente di attivare o disattivare la griglia nella vista live e di regolare l'esposizione.
 
+![Barra inferiore di riferimento](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
 
-Questa finestra consente di spostare la telecamera in qualsiasi quadrante della PCBA. Basta fare clic sul quadrante desiderato nella miniatura.
+![Selezione della messa a fuoco](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
 
-![Mappa dei quadranti](../assets/v7/uui-ref_livepreview-map.png){.center}
-
-La telecamera metterà a fuoco l'area selezionata una volta iniziata l'acquisizione.
-
-!!! warning "Importante"
-    Per una corretta messa a fuoco, selezionare un'area **senza componenti alti.**
-
-È anche possibile mettere a fuoco l'ottica prima di avviare l'acquisizione premendo il pulsante **FOCUS**. Ciò aiuta a trovare un'area in cui l'ottica mette a fuoco correttamente.
-
-![Pulsante AUTO](../assets/v7/uui-ref_livepreview-focus.png){.center}
+---
 
 Per avviare l'elaborazione dell'acquisizione, è sufficiente fare clic sul pulsante **CATTURA RIFERIMENTO**. L'AOI metterà a fuoco automaticamente nel quadrante selezionato e inizierà a catturare l'intera PCBA in pochi secondi.
 

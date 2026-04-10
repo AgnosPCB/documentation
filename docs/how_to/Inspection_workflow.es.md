@@ -38,31 +38,46 @@ En esta ventana tenemos que configurar las imágenes necesarias para cubrir toda
 
 ![Dimensiones REF](../assets/v7/uui-ref_livepreview-dimensions.png)
 
-En caso de que no pueda determinar cuántas imágenes se necesitan para cubrir su PCBA/panel, puede colocar su PCBA/panel en el medio del área de inspección y presionar el botón **AUTO**. El sistema escaneará la PCBA/el panel y **establecerá automáticamente las proporciones óptimas.**
+---
+#### Captura del tamaño del PCB
 
-![Botón AUTO REF](../assets/v7/uui-ref_livepreview-auto.png){.center}
+En PCBAs de mayor tamaño, el campo de visión de la cámara puede no ser suficiente para capturar toda la placa en una sola imagen. En estos casos, el sistema captura múltiples imágenes y las une automáticamente mediante IA en una única imagen lista para la inspección.
 
-En la parte inferior de la ventana puede establecer/desactivar la cuadrícula en la vista previa en vivo y configurar la exposición para tomar la imagen.
+![Proceso de stitching](../assets/stitching.png){ width=600 .center }
 
-![Barra inferior REF](../assets/v7/uui-ref_livepreview-exposure.png){.center}
+Si no estás seguro de cuántas imágenes son necesarias, coloca el PCBA en el centro del área de inspección y pulsa el botón **AUTO**. El sistema escaneará la placa y configurará automáticamente los parámetros óptimos.
+
+![Botón AUTO de referencia](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+
+También puedes mover la cámara a cualquier cuadrante del PCBA haciendo clic en el área deseada en la vista en miniatura.
+
+![Mapa de cuadrantes](../assets/v7/uui-ref_livepreview-map.png){ .center }
+
+---
+
+#### Enfoque
+
+El sistema permite el enfoque manual del PCB antes de iniciar el proceso de captura. Pulsa el botón **FOCUS** para ajustar la óptica y verificar que el área seleccionada esté correctamente enfocada.
+
+![Botón FOCUS](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+
+Por defecto, la cámara enfoca automáticamente el centro del PCB. Sin embargo, esta no siempre es la zona óptima debido a la presencia de componentes altos.
+
+Para una inspección precisa, es esencial enfocar la **base del PCB**, donde están montados los componentes. Evita enfocar componentes altos, ya que esto puede reducir la precisión de la inspección.
+
+El PCB no necesita estar centrado durante el enfoque manual. El operador puede moverlo libremente y seleccionar cualquier área adecuada para lograr un buen enfoque, siempre que la base del PCB esté claramente enfocada.
+
+Una vez finalizado el proceso de enfoque, el PCB debe volver a colocarse en el centro del área de inspección antes de capturar la imagen de referencia.
 
 !!! warning "Importante"
-    El valor predeterminado (16000) establecido es **el valor óptimo en la mayoría de los casos.** Ajuste este parámetro solo en caso de componentes muy claros/oscuros que sean difícilmente visibles para el software. 
+    Selecciona un área sin componentes altos y asegúrate de que la base del PCB esté perfectamente enfocada.
 
+La parte inferior de la ventana permite activar o desactivar la cuadrícula en la vista en vivo y ajustar la exposición.
 
+![Barra inferior de referencia](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
 
-Esta ventana permite mover la cámara a cualquier cuadrante de la PCBA. Simplemente haga clic en el cuadrante deseado en la miniatura.
-
-![Mapa de cuadrantes](../assets/v7/uui-ref_livepreview-map.png){.center}
-
-La cámara enfocará el área seleccionada una vez que haya comenzado la captura.
-
-!!! warning "Importante"
-    Para un enfoque adecuado, seleccione un área **sin componentes altos.**
-
-También es posible enfocar la óptica antes de comenzar la captura presionando el botón **FOCUS**. Esto ayuda a encontrar un área donde la óptica enfoque correctamente.
-
-![Botón AUTO](../assets/v7/uui-ref_livepreview-focus.png){.center}
+![Selección de enfoque](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
+---
 
 Para iniciar el procesamiento de la captura, simplemente haga clic en el botón **CAPTURAR REFERENCIA**. El AOI foca automáticamente en el cuadrante seleccionado y comienza a capturar toda la PCBA en cuestión de segundos.
 

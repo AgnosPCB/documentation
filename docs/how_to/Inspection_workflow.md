@@ -38,47 +38,48 @@ In this window we have to set the images needed to cover all the PCBA.
 
 ![REF dimensions](../assets/v7/uui-ref_livepreview-dimensions.png)
 
+---
 
-#### Stitching
+#### Capturing the PCB Size
 
 For larger PCBAs, the camera field of view may not be sufficient to capture the entire board in a single image. In these cases, the system captures multiple images and automatically stitches them together using AI into a single image ready for inspection.
 
-![Stitching process](../assets/stitching.png){width=600, .center}
+![Stitching process](../assets/stitching.png){ width=600 .center }
 
-If you are unsure how many images are required to cover your PCBA/panel, place it in the center of the inspection area and press the **AUTO** button. The system will scan the PCBA/panel and **set the optimal configuration automatically.**
+If you are unsure how many images are required, place the PCBA in the center of the inspection area and press the **AUTO** button. The system will scan the board and automatically set the optimal configuration.
 
-![REF AUTO button](../assets/v7/uui-ref_livepreview-auto.png){.center}
+![REF AUTO button](../assets/v7/uui-ref_livepreview-auto.png){ .center }
 
+You can also move the camera to any quadrant of the PCBA by clicking on the desired area in the miniature view.
 
-In the lower area of the window you can set/unset the grid in the live preview and set the exposure to take the image.
+![Quadrants map](../assets/v7/uui-ref_livepreview-map.png){ .center }
 
-![REF lower bar](../assets/v7/uui-ref_livepreview-exposure.png){.center}
-
-!!! warning "Important"
-    The default value (16000) set is **the optimal value in most of the cases.** Ajust this parameter just in case of very clear/dark component that are hardly visible by the software. 
-
-
-
-This window allows to move the camera to any quadrant of the PCBA. Just click in the desired quadrant in the miniature.
-
-![Quadrants map](../assets/v7/uui-ref_livepreview-map.png){.center}
-
-The camera will focus on the selected area once the capture has started.
+---
 
 #### Focus
 
 The system allows manual focusing of the PCB before starting the capture process. Press the **FOCUS** button to adjust the optics and verify that the selected area is correctly focused.
 
-![AUTO button](../assets/v7/uui-ref_livepreview-focus.png){.center}
+![FOCUS button](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+
+By default, the camera focuses automatically on the center of the PCB. However, this may not always be the optimal area due to the presence of tall components.
 
 For accurate inspection, it is essential to focus on the **base of the PCB**, where the components are mounted. Avoid focusing on tall components, as this may reduce inspection accuracy.
 
-The PCB does not need to be centered during manual focusing. The operator can move it freely and focus on any area, as long as the base of the PCB is clearly in focus.
+The PCB does not need to be centered during manual focusing. The operator can move it freely and select any suitable area to achieve proper focus, as long as the base of the PCB is clearly in focus.
+
+After completing the focusing process, the PCB must be repositioned at the center of the inspection area before capturing the reference image.
 
 !!! warning "Important"
     Select an area without tall components and ensure that the PCB base is sharply focused.
 
-![AUTO button](../assets/v7/uui-ref_livepreview-select_focus.png){.center}
+The lower section of the window allows enabling or disabling the grid in the live preview and adjusting the exposure.
+
+![REF lower bar](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
+
+![Focus selection](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
+
+---
 
 To start the capture processing simply click the **CAPTURE REFERENCE** button. The AOI will focus automatically on the selected quadrant and start capturing the entire PCBA in a matter of seconds.
 
