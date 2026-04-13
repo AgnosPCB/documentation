@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://agnospcb.github.io/documentation/fr/how_to/Inspection_workflow.html">
+      
       
         <link rel="prev" href="Screen-layout.html">
       
@@ -728,34 +730,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Génération d&#39;une RÉFÉRENCE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#capture-de-la-taille-du-pcb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Capture de la taille du PCB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mise-au-point" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mise au point
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1039,63 +1013,7 @@
   <span class="md-ellipsis">
     
   
-    Inspection du revêtement conforme UV
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how_to/Multivariant_feature.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Variantes de référence
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Measurement_tool.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Outil de mesure
+    UV conformal coating inspection
   
 
     
@@ -1556,34 +1474,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Génération d&#39;une RÉFÉRENCE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#capture-de-la-taille-du-pcb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Capture de la taille du PCB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mise-au-point" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mise au point
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1669,30 +1559,23 @@
 <p><img alt="Fenêtre REF" src="../../assets/v7/uui-ref_livepreview.png" /></p>
 <p>Dans cette fenêtre, nous devons définir les images nécessaires pour couvrir l'ensemble de la PCBA.</p>
 <p><img alt="Dimensions REF" src="../../assets/v7/uui-ref_livepreview-dimensions.png" /></p>
-<hr />
-<h4 id="capture-de-la-taille-du-pcb">Capture de la taille du PCB</h4>
-<p>Pour les PCBAs de grande taille, le champ de vision de la caméra peut ne pas être suffisant pour capturer toute la carte en une seule image. Dans ce cas, le système capture plusieurs images et les assemble automatiquement à l’aide de l’IA en une seule image prête pour l’inspection.</p>
-<p><img alt="Processus de stitching" class="center" src="../../assets/stitching.png" width="600" /></p>
-<p>Si vous n’êtes pas sûr du nombre d’images nécessaires, placez le PCBA au centre de la zone d’inspection et appuyez sur le bouton <strong>AUTO</strong>. Le système analysera la carte et configurera automatiquement les paramètres optimaux.</p>
-<p><img alt="Bouton AUTO de référence" class="center" src="../../assets/v7/uui-ref_livepreview-auto.png" /></p>
-<p>Vous pouvez également déplacer la caméra vers n’importe quel quadrant du PCBA en cliquant sur la zone souhaitée dans la vue miniature.</p>
-<p><img alt="Carte des quadrants" class="center" src="../../assets/v7/uui-ref_livepreview-map.png" /></p>
-<hr />
-<h4 id="mise-au-point">Mise au point</h4>
-<p>Le système permet une mise au point manuelle du PCB avant de démarrer le processus de capture. Appuyez sur le bouton <strong>FOCUS</strong> pour ajuster l’optique et vérifier que la zone sélectionnée est correctement mise au point.</p>
-<p><img alt="Bouton FOCUS" class="center" src="../../assets/v7/uui-ref_livepreview-focus.png" /></p>
-<p>Par défaut, la caméra effectue la mise au point automatiquement sur le centre du PCB. Cependant, ce n’est pas toujours la zone optimale en raison de la présence de composants hauts.</p>
-<p>Pour une inspection précise, il est essentiel de faire la mise au point sur la <strong>base du PCB</strong>, où les composants sont montés. Évitez de faire la mise au point sur des composants hauts, car cela peut réduire la précision de l’inspection.</p>
-<p>Le PCB n’a pas besoin d’être centré lors de la mise au point manuelle. L’opérateur peut le déplacer librement et sélectionner toute zone appropriée pour obtenir une mise au point correcte, tant que la base du PCB est nettement visible.</p>
-<p>Une fois la mise au point terminée, le PCB doit être repositionné au centre de la zone d’inspection avant de capturer l’image de référence.</p>
+<p>Si vous ne parvenez pas à déterminer le nombre d'images nécessaires pour couvrir votre PCBA/panneau, vous pouvez placer votre PCBA/panneau au milieu de la zone d'inspection et appuyer sur le bouton <strong>AUTO</strong>. Le système scannera la PCBA/le panneau et <strong>définira automatiquement les proportions optimales.</strong></p>
+<p><img alt="Bouton AUTO REF" class="center" src="../../assets/v7/uui-ref_livepreview-auto.png" /></p>
+<p>Dans la partie inférieure de la fenêtre, vous pouvez définir/annuler la grille dans la prévisualisation en direct et régler l'exposition pour prendre l'image.</p>
+<p><img alt="Barre inférieure REF" class="center" src="../../assets/v7/uui-ref_livepreview-exposure.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Sélectionnez une zone sans composants hauts et assurez-vous que la base du PCB est parfaitement nette.</p>
+<p>La valeur par défaut définie (16000) est <strong>la valeur optimale dans la plupart des cas.</strong> Ajustez ce paramètre uniquement en cas de composants très clairs/sombres qui sont difficilement visibles par le logiciel. </p>
 </div>
-<p>La partie inférieure de la fenêtre permet d’activer ou de désactiver la grille dans la vue en direct et d’ajuster l’exposition.</p>
-<p><img alt="Barre inférieure de référence" class="center" src="../../assets/v7/uui-ref_livepreview-exposure.png" /></p>
-<p><img alt="Sélection de la mise au point" class="center" src="../../assets/v7/uui-ref_livepreview-select_focus.png" /></p>
-<hr />
+<p>Cette fenêtre permet de déplacer la caméra vers n'importe quel quadrant de la PCBA. Cliquez simplement sur le quadrant souhaité dans la miniature.</p>
+<p><img alt="Carte des quadrants" class="center" src="../../assets/v7/uui-ref_livepreview-map.png" /></p>
+<p>La caméra fera la mise au point sur la zone sélectionnée une fois la capture démarrée.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Pour une mise au point correcte, sélectionnez une zone <strong>sans composants hauts.</strong></p>
+</div>
+<p>Il est également possible de faire la mise au point de l'optique avant de commencer la capture en appuyant sur le bouton <strong>FOCUS</strong>. Cela aide à trouver une zone où l'optique fait la mise au point correctement.</p>
+<p><img alt="Bouton AUTO" class="center" src="../../assets/v7/uui-ref_livepreview-focus.png" /></p>
 <p>Pour démarrer le traitement de la capture, cliquez simplement sur le bouton <strong>CAPTURER RÉFÉRENCE</strong>. L'AOI fera la mise au point automatiquement sur le quadrant sélectionné et commencera à capturer l'ensemble de la PCBA en quelques secondes.</p>
 <p><img alt="Bouton Capturer référence" class="center" src="../../assets/v7/uui-ref_livepreview-capture.png" /></p>
 <p><img alt="Processus de capture" class="center" src="../../assets/v7/uui-ref_stitching.png" /></p>
