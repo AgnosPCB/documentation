@@ -728,34 +728,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Generieren einer REFERENZ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#erfassung-der-pcb-groe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erfassung der PCB-Größe
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fokussierung" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Fokussierung
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1039,63 +1011,7 @@
   <span class="md-ellipsis">
     
   
-    UV-Schutzlackinspektion
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how_to/Multivariant_feature.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Referenzvarianten
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Measurement_tool.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Messwerkzeug
+    UV conformal coating inspection
   
 
     
@@ -1556,34 +1472,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Generieren einer REFERENZ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#erfassung-der-pcb-groe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erfassung der PCB-Größe
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fokussierung" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Fokussierung
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1669,30 +1557,23 @@
 <p><img alt="REF-Fenster" src="../../assets/v7/uui-ref_livepreview.png" /></p>
 <p>In diesem Fenster müssen wir die Bilder einstellen, die zur Abdeckung der gesamten PCBA erforderlich sind.</p>
 <p><img alt="REF-Abmessungen" src="../../assets/v7/uui-ref_livepreview-dimensions.png" /></p>
-<hr />
-<h4 id="erfassung-der-pcb-groe">Erfassung der PCB-Größe</h4>
-<p>Bei größeren PCBAs reicht das Sichtfeld der Kamera möglicherweise nicht aus, um die gesamte Leiterplatte in einer einzigen Aufnahme zu erfassen. In solchen Fällen nimmt das System mehrere Bilder auf und fügt sie mithilfe von KI automatisch zu einem einzigen, für die Inspektion geeigneten Bild zusammen.</p>
-<p><img alt="Stitching-Prozess" class="center" src="../../assets/stitching.png" width="600" /></p>
-<p>Wenn Sie sich nicht sicher sind, wie viele Bilder benötigt werden, platzieren Sie das PCBA in der Mitte des Inspektionsbereichs und drücken Sie die Taste <strong>AUTO</strong>. Das System scannt die Leiterplatte und stellt automatisch die optimalen Parameter ein.</p>
-<p><img alt="AUTO-Referenztaste" class="center" src="../../assets/v7/uui-ref_livepreview-auto.png" /></p>
-<p>Sie können die Kamera auch in jeden Quadranten des PCBAs bewegen, indem Sie im Miniaturbild auf den gewünschten Bereich klicken.</p>
-<p><img alt="Quadrantenübersicht" class="center" src="../../assets/v7/uui-ref_livepreview-map.png" /></p>
-<hr />
-<h4 id="fokussierung">Fokussierung</h4>
-<p>Das System ermöglicht eine manuelle Fokussierung des PCBs vor dem Start des Aufnahmeprozesses. Drücken Sie die Taste <strong>FOCUS</strong>, um die Optik einzustellen und zu überprüfen, ob der ausgewählte Bereich korrekt fokussiert ist.</p>
-<p><img alt="FOCUS-Taste" class="center" src="../../assets/v7/uui-ref_livepreview-focus.png" /></p>
-<p>Standardmäßig fokussiert die Kamera automatisch auf die Mitte des PCBs. Dies ist jedoch aufgrund hoher Bauteile nicht immer der optimale Bereich.</p>
-<p>Für eine präzise Inspektion ist es entscheidend, auf die <strong>Basis des PCBs</strong> zu fokussieren, wo die Bauteile montiert sind. Vermeiden Sie es, auf hohe Bauteile zu fokussieren, da dies die Inspektionsgenauigkeit verringern kann.</p>
-<p>Das PCB muss während der manuellen Fokussierung nicht zentriert sein. Der Bediener kann es frei bewegen und einen geeigneten Bereich auswählen, solange die Basis des PCBs klar fokussiert ist.</p>
-<p>Nach Abschluss der Fokussierung muss das PCB wieder in die Mitte des Inspektionsbereichs positioniert werden, bevor das Referenzbild aufgenommen wird.</p>
+<p>Falls Sie nicht feststellen können, wie viele Bilder zur Abdeckung Ihrer PCBA/Ihres Panels erforderlich sind, können Sie Ihre PCBA/Ihr Panel in die Mitte des Inspektionsbereichs legen und die Schaltfläche <strong>AUTO</strong> drücken. Das System scannt die PCBA/das Panel und <strong>stellt die optimalen Proportionen automatisch ein.</strong></p>
+<p><img alt="REF AUTO-Schaltfläche" class="center" src="../../assets/v7/uui-ref_livepreview-auto.png" /></p>
+<p>Im unteren Bereich des Fensters können Sie das Raster in der Live-Vorschau ein-/ausblenden und die Belichtung für die Bildaufnahme einstellen.</p>
+<p><img alt="REF untere Leiste" class="center" src="../../assets/v7/uui-ref_livepreview-exposure.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Wichtig</p>
-<p>Wählen Sie einen Bereich ohne hohe Bauteile und stellen Sie sicher, dass die PCB-Basis scharf fokussiert ist.</p>
+<p>Der eingestellte Standardwert (16000) ist <strong>in den meisten Fällen der optimale Wert.</strong> Passen Sie diesen Parameter nur im Falle von sehr hellen/dunklen Komponenten an, die von der Software kaum sichtbar sind. </p>
 </div>
-<p>Der untere Bereich des Fensters ermöglicht das Ein- und Ausblenden des Rasters in der Live-Ansicht sowie die Anpassung der Belichtung.</p>
-<p><img alt="Untere Referenzleiste" class="center" src="../../assets/v7/uui-ref_livepreview-exposure.png" /></p>
-<p><img alt="Fokussierungsauswahl" class="center" src="../../assets/v7/uui-ref_livepreview-select_focus.png" /></p>
-<hr />
+<p>Dieses Fenster ermöglicht es, die Kamera zu jedem Quadranten der PCBA zu bewegen. Klicken Sie einfach in der Miniaturansicht auf den gewünschten Quadranten.</p>
+<p><img alt="Quadranten-Karte" class="center" src="../../assets/v7/uui-ref_livepreview-map.png" /></p>
+<p>Die Kamera fokussiert auf den ausgewählten Bereich, sobald die Aufnahme begonnen hat.</p>
+<div class="admonition warning">
+<p class="admonition-title">Wichtig</p>
+<p>Wählen Sie für eine korrekte Fokussierung einen Bereich <strong>ohne hohe Komponenten.</strong></p>
+</div>
+<p>Es ist auch möglich, die Optik vor Beginn der Aufnahme durch Drücken der Schaltfläche <strong>FOCUS</strong> zu fokussieren. Dies hilft, einen Bereich zu finden, in dem die Optik korrekt fokussiert.</p>
+<p><img alt="AUTO-Schaltfläche" class="center" src="../../assets/v7/uui-ref_livepreview-focus.png" /></p>
 <p>Um die Aufnahmeverarbeitung zu starten, klicken Sie einfach auf die Schaltfläche <strong>REFERENZ AUFNEHMEN</strong>. Das AOI fokussiert automatisch auf den ausgewählten Quadranten und beginnt innerhalb von Sekunden mit der Aufnahme der gesamten PCBA.</p>
 <p><img alt="Schaltfläche Referenz aufnehmen" class="center" src="../../assets/v7/uui-ref_livepreview-capture.png" /></p>
 <p><img alt="Aufnahmeprozess" class="center" src="../../assets/v7/uui-ref_stitching.png" /></p>

@@ -728,34 +728,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Generazione di un RIFERIMENTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#acquisizione-delle-dimensioni-del-pcb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Acquisizione delle dimensioni del PCB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messa-a-fuoco" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messa a fuoco
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1039,63 +1011,7 @@
   <span class="md-ellipsis">
     
   
-    Ispezione del rivestimento conformale UV
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how_to/Multivariant_feature.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Varianti di riferimento
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Measurement_tool.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Strumento di misurazione
+    UV conformal coating inspection
   
 
     
@@ -1556,34 +1472,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Generazione di un RIFERIMENTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#acquisizione-delle-dimensioni-del-pcb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Acquisizione delle dimensioni del PCB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messa-a-fuoco" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messa a fuoco
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1669,30 +1557,23 @@
 <p><img alt="Finestra REF" src="../../assets/v7/uui-ref_livepreview.png" /></p>
 <p>In questa finestra dobbiamo impostare le immagini necessarie per coprire l'intera PCBA.</p>
 <p><img alt="Dimensioni REF" src="../../assets/v7/uui-ref_livepreview-dimensions.png" /></p>
-<hr />
-<h4 id="acquisizione-delle-dimensioni-del-pcb">Acquisizione delle dimensioni del PCB</h4>
-<p>Per PCBAs di grandi dimensioni, il campo visivo della telecamera potrebbe non essere sufficiente per catturare l'intera scheda in una singola immagine. In questi casi, il sistema acquisisce più immagini e le unisce automaticamente tramite IA in un'unica immagine pronta per l'ispezione.</p>
-<p><img alt="Processo di stitching" class="center" src="../../assets/stitching.png" width="600" /></p>
-<p>Se non sei sicuro di quante immagini siano necessarie, posiziona il PCBA al centro dell'area di ispezione e premi il pulsante <strong>AUTO</strong>. Il sistema eseguirà la scansione della scheda e configurerà automaticamente i parametri ottimali.</p>
-<p><img alt="Pulsante AUTO di riferimento" class="center" src="../../assets/v7/uui-ref_livepreview-auto.png" /></p>
-<p>Puoi anche spostare la telecamera in qualsiasi quadrante del PCBA facendo clic sull'area desiderata nella vista in miniatura.</p>
-<p><img alt="Mappa dei quadranti" class="center" src="../../assets/v7/uui-ref_livepreview-map.png" /></p>
-<hr />
-<h4 id="messa-a-fuoco">Messa a fuoco</h4>
-<p>Il sistema consente la messa a fuoco manuale del PCB prima di avviare il processo di acquisizione. Premi il pulsante <strong>FOCUS</strong> per regolare l'ottica e verificare che l'area selezionata sia correttamente a fuoco.</p>
-<p><img alt="Pulsante FOCUS" class="center" src="../../assets/v7/uui-ref_livepreview-focus.png" /></p>
-<p>Per impostazione predefinita, la telecamera mette a fuoco automaticamente il centro del PCB. Tuttavia, questa non è sempre l'area ottimale a causa della presenza di componenti alti.</p>
-<p>Per un'ispezione accurata, è essenziale mettere a fuoco la <strong>base del PCB</strong>, dove sono montati i componenti. Evita di mettere a fuoco componenti alti, poiché ciò può ridurre la precisione dell'ispezione.</p>
-<p>Il PCB non deve essere centrato durante la messa a fuoco manuale. L'operatore può spostarlo liberamente e selezionare qualsiasi area adatta per ottenere una corretta messa a fuoco, purché la base del PCB sia chiaramente a fuoco.</p>
-<p>Una volta completato il processo di messa a fuoco, il PCB deve essere riposizionato al centro dell'area di ispezione prima di acquisire l'immagine di riferimento.</p>
+<p>Nel caso in cui non riusciate a determinare quante immagini sono necessarie per coprire la vostra PCBA/pannello, potete posizionare la vostra PCBA/pannello al centro dell'area di ispezione e premere il pulsante <strong>AUTO</strong>. Il sistema scansionerà la PCBA/il pannello e <strong>imposterà automaticamente le proporzioni ottimali.</strong></p>
+<p><img alt="Pulsante AUTO REF" class="center" src="../../assets/v7/uui-ref_livepreview-auto.png" /></p>
+<p>Nella parte inferiore della finestra è possibile impostare/rimuovere la griglia nell'anteprima live e impostare l'esposizione per scattare l'immagine.</p>
+<p><img alt="Barra inferiore REF" class="center" src="../../assets/v7/uui-ref_livepreview-exposure.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Importante</p>
-<p>Seleziona un'area senza componenti alti e assicurati che la base del PCB sia perfettamente a fuoco.</p>
+<p>Il valore predefinito impostato (16000) è <strong>il valore ottimale nella maggior parte dei casi.</strong> Regolare questo parametro solo in caso di componenti molto chiari/scuri che sono difficilmente visibili dal software. </p>
 </div>
-<p>La parte inferiore della finestra consente di attivare o disattivare la griglia nella vista live e di regolare l'esposizione.</p>
-<p><img alt="Barra inferiore di riferimento" class="center" src="../../assets/v7/uui-ref_livepreview-exposure.png" /></p>
-<p><img alt="Selezione della messa a fuoco" class="center" src="../../assets/v7/uui-ref_livepreview-select_focus.png" /></p>
-<hr />
+<p>Questa finestra consente di spostare la telecamera in qualsiasi quadrante della PCBA. Basta fare clic sul quadrante desiderato nella miniatura.</p>
+<p><img alt="Mappa dei quadranti" class="center" src="../../assets/v7/uui-ref_livepreview-map.png" /></p>
+<p>La telecamera metterà a fuoco l'area selezionata una volta iniziata l'acquisizione.</p>
+<div class="admonition warning">
+<p class="admonition-title">Importante</p>
+<p>Per una corretta messa a fuoco, selezionare un'area <strong>senza componenti alti.</strong></p>
+</div>
+<p>È anche possibile mettere a fuoco l'ottica prima di avviare l'acquisizione premendo il pulsante <strong>FOCUS</strong>. Ciò aiuta a trovare un'area in cui l'ottica mette a fuoco correttamente.</p>
+<p><img alt="Pulsante AUTO" class="center" src="../../assets/v7/uui-ref_livepreview-focus.png" /></p>
 <p>Per avviare l'elaborazione dell'acquisizione, è sufficiente fare clic sul pulsante <strong>CATTURA RIFERIMENTO</strong>. L'AOI metterà a fuoco automaticamente nel quadrante selezionato e inizierà a catturare l'intera PCBA in pochi secondi.</p>
 <p><img alt="Pulsante Cattura riferimento" class="center" src="../../assets/v7/uui-ref_livepreview-capture.png" /></p>
 <p><img alt="Processo di acquisizione" class="center" src="../../assets/v7/uui-ref_stitching.png" /></p>

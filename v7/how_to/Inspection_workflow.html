@@ -728,34 +728,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Generating a REFERENCE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#capturing-the-pcb-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Capturing the PCB Size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#focus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Focus
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1040,62 +1012,6 @@
     
   
     UV conformal coating inspection
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Multivariant_feature.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Reference variants
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Measurement_tool.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Measurement tool
   
 
     
@@ -1556,34 +1472,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Generating a REFERENCE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#capturing-the-pcb-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Capturing the PCB Size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#focus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Focus
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -1669,31 +1557,25 @@
 <p><img alt="REF window" src="../assets/v7/uui-ref_livepreview.png" /></p>
 <p>In this window we have to set the images needed to cover all the PCBA.</p>
 <p><img alt="REF dimensions" src="../assets/v7/uui-ref_livepreview-dimensions.png" /></p>
-<hr />
-<h4 id="capturing-the-pcb-size">Capturing the PCB Size</h4>
-<p>For larger PCBAs, the camera field of view may not be sufficient to capture the entire board in a single image. In these cases, the system captures multiple images and automatically stitches them together using AI into a single image ready for inspection.</p>
-<p><img alt="Stitching process" class="center" src="../assets/stitching.png" width="600" /></p>
-<p>If you are unsure how many images are required, place the PCBA in the center of the inspection area and press the <strong>AUTO</strong> button. The system will scan the board and automatically set the optimal configuration.</p>
+<p>In case you can not determine how many images are needed to cover your PCBA/panel, you can place your PCBA/panel in the middle of the inspection area and press the <strong>AUTO</strong> button. The system will scan the PCBA/panel and 
+<strong>set the optimal proportions automatically.</strong></p>
 <p><img alt="REF AUTO button" class="center" src="../assets/v7/uui-ref_livepreview-auto.png" /></p>
-<p>You can also move the camera to any quadrant of the PCBA by clicking on the desired area in the miniature view.</p>
-<p><img alt="Quadrants map" class="center" src="../assets/v7/uui-ref_livepreview-map.png" /></p>
-<hr />
-<h4 id="focus">Focus</h4>
-<p>The system allows manual focusing of the PCB before starting the capture process. Press the <strong>FOCUS</strong> button to adjust the optics and verify that the selected area is correctly focused.</p>
-<p><img alt="FOCUS button" class="center" src="../assets/v7/uui-ref_livepreview-focus.png" /></p>
-<p>By default, the camera focuses automatically on the center of the PCB. However, this may not always be the optimal area due to the presence of tall components.</p>
-<p>For accurate inspection, it is essential to focus on the <strong>base of the PCB</strong>, where the components are mounted. Avoid focusing on tall components, as this may reduce inspection accuracy.</p>
-<p>The PCB does not need to be centered during manual focusing. The operator can move it freely and select any suitable area to achieve proper focus, as long as the base of the PCB is clearly in focus.</p>
-<p>After completing the focusing process, the PCB must be repositioned at the center of the inspection area before capturing the reference image.</p>
+<p>In the lower are of the window you can set/unset the grid in the livew preview and set the exposure to take the image.</p>
+<p><img alt="REF lower bar" class="center" src="../assets/v7/uui-ref_livepreview-exposure.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Select an area without tall components and ensure that the PCB base is sharply focused.</p>
+<p>The default value (16000) set is <strong>the optimal value in most of the cases.</strong> Ajust this parameter just in case of very clear/dark component that are hardly visible by the software. </p>
 </div>
-<p>The lower section of the window allows enabling or disabling the grid in the live preview and adjusting the exposure.</p>
-<p><img alt="REF lower bar" class="center" src="../assets/v7/uui-ref_livepreview-exposure.png" /></p>
-<p><img alt="Focus selection" class="center" src="../assets/v7/uui-ref_livepreview-select_focus.png" /></p>
-<hr />
-<p>To start the capture processing simply click the <strong>CAPTURE REFERENCE</strong> button. The AOI will focus automatically on the selected quadrant and start capturing the entire PCBA in a matter of seconds.</p>
+<p>This window allows to move the camera to any quadrant of the PCBA. Just click in the desired quadrant in the miniature.</p>
+<p><img alt="Quadrants map" class="center" src="../assets/v7/uui-ref_livepreview-map.png" /></p>
+<p>The camera will focus on the selected area once the capture has started.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>For a proper focusing, select an area <strong>without tall components.</strong></p>
+</div>
+<p>It also possible to focus the optics before start the capture by pressing in the <strong>FOCUS</strong> button. This helps to find a area where the optics focus correctly.</p>
+<p><img alt="AUTO button" class="center" src="../assets/v7/uui-ref_livepreview-focus.png" /></p>
+<p>To start the capture processing simply click in the <strong>CAPTURE REFERENCE</strong> button. The AOI will focus automatically in the selected quadrant and starts capturing the whole PCBA in a matter of seconds.</p>
 <p><img alt="Capture reference button" class="center" src="../assets/v7/uui-ref_livepreview-capture.png" /></p>
 <p><img alt="Capturing process" class="center" src="../assets/v7/uui-ref_stitching.png" /></p>
 <p>After capturing the PCBA, the mosaic window will pop up allowing to store the image for quick usage.</p>
