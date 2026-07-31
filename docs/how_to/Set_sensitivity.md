@@ -2,10 +2,10 @@
 ___
 ![Sensitivity button](../assets/v7/ui-button6.png){width=350px; .center}
 
-Sensitivity refers to the degree of meticulousness or strictness employed by the inspection system when scanning for errors. Essentially, it governs the system's ability to identify even the smallest discrepancies or anomalies within the inspected materials.
+Sensitivity refers to how strict the inspection system is when scanning for errors. It governs the system's ability to identify even the smallest discrepancies or anomalies in the inspected materials.
 
 !!!warning "Important"
-    Higher sensivity levels will cause a higher **false positive** detection rate.
+    Higher sensitivity levels will cause a higher **false positive** detection rate.
 
 ![normal sensitivity button](../assets/nomal-sensitivity-button.png){.center}
 
@@ -15,7 +15,7 @@ Sensitivity refers to the degree of meticulousness or strictness employed by the
 
 ![high sensitivity button](../assets/high-sensitivity-button.png){.center}
 
-**High Sensitivity:** For users who desire a more comprehensive inspection process or are dealing with particularly intricate or delicate components, the high sensitivity setting offers an increased level of scrutiny. It is designed to detect even the slightest deviations or abnormalities, ensuring a thorough examination of the materials.
+**High Sensitivity:** For users who need a more thorough inspection process or are working with intricate or delicate components, the high sensitivity setting increases the level of scrutiny. It is designed to detect even slight deviations or abnormalities for a more thorough examination.
 
 
 
@@ -23,7 +23,7 @@ Sensitivity refers to the degree of meticulousness or strictness employed by the
 
 ![very high sensitivity button](../assets/Very-high-sensitivity-button.png){.center}
 
-**Very High Sensitivity:** This setting represents the highest level of stringency in error detection and is ideal for situations where absolute precision is paramount. It leaves no room for error, meticulously scrutinizing every detail to identify even the most minute flaws or inconsistencies.
+**Very High Sensitivity:** This setting applies the strictest level of error detection and is best suited for situations where absolute precision is required. It examines every detail closely to identify even minor flaws or inconsistencies.
 
 
 

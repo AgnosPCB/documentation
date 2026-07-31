@@ -1,10 +1,10 @@
 # Maintenance
 
-The **AgnosPCB AI-4050** AOI requires very little maintenance but it is also important for the correct operation of the system.
+The **AgnosPCB AI-4050** AOI requires very little maintenance, but it is also important for the correct operation of the system.
 
 ![AOI platform](../assets/v7/ai-4050.webp){width=600px, .center}
 
-| Mainteniance | Periodicity |
+| Maintenance | Periodicity |
 | --------- | :-----: |
 | [Belts tension adjustment](#belts-tension-adjustment) | Monthly |
 | [Cleaning](#cleaning) | Monthly |
@@ -45,7 +45,7 @@ Insert the end of the belt in the hole
 
 **Step 6**
 
-Repeat the steps 1 to 5 for the other rail if necesary.
+Repeat the steps 1 to 5 for the other rail if necessary.
 
 
 ## **Cleaning**
@@ -55,7 +55,7 @@ Repeat the steps 1 to 5 for the other rail if necesary.
 
 **Step 1**
 
-Disconect the power supply or AC cord from the rear panel of the machine.
+Disconnect the power supply or AC cord from the rear panel of the machine.
 
 See red:
 
@@ -63,14 +63,14 @@ See red:
 
 **Step 2**
 
-Use a napkin or cotton swab to remove the old grease from the lineal rails.
+Use a napkin or cotton swab to remove the old grease from the linear rails.
 
 ![Napkin clean](../assets/maintance/clean-1.jpg){width=400px, .center}
 
 
 **Step 3**
 
-Use the brush provided in the maintance kit to remove any contamination inside of the rails.
+Use the brush provided in the maintenance kit to remove any contamination inside the rails.
 
 ![Rails cleaning](../assets/maintance/clean-2.jpg){width=400px, .center}
 
@@ -92,7 +92,7 @@ Use the air blower included in the maintenance kit to blow the camera lens and r
 
 **Step 1**
 
-Disconect the power supply or AC cord from the rear panel of the machine.
+Disconnect the power supply or AC cord from the rear panel of the machine.
 
 See red:
 
@@ -100,7 +100,7 @@ See red:
 
 **Step 2**
 
-Insert the end of the grease dispenser provided in the maintance kit into the hole on the side of the rail carriage.
+Insert the end of the grease dispenser provided in the maintenance kit into the hole on the side of the rail carriage.
 
 ![Carriage hole](../assets/maintance/lubrication-1.png){width=400px, .center}
 

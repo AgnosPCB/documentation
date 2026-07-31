@@ -8,7 +8,7 @@ Le icone dell'area di lavoro forniscono accesso rapido a utili funzionalità.
 
 ![Icona Croci](../assets/v7/workspace-icons-1.png){width=200, .center}
 
-Questa opzione mostra/nasconde i reticoli (cross hairs) e i numeri di errore nell'area di lavoro principale per una maggiore visibilità dell'immagine UUI.
+Questa opzione mostra/nasconde i reticoli e i numeri di errore nell'area di lavoro principale per una maggiore visibilità dell'immagine UUI.
 
 ## Processo automatico
 

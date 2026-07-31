@@ -35,7 +35,7 @@
     ![Dimensiones REF](../assets/v7/tip-5.jpg){width=400px, .center}
 
 - No mezcle PCBA soldadas y presoldadas. Si toma una imagen de REFERENCIA con componentes soldados, no inspeccione PCBA UUI sin soldar, ya que esto resultará en un marcado con una tasa muy alta de falsos positivos.
-- Al igual que con las PCBA soldadas/presoldadas, no mezcle PCBA recubiertas (coated) y no recubiertas.
+- Al igual que con las PCBA soldadas/presoldadas, no mezcle PCBA recubiertas y no recubiertas.
 
 ---
 ## **Realizar una buena inspección**

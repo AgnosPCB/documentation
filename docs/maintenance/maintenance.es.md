@@ -6,9 +6,9 @@ El AOI **AgnosPCB AI-4050** requiere muy poco mantenimiento, pero es importante 
 
 | Mantenimiento | Periodicidad |
 | --------- | :-----: |
-| [Ajuste de la tensión de las correas](#ajuste-de-la-tensión-de-las-correas) | Mensual |
+| [Ajuste de la tensión de las correas](#ajuste-de-la-tension-de-las-correas) | Mensual |
 | [Limpieza](#limpieza) | Mensual |
-| [Lubricación de la guía del riel](#lubricación-de-la-guía-del-riel) | 6 meses |
+| [Lubricación de la guía del riel](#lubricacion-de-la-guia-del-riel) | 6 meses |
 
 
 ---

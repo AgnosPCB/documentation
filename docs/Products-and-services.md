@@ -6,15 +6,15 @@ AgnosPCB AOI provides three types of products/services:
 ## **ONLINE AOI inspection platform:**
 ___
 
-The **ONLINE AOI inspection platform** functionality lies its remarkable ability to simplify and expedite the inspection process. With just a single click, users can initiate the inspection procedure, triggering the platform to automatically adjust the camera settings to optimal values. This **intelligent automation** significantly reduces the time and effort required for setup, enabling users to focus their attention on other critical tasks while the platform swiftly scans for potential errors.
+The **ONLINE AOI inspection platform** simplifies and speeds up the inspection process. With a single click, the platform automatically adjusts the camera settings to optimal values and starts the inspection, reducing the time and effort required for setup so users can focus on other tasks while the platform scans for errors.
 
-Through its advanced algorithms and sophisticated imaging technologies, the platform identifies and highlights any anomalies or defects present within the electronic panels or circuits, ensuring thorough inspection and quality assurance.
+Using its detection algorithms and imaging pipeline, the platform identifies and highlights anomalies or defects present in the electronic panels or circuits under inspection.
 
-Moreover, the platform's intuitive interface enhances user experience, providing a seamless and **intuitive navigation experience.** Users can effortlessly navigate through various functionalities, customize inspection settings, and access comprehensive reports with ease. 
+The interface is designed to be intuitive: users can navigate the software, customize inspection settings, and access detailed reports with ease.
 
-In addition, the ONLINE AOI inspection platform prioritizes **data privacy and security**. Learn more reading the [ AgnosPCB privacy statement.](https://agnospcb.com/how-we-protect-your-data-privacy-statement/)
+The ONLINE AOI inspection platform also prioritizes **data privacy and security**. Learn more in the [AgnosPCB privacy statement](https://agnospcb.com/how-we-protect-your-data-privacy-statement/).
 
-Furthermore, the inspection area provided by the platform is **27×34 cms** (10.6×13.3 inches). 
+The inspection area provided by the platform is **27×34 cm** (10.6×13.3 inches).
 
 ![ONLINE AOI inspection platform](assets/online.png)
 
@@ -23,11 +23,11 @@ Furthermore, the inspection area provided by the platform is **27×34 cms** (10.
 ## **OFFLINE AOI inspection platform:**
 ___
 
-The **OFFLINE AOI inspection platform** stands as a robust counterpart to its online counterpart, boasting the same cutting-edge AI-based error recognition system  but with the added advantage of local processing. This distinctive feature renders it an ideal choice for scenarios where internet connectivity is unreliable or unavailable, or when the need for complete autonomy or data location must comply with strict rules.
+The **OFFLINE AOI inspection platform** is a robust counterpart to the ONLINE version, using the same AI-based error recognition system with the added advantage of local processing. This makes it a good fit for scenarios where internet connectivity is unreliable or unavailable, or where data location requirements call for complete autonomy.
 
-One of the most compelling aspects of the AOI OFFLINE AgnosPCB system is its lightning-fast inspection capabilities. This system can perform a full inspection in a mere **5 seconds**, all while processing every piece of data locally. This means that not a single bit of information is transmitted to external servers or cloud-based platforms, ensuring the utmost confidentiality and security of sensitive data.
+One of the key advantages of the OFFLINE AgnosPCB system is its inspection speed: it can complete a full inspection in as little as **5 seconds**, processing all data locally. No data is transmitted to external servers or cloud platforms, keeping sensitive data confidential and secure.
 
-In addition, the OFFLINE AOI inspection platform boasts a generous inspection area spanning **27×34 cms** (10.6×13.3 inches). This expansive coverage ensures that a wide array of electronic panels and circuits can be thoroughly examined with precision and accuracy.
+The OFFLINE AOI inspection platform also provides a generous inspection area of **27×34 cm** (10.6×13.3 inches), large enough to thoroughly examine a wide range of electronic panels and circuits with precision.
 
 ![OFFLINE AOI inspection platform](assets/ofline.png)
 
@@ -36,18 +36,18 @@ In addition, the OFFLINE AOI inspection platform boasts a generous inspection ar
 ## **API Service:**
 ___
 
-The **API Service** represents a dynamic solution meticulously crafted to seamlessly integrate the formidable capabilities of the AgnosPCB solution into your existing AOI system. 
+The **API Service** integrates AgnosPCB's inspection capabilities into your existing AOI system. 
 
-For users equipped with a robust **optical system** seeking to augment their capabilities with the unparalleled prowess of AgnosPCB, the API Service offers a straightforward pathway. Simply upload an image of your PCB or panel to our cloud server utilizing the intuitive API, and within moments, receive a comprehensive inspection result that encapsulates the power of AgnosPCB's neural network technology.
+If you already have a robust **optical system** and want to add AgnosPCB's detection capabilities, the API Service offers a straightforward way to do so. Simply upload an image of your PCB or panel to our cloud server through the API, and within moments receive a detailed inspection result powered by AgnosPCB's neural network technology.
 
 ![API Service](assets/API.png)
 
 ### **OFFLINE AOI Rental Program**
 
- With this program, you have the opportunity to **rent** our state-of-the-art OFFLINE AOI units for a period of up to two months, allowing you to experience the benefits of our cutting-edge technology firsthand before committing to a purchase.
+ With this program, you can **rent** an OFFLINE AOI unit for up to two months, letting you evaluate it firsthand before committing to a purchase.
 
-Here's how it works: Upon enrolling in the rental program, you'll gain access to one of our premium **OFFLINE AOI** units for a duration of your choosing, up to a maximum of two months. During this rental period, you'll have the opportunity to fully utilize the capabilities of the unit, conducting inspections and evaluating its performance in your specific workflow environment.
+Here's how it works: once enrolled in the rental program, you get access to an **OFFLINE AOI** unit for a duration of your choosing, up to a maximum of two months. During this rental period, you can fully use the unit, running inspections and evaluating its performance in your own workflow.
 
-Should you decide to proceed with **purchasing** the OFFLINE AOI unit after the rental period, we offer a seamless transition process. The rental payment that you've already made will be deducted from the total cost of the unit, ensuring that you receive full credit for your rental investment towards the purchase price. This not only simplifies the purchasing process but also provides you with added peace of mind, knowing that your rental payments are contributing towards the acquisition of the unit.
+If you decide to purchase the OFFLINE AOI unit after the rental period, the rental payments you've already made will be deducted from the total cost of the unit, so your rental investment counts fully towards the purchase price.
 
 Please check specific plans and pricing on our [products](https://agnospcb.com/products/) page

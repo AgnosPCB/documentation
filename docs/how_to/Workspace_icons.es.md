@@ -1,8 +1,8 @@
-# Iconos del Espacio de Trabajo
+# Iconos del espacio de trabajo
 
 Los iconos del espacio de trabajo proporcionan acceso rápido a funciones útiles.
 
-![Iconos del Espacio de Trabajo](../assets/v7/workspace-icons.png){width=600, .center}
+![Iconos del espacio de trabajo](../assets/v7/workspace-icons.png){width=600, .center}
 
 ## Mostrar/ocultar cruces
 

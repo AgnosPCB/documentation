@@ -1,6 +1,6 @@
 ## **Neural Network**
 
-In machine learning, neural network refers to a group of artificial neurons organized in a specific way to perform a specific task. Each neuron represents a mathematical function. In the case of **AgnosPCB**, these neurons perform a visual inspection for defects in PCBAs. The interconnection architecture of these neurons is constantly being improved to incrase the fault detection rates.
+In machine learning, neural network refers to a group of artificial neurons organized in a specific way to perform a specific task. Each neuron represents a mathematical function. In the case of **AgnosPCB**, these neurons perform a visual inspection for defects in PCBAs. The interconnection architecture of these neurons is constantly being improved to increase the fault detection rates.
 
 ![Neural Network Architecture](../assets/v7/neural_networks.webp){width=700px, .center}
 
@@ -18,7 +18,7 @@ The Unit Under Inspection (UUI) is the image of the PCBA that will be inspected 
 
 ## **Inference**
 
-This is the result of comparing the REFERENCE and UUI images. Errors, if any, are marked in red on the UUI image. All errors are numbered for easy reference.
+This is the result of comparing the REFERENCE and UUI images. Errors, if any, are marked in red on the UUI image. All errors are numbered and listed for easy reference.
 
 ![Inference image](../assets/v7/inference-example.png){width=500px, .center}
 
@@ -34,7 +34,7 @@ We define an error as a component that is not assembled correctly, is damaged, o
 
 ## **False positive**
 
-False positive flagging occurs when the AgnosPCB software detects a sufficient difference between the REFERENCE and UUI on a component to flag it as an error, but there is no actual failure affecting the PCBA's operation. This can be caused by a change in the marking, shape, or color of a component that is equivalent to the reference.
+False positive flagging occurs when the AgnosPCB software detects a sufficient difference between the REFERENCE and UUI on a component to flag it as an error, but there is no actual failure affecting the PCBA's operation. This can be caused by a change in the marking, shape, or color of a component that is equivalent to the REFERENCE.
 
 
 

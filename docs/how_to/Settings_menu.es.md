@@ -1,8 +1,8 @@
-# Menú de Configuración
+# Menú de configuración
 
 El **menú de configuración** está dividido en varias secciones, que se describen a continuación.
 
-![Menú de Configuración](../assets/v7/ui-settings.png){.center}
+![Menú de configuración](../assets/v7/ui-settings.png){.center}
 
 ## **Opciones de interfaz**
 
@@ -10,11 +10,11 @@ El **menú de configuración** está dividido en varias secciones, que se descri
 
 #### Mostrar exif
 
-Muestra los metadatos de la imagen actual en el [área principal del espacio de trabajo](./Screen-layout.md#main-workspace).
+Muestra los metadatos de la imagen actual en el [área principal del espacio de trabajo](./Screen-layout.md#espacio-de-trabajo-principal).
 
 #### Mostrar iconos del espacio de trabajo
 
-Habilita un conjunto de funcionalidades en el [área principal del espacio de trabajo](./Screen-layout.md#main-workspace). Obtenga más información sobre estas funciones en la [siguiente sección](./Workspace_icons.md).
+Habilita un conjunto de funcionalidades en el [área principal del espacio de trabajo](./Screen-layout.md#espacio-de-trabajo-principal). Obtenga más información sobre estas funciones en la [siguiente sección](./Workspace_icons.md).
 
 #### Señalización automática
 
@@ -34,7 +34,7 @@ Cambia el idioma de la interfaz. Los idiomas disponibles actualmente son: **Ingl
 
 #### Proceso automático
 
-Activa/desactiva la [función de proceso automático](./Screen-layout.md#auto-process).
+Activa/desactiva la [función de proceso automático](./Screen-layout.md#proceso-automatico).
 
 #### Usar código de barras
 
@@ -55,9 +55,9 @@ Al deshabilitar esta opción, la ventana de reporte ya no aparecerá al reportar
 
 Al deshabilitar esta opción, el menú de mosaico no aparecerá después de tomar una imagen de **REFERENCIA**.
 
-#### Modo Operador
+#### Modo operador
 
-Habilitar esta opción ocultará varias funciones de la interfaz, simplificando el uso del software. También evita que el operador pueda cambiar la imagen de REFERENCIA o la sensibilidad de las inspecciones. Se puede añadir una [contraseña](Settings_menu.md#settings-password) para que solo el administrador pueda deshabilitar esta opción.
+Habilitar esta opción ocultará varias funciones de la interfaz, simplificando el uso del software. También evita que el operador pueda cambiar la imagen de REFERENCIA o la sensibilidad de las inspecciones. Se puede añadir una [contraseña](Settings_menu.md#contrasena-de-configuracion) para que solo el administrador pueda deshabilitar esta opción.
 
 #### Sensibilidad habilitada
 
@@ -67,17 +67,17 @@ Permite cambiar la sensibilidad cuando está en modo operador.
 
 ![Sección de informe del menú de configuración](../assets/v7/ui-settings-report.png){width=350px; .center}
 
-#### ID del Operador
+#### ID del operador
 
-Establece una identificación para el operador actual. Esta ID se mostrará en el informe PDF final después de completar la inspección.
+Establece un ID para el operador actual. Este ID se mostrará en el informe PDF final después de completar la inspección.
 
-#### ID de Pedido
+#### ID de pedido
 
-Establece una identificación para la orden de fabricación actual. Esta ID se mostrará en el informe PDF final después de completar la inspección.
+Establece un ID para la orden de fabricación actual. Este ID se mostrará en el informe PDF final después de completar la inspección.
 
-#### ID de Plataforma
+#### ID de plataforma
 
-Establece una identificación para la AOI.
+Establece un ID para la AOI.
 
 #### ETIQUETA
 
@@ -96,7 +96,7 @@ Establece una ETIQUETA NO OK personalizada para el informe PDF final.
 Cuando esta opción está habilitada, se generará automáticamente un informe PDF final etiquetado como OK si no se detectan errores después de la inspección. El informe PDF final también se puede generar si se detecta algún error durante la inspección.
 
 !!! note "Nota"
-    Al generar un informe PDF automáticamente, todos los errores detectados se marcarán con la etiqueta "unknown" (desconocido).
+    Al generar un informe PDF automáticamente, todos los errores detectados se marcarán con la etiqueta "unknown".
 
 #### Mostrar todos los fallos
 
@@ -141,7 +141,7 @@ Al habilitar estas opciones, el sistema compartirá automáticamente las carpeta
     Para aplicar los cambios, presione el botón **SET**.
 
 !!! note "Nota"
-    Para las unidades OFFLINE, si necesita cambiar la interfaz de red de su unidad, consulte el [artículo de configuración de red](./network_configuration.md).
+    Para las unidades OFFLINE, si necesita cambiar la interfaz de red de su unidad, consulte el [artículo de configuración de red](../maintenance/network_configuration.md).
 
 ## **Sección de información**
 

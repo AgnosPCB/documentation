@@ -17,7 +17,7 @@ Dieser Bereich zeigt den Verbindungsstatus zur Inspektionsplattform und Kamera a
 
 ![Schaltfläche Inspektion starten](../assets/autoprocess.png){.center}
 
-Die Schaltfläche **Inspektion starten** löst die Inspektion des aktuellen **UUI**-Bildes aus. Diese Schaltfläche ist verfügbar, wenn die [Schaltfläche Automatischer Prozess](#auto-process) auf **AUS** gestellt ist. Dies ist nützlich, um den Verbrauch von Credits zu vermeiden, wenn Sie testen, wie Sie Bilder Ihrer PCBAs aufnehmen.
+Die Schaltfläche **Inspektion starten** löst die Inspektion des aktuellen **UUI**-Bildes aus. Diese Schaltfläche ist verfügbar, wenn die [Schaltfläche Automatischer Prozess](#automatischer-prozess) auf **AUS** gestellt ist. Dies ist nützlich, um den Verbrauch von Credits zu vermeiden, wenn Sie testen, wie Sie Bilder Ihrer PCBAs aufnehmen.
 
 ### **REFERENZ per Barcode laden**
 
@@ -25,7 +25,7 @@ Die Schaltfläche **Inspektion starten** löst die Inspektion des aktuellen **UU
 
 ![REFERENZ per Barcode laden](../assets/v7/ui-bc_ref.png){.center}
 
-Diese Schaltfläche öffnet ein Pop-up-Fenster zur Eingabe einer Barcode-Nummer. Beim Generieren einer REFERENZ kann jeder [enthaltene Barcode gelesen werden](#barcode-area-drawing). Dieser Barcode wird der REFERENZ zugeordnet und kann mit dieser Funktion unter Verwendung dieser Nummer geladen werden. Es ist auch möglich, den Barcode mit einem Handscanner zu lesen und in dieses Feld einzufügen. Weitere Informationen zu dieser Funktion finden Sie [hier](./Barcode_reader.md#load-a-reference-by-barcode).
+Diese Schaltfläche öffnet ein Pop-up-Fenster zur Eingabe einer Barcode-Nummer. Beim Generieren einer REFERENZ kann jeder [enthaltene Barcode gelesen werden](#barcode-bereich-zeichnen). Dieser Barcode wird der REFERENZ zugeordnet und kann mit dieser Funktion unter Verwendung dieser Nummer geladen werden. Es ist auch möglich, den Barcode mit einem Handscanner zu lesen und in dieses Feld einzufügen. Weitere Informationen zu dieser Funktion finden Sie [hier](./Barcode_reader.md#eine-referenz-per-barcode-laden).
 
 ## **Aktivitätsprotokoll**
 
@@ -40,7 +40,7 @@ Der Bereich **Aktivitätsprotokoll** befindet sich oben rechts und zeigt die **a
 
 ![Hauptbereich](../assets/v7/ui-working-area.png){.center}
 
-Dies ist der Hauptbereich, in dem Sie mit den **REFERENZ**- und **UUI**-Bildern arbeiten, die durch Drücken der TAB-Taste auf der Tastatur oder [der Schaltfläche in der Anwendung](#swap) umgeschaltet werden können. Die Inspektionsergebnisse werden ebenfalls in diesem Bereich mithilfe von Fadenkreuzen und Nummern neben den erkannten Fehlern angezeigt.
+Dies ist der Hauptbereich, in dem Sie mit den **REFERENZ**- und **UUI**-Bildern arbeiten, die durch Drücken der TAB-Taste auf der Tastatur oder [der Schaltfläche in der Anwendung](#wechseln-swap) umgeschaltet werden können. Die Inspektionsergebnisse werden ebenfalls in diesem Bereich mithilfe von Fadenkreuzen und Nummern neben den erkannten Fehlern angezeigt.
 
 
 ## **Seiten-an-Seiten-Vergleich**
@@ -64,7 +64,7 @@ Hier befinden sich verschiedene **Funktionen und Optionen**, die darauf ausgeleg
 
 ![Mosaik-Menü](../assets/v7/2024-11-14_09-27.png){width=600px; .center}
 
-Das Referenz-Mosaik wird verwendet, um REFERENZEN als Dateien zu speichern, um jede davon schnell zu finden und zu laden. Das Mosaik-Menü wird automatisch angezeigt, nachdem eine REFERENZ mit der [Schaltfläche Foto REFERENZ aufnehmen](#take-a-reference-image) aufgenommen oder [als Datei geladen](#load-reference-as-file) wurde. In diesem Fenster ist es auch möglich, die aufgenommene REFERENZ im oberen rechten Teil des Fensters zu benennen. Eine im Mosaik gespeicherte REFERENZ kann schnell durch Drücken einer **F-Taste** (F1-F10) geladen werden.
+Das Referenz-Mosaik wird verwendet, um REFERENZEN als Dateien zu speichern, um jede davon schnell zu finden und zu laden. Das Mosaik-Menü wird automatisch angezeigt, nachdem eine REFERENZ mit der [Schaltfläche Foto REFERENZ aufnehmen](#ein-referenz-bild-aufnehmen) aufgenommen oder [als Datei geladen](#referenz-als-datei-laden) wurde. In diesem Fenster ist es auch möglich, die aufgenommene REFERENZ im oberen rechten Teil des Fensters zu benennen. Eine im Mosaik gespeicherte REFERENZ kann schnell durch Drücken einer **F-Taste** (F1-F10) geladen werden.
 
 ### **REFERENZ als Datei laden**
 
@@ -81,7 +81,7 @@ Verwenden Sie dieses Symbol, um ein zuvor als **REFERENZ** aufgenommenes Bild zu
  
 ![Schaltfläche Wechseln](../assets/v7/ui-button3.png){width=350px; .center}
 
-Schaltet zwischen den **REFERENZ**- und **UUI**-Bildern im [Hauptarbeitsbereich](#main-workspace) um.
+Schaltet zwischen den **REFERENZ**- und **UUI**-Bildern im [Hauptarbeitsbereich](#hauptarbeitsbereich) um.
 
 ### **Barcode-Bereich zeichnen**
 
@@ -118,7 +118,7 @@ Diese Schaltfläche führt Sie zu dieser Dokumentation.
 
 ![OK oder NICHT OK](../assets/v7/ui-finish_inspection.png){.center}
 
-Nachdem die erkannten Fehler vom Bediener überwacht wurden, kann die Inspektion durch Drücken dieser Schaltfläche abgeschlossen und die inspizierte PCBA je nach Fertigungskriterien als **OK** oder **NICHT OK** markiert werden. Danach erstellt die Software einen Bericht, der die vom Bediener gemeldeten Fehler in einem PDF-Dokument enthält. Um mehr über diese Funktion zu erfahren, gehen Sie zum [folgenden Abschnitt](./Inspection_workflow.md#generating-a-final-pdf-report).
+Nachdem die erkannten Fehler vom Bediener überwacht wurden, kann die Inspektion durch Drücken dieser Schaltfläche abgeschlossen und die inspizierte PCBA je nach Fertigungskriterien als **OK** oder **NICHT OK** markiert werden. Danach erstellt die Software einen Bericht, der die vom Bediener gemeldeten Fehler in einem PDF-Dokument enthält. Um mehr über diese Funktion zu erfahren, gehen Sie zum [folgenden Abschnitt](./Inspection_workflow.md#generieren-eines-endgultigen-pdf-berichts).
 
 ### **Ein REFERENZ-Bild aufnehmen**
 
@@ -127,7 +127,7 @@ Nachdem die erkannten Fehler vom Bediener überwacht wurden, kann die Inspektion
 ![REFERENZ-Fenster](../assets/v7/2024-11-14_09-26.png){.center}
 
 
-Diese Schaltfläche öffnet ein Fenster mit den Dienstprogrammen zum Generieren eines **REFERENZ**-Bildes von einer PCB oder einem Panel. Diese Funktion kann durch Drücken der Taste **r** auf der Tastatur aktiviert werden. Im Abschnitt [eine Referenz generieren](./Inspection_workflow.md/#generating-a-reference) erfahren Sie mehr über diese Funktion.
+Diese Schaltfläche öffnet ein Fenster mit den Dienstprogrammen zum Generieren eines **REFERENZ**-Bildes von einer PCB oder einem Panel. Diese Funktion kann durch Drücken der Taste **r** auf der Tastatur aktiviert werden. Im Abschnitt [eine Referenz generieren](./Inspection_workflow.md#generieren-einer-referenz) erfahren Sie mehr über diese Funktion.
 
 
 ### **UUI zu REFERENZ**
@@ -142,7 +142,7 @@ Diese Funktion wandelt das aktuelle **UUI**-Bild in eine **REFERENZ** um. Dies i
 
 ![UUI-Fenster](../assets/v7/ui-uui_preview.png){.center}
 
-Diese Funktion öffnet ein Fenster mit einer Live-Vorschau des Inspektionsbereichs. Sobald die PCBA korrekt platziert ist, drücken Sie die Schaltfläche **Inspektion starten**, um ein Foto oder Fotos der PCBA/des Panels der **Unit Under Inspection** aufzunehmen. Wenn die [Schaltfläche Automatischer Prozess](#auto-process) aktiv ist, beginnt die Inspektion automatisch, sobald das UUI-Bild aufgenommen wurde. Diese Funktion kann auch durch Drücken der Taste **s** auf der Tastatur oder der physischen Aktionstaste auf der rechten Seite des AOI aktiviert werden. Weitere Informationen zu dieser Funktion finden Sie im [folgenden Abschnitt](./Inspection_workflow.md/#capturing-an-uui).
+Diese Funktion öffnet ein Fenster mit einer Live-Vorschau des Inspektionsbereichs. Sobald die PCBA korrekt platziert ist, drücken Sie die Schaltfläche **Inspektion starten**, um ein Foto oder Fotos der PCBA/des Panels der **Unit Under Inspection** aufzunehmen. Wenn die [Schaltfläche Automatischer Prozess](#automatischer-prozess) aktiv ist, beginnt die Inspektion automatisch, sobald das UUI-Bild aufgenommen wurde. Diese Funktion kann auch durch Drücken der Taste **s** auf der Tastatur oder der physischen Aktionstaste auf der rechten Seite des AOI aktiviert werden. Weitere Informationen zu dieser Funktion finden Sie im [folgenden Abschnitt](./Inspection_workflow.md#aufnehmen-einer-uui).
 
 
 ### **Radiergummi**

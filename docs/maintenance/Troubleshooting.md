@@ -3,7 +3,7 @@
 ??? info "The software does not start/respond"
     Remove the **setup.json** file located in the **APP** folder and then launch the application again.
     !!! warning "Warning"
-        All configurations, such as the mosaic menu, will be lost. The REFERENCES can be loaded later by using the [Load REFERENCE button](../how_to/Screen-layout.md#load-reference-as-file). They can be reloaded later. **ONLINE** users must log in with their **AgnosPCB** account after deleting the **setup.json** file.
+        All configurations, such as the mosaic menu, will be lost. The REFERENCES can be reloaded later by using the [Load REFERENCE button](../how_to/Screen-layout.md#load-reference-as-file). **ONLINE** users must log in with their **AgnosPCB** account after deleting the **setup.json** file.
 
 ??? info "When trying to launch the application, a message appears saying that the file does not have permissions to launch."
     Open a terminal window (You can use the keyboard shortcut **CTRL + ALT + T**) and type the following:
@@ -37,7 +37,7 @@
 
     There is a parameter in the **setup.json** file called **"remember_sensitivity"**. Modify the file and set this value to **1** to hold the sensitivity between inspections.
 
-??? info "The application icon has disapeard. How can I restore it?"
+??? info "The application icon has disappeared. How can I restore it?"
 
     !!! warning "Important"
 
@@ -58,7 +58,7 @@
             ~~~
         2. Save it as **AgnosPCB.desktop**
         3. Copy/move the file to the Desktop folder.
-        4. In the desktop, right click on the icon -> **Properties** -> **Permisions** -> **Is executable**
+        4. On the desktop, right click on the icon -> **Properties** -> **Permissions** -> **Is executable**
 
             ![Is executable](../assets/maintance/executable.png)
     
@@ -84,7 +84,7 @@
 
             ![Preferences](../assets/maintance/icon-2.png)
 
-        5. Click on Behavior tab and select "Ask me what to do"
+        5. Click on the Behavior tab and select "Ask me what to do"
 
             ![Behavior tab](../assets/maintance/icon-3.png)
 
@@ -101,7 +101,7 @@
         Select your AOI version from the tabs below.
         
     === "ONLINE version"
-        1. Open application menu from the top of the desktop or press Windows key. Select **System Settings**.
+        1. Open the application menu from the top of the desktop or press the Windows key. Select **System Settings**.
             
             ![Step 1](../assets/maintance/keyboard-online-1.png)
 
@@ -126,11 +126,11 @@
 
             ![Step 2](../assets/maintance/keyboard-2.png)
 
-        3. Press in the 3 dots icon
+        3. Press the 3 dots icon
 
             ![Step 3](../assets/maintance/keyboard-3.png)
 
-        4. Press in **Other**
+        4. Press **Other**
 
             ![Step 4](../assets/maintance/keyboard-4.png)
 

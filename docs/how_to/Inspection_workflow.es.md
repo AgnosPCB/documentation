@@ -45,11 +45,11 @@ En PCBAs de mayor tamaño, el campo de visión de la cámara puede no ser sufici
 
 ![Proceso de stitching](../assets/stitching.png){ width=600 .center }
 
-Si no estás seguro de cuántas imágenes son necesarias, coloca el PCBA en el centro del área de inspección y pulsa el botón **AUTO**. El sistema escaneará la placa y configurará automáticamente los parámetros óptimos.
+Si no está seguro de cuántas imágenes son necesarias, coloque el PCBA en el centro del área de inspección y pulse el botón **AUTO**. El sistema escaneará la placa y configurará automáticamente los parámetros óptimos.
 
 ![Botón AUTO de referencia](../assets/v7/uui-ref_livepreview-auto.png){ .center }
 
-También puedes mover la cámara a cualquier cuadrante del PCBA haciendo clic en el área deseada en la vista en miniatura.
+También puede mover la cámara a cualquier cuadrante del PCBA haciendo clic en el área deseada en la vista en miniatura.
 
 ![Mapa de cuadrantes](../assets/v7/uui-ref_livepreview-map.png){ .center }
 
@@ -57,29 +57,30 @@ También puedes mover la cámara a cualquier cuadrante del PCBA haciendo clic en
 
 #### Enfoque
 
-El sistema permite el enfoque manual del PCB antes de iniciar el proceso de captura. Pulsa el botón **FOCUS** para ajustar la óptica y verificar que el área seleccionada esté correctamente enfocada.
+El sistema permite el enfoque manual del PCB antes de iniciar el proceso de captura. Pulse el botón **FOCUS** para ajustar la óptica y verificar que el área seleccionada esté correctamente enfocada.
 
 ![Botón FOCUS](../assets/v7/uui-ref_livepreview-focus.png){ .center }
 
 Por defecto, la cámara enfoca automáticamente el centro del PCB. Sin embargo, esta no siempre es la zona óptima debido a la presencia de componentes altos.
 
-Para una inspección precisa, es esencial enfocar la **base del PCB**, donde están montados los componentes. Evita enfocar componentes altos, ya que esto puede reducir la precisión de la inspección.
+Para una inspección precisa, es esencial enfocar la **base del PCB**, donde están montados los componentes. Evite enfocar componentes altos, ya que esto puede reducir la precisión de la inspección.
 
 El PCB no necesita estar centrado durante el enfoque manual. El operador puede moverlo libremente y seleccionar cualquier área adecuada para lograr un buen enfoque, siempre que la base del PCB esté claramente enfocada.
 
 Una vez finalizado el proceso de enfoque, el PCB debe volver a colocarse en el centro del área de inspección antes de capturar la imagen de referencia.
 
 !!! warning "Importante"
-    Selecciona un área sin componentes altos y asegúrate de que la base del PCB esté perfectamente enfocada.
+    Seleccione un área sin componentes altos y asegúrese de que la base del PCB esté perfectamente enfocada.
 
 La parte inferior de la ventana permite activar o desactivar la cuadrícula en la vista en vivo y ajustar la exposición.
 
 ![Barra inferior de referencia](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
 
 ![Selección de enfoque](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
+
 ---
 
-Para iniciar el procesamiento de la captura, simplemente haga clic en el botón **CAPTURAR REFERENCIA**. El AOI foca automáticamente en el cuadrante seleccionado y comienza a capturar toda la PCBA en cuestión de segundos.
+Para iniciar el procesamiento de la captura, simplemente haga clic en el botón **CAPTURAR REFERENCIA**. El AOI enfoca automáticamente en el cuadrante seleccionado y comienza a capturar toda la PCBA en cuestión de segundos.
 
 ![Botón Capturar referencia](../assets/v7/uui-ref_livepreview-capture.png){.center}
 

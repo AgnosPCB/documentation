@@ -22,7 +22,7 @@ Ceci est le résultat de la comparaison des images de RÉFÉRENCE et UUI. Les er
 
 ![Image d'Inférence](../assets/v7/inference-example.png){width=500px, .center}
 
-## **Rapport (Report)**
+## **Rapport**
 
 Les erreurs détectées par le logiciel doivent être examinées et confirmées par un opérateur. Elles peuvent être signalées comme une **erreur réelle** ou un **faux positif** et étiquetées avec le type d'erreur. Toutes ces erreurs signalées seront utilisées pour générer un rapport d'inspection PDF final.
 

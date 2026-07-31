@@ -10,11 +10,11 @@ Le **menu Paramètres** est divisé en plusieurs sections, qui sont décrites ci
 
 #### Afficher exif
 
-Affiche les métadonnées de l'image actuelle dans la [zone de travail principale](./Screen-layout.md#main-workspace).
+Affiche les métadonnées de l'image actuelle dans la [zone de travail principale](./Screen-layout.md#espace-de-travail-principal).
 
 #### Afficher les icônes de l'espace de travail
 
-Active un ensemble de fonctionnalités dans la [zone de travail principale](./Screen-layout.md#main-workspace). Apprenez-en davantage sur ces fonctionnalités dans la [section suivante](./Workspace_icons.md).
+Active un ensemble de fonctionnalités dans la [zone de travail principale](./Screen-layout.md#espace-de-travail-principal). Apprenez-en davantage sur ces fonctionnalités dans la [section suivante](./Workspace_icons.md).
 
 #### Signalisation automatique
 
@@ -34,7 +34,7 @@ Change la langue de l'interface. Les langues actuellement disponibles sont : **A
 
 #### Traitement automatique
 
-Active/désactive la [fonction de traitement automatique](./Screen-layout.md#auto-process).
+Active/désactive la [fonction de traitement automatique](./Screen-layout.md#traitement-automatique).
 
 #### Utiliser le code-barres
 
@@ -55,9 +55,9 @@ En désactivant cette option, la fenêtre de rapport n'apparaîtra plus lors du 
 
 En désactivant cette option, le menu mosaïque n'apparaîtra pas après la prise d'une image de **RÉFÉRENCE**.
 
-#### Mode Opérateur
+#### Mode opérateur
 
-L'activation de cette option masquera plusieurs fonctionnalités de l'interface, simplifiant l'utilisation du logiciel. Elle empêche également l'opérateur de modifier l'image de RÉFÉRENCE ou la sensibilité des inspections. Un [mot de passe](Settings_menu.md#settings-password) peut être ajouté afin que seul l'administrateur puisse désactiver cette option.
+L'activation de cette option masquera plusieurs fonctionnalités de l'interface, simplifiant l'utilisation du logiciel. Elle empêche également l'opérateur de modifier l'image de RÉFÉRENCE ou la sensibilité des inspections. Un [mot de passe](Settings_menu.md#mot-de-passe-des-parametres) peut être ajouté afin que seul l'administrateur puisse désactiver cette option.
 
 #### Sensibilité activée
 
@@ -79,7 +79,7 @@ Définit un ID pour la commande de fabrication actuelle. Cet ID sera affiché da
 
 Définit un ID pour l'AOI.
 
-#### ÉTIQUETTE (TAG)
+#### ÉTIQUETTE
 
 Définit l'ÉTIQUETTE (OK ou NOK) du rapport PDF final comme suffixe ou préfixe du nom de fichier.
 
@@ -106,7 +106,7 @@ Affiche toutes les erreurs détectées dans le rapport PDF même si l'opérateur
 
 Définit un logo pour le rapport PDF.
 
-## **Options de Date/Heure**
+## **Options de date/heure**
 
 ![Section date du menu paramètres](../assets/v7/ui-settings-date.png){width=350px; .center}
 
@@ -121,7 +121,7 @@ Définit le jour et l'heure.
 !!! note "Note"
     Pour appliquer les changements, appuyez sur le bouton **SET** et redémarrez le système.
 
-## **Option de Chemin**
+## **Option de chemin**
 
 ![Section chemin du menu paramètres](../assets/v7/ui-settings-path.png){width=350px; .center}
 
@@ -129,7 +129,7 @@ Définit le jour et l'heure.
 
 Change le chemin où les inspections sont générées.
 
-## **Options de Partage**
+## **Options de partage**
 
 ![Section partage du menu paramètres](../assets/v7/ui-settings-share.png){width=350px; .center}
 
@@ -141,9 +141,9 @@ En activant ces options, le système partagera automatiquement les dossiers PCB_
     Pour appliquer les changements, appuyez sur le bouton **SET**.
 
 !!! note "Note"
-    Pour les unités OFFLINE, si vous avez besoin de changer l'interface réseau de votre unité, veuillez vous référer à l'[article de configuration du réseau](./network_configuration.md).
+    Pour les unités OFFLINE, si vous avez besoin de changer l'interface réseau de votre unité, veuillez vous référer à l'[article de configuration du réseau](../maintenance/network_configuration.md).
 
-## **Section Info**
+## **Section info**
 
 ![Section info du menu paramètres](../assets/v7/ui-settings-info.png){width=650px; .center}
 

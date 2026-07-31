@@ -21,4 +21,4 @@ Enables/disables automatic processing after taking the UUI image.
 
 ![Mask color icon](../assets/v7/workspace-icons-3.png){width=200, .center}
 
-It changes the color error mask color for a more suitable color according to the PCBA color. In addition, it is possible to change the mask's oppacity by pressing **CTRL** + **mouse wheel up/down** when the pointer is over the icon.
+It changes the error mask color to a more suitable one according to the PCBA color. In addition, it is possible to change the mask's opacity by pressing **CTRL** + **mouse wheel up/down** when the pointer is over the icon.

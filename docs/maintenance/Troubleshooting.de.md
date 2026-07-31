@@ -3,7 +3,7 @@
 ??? info "Die Software startet/reagiert nicht"
     Entfernen Sie die Datei **setup.json** im Ordner **APP** und starten Sie die Anwendung anschließend erneut.
     !!! warning "Warnung"
-        Alle Konfigurationen, wie das Mosaik-Menü, gehen verloren. Die REFERENZEN können später über die [Schaltfläche 'REFERENZ laden'](../how_to/Screen-layout.md#load-reference-as-file) erneut geladen werden. **ONLINE**-Benutzer müssen sich nach dem Löschen der Datei **setup.json** mit ihrem **AgnosPCB**-Konto anmelden.
+        Alle Konfigurationen, wie das Mosaik-Menü, gehen verloren. Die REFERENZEN können später über die [Schaltfläche 'REFERENZ laden'](../how_to/Screen-layout.md#referenz-als-datei-laden) erneut geladen werden. **ONLINE**-Benutzer müssen sich nach dem Löschen der Datei **setup.json** mit ihrem **AgnosPCB**-Konto anmelden.
 
 ??? info "Beim Versuch, die Anwendung zu starten, erscheint eine Meldung, dass die Datei keine Startberechtigung hat."
     Öffnen Sie ein Terminalfenster (Sie können die Tastenkombination **STRG + ALT + T** verwenden) und geben Sie Folgendes ein:

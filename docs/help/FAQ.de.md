@@ -59,7 +59,7 @@ ___
 
 ??? question "Welche Kamera wird empfohlen?"
 
-    Eine Kamera mit einer Auflösung von **mindestens 20 MP** sollte genügend Details für die Komponenteninspektion liefern. Was das Objektiv betrifft, sollten Sie eine Brennweite anstreben, die ein Gleichgewicht zwischen der Darstellung der Komponenten groß genug für das Neuronale Netzwerk zur Fehlererkennung bietet und die keine stürzenden Effekte bei hohen Komponenten erzeugt.
+    Eine Kamera mit einer Auflösung von **mindestens 20 MP** sollte genügend Details für die Komponenteninspektion liefern. Was das Objektiv betrifft, sollten Sie eine Brennweite wählen, die die Bauteile groß genug darstellt, damit das Neuronale Netzwerk Fehler erkennen kann, ohne bei hohen Bauteilen einen stürzenden Effekt zu erzeugen.
 
 ??? question "Ist es möglich, THT-Komponenten (Through-Hole Technology) zu inspizieren?"
 

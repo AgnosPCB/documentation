@@ -15,7 +15,7 @@ Dopo che un'area di esclusione è stata definita, l'avvio di un'ispezione sulla 
 
 ![UUI con errori](../assets/UUI-exclusion-area.png)
 
-Nel caso in cui abbiate selezionato l'area sbagliata o non vogliate più selezionarla, potete utilizzare il pulsante **rimuovi area** per deselezionarla.
+Nel caso in cui sia stata selezionata l'area sbagliata o non si desideri più selezionarla, è possibile utilizzare il pulsante **rimuovi area** per deselezionarla.
 
 ![Pulsante Esclusione](../assets/v7/ui-button12.png){.center}
 

@@ -17,7 +17,7 @@ Cette zone affiche l'état de la connexion avec la plateforme d'inspection et la
 
 ![Bouton Démarrer l'inspection](../assets/autoprocess.png){.center}
 
-Le bouton **Démarrer l'inspection** déclenche l'inspection de l'image **UUI** actuelle. Ce bouton est disponible lorsque le [bouton Traitement automatique](#auto-process) est réglé sur **OFF**. C'est utile pour éviter de dépenser des crédits lorsque vous testez la manière de prendre des photos de vos PCBA.
+Le bouton **Démarrer l'inspection** déclenche l'inspection de l'image **UUI** actuelle. Ce bouton est disponible lorsque le [bouton Traitement automatique](#traitement-automatique) est réglé sur **OFF**. C'est utile pour éviter de dépenser des crédits lorsque vous testez la manière de prendre des photos de vos PCBA.
 
 ### **Chargement de la RÉFÉRENCE par code-barres**
 
@@ -25,7 +25,7 @@ Le bouton **Démarrer l'inspection** déclenche l'inspection de l'image **UUI** 
 
 ![Chargement RÉFÉRENCE par code-barres](../assets/v7/ui-bc_ref.png){.center}
 
-Ce bouton ouvre une fenêtre contextuelle pour insérer un numéro de code-barres. Lors de la génération d'une RÉFÉRENCE, tout [code-barres qu'elle contient peut être lu](#barcode-area-drawing). Ce code-barres sera associé à la RÉFÉRENCE et pourra être chargé en utilisant ce numéro avec cette fonction. Il est également possible de lire le code-barres avec un lecteur portable et de l'insérer dans ce champ. Plus d'informations sur cette fonctionnalité [ici](./Barcode_reader.md#load-a-reference-by-barcode).
+Ce bouton ouvre une fenêtre contextuelle pour insérer un numéro de code-barres. Lors de la génération d'une RÉFÉRENCE, tout [code-barres qu'elle contient peut être lu](#dessin-de-la-zone-de-code-barres). Ce code-barres sera associé à la RÉFÉRENCE et pourra être chargé en utilisant ce numéro avec cette fonction. Il est également possible de lire le code-barres avec un lecteur portable et de l'insérer dans ce champ. Plus d'informations sur cette fonctionnalité [ici](./Barcode_reader.md#charger-une-reference-par-code-barres).
 
 ## **Journal d'activité**
 
@@ -40,7 +40,7 @@ La zone du **journal d'activité** est située dans la partie supérieure droite
 
 ![Section principale](../assets/v7/ui-working-area.png){.center}
 
-C'est la section principale où vous travaillez avec les images de **RÉFÉRENCE** et **UUI**, qui peuvent être commutées en appuyant sur la touche TAB du clavier ou [le bouton sur l'application](#swap). Les résultats de l'inspection sont également affichés dans cette zone à l'aide de réticules et de numéros à côté des erreurs détectées.
+C'est la section principale où vous travaillez avec les images de **RÉFÉRENCE** et **UUI**, qui peuvent être commutées en appuyant sur la touche TAB du clavier ou [le bouton sur l'application](#echange). Les résultats de l'inspection sont également affichés dans cette zone à l'aide de réticules et de numéros à côté des erreurs détectées.
 
 
 ## **Comparaison côte à côte**
@@ -64,7 +64,7 @@ Voici diverses **fonctions et options** conçues pour **optimiser** votre flux d
 
 ![Menu Mosaïque](../assets/v7/2024-11-14_09-27.png){width=600px; .center}
 
-La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le [bouton prendre une photo RÉFÉRENCE](#take-a-reference-image) ou en la chargeant [comme un fichier](#load-reference-as-file). Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un **bouton F** (F1-F10).
+La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le [bouton prendre une photo RÉFÉRENCE](#prendre-une-image-de-reference) ou en la chargeant [comme un fichier](#charger-reference-en-tant-que-fichier). Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un **bouton F** (F1-F10).
 
 ### **CHARGER RÉFÉRENCE en tant que fichier**
 
@@ -81,7 +81,7 @@ Utilisez cette icône pour charger une image précédemment capturée en tant qu
  
 ![Bouton Échange](../assets/v7/ui-button3.png){width=350px; .center}
 
-Bascule entre les images de **RÉFÉRENCE** et **UUI** dans l'[espace de travail principal](#main-workspace).
+Bascule entre les images de **RÉFÉRENCE** et **UUI** dans l'[espace de travail principal](#espace-de-travail-principal).
 
 ### **Dessin de la zone de code-barres**
 
@@ -118,7 +118,7 @@ Ce bouton vous mènera à cette documentation.
 
 ![OK ou NON OK](../assets/v7/ui-finish_inspection.png){.center}
 
-Une fois que les erreurs détectées ont été supervisées par l'opérateur, l'inspection peut être complétée en appuyant sur ce bouton et, selon les critères de fabrication, en marquant la PCBA inspectée comme **OK** ou **NON OK**. Après cela, le logiciel créera un rapport qui inclut les erreurs signalées par l'opérateur dans un document PDF. Pour en savoir plus sur cette fonctionnalité, rendez-vous à la [section suivante](./Inspection_workflow.md#generating-a-final-pdf-report).
+Une fois que les erreurs détectées ont été supervisées par l'opérateur, l'inspection peut être complétée en appuyant sur ce bouton et, selon les critères de fabrication, en marquant la PCBA inspectée comme **OK** ou **NON OK**. Après cela, le logiciel créera un rapport qui inclut les erreurs signalées par l'opérateur dans un document PDF. Pour en savoir plus sur cette fonctionnalité, rendez-vous à la [section suivante](./Inspection_workflow.md#generation-dun-rapport-pdf-final).
 
 ### **Prendre une image de RÉFÉRENCE**
 
@@ -127,14 +127,14 @@ Une fois que les erreurs détectées ont été supervisées par l'opérateur, l'
 ![Fenêtre RÉFÉRENCE](../assets/v7/2024-11-14_09-26.png){.center}
 
 
-Ce bouton ouvre une fenêtre avec les utilitaires pour générer une image de **RÉFÉRENCE** à partir d'une PCB ou d'un panneau. Cette fonction peut être activée en appuyant sur la touche **r** du clavier. Dans la section [générer une référence](./Inspection_workflow.md/#generating-a-reference), vous en apprendrez davantage sur cette fonction.
+Ce bouton ouvre une fenêtre avec les utilitaires pour générer une image de **RÉFÉRENCE** à partir d'une PCB ou d'un panneau. Cette fonction peut être activée en appuyant sur la touche **r** du clavier. Dans la section [générer une référence](./Inspection_workflow.md#generation-dune-reference), vous en apprendrez davantage sur cette fonction.
 
 
 ### **UUI vers RÉFÉRENCE**
 
 ![Bouton UUI vers RÉFÉRENCE](../assets/v7/ui-button10.png){.center}
 
-Cette fonction convertit l'image **UUI** actuelle en une **RÉFÉRENCE**. C'est utile lorsque certains des composants de la PCBA ont été changés pour un équivalent et que le **Réseau de Neurones** le détecte comme une erreur en raison d'une différence visuelle, mais que la PCBA est correcte. Pour en savoir plus sur cette fonctionnalité, rendez-vous à la [section suivante](UUI_to_REFERENCE.md).
+Cette fonction convertit l'image **UUI** actuelle en une **RÉFÉRENCE**. C'est utile lorsqu'un des composants de la PCBA a été remplacé par un équivalent et que le **Réseau de Neurones** le détecte comme une erreur en raison d'une différence visuelle, alors même que la PCBA elle-même est correcte. Pour en savoir plus sur cette fonctionnalité, rendez-vous à la [section suivante](UUI_to_REFERENCE.md).
 
 ### **Prendre une image UUI**
 
@@ -142,7 +142,7 @@ Cette fonction convertit l'image **UUI** actuelle en une **RÉFÉRENCE**. C'est 
 
 ![Fenêtre UUI](../assets/v7/ui-uui_preview.png){.center}
 
-Cette fonction ouvre une fenêtre avec un aperçu en direct de la zone d'inspection. Une fois la PCBA correctement placée, appuyez sur le bouton **Démarrer l'inspection** pour prendre une photo ou des photos de la PCBA/Panneau de l'**Unité Sous Inspection**. Si le [bouton traitement automatique](#auto-process) est actif, l'inspection démarrera automatiquement une fois l'image UUI prise. Cette fonctionnalité peut également être activée en appuyant sur la touche **s** du clavier ou sur le bouton d'action physique situé sur le côté droit de l'AOI. Consultez la [section suivante](./Inspection_workflow.md/#capturing-an-uui) pour en savoir plus sur cette fonctionnalité.
+Cette fonction ouvre une fenêtre avec un aperçu en direct de la zone d'inspection. Une fois la PCBA correctement placée, appuyez sur le bouton **Démarrer l'inspection** pour prendre une photo ou des photos de la PCBA/Panneau de l'**Unité Sous Inspection**. Si le [bouton traitement automatique](#traitement-automatique) est actif, l'inspection démarrera automatiquement une fois l'image UUI prise. Cette fonctionnalité peut également être activée en appuyant sur la touche **s** du clavier ou sur le bouton d'action physique situé sur le côté droit de l'AOI. Consultez la [section suivante](./Inspection_workflow.md#capture-dune-uui) pour en savoir plus sur cette fonctionnalité.
 
 
 ### **Gomme**

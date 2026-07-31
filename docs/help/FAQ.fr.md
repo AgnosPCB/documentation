@@ -3,7 +3,7 @@ ___
 
 ??? question "Existe-t-il des plans de location / d'essai pour les plateformes d'inspection EN LIGNE et HORS LIGNE ?"
 
-    Oui, nous avons un plan de location pour les unités HORS LIGNE pour **un minimum de 2 mois**. Si vous décidez finalement de la conserver, le coût de la location sera déduit du prix final de l'unité. [Contactez-nous](mailto:support@agnospcb.com) pour demander un devis.
+    Oui, nous proposons un plan de location pour les unités HORS LIGNE, pour une durée minimale de **2 mois**. Si vous décidez finalement de la conserver, le coût de la location sera déduit du prix final de l'unité. [Contactez-nous](mailto:support@agnospcb.com) pour demander un devis.
 
 ??? question "Comment puis-je générer un rapport d'erreur non détectée ?"
 
@@ -11,7 +11,7 @@ ___
 
 ??? question "Quelle est la taille maximale de PCB qui peut être inspectée avec ce système ?"
 
-    Le nouveau **AI-4050** permet l'inspection de PCBA (cartes de circuits imprimés assemblées) jusqu'à 40 x 50 cm (16 x 19").
+    Le nouvel **AI-4050** permet l'inspection de PCBA (cartes de circuits imprimés assemblées) jusqu'à 40 x 50 cm (16 x 19").
 
 ??? question "Quelle est la différence entre les 'mises à jour du client' et les 'mises à jour du réseau neuronal' ? À quelle fréquence ces mises à jour sont-elles fournies ?"
 
@@ -43,7 +43,7 @@ ___
 
     - Utiliser notre [application Windows](https://agnospcb.com/software-tool-download/) + vous abonner à l'un de [nos plans](https://agnospcb.com/pricing-eur/). Cela nécessite un ordinateur Windows et une connexion Internet stable. De cette façon, vous pourrez stocker les images prises par votre propre caméra dans un dossier spécifique où le logiciel les capturera et les inspectera automatiquement. Vous pouvez également télécharger les images manuellement car cette version ne prend pas en charge le contrôle à distance de la caméra.
 
-    - Configurer notre [API](https://agnospcb.com/agnospcb-api/) + vous abonner à un [plan] GOLD (https://agnospcb.com/pricing-eur/) ou supérieur. Il s'agit d'un script Python qui vous permet d'intégrer facilement notre logiciel d'inspection à votre système. Il peut fonctionner sur tout système capable d'exécuter un script Python. Cela nécessite une connexion Internet stable.
+    - Configurer notre [API](https://agnospcb.com/agnospcb-api/) + vous abonner à un [plan GOLD](https://agnospcb.com/pricing-eur/) ou supérieur. Il s'agit d'un script Python qui vous permet d'intégrer facilement notre logiciel d'inspection à votre système. Il peut fonctionner sur tout système capable d'exécuter un script Python. Cela nécessite une connexion Internet stable.
 
 ??? question "Je souhaite construire ma propre boîte lumineuse. Avez-vous des recommandations pour la configurer ?"
 

@@ -35,10 +35,10 @@
     ![Dimensions REF](../assets/v7/tip-5.jpg){width=400px, .center}
 
 - Ne mélangez pas les PCBA soudés et pré-soudés. Si vous prenez une image de RÉFÉRENCE avec des composants soudés, n'inspectez pas de PCBA UUI non soudés, cela entraînerait un marquage avec un taux très élevé de faux positifs.
-- Comme pour les PCBA soudés/pré-soudés, ne mélangez pas les PCBA revêtus (coatés) et non revêtus.
+- Comme pour les PCBA soudés/pré-soudés, ne mélangez pas les PCBA revêtus et non revêtus.
 
 ---
 ## **Effectuer une bonne inspection**
 
 - Suivez les conseils pour la prise de RÉFÉRENCE.
-- Placez le PCBA à inspecter au **même emplacement et dans la même position** que le PCBA de RÉFÉRENCE capturé. La vue en direct affichera une image fantôme du PCBA de RÉFÉRENCE pour aider à l'alignement. Il n'est pas nécessaire de placer l'UUI exactement au même emplacement, car le logiciel corrige l'alignement.
+- Placez le PCBA à inspecter au **même emplacement et dans la même position** qu'occupait le PCBA de RÉFÉRENCE lors de sa capture. La vue en direct affichera une image fantôme du PCBA de RÉFÉRENCE pour aider à l'alignement. Il n'est pas nécessaire de placer l'UUI exactement au même emplacement, car le logiciel corrige l'alignement.

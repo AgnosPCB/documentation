@@ -1,12 +1,12 @@
 # **Maintenance**
 
-L'AOI **AgnosPCB AI-4050** nécessite très peu d'entretien, mais celui-ci est important pour le bon fonctionnement du système.
+L'AOI **AgnosPCB AI-4050** nécessite très peu d'entretien, mais celui-ci est également important pour le bon fonctionnement du système.
 
 ![Plateforme AOI](../assets/v7/ai-4050.webp){width=600px, .center}
 
 | Entretien | Périodicité |
 | --------- | :-----: |
-| [Réglage de la tension des courroies](#réglage-de-la-tension-des-courroies) | Mensuel |
+| [Réglage de la tension des courroies](#reglage-de-la-tension-des-courroies) | Mensuel |
 | [Nettoyage](#nettoyage) | Mensuel |
 | [Lubrification du guide-rail](#lubrification-du-guide-rail) | 6 mois |
 

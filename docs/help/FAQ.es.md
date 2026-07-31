@@ -11,7 +11,7 @@ ___
 
 ??? question "¿Cuál es el tamaño máximo de PCB que se puede inspeccionar con este sistema?"
 
-    El nuevo **AI-4050** permite la inspección de PCBA (placas de circuito impreso ensambladas) de hasta 40 x 50 cm (16 x 19").
+    El nuevo **AI-4050** permite la inspección de PCBA de hasta 40 x 50 cm (16 x 19").
 
 ??? question "¿Cuál es la diferencia entre 'actualizaciones del cliente' y 'actualizaciones de la red neuronal'? ¿Con qué frecuencia se proporcionan estas actualizaciones?"
 

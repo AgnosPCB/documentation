@@ -3,11 +3,11 @@ ___
 
 ??? question "Are there any rental / trial plans for the ONLINE and OFFLINE inspection platforms?"
 
-    Yes, we have a renting plan for OFFLINE units for **a minimum of 2 month**. If you finally decide to kept it, the renting cost will be discounted from the final price of the unit. [Contact us](mailto:support@agnospcb.com) to require a quote 
+    Yes, we have a rental plan for OFFLINE units for **a minimum of 2 months**. If you decide to keep it, the rental cost will be discounted from the final price of the unit. [Contact us](mailto:support@agnospcb.com) to request a quote.
 
 ??? question "How do I generate a report of undetected error?"
 
-    You can report an undetected fault by moving the cursor to the fault´s area and pressing DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.
+    You can report an undetected fault by moving the cursor to the fault's area and pressing the DOWN arrow key. The images are reported to our server and we use them to train the Neural Network to detect these errors. It will be included in the next Neural Network update.
 
 ??? question "What is the maximum PCB size that can be inspected with this system?"
 
@@ -15,7 +15,7 @@ ___
 
 ??? question "What is the difference between "client updates" and "neural network updates"? How frequently are these updates provided?"
 
-    Client upgrades refer to the graphical interface used by the operator that includes features to facilitate PCBA inspections. As for the neural network updates, these refer to the architecture that performs the inspections and returns the result to the client software. ONLINE units do not require neural network updates as they use the latest version released on the AgnosPCB's server. The OFFLINE units can also upgrade the neural network architecture with ease with just a USB drive. The neural network is usually updated every 3-4 months.
+    Client upgrades refer to the graphical interface used by the operator that includes features to facilitate PCBA inspections. As for the neural network updates, these refer to the architecture that performs the inspections and returns the result to the client software. ONLINE units do not require neural network updates as they use the latest version released on AgnosPCB's server. The OFFLINE units can also upgrade the neural network architecture easily using just a USB drive. The neural network is usually updated every 3-4 months.
 
 ??? question "How can I manage my online subscription?"
 
@@ -32,7 +32,7 @@ ___
 
 ??? question "What can I do with the detected errors that are false positives?"
 
-    You can move through the detected errors with LEFT and RIGHT arrow keys. To mark as false positive press the UP arrow key and it will be reported to us (on ONLINE units only). For OFFLINE units, you can also flag it as false positive with UP arrwo key. A cropped image will be generated in the REPORTS folder. Then send us by email and we will incorporate it to the next neural network architecture. This feedback is important to us in order to improve the detection rate.
+    You can move through the detected errors with LEFT and RIGHT arrow keys. To mark as false positive press the UP arrow key and it will be reported to us (on ONLINE units only). For OFFLINE units, you can also flag it as false positive with the UP arrow key. A cropped image will be generated in the REPORTS folder. Send it to us by email and we will incorporate it into the next neural network update. This feedback is important to us in order to improve the detection rate.
 
 ??? question "How does the system work with QFN style packages?"
 
@@ -42,18 +42,18 @@ ___
 
     If you plan to use your own hardware you have 2 options:
 
-    - Using our [Windows application](https://agnospcb.com/software-tool-download/) + subscribing to any of [our plans](https://agnospcb.com/pricing-eur/). It requires a Window's computer and a stable Internet conection. This way, you will be able to store the images take by your own camera in a specific folder where the software will capture and inspect them automatically. You can also upload the images manually as this version does not support remote control of the camera.
+    - Using our [Windows application](https://agnospcb.com/software-tool-download/) + subscribing to any of [our plans](https://agnospcb.com/pricing-eur/). It requires a Windows computer and a stable Internet connection. This way, you will be able to store the images taken by your own camera in a specific folder where the software will capture and inspect them automatically. You can also upload the images manually as this version does not support remote control of the camera.
 
-    - Configuring our [API](https://agnospcb.com/agnospcb-api/) + subscribing to a GOLD [plan](https://agnospcb.com/pricing-eur/) or superior. This is a python script that allows you to integrate our inspection software to your system with ease. It can works in any system that can run a Python script. It requieres a stable Internet conection.
+    - Configuring our [API](https://agnospcb.com/agnospcb-api/) + subscribing to a GOLD [plan](https://agnospcb.com/pricing-eur/) or superior. This is a Python script that allows you to integrate our inspection software into your system with ease. It can work on any system that can run a Python script. It requires a stable Internet connection.
 
 
 ??? question "I would like to build my own lightbox. Do you have any recommendations for setting it up?"
 
-    For optimal results, lighting should be both adequate and consistent, with an aim to eliminate shadows. It is recommended to use white lighting for best clarity. A lighting ring can be employed if it provides enough illumination. However, the key consideration is to maintain consistent lighting conditions at all times. Be careful with the influences of external lighting which can vary the conditions between photos. This may cause some problems to the detection algorithm. If you are able to, enclose the inspection area as much as you can.
+    For optimal results, lighting should be both adequate and consistent, with an aim to eliminate shadows. It is recommended to use white lighting for best clarity. A lighting ring can be employed if it provides enough illumination. However, the key consideration is to maintain consistent lighting conditions at all times. Be careful with the influence of external lighting, which can vary the conditions between photos. This may cause problems for the detection algorithm. If you are able to, enclose the inspection area as much as you can.
 
 ??? question "Does the OFFLINE version allow for unlimited inspections?"
 
-    The OFFLINE units entails a one-time purchase with unlimited inspections.
+    The OFFLINE units entail a one-time purchase with unlimited inspections.
 
 
 ??? question "Can I use my current camera/AOI to inspect?"
@@ -62,11 +62,11 @@ ___
 
 ??? question "Which camera is recommended?"
 
-    A camera with a resolution of at least 20MP should provide sufficient detail for component inspection. As for the lens, you should aim for a focal length that has a balance between displaying components large enough for the neural network to be able to detect faults and that does not produce dwarfing effects on tall components.
+    A camera with a resolution of at least 20MP should provide sufficient detail for component inspection. As for the lens, aim for a focal length that balances displaying components large enough for the neural network to detect faults, without producing dwarfing effects on tall components.
 
 ??? question "Is it possible to inspect THT components?"
 
-    AgnosPCB's AOI system is not specifically designed for Through-Hole Technology (THT) components. This is due to the potential large perspective differences caused by the height of THT components, which may lead to false positives in the Neural Network. Additionally, the soldering of THT components is often concealed, making inspection difficult in most cases 
+    AgnosPCB's AOI system is not specifically designed for Through-Hole Technology (THT) components. This is due to the potential large perspective differences caused by the height of THT components, which may lead to false positives in the Neural Network. Additionally, the soldering of THT components is often concealed, making inspection difficult in most cases.
     
     However, while not optimized for THT components, the AOI system can still be used for such components. It can aid in detecting displacements, incorrect polarity, flipping, or incorrect placement of THT components.
 
@@ -74,5 +74,5 @@ ___
 
     The current Windows version does not support camera control as it has driver issues and was designed just for testing the capabilities of the AOI system. The official version is based on Linux and supports camera control, barcode reading and report generation.
     
-    However, you can share the PCB_IN folder in your network, put all the pictures in it and the software automatically will process them. You first have to load the PCBA REFERENCE in the software and activate the auto process button.
+    However, you can share the PCB_IN folder in your network, put all the pictures in it and the software will automatically process them. You first have to load the PCBA REFERENCE in the software and activate the auto process button.
     ![alt text](../assets/menu-auto-process.png)

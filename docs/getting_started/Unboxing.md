@@ -1,4 +1,4 @@
-!!! warning "Important"
+!!! info "Important"
 
     If there is any missing part or defective [send us an email](mailto:support@agnospcb.com).
 
@@ -7,31 +7,32 @@
     After completing the unboxing, make sure to remove all the orange parts from the inspection platform.
 
 ## Step 1
-**Take out the inspection platform**
+**Removing the top cover**
 
-Start by pulling the orange handles shown in the photograph to carefully lift the inspection platform out of the packaging.
+Start by removing the adhesive tape from the four sides of the top cover of the inspection chamber and removing it.
 
-![Box](../assets/v7/unpack-1.png){.center}
-
+![Box](../assets/v7/1-unpackage.png){.center width=500px}
 ## Step 2
-**Remove the Orange Handles**
+**Take out the inspection chamber**
 
-Remove the orange handles by unscrewing the four fastening screws, do not forget to remove the screws and nuts from the profiles once the handle is extracted. Repeat this process for the handle on the opposite side.
+Hold the inspection camera by the upper aluminum side frames and remove it from the box.
 
-![Box](../assets/v7/unpack-2.png){.center}
+!!! warning "Important"
+
+    This operation must be done between two people.
+
+![Box](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Step 3
-**Remove the cart fastening screws**
+**Remove the camera fastening pieces**
 
-Unscrew the screws that keep the carriage fixed.
 
-![Box](../assets/v7/unpack-3.webp){.center}
+![Box](../assets/v7/3-unpackage.png){.center width=500px}
 
-![Box](../assets/v7/unpack-4.webp){.center}
 
 ## Step 4
 **Take out the Blue Box with Accessories**
 
 Take the blue box that contains all the necessary accessories out of the packaging. List of components [here](Package_content.md).
 
-![Box](../assets/v7/unpack-5.webp){.center}
+![Box](../assets/v7/4-unpackage.jpg){.center width=500px}

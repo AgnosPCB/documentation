@@ -10,11 +10,11 @@ Il **menu Impostazioni** è diviso in diverse sezioni, descritte di seguito.
 
 #### Mostra exif
 
-Visualizza i metadati dell'immagine corrente nell'[area di lavoro principale](./Screen-layout.md#main-workspace).
+Visualizza i metadati dell'immagine corrente nell'[area di lavoro principale](./Screen-layout.md#area-di-lavoro-principale).
 
 #### Mostra icone area di lavoro
 
-Abilita un set di funzionalità nell'[area di lavoro principale](./Screen-layout.md#main-workspace). Maggiori informazioni su queste funzionalità sono disponibili nella [sezione successiva](./Workspace_icons.md).
+Abilita un set di funzionalità nell'[area di lavoro principale](./Screen-layout.md#area-di-lavoro-principale). Maggiori informazioni su queste funzionalità sono disponibili nella [sezione successiva](./Workspace_icons.md).
 
 #### Segnalazione automatica
 
@@ -34,7 +34,7 @@ Cambia la lingua dell'interfaccia. Le lingue attualmente disponibili sono: **Ing
 
 #### Processo automatico
 
-Attiva/disattiva la [funzione di processo automatico](./Screen-layout.md#auto-process).
+Attiva/disattiva la [funzione di processo automatico](./Screen-layout.md#processo-automatico).
 
 #### Usa codice a barre
 
@@ -57,7 +57,7 @@ Disabilitando questa opzione, il menu mosaico non verrà visualizzato dopo aver 
 
 #### Modalità Operatore
 
-Abilitando questa opzione, diverse funzionalità verranno nascoste dall'interfaccia, semplificando l'uso del software. Inoltre, impedisce all'operatore di cambiare l'immagine di RIFERIMENTO o la sensibilità delle ispezioni. È possibile aggiungere una [password](Settings_menu.md#settings-password) in modo che solo l'amministratore possa disabilitare questa opzione.
+Abilitando questa opzione, diverse funzionalità verranno nascoste dall'interfaccia, semplificando l'uso del software. Inoltre, impedisce all'operatore di cambiare l'immagine di RIFERIMENTO o la sensibilità delle ispezioni. È possibile aggiungere una [password](Settings_menu.md#password-impostazioni) in modo che solo l'amministratore possa disabilitare questa opzione.
 
 #### Sensibilità abilitata
 
@@ -141,7 +141,7 @@ Abilitando queste opzioni, il sistema condividerà automaticamente le cartelle P
     Per applicare le modifiche, premere il pulsante **SET**.
 
 !!! note "Nota"
-    Per le unità OFFLINE, se è necessario cambiare l'interfaccia di rete della propria unità, fare riferimento all'[articolo sulla configurazione di rete](./network_configuration.md).
+    Per le unità OFFLINE, se è necessario cambiare l'interfaccia di rete della propria unità, fare riferimento all'[articolo sulla configurazione di rete](../maintenance/network_configuration.md).
 
 ## **Sezione Informazioni**
 

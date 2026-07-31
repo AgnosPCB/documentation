@@ -17,7 +17,7 @@ Esta área muestra el estado de la conexión con la plataforma de inspección y 
 
 ![Botón Iniciar inspección](../assets/autoprocess.png){.center}
 
-El botón **Iniciar inspección** activa la inspección de la imagen **UUI** actual. Este botón está disponible cuando el [botón de Proceso automático](#auto-process) está en **OFF**. Esto es útil para evitar gastar créditos cuando está probando cómo tomar fotografías de sus PCBA.
+El botón **Iniciar inspección** activa la inspección de la imagen **UUI** actual. Este botón está disponible cuando el [botón de Proceso automático](#proceso-automatico) está en **OFF**. Esto es útil para evitar gastar créditos cuando está probando cómo tomar fotografías de sus PCBA.
 
 ### **Cargar REFERENCIA por código de barras**
 
@@ -25,7 +25,7 @@ El botón **Iniciar inspección** activa la inspección de la imagen **UUI** act
 
 ![Carga de REFERENCIA por código de barras](../assets/v7/ui-bc_ref.png){.center}
 
-Este botón abre una ventana emergente para insertar un número de código de barras. Al generar una REFERENCIA, cualquier [código de barras que contenga puede ser leído](#barcode-area-drawing). Este código de barras se asociará con la REFERENCIA y podrá cargarse usando ese número con esta función. También es posible leer el código de barras con un lector de mano e insertarlo en este campo. Más información sobre esta característica [aquí](./Barcode_reader.md#load-a-reference-by-barcode).
+Este botón abre una ventana emergente para insertar un número de código de barras. Al generar una REFERENCIA, cualquier [código de barras que contenga puede ser leído](#dibujo-de-area-de-codigo-de-barras). Este código de barras se asociará con la REFERENCIA y podrá cargarse usando ese número con esta función. También es posible leer el código de barras con un lector de mano e insertarlo en este campo. Más información sobre esta característica [aquí](./Barcode_reader.md#cargar-una-referencia-por-codigo-de-barras).
 
 ## **Registro de actividad**
 
@@ -40,7 +40,7 @@ El área de **registro de actividad** está ubicada en la parte superior derecha
 
 ![Sección principal](../assets/v7/ui-working-area.png){.center}
 
-Esta es la sección principal donde se trabaja con las imágenes de **REFERENCIA** y **UUI**, las cuales se pueden alternar presionando la tecla TAB en el teclado o [el botón en la aplicación](#swap). Los resultados de la inspección también se muestran en esta área utilizando retículos y números junto a los errores detectados.
+Esta es la sección principal donde se trabaja con las imágenes de **REFERENCIA** y **UUI**, las cuales se pueden alternar presionando la tecla TAB en el teclado o [el botón en la aplicación](#intercambiar). Los resultados de la inspección también se muestran en esta área utilizando retículos y números junto a los errores detectados.
 
 
 ## **Comparación lado a lado**
@@ -64,7 +64,7 @@ Aquí se encuentran varias **funciones y opciones** diseñadas para **optimizar*
 
 ![Menú Mosaico](../assets/v7/2024-11-14_09-27.png){width=600px; .center}
 
-El mosaico de referencias se utiliza para almacenar REFERENCIAS como archivos para encontrar y cargar rápidamente cualquiera de ellas. El menú mosaico aparece automáticamente después de tomar una REFERENCIA usando el [botón para tomar foto de REFERENCIA](#take-a-reference-image) o cargándola [como un archivo](#load-reference-as-file). En esta ventana también es posible nombrar la REFERENCIA tomada en la parte superior derecha de la ventana. Una REFERENCIA almacenada en el mosaico se puede cargar rápidamente presionando un **botón F** (F1-F10).
+El mosaico de referencias se utiliza para almacenar REFERENCIAS como archivos para encontrar y cargar rápidamente cualquiera de ellas. El menú mosaico aparece automáticamente después de tomar una REFERENCIA usando el [botón para tomar foto de REFERENCIA](#tomar-una-imagen-de-referencia) o cargándola [como un archivo](#cargar-referencia-como-archivo). En esta ventana también es posible nombrar la REFERENCIA tomada en la parte superior derecha de la ventana. Una REFERENCIA almacenada en el mosaico se puede cargar rápidamente presionando un **botón F** (F1-F10).
 
 ### **CARGAR REFERENCIA como archivo**
 
@@ -81,7 +81,7 @@ Use este icono para cargar una imagen capturada previamente como **REFERENCIA** 
  
 ![Botón Intercambiar](../assets/v7/ui-button3.png){width=350px; .center}
 
-Alterna entre las imágenes de **REFERENCIA** y **UUI** en el [área principal del espacio de trabajo](#main-workspace).
+Alterna entre las imágenes de **REFERENCIA** y **UUI** en el [área principal del espacio de trabajo](#espacio-de-trabajo-principal).
 
 ### **Dibujo de área de código de barras**
 
@@ -118,7 +118,7 @@ Este botón le llevará a esta documentación.
 
 ![OK o NO OK](../assets/v7/ui-finish_inspection.png){.center}
 
-Una vez que los errores detectados han sido supervisados por el operador, la inspección se puede completar presionando este botón y, dependiendo del criterio de fabricación, marcar la PCBA inspeccionada como **OK** o **NO OK**. Después de eso, el software creará un informe que incluye los errores reportados por el operador en un documento PDF. Para obtener más información sobre esta función, vaya a la [siguiente sección](./Inspection_workflow.md#generating-a-final-pdf-report).
+Una vez que los errores detectados han sido supervisados por el operador, la inspección se puede completar presionando este botón y, dependiendo del criterio de fabricación, marcar la PCBA inspeccionada como **OK** o **NO OK**. Después de eso, el software creará un informe que incluye los errores reportados por el operador en un documento PDF. Para obtener más información sobre esta función, vaya a la [siguiente sección](./Inspection_workflow.md#generacion-de-un-informe-pdf-final).
 
 ### **Tomar una imagen de REFERENCIA**
 
@@ -127,7 +127,7 @@ Una vez que los errores detectados han sido supervisados por el operador, la ins
 ![Ventana de REFERENCIA](../assets/v7/2024-11-14_09-26.png){.center}
 
 
-Este botón abre una ventana con las utilidades para generar una imagen de **REFERENCIA** a partir de una PCB o panel. Esta función se puede activar presionando el botón **r** en el teclado. En la sección [generar una referencia](./Inspection_workflow.md/#generating-a-reference) aprenderá más sobre esta función.
+Este botón abre una ventana con las utilidades para generar una imagen de **REFERENCIA** a partir de una PCB o panel. Esta función se puede activar presionando el botón **r** en el teclado. En la sección [generar una referencia](./Inspection_workflow.md#generacion-de-una-referencia) aprenderá más sobre esta función.
 
 
 ### **UUI a REFERENCIA**
@@ -142,7 +142,7 @@ Esta función convierte la imagen **UUI** actual en una **REFERENCIA**. Esto es 
 
 ![Ventana UUI](../assets/v7/ui-uui_preview.png){.center}
 
-Esta función abre una ventana con una vista previa en vivo del área de inspección. Una vez que la PCBA esté colocada correctamente, presione el botón **Iniciar inspección** para tomar una foto o fotos de la PCBA/Panel de la **Unidad Bajo Inspección**. Si el [botón de proceso automático](#auto-process) está activo, la inspección comenzará automáticamente una vez que se tome la imagen UUI. Esta función también se puede activar presionando la tecla **s** en el teclado o el botón de acción físico ubicado en el lado derecho de la AOI. Consulte la [siguiente sección](./Inspection_workflow.md/#capturing-an-uui) para obtener más información sobre esta característica.
+Esta función abre una ventana con una vista previa en vivo del área de inspección. Una vez que la PCBA esté colocada correctamente, presione el botón **Iniciar inspección** para tomar una foto o fotos de la PCBA/Panel de la **Unidad Bajo Inspección**. Si el [botón de proceso automático](#proceso-automatico) está activo, la inspección comenzará automáticamente una vez que se tome la imagen UUI. Esta función también se puede activar presionando la tecla **s** en el teclado o el botón de acción físico ubicado en el lado derecho de la AOI. Consulte la [siguiente sección](./Inspection_workflow.md#capturando-una-uui) para obtener más información sobre esta característica.
 
 
 ### **Borrador**
@@ -165,4 +165,4 @@ Si está activado, la siguiente foto **UUI** tomada se procesará **automáticam
 ![Botón de Configuración](../assets/v7/ui-button14.png){.center}
 
 
-Este botón abre el [menú de configuración](./Settings_menu.md).
+Este botón abre el [menú de configuración](./Settings_menu.md).

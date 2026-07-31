@@ -27,7 +27,7 @@ Retirez les poignées oranges en dévissant les **quatre vis de fixation**, n'ou
 ## Étape 3
 **Retirer les vis de fixation du chariot**
 
-Dévisser les vis qui maintiennent le chariot fixe.
+Dévissez les vis qui maintiennent le chariot fixe.
 
 ![Boîte](../assets/v7/unpack-3.webp){.center}
 
@@ -38,6 +38,6 @@ Dévisser les vis qui maintiennent le chariot fixe.
 ## Étape 4
 **Sortir la boîte bleue contenant les accessoires**
 
-Sortir de l'emballage la **boîte bleue** qui contient tous les accessoires nécessaires. Liste des composants [ici](Package_content.md).
+Sortez de l'emballage la **boîte bleue** qui contient tous les accessoires nécessaires. Liste des composants [ici](Package_content.md).
 
 ![Boîte](../assets/v7/unpack-5.webp){.center}

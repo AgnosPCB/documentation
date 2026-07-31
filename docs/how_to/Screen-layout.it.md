@@ -17,7 +17,7 @@ Quest'area visualizza lo stato della connessione con la piattaforma di ispezione
 
 ![Pulsante Avvia ispezione](../assets/autoprocess.png){.center}
 
-Il pulsante **Avvia ispezione** avvia l'ispezione dell'immagine **UUI** corrente. Questo pulsante è disponibile quando il [pulsante Processo automatico](#auto-process) è impostato su **OFF**. Questo è utile per evitare di spendere crediti quando si sta testando come scattare foto delle proprie PCBA.
+Il pulsante **Avvia ispezione** avvia l'ispezione dell'immagine **UUI** corrente. Questo pulsante è disponibile quando il [pulsante Processo automatico](#processo-automatico) è impostato su **OFF**. Questo è utile per evitare di spendere crediti quando si sta testando come scattare foto delle proprie PCBA.
 
 ### **Caricamento RIFERIMENTO tramite codice a barre**
 
@@ -25,7 +25,7 @@ Il pulsante **Avvia ispezione** avvia l'ispezione dell'immagine **UUI** corrente
 
 ![Caricamento RIFERIMENTO codice a barre](../assets/v7/ui-bc_ref.png){.center}
 
-Questo pulsante apre una finestra pop-up per inserire un numero di codice a barre. Quando si genera un RIFERIMENTO, qualsiasi [codice a barre che esso contiene può essere letto](#barcode-area-drawing). Questo codice a barre sarà associato al RIFERIMENTO e potrà essere caricato utilizzando quel numero con questa funzione. È anche possibile leggere il codice a barre con un lettore portatile e inserirlo in questo campo. Maggiori informazioni su questa funzionalità [qui](./Barcode_reader.md#load-a-reference-by-barcode).
+Questo pulsante apre una finestra pop-up per inserire un numero di codice a barre. Quando si genera un RIFERIMENTO, qualsiasi [codice a barre che esso contiene può essere letto](#disegno-area-codice-a-barre). Questo codice a barre sarà associato al RIFERIMENTO e potrà essere caricato utilizzando quel numero con questa funzione. È anche possibile leggere il codice a barre con un lettore portatile e inserirlo in questo campo. Maggiori informazioni su questa funzionalità [qui](./Barcode_reader.md#caricare-un-riferimento-tramite-codice-a-barre).
 
 ## **Registro attività**
 
@@ -40,7 +40,7 @@ L'area del **registro attività** si trova in alto a destra e mostra i **crediti
 
 ![Sezione principale](../assets/v7/ui-working-area.png){.center}
 
-Questa è la sezione principale in cui si lavora con le immagini di **RIFERIMENTO** e **UUI**, che possono essere scambiate premendo il tasto TAB sulla tastiera o [il pulsante sull'applicazione](#swap). I risultati dell'ispezione vengono visualizzati anche in quest'area utilizzando reticoli e numeri accanto agli errori rilevati.
+Questa è la sezione principale in cui si lavora con le immagini di **RIFERIMENTO** e **UUI**, che possono essere scambiate premendo il tasto TAB sulla tastiera o [il pulsante sull'applicazione](#scambia). I risultati dell'ispezione vengono visualizzati anche in quest'area utilizzando reticoli e numeri accanto agli errori rilevati.
 
 
 ## **Confronto affiancato**
@@ -64,7 +64,7 @@ Qui si trovano diverse **funzioni e opzioni** progettate per **ottimizzare** il 
 
 ![Menu Mosaico](../assets/v7/2024-11-14_09-27.png){width=600px; .center}
 
-Il mosaico di riferimenti viene utilizzato per archiviare i RIFERIMENTI come file per trovarli e caricarli rapidamente. Il menu mosaico appare automaticamente dopo aver acquisito un RIFERIMENTO utilizzando il [pulsante scatta foto RIFERIMENTO](#take-a-reference-image) o caricandolo [come file](#load-reference-as-file). In questa finestra è anche possibile nominare il RIFERIMENTO acquisito nella parte in alto a destra della finestra. Un RIFERIMENTO memorizzato nel mosaico può essere caricato rapidamente premendo un **pulsante F** (F1-F10).
+Il mosaico di riferimenti viene utilizzato per archiviare i RIFERIMENTI come file per trovarli e caricarli rapidamente. Il menu mosaico appare automaticamente dopo aver acquisito un RIFERIMENTO utilizzando il [pulsante scatta foto RIFERIMENTO](#scatta-unimmagine-di-riferimento) o caricandolo [come file](#carica-riferimento-come-file). In questa finestra è anche possibile nominare il RIFERIMENTO acquisito nella parte in alto a destra della finestra. Un RIFERIMENTO memorizzato nel mosaico può essere caricato rapidamente premendo un **pulsante F** (F1-F10).
 
 ### **CARICA RIFERIMENTO come file**
 
@@ -81,7 +81,7 @@ Utilizzare questa icona per caricare un'immagine precedentemente catturata come 
  
 ![Pulsante Scambia](../assets/v7/ui-button3.png){width=350px; .center}
 
-Alterna tra le immagini di **RIFERIMENTO** e **UUI** nell'[area di lavoro principale](#main-workspace).
+Alterna tra le immagini di **RIFERIMENTO** e **UUI** nell'[area di lavoro principale](#area-di-lavoro-principale).
 
 ### **Disegno area codice a barre**
 
@@ -110,7 +110,7 @@ Se il processo di produzione richiede un controllo qualità più rigoroso, è po
 
 ![Pulsante Aiuto](../assets/v7/ui-button7.png){width=350px; .center}
 
-Questo pulsante vi indirizzerà a questa documentazione.
+Questo pulsante ti indirizzerà a questa documentazione.
 
 ### **Risultato finale**
 
@@ -118,7 +118,7 @@ Questo pulsante vi indirizzerà a questa documentazione.
 
 ![OK o NON OK](../assets/v7/ui-finish_inspection.png){.center}
 
-Una volta che gli errori rilevati sono stati supervisionati dall'operatore, l'ispezione può essere completata premendo questo pulsante e, a seconda dei criteri di produzione, contrassegnare la PCBA ispezionata come **OK** o **NON OK**. Dopodiché, il software creerà un report che include gli errori segnalati dall'operatore su un documento PDF. Per saperne di più su questa funzionalità, consultare la [sezione seguente](./Inspection_workflow.md#generating-a-final-pdf-report).
+Una volta che gli errori rilevati sono stati supervisionati dall'operatore, l'ispezione può essere completata premendo questo pulsante e, a seconda dei criteri di produzione, contrassegnare la PCBA ispezionata come **OK** o **NON OK**. Dopodiché, il software creerà un report che include gli errori segnalati dall'operatore su un documento PDF. Per saperne di più su questa funzionalità, consultare la [sezione seguente](./Inspection_workflow.md#generazione-di-un-report-pdf-finale).
 
 ### **Scatta un'immagine di RIFERIMENTO**
 
@@ -127,7 +127,7 @@ Una volta che gli errori rilevati sono stati supervisionati dall'operatore, l'is
 ![Finestra RIFERIMENTO](../assets/v7/2024-11-14_09-26.png){.center}
 
 
-Questo pulsante apre una finestra con le utilità per generare un'immagine di **RIFERIMENTO** da una PCB o pannello. Questa funzione può essere attivata premendo il tasto **r** sulla tastiera. Nella sezione [generare un riferimento](./Inspection_workflow.md/#generating-a-reference) imparerete di più su questa funzione.
+Questo pulsante apre una finestra con le utilità per generare un'immagine di **RIFERIMENTO** da una PCB o pannello. Questa funzione può essere attivata premendo il tasto **r** sulla tastiera. Nella sezione [generare un riferimento](./Inspection_workflow.md#generazione-di-un-riferimento) imparerai di più su questa funzione.
 
 
 ### **UUI a RIFERIMENTO**
@@ -142,7 +142,7 @@ Questa funzione trasforma l'immagine **UUI** corrente in un **RIFERIMENTO**. Ci�
 
 ![Finestra UUI](../assets/v7/ui-uui_preview.png){.center}
 
-Questa funzione apre una finestra con un'anteprima in tempo reale dell'area di ispezione. Una volta che la PCBA è posizionata correttamente, premere il pulsante **Avvia ispezione** per scattare una foto o più foto della PCBA/Pannello dell'**Unità Sotto Ispezione**. Se il [pulsante processo automatico](#auto-process) è attivo, l'ispezione inizierà automaticamente non appena viene acquisita l'immagine UUI. Questa funzione può anche essere attivata premendo il tasto **s** sulla tastiera o il pulsante di azione fisico situato sul lato destro dell'AOI. Consultare la [sezione seguente](./Inspection_workflow.md/#capturing-an-uui) per saperne di più su questa funzionalità.
+Questa funzione apre una finestra con un'anteprima in tempo reale dell'area di ispezione. Una volta che la PCBA è posizionata correttamente, premere il pulsante **Avvia ispezione** per scattare una foto o più foto della PCBA/Pannello dell'**Unità Sotto Ispezione**. Se il [pulsante processo automatico](#processo-automatico) è attivo, l'ispezione inizierà automaticamente non appena viene acquisita l'immagine UUI. Questa funzione può anche essere attivata premendo il tasto **s** sulla tastiera o il pulsante di azione fisico situato sul lato destro dell'AOI. Consultare la [sezione seguente](./Inspection_workflow.md#acquisizione-di-una-uui) per saperne di più su questa funzionalità.
 
 
 ### **Gomma**

@@ -26,7 +26,7 @@ This option allows you to change the color of the marked error. When the color o
 
 #### Language
 
-Change the interface language. The current available laguanges are: **English, French, German, Italian and Spanish**.
+Change the interface language. The current available languages are: **English, French, German, Italian and Spanish**.
 
 ## **Workflow options**
 
@@ -42,26 +42,26 @@ Toggles the [barcode reading function](./Barcode_reader.md)
 
 #### Auto process PCB_IN folder
 
-Enabling this, all the **UUI images** contained in the **APP/PCB_IN** folder will be automatically process using the loaded REFERENCE in the application. This function is only available on the **ONLINE** version.
+Enabling this, all the **UUI images** contained in the **APP/PCB_IN** folder will be automatically processed using the loaded REFERENCE in the application. This function is only available on the **ONLINE** version.
 
 !!! warning "Warning"
     Since version 7 this feature is no longer operative.
 
 #### Show errors popup
 
-By disabling this option, the reporting window will no longer popup when reporting an error with **UP** or **DOWN** arrow. The reported errors will be generated with the "**other**" label in the final PDF report.
+By disabling this option, the reporting window will no longer pop up when reporting an error with the **UP** or **DOWN** arrow keys. The reported errors will be generated with the "**other**" label in the final PDF report.
 
 #### Show references mosaic
 
-By disabling this option, the mosaic menu won't popup after taking a **REFERENCE** image.
+By disabling this option, the mosaic menu won't pop up after taking a **REFERENCE** image.
 
 #### Operator mode
 
-Enabling this option will hide several features from the interface, simplifying the software's use. It also prevents the operator can change the REFERENCE image or the sensivity of the inspections. A [password](Settings_menu.md#settings-password) can be added so that only the administrator can disable this option.
+Enabling this option will hide several features from the interface, simplifying the software's use. It also prevents the operator from changing the REFERENCE image or the sensitivity of the inspections. A [password](Settings_menu.md#settings-password) can be added so that only the administrator can disable this option.
 
 #### Sensitivity enabled
 
-It allows you to change sensivity when in operator mode.
+It allows you to change the sensitivity while in operator mode.
 
 ## **Report options**
 
@@ -135,13 +135,13 @@ Change the path where the inspections are generated.
 
 #### Share folders
 
-By enabling these options, the system will automatically share the PCB_OUT and REFERENCE folders in your local network. The access address will be displayed once the option is set.
+By enabling these options, the system will automatically share the PCB_OUT and REFERENCE folders on your local network. The access address will be displayed once the option is set.
 
 !!! note "Note"
     To apply the changes press the **SET** button.
 
 !!! note "Note"
-    For the OFFLINE units, if you need to change the network interface of your unit, please refer to the [network configuration article](./network_configuration.md).
+    For the OFFLINE units, if you need to change the network interface of your unit, please refer to the [network configuration article](../maintenance/network_configuration.md).
 
 ## **Info section**
 

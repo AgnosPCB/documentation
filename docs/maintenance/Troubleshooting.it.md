@@ -3,7 +3,7 @@
 ??? info "Il software non si avvia/non risponde"
     Rimuovi il file **setup.json** che si trova nella cartella **APP** e poi riavvia l'applicazione.
     !!! warning "Attenzione"
-        Tutte le configurazioni, come il menu a mosaico, verranno perse. I RIFERIMENTI potranno essere ricaricati in seguito utilizzando il [pulsante Carica RIFERIMENTO (Load REFERENCE)](../how_to/Screen-layout.md#load-reference-as-file). **Gli utenti ONLINE** devono effettuare l'accesso con il loro account **AgnosPCB** dopo aver eliminato il file **setup.json**.
+        Tutte le configurazioni, come il menu a mosaico, verranno perse. I RIFERIMENTI potranno essere ricaricati in seguito utilizzando il [pulsante Carica RIFERIMENTO](../how_to/Screen-layout.md#carica-riferimento-come-file). **Gli utenti ONLINE** devono effettuare l'accesso con il loro account **AgnosPCB** dopo aver eliminato il file **setup.json**.
 
 ??? info "Quando si tenta di avviare l'applicazione, appare un messaggio che indica che il file non dispone delle autorizzazioni per l'avvio."
     Apri una finestra del terminale (puoi usare la scorciatoia da tastiera **CTRL + ALT + T**) e digita quanto segue:
@@ -143,4 +143,4 @@
 
         7. Seleziona il layout nell'angolo in alto a destra.
 
-            ![Passaggio 7](../assets/maintance/keyboard-7.png)
+            ![Passaggio 7](../assets/maintance/keyboard-7.png)

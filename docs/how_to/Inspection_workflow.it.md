@@ -21,7 +21,7 @@ ___
 
 ### **Generazione di un RIFERIMENTO**
 
-Il software AgnosPCB Inspection tool **"confronterà"** la fotografia del circuito/pannello di **RIFERIMENTO** ("golden sample") con tutte le foto che scatterete del circuito da ispezionare (foto da "ANALIZZARE").
+Il software AgnosPCB Inspection tool **"confronterà"** la fotografia del circuito/pannello di **RIFERIMENTO** ("golden sample") con tutte le foto che scatterai del circuito da ispezionare (foto da "ANALIZZARE").
 
 !!!warning "Importante"
     Si consiglia di visitare la nostra sezione [suggerimenti](../help/Tips.md) prima di scattare la prima immagine.
@@ -93,7 +93,7 @@ Dopo aver catturato la PCBA, apparirà la finestra del mosaico che consente di a
 
 ![Processo di acquisizione](../assets/v7/ui-mosaic_after_ref.png){.center}
 
-Una volta terminato il processo di acquisizione, l'immagine di RIFERIMENTO verrà visualizzata nella finestra principale e vi consentirà di impostare [maschere di esclusione](Set_exclusion_area.md) o [disegnare un'area codice a barre](Barcode_reader.md) per la lettura.
+Una volta terminato il processo di acquisizione, l'immagine di RIFERIMENTO verrà visualizzata nella finestra principale e ti consentirà di impostare [maschere di esclusione](Set_exclusion_area.md) o [disegnare un'area codice a barre](Barcode_reader.md) per la lettura.
 
 ![Immagine di riferimento](../assets/v7/ui-reference.png){.center}
 
@@ -143,7 +143,7 @@ Quando il software segnala un'area che non è un errore effettivo, l'operatore p
 ![Finestra falso positivo](../assets/v7/ui-fp_report.png){.center}
 
 !!! note "Nota"
-    Si noti che l'**icona rossa** ![Icona rossa](../assets/v7/ui-report_red.png){width=20px} contrassegna i difetti effettivi e l'**icona verde** ![Icona verde](../assets/v7/ui-report_green.png){width=20px} i difetti falso positivo.
+    Si noti che l'**icona rossa** ![Icona rossa](../assets/v7/ui-report_red.png){width=20px} contrassegna i difetti effettivi e l'**icona verde** ![Icona verde](../assets/v7/ui-report_green.png){width=20px} i difetti falsi positivi.
 
 ### **Generazione di un report PDF finale**
 

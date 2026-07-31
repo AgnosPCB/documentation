@@ -36,7 +36,6 @@ plugins:
       alias_type: symlink
       canonical_version: latest
   - i18n:
-      default_language: en
       languages:
         - locale: en
           name: English
@@ -46,6 +45,7 @@ plugins:
           name: Español
           build: true
           nav_translations:
+            Home: Inicio
             Getting started: Comenzando
             Package content: Contenido del paquete
             Unboxing guide: Guía de desembalaje
@@ -76,6 +76,7 @@ plugins:
           name: Français
           build: true
           nav_translations:
+            Home: Accueil
             Getting started: Démarrage
             Package content: Contenu du colis
             Unboxing guide: Guide de déballage
@@ -106,6 +107,7 @@ plugins:
           name: Italiano
           build: true
           nav_translations:
+            Home: Pagina iniziale
             Getting started: Per iniziare
             Package content: Contenuto della confezione
             Unboxing guide: Guida all'unboxing
@@ -136,6 +138,7 @@ plugins:
           name: Deutsch
           build: true
           nav_translations:
+            Home: Startseite
             Getting started: Erste Schritte
             Package content: Paketinhalt
             Unboxing guide: Auspackanleitung
@@ -169,6 +172,7 @@ extra:
     provider: mike
   generator: false
 nav:
+  - Home: index.md
   - Getting started:
     - Package content: 'getting_started/Package_content.md'
     - Unboxing guide: 'getting_started/Unboxing.md'
@@ -180,15 +184,16 @@ nav:
     - User Interface: 'how_to/Screen-layout.md'
     - Inspection workflow: how_to/Inspection_workflow.md
     - Settings menu: how_to/Settings_menu.md
-    - Other functions:
-      - Barcode reader: 'how_to/Barcode_reader.md'
+    - Other tools and features:
+      - Barcode reader: 'features/Barcode_reader.md'
       - Exclusion area: 'how_to/Set_exclusion_area.md'
       - Sensitivity: 'how_to/Set_sensitivity.md'
       - UUI to REFERENCE: 'how_to/UUI_to_REFERENCE.md'    
       - Workspace icons: how_to/Workspace_icons.md
-      - UV conformal coating inspection: how_to/UV_conformal_coating_inspection.md
-      - Reference variants: 'how_to\Multivariant_feature.md'
-      - Measurement tool: 'how_to/Measurement_tool.md'
+      - UV conformal coating inspection: features/UV_conformal_coating_inspection.md
+      - Reference variants: 'features/Multivariant_feature.md'
+      - Measurement tool: 'features/Measurement_tool.md'
+      - Manual alignment tool: 'features/Manual_alignment.md'
 
   - Support:
     - Maintenance: maintenance/maintenance.md
@@ -211,7 +216,6 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
-  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
 

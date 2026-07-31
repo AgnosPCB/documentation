@@ -8,7 +8,7 @@ Die **AgnosPCB AI-4050** AOI erfordert nur sehr wenig Wartung, diese ist jedoch 
 | --------- | :-----: |
 | [Einstellung der Riemenspannung](#einstellung-der-riemenspannung) | Monatlich |
 | [Reinigung](#reinigung) | Monatlich |
-| [Schmierung der Schienenführung](#schmierung-der-schienenführung) | Alle 6 Monate |
+| [Schmierung der Schienenführung](#schmierung-der-schienenfuhrung) | Alle 6 Monate |
 
 
 ---

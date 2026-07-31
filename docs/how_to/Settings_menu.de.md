@@ -9,11 +9,11 @@ Das **Einstellungsmenü** ist in mehrere Abschnitte unterteilt, die nachfolgend 
 ![Einstellungsmenü Abschnitt Oberfläche](../assets/v7/ui-settings-interface.png){width=350px; .center}
 
 #### Exif anzeigen
-Zeigt die Metadaten des aktuellen Bildes im [Hauptarbeitsbereich](./Screen-layout.md#main-workspace) an.
+Zeigt die Metadaten des aktuellen Bildes im [Hauptarbeitsbereich](./Screen-layout.md#hauptarbeitsbereich) an.
 
 #### Symbole des Arbeitsbereichs anzeigen
 
-Aktiviert eine Reihe von Funktionen im [Hauptarbeitsbereich](./Screen-layout.md#main-workspace). Erfahren Sie mehr über diese Funktionen im [nächsten Abschnitt](./Workspace_icons.md).
+Aktiviert eine Reihe von Funktionen im [Hauptarbeitsbereich](./Screen-layout.md#hauptarbeitsbereich). Erfahren Sie mehr über diese Funktionen im [nächsten Abschnitt](./Workspace_icons.md).
 
 #### Automatische Signalisierung
 
@@ -33,7 +33,7 @@ Diese Option ermöglicht es Ihnen, die Farbe der markierten Fehler zu ändern. W
 
 #### Automatischer Prozess
 
-Schaltet die [Funktion "Automatischer Prozess"](./Screen-layout.md#auto-process) ein/aus.
+Schaltet die [Funktion "Automatischer Prozess"](./Screen-layout.md#automatischer-prozess) ein/aus.
 
 #### Barcode verwenden
 
@@ -56,7 +56,7 @@ Durch Deaktivieren dieser Option wird das Mosaik-Menü nach der Aufnahme eines *
 
 #### Bediener-Modus
 
-Das Aktivieren dieser Option blendet verschiedene Funktionen der Benutzeroberfläche aus und vereinfacht die Nutzung der Software. Es verhindert auch, dass der Bediener das REFERENZ-Bild oder die Empfindlichkeit der Inspektionen ändern kann. Es kann ein [Passwort](Settings_menu.md#settings-password) hinzugefügt werden, sodass nur der Administrator diese Option deaktivieren kann.
+Das Aktivieren dieser Option blendet verschiedene Funktionen der Benutzeroberfläche aus und vereinfacht die Nutzung der Software. Es verhindert auch, dass der Bediener das REFERENZ-Bild oder die Empfindlichkeit der Inspektionen ändern kann. Es kann ein [Passwort](Settings_menu.md#einstellungs-passwort) hinzugefügt werden, sodass nur der Administrator diese Option deaktivieren kann.
 
 #### Empfindlichkeit aktiviert
 
@@ -140,7 +140,7 @@ Wenn diese Optionen aktiviert sind, gibt das System die Ordner PCB_OUT und REFER
     Um die Änderungen zu übernehmen, drücken Sie die Schaltfläche **SET**.
 
 !!! note "Hinweis"
-    Für OFFLINE-Einheiten: Wenn Sie die Netzwerkschnittstelle Ihrer Einheit ändern müssen, lesen Sie bitte den [Artikel zur Netzwerkkonfiguration](./network_configuration.md).
+    Für OFFLINE-Einheiten: Wenn Sie die Netzwerkschnittstelle Ihrer Einheit ändern müssen, lesen Sie bitte den [Artikel zur Netzwerkkonfiguration](../maintenance/network_configuration.md).
 
 ## **Info-Abschnitt**
 

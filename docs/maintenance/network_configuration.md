@@ -3,9 +3,9 @@
 !!! warning "Warning"
     The following guide is for **OFFLINE units only**.
 
-Since the OFFLINE user does not have access to the system's root user, the custom AgnosPCB's OS allows the user to change the system's network interface settings by using a simple configuration file.
+Since the OFFLINE user does not have access to the system's root user, AgnosPCB's custom OS allows the user to change the system's network interface settings by using a simple configuration file.
 
-To set the interface settings, open text editor and add your configuration with the following format:
+To set the interface settings, open a text editor and add your configuration with the following format:
 
 ~~~
 {
@@ -17,5 +17,5 @@ To set the interface settings, open text editor and add your configuration with 
 }
 ~~~
 
-Replace the values to your network requirements. Save the file as **network.conf** in the **APP** folder. 
-Reboot the system and, after a 1 minute, the configuration will be applied automatically.
+Replace the values according to your network requirements. Save the file as **network.conf** in the **APP** folder. 
+Reboot the system and, after about a minute, the configuration will be applied automatically.

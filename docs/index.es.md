@@ -4,7 +4,7 @@ ___
 
 ![logo](assets/agnospcb-logo.gif)
 
-[AgnosPCB](https://agnospcb.com/) ofrece un servicio asequible de **Inspección Óptica Automatizada (AOI)** impulsado por tecnología avanzada de **Redes Neuronales**.
+[AgnosPCB](https://agnospcb.com/) ofrece un servicio asequible de **Inspección Óptica Automatizada (AOI)** impulsado por tecnología avanzada de **Red Neuronal**.
 
 Esta documentación le guiará a través de todas sus características y funcionalidades.
 
@@ -26,7 +26,7 @@ Link : [Cómo usarlo](./how_to/Screen-layout.md)
 ## **FAQs**
 ___
 
-¿Tiene preguntas? Consulte nuestra sección de **Información Adicional** para obtener respuestas rápidas a las consultas más comunes.
+¿Tiene preguntas? Consulte nuestra sección de **información adicional** para obtener respuestas rápidas a las consultas más comunes.
 
 Link: [Ayuda](./help/FAQ.md)
 

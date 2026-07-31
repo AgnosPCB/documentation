@@ -15,7 +15,7 @@ ___
 | Vormontierte AOI-Plattform| ![AOI-Plattform](../assets/v7/4050-frame.png) {width=300px} |
 |1x AC-Netzkabel (Wechselstromkabel)| ![AC-Netzkabel](../assets/v7/eu-ac-cord.png) {width=300px}|
 | Steckdosenleiste | ![Steckdosenleiste](../assets/v7/socket-strip.png) {width=300px}|
-| EU zu UK/USA AC-Adapter (falls erforderlich) | ![Steckdosenadapter](../assets/v7/ac-adapter.png) {width=300px}|
+| EU-zu-UK/USA-AC-Adapter (falls erforderlich) | ![Steckdosenadapter](../assets/v7/ac-adapter.png) {width=300px}|
 | ESD-Matte + ESD-Handgelenkband + Erdungskabel | ![Matte](../assets/mat.png) {width=300px}|
 | Wartungskit | ![Wartungskit](../assets/v7/maintance-kit.png) {width=300px} |
 | Maus & Tastatur | ![Maus & Tastatur ](../assets/v7/mouse_keyboard.png) {width=300px}|

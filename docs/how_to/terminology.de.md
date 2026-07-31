@@ -24,7 +24,7 @@ Dies ist das Ergebnis des Vergleichs der REFERENZ- und UUI-Bilder. Fehler werden
 
 ## **Bericht (Report)**
 
-Vom Software erkannte Fehler müssen von einem Bediener überprüft und bestätigt werden. Sie können als **echter Fehler** oder **falsch-positiv** gemeldet und mit der Fehlerart gekennzeichnet werden. Alle diese gemeldeten Fehler werden zur Erstellung eines abschließenden PDF-Inspektionsberichts verwendet.
+Von der Software erkannte Fehler müssen von einem Bediener überprüft und bestätigt werden. Sie können als **echter Fehler** oder **falsch-positiv** gemeldet und mit der Fehlerart gekennzeichnet werden. Alle diese gemeldeten Fehler werden zur Erstellung eines abschließenden PDF-Inspektionsberichts verwendet.
 
 ![Berichtsfenster](../assets/v7/ui-report.png){.center}
 

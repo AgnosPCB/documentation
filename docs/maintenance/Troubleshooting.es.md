@@ -1,9 +1,9 @@
-# **Solución de Problemas**
+# **Solución de problemas**
 
 ??? info "El software no arranca/responde"
     Retire el archivo **setup.json** que se encuentra en la carpeta **APP** y luego inicie la aplicación de nuevo.
     !!! warning "Advertencia"
-        Todas las configuraciones, como el menú de mosaico, se perderán. Las REFERENCIAS se pueden cargar más tarde utilizando el [botón Cargar REFERENCIA](../how_to/Screen-layout.md#load-reference-as-file). Se pueden recargar más tarde. Los usuarios **EN LÍNEA** deben iniciar sesión con su cuenta de **AgnosPCB** después de eliminar el archivo **setup.json**.
+        Todas las configuraciones, como el menú de mosaico, se perderán. Las REFERENCIAS se pueden cargar más tarde utilizando el [botón Cargar REFERENCIA](../how_to/Screen-layout.md#cargar-referencia-como-archivo). Los usuarios **EN LÍNEA** deben iniciar sesión con su cuenta de **AgnosPCB** después de eliminar el archivo **setup.json**.
 
 ??? info "Al intentar iniciar la aplicación, aparece un mensaje que dice que el archivo no tiene permisos para ejecutarse."
     Abra una ventana de terminal (puede usar el atajo de teclado **CTRL + ALT + T**) y escriba lo siguiente:
@@ -114,4 +114,33 @@
 
         4. Mueva la distribución al primer lugar presionando **Mover hacia arriba (Move up)**.
 
-            ![Paso 4](../
+            ![Paso 4](../assets/maintance/keyboard-online-4.png)
+
+    === "Versión SIN CONEXIÓN (OFFLINE)"
+        1. Abra el menú de configuración en la esquina superior derecha.
+
+            ![Paso 1](../assets/maintance/keyboard-1.png)
+
+        2. Navegue a la sección **Región e idioma (Region & Language)** > **Fuentes de entrada (Input Sources)** > **+**.
+
+            ![Paso 2](../assets/maintance/keyboard-2.png)
+
+        3. Presione el icono de los 3 puntos.
+
+            ![Paso 3](../assets/maintance/keyboard-3.png)
+
+        4. Presione **Otro (Other)**.
+
+            ![Paso 4](../assets/maintance/keyboard-4.png)
+
+        5. Busque su idioma > **Añadir (Add)**.
+
+            ![Paso 5](../assets/maintance/keyboard-5.png)
+
+        6. Mueva la distribución a la primera fila.
+
+            ![Paso 6](../assets/maintance/keyboard-6.png)
+
+        7. Seleccione la distribución en la esquina superior derecha.
+
+            ![Paso 7](../assets/maintance/keyboard-7.png)

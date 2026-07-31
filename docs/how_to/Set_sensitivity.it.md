@@ -15,7 +15,7 @@ La Sensibilità si riferisce al grado di meticolosità o rigore impiegato dal si
 
 ![Pulsante alta sensibilità](../assets/high-sensitivity-button.png){.center}
 
-**Alta Sensibilità:** Per gli utenti che desiderano un processo di ispezione più completo o che hanno a che fare con componenti particolarmente complessi o delicati, l'impostazione di alta sensibilità offre un livello di controllo maggiore. È progettata per rilevare anche le più lievi deviazioni o anomalie, garantendo un esame approfondito dei materiali.
+**Sensibilità Alta:** Per gli utenti che desiderano un processo di ispezione più completo o che hanno a che fare con componenti particolarmente complessi o delicati, l'impostazione di alta sensibilità offre un livello di controllo maggiore. È progettata per rilevare anche le più lievi deviazioni o anomalie, garantendo un esame approfondito dei materiali.
 
 
 

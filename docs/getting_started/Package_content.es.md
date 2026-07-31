@@ -1,4 +1,4 @@
-# **Contenido del Paquete**
+# **Contenido del paquete**
 ___
 
 A continuación, se describen los elementos incluidos en el paquete.
@@ -14,7 +14,7 @@ ___
 | --------- | :-----: |
 | Plataforma AOI premontada| ![Plataforma AOI](../assets/v7/4050-frame.png) {width=300px} |
 |1x Cable de alimentación CA| ![Cable de alimentación CA](../assets/v7/eu-ac-cord.png) {width=300px}|
-| Regleta (Tira de enchufes) | ![Regleta](../assets/v7/socket-strip.png) {width=300px}|
+| Regleta | ![Regleta](../assets/v7/socket-strip.png) {width=300px}|
 | Adaptador CA de EU a UK/USA si es necesario | ![Adaptador de enchufe](../assets/v7/ac-adapter.png) {width=300px}|
 | Alfombrilla ESD + Muñequera ESD + Cable de tierra | ![Alfombrilla](../assets/mat.png) {width=300px}|
 | Kit de mantenimiento | ![Kit de mantenimiento](../assets/v7/maintance-kit.png) {width=300px} |

@@ -3,7 +3,7 @@ This guide provides the necessary steps to install the **UV coating inspection m
 
 ## Video Installation Guide
 
-<iframe width="100%" height="400" src="https://www.youtube.com/watch?v=JY0PqEUxGlU?si=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/JY0PqEUxGlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## List of included parts
 
@@ -15,7 +15,7 @@ This guide provides the necessary steps to install the **UV coating inspection m
     ![Power cable pre-mounted](../assets/v7/UV_install/power_cable_pre-mounted.png){width=200px; .center}
 
 
-The control board is located inside of the inspection chamber on the top-right side. Remove the warning sticker from the cover and unscrew the screw inside using a hex screwdriver. Remove the plastic cover of the control board.
+The control board is located inside the inspection chamber on the top-right side. Remove the warning sticker from the cover and unscrew the screw inside using a hex screwdriver. Remove the plastic cover of the control board.
 
 ![Control board loaction](../assets/v7/UV_install/board_location.png)
 
@@ -32,7 +32,7 @@ Once the cable is connected, place the housing cover back in its position and ti
 
 ## Placing and connecting the DC stepdown converter
 
-Place one of the M5 screws with their nut provided with the kit in the slot of the vertical aluminum frame under the control board. Don't tighten it completely yet.
+Place one of the M5 screws with its nut, provided with the kit, in the slot of the vertical aluminum frame under the control board. Do not tighten it completely yet.
 
 Place the second screw on top of the first, approximately 10 centimeters away.
 
@@ -63,7 +63,7 @@ Glue the cable guides above the lighting ring with the clamp opening facing upwa
 
 ![Cable guides](../assets/v7/UV_install/cable_holder.png)
 
-## Conecting UV leds to DC converter
+## Connecting UV leds to DC converter
 
 With the UV LEDs already installed, connect the "Y" power cable to the bottom of the stepdown DC converter (black and yellow wires) and continue connecting each LED to its corresponding pin. Note that one of the wires is shorter than the other. 
 

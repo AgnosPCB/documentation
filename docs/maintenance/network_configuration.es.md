@@ -17,5 +17,5 @@ Para establecer la configuración de la interfaz, abra un editor de texto y aña
 }
 ~~~
 
-Reemplace los valores por los requisitos de su red. Guarde el archivo como **network.conf** en la carpeta **APP**. 
-Reinicie el sistema y, después de 1 minuto, la configuración se aplicará automáticamente.
+Reemplace los valores según los requisitos de su red. Guarde el archivo como **network.conf** en la carpeta **APP**. 
+Reinicie el sistema y, transcurrido aproximadamente un minuto, la configuración se aplicará automáticamente.

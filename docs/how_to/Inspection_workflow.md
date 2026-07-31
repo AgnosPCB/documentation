@@ -7,8 +7,8 @@ ___
 - Connect the power supply to the inspection platform on the rear panel
 - Turn on the monitor
 - Connect the power supply to the computer and turn on it
-- Once the system have started, open the app by pressing doubleclick in the desktop icon
-- **For ONLINE units only**: a login windows will pop up asking for your AgnosPCB's account credentials. The credentials will be stored in the unmkdit for future use and it will not require to login again.
+- Once the system has started, open the app by double-clicking the desktop icon
+- **For ONLINE units only**: a login window will pop up asking for your AgnosPCB's account credentials. The credentials will be stored on the unit for future use, and you will not need to log in again.
 
 ![Login window](../assets/v7/uui-login.png){.center}
 
@@ -21,7 +21,7 @@ ___
 
 ### **Generating a REFERENCE**
 
-The Agnospcb Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit/panel (“golden sample”) with all the photos you will take of the circuit to be inspected (photos to “ANALYZE“)
+The AgnosPCB Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit or panel (“golden sample”) with all the [UUI](terminology.md#uui).
 
 !!!warning "Important"
     We recommend you to visit our [tips](../help/Tips.md) section before taking your first image.
@@ -30,29 +30,52 @@ To proceed with the REFERENCE taken, click in the reference icon in the main men
 
 ![REF button](../assets/v7/ui-button9.png){.center}
 
-A new window will pop up with mutiple tools:
+A new window will pop up with multiple tools:
 
-![REF window](../assets/v7/uui-ref_livepreview.png)
-
-In this window we have to set the images needed to cover all the PCBA.
-
-![REF dimensions](../assets/v7/uui-ref_livepreview-dimensions.png)
+![REF window](../assets/v7/references/preview.png){ width=600 .center }
 
 ---
 
 #### Capturing the PCB Size
 
-For larger PCBAs, the camera field of view may not be sufficient to capture the entire board in a single image. In these cases, the system captures multiple images and automatically stitches them together using AI into a single image ready for inspection.
+For larger PCBAs, the camera field of view may not be sufficient to capture the entire board in a single image. In these cases, the system captures multiple images and automatically stitches them together using AI into a single image ready for inspection.In this window we have to set the proper capturing sequence needed to cover all the PCBA or panel.
+
+![REF dimensions](../assets/v7/references/preview-sequences.png){ width=600 .center }
 
 ![Stitching process](../assets/stitching.png){ width=600 .center }
 
-If you are unsure how many images are required, place the PCBA in the center of the inspection area and press the **AUTO** button. The system will scan the board and automatically set the optimal configuration.
+If you are unsure how many images are required, place the PCBA in the center of the inspection area and press the **AUTO** button. The system will scan the board and automatically set the optimal configuration for the current PCBA or panel.
 
 ![REF AUTO button](../assets/v7/uui-ref_livepreview-auto.png){ .center }
 
 You can also move the camera to any quadrant of the PCBA by clicking on the desired area in the miniature view.
 
 ![Quadrants map](../assets/v7/uui-ref_livepreview-map.png){ .center }
+
+---
+
+#### TOP/BOTTOM inspection
+
+The inspection tool software integrate a functionallity to analyze both sides of the PCBAs to be inspected.
+This feature should be enabled during the REFERENCE capturing from the live preview window.
+
+![Top/bottom enabled](../assets/v7/references/tb-enable.png){ width=600 .center }
+
+Once the correct sequence has been set and the PCBA is correctly placed, press the **CAPTURE TOP** button to start the capture the top side of the PCBA.
+
+![Capturing TOP](../assets/v7/references/top-capture.png){ width=600 .center }
+
+Once the process has finished, the mosaic window will pop up and the REFERENCE can be store in one of the slots. After, the procedure can continue by flipping the panel and capturing the bottom side.
+
+![Capturing BOTTOM](../assets/v7/references/bt-capture.png){ width=600 .center }
+
+Use the button in the main window to switch bettwen **TOP** and **BOTTOM** images.
+
+![Switch button](../assets/v7/references/switch-button.png){ width=400 .center }
+
+![TOP image](../assets/v7/references/top-image.png){ .center }
+
+![BOTTOM image](../assets/v7/references/bt-image.png){ .center }
 
 ---
 
@@ -81,13 +104,13 @@ The lower section of the window allows enabling or disabling the grid in the liv
 
 ---
 
-To start the capture processing simply click the **CAPTURE REFERENCE** button. The AOI will focus automatically on the selected quadrant and start capturing the entire PCBA in a matter of seconds.
+To start the capture process, simply click the **CAPTURE REFERENCE** button. The AOI will focus automatically on the selected quadrant and start capturing the entire PCBA in a matter of seconds.
 
 ![Capture reference button](../assets/v7/uui-ref_livepreview-capture.png){.center}
 
 ![Capturing process](../assets/v7/uui-ref_stitching.png){.center}
 
-After capturing the PCBA, the mosaic window will pop up allowing to store the image for quick usage.
+After capturing the PCBA, the mosaic window will pop up allowing you to store the image for quick access.
 
 !!! note "Note"
     All taken REFERENCES will be stored automatically. The mosaic helps to quickly load the most used REFERENCES.
@@ -104,51 +127,51 @@ After generating or uploading a previous REFERENCE image, we can proceed with th
 
 ![UUI button](../assets/v7/ui-button11.png){.center}
 
-A livepreview window will pop up showing a gosthing of the REFERENCE image. This helps to align the UUI PCBA with the REFERENCE.
+A live preview window will pop up showing a ghosted overlay of the REFERENCE image. This helps to align the UUI PCBA with the REFERENCE.
 
 !!! warning "Important"
-    The **AgnosPCB** software is capable to align both images (**REFERENCE** and **UUI**) automatically. However, it is important to position the UUI PCBA correctly to avoid geometric deformations that can cause false positive detections.
+    The **AgnosPCB** software is capable of aligning both images (**REFERENCE** and **UUI**) automatically. However, it is important to position the UUI PCBA correctly to avoid geometric deformations that can cause false positive detections.
 
 ![UUI livepreview](../assets/v7/ui-uui_preview.png){.center}
 
-The capturing process will start by clicking in the **START INSPECTION** button.
+The capturing process will start by clicking the **START INSPECTION** button.
 
 !!! note "Note"
-    Focusing is not necessary as the focus parameter is already stored with the REFERENCE image, making the inspection really fast.
+    Focusing is not necessary as the focus parameter is already stored with the REFERENCE image, making the inspection very fast.
 
-The inspection process shall be executed in parallel in case of a multi-image inspection.
+The inspection process is executed in parallel in the case of a multi-image inspection.
 
-Once the capturing process have ended the fineal result will be returned showing the detected errors if there is any. It is possible to change the [detection sensitivity](Set_sensitivity.md) by pressing the button in the main window or by pressing **1, 2 or 3 key.**
+Once the capturing process has ended, the final result will be returned showing the detected errors, if any. It is possible to change the [detection sensitivity](Set_sensitivity.md) by pressing the button in the main window or by pressing the **1, 2, or 3 key.**
 
 ![Sensitivity button](../assets/v7/ui-button6.png){.center}
 
 ![UUI inference](../assets/v7/ui-uui_report.png){.center}
 
-If errors are detected, a **red frame** will appear around the main window. **Green frame** if there are no errors.
+If errors are detected, a **red frame** will appear around the main window. A **green frame** will appear if there are no errors.
 
 ### **Reporting errors**
 
-Once the inspection is complete, the operator must monitor the flagged errors, marking them as **actual error** or **false positive detection**.
+Once the inspection is complete, the operator must monitor the flagged errors, marking them as an **actual error** or a **false positive detection**.
 To do this, simply scroll through the errors using the **left and right arrows** on the keyboard.
 
-To mark a real error, just move to the fault and press the **up arrow** on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault of the list.
+To mark a real error, just move to the fault and press the **up arrow** on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault from the list.
 
 ![Report window](../assets/v7/ui-report.png){.center}
 
-In addition, there is a empty fiel to **add a comment.**
+In addition, there is an empty field to **add a comment.**
 
-In case the operator founds an error **not detected** by the software, it possible to flag and report it by moving the cursor to the fault area and press **up arrow** key. The reporting window will appear as usual. 
+In case the operator finds an error **not detected** by the software, it is possible to flag and report it by moving the cursor to the fault area and pressing the **up arrow** key. The reporting window will appear as usual. 
 
-When the software marks an area that is not an actual error, the operator can flagged it as a **false positive** by pressing **down arrow** key. Also a window will appear allowing to add a comment.
+When the software marks an area that is not an actual error, the operator can flag it as a **false positive** by pressing the **down arrow** key. A window will also appear, allowing you to add a comment.
 
 ![False positive window](../assets/v7/ui-fp_report.png){.center}
 
 !!! note "Note"
-    Note the **red icon** ![Red icon](../assets/v7/ui-report_red.png){width=20px} marks the actual faults and the **green icon** ![Green icon](../assets/v7/ui-report_green.png){width=20px}  the false positive faults.
+    Note the **red icon** ![Red icon](../assets/v7/ui-report_red.png){width=20px} marks the actual faults and the **green icon** ![Green icon](../assets/v7/ui-report_green.png){width=20px} marks the false positive faults.
 
 ### **Generating a final PDF report**
 
-Once the reporting have finished, the operator can generate a final PDF report by pressing the following button:
+Once the reporting has finished, the operator can generate a final PDF report by pressing the following button:
 
 ![Final report](../assets/v7/ui-button8.png){.center}
 

@@ -8,7 +8,7 @@ ___
 - Allumez le moniteur
 - Connectez l'alimentation à l'ordinateur et allumez-le
 - Une fois que le système a démarré, ouvrez l'application en double-cliquant sur l'icône du bureau
-- **Pour les unités EN LIGNE (ONLINE) uniquement** : une fenêtre de connexion apparaîtra, demandant les identifiants de votre compte AgnosPCB. Les identifiants seront stockés dans l'unité pour une utilisation future et il ne sera pas nécessaire de se reconnecter.
+- **Pour les unités EN LIGNE uniquement** : une fenêtre de connexion apparaîtra, demandant les identifiants de votre compte AgnosPCB. Les identifiants seront stockés dans l'unité pour une utilisation future et il ne sera pas nécessaire de se reconnecter.
 
 ![Fenêtre de connexion](../assets/v7/uui-login.png){.center}
 
@@ -21,7 +21,7 @@ ___
 
 ### **Génération d'une RÉFÉRENCE**
 
-Le logiciel AgnosPCB Inspection tool va **« comparer »** la photographie de votre circuit/panneau de **RÉFÉRENCE** (« échantillon d'or ») avec toutes les photos que vous prendrez du circuit à inspecter (photos à « ANALYSER »).
+Le logiciel AgnosPCB Inspection tool va **« comparer »** la photographie de votre circuit/panneau de **RÉFÉRENCE** (« golden sample ») avec toutes les photos que vous prendrez du circuit à inspecter (photos à « ANALYSER »).
 
 !!!warning "Important"
     Nous vous recommandons de consulter notre section [conseils](../help/Tips.md) avant de prendre votre première image.
@@ -66,7 +66,7 @@ Par défaut, la caméra effectue la mise au point automatiquement sur le centre 
 
 Pour une inspection précise, il est essentiel de faire la mise au point sur la **base du PCB**, où les composants sont montés. Évitez de faire la mise au point sur des composants hauts, car cela peut réduire la précision de l’inspection.
 
-Le PCB n’a pas besoin d’être centré lors de la mise au point manuelle. L’opérateur peut le déplacer librement et sélectionner toute zone appropriée pour obtenir une mise au point correcte, tant que la base du PCB est nettement visible.
+Le PCB n’a pas besoin d’être centré lors de la mise au point manuelle. L’opérateur peut le déplacer librement et sélectionner toute zone appropriée pour obtenir une mise au point correcte, tant que la base du PCB est nettement mise au point.
 
 Une fois la mise au point terminée, le PCB doit être repositionné au centre de la zone d’inspection avant de capturer l’image de référence.
 
@@ -128,7 +128,7 @@ Si des erreurs sont détectées, un **cadre rouge** apparaîtra autour de la fen
 
 ### **Signalement des erreurs**
 
-Une fois l'inspection terminée, l'opérateur doit surveiller les erreurs signalées, en les marquant comme **erreur réelle** ou **fausse détection positive**.
+Une fois l'inspection terminée, l'opérateur doit surveiller les erreurs signalées, en les marquant comme **erreur réelle** ou **détection de faux positif**.
 Pour ce faire, faites simplement défiler les erreurs en utilisant les **flèches gauche et droite** du clavier.
 
 Pour marquer une erreur réelle, déplacez-vous simplement vers le défaut et appuyez sur la **flèche haut** de votre clavier. Une nouvelle fenêtre apparaîtra, montrant le défaut en détail et vous permettant de le catégoriser en sélectionnant un type de défaut dans la liste.

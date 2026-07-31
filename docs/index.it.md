@@ -4,7 +4,7 @@ ___
 
 ![logo](assets/agnospcb-logo.gif)
 
-[AgnosPCB](https://agnospcb.com/) fornisce un servizio accessibile di **Ispezione Ottica Automatizzata (AOI)**, alimentato da una tecnologia avanzata di **Reti Neurali**.
+[AgnosPCB](https://agnospcb.com/) fornisce un servizio conveniente di **Ispezione Ottica Automatizzata (AOI)**, alimentato da una tecnologia avanzata di **Reti Neurali**.
 
 Questa documentazione vi guiderà attraverso tutte le sue caratteristiche e funzionalità.
 

@@ -11,7 +11,7 @@ ___
 
 ??? question "Qual è la dimensione massima di PCB che può essere ispezionata con questo sistema?"
 
-    Il nuovo **AI-4050** consente l'ispezione di PCBA (schede a circuito stampato assemblate) fino a 40 x 50 cm (16 x 19").
+    Il nuovo **AI-4050** consente l'ispezione di PCBA fino a 40 x 50 cm (16 x 19").
 
 ??? question "Qual è la differenza tra 'aggiornamenti del client' e 'aggiornamenti della rete neurale'? Con quale frequenza vengono forniti questi aggiornamenti?"
 
@@ -63,7 +63,7 @@ ___
 
 ??? question "È possibile ispezionare i componenti THT (Through-Hole Technology)?"
 
-    Il sistema AOI di AgnosPCB non è progettato specificamente per i componenti con tecnologia a foro passante (THT - Through-Hole Technology). Ciò è dovuto alle potenziali grandi differenze di prospettiva causate dall'altezza dei componenti THT, che possono portare a falsi positivi nella Rete Neurale. Inoltre, la saldatura dei componenti THT è spesso nascosta, rendendo l'ispezione difficile nella maggior parte dei casi.
+    Il sistema AOI di AgnosPCB non è progettato specificamente per i componenti THT (Through-Hole Technology). Ciò è dovuto alle potenziali grandi differenze di prospettiva causate dall'altezza dei componenti THT, che possono portare a falsi positivi nella Rete Neurale. Inoltre, la saldatura dei componenti THT è spesso nascosta, rendendo l'ispezione difficile nella maggior parte dei casi.
     
     Tuttavia, sebbene non sia ottimizzato per i componenti THT, il sistema AOI può comunque essere utilizzato per tali componenti. Può aiutare a rilevare spostamenti, polarità errata, inversione o posizionamento errato dei componenti THT.
 

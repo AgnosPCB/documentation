@@ -3,7 +3,7 @@
 ??? info "Le logiciel ne démarre pas/ne répond pas"
     Supprimez le fichier **setup.json** situé dans le dossier **APP**, puis relancez l'application.
     !!! warning "Attention"
-        Toutes les configurations, telles que le menu mosaïque, seront perdues. Les RÉFÉRENCES pourront être rechargées ultérieurement en utilisant le [bouton Charger RÉFÉRENCE](../how_to/Screen-layout.md#load-reference-as-file). Les utilisateurs **EN LIGNE** doivent se reconnecter avec leur compte **AgnosPCB** après avoir supprimé le fichier **setup.json**.
+        Toutes les configurations, telles que le menu mosaïque, seront perdues. Les RÉFÉRENCES pourront être rechargées ultérieurement en utilisant le [bouton Charger RÉFÉRENCE](../how_to/Screen-layout.md#charger-reference-en-tant-que-fichier). Les utilisateurs **EN LIGNE** doivent se reconnecter avec leur compte **AgnosPCB** après avoir supprimé le fichier **setup.json**.
 
 ??? info "En essayant de lancer l'application, un message apparaît indiquant que le fichier n'a pas les permissions d'exécution."
     Ouvrez une fenêtre de terminal (vous pouvez utiliser le raccourci clavier **CTRL + ALT + T**) et tapez ce qui suit :
@@ -61,7 +61,7 @@
 
             ![Est exécutable](../assets/maintance/executable.png)
     
-    === "Version HORS LIGNE (OFFLINE)"
+    === "Version HORS LIGNE"
         1. Créez un fichier texte avec le contenu suivant :
             ~~~
             [Desktop Entry]
@@ -116,7 +116,7 @@
 
             ![Étape 4](../assets/maintance/keyboard-online-4.png)
 
-    === "Version HORS LIGNE (OFFLINE)"
+    === "Version HORS LIGNE"
         1. Ouvrez le menu des paramètres dans le coin supérieur droit.
 
             ![Étape 1](../assets/maintance/keyboard-1.png)

@@ -1,6 +1,6 @@
 # **UUI a REFERENCIA**
 
-Al inspeccionar una **PCB** , si descubre que una imagen **UUI** es más adecuada como referencia que la actual o contiene una variante de componente que hace que el software la marque como error, tiene la opción de convertirla en una imagen de referencia con un **solo clic de botón**.
+Al inspeccionar una **PCB**, si descubre que una imagen **UUI** es más adecuada como referencia que la actual o contiene una variante de componente que hace que el software la marque como error, tiene la opción de convertirla en una imagen de referencia con un **solo clic de botón**.
 
 ![Botón UUI a REFERENCIA](../assets/v7/ui-button10.png){.center}
 
