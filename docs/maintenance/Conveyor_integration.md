@@ -1,4 +1,4 @@
-# **Conveyor integration (INLINE mode)**
+# Conveyor integration (INLINE mode)
 
 This guide explains how to integrate the **AgnosPCB AI 4050** into an automated
 production line, so the AOI receives boards from a conveyor, inspects them without
@@ -23,7 +23,7 @@ Check that you have the following:
 
 - An **AI 4050** unit already unboxed, assembled and working in standalone mode.
   If you have not reached that point yet, complete the
-  [unboxing guide](Unboxing.md) and the [connection guide](Connection_guide.md) first.
+  [unboxing guide](../getting_started/Unboxing.md) and the [connection guide](../getting_started/Connection_guide.md) first.
 - A **REFERENCE** image already captured and validated for every product the line
   will run. INLINE mode inspects against existing REFERENCES — it cannot create them.
 - The **MODBUS module** supplied by AgnosPCB for your unit.
@@ -48,7 +48,7 @@ Check that you have the following:
      - Whether the relay contacts are used as NO or NC, and their rated load
      - PLC-side wiring detail -->
 
-![Modbus wiring](../assets/v7/conveyor/modbus_wiring.png)
+![Modbus wiring](../assets/v7/conveyor/modbus_wiring.png){.center}
 
 The module provides **8 relay outputs** and **8 digital inputs**, of which the integration uses one input and four outputs. It connects to a **USB port of the AgnosPCB processing unit** through the isolated USB to RS232/485 converter, as shown in the diagram above.
 
@@ -177,7 +177,7 @@ first tests with the conveyor in manual/jog mode.
 6. **A full cycle runs end to end**, with a known-good board and with a known-bad board,
    and the line controller receives the correct PASS and FAIL result each time.
 7. **Reports are being written** to PCB_OUT and are reachable from your MES.
-8. **Failure behaviour is correct.** Stop the AOI software mid-cycle and confirm the
+8. **Failure behavior is correct.** Stop the AOI software mid-cycle and confirm the
    line controller detects the loss and stops feeding boards rather than passing them
    through uninspected.
 

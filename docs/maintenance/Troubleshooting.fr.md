@@ -1,4 +1,4 @@
-# **Dépannage**
+# Dépannage
 
 ??? info "Le logiciel ne démarre pas/ne répond pas"
     Supprimez le fichier **setup.json** situé dans le dossier **APP**, puis relancez l'application.

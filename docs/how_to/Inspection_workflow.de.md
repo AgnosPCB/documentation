@@ -1,8 +1,6 @@
-# **Inspektions-Workflow**
-___
+# Inspektions-Workflow
 
-### **Starten der Software**
-___
+### Starten der Software
 
 - Schließen Sie das Netzteil an die Inspektionsplattform an der Rückseite an
 - Schalten Sie den Monitor ein
@@ -12,18 +10,16 @@ ___
 
 ![Anmeldefenster](../assets/v7/uui-login.png){.center}
 
-## **Inspektionsprozedur**
-
-___
+## Inspektionsprozedur
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
-### **Generieren einer REFERENZ**
+### Generieren einer REFERENZ
 
 Die AgnosPCB Inspektions-Software wird das Foto Ihrer **REFERENZ**-Leiterplatte/Ihres Panels ("golden sample") mit allen Fotos **"vergleichen"**, die Sie von der zu inspizierenden Schaltung aufnehmen (Fotos zum "ANALYSEN").
 
-!!!warning "Wichtig"
+!!! warning "Wichtig"
     Wir empfehlen Ihnen, unsere [Tipps](../help/Tips.md)-Sektion zu besuchen, bevor Sie Ihr erstes Bild aufnehmen.
 
 Um mit der Aufnahme der REFERENZ fortzufahren, klicken Sie im Hauptmenü auf das Referenzsymbol:
@@ -32,11 +28,11 @@ Um mit der Aufnahme der REFERENZ fortzufahren, klicken Sie im Hauptmenü auf das
 
 Ein neues Fenster wird mit mehreren Werkzeugen geöffnet:
 
-![REF-Fenster](../assets/v7/uui-ref_livepreview.png)
+![REF-Fenster](../assets/v7/uui-ref_livepreview.png){.center}
 
 In diesem Fenster müssen wir die Bilder einstellen, die zur Abdeckung der gesamten PCBA erforderlich sind.
 
-![REF-Abmessungen](../assets/v7/uui-ref_livepreview-dimensions.png)
+![REF-Abmessungen](../assets/v7/uui-ref_livepreview-dimensions.png){.center}
 
 ---
 
@@ -44,15 +40,39 @@ In diesem Fenster müssen wir die Bilder einstellen, die zur Abdeckung der gesam
 
 Bei größeren PCBAs reicht das Sichtfeld der Kamera möglicherweise nicht aus, um die gesamte Leiterplatte in einer einzigen Aufnahme zu erfassen. In solchen Fällen nimmt das System mehrere Bilder auf und fügt sie mithilfe von KI automatisch zu einem einzigen, für die Inspektion geeigneten Bild zusammen.
 
-![Stitching-Prozess](../assets/stitching.png){ width=600 .center }
+![Stitching-Prozess](../assets/stitching.png){width=600 .center}
 
 Wenn Sie sich nicht sicher sind, wie viele Bilder benötigt werden, platzieren Sie das PCBA in der Mitte des Inspektionsbereichs und drücken Sie die Taste **AUTO**. Das System scannt die Leiterplatte und stellt automatisch die optimalen Parameter ein.
 
-![AUTO-Referenztaste](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+![AUTO-Referenztaste](../assets/v7/uui-ref_livepreview-auto.png){.center}
 
 Sie können die Kamera auch in jeden Quadranten des PCBAs bewegen, indem Sie im Miniaturbild auf den gewünschten Bereich klicken.
 
-![Quadrantenübersicht](../assets/v7/uui-ref_livepreview-map.png){ .center }
+![Quadrantenübersicht](../assets/v7/uui-ref_livepreview-map.png){.center}
+
+---
+
+#### TOP/BOTTOM-Inspektion
+
+Die Software kann beide Seiten einer PCBA inspizieren. Diese Funktion muss während der Aufnahme der REFERENZ im Live-Vorschaufenster aktiviert werden.
+
+![TOP/BOTTOM aktiviert](../assets/v7/references/tb-enable.png){width=600 .center}
+
+Sobald die richtige Sequenz eingestellt und die PCBA korrekt platziert ist, drücken Sie die Schaltfläche **CAPTURE TOP**, um die Oberseite der PCBA aufzunehmen.
+
+![TOP-Aufnahme](../assets/v7/references/top-capture.png){width=600 .center}
+
+Nach Abschluss des Vorgangs erscheint das Mosaikfenster und die REFERENZ kann in einem der Speicherplätze abgelegt werden. Anschließend können Sie fortfahren, indem Sie die Platine umdrehen und die Unterseite aufnehmen.
+
+![BOTTOM-Aufnahme](../assets/v7/references/bt-capture.png){width=600 .center}
+
+Verwenden Sie die Schaltfläche im Hauptfenster, um zwischen dem **TOP**- und dem **BOTTOM**-Bild zu wechseln.
+
+![Umschalt-Schaltfläche](../assets/v7/references/switch-button.png){width=400 .center}
+
+![TOP-Bild](../assets/v7/references/top-image.png){.center}
+
+![BOTTOM-Bild](../assets/v7/references/bt-image.png){.center}
 
 ---
 
@@ -60,7 +80,7 @@ Sie können die Kamera auch in jeden Quadranten des PCBAs bewegen, indem Sie im 
 
 Das System ermöglicht eine manuelle Fokussierung des PCBs vor dem Start des Aufnahmeprozesses. Drücken Sie die Taste **FOCUS**, um die Optik einzustellen und zu überprüfen, ob der ausgewählte Bereich korrekt fokussiert ist.
 
-![FOCUS-Taste](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+![FOCUS-Taste](../assets/v7/uui-ref_livepreview-focus.png){.center}
 
 Standardmäßig fokussiert die Kamera automatisch auf die Mitte des PCBs. Dies ist jedoch aufgrund hoher Bauteile nicht immer der optimale Bereich.
 
@@ -75,9 +95,9 @@ Nach Abschluss der Fokussierung muss das PCB wieder in die Mitte des Inspektions
 
 Der untere Bereich des Fensters ermöglicht das Ein- und Ausblenden des Rasters in der Live-Ansicht sowie die Anpassung der Belichtung.
 
-![Untere Referenzleiste](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
+![Untere Referenzleiste](../assets/v7/uui-ref_livepreview-exposure.png){.center}
 
-![Fokussierungsauswahl](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
+![Fokussierungsauswahl](../assets/v7/uui-ref_livepreview-select_focus.png){.center}
 
 ---
 
@@ -94,11 +114,11 @@ Nach der Aufnahme der PCBA wird das Mosaik-Fenster geöffnet, das es ermöglicht
 
 ![Aufnahmeprozess](../assets/v7/ui-mosaic_after_ref.png){.center}
 
-Sobald der Aufnahmeprozess beendet ist, wird das REFERENZ-Bild im Hauptfenster angezeigt und ermöglicht es Ihnen, [Ausschlussmasken](Set_exclusion_area.md) festzulegen oder [einen Barcode-Bereich](Barcode_reader.md) zum Lesen zu zeichnen.
+Sobald der Aufnahmeprozess beendet ist, wird das REFERENZ-Bild im Hauptfenster angezeigt und ermöglicht es Ihnen, [Ausschlussmasken](Set_exclusion_area.md) festzulegen oder [einen Barcode-Bereich](../features/Barcode_reader.md) zum Lesen zu zeichnen.
 
 ![Referenzbild](../assets/v7/ui-reference.png){.center}
 
-### **Aufnehmen einer UUI**
+### Aufnehmen einer UUI
 
 Nach dem Generieren oder Hochladen eines vorherigen REFERENZ-Bildes können wir mit der Aufnahme des **UUI** (Unit Under Inspection)-Bildes fortfahren, indem wir auf die Schaltfläche drücken.
 
@@ -126,7 +146,7 @@ Sobald der Aufnahmeprozess beendet ist, wird das Endergebnis zurückgegeben, das
 
 Wenn Fehler erkannt werden, erscheint ein **roter Rahmen** um das Hauptfenster. Ein **grüner Rahmen**, wenn keine Fehler vorliegen.
 
-### **Melden von Fehlern**
+### Melden von Fehlern
 
 Sobald die Inspektion abgeschlossen ist, muss der Bediener die markierten Fehler überwachen und sie entweder als **tatsächlichen Fehler** oder als **Falsch-Positiv-Erkennung** kennzeichnen.
 Dazu blättern Sie einfach mit den **linken und rechten Pfeiltasten** auf der Tastatur durch die Fehler.
@@ -146,7 +166,7 @@ Wenn die Software einen Bereich markiert, der kein tatsächlicher Fehler ist, ka
 !!! note "Hinweis"
     Beachten Sie, dass das **rote Symbol** ![Rotes Symbol](../assets/v7/ui-report_red.png){width=20px} die tatsächlichen Fehler und das **grüne Symbol** ![Grünes Symbol](../assets/v7/ui-report_green.png){width=20px} die Falsch-Positiv-Fehler kennzeichnet.
 
-### **Generieren eines endgültigen PDF-Berichts**
+### Generieren eines endgültigen PDF-Berichts
 
 Nach Abschluss der Meldung kann der Bediener einen endgültigen PDF-Bericht generieren, indem er auf die folgende Schaltfläche drückt:
 

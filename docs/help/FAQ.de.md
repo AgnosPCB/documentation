@@ -1,5 +1,6 @@
-## **Allgemeine Fragen**
-___
+# Häufig gestellte Fragen
+
+## Allgemeine Fragen
 
 ??? question "Gibt es Miet-/Testpläne für die ONLINE- und OFFLINE-Inspektionsplattformen?"
 

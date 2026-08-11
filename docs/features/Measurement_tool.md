@@ -3,7 +3,6 @@
 The AgnosPCB AOI system includes a Measurement Tool that allows operators to verify component dimensions, measure distances between components and calculate areas directly within the interface, without using external tools.
 
 ## Video 
-___
 
 For a complete walkthrough of this feature, watch the following video:
 
@@ -18,7 +17,7 @@ ___
 
 Click the measure tool button in the top toolbar. Then, click on the area of interest to open a zoomed view of the selected region.
 
-![Measurement tool button](../assets/v7/ui-button13.png){width=400, .center}
+![Measurement tool button](../assets/v7/ui-button13.png){width=400 .center}
 
 ## 3. Perform the measurement
 
@@ -27,8 +26,7 @@ Select the measurement mode:
 - **Distance (mm/px)** to measure the distance between two points.
 - **Area (mm²/px²)** to measure a surface.
 
-![Measurement tool modes](../assets/v7/measurement/1-select%20tool.png){width=400, .center}
-
+![Measurement tool modes](../assets/v7/measurement/1-select%20tool.png){width=400 .center}
 
 
 ## Measure
@@ -36,6 +34,6 @@ Select the measurement mode:
 Then, define the measurement by selecting the desired points or area on the image.
 The system will display the measurement directly on the screen, allowing quick verification of sizes and areas with precision.
 
-![Measurement tool test](../assets/v7/measurement/size.png){width=500, .center}
+![Measurement tool test](../assets/v7/measurement/size.png){width=500 .center}
 
-![Measurement tool test](../assets/v7/measurement/area.png){width=500, .center}
+![Measurement tool test](../assets/v7/measurement/area.png){width=500 .center}

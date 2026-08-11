@@ -1,8 +1,6 @@
-# **Flusso di lavoro dell'ispezione**
-___
+# Flusso di lavoro dell'ispezione
 
-### **Avvio del software**
-___
+### Avvio del software
 
 - Collegare l'alimentazione alla piattaforma di ispezione sul pannello posteriore
 - Accendere il monitor
@@ -12,18 +10,16 @@ ___
 
 ![Finestra di login](../assets/v7/uui-login.png){.center}
 
-## **Procedura di ispezione**
-
-___
+## Procedura di ispezione
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
-### **Generazione di un RIFERIMENTO**
+### Generazione di un RIFERIMENTO
 
 Il software AgnosPCB Inspection tool **"confronterà"** la fotografia del circuito/pannello di **RIFERIMENTO** ("golden sample") con tutte le foto che scatterai del circuito da ispezionare (foto da "ANALIZZARE").
 
-!!!warning "Importante"
+!!! warning "Importante"
     Si consiglia di visitare la nostra sezione [suggerimenti](../help/Tips.md) prima di scattare la prima immagine.
 
 Per procedere con l'acquisizione del RIFERIMENTO, fare clic sull'icona del riferimento nel menu principale:
@@ -32,26 +28,50 @@ Per procedere con l'acquisizione del RIFERIMENTO, fare clic sull'icona del rifer
 
 Apparirà una nuova finestra con diversi strumenti:
 
-![Finestra REF](../assets/v7/uui-ref_livepreview.png)
+![Finestra REF](../assets/v7/uui-ref_livepreview.png){.center}
 
 In questa finestra dobbiamo impostare le immagini necessarie per coprire l'intera PCBA.
 
-![Dimensioni REF](../assets/v7/uui-ref_livepreview-dimensions.png)
+![Dimensioni REF](../assets/v7/uui-ref_livepreview-dimensions.png){.center}
 
 ---
 #### Acquisizione delle dimensioni del PCB
 
 Per PCBAs di grandi dimensioni, il campo visivo della telecamera potrebbe non essere sufficiente per catturare l'intera scheda in una singola immagine. In questi casi, il sistema acquisisce più immagini e le unisce automaticamente tramite IA in un'unica immagine pronta per l'ispezione.
 
-![Processo di stitching](../assets/stitching.png){ width=600 .center }
+![Processo di stitching](../assets/stitching.png){width=600 .center}
 
 Se non sei sicuro di quante immagini siano necessarie, posiziona il PCBA al centro dell'area di ispezione e premi il pulsante **AUTO**. Il sistema eseguirà la scansione della scheda e configurerà automaticamente i parametri ottimali.
 
-![Pulsante AUTO di riferimento](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+![Pulsante AUTO di riferimento](../assets/v7/uui-ref_livepreview-auto.png){.center}
 
 Puoi anche spostare la telecamera in qualsiasi quadrante del PCBA facendo clic sull'area desiderata nella vista in miniatura.
 
-![Mappa dei quadranti](../assets/v7/uui-ref_livepreview-map.png){ .center }
+![Mappa dei quadranti](../assets/v7/uui-ref_livepreview-map.png){.center}
+
+---
+
+#### Ispezione TOP/BOTTOM
+
+Il software può ispezionare entrambi i lati di una PCBA. Questa funzione deve essere abilitata durante l'acquisizione del RIFERIMENTO, dalla finestra di anteprima dal vivo.
+
+![TOP/BOTTOM abilitato](../assets/v7/references/tb-enable.png){width=600 .center}
+
+Una volta impostata la sequenza corretta e posizionata correttamente la PCBA, premete il pulsante **CAPTURE TOP** per acquisire il lato superiore della PCBA.
+
+![Acquisizione TOP](../assets/v7/references/top-capture.png){width=600 .center}
+
+Al termine del processo comparirà la finestra a mosaico e il RIFERIMENTO potrà essere salvato in uno degli slot. Potete quindi continuare girando il pannello e acquisendo il lato inferiore.
+
+![Acquisizione BOTTOM](../assets/v7/references/bt-capture.png){width=600 .center}
+
+Utilizzate il pulsante nella finestra principale per passare tra le immagini **TOP** e **BOTTOM**.
+
+![Pulsante di commutazione](../assets/v7/references/switch-button.png){width=400 .center}
+
+![Immagine TOP](../assets/v7/references/top-image.png){.center}
+
+![Immagine BOTTOM](../assets/v7/references/bt-image.png){.center}
 
 ---
 
@@ -59,7 +79,7 @@ Puoi anche spostare la telecamera in qualsiasi quadrante del PCBA facendo clic s
 
 Il sistema consente la messa a fuoco manuale del PCB prima di avviare il processo di acquisizione. Premi il pulsante **FOCUS** per regolare l'ottica e verificare che l'area selezionata sia correttamente a fuoco.
 
-![Pulsante FOCUS](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+![Pulsante FOCUS](../assets/v7/uui-ref_livepreview-focus.png){.center}
 
 Per impostazione predefinita, la telecamera mette a fuoco automaticamente il centro del PCB. Tuttavia, questa non è sempre l'area ottimale a causa della presenza di componenti alti.
 
@@ -74,9 +94,9 @@ Una volta completato il processo di messa a fuoco, il PCB deve essere riposizion
 
 La parte inferiore della finestra consente di attivare o disattivare la griglia nella vista live e di regolare l'esposizione.
 
-![Barra inferiore di riferimento](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
+![Barra inferiore di riferimento](../assets/v7/uui-ref_livepreview-exposure.png){.center}
 
-![Selezione della messa a fuoco](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
+![Selezione della messa a fuoco](../assets/v7/uui-ref_livepreview-select_focus.png){.center}
 
 ---
 
@@ -93,11 +113,11 @@ Dopo aver catturato la PCBA, apparirà la finestra del mosaico che consente di a
 
 ![Processo di acquisizione](../assets/v7/ui-mosaic_after_ref.png){.center}
 
-Una volta terminato il processo di acquisizione, l'immagine di RIFERIMENTO verrà visualizzata nella finestra principale e ti consentirà di impostare [maschere di esclusione](Set_exclusion_area.md) o [disegnare un'area codice a barre](Barcode_reader.md) per la lettura.
+Una volta terminato il processo di acquisizione, l'immagine di RIFERIMENTO verrà visualizzata nella finestra principale e ti consentirà di impostare [maschere di esclusione](Set_exclusion_area.md) o [disegnare un'area codice a barre](../features/Barcode_reader.md) per la lettura.
 
 ![Immagine di riferimento](../assets/v7/ui-reference.png){.center}
 
-### **Acquisizione di una UUI**
+### Acquisizione di una UUI
 
 Dopo aver generato o caricato una precedente immagine di RIFERIMENTO, possiamo procedere con l'acquisizione dell'immagine **UUI** (Unità Sotto Ispezione) premendo il pulsante.
 
@@ -125,7 +145,7 @@ Una volta terminato il processo di acquisizione, verrà restituito il risultato 
 
 Se vengono rilevati errori, apparirà una **cornice rossa** attorno alla finestra principale. **Cornice verde** se non ci sono errori.
 
-### **Segnalazione degli errori**
+### Segnalazione degli errori
 
 Una volta completata l'ispezione, l'operatore deve monitorare gli errori segnalati, contrassegnandoli come **errore effettivo** o **rilevamento falso positivo**.
 Per fare ciò, è sufficiente scorrere gli errori utilizzando le **frecce sinistra e destra** sulla tastiera.
@@ -145,7 +165,7 @@ Quando il software segnala un'area che non è un errore effettivo, l'operatore p
 !!! note "Nota"
     Si noti che l'**icona rossa** ![Icona rossa](../assets/v7/ui-report_red.png){width=20px} contrassegna i difetti effettivi e l'**icona verde** ![Icona verde](../assets/v7/ui-report_green.png){width=20px} i difetti falsi positivi.
 
-### **Generazione di un report PDF finale**
+### Generazione di un report PDF finale
 
 Una volta terminata la segnalazione, l'operatore può generare un report PDF finale premendo il seguente pulsante:
 

@@ -1,8 +1,6 @@
-# **Inspection workflow**
-___
+# Inspection workflow
 
-### **Launching the software**
-___
+### Launching the software
 
 - Connect the power supply to the inspection platform on the rear panel
 - Turn on the monitor
@@ -12,18 +10,16 @@ ___
 
 ![Login window](../assets/v7/uui-login.png){.center}
 
-## **Inspection procedure**
-
-___
+## Inspection procedure
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
-### **Generating a REFERENCE**
+### Generating a REFERENCE
 
 The AgnosPCB Inspection tool software will **“compare”** the photograph of your **REFERENCE** circuit or panel (“golden sample”) with all the [UUI](terminology.md#uui).
 
-!!!warning "Important"
+!!! warning "Important"
     We recommend you to visit our [tips](../help/Tips.md) section before taking your first image.
 
 To proceed with the REFERENCE taken, click in the reference icon in the main menu:
@@ -32,7 +28,7 @@ To proceed with the REFERENCE taken, click in the reference icon in the main men
 
 A new window will pop up with multiple tools:
 
-![REF window](../assets/v7/references/preview.png){ width=600 .center }
+![REF window](../assets/v7/references/preview.png){width=600 .center}
 
 ---
 
@@ -40,42 +36,41 @@ A new window will pop up with multiple tools:
 
 For larger PCBAs, the camera field of view may not be sufficient to capture the entire board in a single image. In these cases, the system captures multiple images and automatically stitches them together using AI into a single image ready for inspection.In this window we have to set the proper capturing sequence needed to cover all the PCBA or panel.
 
-![REF dimensions](../assets/v7/references/preview-sequences.png){ width=600 .center }
+![REF dimensions](../assets/v7/references/preview-sequences.png){width=600 .center}
 
-![Stitching process](../assets/stitching.png){ width=600 .center }
+![Stitching process](../assets/stitching.png){width=600 .center}
 
 If you are unsure how many images are required, place the PCBA in the center of the inspection area and press the **AUTO** button. The system will scan the board and automatically set the optimal configuration for the current PCBA or panel.
 
-![REF AUTO button](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+![REF AUTO button](../assets/v7/uui-ref_livepreview-auto.png){.center}
 
 You can also move the camera to any quadrant of the PCBA by clicking on the desired area in the miniature view.
 
-![Quadrants map](../assets/v7/uui-ref_livepreview-map.png){ .center }
+![Quadrants map](../assets/v7/uui-ref_livepreview-map.png){.center}
 
 ---
 
 #### TOP/BOTTOM inspection
 
-The inspection tool software integrate a functionallity to analyze both sides of the PCBAs to be inspected.
-This feature should be enabled during the REFERENCE capturing from the live preview window.
+The software can inspect both sides of a PCBA. This feature has to be enabled while capturing the REFERENCE, from the live preview window.
 
-![Top/bottom enabled](../assets/v7/references/tb-enable.png){ width=600 .center }
+![Top/bottom enabled](../assets/v7/references/tb-enable.png){width=600 .center}
 
-Once the correct sequence has been set and the PCBA is correctly placed, press the **CAPTURE TOP** button to start the capture the top side of the PCBA.
+Once the correct sequence has been set and the PCBA is correctly placed, press the **CAPTURE TOP** button to capture the top side of the PCBA.
 
-![Capturing TOP](../assets/v7/references/top-capture.png){ width=600 .center }
+![Capturing TOP](../assets/v7/references/top-capture.png){width=600 .center}
 
-Once the process has finished, the mosaic window will pop up and the REFERENCE can be store in one of the slots. After, the procedure can continue by flipping the panel and capturing the bottom side.
+Once the process has finished, the mosaic window pops up and the REFERENCE can be stored in one of the slots. You can then continue by flipping the panel and capturing the bottom side.
 
-![Capturing BOTTOM](../assets/v7/references/bt-capture.png){ width=600 .center }
+![Capturing BOTTOM](../assets/v7/references/bt-capture.png){width=600 .center}
 
-Use the button in the main window to switch bettwen **TOP** and **BOTTOM** images.
+Use the button in the main window to switch between the **TOP** and **BOTTOM** images.
 
-![Switch button](../assets/v7/references/switch-button.png){ width=400 .center }
+![Switch button](../assets/v7/references/switch-button.png){width=400 .center}
 
-![TOP image](../assets/v7/references/top-image.png){ .center }
+![TOP image](../assets/v7/references/top-image.png){.center}
 
-![BOTTOM image](../assets/v7/references/bt-image.png){ .center }
+![BOTTOM image](../assets/v7/references/bt-image.png){.center}
 
 ---
 
@@ -83,7 +78,7 @@ Use the button in the main window to switch bettwen **TOP** and **BOTTOM** image
 
 The system allows manual focusing of the PCB before starting the capture process. Press the **FOCUS** button to adjust the optics and verify that the selected area is correctly focused.
 
-![FOCUS button](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+![FOCUS button](../assets/v7/uui-ref_livepreview-focus.png){.center}
 
 By default, the camera focuses automatically on the center of the PCB. However, this may not always be the optimal area due to the presence of tall components.
 
@@ -98,9 +93,9 @@ After completing the focusing process, the PCB must be repositioned at the cente
 
 The lower section of the window allows enabling or disabling the grid in the live preview and adjusting the exposure.
 
-![REF lower bar](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
+![REF lower bar](../assets/v7/uui-ref_livepreview-exposure.png){.center}
 
-![Focus selection](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
+![Focus selection](../assets/v7/uui-ref_livepreview-select_focus.png){.center}
 
 ---
 
@@ -117,11 +112,11 @@ After capturing the PCBA, the mosaic window will pop up allowing you to store th
 
 ![Capturing process](../assets/v7/ui-mosaic_after_ref.png){.center}
 
-Once the capture process is finished, the REFERENCE image will be displayed in the main window and will allow you to set [exclusion mask](Set_exclusion_area.md) or [draw a barcode](Barcode_reader.md) area for reading.
+Once the capture process is finished, the REFERENCE image will be displayed in the main window and will allow you to set [exclusion mask](Set_exclusion_area.md) or [draw a barcode](../features/Barcode_reader.md) area for reading.
 
 ![Reference image](../assets/v7/ui-reference.png){.center}
 
-### **Capturing an UUI**
+### Capturing an UUI
 
 After generating or uploading a previous REFERENCE image, we can proceed with the capture of the **UUI** (Unit Under Inspection) image by pressing the button.
 
@@ -149,7 +144,7 @@ Once the capturing process has ended, the final result will be returned showing 
 
 If errors are detected, a **red frame** will appear around the main window. A **green frame** will appear if there are no errors.
 
-### **Reporting errors**
+### Reporting errors
 
 Once the inspection is complete, the operator must monitor the flagged errors, marking them as an **actual error** or a **false positive detection**.
 To do this, simply scroll through the errors using the **left and right arrows** on the keyboard.
@@ -169,7 +164,7 @@ When the software marks an area that is not an actual error, the operator can fl
 !!! note "Note"
     Note the **red icon** ![Red icon](../assets/v7/ui-report_red.png){width=20px} marks the actual faults and the **green icon** ![Green icon](../assets/v7/ui-report_green.png){width=20px} marks the false positive faults.
 
-### **Generating a final PDF report**
+### Generating a final PDF report
 
 Once the reporting has finished, the operator can generate a final PDF report by pressing the following button:
 

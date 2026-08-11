@@ -1,5 +1,6 @@
-## **Preguntas generales**
-___
+# Preguntas frecuentes
+
+## Preguntas generales
 
 ??? question "¿Existen planes de alquiler o prueba para las plataformas de inspección EN LÍNEA y SIN CONEXIÓN (OFFLINE)?"
 

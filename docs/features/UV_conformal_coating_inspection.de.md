@@ -1,4 +1,5 @@
 # UV-Schutzlackinspektion
+
 In dieser Anleitung lernen wir, wie die Inspektion der konformen Beschichtung mit **AgnosPCB AOI** durchgeführt wird.
 
 Diese Funktion ermöglicht es den Bedienern, die konforme Beschichtung auf PCBAs visuell mithilfe von UV-Beleuchtung zu überprüfen.
@@ -10,10 +11,9 @@ Diese Funktion ermöglicht es den Bedienern, die konforme Beschichtung auf PCBAs
 !!! warning "Achtung"
     Die Inspektion der konformen Beschichtung verwendet UV-Beleuchtung, daher **empfehlen wir, die im Kit enthaltene Schutzbrille zu tragen**.
 
-    ![UV-Warnung](../assets/v7/UV_inspection/warning_icon.png){ width=200px .center }
+    ![UV-Warnung](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
 
 ## Video 
-___
 
 Für eine vollständige Einführung in diese Funktion sehen Sie sich das folgende Video an:
 
@@ -28,36 +28,36 @@ Um ein **REFERENZ**-Bild zu erstellen, folgen Sie den Schritten in der [folgende
 
 Verwenden Sie die UUI-Aufnahmetaste, um das [Live-Ansichtsfenster](../how_to/Inspection_workflow.md#aufnehmen-einer-uui) des aktuellen PCBAs zu öffnen.
 
-![Live-Ansichtsfenster](../assets/UUI photo.PNG){ width=100px .center }
+![Live-Ansichtsfenster](../assets/UUI-photo.PNG){width=100px .center}
 
 ## 3. UV-Inspektion aktivieren
 
 Aktivieren Sie im Live-Ansichtsfenster die **UV-Inspektionsoption** am unteren Rand der Benutzeroberfläche.
 
-![UV-Vorschau](../assets/v7/UV_inspection/UV_buttom.png){ .center }
+![UV-Vorschau](../assets/v7/UV_inspection/UV_buttom.png){.center}
 
 Nach der Aktivierung wird eine Simulation des PCBs unter UV-Beleuchtung angezeigt.
 
-![UV-Simulation](../assets/v7/UV_inspection/UV_active.png){ .center }
+![UV-Simulation](../assets/v7/UV_inspection/UV_active.png){.center}
 
 !!! warning "Achtung"
     Ab diesem Zeitpunkt ist das Tragen der im Kit enthaltenen Schutzbrille verpflichtend.
 
-    ![UV-Warnung](../assets/v7/UV_inspection/warning_icon.png){ width=100px .center }
+    ![UV-Warnung](../assets/v7/UV_inspection/warning_icon.png){width=100px .center}
 
 Platzieren Sie anschließend das UUI in der Mitte des Inspektionsbereichs und drücken Sie die Schaltfläche **Inspektion starten**, um den Inspektionsprozess zu beginnen.
 
-![Schaltfläche Inspektion starten](../assets/v7/UV_inspection/start-inspection-button.png){ width=250px .center }
+![Schaltfläche Inspektion starten](../assets/v7/UV_inspection/start-inspection-button.png){width=250px .center}
 
 ## 4. Beschichtung prüfen
 
 Beobachten Sie das PCB unter UV-Beleuchtung, um die korrekte Anwendung und Abdeckung der konformen Beschichtung zu überprüfen.
 
-![UV-Inspektion](../assets/v7/UV_inspection/UV_inspection.png){ .center }
+![UV-Inspektion](../assets/v7/UV_inspection/UV_inspection.png){.center}
 
 !!! note "Hinweis"
     Diese Inspektion wird manuell durch den Bediener durchgeführt. Es findet keine KI-basierte Erkennung statt, daher muss der Bediener visuell mögliche Defekte oder fehlende Beschichtung erkennen.
 
 Das aufgenommene UV-Bild wird in den finalen Inspektionsbericht zur Dokumentation und Rückverfolgbarkeit aufgenommen.
 
-![UV-Inspektionsbericht](../assets/v7/UV_inspection/UV_report.png){width=500px, .center}
+![UV-Inspektionsbericht](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

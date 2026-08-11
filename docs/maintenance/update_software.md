@@ -1,5 +1,4 @@
-# **Update your AOI computer**
-
+# Update your AOI computer
 
 **Step 1**
 
@@ -19,4 +18,4 @@ Insert the USB drive containing the extracted files into an available USB port.
 
 A terminal window will automatically open, and the application update process will begin. Once the update process is completed, remove the USB drive.
 
-![Terminal log after update](../assets/maintance/terminal_update.png)
+![Terminal log after update](../assets/maintance/terminal_update.png){.center}

@@ -1,5 +1,6 @@
-## **Domande generali**
-___
+# Domande frequenti
+
+## Domande generali
 
 ??? question "Esistono piani di noleggio o prova per le piattaforme di ispezione ONLINE e OFFLINE?"
 

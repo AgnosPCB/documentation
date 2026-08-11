@@ -5,7 +5,7 @@ hide:
 
 <div class="agnos-hero" markdown>
 
-![AgnosPCB](assets/agnospcb-logo.gif)
+![AgnosPCB](assets/agnospcb-logo.gif){.center}
 
 # Documentazione AgnosPCB
 
@@ -16,8 +16,8 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 </p>
 
 <div class="agnos-hero-actions" markdown>
-[Come iniziare :octicons-arrow-right-24:](getting_started/Package_content.md){ .md-button .md-button--primary }
-[Come usarlo](how_to/Screen-layout.md){ .md-button }
+[Come iniziare :octicons-arrow-right-24:](getting_started/Package_content.md){.md-button .md-button--primary}
+[Come usarlo](how_to/Screen-layout.md){.md-button}
 </div>
 
 </div>
@@ -54,7 +54,7 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 
 <div class="grid cards" markdown>
 
--   :material-package-variant:{ .lg .middle } **Per iniziare**
+-   :material-package-variant:{.lg .middle} **Per iniziare**
 
     ---
 
@@ -67,7 +67,7 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 
     [:octicons-arrow-right-24: Iniziate qui](getting_started/Package_content.md)
 
--   :material-monitor-dashboard:{ .lg .middle } **Come usare il software**
+-   :material-monitor-dashboard:{.lg .middle} **Come usare il software**
 
     ---
 
@@ -81,7 +81,7 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 
     [:octicons-arrow-right-24: Imparate il software](how_to/Screen-layout.md)
 
--   :material-wrench-outline:{ .lg .middle } **Supporto e manutenzione**
+-   :material-wrench-outline:{.lg .middle} **Supporto e manutenzione**
 
     ---
 
@@ -95,7 +95,7 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 
     [:octicons-arrow-right-24: Ottenete supporto](maintenance/Troubleshooting.md)
 
--   :material-lightbulb-on-outline:{ .lg .middle } **Informazioni aggiuntive**
+-   :material-lightbulb-on-outline:{.lg .middle} **Informazioni aggiuntive**
 
     ---
 
@@ -131,55 +131,55 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 
 <div class="grid cards agnos-features" markdown>
 
--   :material-barcode-scan:{ .lg .middle } **[Lettore di codici a barre](features/Barcode_reader.md)**
+-   :material-barcode-scan:{.lg .middle} **[Lettore di codici a barre](features/Barcode_reader.md)**
 
     ---
 
     Caricate un RIFERIMENTO automaticamente scansionando il codice a barre della scheda.
 
--   :material-select-off:{ .lg .middle } **[Area di esclusione](how_to/Set_exclusion_area.md)**
+-   :material-select-off:{.lg .middle} **[Area di esclusione](how_to/Set_exclusion_area.md)**
 
     ---
 
     Ignorate le zone che cambiano legittimamente da una scheda all'altra.
 
--   :material-tune-vertical:{ .lg .middle } **[Sensibilità](how_to/Set_sensitivity.md)**
+-   :material-tune-vertical:{.lg .middle} **[Sensibilità](how_to/Set_sensitivity.md)**
 
     ---
 
     Bilanciate il rilevamento dei difetti e i falsi positivi.
 
--   :material-file-replace-outline:{ .lg .middle } **[UUI a RIFERIMENTO](how_to/UUI_to_REFERENCE.md)**
+-   :material-file-replace-outline:{.lg .middle} **[UUI a RIFERIMENTO](how_to/UUI_to_REFERENCE.md)**
 
     ---
 
     Trasformate una scheda ispezionata nel nuovo RIFERIMENTO.
 
--   :material-cursor-default-click-outline:{ .lg .middle } **[Icone dell'area di lavoro](how_to/Workspace_icons.md)**
+-   :material-cursor-default-click-outline:{.lg .middle} **[Icone dell'area di lavoro](how_to/Workspace_icons.md)**
 
     ---
 
     Controlli per croci, elaborazione automatica e colore della maschera errori.
 
--   :material-lightbulb-fluorescent-tube-outline:{ .lg .middle } **[Ispezione rivestimento UV](features/UV_conformal_coating_inspection.md)**
+-   :material-lightbulb-fluorescent-tube-outline:{.lg .middle} **[Ispezione rivestimento UV](features/UV_conformal_coating_inspection.md)**
 
     ---
 
     Ispezionate il rivestimento conformale con illuminazione UV.
 
--   :material-content-duplicate:{ .lg .middle } **[Varianti di riferimento](features/Multivariant_feature.md)**
+-   :material-content-duplicate:{.lg .middle} **[Varianti di riferimento](features/Multivariant_feature.md)**
 
     ---
 
     Accettate più versioni valide della stessa scheda.
 
--   :material-ruler:{ .lg .middle } **[Strumento di misurazione](features/Measurement_tool.md)**
+-   :material-ruler:{.lg .middle} **[Strumento di misurazione](features/Measurement_tool.md)**
 
     ---
 
     Misurate le distanze direttamente sull'immagine acquisita.
 
--   :material-vector-arrange-above:{ .lg .middle } **[Allineamento manuale](features/Manual_alignment.md)**
+-   :material-vector-arrange-above:{.lg .middle} **[Allineamento manuale](features/Manual_alignment.md)**
 
     ---
 
@@ -191,7 +191,7 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 
 <div class="grid cards" markdown>
 
--   :material-email-fast-outline:{ .lg .middle } **Contattate il supporto**
+-   :material-email-fast-outline:{.lg .middle} **Contattate il supporto**
 
     ---
 
@@ -199,7 +199,7 @@ disimballare, configurare e padroneggiare il vostro sistema di ispezione.
 
     [:octicons-arrow-right-24: support@agnospcb.com](mailto:support@agnospcb.com)
 
--   :material-web:{ .lg .middle } **Visitate il nostro sito**
+-   :material-web:{.lg .middle} **Visitate il nostro sito**
 
     ---
 

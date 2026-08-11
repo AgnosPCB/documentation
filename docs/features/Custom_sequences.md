@@ -1,4 +1,4 @@
-# **Custom capture sequences**
+# Custom capture sequences
 
 ## What is a capture sequence?
 
@@ -57,7 +57,7 @@ Open the [settings menu](../how_to/Settings_menu.md) and go to the **Sequences**
 
 Press the **+** button below the sequences list to create a new one.
 
-![Add a sequence](../assets/v7/custom_sequences/sequences-add.png){width=250px, .center}
+![Add a sequence](../assets/v7/custom_sequences/sequences-add.png){width=250px .center}
 
 The **−** button deletes the sequence selected in the list, and **Dup** duplicates it. Duplicating a predefined sequence that is close to what you need is usually faster than starting from scratch.
 

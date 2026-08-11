@@ -1,4 +1,4 @@
-# **UUI zu REFERENZ**
+# UUI zu REFERENZ
 
 Wenn Sie bei der Inspektion einer **PCB** feststellen, dass ein **UUI**-Bild besser als Referenz geeignet ist als das aktuelle, oder wenn es eine Komponentenvariante enthält, die von der Software fälschlicherweise als Fehler markiert wird, haben Sie die Möglichkeit, es mit einem **einzigen Klick** in ein Referenzbild umzuwandeln.
 
@@ -6,8 +6,8 @@ Wenn Sie bei der Inspektion einer **PCB** feststellen, dass ein **UUI**-Bild bes
 
 Zum Beispiel haben wir auf diesem Bild eine **UUI**, die eine Komponentenvariante enthält und als Fehler markiert ist.
 
-![UUI-Foto](../assets/UUI.png)
+![UUI-Foto](../assets/UUI.png){.center}
 
 Und nun, nach dem Drücken der Schaltfläche **"UUI zu REFERENZ"**, wird dieselbe PCBA als **REFERENZ** verwendet.
 
-![Dieselbe PCB als REFERENZ-Foto](../assets/REFERENCE.png)
+![Dieselbe PCB als REFERENZ-Foto](../assets/REFERENCE.png){.center}

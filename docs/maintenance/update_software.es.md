@@ -1,5 +1,4 @@
-# **Actualizar su ordenador AOI**
-
+# Actualizar su ordenador AOI
 
 **Paso 1**
 
@@ -19,4 +18,4 @@ Inserte la unidad USB que contiene los archivos extraídos en un puerto USB disp
 
 Se abrirá automáticamente una ventana de terminal y comenzará el proceso de actualización de la aplicación. Una vez que el proceso de actualización se haya completado, retire la unidad USB.
 
-![Registro de terminal después de la actualización](../assets/maintance/terminal_update.png)
+![Registro de terminal después de la actualización](../assets/maintance/terminal_update.png){.center}

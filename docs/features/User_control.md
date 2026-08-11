@@ -1,4 +1,4 @@
-# **User access control**
+# User access control
 
 ## What is user access control?
 
@@ -41,11 +41,11 @@ Open the [settings menu](../how_to/Settings_menu.md) and go to the **Users** tab
 
 Before anything else you need an **admin** account. If you try to enable the access control without one, the software refuses:
 
-![No admin user error](../assets/v7/user_control/users-no-admin-error.png){width=350px, .center}
+![No admin user error](../assets/v7/user_control/users-no-admin-error.png){width=350px .center}
 
 Press **Add user**, fill in the username, select the **admin** role, leave **Active user** checked and type the password twice.
 
-![Add an admin user](../assets/v7/user_control/users-add-admin.png){width=400px, .center}
+![Add an admin user](../assets/v7/user_control/users-add-admin.png){width=400px .center}
 
 Press **Save**. The new account appears in the list, with the date it was created.
 
@@ -65,7 +65,7 @@ With an active admin account in the list, enable **Enable user access control**.
 
 Add an account for each person who will use the machine, giving them the **operator** role unless they need to change the configuration.
 
-![Add an operator user](../assets/v7/user_control/users-add-operator.png){width=400px, .center}
+![Add an operator user](../assets/v7/user_control/users-add-operator.png){width=400px .center}
 
 The list shows every account with its role, whether it is active, and the dates on which it was created and last modified.
 
@@ -77,7 +77,7 @@ Press **OK** to save and close the settings menu.
 
 From the next start of the software, the **User access required** dialog asks for the credentials of one of the accounts you created.
 
-![Login dialog](../assets/v7/user_control/users-login.png){width=400px, .center}
+![Login dialog](../assets/v7/user_control/users-login.png){width=400px .center}
 
 The software then opens with the permissions of that account.
 

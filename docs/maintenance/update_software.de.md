@@ -1,5 +1,4 @@
-# **Aktualisieren Ihres AOI-Computers**
-
+# Aktualisieren Ihres AOI-Computers
 
 **Schritt 1**
 
@@ -19,4 +18,4 @@ Stecken Sie das USB-Laufwerk, das die extrahierten Dateien enthält, in einen ve
 
 Ein Terminalfenster öffnet sich automatisch und der Anwendungsaktualisierungsprozess beginnt. Sobald der Aktualisierungsprozess abgeschlossen ist, entfernen Sie das USB-Laufwerk.
 
-![Terminalprotokoll nach dem Update](../assets/maintance/terminal_update.png)
+![Terminalprotokoll nach dem Update](../assets/maintance/terminal_update.png){.center}

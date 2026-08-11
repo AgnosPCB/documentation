@@ -2,7 +2,7 @@
 
 The **AgnosPCB AI-4050** AOI requires very little maintenance, but it is also important for the correct operation of the system.
 
-![AOI platform](../assets/v7/ai-4050.webp){width=600px, .center}
+![AOI platform](../assets/v7/ai-4050.webp){width=600px .center}
 
 | Maintenance | Periodicity |
 | --------- | :-----: |
@@ -11,7 +11,7 @@ The **AgnosPCB AI-4050** AOI requires very little maintenance, but it is also im
 | [Rail guide lubrication](#rail-guide-lubrication) | 6 months |
 
 
-## **Belts tension adjustment**
+## Belts tension adjustment
 
 If you notice excessive belt vibration when the camera moves or the Y-axis carriage is not square to the X-axis, follow the procedure below to tension the belts:
 
@@ -19,19 +19,19 @@ If you notice excessive belt vibration when the camera moves or the Y-axis carri
 
 Pull the end of the belt out of the hole.
 
-![Pull the end of the belt](../assets/maintance/belt-step-1.jpg){width=400px, .center}
+![Pull the end of the belt](../assets/maintance/belt-step-1.jpg){width=400px .center}
 
 **Step 2**
 
 Loosen the hex screw enough to be able to pull the belt.
 
-![Loosen the screw](../assets/maintance/belt-step-2.jpg){width=400px, .center}
+![Loosen the screw](../assets/maintance/belt-step-2.jpg){width=400px .center}
 
 **Step 3**
 
 Pull the belt until it is straight and taut along the entire length of the rails.
 
-![Belts tension](../assets/maintance/belt-step-4.jpg){width=400px, .center}
+![Belts tension](../assets/maintance/belt-step-4.jpg){width=400px .center}
 
 **Step 4**
 
@@ -41,14 +41,14 @@ Tighten the screw to secure the belt in place.
 
 Insert the end of the belt in the hole
 
-![Insert belt in the hole](../assets/maintance/belt-step-3.jpg){width=400px, .center}
+![Insert belt in the hole](../assets/maintance/belt-step-3.jpg){width=400px .center}
 
 **Step 6**
 
 Repeat the steps 1 to 5 for the other rail if necessary.
 
 
-## **Cleaning**
+## Cleaning
 
 !!! warning "Warning"
     Do not use any liquid cleaner, alcohol or degreaser on moving parts (rails, carriages, spindle, etc...) or electrical components.
@@ -59,33 +59,33 @@ Disconnect the power supply or AC cord from the rear panel of the machine.
 
 See red:
 
-![Rear panel](../assets/v7/connect-ryzen-cables.png){width=400px, .center}
+![Rear panel](../assets/v7/connect-ryzen-cables.png){width=400px .center}
 
 **Step 2**
 
 Use a napkin or cotton swab to remove the old grease from the linear rails.
 
-![Napkin clean](../assets/maintance/clean-1.jpg){width=400px, .center}
+![Napkin clean](../assets/maintance/clean-1.jpg){width=400px .center}
 
 
 **Step 3**
 
 Use the brush provided in the maintenance kit to remove any contamination inside the rails.
 
-![Rails cleaning](../assets/maintance/clean-2.jpg){width=400px, .center}
+![Rails cleaning](../assets/maintance/clean-2.jpg){width=400px .center}
 
-![Rails cleaning](../assets/maintance/clean-3.jpg){width=400px, .center}
+![Rails cleaning](../assets/maintance/clean-3.jpg){width=400px .center}
 
 **Step 4**
 
 Use the air blower included in the maintenance kit to blow the camera lens and remove any debris.
 
-![Lens cleaning](../assets/maintance/clean-4.jpg){width=400px, .center}
+![Lens cleaning](../assets/maintance/clean-4.jpg){width=400px .center}
 
 !!! note "Note"
     Optionally, you can clean the lens with a microfiber cleaning cloth **after** using the blower, as there may be particles that could scratch the lens.
 
-## **Rail guide lubrication**
+## Rail guide lubrication
 
 !!! warning "Warning"
     Before lubricating the carriages, be sure to [clean](maintenance.md#cleaning) the rails.
@@ -96,27 +96,27 @@ Disconnect the power supply or AC cord from the rear panel of the machine.
 
 See red:
 
-![Rear panel](../assets/v7/connect-ryzen-cables.png){width=400px, .center}
+![Rear panel](../assets/v7/connect-ryzen-cables.png){width=400px .center}
 
 **Step 2**
 
 Insert the end of the grease dispenser provided in the maintenance kit into the hole on the side of the rail carriage.
 
-![Carriage hole](../assets/maintance/lubrication-1.png){width=400px, .center}
+![Carriage hole](../assets/maintance/lubrication-1.png){width=400px .center}
 
-![Carriage hole](../assets/maintance/lubrication-2.png){width=400px, .center}
+![Carriage hole](../assets/maintance/lubrication-2.png){width=400px .center}
 
 **Step 3**
 
 Apply a little grease to the carriage.
 
-![Carriage grease](../assets/maintance/lubrication-3.jpg){width=400px, .center}
+![Carriage grease](../assets/maintance/lubrication-3.jpg){width=400px .center}
 
 **Step 4**
 
 Move the carts manually to distribute the grease along the rails.
 
-![Manually move](../assets/maintance/lubrication-4.jpg){width=400px, .center}
+![Manually move](../assets/maintance/lubrication-4.jpg){width=400px .center}
 
 **Step 5**
 

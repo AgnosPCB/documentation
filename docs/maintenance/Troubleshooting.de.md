@@ -1,4 +1,4 @@
-# **Fehlerbehebung**
+# Fehlerbehebung
 
 ??? info "Die Software startet/reagiert nicht"
     Entfernen Sie die Datei **setup.json** im Ordner **APP** und starten Sie die Anwendung anschließend erneut.

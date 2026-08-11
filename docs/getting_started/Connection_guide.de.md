@@ -1,3 +1,5 @@
+# Verbindungsanleitung
+
 !!! warning "Wichtig"
 
     Wählen Sie Ihre AOI-Version in den Registern unten aus.
@@ -7,24 +9,24 @@
     2. Bringen Sie den **Mini-Computer** an der rechten Seite der Plattform an, indem Sie die mitgelieferte Schraube und Mutter in den Aluminiumschlitz einführen. **Stellen Sie sicher, dass das Kunststoffteil in den Aluminiumschlitz passt.**
 
 
-        ![Mutter des Mini-Computers](../assets/v7/connect-ryzen-nut.png){width=300px, .center}
-        ![Mini-Computer angebracht](../assets/v7/connect-ryzen.png){width=300px, .center}
+        ![Mutter des Mini-Computers](../assets/v7/connect-ryzen-nut.png){width=300px .center}
+        ![Mini-Computer angebracht](../assets/v7/connect-ryzen.png){width=300px .center}
     
     3. Schließen Sie das **19V-Netzteil** an den hinteren Anschluss des Mini-Computers an.
     4. Verbinden Sie das abgewinkelte USB A-zu-USB B-Kabel zwischen der Rückseite der Plattform und dem Mini-Computer.
     5. Schließen Sie das **12V-Netzteil** an die Rückseite der Plattform an.
     6. Verbinden Sie das USB-Kabel der Kamera mit dem Mini-Computer.
 
-        ![Anschlüsse des Mini-Computers](../assets/v7/connect-ryzen-cables.png){width=600px, .center}
+        ![Anschlüsse des Mini-Computers](../assets/v7/connect-ryzen-cables.png){width=600px .center}
 
     7. Schließen Sie das HDMI-Kabel und das Netzkabel am Monitor an.
     8. Befestigen Sie den Monitor am vorderen Aluminiumprofil der Plattform mit der mitgelieferten Schraube und Mutter auf der Rückseite des Monitors. **Stellen Sie sicher, dass das Kunststoffteil in den Aluminiumschlitz passt.**
 
-        ![Monitorrückseite](../assets/v7/connect-monitor-back.png){width=400px, .center}
+        ![Monitorrückseite](../assets/v7/connect-monitor-back.png){width=400px .center}
 
-        ![Vordere Plattform](../assets/v7/connect-monitor-front.png){width=400px, .center}
+        ![Vordere Plattform](../assets/v7/connect-monitor-front.png){width=400px .center}
 
-        ![Monitor befestigt](../assets/v7/connect-monitor-attach.png){width=400px, .center}
+        ![Monitor befestigt](../assets/v7/connect-monitor-attach.png){width=400px .center}
 
     9. Schließen Sie das HDMI-Kabel an einen beliebigen HDMI-Anschluss sowie die Tastatur und Maus an die vorderen USB-Anschlüsse des Mini-Computers an.
 
@@ -47,8 +49,8 @@
     5. Schließen Sie das HDMI-Kabel und das Netzkabel am Monitor an.
     6. Befestigen Sie den Monitor am vorderen Aluminiumprofil der Plattform mit der mitgelieferten Schraube und Mutter auf der Rückseite des Monitors. **Stellen Sie sicher, dass das Kunststoffteil in den Aluminiumschlitz passt.**
 
-        ![Monitorrückseite](../assets/v7/connect-monitor-back.png){width=400px, .center}
+        ![Monitorrückseite](../assets/v7/connect-monitor-back.png){width=400px .center}
 
-        ![Vordere Plattform](../assets/v7/connect-monitor-front.png){width=400px, .center}
+        ![Vordere Plattform](../assets/v7/connect-monitor-front.png){width=400px .center}
 
-        ![Monitor befestigt](../assets/v7/connect-monitor-attach.png){width=400px, .center}
+        ![Monitor befestigt](../assets/v7/connect-monitor-attach.png){width=400px .center}

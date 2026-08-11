@@ -1,5 +1,6 @@
-## **Questions générales**
-___
+# Foire aux questions
+
+## Questions générales
 
 ??? question "Existe-t-il des plans de location / d'essai pour les plateformes d'inspection EN LIGNE et HORS LIGNE ?"
 

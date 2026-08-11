@@ -5,7 +5,7 @@ hide:
 
 <div class="agnos-hero" markdown>
 
-![AgnosPCB](assets/agnospcb-logo.gif)
+![AgnosPCB](assets/agnospcb-logo.gif){.center}
 
 # AgnosPCB Documentation
 
@@ -16,8 +16,8 @@ and master your inspection system is here.
 </p>
 
 <div class="agnos-hero-actions" markdown>
-[Get started :octicons-arrow-right-24:](getting_started/Package_content.md){ .md-button .md-button--primary }
-[How to use it](how_to/Screen-layout.md){ .md-button }
+[Get started :octicons-arrow-right-24:](getting_started/Package_content.md){.md-button .md-button--primary}
+[How to use it](how_to/Screen-layout.md){.md-button}
 </div>
 
 </div>
@@ -54,7 +54,7 @@ and master your inspection system is here.
 
 <div class="grid cards" markdown>
 
--   :material-package-variant:{ .lg .middle } **Getting started**
+-   :material-package-variant:{.lg .middle} **Getting started**
 
     ---
 
@@ -67,7 +67,7 @@ and master your inspection system is here.
 
     [:octicons-arrow-right-24: Start here](getting_started/Package_content.md)
 
--   :material-monitor-dashboard:{ .lg .middle } **How to use the software**
+-   :material-monitor-dashboard:{.lg .middle} **How to use the software**
 
     ---
 
@@ -81,7 +81,7 @@ and master your inspection system is here.
 
     [:octicons-arrow-right-24: Learn the software](how_to/Screen-layout.md)
 
--   :material-wrench-outline:{ .lg .middle } **Support and maintenance**
+-   :material-wrench-outline:{.lg .middle} **Support and maintenance**
 
     ---
 
@@ -95,7 +95,7 @@ and master your inspection system is here.
 
     [:octicons-arrow-right-24: Get support](maintenance/Troubleshooting.md)
 
--   :material-lightbulb-on-outline:{ .lg .middle } **Additional information**
+-   :material-lightbulb-on-outline:{.lg .middle} **Additional information**
 
     ---
 
@@ -130,55 +130,55 @@ and master your inspection system is here.
 
 <div class="grid cards agnos-features" markdown>
 
--   :material-barcode-scan:{ .lg .middle } **[Barcode reader](features/Barcode_reader.md)**
+-   :material-barcode-scan:{.lg .middle} **[Barcode reader](features/Barcode_reader.md)**
 
     ---
 
     Load a REFERENCE automatically by scanning the board barcode.
 
--   :material-select-off:{ .lg .middle } **[Exclusion area](how_to/Set_exclusion_area.md)**
+-   :material-select-off:{.lg .middle} **[Exclusion area](how_to/Set_exclusion_area.md)**
 
     ---
 
     Ignore regions that legitimately change from board to board.
 
--   :material-tune-vertical:{ .lg .middle } **[Sensitivity](how_to/Set_sensitivity.md)**
+-   :material-tune-vertical:{.lg .middle} **[Sensitivity](how_to/Set_sensitivity.md)**
 
     ---
 
     Balance defect detection against false positives.
 
--   :material-file-replace-outline:{ .lg .middle } **[UUI to REFERENCE](how_to/UUI_to_REFERENCE.md)**
+-   :material-file-replace-outline:{.lg .middle} **[UUI to REFERENCE](how_to/UUI_to_REFERENCE.md)**
 
     ---
 
     Promote an inspected board to become the new REFERENCE.
 
--   :material-cursor-default-click-outline:{ .lg .middle } **[Workspace icons](how_to/Workspace_icons.md)**
+-   :material-cursor-default-click-outline:{.lg .middle} **[Workspace icons](how_to/Workspace_icons.md)**
 
     ---
 
-    Crosses, auto process and error mask colour controls.
+    Crosses, auto process and error mask color controls.
 
--   :material-lightbulb-fluorescent-tube-outline:{ .lg .middle } **[UV coating inspection](features/UV_conformal_coating_inspection.md)**
+-   :material-lightbulb-fluorescent-tube-outline:{.lg .middle} **[UV coating inspection](features/UV_conformal_coating_inspection.md)**
 
     ---
 
     Inspect conformal coating under UV illumination.
 
--   :material-content-duplicate:{ .lg .middle } **[Reference variants](features/Multivariant_feature.md)**
+-   :material-content-duplicate:{.lg .middle} **[Reference variants](features/Multivariant_feature.md)**
 
     ---
 
     Accept several valid versions of the same board.
 
--   :material-ruler:{ .lg .middle } **[Measurement tool](features/Measurement_tool.md)**
+-   :material-ruler:{.lg .middle} **[Measurement tool](features/Measurement_tool.md)**
 
     ---
 
     Measure distances directly on the captured image.
 
--   :material-vector-arrange-above:{ .lg .middle } **[Manual alignment](features/Manual_alignment.md)**
+-   :material-vector-arrange-above:{.lg .middle} **[Manual alignment](features/Manual_alignment.md)**
 
     ---
 
@@ -190,7 +190,7 @@ and master your inspection system is here.
 
 <div class="grid cards" markdown>
 
--   :material-email-fast-outline:{ .lg .middle } **Contact support**
+-   :material-email-fast-outline:{.lg .middle} **Contact support**
 
     ---
 
@@ -198,7 +198,7 @@ and master your inspection system is here.
 
     [:octicons-arrow-right-24: support@agnospcb.com](mailto:support@agnospcb.com)
 
--   :material-web:{ .lg .middle } **Visit our website**
+-   :material-web:{.lg .middle} **Visit our website**
 
     ---
 

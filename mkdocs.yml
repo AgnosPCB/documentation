@@ -8,8 +8,12 @@ theme:
     - navigation.tabs.sticky
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=navigation+tabs#anchor-tracking
     - navigation.tracking
-    - navigation.instant
-    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tooltips
   name: material
   palette:
     - scheme: default
@@ -46,193 +50,224 @@ plugins:
           build: true
           nav_translations:
             Home: Inicio
-            Getting started: Comenzando
-            Package content: Contenido del paquete
+            Getting started: Primeros pasos
+            Package contents: Contenido del paquete
             Unboxing guide: Guía de desembalaje
             Connection guide: Guía de conexión
-            How to use it: Cómo usarlo
             Terminology: Terminología
-            User Interface: Interfaz de Usuario
+            System comparison: Comparativa de sistemas
+            How to use it: Cómo usarlo
+            User interface: Interfaz de usuario
             Inspection workflow: Flujo de trabajo de inspección
-            Settings menu: Menú de Configuración
-            Other functions: Otras funciones
-            Barcode reader: Lector de código de barras
-            Exclusion area: Área de exclusión
+            Settings menu: Menú de configuración
+            Tips: Consejos
+            Inspection tools: Herramientas de inspección
             Sensitivity: Sensibilidad
-            UUI to REFERENCE: UUI a REFERENCIA
-            Network interface configuration: Configuración de la interfaz de red
+            Exclusion area: Área de exclusión
             Workspace icons: Iconos del espacio de trabajo
-            UV conformal coating inspection: Inspección de recubrimiento conformal UV
-            Reference variants: Variantes de Referencia
+            UUI to REFERENCE: UUI a REFERENCIA
             Measurement tool: Herramienta de medición
+            Manual alignment: Alineación manual
+            Advanced features: Funciones avanzadas
+            Barcode reader: Lector de código de barras
+            Reference variants: Variantes de REFERENCIA
             Custom sequences: Secuencias personalizadas
+            UV conformal coating inspection: Inspección de recubrimiento conformal UV
             User access control: Control de acceso de usuarios
             Support: Soporte
             Maintenance: Mantenimiento
             Update software: Actualizar software
             Troubleshooting: Solución de problemas
+            Installation procedures: Procedimientos de instalación
+            UV coating kit installation: Instalación del kit de recubrimiento UV
+            Production line integration: Integración en línea de producción
+            Network interface configuration: Configuración de la interfaz de red
             Additional information: Información adicional
-            FAQ: Preguntas Frecuentes (FAQ)
-            Tips: Consejos
+            FAQ: Preguntas frecuentes (FAQ)
+            Products and services: Productos y servicios
         - locale: fr
           name: Français
           build: true
           nav_translations:
             Home: Accueil
             Getting started: Démarrage
-            Package content: Contenu du colis
+            Package contents: Contenu du colis
             Unboxing guide: Guide de déballage
             Connection guide: Guide de connexion
-            How to use it: Comment l'utiliser
             Terminology: Terminologie
-            User Interface: Interface utilisateur
+            System comparison: Comparatif des systèmes
+            How to use it: Utilisation
+            User interface: Interface utilisateur
             Inspection workflow: Flux de travail d'inspection
             Settings menu: Menu des paramètres
-            Other functions: Autres fonctions
-            Barcode reader: Lecteur de code-barres
-            Exclusion area: Zone d'exclusion
+            Tips: Conseils
+            Inspection tools: Outils d'inspection
             Sensitivity: Sensibilité
-            UUI to REFERENCE: UUI vers RÉFÉRENCE
-            Network interface configuration: Configuration de l'interface réseau
+            Exclusion area: Zone d'exclusion
             Workspace icons: Icônes de l'espace de travail
-            UV conformal coating inspection: Inspection du revêtement conforme UV
-            Reference variants: Variantes de référence
+            UUI to REFERENCE: UUI vers RÉFÉRENCE
             Measurement tool: Outil de mesure
+            Manual alignment: Alignement manuel
+            Advanced features: Fonctionnalités avancées
+            Barcode reader: Lecteur de code-barres
+            Reference variants: Variantes de RÉFÉRENCE
             Custom sequences: Séquences personnalisées
+            UV conformal coating inspection: Inspection du revêtement conforme UV
             User access control: Contrôle d'accès des utilisateurs
             Support: Support
             Maintenance: Maintenance
             Update software: Mise à jour du logiciel
             Troubleshooting: Dépannage
+            Installation procedures: Procédures d'installation
+            UV coating kit installation: Installation du kit de revêtement UV
+            Production line integration: Intégration en ligne de production
+            Network interface configuration: Configuration de l'interface réseau
             Additional information: Informations supplémentaires
             FAQ: FAQ
-            Tips: Conseils
+            Products and services: Produits et services
         - locale: it
           name: Italiano
           build: true
           nav_translations:
             Home: Pagina iniziale
             Getting started: Per iniziare
-            Package content: Contenuto della confezione
+            Package contents: Contenuto della confezione
             Unboxing guide: Guida all'unboxing
             Connection guide: Guida alla connessione
-            How to use it: Come usarlo
             Terminology: Terminologia
-            User Interface: Interfaccia Utente
+            System comparison: Confronto tra sistemi
+            How to use it: Come usarlo
+            User interface: Interfaccia utente
             Inspection workflow: Flusso di lavoro di ispezione
             Settings menu: Menu Impostazioni
-            Other functions: Altre funzioni
-            Barcode reader: Lettore di codici a barre
-            Exclusion area: Area di esclusione
+            Tips: Suggerimenti
+            Inspection tools: Strumenti di ispezione
             Sensitivity: Sensibilità
-            UUI to REFERENCE: UUI a RIFERIMENTO
-            Network interface configuration: Configurazione interfaccia di rete
+            Exclusion area: Area di esclusione
             Workspace icons: Icone dell'area di lavoro
-            UV conformal coating inspection: Ispezione del rivestimento conformale UV
-            Reference variants: Varianti di riferimento
+            UUI to REFERENCE: UUI a RIFERIMENTO
             Measurement tool: Strumento di misurazione
+            Manual alignment: Allineamento manuale
+            Advanced features: Funzioni avanzate
+            Barcode reader: Lettore di codici a barre
+            Reference variants: Varianti di RIFERIMENTO
             Custom sequences: Sequenze personalizzate
+            UV conformal coating inspection: Ispezione del rivestimento conformale UV
             User access control: Controllo accessi utenti
             Support: Supporto
             Maintenance: Manutenzione
             Update software: Aggiornamento software
             Troubleshooting: Risoluzione dei problemi
+            Installation procedures: Procedure di installazione
+            UV coating kit installation: Installazione del kit di rivestimento UV
+            Production line integration: Integrazione in linea di produzione
+            Network interface configuration: Configurazione interfaccia di rete
             Additional information: Informazioni aggiuntive
-            FAQ: Domande Frequenti (FAQ)
-            Tips: Suggerimenti
+            FAQ: Domande frequenti (FAQ)
+            Products and services: Prodotti e servizi
         - locale: de
           name: Deutsch
           build: true
           nav_translations:
             Home: Startseite
             Getting started: Erste Schritte
-            Package content: Paketinhalt
+            Package contents: Paketinhalt
             Unboxing guide: Auspackanleitung
             Connection guide: Verbindungsanleitung
-            How to use it: Anwendung
             Terminology: Terminologie
-            User Interface: Benutzeroberfläche
+            System comparison: Systemvergleich
+            How to use it: Anwendung
+            User interface: Benutzeroberfläche
             Inspection workflow: Inspektions-Workflow
             Settings menu: Einstellungsmenü
-            Other functions: Weitere Funktionen
-            Barcode reader: Barcode-Lesegerät
-            Exclusion area: Ausschlussbereich
+            Tips: Tipps
+            Inspection tools: Inspektionswerkzeuge
             Sensitivity: Empfindlichkeit
-            UUI to REFERENCE: UUI zu REFERENZ
-            Network interface configuration: Netzwerkschnittstellen-Konfiguration
+            Exclusion area: Ausschlussbereich
             Workspace icons: Arbeitsbereichs-Symbole
-            UV conformal coating inspection: UV-Schutzlackinspektion
-            Reference variants: Referenzvarianten
+            UUI to REFERENCE: UUI zu REFERENZ
             Measurement tool: Messwerkzeug
+            Manual alignment: Manuelle Ausrichtung
+            Advanced features: Erweiterte Funktionen
+            Barcode reader: Barcode-Lesegerät
+            Reference variants: REFERENZ-Varianten
             Custom sequences: Benutzerdefinierte Sequenzen
+            UV conformal coating inspection: UV-Schutzlackinspektion
             User access control: Benutzerzugriffskontrolle
             Support: Support
             Maintenance: Wartung
             Update software: Software-Update
             Troubleshooting: Fehlerbehebung
+            Installation procedures: Installationsverfahren
+            UV coating kit installation: Installation des UV-Schutzlack-Kits
+            Production line integration: Integration in die Produktionslinie
+            Network interface configuration: Netzwerkschnittstellen-Konfiguration
             Additional information: Zusätzliche Informationen
             FAQ: Häufig gestellte Fragen (FAQ)
-            Tips: Tipps
+            Products and services: Produkte und Dienstleistungen
 
-  #- Navigation
 extra:
   version:
     provider: mike
   generator: false
+
 nav:
   - Home: index.md
-  - Getting started:
-    - Package content: 'getting_started/Package_content.md'
-    - Unboxing guide: 'getting_started/Unboxing.md'
-    - Connection guide: 'getting_started/Connection_guide.md'
 
+  - Getting started:
+    - Package contents: getting_started/Package_content.md
+    - Unboxing guide: getting_started/Unboxing.md
+    - Connection guide: getting_started/Connection_guide.md
+    - Terminology: how_to/terminology.md
+    - System comparison: Systems_comparison.md
 
   - How to use it:
-    - Terminology: 'how_to/terminology.md'
-    - User Interface: 'how_to/Screen-layout.md'
+    - User interface: how_to/Screen-layout.md
     - Inspection workflow: how_to/Inspection_workflow.md
     - Settings menu: how_to/Settings_menu.md
-    - Other tools and features:
-      - Barcode reader: 'features/Barcode_reader.md'
-      - Exclusion area: 'how_to/Set_exclusion_area.md'
-      - Sensitivity: 'how_to/Set_sensitivity.md'
-      - UUI to REFERENCE: 'how_to/UUI_to_REFERENCE.md'    
+    - Tips: help/Tips.md
+    - Inspection tools:
+      - Sensitivity: how_to/Set_sensitivity.md
+      - Exclusion area: how_to/Set_exclusion_area.md
       - Workspace icons: how_to/Workspace_icons.md
+      - UUI to REFERENCE: how_to/UUI_to_REFERENCE.md
+      - Measurement tool: features/Measurement_tool.md
+      - Manual alignment: features/Manual_alignment.md
+    - Advanced features:
+      - Barcode reader: features/Barcode_reader.md
+      - Reference variants: features/Multivariant_feature.md
+      - Custom sequences: features/Custom_sequences.md
       - UV conformal coating inspection: features/UV_conformal_coating_inspection.md
-      - Reference variants: 'features/Multivariant_feature.md'
-      - Measurement tool: 'features/Measurement_tool.md'
-      - Manual alignment tool: 'features/Manual_alignment.md'
-      - Custom sequences: 'features/Custom_sequences.md'
-      - User access control: 'features/User_control.md'
+      - User access control: features/User_control.md
 
   - Support:
     - Maintenance: maintenance/maintenance.md
-    - Specific procedures:
-      - UV conformal coating installation guide: maintenance/UV_kit_install.md
-      - INLINE integration: maintenance/Conveyor_integration.md
-      - Network interface configuration: maintenance/network_configuration.md
     - Update software: maintenance/update_software.md
     - Troubleshooting: maintenance/Troubleshooting.md
+    - Installation procedures:
+      - UV coating kit installation: maintenance/UV_kit_install.md
+      - Production line integration: maintenance/Conveyor_integration.md
+      - Network interface configuration: maintenance/network_configuration.md
 
   - Additional information:
-    - FAQ: 'help/FAQ.md'
-    - Tips: 'help/Tips.md'
-     
-    
-#  - privacy
+    - FAQ: help/FAQ.md
+    - Products and services: Products-and-services.md
+
 copyright: Copyright &copy; 2023 - 2025 AgnosPCB
+
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
   - md_in_html
+  - tables
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.keys
+  - toc:
+      permalink: true
   # Enables :material-*: / :octicons-*: icons used in the home page cards
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-
-

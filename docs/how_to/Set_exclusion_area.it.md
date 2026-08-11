@@ -1,19 +1,17 @@
-# **Definire area di esclusione**
-___ 
+# Definire area di esclusione
 
 ![Pulsante Esclusione](../assets/v7/ui-button5.png){.center}
 
 L'area di esclusione viene utilizzata per analizzare la **PCB** escludendo determinati elementi che non sono necessari o non si desidera analizzare. Per questo utilizziamo il pulsante **"disegna area di esclusione"**.
 
 
-
 Quindi, utilizzando la foto di **RIFERIMENTO**, selezionare l'area da escludere. È possibile selezionare tutte le aree che si desiderano. 
 
-![PCB con aree di esclusione selezionate](../assets/exlucion-area.png)
+![PCB con aree di esclusione selezionate](../assets/exlucion-area.png){.center}
 
 Dopo che un'area di esclusione è stata definita, l'avvio di un'ispezione sulla **UUI** non rileverà alcun errore nelle aree selezionate.
 
-![UUI con errori](../assets/UUI-exclusion-area.png)
+![UUI con errori](../assets/UUI-exclusion-area.png){.center}
 
 Nel caso in cui sia stata selezionata l'area sbagliata o non si desideri più selezionarla, è possibile utilizzare il pulsante **rimuovi area** per deselezionarla.
 

@@ -1,3 +1,5 @@
+# UV conformal coating inspection
+
 This guide explains how to use the conformal coating inspection feature on the **AgnosPCB AOI**.
 
 This feature allows operators to visually inspect the conformal coating on PCBAs using UV lighting.
@@ -10,10 +12,9 @@ This feature allows operators to visually inspect the conformal coating on PCBAs
     The conformal coating inspection uses UV lighting so **we recommend using the safety glasses** included with the kit.
 
 
-    ![UV warning](../assets/v7/UV_inspection/warning_icon.png){width=200px, .center}
+    ![UV warning](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
 
 ## Video 
-___
 
 For a complete walkthrough of this feature, watch the following video:
  
@@ -29,7 +30,7 @@ To generate a **REFERENCE** image follow the steps in the [following guide](../h
 
 Use the UUI capture button to open the [Live View window](../how_to/Inspection_workflow.md#capturing-an-uui) of the current PCBA.
 
-![Live view window](../assets/UUI photo.PNG){width=100px, .center}
+![Live view window](../assets/UUI-photo.PNG){width=100px .center}
 
 ## 3. Enable UV inspection
 
@@ -46,11 +47,11 @@ Once enabled, a simulation of the PCB under UV lighting will be displayed.
     From this point onwards, it is mandatory to wear the safety glasses included with the kit.
 
 
-    ![UV warning](../assets/v7/UV_inspection/warning_icon.png){width=100px, .center}
+    ![UV warning](../assets/v7/UV_inspection/warning_icon.png){width=100px .center}
 
 Then, place the UUI at the center of the inspection area and press the **Start Inspection** button to begin the inspection process.
 
-![UV preview](../assets/v7/UV_inspection/start-inspection-button.png){width=250px, .center}
+![UV preview](../assets/v7/UV_inspection/start-inspection-button.png){width=250px .center}
 
 ## 4. Inspect the coating
 
@@ -63,4 +64,4 @@ Observe the PCB under UV lighting to verify the correct application and coverage
 
 The captured UV image is included in the final inspection report for documentation and traceability purposes.
 
-![UV inspection report](../assets/v7/UV_inspection/UV_report.png){width=500px, .center}
+![UV inspection report](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

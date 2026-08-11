@@ -1,5 +1,6 @@
-## **General questions**
-___
+# Frequently asked questions
+
+## General questions
 
 ??? question "Are there any rental / trial plans for the ONLINE and OFFLINE inspection platforms?"
 

@@ -1,4 +1,5 @@
 # Inspection du revêtement conforme UV
+
 Dans ce guide, nous allons apprendre à utiliser l’inspection du revêtement conforme avec **AgnosPCB AOI**.
 
 Cette fonctionnalité permet aux opérateurs d’inspecter visuellement le revêtement conforme des PCBAs à l’aide d’un éclairage UV.
@@ -10,10 +11,9 @@ Cette fonctionnalité permet aux opérateurs d’inspecter visuellement le revê
 !!! warning "Attention"
     L’inspection du revêtement conforme utilise un éclairage UV, donc **nous recommandons de porter les lunettes de sécurité** incluses dans le kit.
 
-    ![Avertissement UV](../assets/v7/UV_inspection/warning_icon.png){ width=200px .center }
+    ![Avertissement UV](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
 
 ## Vidéo
-___
 
 Pour une présentation complète de cette fonctionnalité, regardez la vidéo suivante :
  
@@ -29,36 +29,36 @@ Pour générer une image de **RÉFÉRENCE**, suivez les étapes dans le [guide s
 
 Utilisez le bouton de capture UUI pour ouvrir la [fenêtre de vue en direct](../how_to/Inspection_workflow.md#capture-dune-uui) du PCBA actuel.
 
-![Fenêtre de vue en direct](../assets/UUI photo.PNG){ width=100px .center }
+![Fenêtre de vue en direct](../assets/UUI-photo.PNG){width=100px .center}
 
 ## 3. Activer l’inspection UV
 
 Dans la fenêtre de vue en direct, activez l’**option d’inspection UV** située en bas de l’interface.
 
-![Aperçu UV](../assets/v7/UV_inspection/UV_buttom.png){ .center }
+![Aperçu UV](../assets/v7/UV_inspection/UV_buttom.png){.center}
 
 Une fois activée, une simulation du PCB sous éclairage UV sera affichée.
 
-![Simulation UV](../assets/v7/UV_inspection/UV_active.png){ .center }
+![Simulation UV](../assets/v7/UV_inspection/UV_active.png){.center}
 
 !!! warning "Attention"
     À partir de ce moment, il est obligatoire de porter les lunettes de sécurité incluses dans le kit.
 
-    ![Avertissement UV](../assets/v7/UV_inspection/warning_icon.png){ width=100px .center }
+    ![Avertissement UV](../assets/v7/UV_inspection/warning_icon.png){width=100px .center}
 
 Ensuite, placez l’UUI au centre de la zone d’inspection et appuyez sur le bouton **Démarrer l’inspection** pour lancer le processus.
 
-![Bouton démarrer l’inspection](../assets/v7/UV_inspection/start-inspection-button.png){ width=250px .center }
+![Bouton démarrer l’inspection](../assets/v7/UV_inspection/start-inspection-button.png){width=250px .center}
 
 ## 4. Inspecter le revêtement
 
 Observez le PCB sous éclairage UV afin de vérifier la bonne application et la couverture du revêtement conforme.
 
-![Inspection UV](../assets/v7/UV_inspection/UV_inspection.png){ .center }
+![Inspection UV](../assets/v7/UV_inspection/UV_inspection.png){.center}
 
 !!! note "Note"
     Cette inspection est réalisée manuellement par l’opérateur. Aucune détection basée sur l’IA n’est utilisée, l’opérateur doit donc identifier visuellement tout défaut ou absence de revêtement.
 
 L’image UV capturée est incluse dans le rapport final d’inspection à des fins de documentation et de traçabilité.
 
-![Rapport d’inspection UV](../assets/v7/UV_inspection/UV_report.png){width=500px, .center}
+![Rapport d’inspection UV](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

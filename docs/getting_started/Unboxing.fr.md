@@ -1,43 +1,43 @@
+# Guide de déballage
+
+!!! info "Important"
+
+    Si une pièce est manquante ou défectueuse, [envoyez-nous un e-mail](mailto:support@agnospcb.com).
+
 !!! warning "Important"
 
-    S'il manque une pièce ou si elle est défectueuse, [envoyez-nous un courriel](mailto:support@agnospcb.com).
-
-!!! warning "Important"
-
-    Après avoir terminé le déballage, assurez-vous de retirer toutes les **pièces oranges** de la plateforme d'inspection.
+    Une fois le déballage terminé, veillez à retirer toutes les pièces orange de la plateforme d'inspection.
 
 ## Étape 1
-**Sortir la plateforme d'inspection**
 
-Commencez par tirer sur les **poignées oranges** illustrées sur la photo pour soulever délicatement la plateforme d'inspection et la sortir de l'emballage.
+**Retirer le capot supérieur**
 
-![Boîte](../assets/v7/unpack-1.png){.center}
+Commencez par retirer le ruban adhésif des quatre côtés du capot supérieur de la chambre d'inspection, puis retirez-le.
 
----
+![Boîte](../assets/v7/1-unpackage.png){.center width=500px}
 
 ## Étape 2
-**Retirer les poignées oranges**
 
-Retirez les poignées oranges en dévissant les **quatre vis de fixation**, n'oubliez pas de retirer les vis et les écrous des profilés une fois que la poignée est extraite. Répétez ce processus pour la poignée située du côté opposé.
+**Sortir la chambre d'inspection**
 
-![Boîte](../assets/v7/unpack-2.png){.center}
+Tenez la chambre d'inspection par les cadres latéraux supérieurs en aluminium et sortez-la du carton.
 
----
+!!! warning "Important"
+
+    Cette opération doit être réalisée par deux personnes.
+
+![Boîte](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Étape 3
-**Retirer les vis de fixation du chariot**
 
-Dévissez les vis qui maintiennent le chariot fixe.
+**Retirer les pièces de fixation de la caméra**
 
-![Boîte](../assets/v7/unpack-3.webp){.center}
-
-![Boîte](../assets/v7/unpack-4.webp){.center}
-
----
+![Boîte](../assets/v7/3-unpackage.png){.center width=500px}
 
 ## Étape 4
+
 **Sortir la boîte bleue contenant les accessoires**
 
-Sortez de l'emballage la **boîte bleue** qui contient tous les accessoires nécessaires. Liste des composants [ici](Package_content.md).
+Sortez de l'emballage la boîte bleue qui contient tous les accessoires nécessaires. Liste des composants [ici](Package_content.md).
 
-![Boîte](../assets/v7/unpack-5.webp){.center}
+![Boîte](../assets/v7/4-unpackage.jpg){.center width=500px}

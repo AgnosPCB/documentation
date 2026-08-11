@@ -1,4 +1,4 @@
-# **Solución de problemas**
+# Solución de problemas
 
 ??? info "El software no arranca/responde"
     Retire el archivo **setup.json** que se encuentra en la carpeta **APP** y luego inicie la aplicación de nuevo.
@@ -143,4 +143,4 @@
 
         7. Seleccione la distribución en la esquina superior derecha.
 
-            ![Paso 7](../assets/maintance/keyboard-7.png)
+            ![Paso 7](../assets/maintance/keyboard-7.png)

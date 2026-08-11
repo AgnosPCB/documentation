@@ -1,8 +1,6 @@
-# **Flux de travail d'inspection**
-___
+# Flux de travail d'inspection
 
-### **Lancement du logiciel**
-___
+### Lancement du logiciel
 
 - Connectez l'alimentation à la plateforme d'inspection sur le panneau arrière
 - Allumez le moniteur
@@ -12,18 +10,16 @@ ___
 
 ![Fenêtre de connexion](../assets/v7/uui-login.png){.center}
 
-## **Procédure d'inspection**
-
-___
+## Procédure d'inspection
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ___
 
-### **Génération d'une RÉFÉRENCE**
+### Génération d'une RÉFÉRENCE
 
 Le logiciel AgnosPCB Inspection tool va **« comparer »** la photographie de votre circuit/panneau de **RÉFÉRENCE** (« golden sample ») avec toutes les photos que vous prendrez du circuit à inspecter (photos à « ANALYSER »).
 
-!!!warning "Important"
+!!! warning "Important"
     Nous vous recommandons de consulter notre section [conseils](../help/Tips.md) avant de prendre votre première image.
 
 Pour procéder à la prise de la RÉFÉRENCE, cliquez sur l'icône de référence dans le menu principal :
@@ -32,11 +28,11 @@ Pour procéder à la prise de la RÉFÉRENCE, cliquez sur l'icône de référenc
 
 Une nouvelle fenêtre apparaîtra avec plusieurs outils :
 
-![Fenêtre REF](../assets/v7/uui-ref_livepreview.png)
+![Fenêtre REF](../assets/v7/uui-ref_livepreview.png){.center}
 
 Dans cette fenêtre, nous devons définir les images nécessaires pour couvrir l'ensemble de la PCBA.
 
-![Dimensions REF](../assets/v7/uui-ref_livepreview-dimensions.png)
+![Dimensions REF](../assets/v7/uui-ref_livepreview-dimensions.png){.center}
 
 ---
 
@@ -44,15 +40,39 @@ Dans cette fenêtre, nous devons définir les images nécessaires pour couvrir l
 
 Pour les PCBAs de grande taille, le champ de vision de la caméra peut ne pas être suffisant pour capturer toute la carte en une seule image. Dans ce cas, le système capture plusieurs images et les assemble automatiquement à l’aide de l’IA en une seule image prête pour l’inspection.
 
-![Processus de stitching](../assets/stitching.png){ width=600 .center }
+![Processus de stitching](../assets/stitching.png){width=600 .center}
 
 Si vous n’êtes pas sûr du nombre d’images nécessaires, placez le PCBA au centre de la zone d’inspection et appuyez sur le bouton **AUTO**. Le système analysera la carte et configurera automatiquement les paramètres optimaux.
 
-![Bouton AUTO de référence](../assets/v7/uui-ref_livepreview-auto.png){ .center }
+![Bouton AUTO de référence](../assets/v7/uui-ref_livepreview-auto.png){.center}
 
 Vous pouvez également déplacer la caméra vers n’importe quel quadrant du PCBA en cliquant sur la zone souhaitée dans la vue miniature.
 
-![Carte des quadrants](../assets/v7/uui-ref_livepreview-map.png){ .center }
+![Carte des quadrants](../assets/v7/uui-ref_livepreview-map.png){.center}
+
+---
+
+#### Inspection TOP/BOTTOM
+
+Le logiciel peut inspecter les deux faces d'une PCBA. Cette fonction doit être activée pendant la capture de la RÉFÉRENCE, depuis la fenêtre de vue en direct.
+
+![TOP/BOTTOM activé](../assets/v7/references/tb-enable.png){width=600 .center}
+
+Une fois la séquence correcte définie et la PCBA correctement positionnée, appuyez sur le bouton **CAPTURE TOP** pour capturer la face supérieure de la PCBA.
+
+![Capture TOP](../assets/v7/references/top-capture.png){width=600 .center}
+
+Lorsque le processus est terminé, la fenêtre mosaïque apparaît et la RÉFÉRENCE peut être enregistrée dans l'un des emplacements. Vous pouvez ensuite continuer en retournant le panneau et en capturant la face inférieure.
+
+![Capture BOTTOM](../assets/v7/references/bt-capture.png){width=600 .center}
+
+Utilisez le bouton de la fenêtre principale pour basculer entre les images **TOP** et **BOTTOM**.
+
+![Bouton de basculement](../assets/v7/references/switch-button.png){width=400 .center}
+
+![Image TOP](../assets/v7/references/top-image.png){.center}
+
+![Image BOTTOM](../assets/v7/references/bt-image.png){.center}
 
 ---
 
@@ -60,7 +80,7 @@ Vous pouvez également déplacer la caméra vers n’importe quel quadrant du PC
 
 Le système permet une mise au point manuelle du PCB avant de démarrer le processus de capture. Appuyez sur le bouton **FOCUS** pour ajuster l’optique et vérifier que la zone sélectionnée est correctement mise au point.
 
-![Bouton FOCUS](../assets/v7/uui-ref_livepreview-focus.png){ .center }
+![Bouton FOCUS](../assets/v7/uui-ref_livepreview-focus.png){.center}
 
 Par défaut, la caméra effectue la mise au point automatiquement sur le centre du PCB. Cependant, ce n’est pas toujours la zone optimale en raison de la présence de composants hauts.
 
@@ -75,9 +95,9 @@ Une fois la mise au point terminée, le PCB doit être repositionné au centre d
 
 La partie inférieure de la fenêtre permet d’activer ou de désactiver la grille dans la vue en direct et d’ajuster l’exposition.
 
-![Barre inférieure de référence](../assets/v7/uui-ref_livepreview-exposure.png){ .center }
+![Barre inférieure de référence](../assets/v7/uui-ref_livepreview-exposure.png){.center}
 
-![Sélection de la mise au point](../assets/v7/uui-ref_livepreview-select_focus.png){ .center }
+![Sélection de la mise au point](../assets/v7/uui-ref_livepreview-select_focus.png){.center}
 
 ---
 
@@ -94,11 +114,11 @@ Après la capture de la PCBA, la fenêtre mosaïque apparaîtra, permettant de s
 
 ![Processus de capture](../assets/v7/ui-mosaic_after_ref.png){.center}
 
-Une fois le processus de capture terminé, l'image de RÉFÉRENCE sera affichée dans la fenêtre principale et vous permettra de définir [un masque d'exclusion](Set_exclusion_area.md) ou [de dessiner une zone de code-barres](Barcode_reader.md) pour la lecture.
+Une fois le processus de capture terminé, l'image de RÉFÉRENCE sera affichée dans la fenêtre principale et vous permettra de définir [un masque d'exclusion](Set_exclusion_area.md) ou [de dessiner une zone de code-barres](../features/Barcode_reader.md) pour la lecture.
 
 ![Image de référence](../assets/v7/ui-reference.png){.center}
 
-### **Capture d'une UUI**
+### Capture d'une UUI
 
 Après avoir généré ou téléchargé une image de RÉFÉRENCE précédente, nous pouvons procéder à la capture de l'image **UUI** (Unité Sous Inspection) en appuyant sur le bouton.
 
@@ -126,7 +146,7 @@ Une fois le processus de capture terminé, le résultat final sera retourné, af
 
 Si des erreurs sont détectées, un **cadre rouge** apparaîtra autour de la fenêtre principale. Un **cadre vert** s'il n'y a pas d'erreurs.
 
-### **Signalement des erreurs**
+### Signalement des erreurs
 
 Une fois l'inspection terminée, l'opérateur doit surveiller les erreurs signalées, en les marquant comme **erreur réelle** ou **détection de faux positif**.
 Pour ce faire, faites simplement défiler les erreurs en utilisant les **flèches gauche et droite** du clavier.
@@ -146,7 +166,7 @@ Lorsque le logiciel marque une zone qui n'est pas une erreur réelle, l'opérate
 !!! note "Note"
     Notez que l'**icône rouge** ![Icône rouge](../assets/v7/ui-report_red.png){width=20px} marque les défauts réels et l'**icône verte** ![Icône verte](../assets/v7/ui-report_green.png){width=20px} les défauts faux positifs.
 
-### **Génération d'un rapport PDF final**
+### Génération d'un rapport PDF final
 
 Une fois le signalement terminé, l'opérateur peut générer un rapport PDF final en appuyant sur le bouton suivant :
 

@@ -1,5 +1,4 @@
-# **Mettre à jour votre ordinateur AOI**
-
+# Mettre à jour votre ordinateur AOI
 
 **Étape 1**
 
@@ -19,4 +18,4 @@ Insérez la clé USB contenant les fichiers extraits dans un port USB disponible
 
 Une fenêtre de terminal s'ouvrira automatiquement, et le processus de mise à jour de l'application commencera. Une fois le processus de mise à jour terminé, retirez la clé USB.
 
-![Journal du terminal après la mise à jour](../assets/maintance/terminal_update.png)
+![Journal du terminal après la mise à jour](../assets/maintance/terminal_update.png){.center}

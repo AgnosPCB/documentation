@@ -1,43 +1,43 @@
+# Guida all'unboxing
+
+!!! info "Importante"
+
+    Se una parte manca o è difettosa, [inviateci un'e-mail](mailto:support@agnospcb.com).
+
 !!! warning "Importante"
 
-    Se manca qualche pezzo o se è difettoso, [inviaci un'email](mailto:support@agnospcb.com).
+    Una volta completato l'unboxing, assicuratevi di rimuovere tutte le parti arancioni dalla piattaforma di ispezione.
+
+## Passo 1
+
+**Rimuovere il coperchio superiore**
+
+Iniziate rimuovendo il nastro adesivo dai quattro lati del coperchio superiore della camera di ispezione, quindi rimuovetelo.
+
+![Scatola](../assets/v7/1-unpackage.png){.center width=500px}
+
+## Passo 2
+
+**Estrarre la camera di ispezione**
+
+Afferrate la camera di ispezione dai telai laterali superiori in alluminio ed estraetela dalla scatola.
 
 !!! warning "Importante"
 
-    Dopo aver completato l'unboxing, assicurati di rimuovere tutte le **parti arancioni** dalla piattaforma di ispezione.
+    Questa operazione deve essere eseguita da due persone.
 
-## Passaggio 1
-**Estrarre la piattaforma di ispezione**
+![Scatola](../assets/v7/2-unpackage.png){.center width=500px}
 
-Inizia tirando le **maniglie arancioni** mostrate nella fotografia per sollevare con attenzione la piattaforma di ispezione e rimuoverla dall'imballaggio.
+## Passo 3
 
-![Scatola](../assets/v7/unpack-1.png){.center}
+**Rimuovere gli elementi di fissaggio della telecamera**
 
----
+![Scatola](../assets/v7/3-unpackage.png){.center width=500px}
 
-## Passaggio 2
-**Rimuovere le maniglie arancioni**
+## Passo 4
 
-Rimuovi le maniglie arancioni svitando le **quattro viti di fissaggio**. Non dimenticare di rimuovere le viti e i dadi dai profilati una volta che la maniglia è stata estratta. Ripeti questo processo per la maniglia sul lato opposto.
-
-![Scatola](../assets/v7/unpack-2.png){.center}
-
----
-
-## Passaggio 3
-**Rimuovere le viti di fissaggio del carrello**
-
-Svitare le viti che mantengono fisso il carrello.
-
-![Scatola](../assets/v7/unpack-3.webp){.center}
-
-![Scatola](../assets/v7/unpack-4.webp){.center}
-
----
-
-## Passaggio 4
 **Estrarre la scatola blu con gli accessori**
 
-Prendi la **scatola blu** che contiene tutti gli accessori necessari dall'imballaggio. L'elenco dei componenti è disponibile [qui](Package_content.md).
+Estraete dall'imballaggio la scatola blu che contiene tutti gli accessori necessari. Elenco dei componenti [qui](Package_content.md).
 
-![Scatola](../assets/v7/unpack-5.webp){.center}
+![Scatola](../assets/v7/4-unpackage.jpg){.center width=500px}

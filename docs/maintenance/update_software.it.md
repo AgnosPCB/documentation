@@ -1,5 +1,4 @@
-# **Aggiornare il tuo computer AOI**
-
+# Aggiornare il tuo computer AOI
 
 **Passaggio 1**
 
@@ -19,4 +18,4 @@ Inserisci la chiavetta USB contenente i file estratti in una porta USB disponibi
 
 Si aprirà automaticamente una finestra del terminale e il processo di aggiornamento dell'applicazione inizierà. Una volta completato il processo di aggiornamento, rimuovi la chiavetta USB.
 
-![Log del terminale dopo l'aggiornamento](../assets/maintance/terminal_update.png)
+![Log del terminale dopo l'aggiornamento](../assets/maintance/terminal_update.png){.center}

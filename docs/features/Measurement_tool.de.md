@@ -3,7 +3,6 @@
 Das AgnosPCB AOI-System enthält ein Messwerkzeug, mit dem Bediener die Abmessungen von Bauteilen überprüfen, Abstände zwischen Bauteilen messen und Flächen direkt innerhalb der Benutzeroberfläche berechnen können, ohne externe Werkzeuge zu verwenden.
 
 ## Video
-___
 
 Eine vollständige Einführung in diese Funktion finden Sie im folgenden Video:
  
@@ -18,7 +17,7 @@ ___
 
 Klicken Sie auf die Schaltfläche des Messwerkzeugs in der oberen Symbolleiste. Klicken Sie anschließend auf den gewünschten Bereich, um eine vergrößerte Ansicht der ausgewählten Region zu öffnen.
 
-![Schaltfläche des Messwerkzeugs](../assets/measurement-button.png){width=200, .center}
+![Schaltfläche des Messwerkzeugs](../assets/measurement-button.png){width=200 .center}
 
 ## 3. Messung durchführen
 
@@ -27,7 +26,7 @@ Wählen Sie den Messmodus aus:
 - **Abstand (mm/px)** zum Messen des Abstands zwischen zwei Punkten.
 - **Fläche (mm²/px²)** zum Messen einer Oberfläche.
 
-![Messmodi](../assets/measurement-mode-button.png){width=200, .center}
+![Messmodi](../assets/measurement-mode-button.png){width=200 .center}
 
 Definieren Sie anschließend die Messung, indem Sie die gewünschten Punkte oder den gewünschten Bereich im Bild auswählen.
 
@@ -35,4 +34,4 @@ Definieren Sie anschließend die Messung, indem Sie die gewünschten Punkte oder
 
 Das System zeigt die Messung direkt auf dem Bildschirm an und ermöglicht so eine schnelle Überprüfung von Abmessungen und Abständen während der Inspektion.
 
-![Test des Messwerkzeugs](../assets/measurement-test.png){width=500, .center}
+![Test des Messwerkzeugs](../assets/measurement-test.png){width=500 .center}

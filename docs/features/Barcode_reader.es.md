@@ -1,4 +1,4 @@
-# **Lector de código de barras**
+# Lector de código de barras
 
 El software AgnosPCB incorpora una función de lectura de código de barras que soporta **códigos de barras 1D, QR y Datamatrix**.
 
@@ -14,7 +14,7 @@ El código se mostrará en el rectángulo y en el nombre de la REFERENCIA en la 
 
 Una vez que la REFERENCIA esté cargada, proceda con la inspección tomando una foto de la UUI. El código de barras de la UUI se leerá automáticamente en la misma área del código de barras de la REFERENCIA.
 
-Continúe con el [proceso de inspección](Inspection_workflow.md/) como de costumbre. 
+Continúe con el [proceso de inspección](../how_to/Inspection_workflow.md) como de costumbre. 
 
 El código escaneado se incluirá en el informe PDF final de la UUI.
 

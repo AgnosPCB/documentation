@@ -1,4 +1,4 @@
-# **Troubleshooting**
+# Troubleshooting
 
 ??? info "The software does not start/respond"
     Remove the **setup.json** file located in the **APP** folder and then launch the application again.

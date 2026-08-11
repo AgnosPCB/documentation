@@ -1,43 +1,43 @@
+# Auspackanleitung
+
+!!! info "Wichtig"
+
+    Wenn ein Teil fehlt oder defekt ist, [senden Sie uns eine E-Mail](mailto:support@agnospcb.com).
+
 !!! warning "Wichtig"
 
-    Falls ein Teil fehlt oder defekt ist, [senden Sie uns bitte eine E-Mail](mailto:support@agnospcb.com).
-
-!!! warning "Wichtig"
-
-    Nach dem Auspacken stellen Sie sicher, dass Sie alle **orangenen Teile** von der Inspektionsplattform entfernen.
+    Entfernen Sie nach dem Auspacken alle orangefarbenen Teile von der Inspektionsplattform.
 
 ## Schritt 1
-**Die Inspektionsplattform herausnehmen**
 
-Beginnen Sie damit, an den **orangenen Griffen** auf dem Foto zu ziehen, um die Inspektionsplattform vorsichtig aus der Verpackung zu heben.
+**Obere Abdeckung entfernen**
 
-![Kiste](../assets/v7/unpack-1.png){.center}
+Entfernen Sie zunächst das Klebeband an den vier Seiten der oberen Abdeckung der Inspektionskammer und nehmen Sie die Abdeckung ab.
 
----
+![Karton](../assets/v7/1-unpackage.png){.center width=500px}
 
 ## Schritt 2
-**Die orangenen Griffe entfernen**
 
-Entfernen Sie die orangenen Griffe, indem Sie die **vier Befestigungsschrauben** lösen. Vergessen Sie nicht, die Schrauben und Muttern aus den Profilen zu entfernen, sobald der Griff abgenommen ist. Wiederholen Sie diesen Vorgang für den Griff auf der gegenüberliegenden Seite.
+**Inspektionskammer herausnehmen**
 
-![Kiste](../assets/v7/unpack-2.png){.center}
+Halten Sie die Inspektionskammer an den oberen Aluminium-Seitenrahmen und heben Sie sie aus dem Karton.
 
----
+!!! warning "Wichtig"
+
+    Dieser Vorgang muss von zwei Personen ausgeführt werden.
+
+![Karton](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Schritt 3
-**Die Befestigungsschrauben des Wagens entfernen**
 
-Lösen Sie die Schrauben, die den Wagen fixiert halten.
+**Befestigungsteile der Kamera entfernen**
 
-![Kiste](../assets/v7/unpack-3.webp){.center}
-
-![Kiste](../assets/v7/unpack-4.webp){.center}
-
----
+![Karton](../assets/v7/3-unpackage.png){.center width=500px}
 
 ## Schritt 4
-**Die blaue Box mit Zubehör herausnehmen**
 
-Nehmen Sie die **blaue Box**, die sämtliches benötigtes Zubehör enthält, aus der Verpackung. Die Liste der Komponenten finden Sie [hier](Package_content.md).
+**Blaue Box mit dem Zubehör herausnehmen**
 
-![Kiste](../assets/v7/unpack-5.webp){.center}
+Nehmen Sie die blaue Box mit dem gesamten erforderlichen Zubehör aus der Verpackung. Komponentenliste [hier](Package_content.md).
+
+![Karton](../assets/v7/4-unpackage.jpg){.center width=500px}

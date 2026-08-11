@@ -1,43 +1,43 @@
-!!! warning "Importante"
+# Guía de desembalaje
+
+!!! info "Importante"
 
     Si falta alguna pieza o está defectuosa, [envíenos un correo electrónico](mailto:support@agnospcb.com).
 
 !!! warning "Importante"
 
-    Después de completar el desembalaje, asegúrese de retirar todas las **piezas naranjas** de la plataforma de inspección.
+    Una vez completado el desembalaje, asegúrese de retirar todas las piezas naranjas de la plataforma de inspección.
 
 ## Paso 1
-**Extraer la plataforma de inspección**
 
-Comience tirando de las **asas naranjas** que se muestran en la fotografía para levantar con cuidado la plataforma de inspección y sacarla del embalaje.
+**Retirar la cubierta superior**
 
-![Caja](../assets/v7/unpack-1.png){.center}
+Comience retirando la cinta adhesiva de los cuatro lados de la cubierta superior de la cámara de inspección y quítela.
 
----
+![Caja](../assets/v7/1-unpackage.png){.center width=500px}
 
 ## Paso 2
-**Retirar las asas naranjas**
 
-Retire las asas naranjas desenroscando los **cuatro tornillos de fijación**. No olvide retirar los tornillos y las tuercas de los perfiles una vez que se haya extraído el asa. Repita este proceso para el asa del lado opuesto.
+**Extraer la cámara de inspección**
 
-![Caja](../assets/v7/unpack-2.png){.center}
+Sujete la cámara de inspección por los marcos laterales superiores de aluminio y extráigala de la caja.
 
----
+!!! warning "Importante"
+
+    Esta operación debe realizarse entre dos personas.
+
+![Caja](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Paso 3
-**Retirar los tornillos de fijación del carro**
 
-Desenrosque los tornillos que mantienen fijo el carro.
+**Retirar las piezas de sujeción de la cámara**
 
-![Caja](../assets/v7/unpack-3.webp){.center}
-
-![Caja](../assets/v7/unpack-4.webp){.center}
-
----
+![Caja](../assets/v7/3-unpackage.png){.center width=500px}
 
 ## Paso 4
-**Sacar la caja azul con accesorios**
 
-Saque del embalaje la **caja azul** que contiene todos los accesorios necesarios. La lista de componentes se encuentra [aquí](Package_content.md).
+**Extraer la caja azul con los accesorios**
 
-![Caja](../assets/v7/unpack-5.webp){.center}
+Extraiga del embalaje la caja azul que contiene todos los accesorios necesarios. Lista de componentes [aquí](Package_content.md).
+
+![Caja](../assets/v7/4-unpackage.jpg){.center width=500px}

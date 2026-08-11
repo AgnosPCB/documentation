@@ -3,7 +3,6 @@
 Le système AOI AgnosPCB inclut un outil de mesure permettant aux opérateurs de vérifier les dimensions des composants, de mesurer les distances entre les composants et de calculer des surfaces directement dans l’interface, sans utiliser d’outils externes.
 
 ## Vidéo
-___
 
 Pour une présentation complète de cette fonctionnalité, regardez la vidéo suivante :
  
@@ -18,7 +17,7 @@ ___
 
 Cliquez sur le bouton de l’outil de mesure dans la barre d’outils supérieure. Ensuite, cliquez sur la zone d’intérêt pour ouvrir une vue agrandie de la région sélectionnée.
 
-![Bouton de l’outil de mesure](../assets/measurement-button.png){width=200, .center}
+![Bouton de l’outil de mesure](../assets/measurement-button.png){width=200 .center}
 
 ## 3. Effectuer la mesure
 
@@ -27,7 +26,7 @@ Sélectionnez le mode de mesure :
 - **Distance (mm/px)** pour mesurer la distance entre deux points.
 - **Surface (mm²/px²)** pour mesurer une zone.
 
-![Modes de l’outil de mesure](../assets/measurement-mode-button.png){width=200, .center}
+![Modes de l’outil de mesure](../assets/measurement-mode-button.png){width=200 .center}
 
 Ensuite, définissez la mesure en sélectionnant les points ou la zone souhaités sur l’image.
 
@@ -35,4 +34,4 @@ Ensuite, définissez la mesure en sélectionnant les points ou la zone souhaité
 
 Le système affiche la mesure directement à l’écran, permettant une vérification rapide des dimensions et des distances pendant l’inspection.
 
-![Test de l’outil de mesure](../assets/measurement-test.png){width=500, .center}
+![Test de l’outil de mesure](../assets/measurement-test.png){width=500 .center}

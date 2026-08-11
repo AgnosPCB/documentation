@@ -5,7 +5,6 @@ Durante l'ispezione di un PCB, alcuni componenti possono differire dal riferimen
 Contrassegnando questo tipo di errore come **Variante di riferimento**, il sistema lo riconoscerà nelle future ispezioni e non lo segnalerà più come errore.
 
 ## Video
-___
 
 Per una panoramica completa di questa funzionalità, guarda il seguente video:
  
@@ -20,7 +19,7 @@ ___
 
 Naviga tra gli errori rilevati utilizzando i **tasti freccia sinistra/destra (←/→)**.
 
-![Errore variante rilevato](../assets/ref-variant-error.png){ width=600 .center }
+![Errore variante rilevato](../assets/ref-variant-error.png){width=600 .center}
 
 ## 3. Classificare come Variante di riferimento
 
@@ -28,25 +27,25 @@ Premi il **tasto freccia giù (↓)** per rifiutare l'errore. Nel pannello di cl
 
 Comparirà una finestra di dialogo in cui dovrai inserire un nome per la nuova variante (obbligatorio) e, facoltativamente, aggiungere una descrizione. Una volta completato, premi **Confirm**.
 
-![Pannello di classificazione](../assets/ref-variant-label.png){ width=400 .center }
+![Pannello di classificazione](../assets/ref-variant-label.png){width=400 .center}
 
 ## Risultato
 
 Una volta classificata, la variante di riferimento viene salvata e collegata all'immagine di riferimento. Le varianti salvate possono essere visualizzate aprendo un'immagine di riferimento memorizzata. Sono mostrate nel pannello laterale destro, sotto la vista di riferimento ingrandita. Da questo pannello, le varianti possono essere abilitate, disabilitate o eliminate.
 
-![Variante di riferimento salvata](../assets/ref-variant-stored.png){ width=600 .center }
+![Variante di riferimento salvata](../assets/ref-variant-stored.png){width=600 .center}
 
 Questa variante non verrà più segnalata come errore nelle future ispezioni.
 
 !!! warning "Attenzione"
     Una variante di riferimento deve essere creata manualmente per ogni posizione sul PCB in cui compare la variazione. Il sistema non applica automaticamente la variante a componenti identici in altre posizioni.
 
-![Errore variante rilevato](../assets/ref-variant-error.png){ width=400 .center }
-![Freccia verde](../assets/green-arrow-down.png){ width=40 .center }
-![Variante di riferimento](../assets/ref-variant-solved.png){ width=400 .center }
+![Errore variante rilevato](../assets/ref-variant-error.png){width=400 .center}
+![Freccia verde](../assets/green-arrow-down.png){width=40 .center}
+![Variante di riferimento](../assets/ref-variant-solved.png){width=400 .center}
 
 Anche dopo aver creato una variante di riferimento, il sistema continuerà a rilevare eventuali difetti reali su quel componente, qualora si verifichino.
 
 Il report finale di ispezione includerà anche la variante di riferimento, insieme alla sua immagine, al nome assegnato e a eventuali osservazioni aggiuntive.
 
-![Report PDF variante di riferimento](../assets/ref-variant-report.png){width=600, .center}
+![Report PDF variante di riferimento](../assets/ref-variant-report.png){width=600 .center}

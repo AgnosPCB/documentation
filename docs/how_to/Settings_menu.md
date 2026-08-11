@@ -2,7 +2,7 @@
 
 The **settings menu** is divided into several sections, which are described below.
 
-## **General settings**
+## General settings
 
 ![Settings menu interface section](../assets/v7/settings/ui-settings.png){.center}
 
@@ -16,7 +16,7 @@ Enable a set of features in the main [main workspace area](./Screen-layout.md#ma
 
 #### Auto signaling
 
-By default, the software will numerate the errors after the inspection. Disabling this option, only the affected area will be highlighted in color.
+By default, the software numbers each error after the inspection. When this option is disabled, only the affected area is highlighted in color, without a number.
 
 #### Mask color
 
@@ -26,14 +26,14 @@ This option allows you to change the color of the marked error. When the color o
 
 Change the interface language. The current available languages are: **English, French, German, Italian and Spanish**.
 
-## **Workflow options**
+## Workflow options
 
 ![Settings menu workflow section](../assets/v7/settings/workflow-settings.png){.center}
 
 
 #### Use barcode
 
-Toggles the [barcode reading function](./Barcode_reader.md)
+Toggles the [barcode reading function](../features/Barcode_reader.md)
 
 
 #### Show errors popup
@@ -46,7 +46,7 @@ By disabling this option, the mosaic menu won't pop up after taking a **REFERENC
 
 #### Operator mode
 
-Enabling this option will hide several features from the interface, simplifying the software's use. It also prevents the operator from changing the REFERENCE image or the sensitivity of the inspections. A [password](Settings_menu.md#settings-password) can be added so that only the administrator can disable this option.
+Enabling this option will hide several features from the interface, simplifying the software's use. It also prevents the operator from changing the REFERENCE image or the sensitivity of the inspections. A [password](#settings-password) can be added so that only the administrator can disable this option.
 
 #### Sensitivity enabled
 
@@ -54,11 +54,11 @@ It allows you to change the sensitivity while in operator mode.
 
 #### INLINE Mode
 
-Select this mode the AOI is installed in a conveyor belt. Lear more about this functionality in the following section: [Conveyor integration](../getting_started/Conveyor_integration.md)
+Select this mode when the AOI is installed on a conveyor belt. Learn more about this functionality in the following section: [Production line integration](../maintenance/Conveyor_integration.md)
 
 #### Manual align mode
 
-Enable this option to align the REFERENCE and UUI images manually. Lear more about this functionality in the following section: [Manual aligment tool](../features/Manual_alignment.md)
+Enable this option to align the REFERENCE and UUI images manually. Learn more about this functionality in the following section: [Manual alignment tool](../features/Manual_alignment.md)
 
 #### Remember sensibility
 
@@ -66,9 +66,9 @@ By activating this option, the software will maintain the configured inspection 
 
 #### Mandatory errors review
 
-If this option is enabled, the software will not continue inspecting new panels until all errors detected in the current inspection have been [reported](Inspection_workflow.html#reporting-errors) as errors or false positives.
+If this option is enabled, the software will not continue inspecting new panels until all errors detected in the current inspection have been [reported](Inspection_workflow.md#reporting-errors) as errors or false positives.
 
-## **Report options**
+## Report options
 
 ![Settings menu report section](../assets/v7/settings/reports-settings.png){.center}
 
@@ -126,7 +126,7 @@ This is useful when the reports have to be sent by email, archived long term, or
 
 Set a logo for the PDF report.
 
-## **Date/time options**
+## Date/time options
 
 ![Settings menu date section](../assets/v7/settings/date-settings.png){.center}
 
@@ -141,7 +141,7 @@ Set day and time.
 !!! note "Note"
     To apply the changes press the **SET** button and reboot the system.
 
-## **Path option**
+## Path option
 
 ![Settings menu path section](../assets/v7/settings/path-settings.png){.center}
 
@@ -149,7 +149,7 @@ Set day and time.
 
 Change the path where the inspections are generated.
 
-## **Share options**
+## Share options
 
 ![Settings menu share section](../assets/v7/settings/network-settings.png){.center}
 
@@ -163,7 +163,7 @@ By enabling these options, the system will automatically share the PCB_OUT and R
 !!! note "Note"
     For the OFFLINE units, if you need to change the network interface of your unit, please refer to the [network configuration article](../maintenance/network_configuration.md).
 
-## **Users**
+## Users
 
 ![Settings menu users section](../assets/v7/settings/users-settings.png){.center}
 
@@ -173,7 +173,7 @@ Enabling **Enable user access control** requires at least one active **admin** a
 
 Learn more about this functionality in the following section: [User access control](../features/User_control.md)
 
-## **Sequences**
+## Sequences
 
 ![Settings menu sequences section](../assets/v7/custom_sequences/sequences.png){.center}
 
@@ -186,13 +186,13 @@ Learn more about this functionality in the following section: [Custom capture se
 !!! note "Note"
     This tab is not displayed on units configured in **Q1 mode**, which only take a single capture.
 
-## **Machine**
+## Machine
 
 ![Settings menu machine section](../assets/v7/settings/machine-settings.png){.center}
 
 This tab is only available to users with the **admin** role. It displays the hardware parameters of your unit, stored in the **machine.json** file.
 
-Most of the values are shown greyed out: they are displayed **for reference only** and cannot be modified. The fields highlighted in blue are the editable ones:
+Most of the values are shown grayed out: they are displayed **for reference only** and cannot be modified. The fields highlighted in blue are the editable ones:
 
 | Field | Description |
 | --- | --- |
@@ -209,11 +209,11 @@ Press **Save changes** to apply the new values, or **Reset to factory default** 
 !!! note "Note"
     This tab is not displayed on units without an XYZ platform.
 
-## **Debug**
+## Debug
 
 ![Settings menu debug section](../assets/v7/settings/debug-settings.png){.center}
 
-This tab is only available to users with the **admin** role. It generates a **diagnostic report** that allows our support team to analyse the behaviour of your unit.
+This tab is only available to users with the **admin** role. It generates a **diagnostic report** that allows our support team to analyze the behavior of your unit.
 
 To generate it:
 
@@ -222,9 +222,9 @@ To generate it:
 3. Wait until the progress bar is complete. The text area below displays the progress of the process.
 4. Collect the generated files and send them to [support@agnospcb.com](mailto:support@agnospcb.com).
 
-## **Info section**
+## Info section
 
-![Settings menu info section](../assets/v7/ui-settings-info.png){width=650px; .center}
+![Settings menu info section](../assets/v7/ui-settings-info.png){width=650px .center}
 
 #### AOI info
 

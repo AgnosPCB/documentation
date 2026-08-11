@@ -5,7 +5,6 @@ Bei der Inspektion einer Leiterplatte (PCB) können einige Bauteile vom Referenz
 Durch das Markieren dieses Fehlertyps als **Referenzvariante** erkennt das System ihn bei zukünftigen Inspektionen und meldet ihn nicht mehr als Fehler.
 
 ## Video
-___
 
 Für eine vollständige Einführung in diese Funktion sehen Sie sich das folgende Video an:
  
@@ -20,13 +19,13 @@ ___
 
 Navigieren Sie mit den **Pfeiltasten links/rechts (←/→)** zu dem erkannten Fehler.
 
-![Erkannter Variantenfehler](../assets/ref-variant-error.png){ width=600 .center }
+![Erkannter Variantenfehler](../assets/ref-variant-error.png){width=600 .center}
 
 ## 3. Als Referenzvariante klassifizieren
 
 Drücken Sie die **Pfeiltaste nach unten (↓)**, um den Fehler abzulehnen. Wählen Sie im Klassifizierungsbereich **Reference variant** aus.
 
-![Klassifizierungsbereich](../assets/ref-variant-label.png){ width=400 .center }
+![Klassifizierungsbereich](../assets/ref-variant-label.png){width=400 .center}
 
 Es erscheint ein Dialogfenster, in dem Sie einen Namen für die neue Variante eingeben müssen (erforderlich) und optional eine Beschreibung hinzufügen können. Klicken Sie anschließend auf **Confirm**.
 
@@ -34,19 +33,19 @@ Es erscheint ein Dialogfenster, in dem Sie einen Namen für die neue Variante ei
 
 Nach der Klassifizierung wird die Referenzvariante gespeichert und mit dem Referenzbild verknüpft. Gespeicherte Varianten können durch Öffnen eines gespeicherten Referenzbildes angezeigt werden. Sie werden im rechten Seitenbereich unterhalb der vergrößerten Referenzansicht angezeigt. In diesem Bereich können Varianten aktiviert, deaktiviert oder gelöscht werden.
 
-![Gespeicherte Referenzvariante](../assets/ref-variant-stored.png){ width=600 .center }
+![Gespeicherte Referenzvariante](../assets/ref-variant-stored.png){width=600 .center}
 
 Diese Variante wird bei zukünftigen Inspektionen nicht mehr als Fehler gemeldet.
 
 !!! warning "Achtung"
     Für jede Position auf der Leiterplatte, an der die Abweichung auftritt, muss eine Referenzvariante manuell erstellt werden. Das System wendet die Variante nicht automatisch auf identische Bauteile an anderen Positionen an.
 
-![Erkannter Variantenfehler](../assets/ref-variant-error.png){ width=400 .center }
-![Grüner Pfeil](../assets/green-arrow-down.png){ width=40 .center }
-![Referenzvariante](../assets/ref-variant-solved.png){ width=400 .center }
+![Erkannter Variantenfehler](../assets/ref-variant-error.png){width=400 .center}
+![Grüner Pfeil](../assets/green-arrow-down.png){width=40 .center}
+![Referenzvariante](../assets/ref-variant-solved.png){width=400 .center}
 
 Auch nach dem Erstellen einer Referenzvariante erkennt das System weiterhin tatsächliche Defekte an diesem Bauteil, sofern diese auftreten.
 
 Der abschließende Inspektionsbericht enthält ebenfalls die Referenzvariante zusammen mit ihrem Bild, dem vergebenen Namen und eventuellen zusätzlichen Anmerkungen.
 
-![Referenzvariante im PDF-Bericht](../assets/ref-variant-report.png){width=600, .center}
+![Referenzvariante im PDF-Bericht](../assets/ref-variant-report.png){width=600 .center}

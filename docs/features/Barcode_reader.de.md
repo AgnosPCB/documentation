@@ -1,4 +1,4 @@
-# **Barcode-Lesegerät**
+# Barcode-Lesegerät
 
 Die AgnosPCB-Software enthält eine Barcode-Lesefunktion, die **1D-Barcodes, QR und Datamatrix** unterstützt.
 
@@ -14,7 +14,7 @@ Der Code wird im Rechteck und im REFERENZ-Namen oben links angezeigt. Stellen Si
 
 Sobald die REFERENZ geladen ist, fahren Sie mit der Inspektion fort, indem Sie ein Bild der UUI aufnehmen. Der Barcode der UUI wird automatisch im selben Bereich wie der Barcode der REFERENZ gelesen.
 
-Fahren Sie mit dem [Inspektionsprozess](Inspection_workflow.md/) wie gewohnt fort. 
+Fahren Sie mit dem [Inspektionsprozess](../how_to/Inspection_workflow.md) wie gewohnt fort. 
 
 Der gescannte Code wird in den endgültigen PDF-Bericht der UUI aufgenommen.
 

@@ -1,4 +1,4 @@
-# **Risoluzione dei Problemi**
+# Risoluzione dei Problemi
 
 ??? info "Il software non si avvia/non risponde"
     Rimuovi il file **setup.json** che si trova nella cartella **APP** e poi riavvia l'applicazione.
@@ -143,4 +143,4 @@
 
         7. Seleziona il layout nell'angolo in alto a destra.
 
-            ![Passaggio 7](../assets/maintance/keyboard-7.png)
+            ![Passaggio 7](../assets/maintance/keyboard-7.png)
