@@ -15,7 +15,7 @@ Start by removing the adhesive tape from the four sides of the top cover of the 
 ## Step 2
 **Take out the inspection chamber**
 
-Hold the inspection camera by the upper aluminum side frames and remove it from the box.
+Hold the inspection chamber by the upper aluminum side frames and remove it from the box.
 
 !!! warning "Important"
 

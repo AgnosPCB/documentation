@@ -65,6 +65,8 @@ plugins:
             UV conformal coating inspection: Inspección de recubrimiento conformal UV
             Reference variants: Variantes de Referencia
             Measurement tool: Herramienta de medición
+            Custom sequences: Secuencias personalizadas
+            User access control: Control de acceso de usuarios
             Support: Soporte
             Maintenance: Mantenimiento
             Update software: Actualizar software
@@ -96,6 +98,8 @@ plugins:
             UV conformal coating inspection: Inspection du revêtement conforme UV
             Reference variants: Variantes de référence
             Measurement tool: Outil de mesure
+            Custom sequences: Séquences personnalisées
+            User access control: Contrôle d'accès des utilisateurs
             Support: Support
             Maintenance: Maintenance
             Update software: Mise à jour du logiciel
@@ -127,6 +131,8 @@ plugins:
             UV conformal coating inspection: Ispezione del rivestimento conformale UV
             Reference variants: Varianti di riferimento
             Measurement tool: Strumento di misurazione
+            Custom sequences: Sequenze personalizzate
+            User access control: Controllo accessi utenti
             Support: Supporto
             Maintenance: Manutenzione
             Update software: Aggiornamento software
@@ -158,6 +164,8 @@ plugins:
             UV conformal coating inspection: UV-Schutzlackinspektion
             Reference variants: Referenzvarianten
             Measurement tool: Messwerkzeug
+            Custom sequences: Benutzerdefinierte Sequenzen
+            User access control: Benutzerzugriffskontrolle
             Support: Support
             Maintenance: Wartung
             Update software: Software-Update
@@ -194,11 +202,14 @@ nav:
       - Reference variants: 'features/Multivariant_feature.md'
       - Measurement tool: 'features/Measurement_tool.md'
       - Manual alignment tool: 'features/Manual_alignment.md'
+      - Custom sequences: 'features/Custom_sequences.md'
+      - User access control: 'features/User_control.md'
 
   - Support:
     - Maintenance: maintenance/maintenance.md
     - Specific procedures:
       - UV conformal coating installation guide: maintenance/UV_kit_install.md
+      - INLINE integration: maintenance/Conveyor_integration.md
       - Network interface configuration: maintenance/network_configuration.md
     - Update software: maintenance/update_software.md
     - Troubleshooting: maintenance/Troubleshooting.md
@@ -218,6 +229,10 @@ markdown_extensions:
   - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
+  # Enables :material-*: / :octicons-*: icons used in the home page cards
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 
 

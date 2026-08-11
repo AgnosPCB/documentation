@@ -18,7 +18,7 @@ ___
 
 Click the measure tool button in the top toolbar. Then, click on the area of interest to open a zoomed view of the selected region.
 
-![Measurement tool button](../assets/measurement-button.png){width=200, .center}
+![Measurement tool button](../assets/v7/ui-button13.png){width=400, .center}
 
 ## 3. Perform the measurement
 

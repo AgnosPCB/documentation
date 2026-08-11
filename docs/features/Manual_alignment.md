@@ -2,20 +2,17 @@
 
 For a more precised images alignment between the REFERENCE and the UUI images, the AgnosPCB Inspection Tool Software includes a manual alignment tool which increases the inspection precision.
 
-## Video 
-___
-
-For a complete walkthrough of this feature, watch the following video:
-
-<iframe width="100%" height="400" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-___
 
 ## 1. Enabling the manual alignment
 
 !!! info "Note"
     This feature is only available for **1x1 images inspections**.
 
-When capturing a new UUI image, activate the manual alignment from the Live Preview menu.
+When capturing a new UUI image, activate the manual alignment from the settings menu.
+
+![Manual alignment option](../assets/v7/manual_align/1-manual-alignment-option.png){.center}
+
+Then, during the UUI image capturing, activate the manual aligment option.
 
 ![Manual alignment option](../assets/v7/manual_align/manual-aling-button.png){.center}
 
@@ -53,3 +50,5 @@ Once the three aligment points are defined in the REFERENCE image, mark **the sa
 
 Once all the alignment points are placed, press the **ALIGN** button to start the process.
 The software will align both images and then perform the inspection.
+
+![Images aligned](../assets/v7/manual_align/MA-final.png){.center}

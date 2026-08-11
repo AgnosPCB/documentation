@@ -7,3 +7,111 @@
     display: block;
     margin: 0 auto;
 }
+
+/* ---------------------------------------------------------------------------
+   Home page (index.md)
+   --------------------------------------------------------------------------- */
+
+/* Hero banner ------------------------------------------------------------- */
+.md-typeset .agnos-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .6rem;
+  padding: 1.6rem 1rem 1.2rem;
+  margin: 0 0 1.2rem;
+  border-radius: .5rem;
+  background:
+    radial-gradient(circle at 50% 0%,
+      rgba(64, 171, 189, .18) 0%,
+      rgba(64, 171, 189, 0) 70%);
+}
+
+.md-typeset .agnos-hero img {
+  max-width: 22rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto .4rem;
+}
+
+.md-typeset .agnos-hero h1 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .agnos-hero .agnos-hero-tagline {
+  max-width: 34rem;
+  margin: 0 auto;
+  font-size: .85rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .agnos-hero .agnos-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6rem;
+  margin-top: .8rem;
+}
+
+/* Keep the hero buttons from stretching on small screens */
+.md-typeset .agnos-hero .md-button {
+  margin: 0;
+}
+
+/* Key-figure strip -------------------------------------------------------- */
+.md-typeset .agnos-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: .8rem;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.md-typeset .agnos-highlights > div {
+  padding: .8rem .6rem;
+  border: .05rem solid var(--md-default-fg-color--lightest);
+  border-radius: .4rem;
+}
+
+.md-typeset .agnos-highlights .agnos-highlight-icon svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--md-primary-fg-color);
+}
+
+.md-typeset .agnos-highlights strong {
+  display: block;
+  margin-top: .3rem;
+  font-size: .78rem;
+}
+
+.md-typeset .agnos-highlights p {
+  margin: .2rem 0 0;
+  font-size: .68rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Cards ------------------------------------------------------------------- */
+.md-typeset .grid.cards > ul > li {
+  transition: border-color 125ms, box-shadow 125ms;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .1);
+}
+
+.md-typeset .grid.cards .lg svg {
+  fill: var(--md-primary-fg-color);
+}
+
+/* Compact feature grid ---------------------------------------------------- */
+.md-typeset .agnos-features.grid.cards > ul > li {
+  padding: .6rem .8rem;
+  font-size: .72rem;
+}
