@@ -1,0 +1,2373 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="UV_kit_install.html">
+      
+      
+        <link rel="next" href="network_configuration.html">
+      
+      
+        
+          <link rel="alternate" href="../../maintenance/Conveyor_integration.html" hreflang="en">
+        
+          <link rel="alternate" href="../../es/maintenance/Conveyor_integration.html" hreflang="es">
+        
+          <link rel="alternate" href="../../fr/maintenance/Conveyor_integration.html" hreflang="fr">
+        
+          <link rel="alternate" href="Conveyor_integration.html" hreflang="it">
+        
+          <link rel="alternate" href="../../de/maintenance/Conveyor_integration.html" hreflang="de">
+        
+      
+      
+      <link rel="icon" href="../../assets/cropped-agnosPCB-favicon-192x192-t.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Integrazione in linea di produzione - AgnosPCB Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/agnos_colors.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conveyor-integration-inline-mode" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../index.html" title="AgnosPCB Documentation" class="md-header__button md-logo" aria-label="AgnosPCB Documentation" data-md-component="logo">
+      
+  <img src="../../assets/cropped-agnosPCB-favicon-192x192.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AgnosPCB Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Integrazione in linea di produzione
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleziona la lingua">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../maintenance/Conveyor_integration.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/maintenance/Conveyor_integration.html" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../fr/maintenance/Conveyor_integration.html" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="Conveyor_integration.html" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../de/maintenance/Conveyor_integration.html" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Pagina iniziale
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../getting_started/Package_content.html" class="md-tabs__link">
+          
+  
+  
+  Per iniziare
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../how_to/Screen-layout.html" class="md-tabs__link">
+          
+  
+  
+  Come usarlo
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="maintenance.html" class="md-tabs__link">
+          
+  
+  
+  Supporto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../help/FAQ.html" class="md-tabs__link">
+          
+  
+  
+  Informazioni aggiuntive
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="AgnosPCB Documentation" class="md-nav__button md-logo" aria-label="AgnosPCB Documentation" data-md-component="logo">
+      
+  <img src="../../assets/cropped-agnosPCB-favicon-192x192.webp" alt="logo">
+
+    </a>
+    AgnosPCB Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagina iniziale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Per iniziare
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Per iniziare
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/Package_content.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contenuto della confezione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/Unboxing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida all'unboxing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/Connection_guide.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida alla connessione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/terminology.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminologia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Systems_comparison.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Confronto tra sistemi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Come usarlo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Come usarlo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/Screen-layout.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interfaccia utente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/Inspection_workflow.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flusso di lavoro di ispezione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/Settings_menu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Menu Impostazioni
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help/Tips.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suggerimenti
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strumenti di ispezione
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Strumenti di ispezione
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/Set_sensitivity.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sensibilità
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/Set_exclusion_area.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Area di esclusione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/Workspace_icons.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Icone dell'area di lavoro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to/UUI_to_REFERENCE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UUI a RIFERIMENTO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/Measurement_tool.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strumento di misurazione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/Manual_alignment.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Allineamento manuale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funzioni avanzate
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Funzioni avanzate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/Barcode_reader.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lettore di codici a barre
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/Multivariant_feature.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Varianti di RIFERIMENTO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/Custom_sequences.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sequenze personalizzate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/UV_conformal_coating_inspection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ispezione del rivestimento conformale UV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/User_control.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controllo accessi utenti
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supporto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Supporto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="maintenance.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manutenzione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="update_software.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aggiornamento software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Troubleshooting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Risoluzione dei problemi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procedure di installazione
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Procedure di installazione
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UV_kit_install.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installazione del kit di rivestimento UV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrazione in linea di produzione
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Conveyor_integration.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrazione in linea di produzione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you begin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-installing-the-modbus-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Installing the MODBUS module
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Installing the MODBUS module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configuring-the-inspection-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Configuring the inspection software
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Configuring the inspection software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-enable-inline-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Enable INLINE mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-recommended-companion-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Recommended companion settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-where-the-results-are-written" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Where the results are written
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-commissioning-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Commissioning checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="network_configuration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione interfaccia di rete
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Informazioni aggiuntive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Informazioni aggiuntive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help/FAQ.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domande frequenti (FAQ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Products-and-services.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prodotti e servizi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you begin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-installing-the-modbus-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Installing the MODBUS module
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Installing the MODBUS module">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configuring-the-inspection-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Configuring the inspection software
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Configuring the inspection software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-enable-inline-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Enable INLINE mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-recommended-companion-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Recommended companion settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-where-the-results-are-written" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Where the results are written
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-commissioning-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Commissioning checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="conveyor-integration-inline-mode">Conveyor integration (INLINE mode)<a class="headerlink" href="#conveyor-integration-inline-mode" title="Permanent link">&para;</a></h1>
+<p>This guide explains how to integrate the <strong>AgnosPCB AI 4050</strong> into an automated
+production line, so the AOI receives boards from a conveyor, inspects them without
+operator intervention and returns a PASS/FAIL result to the line controller.</p>
+<p>The integration has two parts:</p>
+<ol>
+<li>The <strong>MODBUS module</strong>, which connects the AOI to the conveyor and to the line controller (PLC).</li>
+<li>The <strong>INLINE mode</strong> of the inspection software, which drives the unattended workflow.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Read before starting</p>
+<p>Line integration involves electrical work on both the AOI and the conveyor
+controller. All wiring must be done with <strong>both systems powered off</strong> and by
+personnel qualified to work on the line control cabinet.</p>
+</div>
+<hr />
+<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
+<p>Check that you have the following:</p>
+<ul>
+<li>An <strong>AI 4050</strong> unit already unboxed, assembled and working in standalone mode.
+  If you have not reached that point yet, complete the
+  <a href="../getting_started/Unboxing.html">unboxing guide</a> and the <a href="../getting_started/Connection_guide.html">connection guide</a> first.</li>
+<li>A <strong>REFERENCE</strong> image already captured and validated for every product the line
+  will run. INLINE mode inspects against existing REFERENCES — it cannot create them.</li>
+<li>The <strong>MODBUS module</strong> supplied by AgnosPCB for your unit.</li>
+<li>Access to the line controller (PLC) programming environment.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Licensing</p>
+<p>INLINE mode and the JSON report output are licensed features. Confirm with
+<a href="mailto:support@agnospcb.com">support@agnospcb.com</a> that your account profile has
+them enabled before commissioning the line — the options will not take effect
+otherwise.</p>
+</div>
+<hr />
+<h2 id="1-installing-the-modbus-module">1. Installing the MODBUS module<a class="headerlink" href="#1-installing-the-modbus-module" title="Permanent link">&para;</a></h2>
+<!-- TODO (AgnosPCB engineering): the I/O assignment and the connection to the
+     processing unit are documented from the wiring diagrams. Still missing:
+     - Where the module mounts (DIN rail inside the cabinet? external enclosure?)
+     - Which power supply feeds the 7~36 V input, and its rating
+     - Cable type and maximum run length for the RS-485 link and for the I/O
+     - Whether the relay contacts are used as NO or NC, and their rated load
+     - PLC-side wiring detail -->
+
+<p><img alt="Modbus wiring" class="center" src="../../assets/v7/conveyor/modbus_wiring.png" /></p>
+<p>The module provides <strong>8 relay outputs</strong> and <strong>8 digital inputs</strong>, of which the integration uses one input and four outputs. It connects to a <strong>USB port of the AgnosPCB processing unit</strong> through the isolated USB to RS232/485 converter, as shown in the diagram above.</p>
+<h3 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">&para;</a></h3>
+<p>The input has to be connected to an <strong>endstop switch</strong>, or to any sensor that detects that the PCBA is in place and ready to be inspected.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Signal</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DI1</strong></td>
+<td><code>BOARD_LOADED</code></td>
+<td>Triggers an inspection, provided that the inspection platform is ready.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">&para;</a></h3>
+<p>The outputs communicate the inspection status to the rest of the assembly line: to the next conveyor and to the PLC or control system of the line.</p>
+<table>
+<thead>
+<tr>
+<th>Output</th>
+<th>Terminal</th>
+<th>Signal</th>
+<th>Active when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DO1</strong></td>
+<td>CH1</td>
+<td><code>READY</code></td>
+<td>The inspection platform is ready to start an inspection.</td>
+</tr>
+<tr>
+<td><strong>DO2</strong></td>
+<td>CH2</td>
+<td><code>INSPECTING</code></td>
+<td>The inspection platform is performing an inspection.</td>
+</tr>
+<tr>
+<td><strong>DO3</strong></td>
+<td>CH3</td>
+<td><code>BOARD OK</code></td>
+<td>The inspection has completed and the inspected board is OK.</td>
+</tr>
+<tr>
+<td><strong>DO4</strong></td>
+<td>CH4</td>
+<td><code>BOARD NOK</code></td>
+<td>The inspection has completed and a fault has been detected on the board.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">When READY is off</p>
+<p><strong>DO1</strong> is not active during the initialization of the system, while a processing task is ongoing, or when the application is not in the main window — for example while the settings menu or the reference mosaic is open.</p>
+</div>
+<h3 id="general-connection">General connection<a class="headerlink" href="#general-connection" title="Permanent link">&para;</a></h3>
+<p>The following diagram shows how all the elements involved are connected in a typical installation:</p>
+<p><img alt="General connection" class="center" src="../../assets/v7/conveyor/general_connection.png" /></p>
+<p>Four groups of equipment take part in the integration:</p>
+<ul>
+<li>The <strong>AOI conveyor</strong>, which carries the board into the inspection area and holds the camera and the position sensor.</li>
+<li>The <strong>AgnosPCB computer</strong>, which runs the inspection software.</li>
+<li>The <strong>MODBUS module</strong> together with its USB to RS-485 converter, which translates between the software and the electrical signals of the line.</li>
+<li>The <strong>line equipment</strong>: the conveyor that follows the AOI, and the PLC or control system of the customer.</li>
+</ul>
+<p>The connections between them are the following:</p>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Connection</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera of the AOI conveyor</td>
+<td>AgnosPCB computer</td>
+<td>USB</td>
+<td>Captures the images of the board.</td>
+</tr>
+<tr>
+<td>AgnosPCB computer</td>
+<td>USB to RS232/485 converter</td>
+<td>USB</td>
+<td>Carries the MODBUS communication out of the computer.</td>
+</tr>
+<tr>
+<td>USB to RS232/485 converter</td>
+<td>MODBUS module</td>
+<td>RS-485 (<strong>A+</strong> / <strong>B−</strong>)</td>
+<td>Links the converter with the relay module.</td>
+</tr>
+<tr>
+<td>Endstop / sensor of the AOI conveyor</td>
+<td>MODBUS module input <strong>DI1</strong></td>
+<td>Digital input</td>
+<td>Signals that the board is in place, which triggers the inspection.</td>
+</tr>
+<tr>
+<td>MODBUS module output <strong>DO1</strong></td>
+<td>Following conveyor</td>
+<td>Relay contact</td>
+<td>Tells the next conveyor that the AOI is ready to receive a board.</td>
+</tr>
+<tr>
+<td>MODBUS module outputs <strong>DO2</strong>, <strong>DO3</strong> and <strong>DO4</strong></td>
+<td>PLC / customer's control system</td>
+<td>Relay contacts</td>
+<td>Report the progress and the result of the inspection.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Power supply</p>
+<p>Besides these connections, the MODBUS module needs to be powered through its <strong>7~36 V</strong> input, which is not represented in the diagram.</p>
+</div>
+<hr />
+<h2 id="2-configuring-the-inspection-software">2. Configuring the inspection software<a class="headerlink" href="#2-configuring-the-inspection-software" title="Permanent link">&para;</a></h2>
+<p>Once the module is installed and communicating, prepare the software for unattended
+operation. All the options below are in the <strong>Settings</strong> window; see the
+<a href="../how_to/Settings_menu.html">settings menu</a> for the full reference.</p>
+<h3 id="21-enable-inline-mode">2.1 Enable INLINE mode<a class="headerlink" href="#21-enable-inline-mode" title="Permanent link">&para;</a></h3>
+<p>Open <strong>Settings → Workflow</strong> and enable <strong>INLINE Mode (Conveyor)</strong>.</p>
+<p><img alt="Settings menu workflow section" class="center" src="../../assets/v7/settings/workflow-settings.png" /></p>
+<p>This switches the client from the manual, keyboard-driven workflow to the API-driven
+workflow used on a line: the inspection is triggered by the line controller instead of
+by the operator pressing <strong>S</strong>.</p>
+<h3 id="22-recommended-companion-settings">2.2 Recommended companion settings<a class="headerlink" href="#22-recommended-companion-settings" title="Permanent link">&para;</a></h3>
+<p>These options are not mandatory, but on an unattended line they are what makes the
+difference between a clean integration and a stalled conveyor:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Location</th>
+<th>Recommended value</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Operator mode</strong></td>
+<td>Workflow</td>
+<td>Enabled</td>
+<td>Hides reference capture and prevents an operator from altering the REFERENCE or sensitivity mid-shift. Protect it with a settings password (see the <a href="../how_to/Settings_menu.html">settings menu</a>).</td>
+</tr>
+<tr>
+<td><strong>Mandatory errors review</strong></td>
+<td>Workflow</td>
+<td><strong>Disabled</strong></td>
+<td>If enabled, the software waits for a human to review every fault before allowing the next inspection — this will block the line.</td>
+</tr>
+<tr>
+<td><strong>Show errors popup</strong></td>
+<td>Workflow</td>
+<td>Disabled</td>
+<td>Prevents a modal dialog from waiting for input during automatic operation.</td>
+</tr>
+<tr>
+<td><strong>Show references mosaic</strong></td>
+<td>Workflow</td>
+<td>Disabled</td>
+<td>Avoids a popup after image capture.</td>
+</tr>
+<tr>
+<td><strong>Auto report OK / NOK</strong></td>
+<td>Reports</td>
+<td>Both enabled</td>
+<td>Generates the PDF for every board without operator action, so the line produces a complete traceability record.</td>
+</tr>
+<tr>
+<td><strong>Create JSON report</strong></td>
+<td>Reports</td>
+<td>Enabled</td>
+<td>Machine-readable result for your MES/SCADA. Requires a license.</td>
+</tr>
+<tr>
+<td><strong>Use barcodes</strong></td>
+<td>Workflow</td>
+<td>Enabled</td>
+<td>Lets the AOI load the correct REFERENCE automatically from the board barcode, so mixed-product lines do not need a manual product change. Requires a license. See <a href="../features/Barcode_reader.html">barcode reader</a>.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>With <strong>Auto report</strong> enabled, every fault is written to the PDF with the
+"unknown" label, because no operator classifies them. This is expected on a line —
+the classification is done later, offline, from the stored reports.</p>
+</div>
+<h3 id="23-where-the-results-are-written">2.3 Where the results are written<a class="headerlink" href="#23-where-the-results-are-written" title="Permanent link">&para;</a></h3>
+<p>Inspection outputs are written to the <strong>PCB_OUT</strong> folder, configurable in
+<strong>Settings → Paths</strong>.</p>
+<p>To let your MES or a network drive collect them automatically, enable the shares in
+<strong>Settings → Network</strong>: <strong>Share PCB_OUT</strong>, <strong>Share REFERENCES</strong> and <strong>Share REPORTS</strong>
+expose those folders over the network, and each one displays its network path once
+active. For OFFLINE units that need a specific network interface, see the
+<a href="network_configuration.html">network interface configuration</a> article.</p>
+<hr />
+<h2 id="3-commissioning-checklist">3. Commissioning checklist<a class="headerlink" href="#3-commissioning-checklist" title="Permanent link">&para;</a></h2>
+<p>Before handing the cell over to production, verify the following in order. Run the
+first tests with the conveyor in manual/jog mode.</p>
+<ol>
+<li><strong>Standalone inspection works.</strong> With INLINE mode still disabled, run a normal
+   inspection from the keyboard and confirm the result is correct. If the AOI does not
+   inspect correctly by hand, it will not inspect correctly on the line.</li>
+<li><strong>REFERENCES are loaded</strong> for every product the line will run, and each one has been
+   validated on a known-good board. See <a href="../help/Tips.html">tips</a>.</li>
+<li><strong>Barcode reading is reliable</strong>, if you are using it for changeover. Test it on
+   several boards, including the worst-printed labels you have.</li>
+<li><strong>Board placement is repeatable.</strong> The conveyor must present the board within the
+   inspection area in a consistent position — the AOI reports <strong>WARNING / ROTATED</strong> or
+   <strong>WARNING / SHIFTED</strong> when the board deviates significantly from the REFERENCE.
+   Check for these warnings during the first runs and correct the mechanical stop or
+   the board fixture before going into production.</li>
+<li><strong>The MODBUS signals are live</strong> — the <strong>DI1</strong> input triggers an inspection, and the
+   <strong>DO1</strong> to <strong>DO4</strong> outputs change state as expected on the line side.</li>
+<li><strong>A full cycle runs end to end</strong>, with a known-good board and with a known-bad board,
+   and the line controller receives the correct PASS and FAIL result each time.</li>
+<li><strong>Reports are being written</strong> to PCB_OUT and are reachable from your MES.</li>
+<li><strong>Failure behavior is correct.</strong> Stop the AOI software mid-cycle and confirm the
+   line controller detects the loss and stops feeding boards rather than passing them
+   through uninspected.</li>
+</ol>
+<hr />
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The line stops after the first faulty board</td>
+<td><strong>Mandatory errors review</strong> is enabled. Disable it in Settings → Workflow.</td>
+</tr>
+<tr>
+<td>A dialog is waiting for input mid-cycle</td>
+<td>Disable <strong>Show errors popup</strong> and <strong>Show references mosaic</strong> in Settings → Workflow.</td>
+</tr>
+<tr>
+<td>Every board fails on a new product</td>
+<td>The loaded REFERENCE does not match the product. Check the barcode reading, or the REFERENCE selected for the batch.</td>
+</tr>
+<tr>
+<td><strong>WARNING / ROTATED</strong> or <strong>WARNING / SHIFTED</strong> on most boards</td>
+<td>The conveyor is not presenting boards in a repeatable position. Correct the mechanical stop; the AOI compares against the REFERENCE position.</td>
+</tr>
+<tr>
+<td><strong>WARNING / NO CROP</strong></td>
+<td>The autocrop could not find the board edge and the full image was compared. Recapture the REFERENCE, or set the crop area manually on the reference image.</td>
+</tr>
+<tr>
+<td>The AOI stops inspecting and shows <code>Engine [ OFFLINE ]</code></td>
+<td>ONLINE units only: the internet connection or the account is down. See <a href="Troubleshooting.html">troubleshooting</a>.</td>
+</tr>
+<tr>
+<td>Credits exhausted mid-shift</td>
+<td>ONLINE units only: a warning appears below 10 credits. Contact <a href="mailto:support@agnospcb.com">support@agnospcb.com</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>For anything not covered here, contact
+<a href="mailto:support@agnospcb.com">support@agnospcb.com</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 - 2025 AgnosPCB
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

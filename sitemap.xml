@@ -1,1153 +1,1403 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://agnospcb.github.io/documentation/index.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>index.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/index.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/index.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/index.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/index.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/index.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/Products-and-services.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>Systems_comparison.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Products-and-services.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/Systems_comparison.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/Systems_comparsion.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>features/Barcode_reader.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Systems_comparsion.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Barcode_reader.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/getting_started/Connection_guide.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>features/Custom_sequences.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Custom_sequences.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/getting_started/Package_content.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>features/Manual_alignment.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Manual_alignment.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/getting_started/Unboxing.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>features/Measurement_tool.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Measurement_tool.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/help/FAQ.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>features/Multivariant_feature.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Multivariant_feature.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/help/Tips.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>features/UV_conformal_coating_inspection.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/UV_conformal_coating_inspection.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/Barcode_reader.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>features/User_control.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/User_control.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/Inspection_workflow.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>getting_started/Connection_guide.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Connection_guide.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/Screen-layout.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>getting_started/Package_content.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Package_content.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/Set_exclusion_area.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>getting_started/Unboxing.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Unboxing.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/Set_sensitivity.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>help/FAQ.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/FAQ.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/Settings_menu.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>help/Tips.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/Tips.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/UUI_to_REFERENCE.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/Inspection_workflow.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/UV_conformal_coating_inspection.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/Screen-layout.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Screen-layout.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/Workspace_icons.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/Set_exclusion_area.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_exclusion_area.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/how_to/terminology.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/Set_sensitivity.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_sensitivity.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/maintenance/Troubleshooting.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/Settings_menu.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Settings_menu.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/maintenance/UV_kit_install.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/UUI_to_REFERENCE.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/UUI_to_REFERENCE.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/maintenance/maintenance.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/Workspace_icons.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Workspace_icons.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/maintenance/network_configuration.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>how_to/terminology.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/terminology.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/maintenance/update_software.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>maintenance/Conveyor_integration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Conveyor_integration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/index.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>maintenance/Troubleshooting.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/index.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/index.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Troubleshooting.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/Products-and-services.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>maintenance/UV_kit_install.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Products-and-services.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/UV_kit_install.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/Systems_comparsion.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>maintenance/maintenance.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Systems_comparsion.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/maintenance.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/getting_started/Connection_guide.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>maintenance/network_configuration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/network_configuration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/getting_started/Package_content.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>maintenance/update_software.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/update_software.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/getting_started/Unboxing.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/index.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="index.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/index.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/help/FAQ.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/Systems_comparison.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/Systems_comparison.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/help/Tips.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/features/Barcode_reader.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Barcode_reader.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/Barcode_reader.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/features/Custom_sequences.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Custom_sequences.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/Inspection_workflow.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/features/Manual_alignment.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Manual_alignment.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/Screen-layout.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/features/Measurement_tool.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Measurement_tool.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/Set_exclusion_area.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/features/Multivariant_feature.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Multivariant_feature.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/Set_sensitivity.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/features/UV_conformal_coating_inspection.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/UV_conformal_coating_inspection.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/Settings_menu.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/features/User_control.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/User_control.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/UUI_to_REFERENCE.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/getting_started/Connection_guide.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Connection_guide.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/UV_conformal_coating_inspection.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/getting_started/Package_content.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Package_content.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/Workspace_icons.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/getting_started/Unboxing.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Unboxing.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/how_to/terminology.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/help/FAQ.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/FAQ.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/maintenance/Troubleshooting.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/help/Tips.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/Tips.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/maintenance/UV_kit_install.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/Inspection_workflow.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/maintenance/maintenance.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/Screen-layout.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Screen-layout.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/maintenance/network_configuration.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/Set_exclusion_area.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_exclusion_area.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/es/maintenance/update_software.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/Set_sensitivity.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_sensitivity.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/index.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/Settings_menu.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/index.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/index.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Settings_menu.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/Products-and-services.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/UUI_to_REFERENCE.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Products-and-services.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/UUI_to_REFERENCE.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/Systems_comparsion.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/Workspace_icons.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Systems_comparsion.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Workspace_icons.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/getting_started/Connection_guide.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/how_to/terminology.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/terminology.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/getting_started/Package_content.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/maintenance/Conveyor_integration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Conveyor_integration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/getting_started/Unboxing.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/maintenance/Troubleshooting.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Troubleshooting.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/help/FAQ.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/maintenance/UV_kit_install.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/UV_kit_install.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/help/Tips.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/maintenance/maintenance.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/maintenance.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/Barcode_reader.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/maintenance/network_configuration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/network_configuration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/Inspection_workflow.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>es/maintenance/update_software.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/update_software.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/Screen-layout.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/index.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/index.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/index.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/Set_exclusion_area.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/Systems_comparison.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/Systems_comparison.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/Set_sensitivity.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/features/Barcode_reader.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Barcode_reader.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/Settings_menu.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/features/Custom_sequences.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Custom_sequences.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/UUI_to_REFERENCE.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/features/Manual_alignment.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Manual_alignment.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/UV_conformal_coating_inspection.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/features/Measurement_tool.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Measurement_tool.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/Workspace_icons.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/features/Multivariant_feature.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Multivariant_feature.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/how_to/terminology.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/features/UV_conformal_coating_inspection.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/UV_conformal_coating_inspection.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/maintenance/Troubleshooting.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/features/User_control.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/User_control.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/maintenance/UV_kit_install.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/getting_started/Connection_guide.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Connection_guide.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/maintenance/maintenance.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/getting_started/Package_content.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Package_content.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/maintenance/network_configuration.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/getting_started/Unboxing.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Unboxing.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/fr/maintenance/update_software.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/help/FAQ.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/FAQ.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/index.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/help/Tips.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/index.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/index.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/Tips.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/Products-and-services.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/Inspection_workflow.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Products-and-services.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/Systems_comparsion.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/Screen-layout.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Systems_comparsion.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Screen-layout.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/getting_started/Connection_guide.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/Set_exclusion_area.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_exclusion_area.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/getting_started/Package_content.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/Set_sensitivity.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_sensitivity.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/getting_started/Unboxing.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/Settings_menu.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Settings_menu.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/help/FAQ.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/UUI_to_REFERENCE.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/UUI_to_REFERENCE.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/help/Tips.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/Workspace_icons.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Workspace_icons.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/Barcode_reader.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/how_to/terminology.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/terminology.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/Inspection_workflow.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/maintenance/Conveyor_integration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Conveyor_integration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/Screen-layout.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/maintenance/Troubleshooting.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Troubleshooting.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/Set_exclusion_area.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/maintenance/UV_kit_install.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/UV_kit_install.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/Set_sensitivity.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/maintenance/maintenance.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/maintenance.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/Settings_menu.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/maintenance/network_configuration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/network_configuration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/UUI_to_REFERENCE.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>fr/maintenance/update_software.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/update_software.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/UV_conformal_coating_inspection.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/index.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/index.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/index.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/Workspace_icons.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/Systems_comparison.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/Systems_comparison.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/how_to/terminology.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/features/Barcode_reader.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Barcode_reader.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/maintenance/Troubleshooting.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/features/Custom_sequences.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Custom_sequences.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/maintenance/UV_kit_install.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/features/Manual_alignment.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Manual_alignment.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/maintenance/maintenance.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/features/Measurement_tool.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Measurement_tool.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/maintenance/network_configuration.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/features/Multivariant_feature.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Multivariant_feature.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/it/maintenance/update_software.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/features/UV_conformal_coating_inspection.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/UV_conformal_coating_inspection.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/index.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/features/User_control.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/index.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/index.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/index.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/User_control.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/Products-and-services.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/getting_started/Connection_guide.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Products-and-services.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Products-and-services.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Connection_guide.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/Systems_comparsion.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/getting_started/Package_content.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/Systems_comparsion.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/Systems_comparsion.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Package_content.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/getting_started/Connection_guide.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/getting_started/Unboxing.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Connection_guide.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Unboxing.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/getting_started/Package_content.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/help/FAQ.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Package_content.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/FAQ.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/getting_started/Unboxing.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/help/Tips.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/getting_started/Unboxing.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/Tips.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/help/FAQ.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/Inspection_workflow.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/FAQ.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/help/Tips.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/Screen-layout.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/help/Tips.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Screen-layout.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/Barcode_reader.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/Set_exclusion_area.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Barcode_reader.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_exclusion_area.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/Inspection_workflow.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/Set_sensitivity.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Inspection_workflow.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_sensitivity.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/Screen-layout.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/Settings_menu.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Screen-layout.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Settings_menu.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/Set_exclusion_area.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/UUI_to_REFERENCE.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_exclusion_area.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/UUI_to_REFERENCE.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/Set_sensitivity.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/Workspace_icons.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Set_sensitivity.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Workspace_icons.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/Settings_menu.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/how_to/terminology.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Settings_menu.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/terminology.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/UUI_to_REFERENCE.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/maintenance/Conveyor_integration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UUI_to_REFERENCE.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Conveyor_integration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/UV_conformal_coating_inspection.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/maintenance/Troubleshooting.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/UV_conformal_coating_inspection.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Troubleshooting.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/Workspace_icons.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/maintenance/UV_kit_install.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/Workspace_icons.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/UV_kit_install.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/how_to/terminology.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/maintenance/maintenance.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/how_to/terminology.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/maintenance.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/maintenance/Troubleshooting.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/maintenance/network_configuration.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/Troubleshooting.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/network_configuration.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/maintenance/UV_kit_install.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>it/maintenance/update_software.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/UV_kit_install.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/update_software.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/maintenance/maintenance.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>de/index.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/maintenance.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/index.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/index.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/maintenance/network_configuration.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>de/Systems_comparison.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/network_configuration.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/Systems_comparison.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/Systems_comparison.html"/>
     </url>
     <url>
-        <loc>https://agnospcb.github.io/documentation/de/maintenance/update_software.html</loc>
-        <lastmod>2026-04-13</lastmod>
+        <loc>de/features/Barcode_reader.html</loc>
+        <lastmod>2026-08-11</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://agnospcb.github.io/documentation/de/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://agnospcb.github.io/documentation/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://agnospcb.github.io/documentation/es/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://agnospcb.github.io/documentation/fr/maintenance/update_software.html"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agnospcb.github.io/documentation/it/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Barcode_reader.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Barcode_reader.html"/>
+    </url>
+    <url>
+        <loc>de/features/Custom_sequences.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Custom_sequences.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Custom_sequences.html"/>
+    </url>
+    <url>
+        <loc>de/features/Manual_alignment.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Manual_alignment.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Manual_alignment.html"/>
+    </url>
+    <url>
+        <loc>de/features/Measurement_tool.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Measurement_tool.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Measurement_tool.html"/>
+    </url>
+    <url>
+        <loc>de/features/Multivariant_feature.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/Multivariant_feature.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/Multivariant_feature.html"/>
+    </url>
+    <url>
+        <loc>de/features/UV_conformal_coating_inspection.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/UV_conformal_coating_inspection.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/UV_conformal_coating_inspection.html"/>
+    </url>
+    <url>
+        <loc>de/features/User_control.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/features/User_control.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/features/User_control.html"/>
+    </url>
+    <url>
+        <loc>de/getting_started/Connection_guide.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Connection_guide.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Connection_guide.html"/>
+    </url>
+    <url>
+        <loc>de/getting_started/Package_content.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Package_content.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Package_content.html"/>
+    </url>
+    <url>
+        <loc>de/getting_started/Unboxing.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/getting_started/Unboxing.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/getting_started/Unboxing.html"/>
+    </url>
+    <url>
+        <loc>de/help/FAQ.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/FAQ.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/FAQ.html"/>
+    </url>
+    <url>
+        <loc>de/help/Tips.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/help/Tips.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/help/Tips.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/Inspection_workflow.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/Screen-layout.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Screen-layout.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Screen-layout.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/Set_exclusion_area.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_exclusion_area.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_exclusion_area.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/Set_sensitivity.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Set_sensitivity.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Set_sensitivity.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/Settings_menu.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Settings_menu.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Settings_menu.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/UUI_to_REFERENCE.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/UUI_to_REFERENCE.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/UUI_to_REFERENCE.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/Workspace_icons.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Workspace_icons.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Workspace_icons.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/terminology.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/terminology.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/terminology.html"/>
+    </url>
+    <url>
+        <loc>de/maintenance/Conveyor_integration.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Conveyor_integration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Conveyor_integration.html"/>
+    </url>
+    <url>
+        <loc>de/maintenance/Troubleshooting.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/Troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/Troubleshooting.html"/>
+    </url>
+    <url>
+        <loc>de/maintenance/UV_kit_install.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/UV_kit_install.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/UV_kit_install.html"/>
+    </url>
+    <url>
+        <loc>de/maintenance/maintenance.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/maintenance.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/maintenance.html"/>
+    </url>
+    <url>
+        <loc>de/maintenance/network_configuration.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/network_configuration.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/network_configuration.html"/>
+    </url>
+    <url>
+        <loc>de/maintenance/update_software.html</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/maintenance/update_software.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/maintenance/update_software.html"/>
     </url>
 </urlset>
