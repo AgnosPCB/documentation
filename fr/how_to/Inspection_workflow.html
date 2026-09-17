@@ -1919,8 +1919,8 @@
 
 
 
-<h1 id="flux-de-travail-dinspection">Flux de travail d'inspection<a class="headerlink" href="#flux-de-travail-dinspection" title="Permanent link">&para;</a></h1>
-<h3 id="lancement-du-logiciel">Lancement du logiciel<a class="headerlink" href="#lancement-du-logiciel" title="Permanent link">&para;</a></h3>
+<h1 id="flux-de-travail-dinspection">Flux de travail d'inspection</h1>
+<h3 id="lancement-du-logiciel">Lancement du logiciel</h3>
 <ul>
 <li>Connectez l'alimentation à la plateforme d'inspection sur le panneau arrière</li>
 <li>Allumez le moniteur</li>
@@ -1929,10 +1929,10 @@
 <li><strong>Pour les unités EN LIGNE uniquement</strong> : une fenêtre de connexion apparaîtra, demandant les identifiants de votre compte AgnosPCB. Les identifiants seront stockés dans l'unité pour une utilisation future et il ne sera pas nécessaire de se reconnecter.</li>
 </ul>
 <p><img alt="Fenêtre de connexion" class="center" src="../../assets/v7/uui-login.png" /></p>
-<h2 id="procedure-dinspection">Procédure d'inspection<a class="headerlink" href="#procedure-dinspection" title="Permanent link">&para;</a></h2>
+<h2 id="procedure-dinspection">Procédure d'inspection</h2>
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <hr />
-<h3 id="generation-dune-reference">Génération d'une RÉFÉRENCE<a class="headerlink" href="#generation-dune-reference" title="Permanent link">&para;</a></h3>
+<h3 id="generation-dune-reference">Génération d'une RÉFÉRENCE</h3>
 <p>Le logiciel AgnosPCB Inspection tool va <strong>« comparer »</strong> la photographie de votre circuit/panneau de <strong>RÉFÉRENCE</strong> (« golden sample ») avec toutes les photos que vous prendrez du circuit à inspecter (photos à « ANALYSER »).</p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -1945,7 +1945,7 @@
 <p>Dans cette fenêtre, nous devons définir les images nécessaires pour couvrir l'ensemble de la PCBA.</p>
 <p><img alt="Dimensions REF" class="center" src="../../assets/v7/uui-ref_livepreview-dimensions.png" /></p>
 <hr />
-<h4 id="capture-de-la-taille-du-pcb">Capture de la taille du PCB<a class="headerlink" href="#capture-de-la-taille-du-pcb" title="Permanent link">&para;</a></h4>
+<h4 id="capture-de-la-taille-du-pcb">Capture de la taille du PCB</h4>
 <p>Pour les PCBAs de grande taille, le champ de vision de la caméra peut ne pas être suffisant pour capturer toute la carte en une seule image. Dans ce cas, le système capture plusieurs images et les assemble automatiquement à l’aide de l’IA en une seule image prête pour l’inspection.</p>
 <p><img alt="Processus de stitching" class="center" src="../../assets/stitching.png" width="600" /></p>
 <p>Si vous n’êtes pas sûr du nombre d’images nécessaires, placez le PCBA au centre de la zone d’inspection et appuyez sur le bouton <strong>AUTO</strong>. Le système analysera la carte et configurera automatiquement les paramètres optimaux.</p>
@@ -1953,7 +1953,7 @@
 <p>Vous pouvez également déplacer la caméra vers n’importe quel quadrant du PCBA en cliquant sur la zone souhaitée dans la vue miniature.</p>
 <p><img alt="Carte des quadrants" class="center" src="../../assets/v7/uui-ref_livepreview-map.png" /></p>
 <hr />
-<h4 id="inspection-topbottom">Inspection TOP/BOTTOM<a class="headerlink" href="#inspection-topbottom" title="Permanent link">&para;</a></h4>
+<h4 id="inspection-topbottom">Inspection TOP/BOTTOM</h4>
 <p>Le logiciel peut inspecter les deux faces d'une PCBA. Cette fonction doit être activée pendant la capture de la RÉFÉRENCE, depuis la fenêtre de vue en direct.</p>
 <p><img alt="TOP/BOTTOM activé" class="center" src="../../assets/v7/references/tb-enable.png" width="600" /></p>
 <p>Une fois la séquence correcte définie et la PCBA correctement positionnée, appuyez sur le bouton <strong>CAPTURE TOP</strong> pour capturer la face supérieure de la PCBA.</p>
@@ -1965,7 +1965,7 @@
 <p><img alt="Image TOP" class="center" src="../../assets/v7/references/top-image.png" /></p>
 <p><img alt="Image BOTTOM" class="center" src="../../assets/v7/references/bt-image.png" /></p>
 <hr />
-<h4 id="mise-au-point">Mise au point<a class="headerlink" href="#mise-au-point" title="Permanent link">&para;</a></h4>
+<h4 id="mise-au-point">Mise au point</h4>
 <p>Le système permet une mise au point manuelle du PCB avant de démarrer le processus de capture. Appuyez sur le bouton <strong>FOCUS</strong> pour ajuster l’optique et vérifier que la zone sélectionnée est correctement mise au point.</p>
 <p><img alt="Bouton FOCUS" class="center" src="../../assets/v7/uui-ref_livepreview-focus.png" /></p>
 <p>Par défaut, la caméra effectue la mise au point automatiquement sur le centre du PCB. Cependant, ce n’est pas toujours la zone optimale en raison de la présence de composants hauts.</p>
@@ -1991,7 +1991,7 @@
 <p><img alt="Processus de capture" class="center" src="../../assets/v7/ui-mosaic_after_ref.png" /></p>
 <p>Une fois le processus de capture terminé, l'image de RÉFÉRENCE sera affichée dans la fenêtre principale et vous permettra de définir <a href="Set_exclusion_area.html">un masque d'exclusion</a> ou <a href="../features/Barcode_reader.html">de dessiner une zone de code-barres</a> pour la lecture.</p>
 <p><img alt="Image de référence" class="center" src="../../assets/v7/ui-reference.png" /></p>
-<h3 id="capture-dune-uui">Capture d'une UUI<a class="headerlink" href="#capture-dune-uui" title="Permanent link">&para;</a></h3>
+<h3 id="capture-dune-uui">Capture d'une UUI</h3>
 <p>Après avoir généré ou téléchargé une image de RÉFÉRENCE précédente, nous pouvons procéder à la capture de l'image <strong>UUI</strong> (Unité Sous Inspection) en appuyant sur le bouton.</p>
 <p><img alt="Bouton UUI" class="center" src="../../assets/v7/ui-button11.png" /></p>
 <p>Une fenêtre de prévisualisation en direct apparaîtra, montrant un fantôme de l'image de RÉFÉRENCE. Cela aide à aligner la PCBA UUI avec la RÉFÉRENCE.</p>
@@ -2010,7 +2010,7 @@
 <p><img alt="Bouton Sensibilité" class="center" src="../../assets/v7/ui-button6.png" /></p>
 <p><img alt="Inférence UUI" class="center" src="../../assets/v7/ui-uui_report.png" /></p>
 <p>Si des erreurs sont détectées, un <strong>cadre rouge</strong> apparaîtra autour de la fenêtre principale. Un <strong>cadre vert</strong> s'il n'y a pas d'erreurs.</p>
-<h3 id="signalement-des-erreurs">Signalement des erreurs<a class="headerlink" href="#signalement-des-erreurs" title="Permanent link">&para;</a></h3>
+<h3 id="signalement-des-erreurs">Signalement des erreurs</h3>
 <p>Une fois l'inspection terminée, l'opérateur doit surveiller les erreurs signalées, en les marquant comme <strong>erreur réelle</strong> ou <strong>détection de faux positif</strong>.
 Pour ce faire, faites simplement défiler les erreurs en utilisant les <strong>flèches gauche et droite</strong> du clavier.</p>
 <p>Pour marquer une erreur réelle, déplacez-vous simplement vers le défaut et appuyez sur la <strong>flèche haut</strong> de votre clavier. Une nouvelle fenêtre apparaîtra, montrant le défaut en détail et vous permettant de le catégoriser en sélectionnant un type de défaut dans la liste.</p>
@@ -2023,7 +2023,7 @@ Pour ce faire, faites simplement défiler les erreurs en utilisant les <strong>f
 <p class="admonition-title">Note</p>
 <p>Notez que l'<strong>icône rouge</strong> <img alt="Icône rouge" src="../../assets/v7/ui-report_red.png" width="20px" /> marque les défauts réels et l'<strong>icône verte</strong> <img alt="Icône verte" src="../../assets/v7/ui-report_green.png" width="20px" /> les défauts faux positifs.</p>
 </div>
-<h3 id="generation-dun-rapport-pdf-final">Génération d'un rapport PDF final<a class="headerlink" href="#generation-dun-rapport-pdf-final" title="Permanent link">&para;</a></h3>
+<h3 id="generation-dun-rapport-pdf-final">Génération d'un rapport PDF final</h3>
 <p>Une fois le signalement terminé, l'opérateur peut générer un rapport PDF final en appuyant sur le bouton suivant :</p>
 <p><img alt="Rapport final" class="center" src="../../assets/v7/ui-button8.png" /></p>
 <p>Une fenêtre apparaît, vous permettant de marquer l'inspection comme <strong>OK</strong> ou <strong>NON OK</strong>. Si la PCBA réussit le contrôle qualité, appuyez sur l'icône verte.</p>

@@ -1919,8 +1919,8 @@
 
 
 
-<h1 id="inspection-workflow">Inspection workflow<a class="headerlink" href="#inspection-workflow" title="Permanent link">&para;</a></h1>
-<h3 id="launching-the-software">Launching the software<a class="headerlink" href="#launching-the-software" title="Permanent link">&para;</a></h3>
+<h1 id="inspection-workflow">Inspection workflow</h1>
+<h3 id="launching-the-software">Launching the software</h3>
 <ul>
 <li>Connect the power supply to the inspection platform on the rear panel</li>
 <li>Turn on the monitor</li>
@@ -1929,10 +1929,10 @@
 <li><strong>For ONLINE units only</strong>: a login window will pop up asking for your AgnosPCB's account credentials. The credentials will be stored on the unit for future use, and you will not need to log in again.</li>
 </ul>
 <p><img alt="Login window" class="center" src="../assets/v7/uui-login.png" /></p>
-<h2 id="inspection-procedure">Inspection procedure<a class="headerlink" href="#inspection-procedure" title="Permanent link">&para;</a></h2>
+<h2 id="inspection-procedure">Inspection procedure</h2>
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FirteJF0U1E?si=IiWu4CkiELWYecYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <hr />
-<h3 id="generating-a-reference">Generating a REFERENCE<a class="headerlink" href="#generating-a-reference" title="Permanent link">&para;</a></h3>
+<h3 id="generating-a-reference">Generating a REFERENCE</h3>
 <p>The AgnosPCB Inspection tool software will <strong>“compare”</strong> the photograph of your <strong>REFERENCE</strong> circuit or panel (“golden sample”) with all the <a href="terminology.html#uui">UUI</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -1943,7 +1943,7 @@
 <p>A new window will pop up with multiple tools:</p>
 <p><img alt="REF window" class="center" src="../assets/v7/references/preview.png" width="600" /></p>
 <hr />
-<h4 id="capturing-the-pcb-size">Capturing the PCB Size<a class="headerlink" href="#capturing-the-pcb-size" title="Permanent link">&para;</a></h4>
+<h4 id="capturing-the-pcb-size">Capturing the PCB Size</h4>
 <p>For larger PCBAs, the camera field of view may not be sufficient to capture the entire board in a single image. In these cases, the system captures multiple images and automatically stitches them together using AI into a single image ready for inspection.In this window we have to set the proper capturing sequence needed to cover all the PCBA or panel.</p>
 <p><img alt="REF dimensions" class="center" src="../assets/v7/references/preview-sequences.png" width="600" /></p>
 <p><img alt="Stitching process" class="center" src="../assets/stitching.png" width="600" /></p>
@@ -1952,7 +1952,7 @@
 <p>You can also move the camera to any quadrant of the PCBA by clicking on the desired area in the miniature view.</p>
 <p><img alt="Quadrants map" class="center" src="../assets/v7/uui-ref_livepreview-map.png" /></p>
 <hr />
-<h4 id="topbottom-inspection">TOP/BOTTOM inspection<a class="headerlink" href="#topbottom-inspection" title="Permanent link">&para;</a></h4>
+<h4 id="topbottom-inspection">TOP/BOTTOM inspection</h4>
 <p>The software can inspect both sides of a PCBA. This feature has to be enabled while capturing the REFERENCE, from the live preview window.</p>
 <p><img alt="Top/bottom enabled" class="center" src="../assets/v7/references/tb-enable.png" width="600" /></p>
 <p>Once the correct sequence has been set and the PCBA is correctly placed, press the <strong>CAPTURE TOP</strong> button to capture the top side of the PCBA.</p>
@@ -1964,7 +1964,7 @@
 <p><img alt="TOP image" class="center" src="../assets/v7/references/top-image.png" /></p>
 <p><img alt="BOTTOM image" class="center" src="../assets/v7/references/bt-image.png" /></p>
 <hr />
-<h4 id="focus">Focus<a class="headerlink" href="#focus" title="Permanent link">&para;</a></h4>
+<h4 id="focus">Focus</h4>
 <p>The system allows manual focusing of the PCB before starting the capture process. Press the <strong>FOCUS</strong> button to adjust the optics and verify that the selected area is correctly focused.</p>
 <p><img alt="FOCUS button" class="center" src="../assets/v7/uui-ref_livepreview-focus.png" /></p>
 <p>By default, the camera focuses automatically on the center of the PCB. However, this may not always be the optimal area due to the presence of tall components.</p>
@@ -1990,7 +1990,7 @@
 <p><img alt="Capturing process" class="center" src="../assets/v7/ui-mosaic_after_ref.png" /></p>
 <p>Once the capture process is finished, the REFERENCE image will be displayed in the main window and will allow you to set <a href="Set_exclusion_area.html">exclusion mask</a> or <a href="../features/Barcode_reader.html">draw a barcode</a> area for reading.</p>
 <p><img alt="Reference image" class="center" src="../assets/v7/ui-reference.png" /></p>
-<h3 id="capturing-an-uui">Capturing an UUI<a class="headerlink" href="#capturing-an-uui" title="Permanent link">&para;</a></h3>
+<h3 id="capturing-an-uui">Capturing an UUI</h3>
 <p>After generating or uploading a previous REFERENCE image, we can proceed with the capture of the <strong>UUI</strong> (Unit Under Inspection) image by pressing the button.</p>
 <p><img alt="UUI button" class="center" src="../assets/v7/ui-button11.png" /></p>
 <p>A live preview window will pop up showing a ghosted overlay of the REFERENCE image. This helps to align the UUI PCBA with the REFERENCE.</p>
@@ -2009,7 +2009,7 @@
 <p><img alt="Sensitivity button" class="center" src="../assets/v7/ui-button6.png" /></p>
 <p><img alt="UUI inference" class="center" src="../assets/v7/ui-uui_report.png" /></p>
 <p>If errors are detected, a <strong>red frame</strong> will appear around the main window. A <strong>green frame</strong> will appear if there are no errors.</p>
-<h3 id="reporting-errors">Reporting errors<a class="headerlink" href="#reporting-errors" title="Permanent link">&para;</a></h3>
+<h3 id="reporting-errors">Reporting errors</h3>
 <p>Once the inspection is complete, the operator must monitor the flagged errors, marking them as an <strong>actual error</strong> or a <strong>false positive detection</strong>.
 To do this, simply scroll through the errors using the <strong>left and right arrows</strong> on the keyboard.</p>
 <p>To mark a real error, just move to the fault and press the <strong>up arrow</strong> on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault from the list.</p>
@@ -2022,7 +2022,7 @@ To do this, simply scroll through the errors using the <strong>left and right ar
 <p class="admonition-title">Note</p>
 <p>Note the <strong>red icon</strong> <img alt="Red icon" src="../assets/v7/ui-report_red.png" width="20px" /> marks the actual faults and the <strong>green icon</strong> <img alt="Green icon" src="../assets/v7/ui-report_green.png" width="20px" /> marks the false positive faults.</p>
 </div>
-<h3 id="generating-a-final-pdf-report">Generating a final PDF report<a class="headerlink" href="#generating-a-final-pdf-report" title="Permanent link">&para;</a></h3>
+<h3 id="generating-a-final-pdf-report">Generating a final PDF report</h3>
 <p>Once the reporting has finished, the operator can generate a final PDF report by pressing the following button:</p>
 <p><img alt="Final report" class="center" src="../assets/v7/ui-button8.png" /></p>
 <p>A window appears allowing you to mark the inspection as <strong>OK</strong> or <strong>NOT OK</strong>. If the PCBA passes the quality check successfully, press the green icon.</p>

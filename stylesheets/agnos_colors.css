@@ -115,17 +115,3 @@
   padding: .6rem .8rem;
   font-size: .72rem;
 }
-
-/* Permalinks (¶) ---------------------------------------------------------- */
-/* The `navigation.tracking` feature keeps the heading currently in view as the
-   URL fragment, so that heading always matches `:target`. Material reveals the
-   permalink for `:target`, which left a stray ¶ next to the title on page load.
-   Restrict the reveal to hover/focus, the way it behaves without tracking. */
-.md-typeset :target > .headerlink {
-  opacity: 0;
-}
-
-.md-typeset .headerlink:focus,
-.md-typeset :hover > .headerlink {
-  opacity: 1;
-}

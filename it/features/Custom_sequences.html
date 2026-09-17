@@ -1953,8 +1953,8 @@
 
 
 
-<h1 id="custom-capture-sequences">Custom capture sequences<a class="headerlink" href="#custom-capture-sequences" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-a-capture-sequence">What is a capture sequence?<a class="headerlink" href="#what-is-a-capture-sequence" title="Permanent link">&para;</a></h2>
+<h1 id="custom-capture-sequences">Custom capture sequences</h1>
+<h2 id="what-is-a-capture-sequence">What is a capture sequence?</h2>
 <p>The AOI does not photograph the whole board in a single shot. The camera moves over the inspection area and takes a <strong>grid of photographs</strong>, which the software then stitches together into one image. That grid is what we call a <strong>sequence</strong>.</p>
 <p>The software includes a set of predefined sequences that cover the most common board sizes:</p>
 <table>
@@ -1999,7 +1999,7 @@
 </tbody>
 </table>
 <p>A <strong>custom sequence</strong> lets you define your own grid when none of the predefined ones fits your board properly.</p>
-<h2 id="when-do-you-need-one">When do you need one?<a class="headerlink" href="#when-do-you-need-one" title="Permanent link">&para;</a></h2>
+<h2 id="when-do-you-need-one">When do you need one?</h2>
 <p>Creating a custom sequence is worthwhile when:</p>
 <ul>
 <li>Your board has a shape that does not match any of the predefined grids, typically <strong>long and narrow panels</strong>.</li>
@@ -2007,14 +2007,14 @@
 <li>You inspect the same product repeatedly and want the capture grid to fit it as tightly as possible.</li>
 </ul>
 <p>Each capture of the grid is processed separately, and the live preview window displays how many inferences the selected sequence performs. A grid adjusted to your board avoids unnecessary captures.</p>
-<h2 id="where-to-find-it">Where to find it<a class="headerlink" href="#where-to-find-it" title="Permanent link">&para;</a></h2>
+<h2 id="where-to-find-it">Where to find it</h2>
 <p>Open the <a href="../how_to/Settings_menu.html">settings menu</a> and go to the <strong>Sequences</strong> tab.</p>
 <p><img alt="Sequences tab" class="center" src="../../assets/v7/custom_sequences/sequences.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This tab is only available to users with the <strong>admin</strong> role.</p>
 </div>
-<h2 id="the-parameters">The parameters<a class="headerlink" href="#the-parameters" title="Permanent link">&para;</a></h2>
+<h2 id="the-parameters">The parameters</h2>
 <table>
 <thead>
 <tr>
@@ -2053,30 +2053,30 @@
 <p class="admonition-title">About the crop buffer</p>
 <p>Adjacent captures need to overlap slightly so the software can stitch them together. If the overlap is too small the seams between captures may become visible, and if it is too large you are photographing the same area twice without any benefit.</p>
 </div>
-<h2 id="creating-a-custom-sequence">Creating a custom sequence<a class="headerlink" href="#creating-a-custom-sequence" title="Permanent link">&para;</a></h2>
-<h3 id="1-add-the-sequence">1. Add the sequence<a class="headerlink" href="#1-add-the-sequence" title="Permanent link">&para;</a></h3>
+<h2 id="creating-a-custom-sequence">Creating a custom sequence</h2>
+<h3 id="1-add-the-sequence">1. Add the sequence</h3>
 <p>Press the <strong>+</strong> button below the sequences list to create a new one.</p>
 <p><img alt="Add a sequence" class="center" src="../../assets/v7/custom_sequences/sequences-add.png" width="250px" /></p>
 <p>The <strong>−</strong> button deletes the sequence selected in the list, and <strong>Dup</strong> duplicates it. Duplicating a predefined sequence that is close to what you need is usually faster than starting from scratch.</p>
-<h3 id="2-name-it-and-set-the-grid">2. Name it and set the grid<a class="headerlink" href="#2-name-it-and-set-the-grid" title="Permanent link">&para;</a></h3>
+<h3 id="2-name-it-and-set-the-grid">2. Name it and set the grid</h3>
 <p>Give the sequence a descriptive name — it is what you will look for later in the live preview — and set the number of <strong>columns</strong> and <strong>rows</strong> your board needs.</p>
 <p><img alt="Sequence properties" class="center" src="../../assets/v7/custom_sequences/sequences-properties.png" /></p>
 <p>The <strong>Size cm</strong> field updates automatically as you change the values, so you can check whether the resulting area covers your board.</p>
-<h3 id="3-position-the-grid-and-define-the-capture-order">3. Position the grid and define the capture order<a class="headerlink" href="#3-position-the-grid-and-define-the-capture-order" title="Permanent link">&para;</a></h3>
+<h3 id="3-position-the-grid-and-define-the-capture-order">3. Position the grid and define the capture order</h3>
 <p>Set <strong>Start X</strong> and <strong>Start Y</strong> to place the first capture, and <strong>Step X</strong> and <strong>Step Y</strong> to set how far the camera moves between captures. Then press <strong>Recalc coords</strong> to recalculate the position of every capture from those values.</p>
 <p>The canvas displays the resulting grid to scale. <strong>Click on the cells</strong> in the order you want them to be photographed to define the capture order.</p>
 <p><img alt="Capture order" class="center" src="../../assets/v7/custom_sequences/sequences-order.png" /></p>
 <p>In the example above, a tall and narrow panel is covered with <strong>1 column and 3 rows</strong>. The first capture is at X 312, Y 53, and with a <strong>Step Y</strong> of 90 the following captures fall at Y 143 and Y 233. The <strong>Data</strong> tab lists the coordinates of every capture, and lets you edit them one by one if you need to fine-tune a specific position.</p>
 <p>You can also <strong>left-click and drag</strong> on the canvas to move the view, and <strong>right-click and drag</strong> to adjust the overlap zone visually.</p>
-<h3 id="4-check-the-result">4. Check the result<a class="headerlink" href="#4-check-the-result" title="Permanent link">&para;</a></h3>
+<h3 id="4-check-the-result">4. Check the result</h3>
 <p>Select a capture and open the <strong>Preview</strong> tab to see the live camera image at that exact position. This is the quickest way to confirm that the grid really covers your board before saving.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The preview requires the platform to be connected, since the camera physically moves to the selected position.</p>
 </div>
-<h3 id="5-save">5. Save<a class="headerlink" href="#5-save" title="Permanent link">&para;</a></h3>
+<h3 id="5-save">5. Save</h3>
 <p>Press <strong>Save Sequences</strong>. The configuration is stored in the <strong>sequences.json</strong> file of your unit.</p>
-<h2 id="using-your-sequence">Using your sequence<a class="headerlink" href="#using-your-sequence" title="Permanent link">&para;</a></h2>
+<h2 id="using-your-sequence">Using your sequence</h2>
 <p>Once saved, your sequence appears as a <strong>CUSTOM</strong> option in the live preview window, both when taking a REFERENCE image and when starting an inspection.</p>
 <p><img alt="Custom sequence in the live preview" class="center" src="../../assets/v7/custom_sequences/sequences-preview.png" /></p>
 <p>Selecting it displays the <strong>Sequence Info</strong> panel with the name of the sequence, the number of inferences it performs and the area it covers.</p>

@@ -1845,25 +1845,25 @@
 
 
 
-<h1 id="terminologia">Terminología<a class="headerlink" href="#terminologia" title="Permanent link">&para;</a></h1>
-<h2 id="red-neuronal">Red Neuronal<a class="headerlink" href="#red-neuronal" title="Permanent link">&para;</a></h2>
+<h1 id="terminologia">Terminología</h1>
+<h2 id="red-neuronal">Red Neuronal</h2>
 <p>En el aprendizaje automático, la red neuronal se refiere a un grupo de neuronas artificiales organizadas de una manera específica para realizar una tarea concreta. Cada neurona representa una función matemática. En el caso de <strong>AgnosPCB</strong>, estas neuronas realizan una inspección visual en busca de defectos en las PCBA. La arquitectura de interconexión de estas neuronas se mejora constantemente para aumentar las tasas de detección de fallos.</p>
 <p><img alt="Arquitectura de Red Neuronal" class="center" src="../../assets/v7/neural_networks.webp" width="700px" /></p>
-<h2 id="referencia">REFERENCIA<a class="headerlink" href="#referencia" title="Permanent link">&para;</a></h2>
+<h2 id="referencia">REFERENCIA</h2>
 <p>La imagen de <strong>REFERENCIA</strong> es la imagen de una PCBA libre de defectos utilizada para las inspecciones. Antes de generar la imagen de REFERENCIA, el operador debe inspeccionar la PCBA de REFERENCIA (placa DORADA) para asegurarse de que no tiene errores de fabricación.</p>
 <p><img alt="Imagen de Referencia" class="center" src="../../assets/v7/ref-example.jpg" width="500px" /></p>
-<h2 id="uui">UUI<a class="headerlink" href="#uui" title="Permanent link">&para;</a></h2>
+<h2 id="uui">UUI</h2>
 <p>La <strong>Unidad Bajo Inspección (UUI)</strong> es la imagen de la PCBA que se inspeccionará durante la fabricación. Esta imagen se compara con la imagen de REFERENCIA para detectar defectos de fabricación.</p>
 <p><img alt="Imagen UUI" class="center" src="../../assets/v7/uui-example.jpg" width="500px" /></p>
-<h2 id="inferencia">Inferencia<a class="headerlink" href="#inferencia" title="Permanent link">&para;</a></h2>
+<h2 id="inferencia">Inferencia</h2>
 <p>Este es el resultado de comparar las imágenes de REFERENCIA y UUI. Los errores, si los hay, se marcan en rojo sobre la imagen UUI. Todos los errores están numerados para facilitar la referencia.</p>
 <p><img alt="Imagen de Inferencia" class="center" src="../../assets/v7/inference-example.png" width="500px" /></p>
-<h2 id="informe">Informe<a class="headerlink" href="#informe" title="Permanent link">&para;</a></h2>
+<h2 id="informe">Informe</h2>
 <p>Los errores detectados por el software deben ser revisados y confirmados por un operador. Pueden ser reportados como un <strong>error real</strong> o un <strong>falso positivo</strong> y etiquetados con el tipo de error. Todos estos errores reportados se utilizarán para generar un informe de inspección final en PDF.</p>
 <p><img alt="Ventana de Informe" class="center" src="../../assets/v7/ui-report.png" /></p>
-<h2 id="error">Error<a class="headerlink" href="#error" title="Permanent link">&para;</a></h2>
+<h2 id="error">Error</h2>
 <p>Definimos un <strong>error</strong> como un componente que no está ensamblado correctamente, está dañado o falta. Cualquier contaminación o daño en la placa también se considera un error.</p>
-<h2 id="falso-positivo">Falso positivo<a class="headerlink" href="#falso-positivo" title="Permanent link">&para;</a></h2>
+<h2 id="falso-positivo">Falso positivo</h2>
 <p>La detección de <strong>falso positivo</strong> ocurre cuando el software AgnosPCB detecta una diferencia suficiente entre la REFERENCIA y la UUI en un componente como para marcarlo como un error, pero no hay un fallo real que afecte al funcionamiento de la PCBA. Esto puede ser causado por un cambio en el marcado, la forma o el color de un componente que es equivalente al de la referencia.</p>
 
 

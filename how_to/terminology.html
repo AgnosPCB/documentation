@@ -1845,25 +1845,25 @@
 
 
 
-<h1 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h1>
-<h2 id="neural-network">Neural Network<a class="headerlink" href="#neural-network" title="Permanent link">&para;</a></h2>
+<h1 id="terminology">Terminology</h1>
+<h2 id="neural-network">Neural Network</h2>
 <p>In machine learning, a neural network is a group of artificial neurons organized in a specific way to perform a specific task. Each neuron represents a mathematical function. In the case of <strong>AgnosPCB</strong>, these neurons perform a visual inspection for defects in PCBAs. The interconnection architecture of these neurons is constantly being improved to increase the fault detection rates.</p>
 <p><img alt="Neural Network Architecture" class="center" src="../assets/v7/neural_networks.webp" width="700px" /></p>
-<h2 id="reference">REFERENCE<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<h2 id="reference">REFERENCE</h2>
 <p>The REFERENCE image is the image of a fault-free PCBA used for inspections. Before generating the REFERENCE image, the operator must inspect the REFERENCE PCBA (GOLDEN board) to ensure it is free of manufacturing errors. See <a href="../help/Tips.html">Tips</a> for how to obtain a good REFERENCE image.</p>
 <p><img alt="Reference image" class="center" src="../assets/v7/ref-example.jpg" width="500px" /></p>
-<h2 id="uui">UUI<a class="headerlink" href="#uui" title="Permanent link">&para;</a></h2>
+<h2 id="uui">UUI</h2>
 <p>The Unit Under Inspection (UUI) is the image of the PCBA that will be inspected during manufacturing. This image is compared to the REFERENCE image to detect manufacturing defects. See the <a href="Inspection_workflow.html">inspection workflow</a> for the complete procedure.</p>
 <p><img alt="UUI image" class="center" src="../assets/v7/uui-example.jpg" width="500px" /></p>
-<h2 id="inference">Inference<a class="headerlink" href="#inference" title="Permanent link">&para;</a></h2>
+<h2 id="inference">Inference</h2>
 <p>This is the result of comparing the REFERENCE and UUI images. Errors, if any, are marked in red on the UUI image. All errors are numbered and listed for easy reference.</p>
 <p><img alt="Inference image" class="center" src="../assets/v7/inference-example.png" width="500px" /></p>
-<h2 id="report">Report<a class="headerlink" href="#report" title="Permanent link">&para;</a></h2>
+<h2 id="report">Report</h2>
 <p>Errors detected by the software must be reviewed and confirmed by an operator. They can be reported as a <strong>real error</strong> or a <strong>false positive</strong> and labeled with the error type. All these reported errors will be used to generate a final inspection PDF report. See <a href="Inspection_workflow.html#reporting-errors">reporting errors</a>.</p>
 <p><img alt="Report window" class="center" src="../assets/v7/ui-report.png" /></p>
-<h2 id="error">Error<a class="headerlink" href="#error" title="Permanent link">&para;</a></h2>
+<h2 id="error">Error</h2>
 <p>We define an error as a component that is not assembled correctly, is damaged, or missing. Any contamination or damage on the board is also considered an error.</p>
-<h2 id="false-positive">False positive<a class="headerlink" href="#false-positive" title="Permanent link">&para;</a></h2>
+<h2 id="false-positive">False positive</h2>
 <p>False positive flagging occurs when the AgnosPCB software detects a sufficient difference between the REFERENCE and UUI on a component to flag it as an error, but there is no actual failure affecting the PCBA's operation. This can be caused by a change in the marking, shape, or color of a component that is equivalent to the REFERENCE.</p>
 <p>The <a href="Set_sensitivity.html">sensitivity</a> setting controls how readily these differences are flagged, and <a href="../features/Multivariant_feature.html">reference variants</a> let you accept more than one valid version of the same component.</p>
 

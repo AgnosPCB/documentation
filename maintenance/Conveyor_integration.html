@@ -1962,7 +1962,7 @@
 
 
 
-<h1 id="conveyor-integration-inline-mode">Conveyor integration (INLINE mode)<a class="headerlink" href="#conveyor-integration-inline-mode" title="Permanent link">&para;</a></h1>
+<h1 id="conveyor-integration-inline-mode">Conveyor integration (INLINE mode)</h1>
 <p>This guide explains how to integrate the <strong>AgnosPCB AI 4050</strong> into an automated
 production line, so the AOI receives boards from a conveyor, inspects them without
 operator intervention and returns a PASS/FAIL result to the line controller.</p>
@@ -1978,7 +1978,7 @@ controller. All wiring must be done with <strong>both systems powered off</stron
 personnel qualified to work on the line control cabinet.</p>
 </div>
 <hr />
-<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
+<h2 id="before-you-begin">Before you begin</h2>
 <p>Check that you have the following:</p>
 <ul>
 <li>An <strong>AI 4050</strong> unit already unboxed, assembled and working in standalone mode.
@@ -1997,7 +1997,7 @@ them enabled before commissioning the line — the options will not take effect
 otherwise.</p>
 </div>
 <hr />
-<h2 id="1-installing-the-modbus-module">1. Installing the MODBUS module<a class="headerlink" href="#1-installing-the-modbus-module" title="Permanent link">&para;</a></h2>
+<h2 id="1-installing-the-modbus-module">1. Installing the MODBUS module</h2>
 <!-- TODO (AgnosPCB engineering): the I/O assignment and the connection to the
      processing unit are documented from the wiring diagrams. Still missing:
      - Where the module mounts (DIN rail inside the cabinet? external enclosure?)
@@ -2008,7 +2008,7 @@ otherwise.</p>
 
 <p><img alt="Modbus wiring" class="center" src="../assets/v7/conveyor/modbus_wiring.png" /></p>
 <p>The module provides <strong>8 relay outputs</strong> and <strong>8 digital inputs</strong>, of which the integration uses one input and four outputs. It connects to a <strong>USB port of the AgnosPCB processing unit</strong> through the isolated USB to RS232/485 converter, as shown in the diagram above.</p>
-<h3 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">&para;</a></h3>
+<h3 id="inputs">Inputs</h3>
 <p>The input has to be connected to an <strong>endstop switch</strong>, or to any sensor that detects that the PCBA is in place and ready to be inspected.</p>
 <table>
 <thead>
@@ -2026,7 +2026,7 @@ otherwise.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">&para;</a></h3>
+<h3 id="outputs">Outputs</h3>
 <p>The outputs communicate the inspection status to the rest of the assembly line: to the next conveyor and to the PLC or control system of the line.</p>
 <table>
 <thead>
@@ -2068,7 +2068,7 @@ otherwise.</p>
 <p class="admonition-title">When READY is off</p>
 <p><strong>DO1</strong> is not active during the initialization of the system, while a processing task is ongoing, or when the application is not in the main window — for example while the settings menu or the reference mosaic is open.</p>
 </div>
-<h3 id="general-connection">General connection<a class="headerlink" href="#general-connection" title="Permanent link">&para;</a></h3>
+<h3 id="general-connection">General connection</h3>
 <p>The following diagram shows how all the elements involved are connected in a typical installation:</p>
 <p><img alt="General connection" class="center" src="../assets/v7/conveyor/general_connection.png" /></p>
 <p>Four groups of equipment take part in the integration:</p>
@@ -2132,17 +2132,17 @@ otherwise.</p>
 <p>Besides these connections, the MODBUS module needs to be powered through its <strong>7~36 V</strong> input, which is not represented in the diagram.</p>
 </div>
 <hr />
-<h2 id="2-configuring-the-inspection-software">2. Configuring the inspection software<a class="headerlink" href="#2-configuring-the-inspection-software" title="Permanent link">&para;</a></h2>
+<h2 id="2-configuring-the-inspection-software">2. Configuring the inspection software</h2>
 <p>Once the module is installed and communicating, prepare the software for unattended
 operation. All the options below are in the <strong>Settings</strong> window; see the
 <a href="../how_to/Settings_menu.html">settings menu</a> for the full reference.</p>
-<h3 id="21-enable-inline-mode">2.1 Enable INLINE mode<a class="headerlink" href="#21-enable-inline-mode" title="Permanent link">&para;</a></h3>
+<h3 id="21-enable-inline-mode">2.1 Enable INLINE mode</h3>
 <p>Open <strong>Settings → Workflow</strong> and enable <strong>INLINE Mode (Conveyor)</strong>.</p>
 <p><img alt="Settings menu workflow section" class="center" src="../assets/v7/settings/workflow-settings.png" /></p>
 <p>This switches the client from the manual, keyboard-driven workflow to the API-driven
 workflow used on a line: the inspection is triggered by the line controller instead of
 by the operator pressing <strong>S</strong>.</p>
-<h3 id="22-recommended-companion-settings">2.2 Recommended companion settings<a class="headerlink" href="#22-recommended-companion-settings" title="Permanent link">&para;</a></h3>
+<h3 id="22-recommended-companion-settings">2.2 Recommended companion settings</h3>
 <p>These options are not mandatory, but on an unattended line they are what makes the
 difference between a clean integration and a stalled conveyor:</p>
 <table>
@@ -2205,7 +2205,7 @@ difference between a clean integration and a stalled conveyor:</p>
 "unknown" label, because no operator classifies them. This is expected on a line —
 the classification is done later, offline, from the stored reports.</p>
 </div>
-<h3 id="23-where-the-results-are-written">2.3 Where the results are written<a class="headerlink" href="#23-where-the-results-are-written" title="Permanent link">&para;</a></h3>
+<h3 id="23-where-the-results-are-written">2.3 Where the results are written</h3>
 <p>Inspection outputs are written to the <strong>PCB_OUT</strong> folder, configurable in
 <strong>Settings → Paths</strong>.</p>
 <p>To let your MES or a network drive collect them automatically, enable the shares in
@@ -2214,7 +2214,7 @@ expose those folders over the network, and each one displays its network path on
 active. For OFFLINE units that need a specific network interface, see the
 <a href="network_configuration.html">network interface configuration</a> article.</p>
 <hr />
-<h2 id="3-commissioning-checklist">3. Commissioning checklist<a class="headerlink" href="#3-commissioning-checklist" title="Permanent link">&para;</a></h2>
+<h2 id="3-commissioning-checklist">3. Commissioning checklist</h2>
 <p>Before handing the cell over to production, verify the following in order. Run the
 first tests with the conveyor in manual/jog mode.</p>
 <ol>
@@ -2240,7 +2240,7 @@ first tests with the conveyor in manual/jog mode.</p>
    through uninspected.</li>
 </ol>
 <hr />
-<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <table>
 <thead>
 <tr>

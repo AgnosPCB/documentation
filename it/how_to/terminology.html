@@ -1845,25 +1845,25 @@
 
 
 
-<h1 id="terminologia">Terminologia<a class="headerlink" href="#terminologia" title="Permanent link">&para;</a></h1>
-<h2 id="rete-neurale">Rete Neurale<a class="headerlink" href="#rete-neurale" title="Permanent link">&para;</a></h2>
+<h1 id="terminologia">Terminologia</h1>
+<h2 id="rete-neurale">Rete Neurale</h2>
 <p>Nell'apprendimento automatico, la rete neurale si riferisce a un gruppo di neuroni artificiali organizzati in un modo specifico per eseguire un compito specifico. Ciascun neurone rappresenta una funzione matematica. Nel caso di <strong>AgnosPCB</strong>, questi neuroni eseguono un'ispezione visiva per i difetti nelle PCBA. L'architettura di interconnessione di questi neuroni viene costantemente migliorata per aumentare i tassi di rilevamento dei guasti.</p>
 <p><img alt="Architettura della Rete Neurale" class="center" src="../../assets/v7/neural_networks.webp" width="700px" /></p>
-<h2 id="riferimento">RIFERIMENTO<a class="headerlink" href="#riferimento" title="Permanent link">&para;</a></h2>
+<h2 id="riferimento">RIFERIMENTO</h2>
 <p>L'immagine di <strong>RIFERIMENTO</strong> è l'immagine di una PCBA priva di difetti utilizzata per le ispezioni. Prima di generare l'immagine di RIFERIMENTO, l'operatore deve ispezionare la PCBA di RIFERIMENTO (scheda GOLDEN) per assicurarsi che sia esente da errori di fabbricazione.</p>
 <p><img alt="Immagine di Riferimento" class="center" src="../../assets/v7/ref-example.jpg" width="500px" /></p>
-<h2 id="uui">UUI<a class="headerlink" href="#uui" title="Permanent link">&para;</a></h2>
+<h2 id="uui">UUI</h2>
 <p>L'<strong>Unità Sotto Ispezione (UUI)</strong> è l'immagine della PCBA che verrà ispezionata durante la produzione. Questa immagine viene confrontata con l'immagine di RIFERIMENTO per rilevare i difetti di fabbricazione.</p>
 <p><img alt="Immagine UUI" class="center" src="../../assets/v7/uui-example.jpg" width="500px" /></p>
-<h2 id="inferenza">Inferenza<a class="headerlink" href="#inferenza" title="Permanent link">&para;</a></h2>
+<h2 id="inferenza">Inferenza</h2>
 <p>Questo è il risultato del confronto tra le immagini di RIFERIMENTO e UUI. Gli errori, se presenti, sono contrassegnati in rosso sull'immagine UUI. Tutti gli errori sono numerati per una facile consultazione.</p>
 <p><img alt="Immagine di Inferenza" class="center" src="../../assets/v7/inference-example.png" width="500px" /></p>
-<h2 id="report">Report<a class="headerlink" href="#report" title="Permanent link">&para;</a></h2>
+<h2 id="report">Report</h2>
 <p>Gli errori rilevati dal software devono essere rivisti e confermati da un operatore. Possono essere segnalati come un <strong>errore reale</strong> o un <strong>falso positivo</strong> ed etichettati con il tipo di errore. Tutti questi errori segnalati verranno utilizzati per generare un report PDF finale di ispezione.</p>
 <p><img alt="Finestra Report" class="center" src="../../assets/v7/ui-report.png" /></p>
-<h2 id="errore">Errore<a class="headerlink" href="#errore" title="Permanent link">&para;</a></h2>
+<h2 id="errore">Errore</h2>
 <p>Definiamo un <strong>errore</strong> come un componente che non è assemblato correttamente, è danneggiato o mancante. Anche qualsiasi contaminazione o danno sulla scheda è considerato un errore.</p>
-<h2 id="falso-positivo">Falso Positivo<a class="headerlink" href="#falso-positivo" title="Permanent link">&para;</a></h2>
+<h2 id="falso-positivo">Falso Positivo</h2>
 <p>La segnalazione di <strong>falso positivo</strong> si verifica quando il software AgnosPCB rileva una differenza sufficiente tra il RIFERIMENTO e l'UUI su un componente da contrassegnarlo come errore, ma in realtà non vi è alcun guasto effettivo che influisca sul funzionamento della PCBA. Ciò può essere causato da un cambiamento nella marcatura, forma o colore di un componente che è equivalente al riferimento.</p>
 
 
