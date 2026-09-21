@@ -12,9 +12,9 @@
 
 **Retirar la cubierta superior**
 
-Comience retirando la cinta adhesiva de los cuatro lados de la cubierta superior de la cámara de inspección y quítela.
+Comience retirando la cinta adhesiva de los cuatro lados de la cubierta superior de la cámara de inspección y, a continuación, levante la cubierta.
 
-![Caja](../assets/v7/1-unpackage.png){.center width=500px}
+![Cubierta superior](../assets/v7/1-unpackage.png){.center width=500px}
 
 ## Paso 2
 
@@ -26,18 +26,36 @@ Sujete la cámara de inspección por los marcos laterales superiores de aluminio
 
     Esta operación debe realizarse entre dos personas.
 
-![Caja](../assets/v7/2-unpackage.png){.center width=500px}
+![Cámara de inspección](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Paso 3
 
 **Retirar las piezas de sujeción de la cámara**
 
-![Caja](../assets/v7/3-unpackage.png){.center width=500px}
+![Piezas de sujeción](../assets/v7/unboxing/holders.png){.center width=500px}
 
 ## Paso 4
 
-**Extraer la caja azul con los accesorios**
+**Extraer la caja con los accesorios**
 
-Extraiga del embalaje la caja azul que contiene todos los accesorios necesarios. Lista de componentes [aquí](Package_content.md).
+Extraiga del embalaje la caja que contiene todos los accesorios necesarios. Lista de componentes [aquí](Package_content.md).
 
-![Caja](../assets/v7/4-unpackage.jpg){.center width=500px}
+![Caja de accesorios](../assets/v7/4-unpackage.jpg){.center width=500px}
+
+## Paso 5
+
+**Retirar la tapa de la cámara**
+
+![Tapa de la cámara](../assets/v7/unboxing/c-mount_cover.png){.center width=500px}
+
+## Paso 6
+
+**Instalar el objetivo**
+
+Enrosque el objetivo en la cámara hasta el tope.
+
+!!! warning "Importante"
+
+    El objetivo viene ajustado con los parámetros necesarios para su uso en la máquina. Evite tocar sus anillos de enfoque y de apertura.
+
+![Instalación del objetivo](../assets/v7/unboxing/lens_installation.jpg){.center width=500px}

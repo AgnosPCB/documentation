@@ -12,9 +12,9 @@
 
 **Retirer le capot supérieur**
 
-Commencez par retirer le ruban adhésif des quatre côtés du capot supérieur de la chambre d'inspection, puis retirez-le.
+Commencez par retirer le ruban adhésif des quatre côtés du capot supérieur de la chambre d'inspection, puis soulevez le capot.
 
-![Boîte](../assets/v7/1-unpackage.png){.center width=500px}
+![Capot supérieur](../assets/v7/1-unpackage.png){.center width=500px}
 
 ## Étape 2
 
@@ -26,18 +26,36 @@ Tenez la chambre d'inspection par les cadres latéraux supérieurs en aluminium 
 
     Cette opération doit être réalisée par deux personnes.
 
-![Boîte](../assets/v7/2-unpackage.png){.center width=500px}
+![Chambre d'inspection](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Étape 3
 
 **Retirer les pièces de fixation de la caméra**
 
-![Boîte](../assets/v7/3-unpackage.png){.center width=500px}
+![Pièces de fixation](../assets/v7/unboxing/holders.png){.center width=500px}
 
 ## Étape 4
 
-**Sortir la boîte bleue contenant les accessoires**
+**Sortir la boîte contenant les accessoires**
 
-Sortez de l'emballage la boîte bleue qui contient tous les accessoires nécessaires. Liste des composants [ici](Package_content.md).
+Sortez de l'emballage la boîte qui contient tous les accessoires nécessaires. Liste des composants [ici](Package_content.md).
 
-![Boîte](../assets/v7/4-unpackage.jpg){.center width=500px}
+![Boîte d'accessoires](../assets/v7/4-unpackage.jpg){.center width=500px}
+
+## Étape 5
+
+**Retirer le bouchon de la caméra**
+
+![Bouchon de la caméra](../assets/v7/unboxing/c-mount_cover.png){.center width=500px}
+
+## Étape 6
+
+**Installer l'objectif**
+
+Vissez l'objectif sur la caméra jusqu'en butée.
+
+!!! warning "Important"
+
+    L'objectif est réglé avec les paramètres nécessaires à son utilisation sur la machine. Évitez de toucher ses bagues de mise au point et de diaphragme.
+
+![Installation de l'objectif](../assets/v7/unboxing/lens_installation.jpg){.center width=500px}

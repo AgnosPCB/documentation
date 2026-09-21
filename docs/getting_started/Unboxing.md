@@ -2,7 +2,7 @@
 
 !!! info "Important"
 
-    If there is any missing part or defective [send us an email](mailto:support@agnospcb.com).
+    If any part is missing or defective, [send us an email](mailto:support@agnospcb.com).
 
 !!! warning "Important"
 
@@ -10,11 +10,12 @@
 
 ## Step 1
 
-**Removing the top cover**
+**Remove the top cover**
 
-Start by removing the adhesive tape from the four sides of the top cover of the inspection chamber and removing it.
+Start by removing the adhesive tape from the four sides of the top cover of the inspection chamber, then lift the cover off.
 
-![Box](../assets/v7/1-unpackage.png){.center width=500px}
+![Top cover](../assets/v7/1-unpackage.png){.center width=500px}
+
 ## Step 2
 
 **Take out the inspection chamber**
@@ -23,22 +24,38 @@ Hold the inspection chamber by the upper aluminum side frames and remove it from
 
 !!! warning "Important"
 
-    This operation must be done between two people.
+    This operation must be carried out by two people.
 
-![Box](../assets/v7/2-unpackage.png){.center width=500px}
+![Inspection chamber](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Step 3
 
 **Remove the camera fastening pieces**
 
-
-![Box](../assets/v7/3-unpackage.png){.center width=500px}
-
+![Camera fastening pieces](../assets/v7/unboxing/holders.png){.center width=500px}
 
 ## Step 4
 
-**Take out the Blue Box with Accessories**
+**Take out the box with the accessories**
 
-Take the blue box that contains all the necessary accessories out of the packaging. List of components [here](Package_content.md).
+Take the box containing all the necessary accessories out of the packaging. List of components [here](Package_content.md).
 
-![Box](../assets/v7/4-unpackage.jpg){.center width=500px}
+![Accessories box](../assets/v7/4-unpackage.jpg){.center width=500px}
+
+## Step 5
+
+**Remove the camera cover**
+
+![Camera cover](../assets/v7/unboxing/c-mount_cover.png){.center width=500px}
+
+## Step 6
+
+**Install the lens**
+
+Screw the lens onto the camera until it stops.
+
+!!! warning "Important"
+
+    The lens has been pre-adjusted with the parameters required for use on the machine. Avoid touching its focus and aperture rings.
+
+![Lens installation](../assets/v7/unboxing/lens_installation.jpg){.center width=500px}

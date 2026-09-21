@@ -12,9 +12,9 @@
 
 **Obere Abdeckung entfernen**
 
-Entfernen Sie zunächst das Klebeband an den vier Seiten der oberen Abdeckung der Inspektionskammer und nehmen Sie die Abdeckung ab.
+Entfernen Sie zunächst das Klebeband an den vier Seiten der oberen Abdeckung der Inspektionskammer und nehmen Sie die Abdeckung anschließend ab.
 
-![Karton](../assets/v7/1-unpackage.png){.center width=500px}
+![Obere Abdeckung](../assets/v7/1-unpackage.png){.center width=500px}
 
 ## Schritt 2
 
@@ -26,18 +26,36 @@ Halten Sie die Inspektionskammer an den oberen Aluminium-Seitenrahmen und heben 
 
     Dieser Vorgang muss von zwei Personen ausgeführt werden.
 
-![Karton](../assets/v7/2-unpackage.png){.center width=500px}
+![Inspektionskammer](../assets/v7/2-unpackage.png){.center width=500px}
 
 ## Schritt 3
 
 **Befestigungsteile der Kamera entfernen**
 
-![Karton](../assets/v7/3-unpackage.png){.center width=500px}
+![Befestigungsteile](../assets/v7/unboxing/holders.png){.center width=500px}
 
 ## Schritt 4
 
-**Blaue Box mit dem Zubehör herausnehmen**
+**Box mit dem Zubehör herausnehmen**
 
-Nehmen Sie die blaue Box mit dem gesamten erforderlichen Zubehör aus der Verpackung. Komponentenliste [hier](Package_content.md).
+Nehmen Sie die Box mit dem gesamten erforderlichen Zubehör aus der Verpackung. Komponentenliste [hier](Package_content.md).
 
-![Karton](../assets/v7/4-unpackage.jpg){.center width=500px}
+![Zubehörbox](../assets/v7/4-unpackage.jpg){.center width=500px}
+
+## Schritt 5
+
+**Schutzkappe der Kamera entfernen**
+
+![Schutzkappe der Kamera](../assets/v7/unboxing/c-mount_cover.png){.center width=500px}
+
+## Schritt 6
+
+**Objektiv montieren**
+
+Schrauben Sie das Objektiv bis zum Anschlag auf die Kamera.
+
+!!! warning "Wichtig"
+
+    Das Objektiv ist mit den für den Einsatz in der Maschine erforderlichen Parametern voreingestellt. Berühren Sie nicht den Fokus- und den Blendenring.
+
+![Montage des Objektivs](../assets/v7/unboxing/lens_installation.jpg){.center width=500px}
