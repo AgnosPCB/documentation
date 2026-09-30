@@ -32,6 +32,8 @@ Ce bouton ouvre une fenêtre contextuelle pour insérer un numéro de code-barre
 
 Si l'image de RÉFÉRENCE contient à la fois la face supérieure et la face inférieure de la PCBA, bascule entre les deux images.
 
+Cela peut aussi se produire automatiquement au début de chaque inspection : activez **Bascule automatique TOP/BOTTOM** dans le [menu des paramètres](Settings_menu.md#bascule-automatique-topbottom).
+
 ### Outil de mesure
 
 ![Bouton de mesure](../assets/v7/ui-status-measure-button.png){width=80 .center}

@@ -159,7 +159,7 @@ De plus, il y a un champ vide pour **ajouter un commentaire.**
 
 Dans le cas où l'opérateur trouve une erreur **non détectée** par le logiciel, il est possible de la signaler en déplaçant le curseur sur la zone du défaut et en appuyant sur la **touche flèche haut**. La fenêtre de signalement apparaîtra comme d'habitude. 
 
-Lorsque le logiciel marque une zone qui n'est pas une erreur réelle, l'opérateur peut la signaler comme un **faux positif** en appuyant sur la **touche flèche bas**. Une fenêtre apparaîtra également, permettant d'ajouter un commentaire.
+Lorsque le logiciel marque une zone qui n'est pas une erreur réelle, l'opérateur peut la signaler comme un **faux positif** en appuyant sur la **touche flèche bas**. Une fenêtre apparaîtra avec **Reference variant** sélectionné par défaut — voir [Variantes de référence](../features/Multivariant_feature.md) pour savoir comment la compléter. Pour signaler un simple faux positif, sélectionnez **False positive** dans la liste déroulante avant de confirmer.
 
 ![Fenêtre faux positif](../assets/v7/ui-fp_report.png){.center}
 

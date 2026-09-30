@@ -32,6 +32,8 @@ Questo pulsante apre una finestra pop-up per inserire un numero di codice a barr
 
 Se l'immagine di RIFERIMENTO contiene sia il lato superiore sia quello inferiore della PCBA, alterna tra le due immagini.
 
+Questo può avvenire anche automaticamente all'inizio di ogni ispezione: abilitate **Cambio automatico TOP/BOTTOM** nel [menu Impostazioni](Settings_menu.md#cambio-automatico-topbottom).
+
 ### Strumento di misurazione
 
 ![Pulsante di misurazione](../assets/v7/ui-status-measure-button.png){width=80 .center}

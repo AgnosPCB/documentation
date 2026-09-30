@@ -32,6 +32,8 @@ Este botón abre una ventana emergente para insertar un número de código de ba
 
 Si la imagen de REFERENCIA contiene tanto la cara superior como la inferior de la PCBA, alterna entre ambas imágenes.
 
+Esto también puede ocurrir automáticamente al comenzar cada inspección: habilite **Cambio automático TOP/BOTTOM** en el [menú de configuración](Settings_menu.md#cambio-automatico-topbottom).
+
 ### Herramienta de medición
 
 ![Botón de medición](../assets/v7/ui-status-measure-button.png){width=80 .center}

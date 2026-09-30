@@ -158,7 +158,7 @@ Además, hay un campo vacío para **agregar un comentario.**
 
 En caso de que el operador encuentre un error **no detectado** por el software, es posible marcarlo y reportarlo moviendo el cursor al área de la falla y presionando la **tecla flecha arriba**. La ventana de reporte aparecerá como de costumbre. 
 
-Cuando el software marca un área que no es un error real, el operador puede marcarla como **falso positivo** presionando la **tecla flecha abajo**. También aparecerá una ventana que permite agregar un comentario.
+Cuando el software marca un área que no es un error real, el operador puede marcarla como **falso positivo** presionando la **tecla flecha abajo**. Aparecerá una ventana con **Reference variant** seleccionada por defecto; consulte [Variantes de Referencia](../features/Multivariant_feature.md) para saber cómo completarla. Para reportar un falso positivo simple, seleccione **False positive** en el desplegable antes de confirmar.
 
 ![Ventana falso positivo](../assets/v7/ui-fp_report.png){.center}
 

@@ -159,7 +159,7 @@ Zusätzlich gibt es ein leeres Feld zum **Hinzufügen eines Kommentars.**
 
 Falls der Bediener einen von der Software **nicht erkannten** Fehler findet, ist es möglich, diesen zu markieren und zu melden, indem der Cursor auf den Fehlerbereich bewegt und die **Pfeiltaste nach oben** gedrückt wird. Das Meldefenster wird wie gewohnt angezeigt. 
 
-Wenn die Software einen Bereich markiert, der kein tatsächlicher Fehler ist, kann der Bediener ihn als **Falsch-Positiv** kennzeichnen, indem er die **Pfeiltaste nach unten** drückt. Auch hier wird ein Fenster angezeigt, das das Hinzufügen eines Kommentars ermöglicht.
+Wenn die Software einen Bereich markiert, der kein tatsächlicher Fehler ist, kann der Bediener ihn als **Falsch-Positiv** kennzeichnen, indem er die **Pfeiltaste nach unten** drückt. Es erscheint ein Fenster, in dem standardmäßig **Reference variant** ausgewählt ist — siehe [Referenzvarianten](../features/Multivariant_feature.md), um zu erfahren, wie Sie es ausfüllen. Um stattdessen einen einfachen Falsch-Positiv zu melden, wählen Sie im Dropdown-Menü **False positive**, bevor Sie bestätigen.
 
 ![Falsch-Positiv-Fenster](../assets/v7/ui-fp_report.png){.center}
 

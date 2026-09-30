@@ -23,11 +23,11 @@ Navigieren Sie mit den **Pfeiltasten links/rechts (←/→)** zu dem erkannten F
 
 ## 3. Als Referenzvariante klassifizieren
 
-Drücken Sie die **Pfeiltaste nach unten (↓)**, um den Fehler abzulehnen. Wählen Sie im Klassifizierungsbereich **Reference variant** aus.
+Drücken Sie die **Pfeiltaste nach unten (↓)**, um den Fehler abzulehnen. Der Klassifizierungsbereich öffnet sich mit standardmäßig ausgewähltem **Reference variant**.
 
 ![Klassifizierungsbereich](../assets/ref-variant-label.png){width=400 .center}
 
-Es erscheint ein Dialogfenster, in dem Sie einen Namen für die neue Variante eingeben müssen (erforderlich) und optional eine Beschreibung hinzufügen können. Klicken Sie anschließend auf **Confirm**.
+Geben Sie einen Namen für die neue Variante ein (erforderlich) und fügen Sie optional eine Beschreibung hinzu. Klicken Sie anschließend auf **Confirm**.
 
 ## Ergebnis
 

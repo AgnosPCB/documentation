@@ -23,9 +23,9 @@ Navigate to the detected error with the **Left/Right Arrow keys (←/→)**.
 
 ## 3. Classify as Reference Variant
 
-Press the **Down Arrow key (↓)** to reject the error. In the classification panel, select **Reference Variant**.
+Press the **Down Arrow key (↓)** to reject the error. The classification panel opens with **Reference Variant** selected by default.
 
- A dialog will appear where you must enter a name for the new variant (required) and optionally add a description. Once completed, press **Confirm**.
+ Enter a name for the new variant (required) and optionally add a description. Once completed, press **Confirm**.
 
 ![Classification panel](../assets/ref-variant-label.png){width=400 .center}
 

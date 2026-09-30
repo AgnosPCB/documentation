@@ -32,6 +32,8 @@ Diese Schaltfläche öffnet ein Pop-up-Fenster zur Eingabe einer Barcode-Nummer.
 
 Wenn das REFERENZ-Bild sowohl die Ober- als auch die Unterseite der PCBA enthält, wechselt diese Schaltfläche zwischen den beiden Bildern.
 
+Dies kann auch automatisch zu Beginn jeder Inspektion geschehen — aktivieren Sie **TOP/BOTTOM automatisch umschalten** im [Einstellungsmenü](Settings_menu.md#topbottom-automatisch-umschalten).
+
 ### Messwerkzeug
 
 ![Mess-Schaltfläche](../assets/v7/ui-status-measure-button.png){width=80 .center}

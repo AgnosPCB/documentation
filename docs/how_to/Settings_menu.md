@@ -68,6 +68,12 @@ By activating this option, the software will maintain the configured inspection 
 
 If this option is enabled, the software will not continue inspecting new panels until all errors detected in the current inspection have been [reported](Inspection_workflow.md#reporting-errors) as errors or false positives.
 
+#### TOP/BOTTOM auto switch
+
+For double-sided REFERENCES, enabling this option automatically switches to the other side (**TOP**/**BOTTOM**) at the start of the next inspection, instead of requiring a [manual switch](Screen-layout.md#switch-topbottom).
+
+![TOP/BOTTOM auto switch option](../assets/v7/settings/top-bottom-settings.png){.center}
+
 ## Report options
 
 ![Settings menu report section](../assets/v7/settings/reports-settings.png){.center}

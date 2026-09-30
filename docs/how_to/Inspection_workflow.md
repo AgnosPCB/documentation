@@ -157,7 +157,7 @@ In addition, there is an empty field to **add a comment.**
 
 In case the operator finds an error **not detected** by the software, it is possible to flag and report it by moving the cursor to the fault area and pressing the **up arrow** key. The reporting window will appear as usual. 
 
-When the software marks an area that is not an actual error, the operator can flag it as a **false positive** by pressing the **down arrow** key. A window will also appear, allowing you to add a comment.
+When the software marks an area that is not an actual error, the operator can flag it as a **false positive** by pressing the **down arrow** key. A window will appear with **Reference variant** selected by default — see [Reference Variants](../features/Multivariant_feature.md) for how to complete it. To report a plain false positive instead, choose **False positive** from the dropdown before confirming.
 
 ![False positive window](../assets/v7/ui-fp_report.png){.center}
 

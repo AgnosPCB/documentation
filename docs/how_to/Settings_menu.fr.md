@@ -66,6 +66,12 @@ En activant cette option, le logiciel conservera la sensibilité d'inspection co
 
 Si cette option est activée, le logiciel ne continuera pas à inspecter de nouveaux panneaux tant que toutes les erreurs détectées lors de l'inspection en cours n'auront pas été [signalées](Inspection_workflow.md#signalement-des-erreurs) comme erreurs ou faux positifs.
 
+#### Bascule automatique TOP/BOTTOM
+
+Pour les RÉFÉRENCES recto verso, activer cette option bascule automatiquement vers l'autre face (**TOP**/**BOTTOM**) au début de l'inspection suivante, sans nécessiter de [bascule manuelle](Screen-layout.md#basculer-topbottom).
+
+![Option de bascule automatique TOP/BOTTOM](../assets/v7/settings/top-bottom-settings.png){.center}
+
 ## Options de rapport
 
 ![Section rapport du menu des paramètres](../assets/v7/settings/reports-settings.png){.center}

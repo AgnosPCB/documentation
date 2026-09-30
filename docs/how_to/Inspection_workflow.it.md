@@ -158,7 +158,7 @@ Inoltre, c'è un campo vuoto per **aggiungere un commento.**
 
 Nel caso in cui l'operatore trovi un errore **non rilevato** dal software, è possibile segnalarlo e riportarlo spostando il cursore sull'area del difetto e premendo il **tasto freccia su**. La finestra di segnalazione apparirà come di consueto. 
 
-Quando il software segnala un'area che non è un errore effettivo, l'operatore può contrassegnarla come **falso positivo** premendo il **tasto freccia giù**. Apparirà anche una finestra che consente di aggiungere un commento.
+Quando il software segnala un'area che non è un errore effettivo, l'operatore può contrassegnarla come **falso positivo** premendo il **tasto freccia giù**. Apparirà una finestra con **Reference variant** selezionato per impostazione predefinita — vedi [Varianti di riferimento](../features/Multivariant_feature.md) per sapere come completarla. Per segnalare invece un semplice falso positivo, selezionate **False positive** dal menu a tendina prima di confermare.
 
 ![Finestra falso positivo](../assets/v7/ui-fp_report.png){.center}
 

@@ -23,9 +23,9 @@ Navegue hasta el error detectado con las **teclas de flecha izquierda/derecha (�
 
 ## 3. Clasificar como Variante de Referencia
 
-Presione la **tecla de flecha abajo (↓)** para rechazar el error. En el panel de clasificación, seleccione **Reference variant**.
+Presione la **tecla de flecha abajo (↓)** para rechazar el error. El panel de clasificación se abre con **Reference variant** seleccionada por defecto.
 
-Aparecerá un cuadro de diálogo donde debe introducir un nombre para la nueva variante (obligatorio) y, opcionalmente, añadir una descripción. Una vez completado, presione **Confirm**.
+Introduzca un nombre para la nueva variante (obligatorio) y, opcionalmente, añada una descripción. Una vez completado, presione **Confirm**.
 
 ![Panel de clasificación](../assets/ref-variant-label.png){width=400 .center}
 

@@ -23,9 +23,9 @@ Naviguez jusqu’à l’erreur détectée à l’aide des **touches fléchées g
 
 ## 3. Classer comme Variante de référence
 
-Appuyez sur la **touche flèche bas (↓)** pour rejeter l’erreur. Dans le panneau de classification, sélectionnez **Reference variant**.
+Appuyez sur la **touche flèche bas (↓)** pour rejeter l’erreur. Le panneau de classification s'ouvre avec **Reference variant** sélectionné par défaut.
 
-Une fenêtre de dialogue apparaîtra dans laquelle vous devrez saisir un nom pour la nouvelle variante (obligatoire) et, éventuellement, ajouter une description. Une fois terminé, cliquez sur **Confirm**.
+Saisissez un nom pour la nouvelle variante (obligatoire) et, éventuellement, ajoutez une description. Une fois terminé, cliquez sur **Confirm**.
 
 ![Panneau de classification](../assets/ref-variant-label.png){width=400 .center}
 

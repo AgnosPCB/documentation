@@ -66,6 +66,12 @@ Wenn Sie diese Option aktivieren, behält die Software die konfigurierte Inspekt
 
 Wenn diese Option aktiviert ist, setzt die Software die Inspektion neuer Platinen erst fort, wenn alle in der aktuellen Inspektion erkannten Fehler als Fehler oder Falsch-Positive [gemeldet](Inspection_workflow.md#melden-von-fehlern) wurden.
 
+#### TOP/BOTTOM automatisch umschalten
+
+Bei doppelseitigen REFERENZEN wechselt die Software mit dieser Option zu Beginn der nächsten Inspektion automatisch zur anderen Seite (**TOP**/**BOTTOM**), ohne dass ein [manuelles Umschalten](Screen-layout.md#topbottom-umschalten) erforderlich ist.
+
+![Option zum automatischen TOP/BOTTOM-Umschalten](../assets/v7/settings/top-bottom-settings.png){.center}
+
 ## Berichtsoptionen
 
 ![Berichtsabschnitt des Einstellungsmenüs](../assets/v7/settings/reports-settings.png){.center}

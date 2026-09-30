@@ -32,6 +32,8 @@ This button opens a pop-up window for inserting a barcode number. When generatin
 
 If the REFERENCE image contains both the top and bottom images of the PCBA, alternate between the two images.
 
+This can also happen automatically at the start of each inspection — enable **TOP/BOTTOM auto switch** in the [settings menu](Settings_menu.md#topbottom-auto-switch).
+
 ### Measurement tool
 
 ![Measurement button](../assets/v7/ui-status-measure-button.png){width=80 .center}

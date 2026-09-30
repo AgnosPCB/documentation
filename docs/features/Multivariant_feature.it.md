@@ -23,9 +23,9 @@ Naviga tra gli errori rilevati utilizzando i **tasti freccia sinistra/destra (�
 
 ## 3. Classificare come Variante di riferimento
 
-Premi il **tasto freccia giù (↓)** per rifiutare l'errore. Nel pannello di classificazione, seleziona **Reference variant**.
+Premi il **tasto freccia giù (↓)** per rifiutare l'errore. Il pannello di classificazione si apre con **Reference variant** selezionato per impostazione predefinita.
 
-Comparirà una finestra di dialogo in cui dovrai inserire un nome per la nuova variante (obbligatorio) e, facoltativamente, aggiungere una descrizione. Una volta completato, premi **Confirm**.
+Inserisci un nome per la nuova variante (obbligatorio) e, facoltativamente, aggiungi una descrizione. Una volta completato, premi **Confirm**.
 
 ![Pannello di classificazione](../assets/ref-variant-label.png){width=400 .center}
 

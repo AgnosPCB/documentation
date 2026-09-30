@@ -66,6 +66,12 @@ Al activar esta opción, el software mantendrá la sensibilidad de inspección c
 
 Si esta opción está habilitada, el software no continuará inspeccionando nuevos paneles hasta que todos los errores detectados en la inspección actual hayan sido [reportados](Inspection_workflow.md#reporte-de-errores) como errores o falsos positivos.
 
+#### Cambio automático TOP/BOTTOM
+
+Para REFERENCIAS de doble cara, habilitar esta opción cambia automáticamente al otro lado (**TOP**/**BOTTOM**) al comenzar la siguiente inspección, sin necesidad de un [cambio manual](Screen-layout.md#alternar-topbottom).
+
+![Opción de cambio automático TOP/BOTTOM](../assets/v7/settings/top-bottom-settings.png){.center}
+
 ## Opciones de informe
 
 ![Sección de informe del menú de configuración](../assets/v7/settings/reports-settings.png){.center}
