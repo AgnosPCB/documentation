@@ -66,7 +66,7 @@ By activating this option, the software will maintain the configured inspection 
 
 #### Mandatory errors review
 
-If this option is enabled, the software will not continue inspecting new panels until all errors detected in the current inspection have been [reported](Inspection_workflow.md#reporting-errors) as errors or false positives.
+If this option is enabled, the software will not continue inspecting new panels until every detection in the current inspection has been reviewed: [reported](Inspection_workflow.md#reporting-errors) as an error or a false positive, or at least marked as **viewed** by hovering the cursor over it.
 
 #### TOP/BOTTOM auto switch
 

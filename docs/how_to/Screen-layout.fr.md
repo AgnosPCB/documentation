@@ -75,6 +75,13 @@ Voici diverses **fonctions et options** conçues pour **optimiser** votre flux d
 
 La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le [bouton prendre une photo RÉFÉRENCE](#prendre-une-image-de-reference) ou en la chargeant [comme un fichier](#charger-reference-en-tant-que-fichier). Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un **bouton F** (F1-F10).
 
+#### Alias d'affichage
+
+Une RÉFÉRENCE peut également recevoir un **alias d'affichage** facultatif : un nom plus explicite affiché ici dans la mosaïque, dans la [liste de recherche](#charger-reference-en-tant-que-fichier) ci-dessous, et dans les rapports d'inspection (PDF et JSON), sans renommer la RÉFÉRENCE elle-même. Cela est utile lorsque le nom réel de la RÉFÉRENCE n'est pas facile à comprendre d'un coup d'œil.
+
+!!! note "Note"
+    L'alias n'est qu'une étiquette. Tout ce qui identifie ou charge la RÉFÉRENCE continue d'utiliser son nom réel.
+
 ### CHARGER RÉFÉRENCE en tant que fichier
 
 ![Bouton Ouvrir référence](../assets/v7/ui-button2.png){width=350px .center}

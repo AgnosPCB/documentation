@@ -4,15 +4,15 @@ El software AgnosPCB incorpora una función de lectura de código de barras que 
 
 Puede tomar una foto de **REFERENCIA** o subir una directamente desde sus archivos usando el botón **"Abrir referencia"**.
 
-Seleccione el botón **"dibujar área de código de barras"** y dibuje un rectángulo en el área del código de barras.
-
 ![Área de código de barras seleccionada](../assets/v7/ui-button4.png){.center}
 
-![Errores detectados](../assets/barcode-errors.png){.center}
+Pulse el botón **"dibujar área de código de barras"** y dibuje un área donde se encuentra un código en el panel, luego defina de qué tipo de código se trata: **ID, Batch ID, Model o Misc**. Repita esto por cada código que quiera que el software lea, hasta **cuatro** tipos distintos.
 
-El código se mostrará en el rectángulo y en el nombre de la REFERENCIA en la parte superior izquierda. Asegúrese de que el código de barras haya sido leído antes de continuar con la inspección.
+![Lectura de código](../assets/v7/barcode/1-bc-menu.png){.center}
 
-Una vez que la REFERENCIA esté cargada, proceda con la inspección tomando una foto de la UUI. El código de barras de la UUI se leerá automáticamente en la misma área del código de barras de la REFERENCIA.
+Si la opción **mandatory barcode** está activada en un código concreto, la inspección no continuará hasta que ese código se haya leído correctamente. Si no se detecta automáticamente, se solicitará al operador que lo introduzca manualmente antes de continuar.
+
+Una vez que la REFERENCIA esté cargada, proceda con la inspección tomando una foto de la UUI. Cada uno de los códigos de la UUI se leerá automáticamente en las mismas áreas definidas en la REFERENCIA.
 
 Continúe con el [proceso de inspección](../how_to/Inspection_workflow.md) como de costumbre. 
 

@@ -151,6 +151,8 @@ Wenn Fehler erkannt werden, erscheint ein **roter Rahmen** um das Hauptfenster. 
 Sobald die Inspektion abgeschlossen ist, muss der Bediener die markierten Fehler überwachen und sie entweder als **tatsächlichen Fehler** oder als **Falsch-Positiv-Erkennung** kennzeichnen.
 Dazu blättern Sie einfach mit den **linken und rechten Pfeiltasten** auf der Tastatur durch die Fehler.
 
+Fehler können auch direkt mit der Maus gemeldet werden: **Linksklick** auf eine Erkennung meldet sie als tatsächlichen Fehler, **Rechtsklick** meldet sie als Falsch-Positiv — entsprechend den unten beschriebenen Pfeiltasten **nach oben** und **nach unten**.
+
 Um einen echten Fehler zu markieren, bewegen Sie sich einfach zum Fehler und drücken Sie die **Pfeiltaste nach oben** auf Ihrer Tastatur. Ein neues Fenster wird angezeigt, das den Fehler detailliert zeigt und es Ihnen ermöglicht, ihn zu kategorisieren, indem Sie einen Fehlertyp aus der Liste auswählen.
 
 ![Berichtsfenster](../assets/v7/ui-report.png){.center}
@@ -165,6 +167,8 @@ Wenn die Software einen Bereich markiert, der kein tatsächlicher Fehler ist, ka
 
 !!! note "Hinweis"
     Beachten Sie, dass das **rote Symbol** ![Rotes Symbol](../assets/v7/ui-report_red.png){width=20px} die tatsächlichen Fehler und das **grüne Symbol** ![Grünes Symbol](../assets/v7/ui-report_green.png){width=20px} die Falsch-Positiv-Fehler kennzeichnet.
+
+Eine Erkennung, die auf keine der beiden Arten gemeldet wurde, gilt weiterhin als ungeprüft. Ist die [Pflichtprüfung der Fehler](Settings_menu.md#pflichtprufung-der-fehler) aktiviert, genügt es, den Cursor über diese Erkennung zu bewegen, um sie als **viewed** zu markieren — das erfüllt die Prüfanforderung für diese Erkennung ebenfalls.
 
 ### Generieren eines endgültigen PDF-Berichts
 

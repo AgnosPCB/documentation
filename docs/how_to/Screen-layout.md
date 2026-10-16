@@ -75,6 +75,13 @@ Here you will find various **functions and options** designed to **optimize** yo
 
 The reference mosaic is used to store REFERENCES as files to quickly find and load any of them. The mosaic menu automatically appears after taking a REFERENCE by using the [take REFERENCE photo button](#take-a-reference-image) or by loading it [as a file](#load-reference-as-file). In this window it is also possible to name the taken REFERENCE in the top right part of the window. A REFERENCE stored in the mosaic can be quickly loaded by pressing an **F button** (F1-F10).
 
+#### Display alias
+
+A REFERENCE can also be given an optional **display alias** — a friendlier name shown here in the mosaic, in the [search list](#load-reference-as-file) below, and in the inspection reports (PDF and JSON), without renaming the REFERENCE itself. This is useful when the REFERENCE's real name is not meaningful to read at a glance.
+
+!!! note "Note"
+    The alias is only a label. Everything that identifies or loads the REFERENCE keeps using its real name.
+
 ### LOAD REFERENCE as file
 
 ![Open reference button](../assets/v7/ui-button2.png){width=350px .center}

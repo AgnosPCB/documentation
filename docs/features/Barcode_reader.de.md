@@ -4,15 +4,15 @@ Die AgnosPCB-Software enthält eine Barcode-Lesefunktion, die **1D-Barcodes, QR 
 
 Sie können entweder ein **REFERENZ**-Foto aufnehmen oder eines direkt aus Ihren Dateien über die Schaltfläche **"Referenz öffnen"** hochladen.
 
-Wählen Sie die Schaltfläche **"Barcode-Bereich zeichnen"** und ziehen Sie ein Rechteck über den Barcode-Bereich.
-
 ![Ausgewählter Barcode-Bereich](../assets/v7/ui-button4.png){.center}
 
-![Erkannte Fehler](../assets/barcode-errors.png){.center}
+Drücken Sie die Schaltfläche **"Barcode-Bereich zeichnen"** und zeichnen Sie einen Bereich, in dem sich ein Code auf der Platine befindet. Legen Sie anschließend fest, um welchen Codetyp es sich handelt: **ID, Batch ID, Model oder Misc**. Wiederholen Sie dies für jeden Code, den die Software lesen soll — bis zu **vier** verschiedene Typen.
 
-Der Code wird im Rechteck und im REFERENZ-Namen oben links angezeigt. Stellen Sie sicher, dass der Barcode gelesen wurde, bevor Sie mit der Inspektion fortfahren.
+![Code-Lesevorgang](../assets/v7/barcode/1-bc-menu.png){.center}
 
-Sobald die REFERENZ geladen ist, fahren Sie mit der Inspektion fort, indem Sie ein Bild der UUI aufnehmen. Der Barcode der UUI wird automatisch im selben Bereich wie der Barcode der REFERENZ gelesen.
+Ist die Option **mandatory barcode** für einen bestimmten Code aktiviert, setzt die Software die Inspektion erst fort, wenn dieser Code erfolgreich gelesen wurde. Wird er nicht automatisch erkannt, wird der Bediener aufgefordert, ihn manuell einzugeben, bevor fortgefahren werden kann.
+
+Sobald die REFERENZ geladen ist, fahren Sie mit der Inspektion fort, indem Sie ein Bild der UUI aufnehmen. Jeder Code der UUI wird automatisch in den auf der REFERENZ festgelegten Bereichen gelesen.
 
 Fahren Sie mit dem [Inspektionsprozess](../how_to/Inspection_workflow.md) wie gewohnt fort. 
 

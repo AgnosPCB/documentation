@@ -150,6 +150,8 @@ Si se detectan errores, aparecerá un **marco rojo** alrededor de la ventana pri
 Una vez que la inspección ha finalizado, el operador debe supervisar los errores marcados, clasificándolos como **error real** o **detección de falso positivo**.
 Para hacer esto, simplemente desplácese por los errores usando las **flechas izquierda y derecha** en el teclado.
 
+Los errores también pueden reportarse directamente con el ratón: haga **clic izquierdo** en una detección para reportarla como error real, o **clic derecho** para reportarla como falso positivo, de forma equivalente a las teclas de flecha **arriba** y **abajo** descritas a continuación.
+
 Para marcar un error real, simplemente muévase a la falla y presione la **flecha arriba** en su teclado. Aparecerá una nueva ventana que muestra el error en detalle y le permite categorizarlo seleccionando un tipo de falla de la lista.
 
 ![Ventana de reporte](../assets/v7/ui-report.png){.center}
@@ -164,6 +166,8 @@ Cuando el software marca un área que no es un error real, el operador puede mar
 
 !!! note "Nota"
     Tenga en cuenta que el **icono rojo** ![Icono rojo](../assets/v7/ui-report_red.png){width=20px} marca las fallas reales y el **icono verde** ![Icono verde](../assets/v7/ui-report_green.png){width=20px} las fallas de falso positivo.
+
+Una detección que no ha sido reportada de ninguna de las dos formas sigue sin revisar. Cuando [Revisión obligatoria de errores](Settings_menu.md#revision-obligatoria-de-errores) está habilitada, basta con pasar el cursor por encima de esa detección para marcarla como **viewed**, lo que también satisface el requisito de revisión para esa detección.
 
 ### Generación de un informe PDF final
 

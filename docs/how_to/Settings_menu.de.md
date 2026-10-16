@@ -64,7 +64,7 @@ Wenn Sie diese Option aktivieren, behält die Software die konfigurierte Inspekt
 
 #### Pflichtprüfung der Fehler
 
-Wenn diese Option aktiviert ist, setzt die Software die Inspektion neuer Platinen erst fort, wenn alle in der aktuellen Inspektion erkannten Fehler als Fehler oder Falsch-Positive [gemeldet](Inspection_workflow.md#melden-von-fehlern) wurden.
+Wenn diese Option aktiviert ist, setzt die Software die Inspektion neuer Platinen erst fort, wenn jede Erkennung der aktuellen Inspektion überprüft wurde: entweder als Fehler oder als Falsch-Positiv [gemeldet](Inspection_workflow.md#melden-von-fehlern), oder zumindest durch Überfahren mit dem Mauszeiger als **viewed** markiert.
 
 #### TOP/BOTTOM automatisch umschalten
 

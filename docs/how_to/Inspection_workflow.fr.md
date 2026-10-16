@@ -151,6 +151,8 @@ Si des erreurs sont détectées, un **cadre rouge** apparaîtra autour de la fen
 Une fois l'inspection terminée, l'opérateur doit surveiller les erreurs signalées, en les marquant comme **erreur réelle** ou **détection de faux positif**.
 Pour ce faire, faites simplement défiler les erreurs en utilisant les **flèches gauche et droite** du clavier.
 
+Les erreurs peuvent aussi être signalées directement à la souris : **clic gauche** sur une détection pour la signaler comme erreur réelle, ou **clic droit** pour la signaler comme faux positif — équivalent aux touches flèche **haut** et **bas** décrites ci-dessous.
+
 Pour marquer une erreur réelle, déplacez-vous simplement vers le défaut et appuyez sur la **flèche haut** de votre clavier. Une nouvelle fenêtre apparaîtra, montrant le défaut en détail et vous permettant de le catégoriser en sélectionnant un type de défaut dans la liste.
 
 ![Fenêtre de rapport](../assets/v7/ui-report.png){.center}
@@ -165,6 +167,8 @@ Lorsque le logiciel marque une zone qui n'est pas une erreur réelle, l'opérate
 
 !!! note "Note"
     Notez que l'**icône rouge** ![Icône rouge](../assets/v7/ui-report_red.png){width=20px} marque les défauts réels et l'**icône verte** ![Icône verte](../assets/v7/ui-report_green.png){width=20px} les défauts faux positifs.
+
+Une détection qui n'a été signalée d'aucune des deux façons reste non examinée. Lorsque la [Révision obligatoire des erreurs](Settings_menu.md#revision-obligatoire-des-erreurs) est activée, il suffit de survoler cette détection avec le curseur pour la marquer comme **viewed**, ce qui satisfait également l'exigence de révision pour cette détection.
 
 ### Génération d'un rapport PDF final
 

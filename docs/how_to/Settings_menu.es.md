@@ -64,7 +64,7 @@ Al activar esta opción, el software mantendrá la sensibilidad de inspección c
 
 #### Revisión obligatoria de errores
 
-Si esta opción está habilitada, el software no continuará inspeccionando nuevos paneles hasta que todos los errores detectados en la inspección actual hayan sido [reportados](Inspection_workflow.md#reporte-de-errores) como errores o falsos positivos.
+Si esta opción está habilitada, el software no continuará inspeccionando nuevos paneles hasta que todas las detecciones de la inspección actual hayan sido revisadas: [reportadas](Inspection_workflow.md#reporte-de-errores) como error o como falso positivo, o al menos marcadas como **viewed** al pasar el cursor por encima.
 
 #### Cambio automático TOP/BOTTOM
 

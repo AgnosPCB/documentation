@@ -75,6 +75,13 @@ Hier befinden sich verschiedene **Funktionen und Optionen**, die darauf ausgeleg
 
 Das Referenz-Mosaik wird verwendet, um REFERENZEN als Dateien zu speichern, um jede davon schnell zu finden und zu laden. Das Mosaik-Menü wird automatisch angezeigt, nachdem eine REFERENZ mit der [Schaltfläche Foto REFERENZ aufnehmen](#ein-referenz-bild-aufnehmen) aufgenommen oder [als Datei geladen](#referenz-als-datei-laden) wurde. In diesem Fenster ist es auch möglich, die aufgenommene REFERENZ im oberen rechten Teil des Fensters zu benennen. Eine im Mosaik gespeicherte REFERENZ kann schnell durch Drücken einer **F-Taste** (F1-F10) geladen werden.
 
+#### Anzeige-Alias
+
+Eine REFERENZ kann außerdem einen optionalen **Anzeige-Alias** erhalten — einen freundlicheren Namen, der hier im Mosaik, in der [Suchliste](#referenz-als-datei-laden) weiter unten und in den Inspektionsberichten (PDF und JSON) angezeigt wird, ohne die REFERENZ selbst umzubenennen. Das ist nützlich, wenn der tatsächliche Name der REFERENZ auf den ersten Blick wenig aussagt.
+
+!!! note "Hinweis"
+    Der Alias ist nur eine Bezeichnung. Alles, was die REFERENZ identifiziert oder lädt, verwendet weiterhin ihren tatsächlichen Namen.
+
 ### REFERENZ als Datei laden
 
 ![Schaltfläche Referenz öffnen](../assets/v7/ui-button2.png){width=350px .center}

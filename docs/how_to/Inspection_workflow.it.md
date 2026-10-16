@@ -150,6 +150,8 @@ Se vengono rilevati errori, apparirà una **cornice rossa** attorno alla finestr
 Una volta completata l'ispezione, l'operatore deve monitorare gli errori segnalati, contrassegnandoli come **errore effettivo** o **rilevamento falso positivo**.
 Per fare ciò, è sufficiente scorrere gli errori utilizzando le **frecce sinistra e destra** sulla tastiera.
 
+Gli errori possono anche essere segnalati direttamente con il mouse: **clic sinistro** su una rilevazione per segnalarla come errore reale, oppure **clic destro** per segnalarla come falso positivo — equivalente ai tasti freccia **su** e **giù** descritti di seguito.
+
 Per contrassegnare un errore reale, basta spostarsi sul difetto e premere la **freccia su** sulla tastiera. Apparirà una nuova finestra che mostra il difetto in dettaglio e consente di classificarlo selezionando un tipo di difetto dall'elenco.
 
 ![Finestra di segnalazione](../assets/v7/ui-report.png){.center}
@@ -164,6 +166,8 @@ Quando il software segnala un'area che non è un errore effettivo, l'operatore p
 
 !!! note "Nota"
     Si noti che l'**icona rossa** ![Icona rossa](../assets/v7/ui-report_red.png){width=20px} contrassegna i difetti effettivi e l'**icona verde** ![Icona verde](../assets/v7/ui-report_green.png){width=20px} i difetti falsi positivi.
+
+Una rilevazione non segnalata in nessuno dei due modi resta non esaminata. Quando la [Revisione obbligatoria degli errori](Settings_menu.md#revisione-obbligatoria-degli-errori) è abilitata, è sufficiente passare il cursore sopra quella rilevazione per contrassegnarla come **viewed**, il che soddisfa anche il requisito di revisione per quella rilevazione.
 
 ### Generazione di un report PDF finale
 

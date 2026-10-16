@@ -64,7 +64,7 @@ En activant cette option, le logiciel conservera la sensibilité d'inspection co
 
 #### Révision obligatoire des erreurs
 
-Si cette option est activée, le logiciel ne continuera pas à inspecter de nouveaux panneaux tant que toutes les erreurs détectées lors de l'inspection en cours n'auront pas été [signalées](Inspection_workflow.md#signalement-des-erreurs) comme erreurs ou faux positifs.
+Si cette option est activée, le logiciel ne continuera pas à inspecter de nouveaux panneaux tant que toutes les détections de l'inspection en cours n'auront pas été passées en revue : [signalées](Inspection_workflow.md#signalement-des-erreurs) comme erreur ou comme faux positif, ou au moins marquées comme **viewed** en survolant la détection avec le curseur.
 
 #### Bascule automatique TOP/BOTTOM
 

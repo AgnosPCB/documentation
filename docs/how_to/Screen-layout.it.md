@@ -75,6 +75,13 @@ Qui si trovano diverse **funzioni e opzioni** progettate per **ottimizzare** il 
 
 Il mosaico di riferimenti viene utilizzato per archiviare i RIFERIMENTI come file per trovarli e caricarli rapidamente. Il menu mosaico appare automaticamente dopo aver acquisito un RIFERIMENTO utilizzando il [pulsante scatta foto RIFERIMENTO](#scatta-unimmagine-di-riferimento) o caricandolo [come file](#carica-riferimento-come-file). In questa finestra è anche possibile nominare il RIFERIMENTO acquisito nella parte in alto a destra della finestra. Un RIFERIMENTO memorizzato nel mosaico può essere caricato rapidamente premendo un **pulsante F** (F1-F10).
 
+#### Alias di visualizzazione
+
+A un RIFERIMENTO può anche essere assegnato un **alias di visualizzazione** opzionale: un nome più amichevole mostrato qui nel mosaico, nella [lista di ricerca](#carica-riferimento-come-file) qui sotto e nei report di ispezione (PDF e JSON), senza rinominare il RIFERIMENTO stesso. È utile quando il nome reale del RIFERIMENTO non è immediatamente comprensibile.
+
+!!! note "Nota"
+    L'alias è solo un'etichetta. Tutto ciò che identifica o carica il RIFERIMENTO continua a usare il suo nome reale.
+
 ### CARICA RIFERIMENTO come file
 
 ![Pulsante Apri riferimento](../assets/v7/ui-button2.png){width=350px .center}

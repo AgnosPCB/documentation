@@ -8,7 +8,7 @@ By default, anyone with access to the AOI can use the software and change any of
 
 ## The two roles
 
-Every account has one of these two roles:
+Every account has one of these two **built-in** roles, or a [custom role](#custom-roles-and-permissions) created by an administrator:
 
 | | **admin** | **operator** |
 | --- | --- | --- |
@@ -28,6 +28,15 @@ Every account has one of these two roles:
     **Operator mode**, in *Settings → Workflow*, simplifies the interface and blocks the capture of REFERENCE images. It applies to whoever is using the machine, regardless of their role.
 
     They can be used together: an operator account with operator mode enabled gets both the simplified interface and the restricted settings.
+
+## Custom roles and permissions
+
+Beyond the built-in **admin** and **operator** roles described above, administrators can create additional roles from the **Users** tab of the [settings menu](../how_to/Settings_menu.md) and choose exactly which permissions each one grants — for example, creating REFERENCES, generating [reference variants](Multivariant_feature.md), or adjusting the analysis sensitivity.
+
+A custom role appears alongside **admin** and **operator** when creating or editing a user, and only grants the permissions it was configured with.
+
+!!! note "Note"
+    The built-in **admin** and **operator** roles cannot be edited or deleted; their permissions are the ones listed in the table above.
 
 ## Setting it up
 
@@ -96,3 +105,10 @@ Select an account in the list to work with it:
 
 !!! note "Note"
     There must always be at least one **active admin** account. Keep this in mind before deactivating or deleting an administrator.
+
+## Inactivity lock
+
+With user access control enabled, the **Users** tab of the [settings menu](../how_to/Settings_menu.md) also offers an optional inactivity lock: set the number of minutes of keyboard and mouse inactivity after which the application should lock itself. Once that time elapses, the **User access required** dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.
+
+!!! note "Note"
+    This option only appears once user access control is enabled, since locking the application requires an account to unlock it with.

@@ -8,7 +8,7 @@ Le **contrôle d'accès des utilisateurs** vous permet de créer des comptes ind
 
 ## Les deux rôles
 
-Chaque compte possède l'un de ces deux rôles :
+Chaque compte possède l'un de ces deux rôles **intégrés**, ou un [rôle personnalisé](#roles-personnalises-et-permissions) créé par un administrateur :
 
 | | **admin** | **operator** |
 | --- | --- | --- |
@@ -28,6 +28,15 @@ Chaque compte possède l'un de ces deux rôles :
     Le **mode opérateur**, dans *Settings → Workflow*, simplifie l'interface et bloque la capture d'images de RÉFÉRENCE. Il s'applique à quiconque utilise la machine, quel que soit son rôle.
 
     Les deux peuvent être combinés : un compte opérateur avec le mode opérateur activé bénéficie à la fois de l'interface simplifiée et des paramètres restreints.
+
+## Rôles personnalisés et permissions
+
+Au-delà des rôles intégrés **admin** et **operator** décrits ci-dessus, les administrateurs peuvent créer des rôles supplémentaires depuis l'onglet **Users** du [menu des paramètres](../how_to/Settings_menu.md) et choisir précisément les permissions accordées à chacun — par exemple, créer des RÉFÉRENCES, générer des [variantes de référence](Multivariant_feature.md) ou ajuster la sensibilité de l'analyse.
+
+Un rôle personnalisé apparaît aux côtés de **admin** et **operator** lors de la création ou de la modification d'un utilisateur, et n'accorde que les permissions avec lesquelles il a été configuré.
+
+!!! note "Note"
+    Les rôles intégrés **admin** et **operator** ne peuvent être ni modifiés ni supprimés ; leurs permissions sont celles indiquées dans le tableau ci-dessus.
 
 ## Le configurer
 
@@ -96,3 +105,10 @@ Sélectionnez un compte dans la liste pour agir dessus :
 
 !!! note "Note"
     Il doit toujours exister au moins un compte **admin actif**. Gardez cela à l'esprit avant de désactiver ou de supprimer un administrateur.
+
+## Verrouillage pour inactivité
+
+Lorsque le contrôle d'accès des utilisateurs est activé, l'onglet **Users** du [menu des paramètres](../how_to/Settings_menu.md) propose également un verrouillage pour inactivité optionnel : définissez le nombre de minutes d'inactivité du clavier et de la souris au bout desquelles l'application doit se verrouiller. Une fois ce délai écoulé, la fenêtre **User access required** réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.
+
+!!! note "Note"
+    Cette option n'apparaît que lorsque le contrôle d'accès des utilisateurs est activé, car verrouiller l'application nécessite un compte pour la déverrouiller.

@@ -149,6 +149,8 @@ If errors are detected, a **red frame** will appear around the main window. A **
 Once the inspection is complete, the operator must monitor the flagged errors, marking them as an **actual error** or a **false positive detection**.
 To do this, simply scroll through the errors using the **left and right arrows** on the keyboard.
 
+Errors can also be reported directly with the mouse: **left-click** a detection to report it as an actual error, or **right-click** it to report it as a false positive — equivalent to the **up** and **down** arrow keys described below.
+
 To mark a real error, just move to the fault and press the **up arrow** on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault from the list.
 
 ![Report window](../assets/v7/ui-report.png){.center}
@@ -163,6 +165,8 @@ When the software marks an area that is not an actual error, the operator can fl
 
 !!! note "Note"
     Note the **red icon** ![Red icon](../assets/v7/ui-report_red.png){width=20px} marks the actual faults and the **green icon** ![Green icon](../assets/v7/ui-report_green.png){width=20px} marks the false positive faults.
+
+A detection that has not been reported as either is still **unreviewed**. When [Mandatory errors review](Settings_menu.md#mandatory-errors-review) is enabled, simply hovering the cursor over such a detection marks it as **viewed**, which also satisfies the review requirement for that detection.
 
 ### Generating a final PDF report
 

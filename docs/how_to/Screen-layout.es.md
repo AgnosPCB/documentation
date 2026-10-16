@@ -75,6 +75,13 @@ Aquí se encuentran varias **funciones y opciones** diseñadas para **optimizar*
 
 El mosaico de referencias se utiliza para almacenar REFERENCIAS como archivos para encontrar y cargar rápidamente cualquiera de ellas. El menú mosaico aparece automáticamente después de tomar una REFERENCIA usando el [botón para tomar foto de REFERENCIA](#tomar-una-imagen-de-referencia) o cargándola [como un archivo](#cargar-referencia-como-archivo). En esta ventana también es posible nombrar la REFERENCIA tomada en la parte superior derecha de la ventana. Una REFERENCIA almacenada en el mosaico se puede cargar rápidamente presionando un **botón F** (F1-F10).
 
+#### Alias de visualización
+
+Una REFERENCIA también puede recibir un **alias de visualización** opcional: un nombre más amigable que se muestra aquí, en el mosaico, en la [lista de búsqueda](#cargar-referencia-como-archivo) de abajo y en los informes de inspección (PDF y JSON), sin renombrar la REFERENCIA en sí. Esto resulta útil cuando el nombre real de la REFERENCIA no es fácil de interpretar de un vistazo.
+
+!!! note "Nota"
+    El alias es solo una etiqueta. Todo lo que identifica o carga la REFERENCIA sigue usando su nombre real.
+
 ### CARGAR REFERENCIA como archivo
 
 ![Botón Abrir referencia](../assets/v7/ui-button2.png){width=350px .center}

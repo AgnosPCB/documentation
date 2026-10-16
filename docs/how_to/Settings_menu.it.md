@@ -64,7 +64,7 @@ Attivando questa opzione, il software manterrà la sensibilità di ispezione con
 
 #### Revisione obbligatoria degli errori
 
-Se questa opzione è abilitata, il software non continuerà a ispezionare nuovi pannelli finché tutti gli errori rilevati nell'ispezione corrente non saranno stati [segnalati](Inspection_workflow.md#segnalazione-degli-errori) come errori o falsi positivi.
+Se questa opzione è abilitata, il software non continuerà a ispezionare nuovi pannelli finché tutte le rilevazioni dell'ispezione corrente non saranno state esaminate: [segnalate](Inspection_workflow.md#segnalazione-degli-errori) come errore o come falso positivo, oppure almeno contrassegnate come **viewed** passando il cursore sopra di esse.
 
 #### Cambio automatico TOP/BOTTOM
 

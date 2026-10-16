@@ -8,7 +8,7 @@ Il **controllo di accesso utenti** consente di creare account individuali e di r
 
 ## I due ruoli
 
-Ogni account ha uno di questi due ruoli:
+Ogni account ha uno di questi due ruoli **integrati**, oppure un [ruolo personalizzato](#ruoli-personalizzati-e-permessi) creato da un amministratore:
 
 | | **admin** | **operator** |
 | --- | --- | --- |
@@ -28,6 +28,15 @@ Ogni account ha uno di questi due ruoli:
     La **modalità operatore**, in *Settings → Workflow*, semplifica l'interfaccia e blocca l'acquisizione di immagini di RIFERIMENTO. Si applica a chiunque stia usando la macchina, indipendentemente dal ruolo.
 
     Possono essere usate insieme: un account operatore con la modalità operatore abilitata ottiene sia l'interfaccia semplificata sia le impostazioni ristrette.
+
+## Ruoli personalizzati e permessi
+
+Oltre ai ruoli integrati **admin** e **operator** descritti sopra, gli amministratori possono creare ruoli aggiuntivi dalla scheda **Users** del [menu Impostazioni](../how_to/Settings_menu.md) e scegliere esattamente quali permessi concedere a ciascuno — ad esempio creare RIFERIMENTI, generare [varianti di riferimento](Multivariant_feature.md) o regolare la sensibilità dell'analisi.
+
+Un ruolo personalizzato compare accanto a **admin** e **operator** quando si crea o si modifica un utente, e concede solo i permessi con cui è stato configurato.
+
+!!! note "Nota"
+    I ruoli integrati **admin** e **operator** non possono essere modificati né eliminati; i loro permessi sono quelli indicati nella tabella precedente.
 
 ## Configurazione
 
@@ -96,3 +105,10 @@ Selezionate un account nell'elenco per operare su di esso:
 
 !!! note "Nota"
     Deve sempre esistere almeno un account **admin attivo**. Tenetelo presente prima di disattivare o eliminare un amministratore.
+
+## Blocco per inattività
+
+Con il controllo di accesso utenti abilitato, la scheda **Users** del [menu Impostazioni](../how_to/Settings_menu.md) offre anche un blocco per inattività opzionale: impostate il numero di minuti di inattività di tastiera e mouse trascorsi i quali l'applicazione si blocca. Trascorso quel tempo, ricompare la finestra **User access required**, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso.
+
+!!! note "Nota"
+    Questa opzione compare solo quando il controllo di accesso utenti è abilitato, poiché bloccare l'applicazione richiede un account con cui sbloccarla.

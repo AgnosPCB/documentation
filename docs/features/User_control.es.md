@@ -8,7 +8,7 @@ El **control de acceso de usuarios** le permite crear cuentas individuales y exi
 
 ## Los dos roles
 
-Cada cuenta tiene uno de estos dos roles:
+Cada cuenta tiene uno de estos dos roles **integrados**, o un [rol personalizado](#roles-personalizados-y-permisos) creado por un administrador:
 
 | | **admin** | **operator** |
 | --- | --- | --- |
@@ -28,6 +28,15 @@ Cada cuenta tiene uno de estos dos roles:
     El **modo operador**, en *Settings → Workflow*, simplifica la interfaz y bloquea la captura de imágenes de REFERENCIA. Se aplica a quien esté usando la máquina, independientemente de su rol.
 
     Pueden usarse juntos: una cuenta de operador con el modo operador habilitado obtiene tanto la interfaz simplificada como la configuración restringida.
+
+## Roles personalizados y permisos
+
+Además de los roles integrados **admin** y **operator** descritos arriba, los administradores pueden crear roles adicionales desde la pestaña **Users** del [menú de configuración](../how_to/Settings_menu.md) y elegir exactamente qué permisos concede cada uno; por ejemplo, crear REFERENCIAS, generar [variantes de referencia](Multivariant_feature.md) o ajustar la sensibilidad del análisis.
+
+Un rol personalizado aparece junto a **admin** y **operator** al crear o editar un usuario, y solo concede los permisos con los que se haya configurado.
+
+!!! note "Nota"
+    Los roles integrados **admin** y **operator** no se pueden editar ni eliminar; sus permisos son los indicados en la tabla anterior.
 
 ## Configurarlo
 
@@ -96,3 +105,10 @@ Seleccione una cuenta en la lista para trabajar con ella:
 
 !!! note "Nota"
     Siempre debe haber al menos una cuenta **admin activa**. Téngalo en cuenta antes de desactivar o eliminar a un administrador.
+
+## Bloqueo por inactividad
+
+Con el control de acceso de usuarios habilitado, la pestaña **Users** del [menú de configuración](../how_to/Settings_menu.md) también ofrece un bloqueo por inactividad opcional: establezca el número de minutos de inactividad del teclado y el ratón tras los cuales la aplicación debe bloquearse. Transcurrido ese tiempo, vuelve a aparecer el diálogo **User access required**, igual que al iniciar, sin cerrar la REFERENCIA actual ni perder los resultados de la inspección en curso.
+
+!!! note "Nota"
+    Esta opción solo aparece cuando el control de acceso de usuarios está habilitado, ya que bloquear la aplicación requiere una cuenta con la que desbloquearla.

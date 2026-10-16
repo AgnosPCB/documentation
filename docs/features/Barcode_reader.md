@@ -7,15 +7,13 @@ You can either take a **REFERENCE** photo or upload one directly from your files
 
 ![Barcode area selected](../assets/v7/ui-button4.png){.center}
 
-Press the **"draw barcode area"** button and draw an area where the code is placed in the panel.
-Define what type of code is placed in that area: **ID, Batch ID, Model or Misc.**
+Press the **"draw barcode area"** button and draw an area where a code is placed on the panel, then define what type of code it is: **ID, Batch ID, Model or Misc**. Repeat this for every code you want the software to read — up to **four** different types.
 
 ![Barcode read](../assets/v7/barcode/1-bc-menu.png){.center}
 
-You can configure up to four different types of codes to be read.
-If the **mandatory barcode** option is set on a specific code, the inspections won't continue if the code has not been read correctly. In these cases, it will allow the operator to add it manually.
+If the **mandatory barcode** option is set on a specific code, the inspection won't continue until that code has been read successfully. If it isn't detected automatically, the operator is prompted to enter it manually before proceeding.
 
-Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. The UUI's codew will be read automatically in the same area of the REFERENCE's barcode.
+Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. Each of the UUI's codes will be read automatically from the same areas defined on the REFERENCE.
 
 Proceed with the [inspection process](../how_to/Inspection_workflow.md) as usual. 
 
