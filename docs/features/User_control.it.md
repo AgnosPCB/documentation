@@ -31,12 +31,26 @@ Ogni account ha uno di questi due ruoli **integrati**, oppure un [ruolo personal
 
 ## Ruoli personalizzati e permessi
 
-Oltre ai ruoli integrati **admin** e **operator** descritti sopra, gli amministratori possono creare ruoli aggiuntivi dalla scheda **Users** del [menu Impostazioni](../how_to/Settings_menu.md) e scegliere esattamente quali permessi concedere a ciascuno — ad esempio creare RIFERIMENTI, generare [varianti di riferimento](Multivariant_feature.md) o regolare la sensibilità dell'analisi.
+Oltre ai ruoli integrati **admin** e **operator** descritti sopra, gli amministratori possono creare ruoli aggiuntivi dall'elenco **Roles** in fondo alla scheda **Users** del [menu Impostazioni](../how_to/Settings_menu.md).
 
-Un ruolo personalizzato compare accanto a **admin** e **operator** quando si crea o si modifica un utente, e concede solo i permessi con cui è stato configurato.
+![Elenco dei ruoli nella scheda Users](../assets/v7/user_control/users-general-settings.png){.center}
+
+Premete **New role**, assegnategli un nome e premete **Create**.
+
+![Assegnare un nome a un nuovo ruolo](../assets/v7/user_control/users-rol-name.png){.center}
+
+Selezionate il nuovo ruolo nell'elenco e premete **Edit permissions** per scegliere esattamente cosa concede. I permessi sono raggruppati in categorie come **Reference**, **Inspection** e **Maintenance** — ad esempio creare o eliminare una variante di riferimento, eseguire ispezioni o calibrare la piattaforma — e ogni categoria ha la propria scorciatoia **Select all** / **Deselect all**.
+
+![Modificare i permessi di un ruolo](../assets/v7/user_control/users-rol-permissions.png){.center}
+
+La colonna **Permissions granted** mostra quanti dei permessi disponibili ha attualmente ciascun ruolo, ad esempio **23/35**.
+
+Un ruolo personalizzato compare quindi accanto a **admin** e **operator** nel campo **Role** quando si crea o si modifica un utente.
+
+![Assegnare un ruolo personalizzato a un utente](../assets/v7/user_control/users-rol-assing.png){.center}
 
 !!! note "Nota"
-    I ruoli integrati **admin** e **operator** non possono essere modificati né eliminati; i loro permessi sono quelli indicati nella tabella precedente.
+    I ruoli integrati **admin** e **operator** non possono essere rinominati, non è possibile modificarne i permessi, né possono essere eliminati.
 
 ## Configurazione
 
@@ -108,7 +122,11 @@ Selezionate un account nell'elenco per operare su di esso:
 
 ## Blocco per inattività
 
-Con il controllo di accesso utenti abilitato, la scheda **Users** del [menu Impostazioni](../how_to/Settings_menu.md) offre anche un blocco per inattività opzionale: impostate il numero di minuti di inattività di tastiera e mouse trascorsi i quali l'applicazione si blocca. Trascorso quel tempo, ricompare la finestra **User access required**, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso.
+Con il controllo di accesso utenti abilitato, il pannello **User access control** della scheda **Users** offre anche un blocco per inattività opzionale: abilitate **Lock after inactivity** e impostate il numero di minuti di inattività di tastiera e mouse trascorsi i quali l'applicazione si blocca.
+
+![Opzione Lock after inactivity](../assets/v7/user_control/users-general-settings.png){.center}
+
+Trascorso quel tempo, ricompare la finestra **User access required**, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso.
 
 !!! note "Nota"
     Questa opzione compare solo quando il controllo di accesso utenti è abilitato, poiché bloccare l'applicazione richiede un account con cui sbloccarla.

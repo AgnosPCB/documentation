@@ -75,13 +75,6 @@ Qui si trovano diverse **funzioni e opzioni** progettate per **ottimizzare** il 
 
 Il mosaico di riferimenti viene utilizzato per archiviare i RIFERIMENTI come file per trovarli e caricarli rapidamente. Il menu mosaico appare automaticamente dopo aver acquisito un RIFERIMENTO utilizzando il [pulsante scatta foto RIFERIMENTO](#scatta-unimmagine-di-riferimento) o caricandolo [come file](#carica-riferimento-come-file). In questa finestra è anche possibile nominare il RIFERIMENTO acquisito nella parte in alto a destra della finestra. Un RIFERIMENTO memorizzato nel mosaico può essere caricato rapidamente premendo un **pulsante F** (F1-F10).
 
-#### Alias di visualizzazione
-
-A un RIFERIMENTO può anche essere assegnato un **alias di visualizzazione** opzionale: un nome più amichevole mostrato qui nel mosaico, nella [lista di ricerca](#carica-riferimento-come-file) qui sotto e nei report di ispezione (PDF e JSON), senza rinominare il RIFERIMENTO stesso. È utile quando il nome reale del RIFERIMENTO non è immediatamente comprensibile.
-
-!!! note "Nota"
-    L'alias è solo un'etichetta. Tutto ciò che identifica o carica il RIFERIMENTO continua a usare il suo nome reale.
-
 ### CARICA RIFERIMENTO come file
 
 ![Pulsante Apri riferimento](../assets/v7/ui-button2.png){width=350px .center}
@@ -92,6 +85,21 @@ Utilizzare questa icona per caricare un'immagine precedentemente catturata come 
 
 !!! note "Nota"
     Dalla versione 7, il software **non consente** di caricare immagini acquisite da fonti diverse dalla piattaforma stessa poiché le immagini contengono parametri specifici per l'ottica. Ogni immagine di RIFERIMENTO deve essere acquisita utilizzando l'**AI-4050 AOI**.
+
+#### Alias di visualizzazione
+
+A un RIFERIMENTO può essere assegnato un **alias di visualizzazione** opzionale: un nome più amichevole mostrato nella colonna **Alias** di questo elenco al posto del nome reale del RIFERIMENTO, senza rinominarlo. È utile quando il nome reale del RIFERIMENTO — un codice a barre, una marca temporale — non è immediatamente comprensibile. L'alias viene usato anche nel mosaico e nei report di ispezione (PDF e JSON).
+
+Selezionate un RIFERIMENTO nell'elenco e premete **ALIAS**.
+
+![Pulsante ALIAS e finestra di dialogo](../assets/v7/ref-alias-name.png){.center}
+
+Digitate un nome e premete **OK**. Lasciando il campo vuoto e premendo **OK** l'alias viene rimosso e l'elenco torna a mostrare il nome reale del RIFERIMENTO.
+
+![Elenco dei RIFERIMENTI con alias](../assets/v7/ref-alias.png){.center}
+
+!!! note "Nota"
+    L'alias è solo un'etichetta. Tutto ciò che identifica o carica il RIFERIMENTO — il suo nome file, la sua associazione con un codice a barre — continua a usare il suo nome reale.
 
 ### Scambia
 

@@ -31,12 +31,26 @@ Every account has one of these two **built-in** roles, or a [custom role](#custo
 
 ## Custom roles and permissions
 
-Beyond the built-in **admin** and **operator** roles described above, administrators can create additional roles from the **Users** tab of the [settings menu](../how_to/Settings_menu.md) and choose exactly which permissions each one grants — for example, creating REFERENCES, generating [reference variants](Multivariant_feature.md), or adjusting the analysis sensitivity.
+Beyond the built-in **admin** and **operator** roles described above, administrators can create additional roles from the **Roles** list at the bottom of the **Users** tab of the [settings menu](../how_to/Settings_menu.md).
 
-A custom role appears alongside **admin** and **operator** when creating or editing a user, and only grants the permissions it was configured with.
+![Roles list in the Users tab](../assets/v7/user_control/users-general-settings.png){.center}
+
+Press **New role**, give it a name and press **Create**.
+
+![Naming a new role](../assets/v7/user_control/users-rol-name.png){.center}
+
+Select the new role in the list and press **Edit permissions** to choose exactly what it grants. Permissions are grouped into categories such as **Reference**, **Inspection** and **Maintenance** — for example creating or deleting a reference variant, running inspections, or calibrating the platform — and each category has its own **Select all** / **Deselect all** shortcut.
+
+![Editing the permissions of a role](../assets/v7/user_control/users-rol-permissions.png){.center}
+
+The **Permissions granted** column shows how many of the available permissions each role currently has, e.g. **23/35**.
+
+A custom role then appears alongside **admin** and **operator** in the **Role** field when adding or editing a user.
+
+![Assigning a custom role to a user](../assets/v7/user_control/users-rol-assing.png){.center}
 
 !!! note "Note"
-    The built-in **admin** and **operator** roles cannot be edited or deleted; their permissions are the ones listed in the table above.
+    The built-in **admin** and **operator** roles cannot be renamed, have their permissions edited, or be deleted.
 
 ## Setting it up
 
@@ -108,7 +122,11 @@ Select an account in the list to work with it:
 
 ## Inactivity lock
 
-With user access control enabled, the **Users** tab of the [settings menu](../how_to/Settings_menu.md) also offers an optional inactivity lock: set the number of minutes of keyboard and mouse inactivity after which the application should lock itself. Once that time elapses, the **User access required** dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.
+With user access control enabled, the **User access control** panel of the **Users** tab also offers an optional inactivity lock: enable **Lock after inactivity** and set the number of minutes of keyboard and mouse inactivity after which the application should lock itself.
+
+![Lock after inactivity option](../assets/v7/user_control/users-general-settings.png){.center}
+
+Once that time elapses, the **User access required** dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.
 
 !!! note "Note"
     This option only appears once user access control is enabled, since locking the application requires an account to unlock it with.

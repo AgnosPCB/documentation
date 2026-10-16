@@ -31,12 +31,26 @@ Chaque compte possède l'un de ces deux rôles **intégrés**, ou un [rôle pers
 
 ## Rôles personnalisés et permissions
 
-Au-delà des rôles intégrés **admin** et **operator** décrits ci-dessus, les administrateurs peuvent créer des rôles supplémentaires depuis l'onglet **Users** du [menu des paramètres](../how_to/Settings_menu.md) et choisir précisément les permissions accordées à chacun — par exemple, créer des RÉFÉRENCES, générer des [variantes de référence](Multivariant_feature.md) ou ajuster la sensibilité de l'analyse.
+Au-delà des rôles intégrés **admin** et **operator** décrits ci-dessus, les administrateurs peuvent créer des rôles supplémentaires depuis la liste **Roles** en bas de l'onglet **Users** du [menu des paramètres](../how_to/Settings_menu.md).
 
-Un rôle personnalisé apparaît aux côtés de **admin** et **operator** lors de la création ou de la modification d'un utilisateur, et n'accorde que les permissions avec lesquelles il a été configuré.
+![Liste des rôles dans l'onglet Users](../assets/v7/user_control/users-general-settings.png){.center}
+
+Appuyez sur **New role**, donnez-lui un nom et appuyez sur **Create**.
+
+![Nommer un nouveau rôle](../assets/v7/user_control/users-rol-name.png){.center}
+
+Sélectionnez le nouveau rôle dans la liste et appuyez sur **Edit permissions** pour choisir précisément ce qu'il accorde. Les permissions sont regroupées par catégories telles que **Reference**, **Inspection** ou **Maintenance** — par exemple créer ou supprimer une variante de référence, lancer des inspections, ou calibrer la plateforme — et chaque catégorie dispose de son propre raccourci **Select all** / **Deselect all**.
+
+![Modifier les permissions d'un rôle](../assets/v7/user_control/users-rol-permissions.png){.center}
+
+La colonne **Permissions granted** indique combien de permissions disponibles chaque rôle possède actuellement, par exemple **23/35**.
+
+Un rôle personnalisé apparaît alors aux côtés de **admin** et **operator** dans le champ **Role** lors de la création ou de la modification d'un utilisateur.
+
+![Attribuer un rôle personnalisé à un utilisateur](../assets/v7/user_control/users-rol-assing.png){.center}
 
 !!! note "Note"
-    Les rôles intégrés **admin** et **operator** ne peuvent être ni modifiés ni supprimés ; leurs permissions sont celles indiquées dans le tableau ci-dessus.
+    Les rôles intégrés **admin** et **operator** ne peuvent être ni renommés, ni voir leurs permissions modifiées, ni être supprimés.
 
 ## Le configurer
 
@@ -108,7 +122,11 @@ Sélectionnez un compte dans la liste pour agir dessus :
 
 ## Verrouillage pour inactivité
 
-Lorsque le contrôle d'accès des utilisateurs est activé, l'onglet **Users** du [menu des paramètres](../how_to/Settings_menu.md) propose également un verrouillage pour inactivité optionnel : définissez le nombre de minutes d'inactivité du clavier et de la souris au bout desquelles l'application doit se verrouiller. Une fois ce délai écoulé, la fenêtre **User access required** réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.
+Lorsque le contrôle d'accès des utilisateurs est activé, le panneau **User access control** de l'onglet **Users** propose également un verrouillage pour inactivité optionnel : activez **Lock after inactivity** et définissez le nombre de minutes d'inactivité du clavier et de la souris au bout desquelles l'application doit se verrouiller.
+
+![Option Lock after inactivity](../assets/v7/user_control/users-general-settings.png){.center}
+
+Une fois ce délai écoulé, la fenêtre **User access required** réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.
 
 !!! note "Note"
     Cette option n'apparaît que lorsque le contrôle d'accès des utilisateurs est activé, car verrouiller l'application nécessite un compte pour la déverrouiller.

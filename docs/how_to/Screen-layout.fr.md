@@ -75,13 +75,6 @@ Voici diverses **fonctions et options** conçues pour **optimiser** votre flux d
 
 La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le [bouton prendre une photo RÉFÉRENCE](#prendre-une-image-de-reference) ou en la chargeant [comme un fichier](#charger-reference-en-tant-que-fichier). Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un **bouton F** (F1-F10).
 
-#### Alias d'affichage
-
-Une RÉFÉRENCE peut également recevoir un **alias d'affichage** facultatif : un nom plus explicite affiché ici dans la mosaïque, dans la [liste de recherche](#charger-reference-en-tant-que-fichier) ci-dessous, et dans les rapports d'inspection (PDF et JSON), sans renommer la RÉFÉRENCE elle-même. Cela est utile lorsque le nom réel de la RÉFÉRENCE n'est pas facile à comprendre d'un coup d'œil.
-
-!!! note "Note"
-    L'alias n'est qu'une étiquette. Tout ce qui identifie ou charge la RÉFÉRENCE continue d'utiliser son nom réel.
-
 ### CHARGER RÉFÉRENCE en tant que fichier
 
 ![Bouton Ouvrir référence](../assets/v7/ui-button2.png){width=350px .center}
@@ -92,6 +85,21 @@ Utilisez cette icône pour charger une image précédemment capturée en tant qu
 
 !!! note "Note"
     Depuis la version 7, le logiciel **n'autorise pas** le chargement d'images provenant d'une source autre que la plateforme elle-même, car les images contiennent des paramètres spécifiques pour l'optique. Chaque image de RÉFÉRENCE doit être capturée à l'aide de l'**AOI AI-4050**.
+
+#### Alias d'affichage
+
+Une RÉFÉRENCE peut recevoir un **alias d'affichage** facultatif : un nom plus explicite affiché dans la colonne **Alias** de cette liste à la place du nom réel de la RÉFÉRENCE, sans la renommer. Cela est utile lorsque le nom réel de la RÉFÉRENCE — un code-barres, un horodatage — n'est pas facile à comprendre d'un coup d'œil. L'alias est également utilisé dans la mosaïque et dans les rapports d'inspection (PDF et JSON).
+
+Sélectionnez une RÉFÉRENCE dans la liste et appuyez sur **ALIAS**.
+
+![Bouton ALIAS et fenêtre de saisie](../assets/v7/ref-alias-name.png){.center}
+
+Saisissez un nom et appuyez sur **OK**. Laisser le champ vide et appuyer sur **OK** supprime l'alias, la liste affiche alors de nouveau le nom réel de la RÉFÉRENCE.
+
+![Liste des RÉFÉRENCES avec alias](../assets/v7/ref-alias.png){.center}
+
+!!! note "Note"
+    L'alias n'est qu'une étiquette. Tout ce qui identifie ou charge la RÉFÉRENCE — son nom de fichier, son association à un code-barres — continue d'utiliser son nom réel.
 
 ### Échange
 

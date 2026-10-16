@@ -31,12 +31,26 @@ Jedes Konto hat eine der beiden folgenden **integrierten** Rollen oder eine von 
 
 ## Benutzerdefinierte Rollen und Berechtigungen
 
-Zusätzlich zu den oben beschriebenen integrierten Rollen **admin** und **operator** können Administratoren über die Registerkarte **Users** des [Einstellungsmenüs](../how_to/Settings_menu.md) weitere Rollen anlegen und genau festlegen, welche Berechtigungen jede davon erhält — zum Beispiel das Erstellen von REFERENZEN, das Erzeugen von [Referenzvarianten](Multivariant_feature.md) oder das Anpassen der Analyseempfindlichkeit.
+Zusätzlich zu den oben beschriebenen integrierten Rollen **admin** und **operator** können Administratoren über die Liste **Roles** am unteren Ende der Registerkarte **Users** des [Einstellungsmenüs](../how_to/Settings_menu.md) weitere Rollen anlegen.
 
-Eine benutzerdefinierte Rolle erscheint beim Anlegen oder Bearbeiten eines Benutzers neben **admin** und **operator** und gewährt ausschließlich die Berechtigungen, mit denen sie konfiguriert wurde.
+![Rollenliste in der Registerkarte Users](../assets/v7/user_control/users-general-settings.png){.center}
+
+Drücken Sie **New role**, vergeben Sie einen Namen und drücken Sie **Create**.
+
+![Eine neue Rolle benennen](../assets/v7/user_control/users-rol-name.png){.center}
+
+Wählen Sie die neue Rolle in der Liste aus und drücken Sie **Edit permissions**, um genau festzulegen, was sie gewährt. Die Berechtigungen sind in Kategorien wie **Reference**, **Inspection** und **Maintenance** gruppiert — zum Beispiel das Erstellen oder Löschen einer Referenzvariante, das Durchführen von Inspektionen oder das Kalibrieren der Plattform —, und jede Kategorie verfügt über eine eigene **Select all**- / **Deselect all**-Schnellauswahl.
+
+![Berechtigungen einer Rolle bearbeiten](../assets/v7/user_control/users-rol-permissions.png){.center}
+
+Die Spalte **Permissions granted** zeigt, wie viele der verfügbaren Berechtigungen jede Rolle aktuell hat, z. B. **23/35**.
+
+Eine benutzerdefinierte Rolle erscheint dann im Feld **Role** beim Anlegen oder Bearbeiten eines Benutzers neben **admin** und **operator**.
+
+![Einem Benutzer eine benutzerdefinierte Rolle zuweisen](../assets/v7/user_control/users-rol-assing.png){.center}
 
 !!! note "Hinweis"
-    Die integrierten Rollen **admin** und **operator** können weder bearbeitet noch gelöscht werden; ihre Berechtigungen sind die in der obigen Tabelle aufgeführten.
+    Die integrierten Rollen **admin** und **operator** können weder umbenannt noch in ihren Berechtigungen bearbeitet noch gelöscht werden.
 
 ## Einrichtung
 
@@ -108,7 +122,11 @@ Wählen Sie ein Konto in der Liste aus, um damit zu arbeiten:
 
 ## Inaktivitätssperre
 
-Ist die Benutzerzugriffskontrolle aktiviert, bietet die Registerkarte **Users** des [Einstellungsmenüs](../how_to/Settings_menu.md) zusätzlich eine optionale Inaktivitätssperre: Legen Sie fest, nach wie vielen Minuten ohne Tastatur- oder Mausaktivität sich die Anwendung sperren soll. Nach Ablauf dieser Zeit erscheint erneut der Dialog **User access required**, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren.
+Ist die Benutzerzugriffskontrolle aktiviert, bietet das Panel **User access control** der Registerkarte **Users** zusätzlich eine optionale Inaktivitätssperre: Aktivieren Sie **Lock after inactivity** und legen Sie fest, nach wie vielen Minuten ohne Tastatur- oder Mausaktivität sich die Anwendung sperren soll.
+
+![Option Lock after inactivity](../assets/v7/user_control/users-general-settings.png){.center}
+
+Nach Ablauf dieser Zeit erscheint erneut der Dialog **User access required**, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren.
 
 !!! note "Hinweis"
     Diese Option erscheint erst, wenn die Benutzerzugriffskontrolle aktiviert ist, da zum Entsperren der Anwendung ein Konto erforderlich ist.
