@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{#
+  mkdocs-static-i18n shares one search index for every language (see
+  hooks/split_search_index.py), and Material's search worker always
+  requests it as a path relative to the site root — the same URL regardless
+  of which language's pages are being viewed. That hook splits the index
+  back into one file per language; this redirects the browser's request for
+  it to the file matching the current page's <html lang>, before bundle.js
+  (which issues that request) loads.
+#}
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+{% endblock %}
