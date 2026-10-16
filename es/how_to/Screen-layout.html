@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -871,6 +893,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Mosaico de referencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-de-visualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alias de visualización
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2082,6 +2121,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Mosaico de referencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-de-visualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alias de visualización
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2286,6 +2342,12 @@
 <p><img alt="Botón de mosaico de referencias" class="center" src="../../assets/v7/ui-button1.png" width="350px" /></p>
 <p><img alt="Menú Mosaico" class="center" src="../../assets/v7/2024-11-14_09-27.png" width="600px" /></p>
 <p>El mosaico de referencias se utiliza para almacenar REFERENCIAS como archivos para encontrar y cargar rápidamente cualquiera de ellas. El menú mosaico aparece automáticamente después de tomar una REFERENCIA usando el <a href="#tomar-una-imagen-de-referencia">botón para tomar foto de REFERENCIA</a> o cargándola <a href="#cargar-referencia-como-archivo">como un archivo</a>. En esta ventana también es posible nombrar la REFERENCIA tomada en la parte superior derecha de la ventana. Una REFERENCIA almacenada en el mosaico se puede cargar rápidamente presionando un <strong>botón F</strong> (F1-F10).</p>
+<h4 id="alias-de-visualizacion">Alias de visualización</h4>
+<p>Una REFERENCIA también puede recibir un <strong>alias de visualización</strong> opcional: un nombre más amigable que se muestra aquí, en el mosaico, en la <a href="#cargar-referencia-como-archivo">lista de búsqueda</a> de abajo y en los informes de inspección (PDF y JSON), sin renombrar la REFERENCIA en sí. Esto resulta útil cuando el nombre real de la REFERENCIA no es fácil de interpretar de un vistazo.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>El alias es solo una etiqueta. Todo lo que identifica o carga la REFERENCIA sigue usando su nombre real.</p>
+</div>
 <h3 id="cargar-referencia-como-archivo">CARGAR REFERENCIA como archivo</h3>
 <p><img alt="Botón Abrir referencia" class="center" src="../../assets/v7/ui-button2.png" width="350px" /></p>
 <p><img alt="Menú Cargar REFERENCIA" class="center" src="../../assets/v7/ui-ref_search.png" /></p>

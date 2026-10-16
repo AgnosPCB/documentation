@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2013,6 +2035,7 @@
 <h3 id="segnalazione-degli-errori">Segnalazione degli errori</h3>
 <p>Una volta completata l'ispezione, l'operatore deve monitorare gli errori segnalati, contrassegnandoli come <strong>errore effettivo</strong> o <strong>rilevamento falso positivo</strong>.
 Per fare ciò, è sufficiente scorrere gli errori utilizzando le <strong>frecce sinistra e destra</strong> sulla tastiera.</p>
+<p>Gli errori possono anche essere segnalati direttamente con il mouse: <strong>clic sinistro</strong> su una rilevazione per segnalarla come errore reale, oppure <strong>clic destro</strong> per segnalarla come falso positivo — equivalente ai tasti freccia <strong>su</strong> e <strong>giù</strong> descritti di seguito.</p>
 <p>Per contrassegnare un errore reale, basta spostarsi sul difetto e premere la <strong>freccia su</strong> sulla tastiera. Apparirà una nuova finestra che mostra il difetto in dettaglio e consente di classificarlo selezionando un tipo di difetto dall'elenco.</p>
 <p><img alt="Finestra di segnalazione" class="center" src="../../assets/v7/ui-report.png" /></p>
 <p>Inoltre, c'è un campo vuoto per <strong>aggiungere un commento.</strong></p>
@@ -2023,6 +2046,7 @@ Per fare ciò, è sufficiente scorrere gli errori utilizzando le <strong>frecce 
 <p class="admonition-title">Nota</p>
 <p>Si noti che l'<strong>icona rossa</strong> <img alt="Icona rossa" src="../../assets/v7/ui-report_red.png" width="20px" /> contrassegna i difetti effettivi e l'<strong>icona verde</strong> <img alt="Icona verde" src="../../assets/v7/ui-report_green.png" width="20px" /> i difetti falsi positivi.</p>
 </div>
+<p>Una rilevazione non segnalata in nessuno dei due modi resta non esaminata. Quando la <a href="Settings_menu.html#revisione-obbligatoria-degli-errori">Revisione obbligatoria degli errori</a> è abilitata, è sufficiente passare il cursore sopra quella rilevazione per contrassegnarla come <strong>viewed</strong>, il che soddisfa anche il requisito di revisione per quella rilevazione.</p>
 <h3 id="generazione-di-un-report-pdf-finale">Generazione di un report PDF finale</h3>
 <p>Una volta terminata la segnalazione, l'operatore può generare un report PDF finale premendo il seguente pulsante:</p>
 <p><img alt="Report finale" class="center" src="../../assets/v7/ui-button8.png" /></p>

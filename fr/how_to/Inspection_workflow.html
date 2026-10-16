@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2013,6 +2035,7 @@
 <h3 id="signalement-des-erreurs">Signalement des erreurs</h3>
 <p>Une fois l'inspection terminée, l'opérateur doit surveiller les erreurs signalées, en les marquant comme <strong>erreur réelle</strong> ou <strong>détection de faux positif</strong>.
 Pour ce faire, faites simplement défiler les erreurs en utilisant les <strong>flèches gauche et droite</strong> du clavier.</p>
+<p>Les erreurs peuvent aussi être signalées directement à la souris : <strong>clic gauche</strong> sur une détection pour la signaler comme erreur réelle, ou <strong>clic droit</strong> pour la signaler comme faux positif — équivalent aux touches flèche <strong>haut</strong> et <strong>bas</strong> décrites ci-dessous.</p>
 <p>Pour marquer une erreur réelle, déplacez-vous simplement vers le défaut et appuyez sur la <strong>flèche haut</strong> de votre clavier. Une nouvelle fenêtre apparaîtra, montrant le défaut en détail et vous permettant de le catégoriser en sélectionnant un type de défaut dans la liste.</p>
 <p><img alt="Fenêtre de rapport" class="center" src="../../assets/v7/ui-report.png" /></p>
 <p>De plus, il y a un champ vide pour <strong>ajouter un commentaire.</strong></p>
@@ -2023,6 +2046,7 @@ Pour ce faire, faites simplement défiler les erreurs en utilisant les <strong>f
 <p class="admonition-title">Note</p>
 <p>Notez que l'<strong>icône rouge</strong> <img alt="Icône rouge" src="../../assets/v7/ui-report_red.png" width="20px" /> marque les défauts réels et l'<strong>icône verte</strong> <img alt="Icône verte" src="../../assets/v7/ui-report_green.png" width="20px" /> les défauts faux positifs.</p>
 </div>
+<p>Une détection qui n'a été signalée d'aucune des deux façons reste non examinée. Lorsque la <a href="Settings_menu.html#revision-obligatoire-des-erreurs">Révision obligatoire des erreurs</a> est activée, il suffit de survoler cette détection avec le curseur pour la marquer comme <strong>viewed</strong>, ce qui satisfait également l'exigence de révision pour cette détection.</p>
 <h3 id="generation-dun-rapport-pdf-final">Génération d'un rapport PDF final</h3>
 <p>Une fois le signalement terminé, l'opérateur peut générer un rapport PDF final en appuyant sur le bouton suivant :</p>
 <p><img alt="Rapport final" class="center" src="../../assets/v7/ui-button8.png" /></p>

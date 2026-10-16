@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -1281,6 +1303,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#benutzerdefinierte-rollen-und-berechtigungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benutzerdefinierte Rollen und Berechtigungen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#einrichtung" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1357,6 +1390,17 @@
     <span class="md-ellipsis">
       
         Konten verwalten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inaktivitatssperre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inaktivitätssperre
       
     </span>
   </a>
@@ -1810,6 +1854,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#benutzerdefinierte-rollen-und-berechtigungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benutzerdefinierte Rollen und Berechtigungen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#einrichtung" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1892,6 +1947,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#inaktivitatssperre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inaktivitätssperre
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1914,7 +1980,7 @@
 <p>Standardmäßig kann jeder mit Zugriff auf die AOI die Software verwenden und alle ihre Einstellungen ändern.</p>
 <p>Mit der <strong>Benutzerzugriffskontrolle</strong> können Sie individuelle Konten erstellen und bei jedem Start der Software einen <strong>Benutzernamen und ein Passwort</strong> verlangen. Jedes Konto hat eine Rolle, die festlegt, was der jeweilige Benutzer tun darf, sodass ein Bediener Inspektionen durchführen kann, während die Konfiguration der Maschine geschützt bleibt.</p>
 <h2 id="die-beiden-rollen">Die beiden Rollen</h2>
-<p>Jedes Konto hat eine der beiden folgenden Rollen:</p>
+<p>Jedes Konto hat eine der beiden folgenden <strong>integrierten</strong> Rollen oder eine von einem Administrator erstellte <a href="#benutzerdefinierte-rollen-und-berechtigungen">benutzerdefinierte Rolle</a>:</p>
 <table>
 <thead>
 <tr>
@@ -1972,6 +2038,13 @@
 <p>Der <strong>Bedienermodus</strong>, unter <em>Settings → Workflow</em>, vereinfacht die Oberfläche und blockiert die Aufnahme von REFERENZ-Bildern. Er gilt für jeden, der die Maschine bedient, unabhängig von dessen Rolle.</p>
 <p>Beides lässt sich kombinieren: Ein Bedienerkonto mit aktiviertem Bedienermodus erhält sowohl die vereinfachte Oberfläche als auch die eingeschränkten Einstellungen.</p>
 </div>
+<h2 id="benutzerdefinierte-rollen-und-berechtigungen">Benutzerdefinierte Rollen und Berechtigungen</h2>
+<p>Zusätzlich zu den oben beschriebenen integrierten Rollen <strong>admin</strong> und <strong>operator</strong> können Administratoren über die Registerkarte <strong>Users</strong> des <a href="../how_to/Settings_menu.html">Einstellungsmenüs</a> weitere Rollen anlegen und genau festlegen, welche Berechtigungen jede davon erhält — zum Beispiel das Erstellen von REFERENZEN, das Erzeugen von <a href="Multivariant_feature.html">Referenzvarianten</a> oder das Anpassen der Analyseempfindlichkeit.</p>
+<p>Eine benutzerdefinierte Rolle erscheint beim Anlegen oder Bearbeiten eines Benutzers neben <strong>admin</strong> und <strong>operator</strong> und gewährt ausschließlich die Berechtigungen, mit denen sie konfiguriert wurde.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Die integrierten Rollen <strong>admin</strong> und <strong>operator</strong> können weder bearbeitet noch gelöscht werden; ihre Berechtigungen sind die in der obigen Tabelle aufgeführten.</p>
+</div>
 <h2 id="einrichtung">Einrichtung</h2>
 <h3 id="1-die-registerkarte-users-offnen">1. Die Registerkarte Users öffnen</h3>
 <p>Öffnen Sie das <a href="../how_to/Settings_menu.html">Einstellungsmenü</a> und wechseln Sie zur Registerkarte <strong>Users</strong>. Bei einer Maschine, die noch nie konfiguriert wurde, ist die Liste leer und die Zugriffskontrolle deaktiviert.</p>
@@ -2014,6 +2087,12 @@
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>Es muss immer mindestens ein <strong>aktives Admin</strong>-Konto vorhanden sein. Beachten Sie dies, bevor Sie einen Administrator deaktivieren oder löschen.</p>
+</div>
+<h2 id="inaktivitatssperre">Inaktivitätssperre</h2>
+<p>Ist die Benutzerzugriffskontrolle aktiviert, bietet die Registerkarte <strong>Users</strong> des <a href="../how_to/Settings_menu.html">Einstellungsmenüs</a> zusätzlich eine optionale Inaktivitätssperre: Legen Sie fest, nach wie vielen Minuten ohne Tastatur- oder Mausaktivität sich die Anwendung sperren soll. Nach Ablauf dieser Zeit erscheint erneut der Dialog <strong>User access required</strong>, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Diese Option erscheint erst, wenn die Benutzerzugriffskontrolle aktiviert ist, da zum Entsperren der Anwendung ein Konto erforderlich ist.</p>
 </div>
 
 

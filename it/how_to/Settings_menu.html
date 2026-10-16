@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2782,7 +2804,7 @@
 <h4 id="ricorda-sensibilita">Ricorda sensibilità</h4>
 <p>Attivando questa opzione, il software manterrà la sensibilità di ispezione configurata dopo aver eseguito una nuova ispezione.</p>
 <h4 id="revisione-obbligatoria-degli-errori">Revisione obbligatoria degli errori</h4>
-<p>Se questa opzione è abilitata, il software non continuerà a ispezionare nuovi pannelli finché tutti gli errori rilevati nell'ispezione corrente non saranno stati <a href="Inspection_workflow.html#segnalazione-degli-errori">segnalati</a> come errori o falsi positivi.</p>
+<p>Se questa opzione è abilitata, il software non continuerà a ispezionare nuovi pannelli finché tutte le rilevazioni dell'ispezione corrente non saranno state esaminate: <a href="Inspection_workflow.html#segnalazione-degli-errori">segnalate</a> come errore o come falso positivo, oppure almeno contrassegnate come <strong>viewed</strong> passando il cursore sopra di esse.</p>
 <h4 id="cambio-automatico-topbottom">Cambio automatico TOP/BOTTOM</h4>
 <p>Per i RIFERIMENTI a doppia faccia, abilitando questa opzione si passa automaticamente all'altro lato (<strong>TOP</strong>/<strong>BOTTOM</strong>) all'inizio dell'ispezione successiva, senza bisogno di un <a href="Screen-layout.html#alterna-topbottom">cambio manuale</a>.</p>
 <p><img alt="Opzione di cambio automatico TOP/BOTTOM" class="center" src="../../assets/v7/settings/top-bottom-settings.png" /></p>

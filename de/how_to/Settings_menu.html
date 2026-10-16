@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2782,7 +2804,7 @@
 <h4 id="empfindlichkeit-speichern">Empfindlichkeit speichern</h4>
 <p>Wenn Sie diese Option aktivieren, behält die Software die konfigurierte Inspektionsempfindlichkeit auch nach einer neuen Inspektion bei.</p>
 <h4 id="pflichtprufung-der-fehler">Pflichtprüfung der Fehler</h4>
-<p>Wenn diese Option aktiviert ist, setzt die Software die Inspektion neuer Platinen erst fort, wenn alle in der aktuellen Inspektion erkannten Fehler als Fehler oder Falsch-Positive <a href="Inspection_workflow.html#melden-von-fehlern">gemeldet</a> wurden.</p>
+<p>Wenn diese Option aktiviert ist, setzt die Software die Inspektion neuer Platinen erst fort, wenn jede Erkennung der aktuellen Inspektion überprüft wurde: entweder als Fehler oder als Falsch-Positiv <a href="Inspection_workflow.html#melden-von-fehlern">gemeldet</a>, oder zumindest durch Überfahren mit dem Mauszeiger als <strong>viewed</strong> markiert.</p>
 <h4 id="topbottom-automatisch-umschalten">TOP/BOTTOM automatisch umschalten</h4>
 <p>Bei doppelseitigen REFERENZEN wechselt die Software mit dieser Option zu Beginn der nächsten Inspektion automatisch zur anderen Seite (<strong>TOP</strong>/<strong>BOTTOM</strong>), ohne dass ein <a href="Screen-layout.html#topbottom-umschalten">manuelles Umschalten</a> erforderlich ist.</p>
 <p><img alt="Option zum automatischen TOP/BOTTOM-Umschalten" class="center" src="../../assets/v7/settings/top-bottom-settings.png" /></p>

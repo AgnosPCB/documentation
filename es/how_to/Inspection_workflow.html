@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2013,6 +2035,7 @@
 <h3 id="reporte-de-errores">Reporte de errores</h3>
 <p>Una vez que la inspección ha finalizado, el operador debe supervisar los errores marcados, clasificándolos como <strong>error real</strong> o <strong>detección de falso positivo</strong>.
 Para hacer esto, simplemente desplácese por los errores usando las <strong>flechas izquierda y derecha</strong> en el teclado.</p>
+<p>Los errores también pueden reportarse directamente con el ratón: haga <strong>clic izquierdo</strong> en una detección para reportarla como error real, o <strong>clic derecho</strong> para reportarla como falso positivo, de forma equivalente a las teclas de flecha <strong>arriba</strong> y <strong>abajo</strong> descritas a continuación.</p>
 <p>Para marcar un error real, simplemente muévase a la falla y presione la <strong>flecha arriba</strong> en su teclado. Aparecerá una nueva ventana que muestra el error en detalle y le permite categorizarlo seleccionando un tipo de falla de la lista.</p>
 <p><img alt="Ventana de reporte" class="center" src="../../assets/v7/ui-report.png" /></p>
 <p>Además, hay un campo vacío para <strong>agregar un comentario.</strong></p>
@@ -2023,6 +2046,7 @@ Para hacer esto, simplemente desplácese por los errores usando las <strong>flec
 <p class="admonition-title">Nota</p>
 <p>Tenga en cuenta que el <strong>icono rojo</strong> <img alt="Icono rojo" src="../../assets/v7/ui-report_red.png" width="20px" /> marca las fallas reales y el <strong>icono verde</strong> <img alt="Icono verde" src="../../assets/v7/ui-report_green.png" width="20px" /> las fallas de falso positivo.</p>
 </div>
+<p>Una detección que no ha sido reportada de ninguna de las dos formas sigue sin revisar. Cuando <a href="Settings_menu.html#revision-obligatoria-de-errores">Revisión obligatoria de errores</a> está habilitada, basta con pasar el cursor por encima de esa detección para marcarla como <strong>viewed</strong>, lo que también satisface el requisito de revisión para esa detección.</p>
 <h3 id="generacion-de-un-informe-pdf-final">Generación de un informe PDF final</h3>
 <p>Una vez que el reporte ha finalizado, el operador puede generar un informe PDF final presionando el siguiente botón:</p>
 <p><img alt="Informe final" class="center" src="../../assets/v7/ui-button8.png" /></p>

@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2013,6 +2035,7 @@
 <h3 id="melden-von-fehlern">Melden von Fehlern</h3>
 <p>Sobald die Inspektion abgeschlossen ist, muss der Bediener die markierten Fehler überwachen und sie entweder als <strong>tatsächlichen Fehler</strong> oder als <strong>Falsch-Positiv-Erkennung</strong> kennzeichnen.
 Dazu blättern Sie einfach mit den <strong>linken und rechten Pfeiltasten</strong> auf der Tastatur durch die Fehler.</p>
+<p>Fehler können auch direkt mit der Maus gemeldet werden: <strong>Linksklick</strong> auf eine Erkennung meldet sie als tatsächlichen Fehler, <strong>Rechtsklick</strong> meldet sie als Falsch-Positiv — entsprechend den unten beschriebenen Pfeiltasten <strong>nach oben</strong> und <strong>nach unten</strong>.</p>
 <p>Um einen echten Fehler zu markieren, bewegen Sie sich einfach zum Fehler und drücken Sie die <strong>Pfeiltaste nach oben</strong> auf Ihrer Tastatur. Ein neues Fenster wird angezeigt, das den Fehler detailliert zeigt und es Ihnen ermöglicht, ihn zu kategorisieren, indem Sie einen Fehlertyp aus der Liste auswählen.</p>
 <p><img alt="Berichtsfenster" class="center" src="../../assets/v7/ui-report.png" /></p>
 <p>Zusätzlich gibt es ein leeres Feld zum <strong>Hinzufügen eines Kommentars.</strong></p>
@@ -2023,6 +2046,7 @@ Dazu blättern Sie einfach mit den <strong>linken und rechten Pfeiltasten</stron
 <p class="admonition-title">Hinweis</p>
 <p>Beachten Sie, dass das <strong>rote Symbol</strong> <img alt="Rotes Symbol" src="../../assets/v7/ui-report_red.png" width="20px" /> die tatsächlichen Fehler und das <strong>grüne Symbol</strong> <img alt="Grünes Symbol" src="../../assets/v7/ui-report_green.png" width="20px" /> die Falsch-Positiv-Fehler kennzeichnet.</p>
 </div>
+<p>Eine Erkennung, die auf keine der beiden Arten gemeldet wurde, gilt weiterhin als ungeprüft. Ist die <a href="Settings_menu.html#pflichtprufung-der-fehler">Pflichtprüfung der Fehler</a> aktiviert, genügt es, den Cursor über diese Erkennung zu bewegen, um sie als <strong>viewed</strong> zu markieren — das erfüllt die Prüfanforderung für diese Erkennung ebenfalls.</p>
 <h3 id="generieren-eines-endgultigen-pdf-berichts">Generieren eines endgültigen PDF-Berichts</h3>
 <p>Nach Abschluss der Meldung kann der Bediener einen endgültigen PDF-Bericht generieren, indem er auf die folgende Schaltfläche drückt:</p>
 <p><img alt="Endgültiger Bericht" class="center" src="../../assets/v7/ui-button8.png" /></p>

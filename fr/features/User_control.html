@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -1281,6 +1303,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#roles-personnalises-et-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rôles personnalisés et permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#le-configurer" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1357,6 +1390,17 @@
     <span class="md-ellipsis">
       
         Gérer les comptes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verrouillage-pour-inactivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verrouillage pour inactivité
       
     </span>
   </a>
@@ -1810,6 +1854,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#roles-personnalises-et-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rôles personnalisés et permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#le-configurer" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1892,6 +1947,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#verrouillage-pour-inactivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verrouillage pour inactivité
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1914,7 +1980,7 @@
 <p>Par défaut, toute personne ayant accès à l'AOI peut utiliser le logiciel et modifier n'importe lequel de ses paramètres.</p>
 <p>Le <strong>contrôle d'accès des utilisateurs</strong> vous permet de créer des comptes individuels et d'exiger un <strong>nom d'utilisateur et un mot de passe</strong> à chaque démarrage du logiciel. Chaque compte possède un rôle qui détermine ce que son utilisateur est autorisé à faire, ce qui vous permet de laisser un opérateur effectuer des inspections tout en gardant la configuration de la machine protégée.</p>
 <h2 id="les-deux-roles">Les deux rôles</h2>
-<p>Chaque compte possède l'un de ces deux rôles :</p>
+<p>Chaque compte possède l'un de ces deux rôles <strong>intégrés</strong>, ou un <a href="#roles-personnalises-et-permissions">rôle personnalisé</a> créé par un administrateur :</p>
 <table>
 <thead>
 <tr>
@@ -1972,6 +2038,13 @@
 <p>Le <strong>mode opérateur</strong>, dans <em>Settings → Workflow</em>, simplifie l'interface et bloque la capture d'images de RÉFÉRENCE. Il s'applique à quiconque utilise la machine, quel que soit son rôle.</p>
 <p>Les deux peuvent être combinés : un compte opérateur avec le mode opérateur activé bénéficie à la fois de l'interface simplifiée et des paramètres restreints.</p>
 </div>
+<h2 id="roles-personnalises-et-permissions">Rôles personnalisés et permissions</h2>
+<p>Au-delà des rôles intégrés <strong>admin</strong> et <strong>operator</strong> décrits ci-dessus, les administrateurs peuvent créer des rôles supplémentaires depuis l'onglet <strong>Users</strong> du <a href="../how_to/Settings_menu.html">menu des paramètres</a> et choisir précisément les permissions accordées à chacun — par exemple, créer des RÉFÉRENCES, générer des <a href="Multivariant_feature.html">variantes de référence</a> ou ajuster la sensibilité de l'analyse.</p>
+<p>Un rôle personnalisé apparaît aux côtés de <strong>admin</strong> et <strong>operator</strong> lors de la création ou de la modification d'un utilisateur, et n'accorde que les permissions avec lesquelles il a été configuré.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les rôles intégrés <strong>admin</strong> et <strong>operator</strong> ne peuvent être ni modifiés ni supprimés ; leurs permissions sont celles indiquées dans le tableau ci-dessus.</p>
+</div>
 <h2 id="le-configurer">Le configurer</h2>
 <h3 id="1-ouvrir-longlet-users">1. Ouvrir l'onglet Users</h3>
 <p>Ouvrez le <a href="../how_to/Settings_menu.html">menu des paramètres</a> et allez dans l'onglet <strong>Users</strong>. Sur une machine n'ayant jamais été configurée, la liste est vide et le contrôle d'accès est désactivé.</p>
@@ -2014,6 +2087,12 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Il doit toujours exister au moins un compte <strong>admin actif</strong>. Gardez cela à l'esprit avant de désactiver ou de supprimer un administrateur.</p>
+</div>
+<h2 id="verrouillage-pour-inactivite">Verrouillage pour inactivité</h2>
+<p>Lorsque le contrôle d'accès des utilisateurs est activé, l'onglet <strong>Users</strong> du <a href="../how_to/Settings_menu.html">menu des paramètres</a> propose également un verrouillage pour inactivité optionnel : définissez le nombre de minutes d'inactivité du clavier et de la souris au bout desquelles l'application doit se verrouiller. Une fois ce délai écoulé, la fenêtre <strong>User access required</strong> réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cette option n'apparaît que lorsque le contrôle d'accès des utilisateurs est activé, car verrouiller l'application nécessite un compte pour la déverrouiller.</p>
 </div>
 
 

@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2782,7 +2804,7 @@
 <h4 id="memoriser-la-sensibilite">Mémoriser la sensibilité</h4>
 <p>En activant cette option, le logiciel conservera la sensibilité d'inspection configurée après avoir réalisé une nouvelle inspection.</p>
 <h4 id="revision-obligatoire-des-erreurs">Révision obligatoire des erreurs</h4>
-<p>Si cette option est activée, le logiciel ne continuera pas à inspecter de nouveaux panneaux tant que toutes les erreurs détectées lors de l'inspection en cours n'auront pas été <a href="Inspection_workflow.html#signalement-des-erreurs">signalées</a> comme erreurs ou faux positifs.</p>
+<p>Si cette option est activée, le logiciel ne continuera pas à inspecter de nouveaux panneaux tant que toutes les détections de l'inspection en cours n'auront pas été passées en revue : <a href="Inspection_workflow.html#signalement-des-erreurs">signalées</a> comme erreur ou comme faux positif, ou au moins marquées comme <strong>viewed</strong> en survolant la détection avec le curseur.</p>
 <h4 id="bascule-automatique-topbottom">Bascule automatique TOP/BOTTOM</h4>
 <p>Pour les RÉFÉRENCES recto verso, activer cette option bascule automatiquement vers l'autre face (<strong>TOP</strong>/<strong>BOTTOM</strong>) au début de l'inspection suivante, sans nécessiter de <a href="Screen-layout.html#basculer-topbottom">bascule manuelle</a>.</p>
 <p><img alt="Option de bascule automatique TOP/BOTTOM" class="center" src="../../assets/v7/settings/top-bottom-settings.png" /></p>

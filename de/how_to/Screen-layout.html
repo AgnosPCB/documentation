@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -871,6 +893,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Referenz-Mosaik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anzeige-alias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anzeige-Alias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2082,6 +2121,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Referenz-Mosaik">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anzeige-alias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anzeige-Alias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2286,6 +2342,12 @@
 <p><img alt="Schaltfläche Referenz-Mosaik" class="center" src="../../assets/v7/ui-button1.png" width="350px" /></p>
 <p><img alt="Mosaik-Menü" class="center" src="../../assets/v7/2024-11-14_09-27.png" width="600px" /></p>
 <p>Das Referenz-Mosaik wird verwendet, um REFERENZEN als Dateien zu speichern, um jede davon schnell zu finden und zu laden. Das Mosaik-Menü wird automatisch angezeigt, nachdem eine REFERENZ mit der <a href="#ein-referenz-bild-aufnehmen">Schaltfläche Foto REFERENZ aufnehmen</a> aufgenommen oder <a href="#referenz-als-datei-laden">als Datei geladen</a> wurde. In diesem Fenster ist es auch möglich, die aufgenommene REFERENZ im oberen rechten Teil des Fensters zu benennen. Eine im Mosaik gespeicherte REFERENZ kann schnell durch Drücken einer <strong>F-Taste</strong> (F1-F10) geladen werden.</p>
+<h4 id="anzeige-alias">Anzeige-Alias</h4>
+<p>Eine REFERENZ kann außerdem einen optionalen <strong>Anzeige-Alias</strong> erhalten — einen freundlicheren Namen, der hier im Mosaik, in der <a href="#referenz-als-datei-laden">Suchliste</a> weiter unten und in den Inspektionsberichten (PDF und JSON) angezeigt wird, ohne die REFERENZ selbst umzubenennen. Das ist nützlich, wenn der tatsächliche Name der REFERENZ auf den ersten Blick wenig aussagt.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Der Alias ist nur eine Bezeichnung. Alles, was die REFERENZ identifiziert oder lädt, verwendet weiterhin ihren tatsächlichen Namen.</p>
+</div>
 <h3 id="referenz-als-datei-laden">REFERENZ als Datei laden</h3>
 <p><img alt="Schaltfläche Referenz öffnen" class="center" src="../../assets/v7/ui-button2.png" width="350px" /></p>
 <p><img alt="Menü REFERENZ laden" class="center" src="../../assets/v7/ui-ref_search.png" /></p>

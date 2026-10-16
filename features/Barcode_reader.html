@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -1725,12 +1747,10 @@
 <p>The AgnosPCB software incorporates a barcode reader function that supports <strong>1D barcodes, QR and Datamatrix</strong>.</p>
 <p>You can either take a <strong>REFERENCE</strong> photo or upload one directly from your files using the <strong>"Open reference"</strong> button.</p>
 <p><img alt="Barcode area selected" class="center" src="../assets/v7/ui-button4.png" /></p>
-<p>Press the <strong>"draw barcode area"</strong> button and draw an area where the code is placed in the panel.
-Define what type of code is placed in that area: <strong>ID, Batch ID, Model or Misc.</strong></p>
+<p>Press the <strong>"draw barcode area"</strong> button and draw an area where a code is placed on the panel, then define what type of code it is: <strong>ID, Batch ID, Model or Misc</strong>. Repeat this for every code you want the software to read — up to <strong>four</strong> different types.</p>
 <p><img alt="Barcode read" class="center" src="../assets/v7/barcode/1-bc-menu.png" /></p>
-<p>You can configure up to four different types of codes to be read.
-If the <strong>mandatory barcode</strong> option is set on a specific code, the inspections won't continue if the code has not been read correctly. In these cases, it will allow the operator to add it manually.</p>
-<p>Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. The UUI's codew will be read automatically in the same area of the REFERENCE's barcode.</p>
+<p>If the <strong>mandatory barcode</strong> option is set on a specific code, the inspection won't continue until that code has been read successfully. If it isn't detected automatically, the operator is prompted to enter it manually before proceeding.</p>
+<p>Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. Each of the UUI's codes will be read automatically from the same areas defined on the REFERENCE.</p>
 <p>Proceed with the <a href="../how_to/Inspection_workflow.html">inspection process</a> as usual. </p>
 <p>The scanned codes will be included in the final PDF report of the UUI.</p>
 <p><img alt="Report with barcode included" class="center" src="../assets/barcode-report.png" /></p>

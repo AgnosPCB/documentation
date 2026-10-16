@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -1281,6 +1303,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#custom-roles-and-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom roles and permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setting-it-up" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1357,6 +1390,17 @@
     <span class="md-ellipsis">
       
         Managing the accounts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inactivity-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inactivity lock
       
     </span>
   </a>
@@ -1810,6 +1854,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#custom-roles-and-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom roles and permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setting-it-up" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1892,6 +1947,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#inactivity-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inactivity lock
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1914,7 +1980,7 @@
 <p>By default, anyone with access to the AOI can use the software and change any of its settings.</p>
 <p><strong>User access control</strong> lets you create individual accounts and require a <strong>username and password</strong> every time the software starts. Each account has a role that determines what its user is allowed to do, so you can let an operator run inspections while keeping the configuration of the machine protected.</p>
 <h2 id="the-two-roles">The two roles</h2>
-<p>Every account has one of these two roles:</p>
+<p>Every account has one of these two <strong>built-in</strong> roles, or a <a href="#custom-roles-and-permissions">custom role</a> created by an administrator:</p>
 <table>
 <thead>
 <tr>
@@ -1972,6 +2038,13 @@
 <p><strong>Operator mode</strong>, in <em>Settings → Workflow</em>, simplifies the interface and blocks the capture of REFERENCE images. It applies to whoever is using the machine, regardless of their role.</p>
 <p>They can be used together: an operator account with operator mode enabled gets both the simplified interface and the restricted settings.</p>
 </div>
+<h2 id="custom-roles-and-permissions">Custom roles and permissions</h2>
+<p>Beyond the built-in <strong>admin</strong> and <strong>operator</strong> roles described above, administrators can create additional roles from the <strong>Users</strong> tab of the <a href="../how_to/Settings_menu.html">settings menu</a> and choose exactly which permissions each one grants — for example, creating REFERENCES, generating <a href="Multivariant_feature.html">reference variants</a>, or adjusting the analysis sensitivity.</p>
+<p>A custom role appears alongside <strong>admin</strong> and <strong>operator</strong> when creating or editing a user, and only grants the permissions it was configured with.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The built-in <strong>admin</strong> and <strong>operator</strong> roles cannot be edited or deleted; their permissions are the ones listed in the table above.</p>
+</div>
 <h2 id="setting-it-up">Setting it up</h2>
 <h3 id="1-open-the-users-tab">1. Open the Users tab</h3>
 <p>Open the <a href="../how_to/Settings_menu.html">settings menu</a> and go to the <strong>Users</strong> tab. On a machine that has never been configured, the list is empty and the access control is disabled.</p>
@@ -2014,6 +2087,12 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There must always be at least one <strong>active admin</strong> account. Keep this in mind before deactivating or deleting an administrator.</p>
+</div>
+<h2 id="inactivity-lock">Inactivity lock</h2>
+<p>With user access control enabled, the <strong>Users</strong> tab of the <a href="../how_to/Settings_menu.html">settings menu</a> also offers an optional inactivity lock: set the number of minutes of keyboard and mouse inactivity after which the application should lock itself. Once that time elapses, the <strong>User access required</strong> dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option only appears once user access control is enabled, since locking the application requires an account to unlock it with.</p>
 </div>
 
 

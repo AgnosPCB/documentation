@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2012,6 +2034,7 @@
 <h3 id="reporting-errors">Reporting errors</h3>
 <p>Once the inspection is complete, the operator must monitor the flagged errors, marking them as an <strong>actual error</strong> or a <strong>false positive detection</strong>.
 To do this, simply scroll through the errors using the <strong>left and right arrows</strong> on the keyboard.</p>
+<p>Errors can also be reported directly with the mouse: <strong>left-click</strong> a detection to report it as an actual error, or <strong>right-click</strong> it to report it as a false positive — equivalent to the <strong>up</strong> and <strong>down</strong> arrow keys described below.</p>
 <p>To mark a real error, just move to the fault and press the <strong>up arrow</strong> on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault from the list.</p>
 <p><img alt="Report window" class="center" src="../assets/v7/ui-report.png" /></p>
 <p>In addition, there is an empty field to <strong>add a comment.</strong></p>
@@ -2022,6 +2045,7 @@ To do this, simply scroll through the errors using the <strong>left and right ar
 <p class="admonition-title">Note</p>
 <p>Note the <strong>red icon</strong> <img alt="Red icon" src="../assets/v7/ui-report_red.png" width="20px" /> marks the actual faults and the <strong>green icon</strong> <img alt="Green icon" src="../assets/v7/ui-report_green.png" width="20px" /> marks the false positive faults.</p>
 </div>
+<p>A detection that has not been reported as either is still <strong>unreviewed</strong>. When <a href="Settings_menu.html#mandatory-errors-review">Mandatory errors review</a> is enabled, simply hovering the cursor over such a detection marks it as <strong>viewed</strong>, which also satisfies the review requirement for that detection.</p>
 <h3 id="generating-a-final-pdf-report">Generating a final PDF report</h3>
 <p>Once the reporting has finished, the operator can generate a final PDF report by pressing the following button:</p>
 <p><img alt="Final report" class="center" src="../assets/v7/ui-button8.png" /></p>

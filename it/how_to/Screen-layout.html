@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -871,6 +893,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Mosaico di riferimenti">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-di-visualizzazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alias di visualizzazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2082,6 +2121,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Mosaico di riferimenti">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-di-visualizzazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alias di visualizzazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2286,6 +2342,12 @@
 <p><img alt="Pulsante Mosaico di riferimenti" class="center" src="../../assets/v7/ui-button1.png" width="350px" /></p>
 <p><img alt="Menu Mosaico" class="center" src="../../assets/v7/2024-11-14_09-27.png" width="600px" /></p>
 <p>Il mosaico di riferimenti viene utilizzato per archiviare i RIFERIMENTI come file per trovarli e caricarli rapidamente. Il menu mosaico appare automaticamente dopo aver acquisito un RIFERIMENTO utilizzando il <a href="#scatta-unimmagine-di-riferimento">pulsante scatta foto RIFERIMENTO</a> o caricandolo <a href="#carica-riferimento-come-file">come file</a>. In questa finestra è anche possibile nominare il RIFERIMENTO acquisito nella parte in alto a destra della finestra. Un RIFERIMENTO memorizzato nel mosaico può essere caricato rapidamente premendo un <strong>pulsante F</strong> (F1-F10).</p>
+<h4 id="alias-di-visualizzazione">Alias di visualizzazione</h4>
+<p>A un RIFERIMENTO può anche essere assegnato un <strong>alias di visualizzazione</strong> opzionale: un nome più amichevole mostrato qui nel mosaico, nella <a href="#carica-riferimento-come-file">lista di ricerca</a> qui sotto e nei report di ispezione (PDF e JSON), senza rinominare il RIFERIMENTO stesso. È utile quando il nome reale del RIFERIMENTO non è immediatamente comprensibile.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>L'alias è solo un'etichetta. Tutto ciò che identifica o carica il RIFERIMENTO continua a usare il suo nome reale.</p>
+</div>
 <h3 id="carica-riferimento-come-file">CARICA RIFERIMENTO come file</h3>
 <p><img alt="Pulsante Apri riferimento" class="center" src="../../assets/v7/ui-button2.png" width="350px" /></p>
 <p><img alt="Menu Carica RIFERIMENTO" class="center" src="../../assets/v7/ui-ref_search.png" /></p>

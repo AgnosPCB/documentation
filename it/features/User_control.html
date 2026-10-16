@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -1281,6 +1303,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ruoli-personalizzati-e-permessi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruoli personalizzati e permessi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configurazione" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1357,6 +1390,17 @@
     <span class="md-ellipsis">
       
         Gestire gli account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocco-per-inattivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blocco per inattività
       
     </span>
   </a>
@@ -1810,6 +1854,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ruoli-personalizzati-e-permessi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruoli personalizzati e permessi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configurazione" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1892,6 +1947,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#blocco-per-inattivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blocco per inattività
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1914,7 +1980,7 @@
 <p>Per impostazione predefinita, chiunque abbia accesso all'AOI può usare il software e modificare qualsiasi impostazione.</p>
 <p>Il <strong>controllo di accesso utenti</strong> consente di creare account individuali e di richiedere un <strong>nome utente e una password</strong> a ogni avvio del software. Ogni account ha un ruolo che determina cosa può fare il relativo utente, permettendo così a un operatore di eseguire ispezioni mantenendo protetta la configurazione della macchina.</p>
 <h2 id="i-due-ruoli">I due ruoli</h2>
-<p>Ogni account ha uno di questi due ruoli:</p>
+<p>Ogni account ha uno di questi due ruoli <strong>integrati</strong>, oppure un <a href="#ruoli-personalizzati-e-permessi">ruolo personalizzato</a> creato da un amministratore:</p>
 <table>
 <thead>
 <tr>
@@ -1972,6 +2038,13 @@
 <p>La <strong>modalità operatore</strong>, in <em>Settings → Workflow</em>, semplifica l'interfaccia e blocca l'acquisizione di immagini di RIFERIMENTO. Si applica a chiunque stia usando la macchina, indipendentemente dal ruolo.</p>
 <p>Possono essere usate insieme: un account operatore con la modalità operatore abilitata ottiene sia l'interfaccia semplificata sia le impostazioni ristrette.</p>
 </div>
+<h2 id="ruoli-personalizzati-e-permessi">Ruoli personalizzati e permessi</h2>
+<p>Oltre ai ruoli integrati <strong>admin</strong> e <strong>operator</strong> descritti sopra, gli amministratori possono creare ruoli aggiuntivi dalla scheda <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menu Impostazioni</a> e scegliere esattamente quali permessi concedere a ciascuno — ad esempio creare RIFERIMENTI, generare <a href="Multivariant_feature.html">varianti di riferimento</a> o regolare la sensibilità dell'analisi.</p>
+<p>Un ruolo personalizzato compare accanto a <strong>admin</strong> e <strong>operator</strong> quando si crea o si modifica un utente, e concede solo i permessi con cui è stato configurato.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>I ruoli integrati <strong>admin</strong> e <strong>operator</strong> non possono essere modificati né eliminati; i loro permessi sono quelli indicati nella tabella precedente.</p>
+</div>
 <h2 id="configurazione">Configurazione</h2>
 <h3 id="1-aprire-la-scheda-users">1. Aprire la scheda Users</h3>
 <p>Aprite il <a href="../how_to/Settings_menu.html">menu Impostazioni</a> e andate alla scheda <strong>Users</strong>. Su una macchina mai configurata, l'elenco è vuoto e il controllo di accesso è disabilitato.</p>
@@ -2014,6 +2087,12 @@
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Deve sempre esistere almeno un account <strong>admin attivo</strong>. Tenetelo presente prima di disattivare o eliminare un amministratore.</p>
+</div>
+<h2 id="blocco-per-inattivita">Blocco per inattività</h2>
+<p>Con il controllo di accesso utenti abilitato, la scheda <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menu Impostazioni</a> offre anche un blocco per inattività opzionale: impostate il numero di minuti di inattività di tastiera e mouse trascorsi i quali l'applicazione si blocca. Trascorso quel tempo, ricompare la finestra <strong>User access required</strong>, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Questa opzione compare solo quando il controllo di accesso utenti è abilitato, poiché bloccare l'applicazione richiede un account con cui sbloccarla.</p>
 </div>
 
 

@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -1724,11 +1746,11 @@
 <h1 id="lettore-di-codici-a-barre">Lettore di codici a barre</h1>
 <p>Il software AgnosPCB incorpora una funzione di lettura di codici a barre che supporta <strong>codici a barre 1D, QR e Datamatrix</strong>.</p>
 <p>È possibile scattare una foto di <strong>RIFERIMENTO</strong> o caricarne una direttamente dai propri file utilizzando il pulsante <strong>"Apri riferimento"</strong>.</p>
-<p>Selezionare il pulsante <strong>"disegna area codice a barre"</strong> e disegnare un rettangolo nell'area del codice a barre.</p>
 <p><img alt="Area codice a barre selezionata" class="center" src="../../assets/v7/ui-button4.png" /></p>
-<p><img alt="Errori rilevati" class="center" src="../../assets/barcode-errors.png" /></p>
-<p>Il codice sarà mostrato nel rettangolo e nel nome del RIFERIMENTO in alto a sinistra. Assicurarsi che il codice a barre sia stato letto prima di procedere con l'ispezione.</p>
-<p>Una volta caricato il RIFERIMENTO, procedere con l'ispezione scattando una foto della UUI. Il codice a barre della UUI verrà letto automaticamente nella stessa area del codice a barre del RIFERIMENTO.</p>
+<p>Premete il pulsante <strong>"disegna area codice a barre"</strong> e disegnate un'area dove si trova un codice sul pannello, quindi definite di che tipo di codice si tratta: <strong>ID, Batch ID, Model o Misc</strong>. Ripetete questa operazione per ogni codice che volete far leggere al software, fino a <strong>quattro</strong> tipi diversi.</p>
+<p><img alt="Lettura del codice" class="center" src="../../assets/v7/barcode/1-bc-menu.png" /></p>
+<p>Se l'opzione <strong>mandatory barcode</strong> è attivata su un codice specifico, l'ispezione non continuerà finché quel codice non sarà stato letto correttamente. Se non viene rilevato automaticamente, all'operatore verrà richiesto di inserirlo manualmente prima di proseguire.</p>
+<p>Una volta caricato il RIFERIMENTO, procedere con l'ispezione scattando una foto della UUI. Ciascuno dei codici della UUI verrà letto automaticamente nelle stesse aree definite sul RIFERIMENTO.</p>
 <p>Procedere con il <a href="../how_to/Inspection_workflow.html">processo di ispezione</a> come di consueto. </p>
 <p>Il codice scansionato sarà incluso nel report PDF finale della UUI.</p>
 <p><img alt="Report con codice a barre incluso" class="center" src="../../assets/barcode-report.png" /></p>

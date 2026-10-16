@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -871,6 +893,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Mosaïque de références">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-daffichage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alias d'affichage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2082,6 +2121,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Mosaïque de références">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alias-daffichage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alias d'affichage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2286,6 +2342,12 @@
 <p><img alt="Bouton mosaïque de références" class="center" src="../../assets/v7/ui-button1.png" width="350px" /></p>
 <p><img alt="Menu Mosaïque" class="center" src="../../assets/v7/2024-11-14_09-27.png" width="600px" /></p>
 <p>La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le <a href="#prendre-une-image-de-reference">bouton prendre une photo RÉFÉRENCE</a> ou en la chargeant <a href="#charger-reference-en-tant-que-fichier">comme un fichier</a>. Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un <strong>bouton F</strong> (F1-F10).</p>
+<h4 id="alias-daffichage">Alias d'affichage</h4>
+<p>Une RÉFÉRENCE peut également recevoir un <strong>alias d'affichage</strong> facultatif : un nom plus explicite affiché ici dans la mosaïque, dans la <a href="#charger-reference-en-tant-que-fichier">liste de recherche</a> ci-dessous, et dans les rapports d'inspection (PDF et JSON), sans renommer la RÉFÉRENCE elle-même. Cela est utile lorsque le nom réel de la RÉFÉRENCE n'est pas facile à comprendre d'un coup d'œil.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L'alias n'est qu'une étiquette. Tout ce qui identifie ou charge la RÉFÉRENCE continue d'utiliser son nom réel.</p>
+</div>
 <h3 id="charger-reference-en-tant-que-fichier">CHARGER RÉFÉRENCE en tant que fichier</h3>
 <p><img alt="Bouton Ouvrir référence" class="center" src="../../assets/v7/ui-button2.png" width="350px" /></p>
 <p><img alt="Menu Charger RÉFÉRENCE" class="center" src="../../assets/v7/ui-ref_search.png" /></p>

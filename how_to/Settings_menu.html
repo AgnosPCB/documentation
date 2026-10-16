@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2782,7 +2804,7 @@
 <h4 id="remember-sensibility">Remember sensibility</h4>
 <p>By activating this option, the software will maintain the configured inspection sensitivity after performing a new inspection.</p>
 <h4 id="mandatory-errors-review">Mandatory errors review</h4>
-<p>If this option is enabled, the software will not continue inspecting new panels until all errors detected in the current inspection have been <a href="Inspection_workflow.html#reporting-errors">reported</a> as errors or false positives.</p>
+<p>If this option is enabled, the software will not continue inspecting new panels until every detection in the current inspection has been reviewed: <a href="Inspection_workflow.html#reporting-errors">reported</a> as an error or a false positive, or at least marked as <strong>viewed</strong> by hovering the cursor over it.</p>
 <h4 id="topbottom-auto-switch">TOP/BOTTOM auto switch</h4>
 <p>For double-sided REFERENCES, enabling this option automatically switches to the other side (<strong>TOP</strong>/<strong>BOTTOM</strong>) at the start of the next inspection, instead of requiring a <a href="Screen-layout.html#switch-topbottom">manual switch</a>.</p>
 <p><img alt="TOP/BOTTOM auto switch option" class="center" src="../assets/v7/settings/top-bottom-settings.png" /></p>

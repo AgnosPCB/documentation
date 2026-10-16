@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -2782,7 +2804,7 @@
 <h4 id="recordar-sensibilidad">Recordar sensibilidad</h4>
 <p>Al activar esta opción, el software mantendrá la sensibilidad de inspección configurada después de realizar una nueva inspección.</p>
 <h4 id="revision-obligatoria-de-errores">Revisión obligatoria de errores</h4>
-<p>Si esta opción está habilitada, el software no continuará inspeccionando nuevos paneles hasta que todos los errores detectados en la inspección actual hayan sido <a href="Inspection_workflow.html#reporte-de-errores">reportados</a> como errores o falsos positivos.</p>
+<p>Si esta opción está habilitada, el software no continuará inspeccionando nuevos paneles hasta que todas las detecciones de la inspección actual hayan sido revisadas: <a href="Inspection_workflow.html#reporte-de-errores">reportadas</a> como error o como falso positivo, o al menos marcadas como <strong>viewed</strong> al pasar el cursor por encima.</p>
 <h4 id="cambio-automatico-topbottom">Cambio automático TOP/BOTTOM</h4>
 <p>Para REFERENCIAS de doble cara, habilitar esta opción cambia automáticamente al otro lado (<strong>TOP</strong>/<strong>BOTTOM</strong>) al comenzar la siguiente inspección, sin necesidad de un <a href="Screen-layout.html#alternar-topbottom">cambio manual</a>.</p>
 <p><img alt="Opción de cambio automático TOP/BOTTOM" class="center" src="../../assets/v7/settings/top-bottom-settings.png" /></p>

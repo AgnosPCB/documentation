@@ -67,6 +67,28 @@
 
     
     
+  
+  <script>
+    (function () {
+      var SUPPORTED = ["en", "es", "fr", "de", "it"];
+      var lang = (document.documentElement.getAttribute("lang") || "en").split("-")[0];
+      if (SUPPORTED.indexOf(lang) === -1) lang = "en";
+      if (lang === "en") return; // default index already covers English
+
+      var nativeOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url) {
+        var args = Array.prototype.slice.call(arguments);
+        if (typeof url === "string" && /\/search\/search_index\.json$/.test(url)) {
+          args[1] = url.replace(
+            /\/search\/search_index\.json$/,
+            "/" + lang + "/search/search_index.json"
+          );
+        }
+        return nativeOpen.apply(this, args);
+      };
+    })();
+  </script>
+
   </head>
   
   
@@ -1724,11 +1746,11 @@
 <h1 id="barcode-lesegerat">Barcode-Lesegerät</h1>
 <p>Die AgnosPCB-Software enthält eine Barcode-Lesefunktion, die <strong>1D-Barcodes, QR und Datamatrix</strong> unterstützt.</p>
 <p>Sie können entweder ein <strong>REFERENZ</strong>-Foto aufnehmen oder eines direkt aus Ihren Dateien über die Schaltfläche <strong>"Referenz öffnen"</strong> hochladen.</p>
-<p>Wählen Sie die Schaltfläche <strong>"Barcode-Bereich zeichnen"</strong> und ziehen Sie ein Rechteck über den Barcode-Bereich.</p>
 <p><img alt="Ausgewählter Barcode-Bereich" class="center" src="../../assets/v7/ui-button4.png" /></p>
-<p><img alt="Erkannte Fehler" class="center" src="../../assets/barcode-errors.png" /></p>
-<p>Der Code wird im Rechteck und im REFERENZ-Namen oben links angezeigt. Stellen Sie sicher, dass der Barcode gelesen wurde, bevor Sie mit der Inspektion fortfahren.</p>
-<p>Sobald die REFERENZ geladen ist, fahren Sie mit der Inspektion fort, indem Sie ein Bild der UUI aufnehmen. Der Barcode der UUI wird automatisch im selben Bereich wie der Barcode der REFERENZ gelesen.</p>
+<p>Drücken Sie die Schaltfläche <strong>"Barcode-Bereich zeichnen"</strong> und zeichnen Sie einen Bereich, in dem sich ein Code auf der Platine befindet. Legen Sie anschließend fest, um welchen Codetyp es sich handelt: <strong>ID, Batch ID, Model oder Misc</strong>. Wiederholen Sie dies für jeden Code, den die Software lesen soll — bis zu <strong>vier</strong> verschiedene Typen.</p>
+<p><img alt="Code-Lesevorgang" class="center" src="../../assets/v7/barcode/1-bc-menu.png" /></p>
+<p>Ist die Option <strong>mandatory barcode</strong> für einen bestimmten Code aktiviert, setzt die Software die Inspektion erst fort, wenn dieser Code erfolgreich gelesen wurde. Wird er nicht automatisch erkannt, wird der Bediener aufgefordert, ihn manuell einzugeben, bevor fortgefahren werden kann.</p>
+<p>Sobald die REFERENZ geladen ist, fahren Sie mit der Inspektion fort, indem Sie ein Bild der UUI aufnehmen. Jeder Code der UUI wird automatisch in den auf der REFERENZ festgelegten Bereichen gelesen.</p>
 <p>Fahren Sie mit dem <a href="../how_to/Inspection_workflow.html">Inspektionsprozess</a> wie gewohnt fort. </p>
 <p>Der gescannte Code wird in den endgültigen PDF-Bericht der UUI aufgenommen.</p>
 <p><img alt="Bericht mit enthaltenem Barcode" class="center" src="../../assets/barcode-report.png" /></p>
