@@ -2039,11 +2039,18 @@
 <p>Beides lässt sich kombinieren: Ein Bedienerkonto mit aktiviertem Bedienermodus erhält sowohl die vereinfachte Oberfläche als auch die eingeschränkten Einstellungen.</p>
 </div>
 <h2 id="benutzerdefinierte-rollen-und-berechtigungen">Benutzerdefinierte Rollen und Berechtigungen</h2>
-<p>Zusätzlich zu den oben beschriebenen integrierten Rollen <strong>admin</strong> und <strong>operator</strong> können Administratoren über die Registerkarte <strong>Users</strong> des <a href="../how_to/Settings_menu.html">Einstellungsmenüs</a> weitere Rollen anlegen und genau festlegen, welche Berechtigungen jede davon erhält — zum Beispiel das Erstellen von REFERENZEN, das Erzeugen von <a href="Multivariant_feature.html">Referenzvarianten</a> oder das Anpassen der Analyseempfindlichkeit.</p>
-<p>Eine benutzerdefinierte Rolle erscheint beim Anlegen oder Bearbeiten eines Benutzers neben <strong>admin</strong> und <strong>operator</strong> und gewährt ausschließlich die Berechtigungen, mit denen sie konfiguriert wurde.</p>
+<p>Zusätzlich zu den oben beschriebenen integrierten Rollen <strong>admin</strong> und <strong>operator</strong> können Administratoren über die Liste <strong>Roles</strong> am unteren Ende der Registerkarte <strong>Users</strong> des <a href="../how_to/Settings_menu.html">Einstellungsmenüs</a> weitere Rollen anlegen.</p>
+<p><img alt="Rollenliste in der Registerkarte Users" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Drücken Sie <strong>New role</strong>, vergeben Sie einen Namen und drücken Sie <strong>Create</strong>.</p>
+<p><img alt="Eine neue Rolle benennen" class="center" src="../../assets/v7/user_control/users-rol-name.png" /></p>
+<p>Wählen Sie die neue Rolle in der Liste aus und drücken Sie <strong>Edit permissions</strong>, um genau festzulegen, was sie gewährt. Die Berechtigungen sind in Kategorien wie <strong>Reference</strong>, <strong>Inspection</strong> und <strong>Maintenance</strong> gruppiert — zum Beispiel das Erstellen oder Löschen einer Referenzvariante, das Durchführen von Inspektionen oder das Kalibrieren der Plattform —, und jede Kategorie verfügt über eine eigene <strong>Select all</strong>- / <strong>Deselect all</strong>-Schnellauswahl.</p>
+<p><img alt="Berechtigungen einer Rolle bearbeiten" class="center" src="../../assets/v7/user_control/users-rol-permissions.png" /></p>
+<p>Die Spalte <strong>Permissions granted</strong> zeigt, wie viele der verfügbaren Berechtigungen jede Rolle aktuell hat, z. B. <strong>23/35</strong>.</p>
+<p>Eine benutzerdefinierte Rolle erscheint dann im Feld <strong>Role</strong> beim Anlegen oder Bearbeiten eines Benutzers neben <strong>admin</strong> und <strong>operator</strong>.</p>
+<p><img alt="Einem Benutzer eine benutzerdefinierte Rolle zuweisen" class="center" src="../../assets/v7/user_control/users-rol-assing.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
-<p>Die integrierten Rollen <strong>admin</strong> und <strong>operator</strong> können weder bearbeitet noch gelöscht werden; ihre Berechtigungen sind die in der obigen Tabelle aufgeführten.</p>
+<p>Die integrierten Rollen <strong>admin</strong> und <strong>operator</strong> können weder umbenannt noch in ihren Berechtigungen bearbeitet noch gelöscht werden.</p>
 </div>
 <h2 id="einrichtung">Einrichtung</h2>
 <h3 id="1-die-registerkarte-users-offnen">1. Die Registerkarte Users öffnen</h3>
@@ -2089,7 +2096,9 @@
 <p>Es muss immer mindestens ein <strong>aktives Admin</strong>-Konto vorhanden sein. Beachten Sie dies, bevor Sie einen Administrator deaktivieren oder löschen.</p>
 </div>
 <h2 id="inaktivitatssperre">Inaktivitätssperre</h2>
-<p>Ist die Benutzerzugriffskontrolle aktiviert, bietet die Registerkarte <strong>Users</strong> des <a href="../how_to/Settings_menu.html">Einstellungsmenüs</a> zusätzlich eine optionale Inaktivitätssperre: Legen Sie fest, nach wie vielen Minuten ohne Tastatur- oder Mausaktivität sich die Anwendung sperren soll. Nach Ablauf dieser Zeit erscheint erneut der Dialog <strong>User access required</strong>, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren.</p>
+<p>Ist die Benutzerzugriffskontrolle aktiviert, bietet das Panel <strong>User access control</strong> der Registerkarte <strong>Users</strong> zusätzlich eine optionale Inaktivitätssperre: Aktivieren Sie <strong>Lock after inactivity</strong> und legen Sie fest, nach wie vielen Minuten ohne Tastatur- oder Mausaktivität sich die Anwendung sperren soll.</p>
+<p><img alt="Option Lock after inactivity" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Nach Ablauf dieser Zeit erscheint erneut der Dialog <strong>User access required</strong>, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>Diese Option erscheint erst, wenn die Benutzerzugriffskontrolle aktiviert ist, da zum Entsperren der Anwendung ein Konto erforderlich ist.</p>

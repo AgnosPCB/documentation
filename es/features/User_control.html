@@ -2039,11 +2039,18 @@
 <p>Pueden usarse juntos: una cuenta de operador con el modo operador habilitado obtiene tanto la interfaz simplificada como la configuración restringida.</p>
 </div>
 <h2 id="roles-personalizados-y-permisos">Roles personalizados y permisos</h2>
-<p>Además de los roles integrados <strong>admin</strong> y <strong>operator</strong> descritos arriba, los administradores pueden crear roles adicionales desde la pestaña <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menú de configuración</a> y elegir exactamente qué permisos concede cada uno; por ejemplo, crear REFERENCIAS, generar <a href="Multivariant_feature.html">variantes de referencia</a> o ajustar la sensibilidad del análisis.</p>
-<p>Un rol personalizado aparece junto a <strong>admin</strong> y <strong>operator</strong> al crear o editar un usuario, y solo concede los permisos con los que se haya configurado.</p>
+<p>Además de los roles integrados <strong>admin</strong> y <strong>operator</strong> descritos arriba, los administradores pueden crear roles adicionales desde la lista <strong>Roles</strong> situada al final de la pestaña <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menú de configuración</a>.</p>
+<p><img alt="Lista de roles en la pestaña Users" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Pulse <strong>New role</strong>, dele un nombre y pulse <strong>Create</strong>.</p>
+<p><img alt="Nombrar un nuevo rol" class="center" src="../../assets/v7/user_control/users-rol-name.png" /></p>
+<p>Seleccione el nuevo rol en la lista y pulse <strong>Edit permissions</strong> para elegir exactamente qué concede. Los permisos se agrupan en categorías como <strong>Reference</strong>, <strong>Inspection</strong> o <strong>Maintenance</strong> —por ejemplo, crear o eliminar una variante de referencia, ejecutar inspecciones o calibrar la plataforma— y cada categoría tiene su propio atajo <strong>Select all</strong> / <strong>Deselect all</strong>.</p>
+<p><img alt="Editar los permisos de un rol" class="center" src="../../assets/v7/user_control/users-rol-permissions.png" /></p>
+<p>La columna <strong>Permissions granted</strong> muestra cuántos de los permisos disponibles tiene cada rol, por ejemplo <strong>23/35</strong>.</p>
+<p>Un rol personalizado aparece entonces junto a <strong>admin</strong> y <strong>operator</strong> en el campo <strong>Role</strong> al añadir o editar un usuario.</p>
+<p><img alt="Asignar un rol personalizado a un usuario" class="center" src="../../assets/v7/user_control/users-rol-assing.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Los roles integrados <strong>admin</strong> y <strong>operator</strong> no se pueden editar ni eliminar; sus permisos son los indicados en la tabla anterior.</p>
+<p>Los roles integrados <strong>admin</strong> y <strong>operator</strong> no se pueden renombrar, no se les pueden editar los permisos, ni se pueden eliminar.</p>
 </div>
 <h2 id="configurarlo">Configurarlo</h2>
 <h3 id="1-abrir-la-pestana-users">1. Abrir la pestaña Users</h3>
@@ -2089,7 +2096,9 @@
 <p>Siempre debe haber al menos una cuenta <strong>admin activa</strong>. Téngalo en cuenta antes de desactivar o eliminar a un administrador.</p>
 </div>
 <h2 id="bloqueo-por-inactividad">Bloqueo por inactividad</h2>
-<p>Con el control de acceso de usuarios habilitado, la pestaña <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menú de configuración</a> también ofrece un bloqueo por inactividad opcional: establezca el número de minutos de inactividad del teclado y el ratón tras los cuales la aplicación debe bloquearse. Transcurrido ese tiempo, vuelve a aparecer el diálogo <strong>User access required</strong>, igual que al iniciar, sin cerrar la REFERENCIA actual ni perder los resultados de la inspección en curso.</p>
+<p>Con el control de acceso de usuarios habilitado, el panel <strong>User access control</strong> de la pestaña <strong>Users</strong> también ofrece un bloqueo por inactividad opcional: active <strong>Lock after inactivity</strong> y establezca el número de minutos de inactividad del teclado y el ratón tras los cuales la aplicación debe bloquearse.</p>
+<p><img alt="Opción Lock after inactivity" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Transcurrido ese tiempo, vuelve a aparecer el diálogo <strong>User access required</strong>, igual que al iniciar, sin cerrar la REFERENCIA actual ni perder los resultados de la inspección en curso.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Esta opción solo aparece cuando el control de acceso de usuarios está habilitado, ya que bloquear la aplicación requiere una cuenta con la que desbloquearla.</p>

@@ -2039,11 +2039,18 @@
 <p>They can be used together: an operator account with operator mode enabled gets both the simplified interface and the restricted settings.</p>
 </div>
 <h2 id="custom-roles-and-permissions">Custom roles and permissions</h2>
-<p>Beyond the built-in <strong>admin</strong> and <strong>operator</strong> roles described above, administrators can create additional roles from the <strong>Users</strong> tab of the <a href="../how_to/Settings_menu.html">settings menu</a> and choose exactly which permissions each one grants — for example, creating REFERENCES, generating <a href="Multivariant_feature.html">reference variants</a>, or adjusting the analysis sensitivity.</p>
-<p>A custom role appears alongside <strong>admin</strong> and <strong>operator</strong> when creating or editing a user, and only grants the permissions it was configured with.</p>
+<p>Beyond the built-in <strong>admin</strong> and <strong>operator</strong> roles described above, administrators can create additional roles from the <strong>Roles</strong> list at the bottom of the <strong>Users</strong> tab of the <a href="../how_to/Settings_menu.html">settings menu</a>.</p>
+<p><img alt="Roles list in the Users tab" class="center" src="../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Press <strong>New role</strong>, give it a name and press <strong>Create</strong>.</p>
+<p><img alt="Naming a new role" class="center" src="../assets/v7/user_control/users-rol-name.png" /></p>
+<p>Select the new role in the list and press <strong>Edit permissions</strong> to choose exactly what it grants. Permissions are grouped into categories such as <strong>Reference</strong>, <strong>Inspection</strong> and <strong>Maintenance</strong> — for example creating or deleting a reference variant, running inspections, or calibrating the platform — and each category has its own <strong>Select all</strong> / <strong>Deselect all</strong> shortcut.</p>
+<p><img alt="Editing the permissions of a role" class="center" src="../assets/v7/user_control/users-rol-permissions.png" /></p>
+<p>The <strong>Permissions granted</strong> column shows how many of the available permissions each role currently has, e.g. <strong>23/35</strong>.</p>
+<p>A custom role then appears alongside <strong>admin</strong> and <strong>operator</strong> in the <strong>Role</strong> field when adding or editing a user.</p>
+<p><img alt="Assigning a custom role to a user" class="center" src="../assets/v7/user_control/users-rol-assing.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The built-in <strong>admin</strong> and <strong>operator</strong> roles cannot be edited or deleted; their permissions are the ones listed in the table above.</p>
+<p>The built-in <strong>admin</strong> and <strong>operator</strong> roles cannot be renamed, have their permissions edited, or be deleted.</p>
 </div>
 <h2 id="setting-it-up">Setting it up</h2>
 <h3 id="1-open-the-users-tab">1. Open the Users tab</h3>
@@ -2089,7 +2096,9 @@
 <p>There must always be at least one <strong>active admin</strong> account. Keep this in mind before deactivating or deleting an administrator.</p>
 </div>
 <h2 id="inactivity-lock">Inactivity lock</h2>
-<p>With user access control enabled, the <strong>Users</strong> tab of the <a href="../how_to/Settings_menu.html">settings menu</a> also offers an optional inactivity lock: set the number of minutes of keyboard and mouse inactivity after which the application should lock itself. Once that time elapses, the <strong>User access required</strong> dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.</p>
+<p>With user access control enabled, the <strong>User access control</strong> panel of the <strong>Users</strong> tab also offers an optional inactivity lock: enable <strong>Lock after inactivity</strong> and set the number of minutes of keyboard and mouse inactivity after which the application should lock itself.</p>
+<p><img alt="Lock after inactivity option" class="center" src="../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Once that time elapses, the <strong>User access required</strong> dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This option only appears once user access control is enabled, since locking the application requires an account to unlock it with.</p>

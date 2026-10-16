@@ -2039,11 +2039,18 @@
 <p>Possono essere usate insieme: un account operatore con la modalità operatore abilitata ottiene sia l'interfaccia semplificata sia le impostazioni ristrette.</p>
 </div>
 <h2 id="ruoli-personalizzati-e-permessi">Ruoli personalizzati e permessi</h2>
-<p>Oltre ai ruoli integrati <strong>admin</strong> e <strong>operator</strong> descritti sopra, gli amministratori possono creare ruoli aggiuntivi dalla scheda <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menu Impostazioni</a> e scegliere esattamente quali permessi concedere a ciascuno — ad esempio creare RIFERIMENTI, generare <a href="Multivariant_feature.html">varianti di riferimento</a> o regolare la sensibilità dell'analisi.</p>
-<p>Un ruolo personalizzato compare accanto a <strong>admin</strong> e <strong>operator</strong> quando si crea o si modifica un utente, e concede solo i permessi con cui è stato configurato.</p>
+<p>Oltre ai ruoli integrati <strong>admin</strong> e <strong>operator</strong> descritti sopra, gli amministratori possono creare ruoli aggiuntivi dall'elenco <strong>Roles</strong> in fondo alla scheda <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menu Impostazioni</a>.</p>
+<p><img alt="Elenco dei ruoli nella scheda Users" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Premete <strong>New role</strong>, assegnategli un nome e premete <strong>Create</strong>.</p>
+<p><img alt="Assegnare un nome a un nuovo ruolo" class="center" src="../../assets/v7/user_control/users-rol-name.png" /></p>
+<p>Selezionate il nuovo ruolo nell'elenco e premete <strong>Edit permissions</strong> per scegliere esattamente cosa concede. I permessi sono raggruppati in categorie come <strong>Reference</strong>, <strong>Inspection</strong> e <strong>Maintenance</strong> — ad esempio creare o eliminare una variante di riferimento, eseguire ispezioni o calibrare la piattaforma — e ogni categoria ha la propria scorciatoia <strong>Select all</strong> / <strong>Deselect all</strong>.</p>
+<p><img alt="Modificare i permessi di un ruolo" class="center" src="../../assets/v7/user_control/users-rol-permissions.png" /></p>
+<p>La colonna <strong>Permissions granted</strong> mostra quanti dei permessi disponibili ha attualmente ciascun ruolo, ad esempio <strong>23/35</strong>.</p>
+<p>Un ruolo personalizzato compare quindi accanto a <strong>admin</strong> e <strong>operator</strong> nel campo <strong>Role</strong> quando si crea o si modifica un utente.</p>
+<p><img alt="Assegnare un ruolo personalizzato a un utente" class="center" src="../../assets/v7/user_control/users-rol-assing.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>I ruoli integrati <strong>admin</strong> e <strong>operator</strong> non possono essere modificati né eliminati; i loro permessi sono quelli indicati nella tabella precedente.</p>
+<p>I ruoli integrati <strong>admin</strong> e <strong>operator</strong> non possono essere rinominati, non è possibile modificarne i permessi, né possono essere eliminati.</p>
 </div>
 <h2 id="configurazione">Configurazione</h2>
 <h3 id="1-aprire-la-scheda-users">1. Aprire la scheda Users</h3>
@@ -2089,7 +2096,9 @@
 <p>Deve sempre esistere almeno un account <strong>admin attivo</strong>. Tenetelo presente prima di disattivare o eliminare un amministratore.</p>
 </div>
 <h2 id="blocco-per-inattivita">Blocco per inattività</h2>
-<p>Con il controllo di accesso utenti abilitato, la scheda <strong>Users</strong> del <a href="../how_to/Settings_menu.html">menu Impostazioni</a> offre anche un blocco per inattività opzionale: impostate il numero di minuti di inattività di tastiera e mouse trascorsi i quali l'applicazione si blocca. Trascorso quel tempo, ricompare la finestra <strong>User access required</strong>, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso.</p>
+<p>Con il controllo di accesso utenti abilitato, il pannello <strong>User access control</strong> della scheda <strong>Users</strong> offre anche un blocco per inattività opzionale: abilitate <strong>Lock after inactivity</strong> e impostate il numero di minuti di inattività di tastiera e mouse trascorsi i quali l'applicazione si blocca.</p>
+<p><img alt="Opzione Lock after inactivity" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Trascorso quel tempo, ricompare la finestra <strong>User access required</strong>, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Questa opzione compare solo quando il controllo di accesso utenti è abilitato, poiché bloccare l'applicazione richiede un account con cui sbloccarla.</p>

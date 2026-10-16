@@ -2039,11 +2039,18 @@
 <p>Les deux peuvent être combinés : un compte opérateur avec le mode opérateur activé bénéficie à la fois de l'interface simplifiée et des paramètres restreints.</p>
 </div>
 <h2 id="roles-personnalises-et-permissions">Rôles personnalisés et permissions</h2>
-<p>Au-delà des rôles intégrés <strong>admin</strong> et <strong>operator</strong> décrits ci-dessus, les administrateurs peuvent créer des rôles supplémentaires depuis l'onglet <strong>Users</strong> du <a href="../how_to/Settings_menu.html">menu des paramètres</a> et choisir précisément les permissions accordées à chacun — par exemple, créer des RÉFÉRENCES, générer des <a href="Multivariant_feature.html">variantes de référence</a> ou ajuster la sensibilité de l'analyse.</p>
-<p>Un rôle personnalisé apparaît aux côtés de <strong>admin</strong> et <strong>operator</strong> lors de la création ou de la modification d'un utilisateur, et n'accorde que les permissions avec lesquelles il a été configuré.</p>
+<p>Au-delà des rôles intégrés <strong>admin</strong> et <strong>operator</strong> décrits ci-dessus, les administrateurs peuvent créer des rôles supplémentaires depuis la liste <strong>Roles</strong> en bas de l'onglet <strong>Users</strong> du <a href="../how_to/Settings_menu.html">menu des paramètres</a>.</p>
+<p><img alt="Liste des rôles dans l'onglet Users" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Appuyez sur <strong>New role</strong>, donnez-lui un nom et appuyez sur <strong>Create</strong>.</p>
+<p><img alt="Nommer un nouveau rôle" class="center" src="../../assets/v7/user_control/users-rol-name.png" /></p>
+<p>Sélectionnez le nouveau rôle dans la liste et appuyez sur <strong>Edit permissions</strong> pour choisir précisément ce qu'il accorde. Les permissions sont regroupées par catégories telles que <strong>Reference</strong>, <strong>Inspection</strong> ou <strong>Maintenance</strong> — par exemple créer ou supprimer une variante de référence, lancer des inspections, ou calibrer la plateforme — et chaque catégorie dispose de son propre raccourci <strong>Select all</strong> / <strong>Deselect all</strong>.</p>
+<p><img alt="Modifier les permissions d'un rôle" class="center" src="../../assets/v7/user_control/users-rol-permissions.png" /></p>
+<p>La colonne <strong>Permissions granted</strong> indique combien de permissions disponibles chaque rôle possède actuellement, par exemple <strong>23/35</strong>.</p>
+<p>Un rôle personnalisé apparaît alors aux côtés de <strong>admin</strong> et <strong>operator</strong> dans le champ <strong>Role</strong> lors de la création ou de la modification d'un utilisateur.</p>
+<p><img alt="Attribuer un rôle personnalisé à un utilisateur" class="center" src="../../assets/v7/user_control/users-rol-assing.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Les rôles intégrés <strong>admin</strong> et <strong>operator</strong> ne peuvent être ni modifiés ni supprimés ; leurs permissions sont celles indiquées dans le tableau ci-dessus.</p>
+<p>Les rôles intégrés <strong>admin</strong> et <strong>operator</strong> ne peuvent être ni renommés, ni voir leurs permissions modifiées, ni être supprimés.</p>
 </div>
 <h2 id="le-configurer">Le configurer</h2>
 <h3 id="1-ouvrir-longlet-users">1. Ouvrir l'onglet Users</h3>
@@ -2089,7 +2096,9 @@
 <p>Il doit toujours exister au moins un compte <strong>admin actif</strong>. Gardez cela à l'esprit avant de désactiver ou de supprimer un administrateur.</p>
 </div>
 <h2 id="verrouillage-pour-inactivite">Verrouillage pour inactivité</h2>
-<p>Lorsque le contrôle d'accès des utilisateurs est activé, l'onglet <strong>Users</strong> du <a href="../how_to/Settings_menu.html">menu des paramètres</a> propose également un verrouillage pour inactivité optionnel : définissez le nombre de minutes d'inactivité du clavier et de la souris au bout desquelles l'application doit se verrouiller. Une fois ce délai écoulé, la fenêtre <strong>User access required</strong> réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.</p>
+<p>Lorsque le contrôle d'accès des utilisateurs est activé, le panneau <strong>User access control</strong> de l'onglet <strong>Users</strong> propose également un verrouillage pour inactivité optionnel : activez <strong>Lock after inactivity</strong> et définissez le nombre de minutes d'inactivité du clavier et de la souris au bout desquelles l'application doit se verrouiller.</p>
+<p><img alt="Option Lock after inactivity" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
+<p>Une fois ce délai écoulé, la fenêtre <strong>User access required</strong> réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Cette option n'apparaît que lorsque le contrôle d'accès des utilisateurs est activé, car verrouiller l'application nécessite un compte pour la déverrouiller.</p>
