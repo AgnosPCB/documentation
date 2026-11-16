@@ -151,6 +151,16 @@
         <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
     </url>
     <url>
+        <loc>how_to/Keyboard_shortcuts.html</loc>
+        <lastmod>2026-11-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Keyboard_shortcuts.html"/>
+    </url>
+    <url>
         <loc>how_to/Screen-layout.html</loc>
         <lastmod>2026-11-16</lastmod>
         <changefreq>daily</changefreq>
@@ -429,6 +439,16 @@
         <xhtml:link rel="alternate" hreflang="en" href="how_to/Inspection_workflow.html"/>
         <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
         <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
+    </url>
+    <url>
+        <loc>es/how_to/Keyboard_shortcuts.html</loc>
+        <lastmod>2026-11-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Keyboard_shortcuts.html"/>
     </url>
     <url>
         <loc>es/how_to/Screen-layout.html</loc>
@@ -711,6 +731,16 @@
         <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
     </url>
     <url>
+        <loc>fr/how_to/Keyboard_shortcuts.html</loc>
+        <lastmod>2026-11-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Keyboard_shortcuts.html"/>
+    </url>
+    <url>
         <loc>fr/how_to/Screen-layout.html</loc>
         <lastmod>2026-11-16</lastmod>
         <changefreq>daily</changefreq>
@@ -991,6 +1021,16 @@
         <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
     </url>
     <url>
+        <loc>it/how_to/Keyboard_shortcuts.html</loc>
+        <lastmod>2026-11-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Keyboard_shortcuts.html"/>
+    </url>
+    <url>
         <loc>it/how_to/Screen-layout.html</loc>
         <lastmod>2026-11-16</lastmod>
         <changefreq>daily</changefreq>
@@ -1269,6 +1309,16 @@
         <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Inspection_workflow.html"/>
         <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Inspection_workflow.html"/>
         <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Inspection_workflow.html"/>
+    </url>
+    <url>
+        <loc>de/how_to/Keyboard_shortcuts.html</loc>
+        <lastmod>2026-11-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="de/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="es/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="fr/how_to/Keyboard_shortcuts.html"/>
+        <xhtml:link rel="alternate" hreflang="it" href="it/how_to/Keyboard_shortcuts.html"/>
     </url>
     <url>
         <loc>de/how_to/Screen-layout.html</loc>
