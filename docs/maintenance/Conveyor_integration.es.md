@@ -147,11 +147,12 @@ detenida:
 | Ajuste | Ubicación | Valor recomendado | Por qué |
 |---|---|---|---|
 | **Operator mode** | Workflow | Habilitado | Oculta la captura de referencias e impide que un operador altere la REFERENCIA o la sensibilidad a mitad de turno. Protéjalo con una contraseña de configuración (vea el [menú de configuración](../how_to/Settings_menu.md)). |
-| **Mandatory errors review** | Workflow | **Deshabilitado** | Si está habilitado, el software espera a que una persona revise cada fallo antes de permitir la siguiente inspección; esto bloqueará la línea. |
+| **Mandatory errors review**, **Mandatory errors report** y **Mandatory final report** | Workflow | **Deshabilitado** | Si están habilitados, el software espera a que una persona revise cada fallo, lo clasifique o confirme el informe final antes de permitir la siguiente inspección; esto bloqueará la línea. Con el control de acceso de usuarios habilitado, compruebe también el rol del usuario y las [opciones de la Referencia](../how_to/Screen-layout.md#opciones-de-la-referencia) de cada REFERENCIA. |
+| **Warn about a side not reviewed** | Workflow | Deshabilitado | Evita que una ventana de confirmación espere entrada antes de la siguiente placa. |
 | **Show errors popup** | Workflow | Deshabilitado | Evita que un diálogo modal espere entrada durante el funcionamiento automático. |
 | **Show references mosaic** | Workflow | Deshabilitado | Evita una ventana emergente tras la captura de la imagen. |
 | **Auto report OK / NOK** | Reports | Ambos habilitados | Genera el PDF de cada placa sin intervención del operador, de modo que la línea produce un registro de trazabilidad completo. |
-| **Create JSON report** | Reports | Habilitado | Resultado legible por máquina para su MES/SCADA. Requiere licencia. |
+| **Create JSON report** | Reports | Habilitado | Resultado legible por máquina para su MES/SCADA. Requiere licencia. Para placas de doble cara, vea la nota siguiente. |
 | **Use barcodes** | Workflow | Habilitado | Permite que la AOI cargue automáticamente la REFERENCIA correcta a partir del código de barras de la placa, de modo que las líneas de producto mixto no necesitan un cambio manual de producto. Requiere licencia. Vea [lector de código de barras](../features/Barcode_reader.md). |
 
 !!! note "Nota"
@@ -160,6 +161,15 @@ detenida:
     etiqueta "unknown", porque ningún operador los clasifica. Esto es lo
     esperado en una línea: la clasificación se realiza más tarde, fuera de
     línea, a partir de los informes almacenados.
+
+!!! warning "Informes JSON de placas de doble cara"
+
+    Desde la versión 7.11.4, cuando se han inspeccionado ambas caras de una placa, el
+    software escribe un único [informe combinado](../how_to/Inspection_workflow.md#informe-combinado-topbottom)
+    y elimina los informes PDF y JSON individuales de cada cara. Un sistema que leía el
+    JSON de cada cara de la carpeta REPORTS debe leer ahora `sides.TOP` y
+    `sides.BOTTOM` del JSON combinado. Los archivos de inspección de PCB_OUT no se
+    ven afectados.
 
 ### 2.3 Dónde se escriben los resultados
 
@@ -215,7 +225,7 @@ Ejecute las primeras pruebas con la cinta transportadora en modo manual/jog.
 
 | Síntoma | Comprobación |
 |---|---|
-| La línea se detiene tras la primera placa defectuosa | **Mandatory errors review** está habilitado. Deshabilítelo en Settings → Workflow. |
+| La línea se detiene tras la primera placa defectuosa | Hay un nivel de revisión obligatoria habilitado (**Mandatory errors review**, **report** o **final report**). Deshabilítelo en Settings → Workflow, en el rol del usuario (Settings → Users) y en las opciones de la Referencia de la REFERENCIA. |
 | Un diálogo espera entrada a mitad de ciclo | Deshabilite **Show errors popup** y **Show references mosaic** en Settings → Workflow. |
 | Todas las placas fallan en un producto nuevo | La REFERENCIA cargada no corresponde al producto. Compruebe la lectura del código de barras, o la REFERENCIA seleccionada para el lote. |
 | **WARNING / ROTATED** o **WARNING / SHIFTED** en la mayoría de las placas | La cinta transportadora no presenta las placas en una posición repetible. Corrija el tope mecánico; la AOI compara contra la posición de la REFERENCIA. |

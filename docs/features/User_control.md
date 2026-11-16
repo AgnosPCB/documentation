@@ -49,8 +49,30 @@ A custom role then appears alongside **admin** and **operator** in the **Role** 
 
 ![Assigning a custom role to a user](../assets/v7/user_control/users-rol-assing.png){.center}
 
+A new role starts with only the permissions needed to run inspections, classify detections and export reports. Everything else has to be granted from **Edit permissions**.
+
+When a software update adds a new permission, the **operator** role receives it automatically. Custom roles do not: an administrator has to grant it to them explicitly. Recent updates added, among others:
+
+| Permission | Allows |
+| --- | --- |
+| **Classify detected faults** | Reporting detections as actual errors or false positives. Without it, a **Permission denied** message is shown. Marking a detection as seen is always allowed. |
+| **Max. variants per Reference** | Changing [Max. variants per Reference](../how_to/Settings_menu.md#max-variants-per-reference). |
+| **Reference statistics and heatmap option** | Changing [Show statistics and error heatmap per Reference](../how_to/Settings_menu.md#show-statistics-and-error-heatmap-per-reference). |
+| **Analysis preference** | Changing [Analysis preference](../how_to/Settings_menu.md#analysis-preference). |
+| **Edit Reference options** | Changing the mandatory review levels of a REFERENCE in its [Reference options](../how_to/Screen-layout.md#reference-options). |
+
 !!! note "Note"
     The built-in **admin** and **operator** roles cannot be renamed, have their permissions edited, or be deleted.
+
+### Mandatory review per role
+
+With user access control enabled, the [mandatory review levels](../how_to/Inspection_workflow.md#mandatory-review-levels) are set for each role instead of globally: the **Roles** list has a column for each level (**Mandatory review**, **Mandatory report** and **Final report**), and the **Edit permissions** window of the role has a checkbox for each one. Changing them requires access to the **Users** tab.
+
+The global options in *Settings → Workflow* are grayed out while user access control is enabled, and keep their value for when it is disabled again.
+
+- The **admin** role is never affected by these settings; only a REFERENCE that requires a level applies to it.
+- New roles start with the three levels disabled.
+- The first time the roles are loaded after updating to 7.11, each existing role takes the value that the global **Mandatory errors review** option had, so no existing obligation is lost. The **report** and **final report** levels start disabled for every existing role.
 
 ## Setting it up
 
@@ -104,7 +126,9 @@ From the next start of the software, the **User access required** dialog asks fo
 
 The software then opens with the permissions of that account.
 
-To close the session and let a different user log in, use the **logout** button of the [platform status area](../how_to/Screen-layout.md).
+The logged-in user is shown in the [activity log](../how_to/Screen-layout.md#activity-log).
+
+To close the session and let a different user log in, use the **logout** button of the [platform status area](../how_to/Screen-layout.md#logout). It asks for confirmation and then clears the workspace (loaded REFERENCE and inspection results), so the next user starts fresh.
 
 ## Managing the accounts
 
@@ -126,7 +150,7 @@ With user access control enabled, the **User access control** panel of the **Use
 
 ![Lock after inactivity option](../assets/v7/user_control/users-general-settings.png){.center}
 
-Once that time elapses, the **User access required** dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.
+Once that time elapses, the **User access required** dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress. Any active user can unlock it, not only the one who was logged in. The lock never triggers while an inspection is in progress or while [Demo / Loop mode](../how_to/Settings_menu.md#demo-loop-mode) is running.
 
 !!! note "Note"
     This option only appears once user access control is enabled, since locking the application requires an account to unlock it with.

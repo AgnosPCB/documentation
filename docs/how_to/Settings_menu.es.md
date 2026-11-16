@@ -22,6 +22,12 @@ Por defecto, el software numera cada error después de la inspección. Al deshab
 
 Esta opción le permite cambiar el color del error marcado. Cuando el color del error marcado coincide con el color de la PCBA, es recomendable cambiarlo a un color de mayor contraste para hacer las áreas marcadas más visibles.
 
+#### Mostrar estadísticas y mapa de calor de errores por Referencia
+
+Añade al [panel de información de la Referencia](Screen-layout.md#panel-de-informacion-de-la-referencia) las estadísticas de inspección de la REFERENCIA cargada y un mapa de calor de dónde fallan sus placas. Deshabilitado por defecto.
+
+Las estadísticas se recopilan incluso mientras esta opción está deshabilitada, de modo que el historial ya está disponible cuando la habilita. Las inspecciones realizadas antes de la versión 7.10 no se incluyen.
+
 #### Idioma
 
 Cambia el idioma de la interfaz. Los idiomas disponibles actualmente son: **inglés, francés, alemán, italiano y español**.
@@ -64,13 +70,53 @@ Al activar esta opción, el software mantendrá la sensibilidad de inspección c
 
 #### Revisión obligatoria de errores
 
-Si esta opción está habilitada, el software no continuará inspeccionando nuevos paneles hasta que todas las detecciones de la inspección actual hayan sido revisadas: [reportadas](Inspection_workflow.md#reporte-de-errores) como error o como falso positivo, o al menos marcadas como **viewed** al pasar el cursor por encima.
+Si esta opción está habilitada, el software no iniciará una nueva inspección hasta que todas las detecciones de la actual hayan sido revisadas: [reportadas](Inspection_workflow.md#reporte-de-errores) como error o como falso positivo, o al menos marcadas como **vistas**.
+
+#### Reporte obligatorio de errores
+
+Si esta opción está habilitada, todas las detecciones deben **clasificarse** como error o falso positivo antes de que pueda empezar una nueva inspección. Marcarlas como vistas no basta. Incluye la revisión anterior.
+
+#### Informe final obligatorio
+
+Si esta opción está habilitada, el operador debe confirmar el [informe final OK / NO OK](Inspection_workflow.md#generacion-de-un-informe-pdf-final) de la inspección antes de que pueda empezar una nueva. Un informe generado automáticamente por [Informe automático](#informe-automatico) no cuenta.
+
+!!! note "Dónde se aplican estas tres opciones"
+    Estas opciones se aplican a todos solo mientras el [control de acceso de usuarios](../features/User_control.md) está deshabilitado. Con él habilitado, las tres casillas aparecen atenuadas y cada **rol** tiene su propio ajuste. Una REFERENCIA también puede exigir cualquiera de ellas, sea quien sea quien inspeccione con ella. Consulte [Niveles de revisión obligatoria](Inspection_workflow.md#niveles-de-revision-obligatoria) para ver cómo se combinan.
+
+#### Avisar de una cara no revisada
+
+Antes de que empiece la siguiente placa, el software le avisa si una cara de la placa actual tiene detecciones pero ninguna de ellas ha sido revisada ni reportada, y le permite continuar (**OK**) o volver atrás (**CANCEL**). Es un aviso, no un bloqueo. Habilitado por defecto. Consulte [Niveles de revisión obligatoria](Inspection_workflow.md#aviso-de-cara-no-revisada).
 
 #### Cambio automático TOP/BOTTOM
 
 Para REFERENCIAS de doble cara, habilitar esta opción cambia automáticamente al otro lado (**TOP**/**BOTTOM**) al comenzar la siguiente inspección, sin necesidad de un [cambio manual](Screen-layout.md#alternar-topbottom).
 
 ![Opción de cambio automático TOP/BOTTOM](../assets/v7/settings/top-bottom-settings.png){.center}
+
+#### Preferencia de análisis
+
+Establece dónde se revisan las detecciones después de una inspección:
+
+- **LIST** (por defecto en las instalaciones nuevas): el cursor va a la primera fila de la [lista de detecciones](Screen-layout.md#lista-de-detecciones). Las teclas de flecha **izquierda** y **derecha** recorren la lista y las teclas de flecha **arriba** y **abajo** clasifican la fila bajo el cursor como error o falso positivo.
+- **CANVAS**: el cursor va a la primera detección de la imagen, y las teclas de flecha se mueven entre las detecciones de la imagen.
+
+Las instalaciones actualizadas desde una versión anterior conservan el valor que ya tenían.
+
+#### Máx. variantes por Referencia
+
+Número máximo de [Variantes de Referencia](../features/Multivariant_feature.md) que se usan para cada REFERENCIA: 20 por defecto, hasta 50. Al aumentarlo se muestra un aviso, porque el panel de variantes y la inspección se vuelven más lentos con más variantes. Una REFERENCIA que tiene más variantes que el límite solo usa las primeras; el resto se conservan intactas.
+
+#### Modo Demo / Loop
+
+Después de que el operador ejecute manualmente la primera inspección, el software sigue repitiendo la captura y la inspección automáticamente. Está pensado para demostraciones desatendidas.
+
+- Se desactiva solo al cerrar la aplicación, de modo que el siguiente inicio es siempre en modo normal.
+- Mientras está activado, no se exige ninguno de los niveles de revisión obligatoria.
+- Marcar cualquiera de las tres opciones obligatorias anteriores desmarca este modo, y viceversa.
+- Con el [control de acceso de usuarios](../features/User_control.md) habilitado, solo el rol **admin** puede cambiarlo.
+
+!!! warning "Importante"
+    Las ejecuciones desatendidas largas con secuencias de captura muy grandes (12 o más imágenes) pueden agotar la memoria del ordenador. Evite dejar secuencias muy grandes en bucle durante periodos largos.
 
 ## Opciones de informe
 
@@ -105,7 +151,7 @@ Establece una ETIQUETA NO OK personalizada para el informe PDF final.
 Cuando esta opción está habilitada, se generará automáticamente un informe PDF final etiquetado como OK si no se detectan errores después de la inspección. El informe PDF final también se puede generar si se detecta algún error durante la inspección.
 
 !!! note "Nota"
-    Al generar un informe PDF automáticamente, todos los errores detectados se marcarán con la etiqueta "unknown".
+    Al generar un informe PDF automáticamente, todos los errores detectados se marcarán con la etiqueta "unknown". Un informe automático no cuenta como informe final confirmado para el [Informe final obligatorio](#informe-final-obligatorio).
 
 #### Mostrar todos los fallos
 
@@ -171,7 +217,7 @@ Al habilitar estas opciones, el sistema compartirá automáticamente las carpeta
 
 ![Sección de usuarios del menú de configuración](../assets/v7/settings/users-settings.png){.center}
 
-Esta pestaña solo está disponible para los usuarios con rol de **admin**. Permite crear las cuentas que pueden operar la AOI, cada una con un rol de **admin** u **operator**, y exigir un nombre de usuario y una contraseña cada vez que se inicia el software.
+Esta pestaña solo está disponible para los usuarios con rol de **admin**, o con un rol al que se le haya concedido acceso a ella. Permite crear las cuentas que pueden operar la AOI, definir sus roles y permisos, y exigir un nombre de usuario y una contraseña cada vez que se inicia el software.
 
 Para habilitar **Enable user access control** debe existir al menos una cuenta **admin** activa.
 
@@ -194,18 +240,20 @@ Obtenga más información sobre esta funcionalidad en la siguiente sección: [Se
 
 ![Sección de máquina del menú de configuración](../assets/v7/settings/machine-settings.png){.center}
 
-Esta pestaña solo está disponible para los usuarios con rol de **admin**. Muestra los parámetros de hardware de su unidad, almacenados en el archivo **machine.json**.
+Esta pestaña solo está disponible para los usuarios con rol de **admin**. Muestra los parámetros de hardware de su unidad que se pueden modificar, almacenados en el archivo **machine.json**, agrupados según lo que afectan y cada uno con una breve explicación:
 
-La mayoría de los valores se muestran atenuados: son **solo informativos** y no se pueden modificar. Los campos resaltados en azul son los editables:
+| Grupo | Campo | Descripción |
+| --- | --- | --- |
+| Movimiento | **Acceleration (X / Y / Z)** | Aceleración de cada eje. Los valores más altos mueven más rápido, pero pueden provocar pérdida de pasos o vibraciones. |
+| Movimiento | **Homing sensitivity (X / Y / Z)** | Cómo detecta cada eje que ha llegado a su posición de origen. |
+| Cámara | **Capture gain** | Ganancia de la cámara durante la captura. Los valores más altos aclaran la imagen, pero añaden ruido. |
+| Cámara | **Exposure (µs)** | Tiempo de exposición de la cámara. Los valores más altos dejan entrar más luz, pero aumentan el riesgo de desenfoque por vibración. |
+| Cámara | **Rotate image 180°** | Gira la imagen de la cámara 180°. Habilítelo solo si la cámara está montada al revés. |
 
-| Campo | Descripción |
-| --- | --- |
-| **xacc** / **yacc** / **zacc** | Aceleración de cada eje. |
-| **xhome** / **yhome** / **zhome** | Desplazamiento de la posición de origen de cada eje. |
-| **capture_gain** | Ganancia de la cámara durante la captura. |
-| **exposure** | Tiempo de exposición de la cámara. |
+Presione **Save changes** para guardar los nuevos valores, o **Reset to factory default** para restaurar todos los parámetros a su valor original.
 
-Presione **Save changes** para aplicar los nuevos valores, o **Reset to factory default** para restaurar todos los parámetros a su valor original.
+!!! note "Nota"
+    Los cambios no se aplican inmediatamente. Reinicie la aplicación para que los nuevos valores surtan efecto.
 
 !!! warning "Importante"
     Estos parámetros afectan al movimiento de la plataforma y a la captura de las imágenes. Modificarlos incorrectamente puede degradar la calidad de imagen o el movimiento de los ejes. Cámbielos únicamente cuando [soporte](mailto:support@agnospcb.com) se lo indique.

@@ -147,11 +147,12 @@ la différence entre une intégration propre et un convoyeur bloqué :
 | Paramètre | Emplacement | Valeur recommandée | Pourquoi |
 |---|---|---|---|
 | **Operator mode** | Workflow | Activé | Masque la capture de référence et empêche un opérateur de modifier la RÉFÉRENCE ou la sensibilité en cours de poste. Protégez-le avec un mot de passe des paramètres (voir le [menu des paramètres](../how_to/Settings_menu.md)). |
-| **Mandatory errors review** | Workflow | **Désactivé** | Si cette option est activée, le logiciel attend qu'une personne examine chaque défaut avant d'autoriser l'inspection suivante — cela bloquera la ligne. |
+| **Mandatory errors review**, **Mandatory errors report** et **Mandatory final report** | Workflow | **Désactivé** | Si ces options sont activées, le logiciel attend qu'une personne examine chaque défaut, le classe ou confirme le rapport final avant d'autoriser l'inspection suivante — cela bloquera la ligne. Lorsque le contrôle d'accès des utilisateurs est activé, vérifiez également le rôle de l'utilisateur et les [options de la référence](../how_to/Screen-layout.md#options-de-la-reference) de chaque RÉFÉRENCE. |
+| **Warn about a side not reviewed** | Workflow | Désactivé | Empêche une fenêtre de confirmation d'attendre une saisie avant la carte suivante. |
 | **Show errors popup** | Workflow | Désactivé | Empêche une boîte de dialogue modale d'attendre une saisie pendant le fonctionnement automatique. |
 | **Show references mosaic** | Workflow | Désactivé | Évite une fenêtre contextuelle après la capture d'image. |
 | **Auto report OK / NOK** | Reports | Les deux activés | Génère le PDF de chaque carte sans action de l'opérateur, de sorte que la ligne produit un enregistrement complet de traçabilité. |
-| **Create JSON report** | Reports | Activé | Résultat lisible par machine pour votre MES/SCADA. Nécessite une licence. |
+| **Create JSON report** | Reports | Activé | Résultat lisible par machine pour votre MES/SCADA. Nécessite une licence. Pour les cartes recto verso, voir la remarque ci-dessous. |
 | **Use barcodes** | Workflow | Activé | Permet à l'AOI de charger automatiquement la bonne RÉFÉRENCE à partir du code-barres de la carte, afin que les lignes multi-produits ne nécessitent pas de changement de produit manuel. Nécessite une licence. Voir [lecteur de code-barres](../features/Barcode_reader.md). |
 
 !!! note "Note"
@@ -160,6 +161,16 @@ la différence entre une intégration propre et un convoyeur bloqué :
     l'étiquette « unknown », car aucun opérateur ne les classe. C'est normal
     sur une ligne : la classification est effectuée plus tard, hors ligne, à
     partir des rapports enregistrés.
+
+!!! warning "Rapports JSON des cartes recto verso"
+
+    Depuis la version 7.11.4, lorsque les deux faces d'une carte ont été
+    inspectées, le logiciel écrit un seul
+    [rapport combiné](../how_to/Inspection_workflow.md#rapport-combine-topbottom)
+    et supprime les rapports PDF et JSON individuels de chaque face. Un système
+    qui lisait le JSON de chaque face dans le dossier REPORTS doit désormais
+    lire `sides.TOP` et `sides.BOTTOM` du JSON combiné. Les fichiers
+    d'inspection dans PCB_OUT ne sont pas concernés.
 
 ### 2.3 Où les résultats sont écrits
 
@@ -216,7 +227,7 @@ manuel/jog.
 
 | Symptôme | Vérification |
 |---|---|
-| La ligne s'arrête après la première carte défectueuse | **Mandatory errors review** est activé. Désactivez-le dans Settings → Workflow. |
+| La ligne s'arrête après la première carte défectueuse | Un niveau de révision obligatoire est activé (**Mandatory errors review**, **report** ou **final report**). Désactivez-le dans Settings → Workflow, dans le rôle de l'utilisateur (Settings → Users) et dans les options de la référence de la RÉFÉRENCE. |
 | Une boîte de dialogue attend une saisie en cours de cycle | Désactivez **Show errors popup** et **Show references mosaic** dans Settings → Workflow. |
 | Chaque carte échoue sur un nouveau produit | La RÉFÉRENCE chargée ne correspond pas au produit. Vérifiez la lecture du code-barres, ou la RÉFÉRENCE sélectionnée pour le lot. |
 | **WARNING / ROTATED** ou **WARNING / SHIFTED** sur la plupart des cartes | Le convoyeur ne présente pas les cartes dans une position reproductible. Corrigez la butée mécanique ; l'AOI compare par rapport à la position de la RÉFÉRENCE. |

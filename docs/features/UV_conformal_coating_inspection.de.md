@@ -60,4 +60,7 @@ Beobachten Sie das PCB unter UV-Beleuchtung, um die korrekte Anwendung und Abdec
 
 Das aufgenommene UV-Bild wird in den finalen Inspektionsbericht zur Dokumentation und Rückverfolgbarkeit aufgenommen.
 
+!!! note "UV-Inspektionen und doppelseitige Platinen"
+    Eine UV-Inspektion ist unabhängig von der laufenden TOP/BOTTOM-Platine: Sie verwirft weder die bereits inspizierten Seiten noch ändert sie deren Klassifizierungen, und sie ist nicht Teil des [kombinierten TOP/BOTTOM-Berichts](../how_to/Inspection_workflow.md#kombinierter-topbottom-bericht). UV-Inspektionen zeigen keine Rotations- oder Verschiebungswarnungen an, da das UV-Bild nicht an der REFERENZ ausgerichtet wird.
+
 ![UV-Inspektionsbericht](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

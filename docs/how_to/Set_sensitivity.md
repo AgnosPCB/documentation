@@ -26,3 +26,6 @@ Sensitivity determines how strict the inspection is when looking for errors. It 
 
 
 ![PCB with errors in very high sensitivity](../assets/very-high-sensitivity.png){.center}
+
+!!! note "Double-sided boards"
+    When [inspecting both sides of a board](Inspection_workflow.md#inspecting-both-sides-of-a-board), each side keeps its own sensitivity. Switching back to a side restores the level you left it at, and the report of each side states its own level.

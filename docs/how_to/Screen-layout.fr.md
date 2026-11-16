@@ -16,7 +16,7 @@ Cette zone affiche l'état de la connexion avec la plateforme d'inspection et la
 
 ![Bouton de déconnexion](../assets/v7/ui-logout.png){.center}
 
-Si des utilisateurs sont définis dans le menu des paramètres, ce bouton permet à l'utilisateur de se déconnecter.
+Si le [contrôle d'accès des utilisateurs](../features/User_control.md) est activé, ce bouton permet à l'utilisateur de se déconnecter. Il demande une confirmation, puis vide l'espace de travail (RÉFÉRENCE chargée et résultats d'inspection), afin que l'utilisateur suivant parte de zéro.
 
 ### Chargement de la RÉFÉRENCE par code-barres
 
@@ -24,13 +24,13 @@ Si des utilisateurs sont définis dans le menu des paramètres, ce bouton permet
 
 ![Chargement RÉFÉRENCE par code-barres](../assets/v7/ui-bc_ref.png){.center}
 
-Ce bouton ouvre une fenêtre contextuelle pour insérer un numéro de code-barres. Lors de la génération d'une RÉFÉRENCE, tout [code-barres qu'elle contient peut être lu](#dessin-de-la-zone-de-code-barres). Ce code-barres sera associé à la RÉFÉRENCE et pourra être chargé en utilisant ce numéro avec cette fonction. Il est également possible de lire le code-barres avec un lecteur portable et de l'insérer dans ce champ. Plus d'informations sur cette fonctionnalité [ici](../features/Barcode_reader.md#charger-une-reference-par-code-barres).
+Ce bouton ouvre une fenêtre contextuelle pour insérer un code, et charge la RÉFÉRENCE dont c'est le **Model ID** (le code du modèle de carte, identique sur toutes les cartes). Il est également possible de lire le code avec un lecteur portable et de l'insérer dans ce champ. Si plusieurs RÉFÉRENCES ont ce code, une courte liste vous permet de choisir celle à charger. Plus d'informations sur cette fonctionnalité [ici](../features/Barcode_reader.md#charger-une-reference-par-code-barres).
 
 ### Basculer TOP/BOTTOM
 
 ![Bouton TOP/BOTTOM](../assets/v7/ui-top-bottom.png){width=80 .center}
 
-Si l'image de RÉFÉRENCE contient à la fois la face supérieure et la face inférieure de la PCBA, bascule entre les deux images.
+Si l'image de RÉFÉRENCE contient à la fois la face supérieure et la face inférieure de la PCBA, bascule entre les deux images. Une fois les deux faces d'une carte inspectées, il bascule à la place entre les **résultats** des deux faces. Les touches **Page Up** (TOP) et **Page Down** (BOTTOM) font de même. Consultez [Inspecter les deux faces d'une carte](Inspection_workflow.md#inspecter-les-deux-faces-dune-carte).
 
 Cela peut aussi se produire automatiquement au début de chaque inspection : activez **Bascule automatique TOP/BOTTOM** dans le [menu des paramètres](Settings_menu.md#bascule-automatique-topbottom).
 
@@ -44,7 +44,7 @@ Ce bouton vous permet de sélectionner une région du PCB afin de mesurer une zo
 
 ![Section de fonctionnement interne](../assets/activity-log.png){.center}
 
-La zone du **journal d'activité** est située dans la partie supérieure droite et affiche les **crédits disponibles actuels** et les détails opérationnels de l'application, tels que l'état du processus d'analyse.
+La zone du **journal d'activité** est située dans la partie supérieure droite et affiche les **crédits disponibles actuels** et les détails opérationnels de l'application, tels que l'état du processus d'analyse. Lorsque le [contrôle d'accès des utilisateurs](../features/User_control.md) est activé, elle affiche également l'utilisateur connecté.
 
 
 ## Espace de travail principal
@@ -60,6 +60,36 @@ C'est la section principale où vous travaillez avec les images de **RÉFÉRENCE
 
 Cette section de l'interface est divisée en deux parties. La partie supérieure affiche l'image de **RÉFÉRENCE**, servant de standard de comparaison, tandis que la partie inférieure montre l'image **UUI**. Ces images sont agrandies et se déplacent en parallèle, montrant exactement la même zone dans la **RÉFÉRENCE** et l'**UUI** où le curseur pointe dans l'espace de travail principal.
 
+### Liste des détections
+
+Après une inspection, déplacer la souris dans cette zone affiche la **liste des détections** : une ligne par détection, avec son numéro, son type et une bande de couleur indiquant son état (non examinée, erreur ou faux positif).
+
+| Action | Effet |
+| --- | --- |
+| Survoler une ligne | Met en évidence la détection sur l'image et affiche deux miniatures flottantes à côté : la RÉFÉRENCE en haut et l'UUI en bas. Elles s'agrandissent au bout d'un instant. Une fois agrandies, maintenir le pointeur sur la ligne pendant environ une seconde marque la détection comme **vue**. |
+| Cliquer sur une ligne | Se déplace vers cette détection sur l'image. |
+| Double-cliquer sur une ligne | Se déplace vers cette détection et ouvre la fenêtre de signalement. |
+| **Croix rouge** / **coche verte** en fin de ligne | Signale la détection comme erreur réelle / faux positif, comme les touches flèche **haut** / **bas**. Sur une détection déjà signalée, le bouton correspondant à son verdict est entouré. |
+| Molette de la souris | Lorsque les miniatures sont affichées, modifie leur zoom. Sinon, fait défiler la liste. |
+| **Maj** + molette de la souris | Fait défiler la liste, y compris lorsque les miniatures sont affichées. |
+| Clic du milieu | Fait alterner la vue de la miniature inférieure : UUI, masque d'erreur, cadre d'erreur. |
+| Pointeur sur le bord supérieur ou inférieur de la liste | Lorsque la liste est plus longue que le panneau, elle défile d'elle-même ; plus le pointeur est proche du bord, plus elle défile vite. Une flèche discrète indique le bord vers lequel elle peut encore défiler. |
+
+Lorsque la [Préférence d'analyse](Settings_menu.md#preference-danalyse) est réglée sur **LIST**, les touches fléchées agissent sur cette liste. Consultez [Signalement des erreurs](Inspection_workflow.md#signalement-des-erreurs).
+
+### Panneau d'informations de la référence
+
+Selon le mode d'affichage sélectionné avec la touche **TAB**, le survol de l'image de RÉFÉRENCE affiche dans cette zone le **panneau d'informations de la référence** : nom, date, codes, optique et séquence de la RÉFÉRENCE chargée, et si ses [niveaux de révision obligatoire](Inspection_workflow.md#niveaux-de-revision-obligatoire) sont activés.
+
+Lorsque [Afficher les statistiques et la carte thermique des erreurs par référence](Settings_menu.md#afficher-les-statistiques-et-la-carte-thermique-des-erreurs-par-reference) est activé, le panneau affiche également :
+
+- **Statistiques d'inspection** : nombre total d'inspections, OK et NON OK, rendement, erreurs confirmées, faux positifs, détections encore non examinées, types d'erreurs les plus fréquents, etc.
+- **Carte thermique des erreurs** : la zone de la carte de la RÉFÉRENCE avec une superposition thermique montrant où ses cartes présentent des défauts. Seules les erreurs confirmées par l'opérateur sont comptabilisées ; les faux positifs et les détections non examinées n'apparaissent jamais. Les erreurs sont placées sur la RÉFÉRENCE à l'aide de l'alignement de chaque inspection, de sorte qu'une carte légèrement décalée tombe tout de même au bon endroit.
+
+Une inspection est comptabilisée une seule fois, lorsque son rapport est enregistré. Enregistrer à nouveau le rapport de la même inspection remplace son entrée précédente au lieu d'en ajouter une nouvelle.
+
+Un clic droit sur la partie supérieure du panneau ouvre les [options de la référence](#options-de-la-reference) de la RÉFÉRENCE chargée.
+
 
 ## Panneau de boutons
 
@@ -73,7 +103,7 @@ Voici diverses **fonctions et options** conçues pour **optimiser** votre flux d
 
 ![Menu Mosaïque](../assets/v7/2024-11-14_09-27.png){width=600px .center}
 
-La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le [bouton prendre une photo RÉFÉRENCE](#prendre-une-image-de-reference) ou en la chargeant [comme un fichier](#charger-reference-en-tant-que-fichier). Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un **bouton F** (F1-F10).
+La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant que fichiers afin de les trouver et de les charger rapidement. Le menu mosaïque apparaît automatiquement après avoir pris une RÉFÉRENCE en utilisant le [bouton prendre une photo RÉFÉRENCE](#prendre-une-image-de-reference) ou en la chargeant [comme un fichier](#charger-reference-en-tant-que-fichier). Dans cette fenêtre, il est également possible de nommer la RÉFÉRENCE prise dans la partie supérieure droite de la fenêtre. Une RÉFÉRENCE stockée dans la mosaïque peut être rapidement chargée en appuyant sur un **bouton F** (F1-F8). Un clic droit sur un emplacement ouvre les [options de la référence](#options-de-la-reference) de cette RÉFÉRENCE.
 
 ### CHARGER RÉFÉRENCE en tant que fichier
 
@@ -81,25 +111,42 @@ La mosaïque de références est utilisée pour stocker les RÉFÉRENCES en tant
 
 ![Menu Charger RÉFÉRENCE](../assets/v7/ui-ref_search.png){.center}
 
-Utilisez cette icône pour charger une image précédemment capturée en tant que **RÉFÉRENCE**, et elle vous permet de les trier par nom ou par date. Toutes les images de **RÉFÉRENCE** se trouvent dans le dossier **APP/REFERENCE** dans un dossier nommé d'après l'heure à laquelle la photo a été prise.
+Utilisez cette icône pour charger une image précédemment capturée en tant que **RÉFÉRENCE**, et elle vous permet de les trier par nom ou par date, ou de les filtrer par nom, alias ou **Model ID**. Toutes les images de **RÉFÉRENCE** se trouvent dans le dossier **APP/REFERENCE** dans un dossier nommé d'après l'heure à laquelle la photo a été prise.
+
+Une RÉFÉRENCE recto verso n'apparaît qu'une seule fois dans la liste, par sa face TOP, avec une marque dans la colonne **Sides** ; sa face BOTTOM est accessible avec le [bouton TOP/BOTTOM](#basculer-topbottom) une fois chargée. Les RÉFÉRENCES qui n'ont pas de [Model ID](../features/Barcode_reader.md#charger-une-reference-par-code-barres) affichent, en grisé, le code avec lequel elles étaient indexées auparavant.
 
 !!! note "Note"
     Depuis la version 7, le logiciel **n'autorise pas** le chargement d'images provenant d'une source autre que la plateforme elle-même, car les images contiennent des paramètres spécifiques pour l'optique. Chaque image de RÉFÉRENCE doit être capturée à l'aide de l'**AOI AI-4050**.
 
-#### Alias d'affichage
+#### Options de la référence
 
-Une RÉFÉRENCE peut recevoir un **alias d'affichage** facultatif : un nom plus explicite affiché dans la colonne **Alias** de cette liste à la place du nom réel de la RÉFÉRENCE, sans la renommer. Cela est utile lorsque le nom réel de la RÉFÉRENCE — un code-barres, un horodatage — n'est pas facile à comprendre d'un coup d'œil. L'alias est également utilisé dans la mosaïque et dans les rapports d'inspection (PDF et JSON).
+La fenêtre **Reference options** regroupe les paramètres de chaque RÉFÉRENCE : son alias d'affichage et ses niveaux de révision obligatoire. Ouvrez-la de l'une des façons suivantes :
 
-Sélectionnez une RÉFÉRENCE dans la liste et appuyez sur **ALIAS**.
+- Sélectionnez une RÉFÉRENCE dans cette liste et appuyez sur **OPTIONS**.
+- Faites un clic droit sur un emplacement de la [mosaïque de références](#mosaique-de-references).
+- Faites un clic droit sur la partie supérieure du [panneau d'informations de la référence](#panneau-dinformations-de-la-reference).
 
-![Bouton ALIAS et fenêtre de saisie](../assets/v7/ref-alias-name.png){.center}
+![Bouton OPTIONS et fenêtre](../assets/v7/ref-alias-name.png){.center}
 
-Saisissez un nom et appuyez sur **OK**. Laisser le champ vide et appuyer sur **OK** supprime l'alias, la liste affiche alors de nouveau le nom réel de la RÉFÉRENCE.
+**Alias d'affichage**
+
+Une RÉFÉRENCE peut recevoir un **alias d'affichage** facultatif : un nom plus explicite affiché dans la colonne **Alias** de cette liste à la place du nom réel de la RÉFÉRENCE, sans la renommer. Cela est utile lorsque le nom réel de la RÉFÉRENCE — un code-barres, un horodatage — n'est pas facile à comprendre d'un coup d'œil. L'alias est également utilisé dans la mosaïque et dans les rapports d'inspection (PDF et JSON), où il est affiché à côté du nom réel.
+
+Laisser le champ vide supprime l'alias, la liste affiche alors de nouveau le nom réel de la RÉFÉRENCE.
 
 ![Liste des RÉFÉRENCES avec alias](../assets/v7/ref-alias.png){.center}
 
 !!! note "Note"
-    L'alias n'est qu'une étiquette. Tout ce qui identifie ou charge la RÉFÉRENCE — son nom de fichier, son association à un code-barres — continue d'utiliser son nom réel.
+    L'alias n'est qu'une étiquette. Tout ce qui identifie ou charge la RÉFÉRENCE — son nom de fichier, son Model ID — continue d'utiliser son nom réel.
+
+**Niveaux de révision obligatoire**
+
+Trois cases à cocher — **Mandatory errors review**, **Mandatory errors report** et **Mandatory final report** — rendent ce niveau obligatoire pour quiconque inspecte avec cette RÉFÉRENCE, quels que soient son rôle ou les paramètres globaux. Consultez [Niveaux de révision obligatoire](Inspection_workflow.md#niveaux-de-revision-obligatoire).
+
+Sur une RÉFÉRENCE recto verso, les paramètres sont enregistrés sur les deux faces. Une RÉFÉRENCE créée avec [UUI vers RÉFÉRENCE](UUI_to_REFERENCE.md) en hérite de la RÉFÉRENCE dont elle provient ; une RÉFÉRENCE nouvellement capturée démarre avec tous les niveaux désactivés.
+
+!!! note "Permissions"
+    Lorsque le [contrôle d'accès des utilisateurs](../features/User_control.md) est activé, l'alias nécessite la permission **Set Reference display alias** et les niveaux obligatoires nécessitent la permission **Edit Reference options**.
 
 ### Échange
 

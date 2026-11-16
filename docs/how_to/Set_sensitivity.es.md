@@ -26,3 +26,6 @@ La sensibilidad se refiere al grado de meticulosidad o rigurosidad empleado por 
 
 
 ![PCB con errores en sensibilidad muy alta](../assets/very-high-sensitivity.png){.center}
+
+!!! note "Placas de doble cara"
+    Al [inspeccionar ambas caras de una placa](Inspection_workflow.md#inspeccion-de-ambas-caras-de-una-placa), cada cara conserva su propia sensibilidad. Al volver a una cara se restaura el nivel en que la dejó, y el informe de cada cara indica su propio nivel.

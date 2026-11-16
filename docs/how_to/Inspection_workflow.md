@@ -72,6 +72,10 @@ Use the button in the main window to switch between the **TOP** and **BOTTOM** i
 
 ![BOTTOM image](../assets/v7/references/bt-image.png){.center}
 
+The **Page Up** and **Page Down** keys also switch to the **TOP** and **BOTTOM** side respectively.
+
+See [Inspecting both sides of a board](#inspecting-both-sides-of-a-board) for how to inspect a double-sided PCBA once its REFERENCE is ready.
+
 ---
 
 #### Focus
@@ -144,12 +148,32 @@ Once the capturing process has ended, the final result will be returned showing 
 
 If errors are detected, a **red frame** will appear around the main window. A **green frame** will appear if there are no errors.
 
+### Inspecting both sides of a board
+
+With a double-sided REFERENCE you can inspect the **TOP** and the **BOTTOM** of the same board one after the other:
+
+1. Inspect the first side as usual. In the live preview, the **START INSPECTION** button shows on a second line which side you are about to inspect. Check that the board is placed face up on that side.
+2. Flip the board, switch to the other side (with the [TOP/BOTTOM button](Screen-layout.md#switch-topbottom), the **Page Up** / **Page Down** keys, or automatically with [TOP/BOTTOM auto switch](Settings_menu.md#topbottom-auto-switch)) and inspect it.
+3. Once both sides have been inspected, the TOP/BOTTOM button and the **Page Up** / **Page Down** keys switch directly between the **results** of the two sides, so you can keep reviewing one side after capturing the other. Each side keeps its own detections, classifications and [sensitivity](Set_sensitivity.md).
+
+The results are saved in the background while you work. A loading notice is shown on the image while a side is being restored.
+
+When both sides have a report, a single [combined report](#combined-topbottom-report) is generated for the whole board.
+
+!!! note "UV inspections"
+    A [UV inspection](../features/UV_conformal_coating_inspection.md) is independent of the TOP/BOTTOM board in progress: it does not discard the sides already inspected and it is not part of the combined report.
+
 ### Reporting errors
 
 Once the inspection is complete, the operator must monitor the flagged errors, marking them as an **actual error** or a **false positive detection**.
 To do this, simply scroll through the errors using the **left and right arrows** on the keyboard.
 
-Errors can also be reported directly with the mouse: **left-click** a detection to report it as an actual error, or **right-click** it to report it as a false positive — equivalent to the **up** and **down** arrow keys described below.
+!!! note "Analysis preference"
+    By default, on new installations the review starts on the [detections list](Screen-layout.md#detections-list): the **left** and **right** arrows move from row to row of the list and the **up** and **down** arrows classify the row under the cursor. To review the detections directly on the image, as in previous versions, set [Analysis preference](Settings_menu.md#analysis-preference) to **CANVAS**.
+
+Errors can also be reported directly with the mouse: **left-click** a detection to report it as an actual error, or **right-click** it to report it as a false positive — equivalent to the **up** and **down** arrow keys described below. Each row of the [detections list](Screen-layout.md#detections-list) also has a **red cross** (error) and a **green tick** (false positive) button.
+
+Left-clicking a detection that is already reported as an actual error asks for confirmation before undoing it.
 
 To mark a real error, just move to the fault and press the **up arrow** on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault from the list.
 
@@ -166,7 +190,40 @@ When the software marks an area that is not an actual error, the operator can fl
 !!! note "Note"
     Note the **red icon** ![Red icon](../assets/v7/ui-report_red.png){width=20px} marks the actual faults and the **green icon** ![Green icon](../assets/v7/ui-report_green.png){width=20px} marks the false positive faults.
 
-A detection that has not been reported as either is still **unreviewed**. When [Mandatory errors review](Settings_menu.md#mandatory-errors-review) is enabled, simply hovering the cursor over such a detection marks it as **viewed**, which also satisfies the review requirement for that detection.
+!!! note "Permissions"
+    With [user access control](../features/User_control.md) enabled, reporting a detection requires the **Classify detected faults** permission. Without it, a **Permission denied** message is shown and nothing is reported.
+
+A detection that has not been reported as either is still **unreviewed** (yellow). Keeping the pointer still over it for about **one second** marks it as **seen** (cyan): a small ring fills around the detection while you wait, and nothing is marked if you move away before it closes, so sweeping the mouse across the board does not mark detections you have not looked at. It works the same when you reach a detection with the arrow keys or from the detections list. A detection marked as seen can still be reported afterwards.
+
+### Mandatory review levels
+
+The software can require three levels of review before a new inspection can start. They are independent and can be combined:
+
+| Level | What it requires |
+| --- | --- |
+| **Mandatory errors review** | Every detection reviewed, or at least marked as **seen**. |
+| **Mandatory errors report** | Every detection **reported** as an actual error or a false positive. Marking it as seen is not enough. |
+| **Mandatory final report** | The [final OK / NOT OK report](#generating-a-final-pdf-report) confirmed by the operator. A report generated automatically does not count. |
+
+If a level is not met when you try to start the next inspection, a warning tells you what is missing.
+
+A level applies when **any** of the following has it enabled:
+
+- The loaded **REFERENCE**, in its [Reference options](Screen-layout.md#reference-options) window.
+- The **role** of the logged-in user, when [user access control](../features/User_control.md#mandatory-review-per-role) is enabled. The **admin** role is only affected by the REFERENCE.
+- The global options in the [Workflow settings](Settings_menu.md#mandatory-errors-review), when user access control is disabled.
+
+None of the levels is required while [Demo / Loop mode](Settings_menu.md#demo-loop-mode) is on.
+
+On a double-sided board, inspecting the other side of the same board is never blocked by what is still pending on the first one. Starting the **next board** requires the levels that apply to be met on **both** sides. To confirm the final report of the other side, switch to it and generate its final report.
+
+When at least one level is enabled, every report (PDF and JSON) states how far the review had gone when it was made, for example `MANDATORY REVIEW - Detections: 5 (3 classified, 2 seen, 0 pending)`, and whether the final report was confirmed. The line is shown in red if something was still pending.
+
+#### Warning about a side not reviewed
+
+Independently of the levels above, before the next board starts the software warns you if a side has detections but **none** of them has been reviewed or reported. The window names the side and lets you continue anyway (**OK**) or go back to review it (**CANCEL**).
+
+This warning is not shown when the next capture is the other side of the same board, in UV inspections or in Demo / Loop mode. It can be disabled in [Settings → Workflow](Settings_menu.md#warn-about-a-side-not-reviewed).
 
 ### Generating a final PDF report
 
@@ -183,3 +240,12 @@ It is possible to add comments that will be included in the report. The PDF will
 ![PDF report](../assets/v7/pdf-report1.png){.center}
 
 ![PDF report](../assets/v7/pdf-report2.png){.center}
+
+#### Combined TOP/BOTTOM report
+
+When both sides of a board have a report, a single combined PDF is generated in the report folder of the TOP side: a cover page with the overall result and the data of each side, followed by the TOP report and the BOTTOM report. When [JSON reports](Settings_menu.md#create-json-report) are enabled, a combined JSON is written as well, with the data of each side under `sides.TOP` and `sides.BOTTOM`.
+
+Once the combined report has been written, the individual PDF and JSON reports of each side are deleted, so only one PDF and one JSON remain per board. A board with only one side inspected keeps its own report, and nothing is deleted if the combined report could not be written. The inspection files in **PCB_OUT** are not affected.
+
+!!! note "Note"
+    The JSON report also states, for each detection, whether the operator decided it is an error, a false positive or is still pending (`verdict` field).

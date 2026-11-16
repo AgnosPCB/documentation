@@ -46,6 +46,9 @@ Diese Variante wird bei zukünftigen Inspektionen nicht mehr als Fehler gemeldet
 
 Auch nach dem Erstellen einer Referenzvariante erkennt das System weiterhin tatsächliche Defekte an diesem Bauteil, sofern diese auftreten.
 
+!!! note "Maximale Anzahl an Varianten"
+    Jede REFERENZ verwendet standardmäßig bis zu 20 Varianten. Das Limit kann mit [Max. Varianten pro Referenz](../how_to/Settings_menu.md#max-varianten-pro-referenz) auf bis zu 50 erhöht werden, allerdings werden das Variantenpanel und die Inspektion dadurch langsamer. Hat eine REFERENZ mehr Varianten als das Limit, werden nur die ersten verwendet; die übrigen bleiben unverändert erhalten.
+
 Der abschließende Inspektionsbericht enthält ebenfalls die Referenzvariante zusammen mit ihrem Bild, dem vergebenen Namen und eventuellen zusätzlichen Anmerkungen.
 
 ![Referenzvariante im PDF-Bericht](../assets/ref-variant-report.png){width=600 .center}

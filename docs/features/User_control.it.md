@@ -49,8 +49,30 @@ Un ruolo personalizzato compare quindi accanto a **admin** e **operator** nel ca
 
 ![Assegnare un ruolo personalizzato a un utente](../assets/v7/user_control/users-rol-assing.png){.center}
 
+Un nuovo ruolo parte solo con i permessi necessari per eseguire ispezioni, classificare le rilevazioni ed esportare i report. Tutto il resto deve essere concesso da **Edit permissions**.
+
+Quando un aggiornamento del software aggiunge un nuovo permesso, il ruolo **operator** lo riceve automaticamente. I ruoli personalizzati no: un amministratore deve concederlo loro esplicitamente. Gli aggiornamenti recenti hanno aggiunto, tra gli altri:
+
+| Permesso | Consente |
+| --- | --- |
+| **Classify detected faults** | Segnalare le rilevazioni come errori reali o falsi positivi. Senza di esso, viene mostrato il messaggio **Permission denied**. Contrassegnare una rilevazione come seen è sempre consentito. |
+| **Max. variants per Reference** | Modificare [Max. varianti per Riferimento](../how_to/Settings_menu.md#max-varianti-per-riferimento). |
+| **Reference statistics and heatmap option** | Modificare [Mostra statistiche e mappa di calore degli errori per Riferimento](../how_to/Settings_menu.md#mostra-statistiche-e-mappa-di-calore-degli-errori-per-riferimento). |
+| **Analysis preference** | Modificare la [Preferenza di analisi](../how_to/Settings_menu.md#preferenza-di-analisi). |
+| **Edit Reference options** | Modificare i livelli di revisione obbligatoria di un RIFERIMENTO nelle sue [Opzioni del Riferimento](../how_to/Screen-layout.md#opzioni-del-riferimento). |
+
 !!! note "Nota"
     I ruoli integrati **admin** e **operator** non possono essere rinominati, non è possibile modificarne i permessi, né possono essere eliminati.
+
+### Revisione obbligatoria per ruolo
+
+Con il controllo di accesso utenti abilitato, i [livelli di revisione obbligatoria](../how_to/Inspection_workflow.md#livelli-di-revisione-obbligatoria) si impostano per ciascun ruolo anziché globalmente: l'elenco **Roles** ha una colonna per ogni livello (**Mandatory review**, **Mandatory report** e **Final report**), e la finestra **Edit permissions** del ruolo ha una casella di controllo per ciascuno. Per modificarli è necessario l'accesso alla scheda **Users**.
+
+Le opzioni globali in *Settings → Workflow* appaiono in grigio mentre il controllo di accesso utenti è abilitato, e conservano il loro valore per quando verrà nuovamente disabilitato.
+
+- Il ruolo **admin** non è mai influenzato da queste impostazioni; gli si applica solo un RIFERIMENTO che richieda un livello.
+- I nuovi ruoli partono con i tre livelli disabilitati.
+- La prima volta che i ruoli vengono caricati dopo l'aggiornamento alla 7.11, ogni ruolo esistente assume il valore che aveva l'opzione globale **Mandatory errors review**, così non si perde nessun obbligo esistente. I livelli **report** e **final report** partono disabilitati per tutti i ruoli esistenti.
 
 ## Configurazione
 
@@ -104,7 +126,9 @@ Dal successivo avvio del software, la finestra **User access required** richiede
 
 Il software si apre quindi con i permessi di quell'account.
 
-Per chiudere la sessione e permettere a un altro utente di accedere, usate il pulsante **logout** nell'[area di stato della piattaforma](../how_to/Screen-layout.md).
+L'utente connesso viene mostrato nel [registro attività](../how_to/Screen-layout.md#registro-attivita).
+
+Per chiudere la sessione e permettere a un altro utente di accedere, usate il pulsante **logout** nell'[area di stato della piattaforma](../how_to/Screen-layout.md#disconnessione). Chiede una conferma e poi svuota l'area di lavoro (RIFERIMENTO caricato e risultati dell'ispezione), così l'utente successivo inizia da zero.
 
 ## Gestire gli account
 
@@ -126,7 +150,7 @@ Con il controllo di accesso utenti abilitato, il pannello **User access control*
 
 ![Opzione Lock after inactivity](../assets/v7/user_control/users-general-settings.png){.center}
 
-Trascorso quel tempo, ricompare la finestra **User access required**, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso.
+Trascorso quel tempo, ricompare la finestra **User access required**, come all'avvio, senza chiudere il RIFERIMENTO corrente né perdere i risultati dell'ispezione in corso. Qualsiasi utente attivo può sbloccarla, non solo quello che aveva effettuato l'accesso. Il blocco non si attiva mai durante un'ispezione in corso né mentre è in esecuzione la [Modalità Demo / Loop](../how_to/Settings_menu.md#modalita-demo-loop).
 
 !!! note "Nota"
     Questa opzione compare solo quando il controllo di accesso utenti è abilitato, poiché bloccare l'applicazione richiede un account con cui sbloccarla.

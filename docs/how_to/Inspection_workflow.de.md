@@ -74,6 +74,10 @@ Verwenden Sie die Schaltfläche im Hauptfenster, um zwischen dem **TOP**- und de
 
 ![BOTTOM-Bild](../assets/v7/references/bt-image.png){.center}
 
+Auch die Tasten **Page Up** und **Page Down** wechseln zur **TOP**- bzw. **BOTTOM**-Seite.
+
+Unter [Beide Seiten einer Platine inspizieren](#beide-seiten-einer-platine-inspizieren) erfahren Sie, wie Sie eine doppelseitige PCBA inspizieren, sobald ihre REFERENZ bereit ist.
+
 ---
 
 #### Fokussierung
@@ -146,12 +150,32 @@ Sobald der Aufnahmeprozess beendet ist, wird das Endergebnis zurückgegeben, das
 
 Wenn Fehler erkannt werden, erscheint ein **roter Rahmen** um das Hauptfenster. Ein **grüner Rahmen**, wenn keine Fehler vorliegen.
 
+### Beide Seiten einer Platine inspizieren
+
+Mit einer doppelseitigen REFERENZ können Sie die **TOP**- und die **BOTTOM**-Seite derselben Platine nacheinander inspizieren:
+
+1. Inspizieren Sie die erste Seite wie gewohnt. In der Live-Vorschau zeigt die Schaltfläche **INSPEKTION STARTEN** in einer zweiten Zeile an, welche Seite Sie gleich inspizieren. Prüfen Sie, dass die Platine mit dieser Seite nach oben liegt.
+2. Drehen Sie die Platine um, wechseln Sie zur anderen Seite (mit der [TOP/BOTTOM-Schaltfläche](Screen-layout.md#topbottom-umschalten), den Tasten **Page Up** / **Page Down** oder automatisch mit [TOP/BOTTOM automatisch umschalten](Settings_menu.md#topbottom-automatisch-umschalten)) und inspizieren Sie sie.
+3. Sobald beide Seiten inspiziert wurden, wechseln die TOP/BOTTOM-Schaltfläche und die Tasten **Page Up** / **Page Down** direkt zwischen den **Ergebnissen** der beiden Seiten, sodass Sie eine Seite weiter prüfen können, nachdem Sie die andere aufgenommen haben. Jede Seite behält ihre eigenen Erkennungen, Klassifizierungen und ihre eigene [Empfindlichkeit](Set_sensitivity.md).
+
+Die Ergebnisse werden im Hintergrund gespeichert, während Sie arbeiten. Während eine Seite wiederhergestellt wird, erscheint ein Ladehinweis auf dem Bild.
+
+Sobald beide Seiten einen Bericht haben, wird ein einziger [kombinierter Bericht](#kombinierter-topbottom-bericht) für die gesamte Platine erzeugt.
+
+!!! note "UV-Inspektionen"
+    Eine [UV-Inspektion](../features/UV_conformal_coating_inspection.md) ist unabhängig von der laufenden TOP/BOTTOM-Platine: Sie verwirft die bereits inspizierten Seiten nicht und ist nicht Teil des kombinierten Berichts.
+
 ### Melden von Fehlern
 
 Sobald die Inspektion abgeschlossen ist, muss der Bediener die markierten Fehler überwachen und sie entweder als **tatsächlichen Fehler** oder als **Falsch-Positiv-Erkennung** kennzeichnen.
 Dazu blättern Sie einfach mit den **linken und rechten Pfeiltasten** auf der Tastatur durch die Fehler.
 
-Fehler können auch direkt mit der Maus gemeldet werden: **Linksklick** auf eine Erkennung meldet sie als tatsächlichen Fehler, **Rechtsklick** meldet sie als Falsch-Positiv — entsprechend den unten beschriebenen Pfeiltasten **nach oben** und **nach unten**.
+!!! note "Analysepräferenz"
+    Bei Neuinstallationen beginnt die Prüfung standardmäßig in der [Erkennungsliste](Screen-layout.md#erkennungsliste): Die Pfeiltasten **links** und **rechts** bewegen sich von Zeile zu Zeile der Liste, und die Pfeiltasten **nach oben** und **nach unten** klassifizieren die Zeile unter dem Cursor. Um die Erkennungen wie in früheren Versionen direkt auf dem Bild zu prüfen, stellen Sie die [Analysepräferenz](Settings_menu.md#analysepraferenz) auf **CANVAS**.
+
+Fehler können auch direkt mit der Maus gemeldet werden: **Linksklick** auf eine Erkennung meldet sie als tatsächlichen Fehler, **Rechtsklick** meldet sie als Falsch-Positiv — entsprechend den unten beschriebenen Pfeiltasten **nach oben** und **nach unten**. Jede Zeile der [Erkennungsliste](Screen-layout.md#erkennungsliste) hat außerdem eine Schaltfläche mit **rotem Kreuz** (Fehler) und eine mit **grünem Haken** (Falsch-Positiv).
+
+Ein Linksklick auf eine Erkennung, die bereits als tatsächlicher Fehler gemeldet ist, fragt nach einer Bestätigung, bevor die Meldung rückgängig gemacht wird.
 
 Um einen echten Fehler zu markieren, bewegen Sie sich einfach zum Fehler und drücken Sie die **Pfeiltaste nach oben** auf Ihrer Tastatur. Ein neues Fenster wird angezeigt, das den Fehler detailliert zeigt und es Ihnen ermöglicht, ihn zu kategorisieren, indem Sie einen Fehlertyp aus der Liste auswählen.
 
@@ -168,7 +192,40 @@ Wenn die Software einen Bereich markiert, der kein tatsächlicher Fehler ist, ka
 !!! note "Hinweis"
     Beachten Sie, dass das **rote Symbol** ![Rotes Symbol](../assets/v7/ui-report_red.png){width=20px} die tatsächlichen Fehler und das **grüne Symbol** ![Grünes Symbol](../assets/v7/ui-report_green.png){width=20px} die Falsch-Positiv-Fehler kennzeichnet.
 
-Eine Erkennung, die auf keine der beiden Arten gemeldet wurde, gilt weiterhin als ungeprüft. Ist die [Pflichtprüfung der Fehler](Settings_menu.md#pflichtprufung-der-fehler) aktiviert, genügt es, den Cursor über diese Erkennung zu bewegen, um sie als **viewed** zu markieren — das erfüllt die Prüfanforderung für diese Erkennung ebenfalls.
+!!! note "Berechtigungen"
+    Bei aktivierter [Benutzerzugriffskontrolle](../features/User_control.md) ist zum Melden einer Erkennung die Berechtigung **Classify detected faults** erforderlich. Ohne sie wird die Meldung **Permission denied** angezeigt und nichts gemeldet.
+
+Eine Erkennung, die auf keine der beiden Arten gemeldet wurde, gilt weiterhin als **ungeprüft** (gelb). Bleibt der Mauszeiger etwa **eine Sekunde** lang ruhig über ihr, wird sie als **gesehen** (cyan) markiert: Während Sie warten, füllt sich ein kleiner Ring um die Erkennung, und wenn Sie den Zeiger wegbewegen, bevor er sich schließt, wird nichts markiert. So werden beim Überstreichen der Platine mit der Maus keine Erkennungen markiert, die Sie nicht angesehen haben. Dasselbe gilt, wenn Sie eine Erkennung mit den Pfeiltasten oder über die Erkennungsliste erreichen. Eine als gesehen markierte Erkennung kann danach weiterhin gemeldet werden.
+
+### Verpflichtende Prüfstufen
+
+Die Software kann drei Prüfstufen verlangen, bevor eine neue Inspektion gestartet werden kann. Sie sind voneinander unabhängig und können kombiniert werden:
+
+| Stufe | Was sie verlangt |
+| --- | --- |
+| **Pflichtprüfung der Fehler** | Jede Erkennung geprüft oder zumindest als **gesehen** markiert. |
+| **Pflichtmeldung der Fehler** | Jede Erkennung als tatsächlicher Fehler oder Falsch-Positiv **gemeldet**. Sie nur als gesehen zu markieren, genügt nicht. |
+| **Verpflichtender Abschlussbericht** | Der [endgültige OK-/NICHT-OK-Bericht](#generieren-eines-endgultigen-pdf-berichts) vom Bediener bestätigt. Ein automatisch erzeugter Bericht zählt nicht. |
+
+Ist eine Stufe beim Versuch, die nächste Inspektion zu starten, nicht erfüllt, teilt Ihnen eine Warnung mit, was noch fehlt.
+
+Eine Stufe gilt, wenn **eine beliebige** der folgenden Stellen sie aktiviert hat:
+
+- Die geladene **REFERENZ**, in ihrem Fenster [Referenzoptionen](Screen-layout.md#referenzoptionen).
+- Die **Rolle** des angemeldeten Benutzers, wenn die [Benutzerzugriffskontrolle](../features/User_control.md#pflichtprufung-pro-rolle) aktiviert ist. Die Rolle **admin** ist nur von der REFERENZ betroffen.
+- Die globalen Optionen in den [Workflow-Einstellungen](Settings_menu.md#pflichtprufung-der-fehler), wenn die Benutzerzugriffskontrolle deaktiviert ist.
+
+Solange der [Demo-/Loop-Modus](Settings_menu.md#demo-loop-modus) aktiv ist, wird keine der Stufen verlangt.
+
+Bei einer doppelseitigen Platine wird die Inspektion der anderen Seite derselben Platine nie durch das blockiert, was auf der ersten Seite noch aussteht. Um die **nächste Platine** zu starten, müssen die geltenden Stufen auf **beiden** Seiten erfüllt sein. Um den Abschlussbericht der anderen Seite zu bestätigen, wechseln Sie zu ihr und erzeugen Sie ihren Abschlussbericht.
+
+Ist mindestens eine Stufe aktiviert, gibt jeder Bericht (PDF und JSON) an, wie weit die Prüfung zum Zeitpunkt seiner Erstellung fortgeschritten war, zum Beispiel `MANDATORY REVIEW - Detections: 5 (3 classified, 2 seen, 0 pending)`, und ob der Abschlussbericht bestätigt wurde. Die Zeile wird rot angezeigt, wenn noch etwas ausstand.
+
+#### Warnung bei einer nicht geprüften Seite
+
+Unabhängig von den obigen Stufen warnt Sie die Software vor dem Start der nächsten Platine, wenn eine Seite Erkennungen hat, aber **keine** davon geprüft oder gemeldet wurde. Das Fenster nennt die Seite und lässt Sie trotzdem fortfahren (**OK**) oder zurückgehen, um sie zu prüfen (**CANCEL**).
+
+Diese Warnung wird nicht angezeigt, wenn die nächste Aufnahme die andere Seite derselben Platine ist, bei UV-Inspektionen oder im Demo-/Loop-Modus. Sie kann unter [Settings → Workflow](Settings_menu.md#warnung-bei-nicht-geprufter-seite) deaktiviert werden.
 
 ### Generieren eines endgültigen PDF-Berichts
 
@@ -185,3 +242,12 @@ Es ist möglich, Kommentare hinzuzufügen, die in den Bericht aufgenommen werden
 ![PDF-Bericht](../assets/v7/pdf-report1.png){.center}
 
 ![PDF-Bericht](../assets/v7/pdf-report2.png){.center}
+
+#### Kombinierter TOP/BOTTOM-Bericht
+
+Sobald beide Seiten einer Platine einen Bericht haben, wird im Berichtsordner der TOP-Seite ein einziges kombiniertes PDF erzeugt: ein Deckblatt mit dem Gesamtergebnis und den Daten jeder Seite, gefolgt vom TOP-Bericht und vom BOTTOM-Bericht. Sind [JSON-Berichte](Settings_menu.md#json-bericht-erstellen) aktiviert, wird außerdem ein kombiniertes JSON geschrieben, mit den Daten jeder Seite unter `sides.TOP` und `sides.BOTTOM`.
+
+Sobald der kombinierte Bericht geschrieben wurde, werden die einzelnen PDF- und JSON-Berichte jeder Seite gelöscht, sodass pro Platine nur ein PDF und ein JSON übrig bleiben. Eine Platine, bei der nur eine Seite inspiziert wurde, behält ihren eigenen Bericht, und es wird nichts gelöscht, wenn der kombinierte Bericht nicht geschrieben werden konnte. Die Inspektionsdateien in **PCB_OUT** sind nicht betroffen.
+
+!!! note "Hinweis"
+    Der JSON-Bericht gibt außerdem für jede Erkennung an, ob der Bediener sie als Fehler oder als Falsch-Positiv eingestuft hat oder ob sie noch aussteht (Feld `verdict`).

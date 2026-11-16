@@ -73,6 +73,10 @@ Utilice el botón de la ventana principal para alternar entre las imágenes **TO
 
 ![Imagen BOTTOM](../assets/v7/references/bt-image.png){.center}
 
+Las teclas **Page Up** y **Page Down** también cambian a la cara **TOP** y **BOTTOM** respectivamente.
+
+Consulte [Inspección de ambas caras de una placa](#inspeccion-de-ambas-caras-de-una-placa) para saber cómo inspeccionar una PCBA de doble cara una vez que su REFERENCIA está lista.
+
 ---
 
 #### Enfoque
@@ -145,12 +149,32 @@ Una vez que el proceso de captura haya finalizado, se devolverá el resultado fi
 
 Si se detectan errores, aparecerá un **marco rojo** alrededor de la ventana principal. **Marco verde** si no hay errores.
 
+### Inspección de ambas caras de una placa
+
+Con una REFERENCIA de doble cara puede inspeccionar la cara **TOP** y la **BOTTOM** de la misma placa una tras otra:
+
+1. Inspeccione la primera cara como de costumbre. En la vista previa en vivo, el botón **INICIAR INSPECCIÓN** muestra en una segunda línea qué cara va a inspeccionar. Compruebe que la placa está colocada con esa cara hacia arriba.
+2. Dé la vuelta a la placa, cambie a la otra cara (con el [botón TOP/BOTTOM](Screen-layout.md#alternar-topbottom), las teclas **Page Up** / **Page Down**, o automáticamente con el [cambio automático TOP/BOTTOM](Settings_menu.md#cambio-automatico-topbottom)) e inspecciónela.
+3. Una vez inspeccionadas ambas caras, el botón TOP/BOTTOM y las teclas **Page Up** / **Page Down** alternan directamente entre los **resultados** de las dos caras, de modo que puede seguir revisando una cara después de capturar la otra. Cada cara conserva sus propias detecciones, clasificaciones y [sensibilidad](Set_sensitivity.md).
+
+Los resultados se guardan en segundo plano mientras trabaja. Mientras se restaura una cara, se muestra un aviso de carga sobre la imagen.
+
+Cuando ambas caras tienen informe, se genera un único [informe combinado](#informe-combinado-topbottom) para toda la placa.
+
+!!! note "Inspecciones UV"
+    Una [inspección UV](../features/UV_conformal_coating_inspection.md) es independiente de la placa TOP/BOTTOM en curso: no descarta las caras ya inspeccionadas y no forma parte del informe combinado.
+
 ### Reporte de errores
 
 Una vez que la inspección ha finalizado, el operador debe supervisar los errores marcados, clasificándolos como **error real** o **detección de falso positivo**.
 Para hacer esto, simplemente desplácese por los errores usando las **flechas izquierda y derecha** en el teclado.
 
-Los errores también pueden reportarse directamente con el ratón: haga **clic izquierdo** en una detección para reportarla como error real, o **clic derecho** para reportarla como falso positivo, de forma equivalente a las teclas de flecha **arriba** y **abajo** descritas a continuación.
+!!! note "Preferencia de análisis"
+    Por defecto, en las instalaciones nuevas la revisión empieza en la [lista de detecciones](Screen-layout.md#lista-de-detecciones): las flechas **izquierda** y **derecha** pasan de una fila a otra de la lista y las flechas **arriba** y **abajo** clasifican la fila bajo el cursor. Para revisar las detecciones directamente sobre la imagen, como en versiones anteriores, establezca [Preferencia de análisis](Settings_menu.md#preferencia-de-analisis) en **CANVAS**.
+
+Los errores también pueden reportarse directamente con el ratón: haga **clic izquierdo** en una detección para reportarla como error real, o **clic derecho** para reportarla como falso positivo, de forma equivalente a las teclas de flecha **arriba** y **abajo** descritas a continuación. Cada fila de la [lista de detecciones](Screen-layout.md#lista-de-detecciones) tiene además un botón con una **cruz roja** (error) y otro con un **tic verde** (falso positivo).
+
+Al hacer clic izquierdo en una detección que ya está reportada como error real, se pide confirmación antes de deshacerlo.
 
 Para marcar un error real, simplemente muévase a la falla y presione la **flecha arriba** en su teclado. Aparecerá una nueva ventana que muestra el error en detalle y le permite categorizarlo seleccionando un tipo de falla de la lista.
 
@@ -167,7 +191,40 @@ Cuando el software marca un área que no es un error real, el operador puede mar
 !!! note "Nota"
     Tenga en cuenta que el **icono rojo** ![Icono rojo](../assets/v7/ui-report_red.png){width=20px} marca las fallas reales y el **icono verde** ![Icono verde](../assets/v7/ui-report_green.png){width=20px} las fallas de falso positivo.
 
-Una detección que no ha sido reportada de ninguna de las dos formas sigue sin revisar. Cuando [Revisión obligatoria de errores](Settings_menu.md#revision-obligatoria-de-errores) está habilitada, basta con pasar el cursor por encima de esa detección para marcarla como **viewed**, lo que también satisface el requisito de revisión para esa detección.
+!!! note "Permisos"
+    Con el [control de acceso de usuarios](../features/User_control.md) habilitado, reportar una detección requiere el permiso **Classify detected faults**. Sin él, se muestra el mensaje **Permission denied** y no se reporta nada.
+
+Una detección que no ha sido reportada de ninguna de las dos formas sigue **sin revisar** (amarillo). Mantener el puntero quieto sobre ella durante aproximadamente **un segundo** la marca como **vista** (cian): mientras espera, se rellena un pequeño anillo alrededor de la detección, y no se marca nada si se aparta antes de que se cierre, de modo que barrer la placa con el ratón no marca detecciones que no ha mirado. Funciona igual cuando llega a una detección con las teclas de flecha o desde la lista de detecciones. Una detección marcada como vista puede reportarse después.
+
+### Niveles de revisión obligatoria
+
+El software puede exigir tres niveles de revisión antes de que pueda empezar una nueva inspección. Son independientes y pueden combinarse:
+
+| Nivel | Qué exige |
+| --- | --- |
+| **Revisión obligatoria de errores** | Todas las detecciones revisadas, o al menos marcadas como **vistas**. |
+| **Reporte obligatorio de errores** | Todas las detecciones **reportadas** como error real o falso positivo. Marcarlas como vistas no basta. |
+| **Informe final obligatorio** | El [informe final OK / NO OK](#generacion-de-un-informe-pdf-final) confirmado por el operador. Un informe generado automáticamente no cuenta. |
+
+Si al intentar iniciar la siguiente inspección no se cumple algún nivel, un aviso le indica lo que falta.
+
+Un nivel se aplica cuando **cualquiera** de los siguientes lo tiene habilitado:
+
+- La **REFERENCIA** cargada, en su ventana de [opciones de la Referencia](Screen-layout.md#opciones-de-la-referencia).
+- El **rol** del usuario que ha iniciado sesión, cuando el [control de acceso de usuarios](../features/User_control.md#revision-obligatoria-por-rol) está habilitado. Al rol **admin** solo le afecta la REFERENCIA.
+- Las opciones globales de la [configuración de Workflow](Settings_menu.md#revision-obligatoria-de-errores), cuando el control de acceso de usuarios está deshabilitado.
+
+Ninguno de los niveles se exige mientras el [modo Demo / Loop](Settings_menu.md#modo-demo-loop) está activado.
+
+En una placa de doble cara, inspeccionar la otra cara de la misma placa nunca se bloquea por lo que quede pendiente en la primera. Para empezar la **siguiente placa**, los niveles aplicables deben cumplirse en **ambas** caras. Para confirmar el informe final de la otra cara, cambie a ella y genere su informe final.
+
+Cuando hay al menos un nivel habilitado, cada informe (PDF y JSON) indica hasta dónde había llegado la revisión cuando se generó, por ejemplo `MANDATORY REVIEW - Detections: 5 (3 classified, 2 seen, 0 pending)`, y si el informe final fue confirmado. La línea se muestra en rojo si quedaba algo pendiente.
+
+#### Aviso de cara no revisada
+
+Independientemente de los niveles anteriores, antes de que empiece la siguiente placa el software le avisa si una cara tiene detecciones pero **ninguna** de ellas ha sido revisada ni reportada. La ventana indica la cara y le permite continuar de todos modos (**OK**) o volver a revisarla (**CANCEL**).
+
+Este aviso no se muestra cuando la siguiente captura es la otra cara de la misma placa, en las inspecciones UV ni en el modo Demo / Loop. Puede deshabilitarse en [Settings → Workflow](Settings_menu.md#avisar-de-una-cara-no-revisada).
 
 ### Generación de un informe PDF final
 
@@ -184,3 +241,12 @@ Es posible agregar comentarios que se incluirán en el informe. El PDF se genera
 ![Informe PDF](../assets/v7/pdf-report1.png){.center}
 
 ![Informe PDF](../assets/v7/pdf-report2.png){.center}
+
+#### Informe combinado TOP/BOTTOM
+
+Cuando ambas caras de una placa tienen informe, se genera un único PDF combinado en la carpeta de informes de la cara TOP: una portada con el resultado global y los datos de cada cara, seguida del informe TOP y del informe BOTTOM. Cuando los [informes JSON](Settings_menu.md#crear-informe-json) están habilitados, también se escribe un JSON combinado, con los datos de cada cara en `sides.TOP` y `sides.BOTTOM`.
+
+Una vez escrito el informe combinado, se eliminan los informes PDF y JSON individuales de cada cara, de modo que solo quedan un PDF y un JSON por placa. Una placa con una sola cara inspeccionada conserva su propio informe, y no se elimina nada si no se pudo escribir el informe combinado. Los archivos de inspección de **PCB_OUT** no se ven afectados.
+
+!!! note "Nota"
+    El informe JSON también indica, para cada detección, si el operador decidió que es un error, un falso positivo o si sigue pendiente (campo `verdict`).

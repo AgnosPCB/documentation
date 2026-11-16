@@ -60,4 +60,7 @@ Osserva il PCB sotto illuminazione UV per verificare la corretta applicazione e 
 
 L'immagine UV acquisita viene inclusa nel report finale di ispezione per scopi di documentazione e tracciabilità.
 
+!!! note "Ispezioni UV e schede a doppia faccia"
+    Un'ispezione UV è indipendente dalla scheda TOP/BOTTOM in corso: non scarta i lati già ispezionati né ne modifica le classificazioni, e non fa parte del [report combinato TOP/BOTTOM](../how_to/Inspection_workflow.md#report-combinato-topbottom). Le ispezioni UV non mostrano avvisi di rotazione o spostamento, poiché l'immagine UV non è allineata con il RIFERIMENTO.
+
 ![Report ispezione UV](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

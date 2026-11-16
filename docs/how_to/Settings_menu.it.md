@@ -22,6 +22,12 @@ Per impostazione predefinita, il software numera ogni errore dopo l'ispezione. D
 
 Questa opzione consente di cambiare il colore dell'errore contrassegnato. Quando il colore dell'errore contrassegnato coincide con quello della PCBA, è consigliabile scegliere un colore a contrasto maggiore per rendere più visibili le aree contrassegnate.
 
+#### Mostra statistiche e mappa di calore degli errori per Riferimento
+
+Aggiunge al [pannello informazioni del Riferimento](Screen-layout.md#pannello-informazioni-del-riferimento) le statistiche di ispezione del RIFERIMENTO caricato e una mappa di calore dei punti in cui le sue schede presentano difetti. Disabilitata per impostazione predefinita.
+
+Le statistiche vengono raccolte anche mentre questa opzione è disabilitata, quindi lo storico è già disponibile quando la si abilita. Le ispezioni eseguite prima della versione 7.10 non sono incluse.
+
 #### Lingua
 
 Cambia la lingua dell'interfaccia. Le lingue attualmente disponibili sono: **inglese, francese, tedesco, italiano e spagnolo**.
@@ -64,13 +70,53 @@ Attivando questa opzione, il software manterrà la sensibilità di ispezione con
 
 #### Revisione obbligatoria degli errori
 
-Se questa opzione è abilitata, il software non continuerà a ispezionare nuovi pannelli finché tutte le rilevazioni dell'ispezione corrente non saranno state esaminate: [segnalate](Inspection_workflow.md#segnalazione-degli-errori) come errore o come falso positivo, oppure almeno contrassegnate come **viewed** passando il cursore sopra di esse.
+Se questa opzione è abilitata, il software non avvierà una nuova ispezione finché tutte le rilevazioni di quella corrente non saranno state esaminate: [segnalate](Inspection_workflow.md#segnalazione-degli-errori) come errore o come falso positivo, oppure almeno contrassegnate come **seen**.
+
+#### Segnalazione obbligatoria degli errori
+
+Se questa opzione è abilitata, ogni rilevazione deve essere **classificata** come errore o come falso positivo prima che possa iniziare una nuova ispezione. Contrassegnarla come seen non è sufficiente. Include la revisione descritta sopra.
+
+#### Report finale obbligatorio
+
+Se questa opzione è abilitata, l'operatore deve confermare il [report finale OK / NON OK](Inspection_workflow.md#generazione-di-un-report-pdf-finale) dell'ispezione prima che ne possa iniziare una nuova. Un report generato automaticamente da [Report automatico](#report-automatico) non viene conteggiato.
+
+!!! note "Dove si applicano queste tre opzioni"
+    Queste opzioni si applicano a tutti solo mentre il [controllo di accesso utenti](../features/User_control.md) è disabilitato. Quando è abilitato, le tre caselle di controllo appaiono in grigio e ogni **ruolo** ha invece la propria impostazione. Anche un RIFERIMENTO può richiederne una qualsiasi, chiunque ispezioni con esso. Consultate [Livelli di revisione obbligatoria](Inspection_workflow.md#livelli-di-revisione-obbligatoria) per sapere come si combinano.
+
+#### Avvisa se un lato non è stato esaminato
+
+Prima che inizi la scheda successiva, il software vi avvisa se un lato della scheda corrente presenta rilevazioni ma nessuna di esse è stata esaminata o segnalata, e vi permette di continuare (**OK**) o di tornare indietro (**CANCEL**). È un avviso, non un blocco. Abilitata per impostazione predefinita. Consultate [Livelli di revisione obbligatoria](Inspection_workflow.md#avviso-per-un-lato-non-esaminato).
 
 #### Cambio automatico TOP/BOTTOM
 
 Per i RIFERIMENTI a doppia faccia, abilitando questa opzione si passa automaticamente all'altro lato (**TOP**/**BOTTOM**) all'inizio dell'ispezione successiva, senza bisogno di un [cambio manuale](Screen-layout.md#alterna-topbottom).
 
 ![Opzione di cambio automatico TOP/BOTTOM](../assets/v7/settings/top-bottom-settings.png){.center}
+
+#### Preferenza di analisi
+
+Imposta dove esaminare le rilevazioni dopo un'ispezione:
+
+- **LIST** (predefinita sulle nuove installazioni): il cursore va alla prima riga dell'[elenco delle rilevazioni](Screen-layout.md#elenco-delle-rilevazioni). I tasti freccia **sinistra** e **destra** si spostano lungo l'elenco e i tasti freccia **su** e **giù** classificano la riga sotto il cursore come errore o come falso positivo.
+- **CANVAS**: il cursore va alla prima rilevazione sull'immagine e i tasti freccia si spostano tra le rilevazioni sull'immagine.
+
+Le installazioni aggiornate da una versione precedente mantengono il valore che avevano già.
+
+#### Max. varianti per Riferimento
+
+Numero massimo di [Varianti di riferimento](../features/Multivariant_feature.md) utilizzate per ogni RIFERIMENTO: 20 per impostazione predefinita, fino a 50. Aumentandolo viene mostrato un avviso, perché il pannello delle varianti e l'ispezione diventano più lenti con più varianti. Un RIFERIMENTO che ha più varianti del limite utilizza solo le prime; le altre vengono conservate intatte.
+
+#### Modalità Demo / Loop
+
+Dopo che l'operatore ha eseguito manualmente la prima ispezione, il software continua a ripetere automaticamente l'acquisizione e l'ispezione. È pensata per dimostrazioni non presidiate.
+
+- Si disattiva da sola alla chiusura dell'applicazione, quindi l'avvio successivo avviene sempre in modalità normale.
+- Mentre è attiva, nessuno dei livelli di revisione obbligatoria è richiesto.
+- Selezionando una qualsiasi delle tre opzioni obbligatorie descritte sopra questa modalità viene deselezionata, e viceversa.
+- Con il [controllo di accesso utenti](../features/User_control.md) abilitato, solo il ruolo **admin** può modificarla.
+
+!!! warning "Importante"
+    Esecuzioni non presidiate prolungate con sequenze di acquisizione molto grandi (12 o più immagini) possono esaurire la memoria del computer. Evitate di lasciare in ciclo sequenze molto grandi per lunghi periodi.
 
 ## Opzioni del report
 
@@ -105,7 +151,7 @@ Imposta un TAG NO OK personalizzato per il report PDF finale.
 Quando questa opzione è abilitata, verrà generato automaticamente un report PDF finale etichettato come OK se non vengono rilevati errori dopo l'ispezione. Il report PDF finale può essere generato anche se vengono rilevati errori durante l'ispezione.
 
 !!! note "Nota"
-    Quando si genera automaticamente un report PDF, tutti gli errori rilevati vengono contrassegnati con l'etichetta "unknown".
+    Quando si genera automaticamente un report PDF, tutti gli errori rilevati vengono contrassegnati con l'etichetta "unknown". Un report automatico non viene conteggiato come report finale confermato ai fini del [Report finale obbligatorio](#report-finale-obbligatorio).
 
 #### Mostra tutti i difetti
 
@@ -171,7 +217,7 @@ Abilitando queste opzioni, il sistema condividerà automaticamente le cartelle P
 
 ![Sezione utenti del menu Impostazioni](../assets/v7/settings/users-settings.png){.center}
 
-Questa scheda è disponibile solo per gli utenti con ruolo **admin**. Consente di creare gli account che possono utilizzare l'AOI, ciascuno con un ruolo **admin** oppure **operator**, e di richiedere nome utente e password ogni volta che il software viene avviato.
+Questa scheda è disponibile solo per gli utenti con ruolo **admin**, oppure con un ruolo a cui è stato concesso l'accesso. Consente di creare gli account che possono utilizzare l'AOI, di definirne ruoli e permessi, e di richiedere nome utente e password ogni volta che il software viene avviato.
 
 Per abilitare **Enable user access control** deve esistere almeno un account **admin** attivo.
 
@@ -194,18 +240,20 @@ Per maggiori informazioni su questa funzionalità, consultate la sezione seguent
 
 ![Sezione macchina del menu Impostazioni](../assets/v7/settings/machine-settings.png){.center}
 
-Questa scheda è disponibile solo per gli utenti con ruolo **admin**. Mostra i parametri hardware della vostra unità, memorizzati nel file **machine.json**.
+Questa scheda è disponibile solo per gli utenti con ruolo **admin**. Mostra i parametri hardware modificabili della vostra unità, memorizzati nel file **machine.json**, raggruppati in base a ciò su cui influiscono e ciascuno con una breve spiegazione:
 
-La maggior parte dei valori è visualizzata in grigio: sono mostrati **solo a titolo informativo** e non possono essere modificati. I campi evidenziati in blu sono quelli modificabili:
+| Gruppo | Campo | Descrizione |
+| --- | --- | --- |
+| Movimento | **Acceleration (X / Y / Z)** | Accelerazione di ciascun asse. Valori più alti rendono il movimento più rapido, ma possono causare perdita di passi o vibrazioni. |
+| Movimento | **Homing sensitivity (X / Y / Z)** | Il modo in cui ciascun asse rileva di aver raggiunto la posizione di origine. |
+| Telecamera | **Capture gain** | Guadagno della telecamera durante l'acquisizione. Valori più alti schiariscono l'immagine ma aggiungono rumore. |
+| Telecamera | **Exposure (µs)** | Tempo di esposizione della telecamera. Valori più alti fanno entrare più luce ma aumentano il rischio di sfocatura dovuta alle vibrazioni. |
+| Telecamera | **Rotate image 180°** | Ruota l'immagine della telecamera di 180°. Abilitatela solo se la telecamera è montata capovolta. |
 
-| Campo | Descrizione |
-| --- | --- |
-| **xacc** / **yacc** / **zacc** | Accelerazione di ciascun asse. |
-| **xhome** / **yhome** / **zhome** | Scostamento della posizione di origine di ciascun asse. |
-| **capture_gain** | Guadagno della telecamera durante l'acquisizione. |
-| **exposure** | Tempo di esposizione della telecamera. |
+Premete **Save changes** per memorizzare i nuovi valori, oppure **Reset to factory default** per ripristinare tutti i parametri al valore originale.
 
-Premete **Save changes** per applicare i nuovi valori, oppure **Reset to factory default** per ripristinare tutti i parametri al valore originale.
+!!! note "Nota"
+    Le modifiche non vengono applicate immediatamente. Riavviate l'applicazione affinché i nuovi valori abbiano effetto.
 
 !!! warning "Importante"
     Questi parametri influiscono sul movimento della piattaforma e sull'acquisizione delle immagini. Modificarli in modo errato può degradare la qualità dell'immagine o il movimento degli assi. Modificateli solo quando il [supporto](mailto:support@agnospcb.com) ve lo richiede.

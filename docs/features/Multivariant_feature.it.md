@@ -46,6 +46,9 @@ Questa variante non verrà più segnalata come errore nelle future ispezioni.
 
 Anche dopo aver creato una variante di riferimento, il sistema continuerà a rilevare eventuali difetti reali su quel componente, qualora si verifichino.
 
+!!! note "Numero massimo di varianti"
+    Ogni RIFERIMENTO utilizza per impostazione predefinita fino a 20 varianti. Il limite può essere aumentato fino a 50 con [Max. varianti per Riferimento](../how_to/Settings_menu.md#max-varianti-per-riferimento), al prezzo di un pannello delle varianti e di un'ispezione più lenti. Un RIFERIMENTO con più varianti del limite utilizza solo le prime; le altre vengono conservate intatte.
+
 Il report finale di ispezione includerà anche la variante di riferimento, insieme alla sua immagine, al nome assegnato e a eventuali osservazioni aggiuntive.
 
 ![Report PDF variante di riferimento](../assets/ref-variant-report.png){width=600 .center}

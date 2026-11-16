@@ -22,6 +22,12 @@ Standardmäßig numeriert die Software jeden Fehler nach der Inspektion. Wenn di
 
 Mit dieser Option können Sie die Farbe des markierten Fehlers ändern. Wenn die Farbe des markierten Fehlers mit der Farbe der PCBA übereinstimmt, empfiehlt es sich, eine kontrastreichere Farbe zu wählen, damit die markierten Bereiche besser sichtbar sind.
 
+#### Statistiken und Fehler-Heatmap pro Referenz anzeigen
+
+Fügt dem [Referenz-Informationspanel](Screen-layout.md#referenz-informationspanel) die Inspektionsstatistiken der geladenen REFERENZ und eine Heatmap hinzu, die zeigt, wo ihre Platinen Fehler aufweisen. Standardmäßig deaktiviert.
+
+Die Statistiken werden auch erfasst, während diese Option deaktiviert ist, sodass der Verlauf bereits vorhanden ist, wenn Sie sie aktivieren. Inspektionen vor Version 7.10 sind nicht enthalten.
+
 #### Sprache
 
 Ändert die Sprache der Benutzeroberfläche. Derzeit verfügbare Sprachen: **Englisch, Französisch, Deutsch, Italienisch und Spanisch**.
@@ -64,13 +70,53 @@ Wenn Sie diese Option aktivieren, behält die Software die konfigurierte Inspekt
 
 #### Pflichtprüfung der Fehler
 
-Wenn diese Option aktiviert ist, setzt die Software die Inspektion neuer Platinen erst fort, wenn jede Erkennung der aktuellen Inspektion überprüft wurde: entweder als Fehler oder als Falsch-Positiv [gemeldet](Inspection_workflow.md#melden-von-fehlern), oder zumindest durch Überfahren mit dem Mauszeiger als **viewed** markiert.
+Wenn diese Option aktiviert ist, startet die Software keine neue Inspektion, bis jede Erkennung der aktuellen Inspektion überprüft wurde: entweder als Fehler oder als Falsch-Positiv [gemeldet](Inspection_workflow.md#melden-von-fehlern), oder zumindest als **gesehen** markiert.
+
+#### Pflichtmeldung der Fehler
+
+Wenn diese Option aktiviert ist, muss jede Erkennung als Fehler oder Falsch-Positiv **klassifiziert** werden, bevor eine neue Inspektion gestartet werden kann. Sie nur als gesehen zu markieren, genügt nicht. Sie schließt die obige Prüfung ein.
+
+#### Verpflichtender Abschlussbericht
+
+Wenn diese Option aktiviert ist, muss der Bediener den [endgültigen OK-/NICHT-OK-Bericht](Inspection_workflow.md#generieren-eines-endgultigen-pdf-berichts) der Inspektion bestätigen, bevor eine neue gestartet werden kann. Ein durch den [Automatischen Bericht](#automatischer-bericht) erzeugter Bericht zählt nicht.
+
+!!! note "Wo diese drei Optionen gelten"
+    Diese Optionen gelten nur für alle, solange die [Benutzerzugriffskontrolle](../features/User_control.md) deaktiviert ist. Ist sie aktiviert, sind die drei Kontrollkästchen ausgegraut, und stattdessen hat jede **Rolle** ihre eigene Einstellung. Auch eine REFERENZ kann jede dieser Stufen verlangen, unabhängig davon, wer mit ihr inspiziert. Unter [Verpflichtende Prüfstufen](Inspection_workflow.md#verpflichtende-prufstufen) erfahren Sie, wie sie zusammenwirken.
+
+#### Warnung bei nicht geprüfter Seite
+
+Vor dem Start der nächsten Platine warnt Sie die Software, wenn eine Seite der aktuellen Platine Erkennungen hat, aber keine davon geprüft oder gemeldet wurde, und lässt Sie fortfahren (**OK**) oder zurückgehen (**CANCEL**). Es handelt sich um eine Warnung, nicht um eine Sperre. Standardmäßig aktiviert. Siehe [Verpflichtende Prüfstufen](Inspection_workflow.md#warnung-bei-einer-nicht-gepruften-seite).
 
 #### TOP/BOTTOM automatisch umschalten
 
 Bei doppelseitigen REFERENZEN wechselt die Software mit dieser Option zu Beginn der nächsten Inspektion automatisch zur anderen Seite (**TOP**/**BOTTOM**), ohne dass ein [manuelles Umschalten](Screen-layout.md#topbottom-umschalten) erforderlich ist.
 
 ![Option zum automatischen TOP/BOTTOM-Umschalten](../assets/v7/settings/top-bottom-settings.png){.center}
+
+#### Analysepräferenz
+
+Legt fest, wo Sie die Erkennungen nach einer Inspektion prüfen:
+
+- **LIST** (Standard bei Neuinstallationen): Der Cursor springt zur ersten Zeile der [Erkennungsliste](Screen-layout.md#erkennungsliste). Die Pfeiltasten **links** und **rechts** bewegen sich durch die Liste, und die Pfeiltasten **nach oben** und **nach unten** klassifizieren die Zeile unter dem Cursor als Fehler oder Falsch-Positiv.
+- **CANVAS**: Der Cursor springt zur ersten Erkennung auf dem Bild, und die Pfeiltasten bewegen sich zwischen den Erkennungen auf dem Bild.
+
+Installationen, die von einer früheren Version aktualisiert wurden, behalten ihren bisherigen Wert.
+
+#### Max. Varianten pro Referenz
+
+Maximale Anzahl an [Referenzvarianten](../features/Multivariant_feature.md), die für jede REFERENZ verwendet werden: standardmäßig 20, bis zu 50. Beim Erhöhen erscheint eine Warnung, da das Variantenpanel und die Inspektion mit mehr Varianten langsamer werden. Hat eine REFERENZ mehr Varianten als das Limit, werden nur die ersten verwendet; die übrigen bleiben unverändert erhalten.
+
+#### Demo-/Loop-Modus
+
+Nachdem der Bediener die erste Inspektion manuell durchgeführt hat, wiederholt die Software Aufnahme und Inspektion automatisch fortlaufend. Der Modus ist für unbeaufsichtigte Vorführungen gedacht.
+
+- Er schaltet sich beim Schließen der Anwendung selbst ab, sodass der nächste Start immer im normalen Modus erfolgt.
+- Solange er aktiv ist, wird keine der verpflichtenden Prüfstufen verlangt.
+- Das Aktivieren einer der drei obigen Pflichtoptionen deaktiviert diesen Modus und umgekehrt.
+- Bei aktivierter [Benutzerzugriffskontrolle](../features/User_control.md) kann ihn nur die Rolle **admin** ändern.
+
+!!! warning "Wichtig"
+    Lange unbeaufsichtigte Läufe mit sehr großen Aufnahmesequenzen (12 oder mehr Bilder) können den Arbeitsspeicher des Computers aufbrauchen. Lassen Sie sehr große Sequenzen nicht über längere Zeit in Schleife laufen.
 
 ## Berichtsoptionen
 
@@ -105,7 +151,7 @@ Legt ein benutzerdefiniertes NO-OK-TAG für den endgültigen PDF-Bericht fest.
 Wenn diese Option aktiviert ist, wird automatisch ein endgültiger, mit OK gekennzeichneter PDF-Bericht erzeugt, sofern nach der Inspektion keine Fehler erkannt wurden. Der endgültige PDF-Bericht kann auch erzeugt werden, wenn während der Inspektion Fehler erkannt werden.
 
 !!! note "Hinweis"
-    Bei der automatischen Erzeugung eines PDF-Berichts werden alle erkannten Fehler mit der Bezeichnung "unknown" markiert.
+    Bei der automatischen Erzeugung eines PDF-Berichts werden alle erkannten Fehler mit der Bezeichnung "unknown" markiert. Ein automatischer Bericht zählt für den [Verpflichtenden Abschlussbericht](#verpflichtender-abschlussbericht) nicht als bestätigter Abschlussbericht.
 
 #### Alle Fehler anzeigen
 
@@ -171,7 +217,7 @@ Wenn Sie diese Optionen aktivieren, gibt das System die Ordner PCB_OUT und REFER
 
 ![Benutzerabschnitt des Einstellungsmenüs](../assets/v7/settings/users-settings.png){.center}
 
-Diese Registerkarte ist nur für Benutzer mit der Rolle **admin** verfügbar. Sie erlaubt es, die Konten anzulegen, die die AOI bedienen dürfen — jedes mit der Rolle **admin** oder **operator** — und bei jedem Start der Software einen Benutzernamen und ein Passwort zu verlangen.
+Diese Registerkarte ist nur für Benutzer mit der Rolle **admin** verfügbar oder mit einer Rolle, der der Zugriff darauf gewährt wurde. Sie erlaubt es, die Konten anzulegen, die die AOI bedienen dürfen, ihre Rollen und Berechtigungen festzulegen und bei jedem Start der Software einen Benutzernamen und ein Passwort zu verlangen.
 
 Um **Enable user access control** zu aktivieren, muss mindestens ein aktives **admin**-Konto vorhanden sein.
 
@@ -194,18 +240,20 @@ Weitere Informationen zu dieser Funktion finden Sie im folgenden Abschnitt: [Ben
 
 ![Maschinenabschnitt des Einstellungsmenüs](../assets/v7/settings/machine-settings.png){.center}
 
-Diese Registerkarte ist nur für Benutzer mit der Rolle **admin** verfügbar. Sie zeigt die Hardware-Parameter Ihrer Einheit an, die in der Datei **machine.json** gespeichert sind.
+Diese Registerkarte ist nur für Benutzer mit der Rolle **admin** verfügbar. Sie zeigt die änderbaren Hardware-Parameter Ihrer Einheit an, die in der Datei **machine.json** gespeichert sind, gruppiert nach ihrem Wirkungsbereich und jeweils mit einer kurzen Erklärung:
 
-Die meisten Werte werden ausgegraut dargestellt: sie dienen **nur zur Information** und können nicht geändert werden. Die blau hervorgehobenen Felder sind die bearbeitbaren:
+| Gruppe | Feld | Beschreibung |
+| --- | --- | --- |
+| Motion | **Acceleration (X / Y / Z)** | Beschleunigung der jeweiligen Achse. Höhere Werte bewegen sich schneller, können aber Schrittverluste oder Vibrationen verursachen. |
+| Motion | **Homing sensitivity (X / Y / Z)** | Wie die jeweilige Achse erkennt, dass sie ihre Ausgangsposition erreicht hat. |
+| Camera | **Capture gain** | Kameraverstärkung während der Aufnahme. Höhere Werte machen das Bild heller, erhöhen aber das Rauschen. |
+| Camera | **Exposure (µs)** | Belichtungszeit der Kamera. Höhere Werte lassen mehr Licht herein, erhöhen aber das Risiko von Unschärfe durch Vibrationen. |
+| Camera | **Rotate image 180°** | Dreht das Kamerabild um 180°. Aktivieren Sie diese Option nur, wenn die Kamera kopfüber montiert ist. |
 
-| Feld | Beschreibung |
-| --- | --- |
-| **xacc** / **yacc** / **zacc** | Beschleunigung der jeweiligen Achse. |
-| **xhome** / **yhome** / **zhome** | Versatz der Ausgangsposition der jeweiligen Achse. |
-| **capture_gain** | Kameraverstärkung während der Aufnahme. |
-| **exposure** | Belichtungszeit der Kamera. |
+Drücken Sie **Save changes**, um die neuen Werte zu speichern, oder **Reset to factory default**, um alle Parameter auf ihren ursprünglichen Wert zurückzusetzen.
 
-Drücken Sie **Save changes**, um die neuen Werte anzuwenden, oder **Reset to factory default**, um alle Parameter auf ihren ursprünglichen Wert zurückzusetzen.
+!!! note "Hinweis"
+    Die Änderungen werden nicht sofort übernommen. Starten Sie die Anwendung neu, damit die neuen Werte wirksam werden.
 
 !!! warning "Wichtig"
     Diese Parameter beeinflussen die Bewegung der Plattform und die Bildaufnahme. Eine falsche Änderung kann die Bildqualität oder die Bewegung der Achsen verschlechtern. Ändern Sie sie nur, wenn der [Support](mailto:support@agnospcb.com) Sie dazu auffordert.

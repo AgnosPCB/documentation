@@ -26,3 +26,6 @@ Die Empfindlichkeit bezieht sich auf den Grad der Akribie oder Strenge, den das 
 
 
 ![Leiterplatte mit Fehlern bei sehr hoher Empfindlichkeit](../assets/very-high-sensitivity.png){.center}
+
+!!! note "Doppelseitige Platinen"
+    Beim [Inspizieren beider Seiten einer Platine](Inspection_workflow.md#beide-seiten-einer-platine-inspizieren) behält jede Seite ihre eigene Empfindlichkeit. Wenn Sie zu einer Seite zurückwechseln, wird die Stufe wiederhergestellt, auf der Sie sie verlassen haben, und der Bericht jeder Seite gibt ihre eigene Stufe an.

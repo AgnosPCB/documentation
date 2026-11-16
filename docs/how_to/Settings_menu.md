@@ -22,6 +22,12 @@ By default, the software numbers each error after the inspection. When this opti
 
 This option allows you to change the color of the marked error. When the color of the marked error matches the color of the PCBA, it's advisable to change it to a higher contrast color to make the marked areas more visible.
 
+#### Show statistics and error heatmap per Reference
+
+Adds the inspection statistics of the loaded REFERENCE and a heatmap of where its boards fail to the [Reference information panel](Screen-layout.md#reference-information-panel). Disabled by default.
+
+The statistics are collected even while this option is disabled, so the history is already there when you enable it. Inspections made before version 7.10 are not included.
+
 #### Language
 
 Change the interface language. The current available languages are: **English, French, German, Italian and Spanish**.
@@ -66,13 +72,53 @@ By activating this option, the software will maintain the configured inspection 
 
 #### Mandatory errors review
 
-If this option is enabled, the software will not continue inspecting new panels until every detection in the current inspection has been reviewed: [reported](Inspection_workflow.md#reporting-errors) as an error or a false positive, or at least marked as **viewed** by hovering the cursor over it.
+If this option is enabled, the software will not start a new inspection until every detection in the current one has been reviewed: [reported](Inspection_workflow.md#reporting-errors) as an error or a false positive, or at least marked as **seen**.
+
+#### Mandatory errors report
+
+If this option is enabled, every detection must be **classified** as an error or a false positive before a new inspection can start. Marking it as seen is not enough. It includes the review above.
+
+#### Mandatory final report
+
+If this option is enabled, the operator must confirm the [final OK / NOT OK report](Inspection_workflow.md#generating-a-final-pdf-report) of the inspection before a new one can start. A report generated automatically by [Auto report](#auto-report) does not count.
+
+!!! note "Where these three options apply"
+    These options apply to everyone only while [user access control](../features/User_control.md) is disabled. With it enabled, the three checkboxes are grayed out and each **role** has its own setting instead. A REFERENCE can also require any of them, whoever inspects with it. See [Mandatory review levels](Inspection_workflow.md#mandatory-review-levels) for how they combine.
+
+#### Warn about a side not reviewed
+
+Before the next board starts, the software warns you if a side of the current board has detections but none of them has been reviewed or reported, and lets you continue (**OK**) or go back (**CANCEL**). It is a warning, not a block. Enabled by default. See [Mandatory review levels](Inspection_workflow.md#warning-about-a-side-not-reviewed).
 
 #### TOP/BOTTOM auto switch
 
 For double-sided REFERENCES, enabling this option automatically switches to the other side (**TOP**/**BOTTOM**) at the start of the next inspection, instead of requiring a [manual switch](Screen-layout.md#switch-topbottom).
 
 ![TOP/BOTTOM auto switch option](../assets/v7/settings/top-bottom-settings.png){.center}
+
+#### Analysis preference
+
+Sets where you review the detections after an inspection:
+
+- **LIST** (default on new installations): the cursor goes to the first row of the [detections list](Screen-layout.md#detections-list). The **left** and **right** arrow keys move along the list and the **up** and **down** arrow keys classify the row under the cursor as an error or a false positive.
+- **CANVAS**: the cursor goes to the first detection on the image, and the arrow keys move between the detections on the image.
+
+Installations updated from a previous version keep the value they already had.
+
+#### Max. variants per Reference
+
+Maximum number of [Reference Variants](../features/Multivariant_feature.md) used for each REFERENCE: 20 by default, up to 50. Raising it shows a warning, because the variants panel and the inspection get slower with more variants. A REFERENCE that has more variants than the limit only uses the first ones; the rest are kept untouched.
+
+#### Demo / Loop mode
+
+After the operator runs the first inspection manually, the software keeps repeating the capture and the inspection automatically. It is meant for unattended demonstrations.
+
+- It turns itself off when the application is closed, so the next start is always in normal mode.
+- While it is on, none of the mandatory review levels is required.
+- Checking any of the three mandatory options above unchecks this mode, and the other way round.
+- With [user access control](../features/User_control.md) enabled, only the **admin** role can change it.
+
+!!! warning "Important"
+    Long unattended runs with very large capture sequences (12 or more images) can use up the memory of the computer. Avoid leaving very large sequences looping for long periods.
 
 ## Report options
 
@@ -107,7 +153,7 @@ Set a custom NO OK TAG for the final PDF report.
 When this option is enabled, a final PDF report labeled OK will be automatically generated if no errors are detected after the inspection. The final PDF report can also be generated if any errors are detected during the inspection.
 
 !!! note "Note"
-    When generating a PDF report automatically, all errors detected will be marked with the "unknown" label.
+    When generating a PDF report automatically, all errors detected will be marked with the "unknown" label. An automatic report does not count as a confirmed final report for [Mandatory final report](#mandatory-final-report).
 
 #### Show all faults
 
@@ -173,7 +219,7 @@ By enabling these options, the system will automatically share the PCB_OUT and R
 
 ![Settings menu users section](../assets/v7/settings/users-settings.png){.center}
 
-This tab is only available to users with the **admin** role. It allows you to create the accounts that can operate the AOI, each one with an **admin** or **operator** role, and to require a username and password every time the software starts.
+This tab is only available to users with the **admin** role, or with a role that has been granted access to it. It allows you to create the accounts that can operate the AOI, to define their roles and permissions, and to require a username and password every time the software starts.
 
 Enabling **Enable user access control** requires at least one active **admin** account to exist.
 
@@ -196,18 +242,20 @@ Learn more about this functionality in the following section: [Custom capture se
 
 ![Settings menu machine section](../assets/v7/settings/machine-settings.png){.center}
 
-This tab is only available to users with the **admin** role. It displays the hardware parameters of your unit, stored in the **machine.json** file.
+This tab is only available to users with the **admin** role. It shows the hardware parameters of your unit that can be modified, stored in the **machine.json** file, grouped by what they affect and each with a short explanation:
 
-Most of the values are shown grayed out: they are displayed **for reference only** and cannot be modified. The fields highlighted in blue are the editable ones:
+| Group | Field | Description |
+| --- | --- | --- |
+| Motion | **Acceleration (X / Y / Z)** | Acceleration of each axis. Higher values move faster but can cause skipped steps or vibration. |
+| Motion | **Homing sensitivity (X / Y / Z)** | How each axis detects that it has reached its home position. |
+| Camera | **Capture gain** | Camera gain during the capture. Higher values brighten the image but add noise. |
+| Camera | **Exposure (µs)** | Camera exposure time. Higher values let in more light but increase the risk of blur from vibration. |
+| Camera | **Rotate image 180°** | Rotates the camera image 180°. Enable it only if the camera is mounted upside down. |
 
-| Field | Description |
-| --- | --- |
-| **xacc** / **yacc** / **zacc** | Acceleration of each axis. |
-| **xhome** / **yhome** / **zhome** | Home position offset of each axis. |
-| **capture_gain** | Camera gain during the capture. |
-| **exposure** | Camera exposure time. |
+Press **Save changes** to store the new values, or **Reset to factory default** to restore every parameter to its original value.
 
-Press **Save changes** to apply the new values, or **Reset to factory default** to restore every parameter to its original value.
+!!! note "Note"
+    The changes are not applied immediately. Restart the application for the new values to take effect.
 
 !!! warning "Important"
     These parameters affect how the platform moves and how the images are captured. Modifying them incorrectly may degrade the image quality or the movement of the axes. Change them only when [support](mailto:support@agnospcb.com) asks you to.

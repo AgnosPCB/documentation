@@ -26,3 +26,6 @@ La Sensibilità si riferisce al grado di meticolosità o rigore impiegato dal si
 
 
 ![PCB con errori in sensibilità molto alta](../assets/very-high-sensitivity.png){.center}
+
+!!! note "Schede a doppia faccia"
+    Quando si [ispezionano entrambi i lati di una scheda](Inspection_workflow.md#ispezionare-entrambi-i-lati-di-una-scheda), ogni lato conserva la propria sensibilità. Tornando a un lato viene ripristinato il livello con cui lo avevate lasciato, e il report di ciascun lato indica il proprio livello.

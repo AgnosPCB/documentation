@@ -151,11 +151,12 @@ und einem stehenden Förderband aus:
 | Einstellung | Ort | Empfohlener Wert | Warum |
 |---|---|---|---|
 | **Operator mode** | Workflow | Aktiviert | Blendet die Referenzaufnahme aus und verhindert, dass ein Bediener die REFERENZ oder die Empfindlichkeit während der Schicht ändert. Schützen Sie es mit einem Einstellungspasswort (siehe [Einstellungsmenü](../how_to/Settings_menu.md)). |
-| **Mandatory errors review** | Workflow | **Deaktiviert** | Ist diese Option aktiviert, wartet die Software, bis ein Mensch jeden Fehler überprüft hat, bevor die nächste Inspektion zugelassen wird — dies blockiert die Linie. |
+| **Mandatory errors review**, **Mandatory errors report** und **Mandatory final report** | Workflow | **Deaktiviert** | Ist eine dieser Optionen aktiviert, wartet die Software, bis ein Mensch jeden Fehler überprüft, klassifiziert oder den Abschlussbericht bestätigt hat, bevor die nächste Inspektion zugelassen wird — dies blockiert die Linie. Bei aktivierter Benutzerzugriffskontrolle prüfen Sie außerdem die Rolle des Benutzers und die [Referenzoptionen](../how_to/Screen-layout.md#referenzoptionen) jeder REFERENZ. |
+| **Warn about a side not reviewed** | Workflow | Deaktiviert | Verhindert, dass vor der nächsten Platine ein Bestätigungsfenster auf eine Eingabe wartet. |
 | **Show errors popup** | Workflow | Deaktiviert | Verhindert, dass ein modaler Dialog während des Automatikbetriebs auf eine Eingabe wartet. |
 | **Show references mosaic** | Workflow | Deaktiviert | Vermeidet ein Popup nach der Bildaufnahme. |
 | **Auto report OK / NOK** | Reports | Beide aktiviert | Erzeugt das PDF für jede Platine ohne Bedienereingriff, sodass die Linie einen vollständigen Rückverfolgbarkeitsnachweis erzeugt. |
-| **Create JSON report** | Reports | Aktiviert | Maschinenlesbares Ergebnis für Ihr MES/SCADA. Erfordert eine Lizenz. |
+| **Create JSON report** | Reports | Aktiviert | Maschinenlesbares Ergebnis für Ihr MES/SCADA. Erfordert eine Lizenz. Für doppelseitige Platinen beachten Sie den Hinweis unten. |
 | **Use barcodes** | Workflow | Aktiviert | Ermöglicht es der AOI, die richtige REFERENZ automatisch anhand des Barcodes der Platine zu laden, sodass Linien mit gemischten Produkten keinen manuellen Produktwechsel benötigen. Erfordert eine Lizenz. Siehe [Barcode-Leser](../features/Barcode_reader.md). |
 
 !!! note "Hinweis"
@@ -164,6 +165,16 @@ und einem stehenden Förderband aus:
     „unknown“ in das PDF geschrieben, da kein Bediener ihn klassifiziert.
     Das ist auf einer Linie zu erwarten — die Klassifizierung erfolgt später,
     offline, anhand der gespeicherten Berichte.
+
+!!! warning "JSON-Berichte doppelseitiger Platinen"
+
+    Seit Version 7.11.4 schreibt die Software, wenn beide Seiten einer Platine
+    inspiziert wurden, einen einzigen
+    [kombinierten Bericht](../how_to/Inspection_workflow.md#kombinierter-topbottom-bericht)
+    und löscht die einzelnen PDF- und JSON-Berichte jeder Seite. Ein System, das
+    bisher das JSON jeder Seite aus dem Ordner REPORTS gelesen hat, muss nun
+    stattdessen `sides.TOP` und `sides.BOTTOM` des kombinierten JSON lesen. Die
+    Inspektionsdateien in PCB_OUT sind nicht betroffen.
 
 ### 2.3 Wo die Ergebnisse gespeichert werden
 
@@ -222,7 +233,7 @@ manuellen/Tippbetrieb durch.
 
 | Symptom | Prüfung |
 |---|---|
-| Die Linie stoppt nach der ersten fehlerhaften Platine | **Mandatory errors review** ist aktiviert. Deaktivieren Sie es unter Settings → Workflow. |
+| Die Linie stoppt nach der ersten fehlerhaften Platine | Eine verpflichtende Prüfstufe ist aktiviert (**Mandatory errors review**, **report** oder **final report**). Deaktivieren Sie sie unter Settings → Workflow, in der Rolle des Benutzers (Settings → Users) und in den Referenzoptionen der REFERENZ. |
 | Ein Dialog wartet mitten im Zyklus auf eine Eingabe | Deaktivieren Sie **Show errors popup** und **Show references mosaic** unter Settings → Workflow. |
 | Jede Platine schlägt bei einem neuen Produkt fehl | Die geladene REFERENZ passt nicht zum Produkt. Prüfen Sie die Barcode-Erkennung oder die für die Charge ausgewählte REFERENZ. |
 | **WARNING / ROTATED** oder **WARNING / SHIFTED** bei den meisten Platinen | Das Förderband präsentiert die Platinen nicht in einer wiederholbaren Position. Korrigieren Sie den mechanischen Anschlag; die AOI vergleicht mit der Position der REFERENZ. |

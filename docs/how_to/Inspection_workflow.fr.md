@@ -74,6 +74,10 @@ Utilisez le bouton de la fenêtre principale pour basculer entre les images **TO
 
 ![Image BOTTOM](../assets/v7/references/bt-image.png){.center}
 
+Les touches **Page Up** et **Page Down** permettent également de basculer respectivement vers la face **TOP** et la face **BOTTOM**.
+
+Consultez [Inspecter les deux faces d'une carte](#inspecter-les-deux-faces-dune-carte) pour savoir comment inspecter une PCBA recto verso une fois sa RÉFÉRENCE prête.
+
 ---
 
 #### Mise au point
@@ -146,12 +150,32 @@ Une fois le processus de capture terminé, le résultat final sera retourné, af
 
 Si des erreurs sont détectées, un **cadre rouge** apparaîtra autour de la fenêtre principale. Un **cadre vert** s'il n'y a pas d'erreurs.
 
+### Inspecter les deux faces d'une carte
+
+Avec une RÉFÉRENCE recto verso, vous pouvez inspecter le **TOP** et le **BOTTOM** d'une même carte l'un après l'autre :
+
+1. Inspectez la première face comme d'habitude. Dans la prévisualisation en direct, le bouton **DÉMARRER L'INSPECTION** indique sur une deuxième ligne la face que vous vous apprêtez à inspecter. Vérifiez que la carte est placée avec cette face vers le haut.
+2. Retournez la carte, basculez vers l'autre face (avec le [bouton TOP/BOTTOM](Screen-layout.md#basculer-topbottom), les touches **Page Up** / **Page Down**, ou automatiquement avec la [Bascule automatique TOP/BOTTOM](Settings_menu.md#bascule-automatique-topbottom)) et inspectez-la.
+3. Une fois les deux faces inspectées, le bouton TOP/BOTTOM et les touches **Page Up** / **Page Down** basculent directement entre les **résultats** des deux faces, ce qui vous permet de continuer à examiner une face après avoir capturé l'autre. Chaque face conserve ses propres détections, classifications et [sensibilité](Set_sensitivity.md).
+
+Les résultats sont enregistrés en arrière-plan pendant que vous travaillez. Un avis de chargement s'affiche sur l'image pendant la restauration d'une face.
+
+Lorsque les deux faces ont un rapport, un seul [rapport combiné](#rapport-combine-topbottom) est généré pour l'ensemble de la carte.
+
+!!! note "Inspections UV"
+    Une [inspection UV](../features/UV_conformal_coating_inspection.md) est indépendante de la carte TOP/BOTTOM en cours : elle n'annule pas les faces déjà inspectées et ne fait pas partie du rapport combiné.
+
 ### Signalement des erreurs
 
 Une fois l'inspection terminée, l'opérateur doit surveiller les erreurs signalées, en les marquant comme **erreur réelle** ou **détection de faux positif**.
 Pour ce faire, faites simplement défiler les erreurs en utilisant les **flèches gauche et droite** du clavier.
 
-Les erreurs peuvent aussi être signalées directement à la souris : **clic gauche** sur une détection pour la signaler comme erreur réelle, ou **clic droit** pour la signaler comme faux positif — équivalent aux touches flèche **haut** et **bas** décrites ci-dessous.
+!!! note "Préférence d'analyse"
+    Par défaut, sur les nouvelles installations, la révision commence dans la [liste des détections](Screen-layout.md#liste-des-detections) : les flèches **gauche** et **droite** passent d'une ligne à l'autre de la liste et les flèches **haut** et **bas** classent la ligne sous le curseur. Pour examiner les détections directement sur l'image, comme dans les versions précédentes, réglez la [Préférence d'analyse](Settings_menu.md#preference-danalyse) sur **CANVAS**.
+
+Les erreurs peuvent aussi être signalées directement à la souris : **clic gauche** sur une détection pour la signaler comme erreur réelle, ou **clic droit** pour la signaler comme faux positif — équivalent aux touches flèche **haut** et **bas** décrites ci-dessous. Chaque ligne de la [liste des détections](Screen-layout.md#liste-des-detections) comporte également un bouton **croix rouge** (erreur) et un bouton **coche verte** (faux positif).
+
+Un clic gauche sur une détection déjà signalée comme erreur réelle demande une confirmation avant de l'annuler.
 
 Pour marquer une erreur réelle, déplacez-vous simplement vers le défaut et appuyez sur la **flèche haut** de votre clavier. Une nouvelle fenêtre apparaîtra, montrant le défaut en détail et vous permettant de le catégoriser en sélectionnant un type de défaut dans la liste.
 
@@ -168,7 +192,40 @@ Lorsque le logiciel marque une zone qui n'est pas une erreur réelle, l'opérate
 !!! note "Note"
     Notez que l'**icône rouge** ![Icône rouge](../assets/v7/ui-report_red.png){width=20px} marque les défauts réels et l'**icône verte** ![Icône verte](../assets/v7/ui-report_green.png){width=20px} les défauts faux positifs.
 
-Une détection qui n'a été signalée d'aucune des deux façons reste non examinée. Lorsque la [Révision obligatoire des erreurs](Settings_menu.md#revision-obligatoire-des-erreurs) est activée, il suffit de survoler cette détection avec le curseur pour la marquer comme **viewed**, ce qui satisfait également l'exigence de révision pour cette détection.
+!!! note "Permissions"
+    Lorsque le [contrôle d'accès des utilisateurs](../features/User_control.md) est activé, signaler une détection nécessite la permission **Classify detected faults**. Sans elle, un message **Permission denied** s'affiche et rien n'est signalé.
+
+Une détection qui n'a été signalée d'aucune des deux façons reste **non examinée** (jaune). Maintenir le pointeur immobile dessus pendant environ **une seconde** la marque comme **vue** (cyan) : un petit anneau se remplit autour de la détection pendant l'attente, et rien n'est marqué si vous vous éloignez avant qu'il ne se referme ; ainsi, balayer la carte avec la souris ne marque pas les détections que vous n'avez pas regardées. Le fonctionnement est le même lorsque vous atteignez une détection avec les touches fléchées ou depuis la liste des détections. Une détection marquée comme vue peut toujours être signalée ensuite.
+
+### Niveaux de révision obligatoire
+
+Le logiciel peut exiger trois niveaux de révision avant qu'une nouvelle inspection puisse démarrer. Ils sont indépendants et peuvent être combinés :
+
+| Niveau | Ce qu'il exige |
+| --- | --- |
+| **Mandatory errors review** | Chaque détection examinée, ou au moins marquée comme **vue**. |
+| **Mandatory errors report** | Chaque détection **signalée** comme erreur réelle ou faux positif. La marquer comme vue ne suffit pas. |
+| **Mandatory final report** | Le [rapport final OK / NON OK](#generation-dun-rapport-pdf-final) confirmé par l'opérateur. Un rapport généré automatiquement ne compte pas. |
+
+Si un niveau n'est pas satisfait lorsque vous essayez de démarrer l'inspection suivante, un avertissement vous indique ce qui manque.
+
+Un niveau s'applique dès que **l'un** des éléments suivants l'a activé :
+
+- La **RÉFÉRENCE** chargée, dans sa fenêtre [options de la référence](Screen-layout.md#options-de-la-reference).
+- Le **rôle** de l'utilisateur connecté, lorsque le [contrôle d'accès des utilisateurs](../features/User_control.md#revision-obligatoire-par-role) est activé. Le rôle **admin** n'est concerné que par la RÉFÉRENCE.
+- Les options globales des [paramètres du flux de travail](Settings_menu.md#revision-obligatoire-des-erreurs), lorsque le contrôle d'accès des utilisateurs est désactivé.
+
+Aucun des niveaux n'est exigé lorsque le [Mode Démo / Boucle](Settings_menu.md#mode-demo-boucle) est activé.
+
+Sur une carte recto verso, l'inspection de l'autre face de la même carte n'est jamais bloquée par ce qui reste en attente sur la première. Démarrer la **carte suivante** exige que les niveaux applicables soient satisfaits sur les **deux** faces. Pour confirmer le rapport final de l'autre face, basculez vers celle-ci et générez son rapport final.
+
+Lorsqu'au moins un niveau est activé, chaque rapport (PDF et JSON) indique où en était la révision au moment de sa création, par exemple `MANDATORY REVIEW - Detections: 5 (3 classified, 2 seen, 0 pending)`, et si le rapport final a été confirmé. La ligne s'affiche en rouge si quelque chose était encore en attente.
+
+#### Avertissement de face non examinée
+
+Indépendamment des niveaux ci-dessus, avant que la carte suivante ne démarre, le logiciel vous avertit si une face comporte des détections mais qu'**aucune** d'entre elles n'a été examinée ni signalée. La fenêtre indique la face concernée et vous permet de continuer malgré tout (**OK**) ou de revenir l'examiner (**CANCEL**).
+
+Cet avertissement n'est pas affiché lorsque la capture suivante est l'autre face de la même carte, lors des inspections UV ou en Mode Démo / Boucle. Il peut être désactivé dans [Settings → Workflow](Settings_menu.md#avertir-dune-face-non-examinee).
 
 ### Génération d'un rapport PDF final
 
@@ -185,3 +242,12 @@ Il est possible d'ajouter des commentaires qui seront inclus dans le rapport. Le
 ![Rapport PDF](../assets/v7/pdf-report1.png){.center}
 
 ![Rapport PDF](../assets/v7/pdf-report2.png){.center}
+
+#### Rapport combiné TOP/BOTTOM
+
+Lorsque les deux faces d'une carte ont un rapport, un seul PDF combiné est généré dans le dossier de rapports de la face TOP : une page de garde avec le résultat global et les données de chaque face, suivie du rapport TOP et du rapport BOTTOM. Lorsque les [rapports JSON](Settings_menu.md#creer-un-rapport-json) sont activés, un JSON combiné est également écrit, avec les données de chaque face sous `sides.TOP` et `sides.BOTTOM`.
+
+Une fois le rapport combiné écrit, les rapports PDF et JSON individuels de chaque face sont supprimés, de sorte qu'il ne reste qu'un seul PDF et un seul JSON par carte. Une carte dont une seule face a été inspectée conserve son propre rapport, et rien n'est supprimé si le rapport combiné n'a pas pu être écrit. Les fichiers d'inspection dans **PCB_OUT** ne sont pas concernés.
+
+!!! note "Note"
+    Le rapport JSON indique également, pour chaque détection, si l'opérateur a décidé qu'il s'agit d'une erreur, d'un faux positif, ou si elle est encore en attente (champ `verdict`).

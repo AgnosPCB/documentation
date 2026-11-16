@@ -60,4 +60,7 @@ Observe el PCB bajo iluminación UV para verificar la correcta aplicación y cob
 
 La imagen UV capturada se incluye en el informe final de inspección con fines de documentación y trazabilidad.
 
+!!! note "Inspecciones UV y placas de doble cara"
+    Una inspección UV es independiente de la placa TOP/BOTTOM en curso: no descarta las caras ya inspeccionadas ni cambia sus clasificaciones, y no forma parte del [informe combinado TOP/BOTTOM](../how_to/Inspection_workflow.md#informe-combinado-topbottom). Las inspecciones UV no muestran avisos de rotación o desplazamiento, ya que la imagen UV no se alinea con la REFERENCIA.
+
 ![Informe de inspección UV](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

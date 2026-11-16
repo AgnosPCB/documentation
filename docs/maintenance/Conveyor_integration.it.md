@@ -146,11 +146,12 @@ differenza tra un'integrazione pulita e un nastro trasportatore bloccato:
 | Impostazione | Posizione | Valore consigliato | Perché |
 |---|---|---|---|
 | **Operator mode** | Workflow | Abilitato | Nasconde l'acquisizione dei riferimenti e impedisce a un operatore di modificare il RIFERIMENTO o la sensibilità a metà turno. Proteggetelo con una password delle impostazioni (vedi [menu Impostazioni](../how_to/Settings_menu.md)). |
-| **Mandatory errors review** | Workflow | **Disabilitato** | Se abilitato, il software attende che una persona esamini ogni difetto prima di consentire l'ispezione successiva: questo bloccherà la linea. |
+| **Mandatory errors review**, **Mandatory errors report** e **Mandatory final report** | Workflow | **Disabilitato** | Se abilitato, il software attende che una persona esamini ogni difetto, lo classifichi o confermi il report finale prima di consentire l'ispezione successiva: questo bloccherà la linea. Con il controllo di accesso utenti abilitato, verificate anche il ruolo dell'utente e le [Opzioni del Riferimento](../how_to/Screen-layout.md#opzioni-del-riferimento) di ogni RIFERIMENTO. |
+| **Warn about a side not reviewed** | Workflow | Disabilitato | Evita che una finestra di conferma attenda un input prima della scheda successiva. |
 | **Show errors popup** | Workflow | Disabilitato | Evita che una finestra di dialogo modale attenda un input durante il funzionamento automatico. |
 | **Show references mosaic** | Workflow | Disabilitato | Evita un popup dopo l'acquisizione dell'immagine. |
 | **Auto report OK / NOK** | Reports | Entrambi abilitati | Genera il PDF di ogni scheda senza l'intervento dell'operatore, in modo che la linea produca un registro di tracciabilità completo. |
-| **Create JSON report** | Reports | Abilitato | Risultato leggibile da macchina per il vostro MES/SCADA. Richiede una licenza. |
+| **Create JSON report** | Reports | Abilitato | Risultato leggibile da macchina per il vostro MES/SCADA. Richiede una licenza. Per le schede a doppia faccia, vedi la nota seguente. |
 | **Use barcodes** | Workflow | Abilitato | Consente all'AOI di caricare automaticamente il RIFERIMENTO corretto dal codice a barre della scheda, così le linee multiprodotto non necessitano di un cambio prodotto manuale. Richiede una licenza. Vedi [lettore di codici a barre](../features/Barcode_reader.md). |
 
 !!! note "Nota"
@@ -159,6 +160,15 @@ differenza tra un'integrazione pulita e un nastro trasportatore bloccato:
     l'etichetta "unknown", perché nessun operatore lo classifica. Questo è
     previsto su una linea: la classificazione viene effettuata in seguito,
     offline, a partire dai report salvati.
+
+!!! warning "Report JSON delle schede a doppia faccia"
+
+    Dalla versione 7.11.4, quando entrambi i lati di una scheda sono stati ispezionati il software
+    scrive un unico [report combinato](../how_to/Inspection_workflow.md#report-combinato-topbottom)
+    ed elimina i singoli report PDF e JSON di ciascun lato. Un sistema che leggeva il
+    JSON di ciascun lato dalla cartella REPORTS deve ora leggere invece `sides.TOP` e
+    `sides.BOTTOM` del JSON combinato. I file di ispezione in PCB_OUT non vengono
+    modificati.
 
 ### 2.3 Dove vengono scritti i risultati
 
@@ -216,7 +226,7 @@ manuale/jog.
 
 | Sintomo | Verifica |
 |---|---|
-| La linea si ferma dopo la prima scheda difettosa | **Mandatory errors review** è abilitato. Disabilitatelo in Settings → Workflow. |
+| La linea si ferma dopo la prima scheda difettosa | È abilitato un livello di revisione obbligatoria (**Mandatory errors review**, **report** o **final report**). Disabilitatelo in Settings → Workflow, nel ruolo dell'utente (Settings → Users) e nelle Opzioni del Riferimento del RIFERIMENTO. |
 | Una finestra di dialogo attende un input a metà ciclo | Disabilitate **Show errors popup** e **Show references mosaic** in Settings → Workflow. |
 | Ogni scheda fallisce su un prodotto nuovo | Il RIFERIMENTO caricato non corrisponde al prodotto. Controllate la lettura del codice a barre, o il RIFERIMENTO selezionato per il lotto. |
 | **WARNING / ROTATED** o **WARNING / SHIFTED** sulla maggior parte delle schede | Il nastro trasportatore non presenta le schede in una posizione ripetibile. Correggete il fermo meccanico; l'AOI confronta rispetto alla posizione del RIFERIMENTO. |

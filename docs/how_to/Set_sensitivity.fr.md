@@ -26,3 +26,6 @@ La sensibilité fait référence au degré de minutie ou de rigueur employé par
 
 
 ![PCB avec erreurs en très haute sensibilité](../assets/very-high-sensitivity.png){.center}
+
+!!! note "Cartes recto verso"
+    Lorsque vous [inspectez les deux faces d'une carte](Inspection_workflow.md#inspecter-les-deux-faces-dune-carte), chaque face conserve sa propre sensibilité. Revenir sur une face rétablit le niveau que vous y aviez laissé, et le rapport de chaque face indique son propre niveau.

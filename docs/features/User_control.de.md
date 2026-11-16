@@ -49,8 +49,30 @@ Eine benutzerdefinierte Rolle erscheint dann im Feld **Role** beim Anlegen oder 
 
 ![Einem Benutzer eine benutzerdefinierte Rolle zuweisen](../assets/v7/user_control/users-rol-assing.png){.center}
 
+Eine neue Rolle beginnt nur mit den Berechtigungen, die zum Durchführen von Inspektionen, zum Klassifizieren von Erkennungen und zum Exportieren von Berichten nötig sind. Alles andere muss über **Edit permissions** gewährt werden.
+
+Fügt ein Software-Update eine neue Berechtigung hinzu, erhält die Rolle **operator** sie automatisch. Benutzerdefinierte Rollen nicht: Ein Administrator muss sie ihnen ausdrücklich gewähren. Neuere Updates haben unter anderem folgende Berechtigungen hinzugefügt:
+
+| Berechtigung | Erlaubt |
+| --- | --- |
+| **Classify detected faults** | Erkennungen als tatsächliche Fehler oder Falsch-Positive zu melden. Ohne sie wird die Meldung **Permission denied** angezeigt. Eine Erkennung als gesehen zu markieren ist immer erlaubt. |
+| **Max. variants per Reference** | Das Ändern von [Max. Varianten pro Referenz](../how_to/Settings_menu.md#max-varianten-pro-referenz). |
+| **Reference statistics and heatmap option** | Das Ändern von [Statistiken und Fehler-Heatmap pro Referenz anzeigen](../how_to/Settings_menu.md#statistiken-und-fehler-heatmap-pro-referenz-anzeigen). |
+| **Analysis preference** | Das Ändern der [Analysepräferenz](../how_to/Settings_menu.md#analysepraferenz). |
+| **Edit Reference options** | Das Ändern der verpflichtenden Prüfstufen einer REFERENZ in ihren [Referenzoptionen](../how_to/Screen-layout.md#referenzoptionen). |
+
 !!! note "Hinweis"
     Die integrierten Rollen **admin** und **operator** können weder umbenannt noch in ihren Berechtigungen bearbeitet noch gelöscht werden.
+
+### Pflichtprüfung pro Rolle
+
+Bei aktivierter Benutzerzugriffskontrolle werden die [verpflichtenden Prüfstufen](../how_to/Inspection_workflow.md#verpflichtende-prufstufen) pro Rolle statt global festgelegt: Die Liste **Roles** enthält eine Spalte für jede Stufe (**Mandatory review**, **Mandatory report** und **Final report**), und das Fenster **Edit permissions** der Rolle enthält für jede ein Kontrollkästchen. Um sie zu ändern, ist Zugriff auf die Registerkarte **Users** erforderlich.
+
+Die globalen Optionen unter *Settings → Workflow* sind ausgegraut, solange die Benutzerzugriffskontrolle aktiviert ist, und behalten ihren Wert für den Fall, dass sie wieder deaktiviert wird.
+
+- Die Rolle **admin** ist von diesen Einstellungen nie betroffen; für sie gilt eine Stufe nur, wenn eine REFERENZ sie verlangt.
+- Neue Rollen beginnen mit allen drei Stufen deaktiviert.
+- Beim ersten Laden der Rollen nach dem Update auf 7.11 übernimmt jede bestehende Rolle den Wert, den die globale Option **Pflichtprüfung der Fehler** hatte, sodass keine bestehende Verpflichtung verloren geht. Die Stufen **report** und **final report** beginnen für jede bestehende Rolle deaktiviert.
 
 ## Einrichtung
 
@@ -104,7 +126,9 @@ Ab dem nächsten Start der Software fragt der Dialog **User access required** na
 
 Die Software wird dann mit den Berechtigungen dieses Kontos geöffnet.
 
-Um die Sitzung zu beenden und einen anderen Benutzer anmelden zu lassen, verwenden Sie die Schaltfläche **logout** im [Statusbereich der Plattform](../how_to/Screen-layout.md).
+Der angemeldete Benutzer wird im [Aktivitätsprotokoll](../how_to/Screen-layout.md#aktivitatsprotokoll) angezeigt.
+
+Um die Sitzung zu beenden und einen anderen Benutzer anmelden zu lassen, verwenden Sie die Schaltfläche **logout** im [Statusbereich der Plattform](../how_to/Screen-layout.md#abmelden). Sie fragt nach einer Bestätigung und leert dann den Arbeitsbereich (geladene REFERENZ und Inspektionsergebnisse), sodass der nächste Benutzer neu beginnt.
 
 ## Konten verwalten
 
@@ -126,7 +150,7 @@ Ist die Benutzerzugriffskontrolle aktiviert, bietet das Panel **User access cont
 
 ![Option Lock after inactivity](../assets/v7/user_control/users-general-settings.png){.center}
 
-Nach Ablauf dieser Zeit erscheint erneut der Dialog **User access required**, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren.
+Nach Ablauf dieser Zeit erscheint erneut der Dialog **User access required**, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren. Jeder aktive Benutzer kann die Sperre aufheben, nicht nur der zuvor angemeldete. Die Sperre wird nie ausgelöst, während eine Inspektion läuft oder der [Demo-/Loop-Modus](../how_to/Settings_menu.md#demo-loop-modus) aktiv ist.
 
 !!! note "Hinweis"
     Diese Option erscheint erst, wenn die Benutzerzugriffskontrolle aktiviert ist, da zum Entsperren der Anwendung ein Konto erforderlich ist.

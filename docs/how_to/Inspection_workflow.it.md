@@ -73,6 +73,10 @@ Utilizzate il pulsante nella finestra principale per passare tra le immagini **T
 
 ![Immagine BOTTOM](../assets/v7/references/bt-image.png){.center}
 
+Anche i tasti **Page Up** e **Page Down** passano rispettivamente al lato **TOP** e al lato **BOTTOM**.
+
+Consultate [Ispezionare entrambi i lati di una scheda](#ispezionare-entrambi-i-lati-di-una-scheda) per sapere come ispezionare una PCBA a doppia faccia una volta pronto il suo RIFERIMENTO.
+
 ---
 
 #### Messa a fuoco
@@ -145,12 +149,32 @@ Una volta terminato il processo di acquisizione, verrà restituito il risultato 
 
 Se vengono rilevati errori, apparirà una **cornice rossa** attorno alla finestra principale. **Cornice verde** se non ci sono errori.
 
+### Ispezionare entrambi i lati di una scheda
+
+Con un RIFERIMENTO a doppia faccia potete ispezionare il **TOP** e il **BOTTOM** della stessa scheda uno dopo l'altro:
+
+1. Ispezionate il primo lato come di consueto. Nell'anteprima dal vivo, il pulsante **AVVIA ISPEZIONE** mostra su una seconda riga il lato che state per ispezionare. Verificate che la scheda sia posizionata con quel lato rivolto verso l'alto.
+2. Girate la scheda, passate all'altro lato (con il [pulsante TOP/BOTTOM](Screen-layout.md#alterna-topbottom), con i tasti **Page Up** / **Page Down**, oppure automaticamente con il [Cambio automatico TOP/BOTTOM](Settings_menu.md#cambio-automatico-topbottom)) e ispezionatelo.
+3. Una volta ispezionati entrambi i lati, il pulsante TOP/BOTTOM e i tasti **Page Up** / **Page Down** passano direttamente tra i **risultati** dei due lati, così potete continuare a esaminare un lato dopo aver acquisito l'altro. Ogni lato conserva le proprie rilevazioni, classificazioni e [sensibilità](Set_sensitivity.md).
+
+I risultati vengono salvati in background mentre lavorate. Durante il ripristino di un lato, sull'immagine viene mostrato un avviso di caricamento.
+
+Quando entrambi i lati hanno un report, viene generato un unico [report combinato](#report-combinato-topbottom) per l'intera scheda.
+
+!!! note "Ispezioni UV"
+    Un'[ispezione UV](../features/UV_conformal_coating_inspection.md) è indipendente dalla scheda TOP/BOTTOM in corso: non scarta i lati già ispezionati e non fa parte del report combinato.
+
 ### Segnalazione degli errori
 
 Una volta completata l'ispezione, l'operatore deve monitorare gli errori segnalati, contrassegnandoli come **errore effettivo** o **rilevamento falso positivo**.
 Per fare ciò, è sufficiente scorrere gli errori utilizzando le **frecce sinistra e destra** sulla tastiera.
 
-Gli errori possono anche essere segnalati direttamente con il mouse: **clic sinistro** su una rilevazione per segnalarla come errore reale, oppure **clic destro** per segnalarla come falso positivo — equivalente ai tasti freccia **su** e **giù** descritti di seguito.
+!!! note "Analysis preference"
+    Per impostazione predefinita, sulle nuove installazioni la revisione inizia dall'[elenco delle rilevazioni](Screen-layout.md#elenco-delle-rilevazioni): le frecce **sinistra** e **destra** si spostano da una riga all'altra dell'elenco e le frecce **su** e **giù** classificano la riga sotto il cursore. Per esaminare le rilevazioni direttamente sull'immagine, come nelle versioni precedenti, impostate la [Preferenza di analisi](Settings_menu.md#preferenza-di-analisi) su **CANVAS**.
+
+Gli errori possono anche essere segnalati direttamente con il mouse: **clic sinistro** su una rilevazione per segnalarla come errore reale, oppure **clic destro** per segnalarla come falso positivo — equivalente ai tasti freccia **su** e **giù** descritti di seguito. Ogni riga dell'[elenco delle rilevazioni](Screen-layout.md#elenco-delle-rilevazioni) dispone inoltre di un pulsante **croce rossa** (errore) e di un pulsante **spunta verde** (falso positivo).
+
+Facendo clic sinistro su una rilevazione già segnalata come errore reale, viene chiesta una conferma prima di annullare la segnalazione.
 
 Per contrassegnare un errore reale, basta spostarsi sul difetto e premere la **freccia su** sulla tastiera. Apparirà una nuova finestra che mostra il difetto in dettaglio e consente di classificarlo selezionando un tipo di difetto dall'elenco.
 
@@ -167,7 +191,40 @@ Quando il software segnala un'area che non è un errore effettivo, l'operatore p
 !!! note "Nota"
     Si noti che l'**icona rossa** ![Icona rossa](../assets/v7/ui-report_red.png){width=20px} contrassegna i difetti effettivi e l'**icona verde** ![Icona verde](../assets/v7/ui-report_green.png){width=20px} i difetti falsi positivi.
 
-Una rilevazione non segnalata in nessuno dei due modi resta non esaminata. Quando la [Revisione obbligatoria degli errori](Settings_menu.md#revisione-obbligatoria-degli-errori) è abilitata, è sufficiente passare il cursore sopra quella rilevazione per contrassegnarla come **viewed**, il che soddisfa anche il requisito di revisione per quella rilevazione.
+!!! note "Permessi"
+    Con il [controllo di accesso utenti](../features/User_control.md) abilitato, segnalare una rilevazione richiede il permesso **Classify detected faults**. Senza di esso, viene mostrato il messaggio **Permission denied** e non viene segnalato nulla.
+
+Una rilevazione non segnalata in nessuno dei due modi resta **non esaminata** (gialla). Tenendo il puntatore fermo sopra di essa per circa **un secondo** la si contrassegna come **seen** (ciano): mentre attendete, un piccolo anello si riempie attorno alla rilevazione, e se vi spostate prima che si chiuda non viene contrassegnato nulla, così passare il mouse sulla scheda non contrassegna rilevazioni che non avete guardato. Funziona allo stesso modo quando si raggiunge una rilevazione con i tasti freccia o dall'elenco delle rilevazioni. Una rilevazione contrassegnata come seen può comunque essere segnalata in seguito.
+
+### Livelli di revisione obbligatoria
+
+Il software può richiedere tre livelli di revisione prima che possa iniziare una nuova ispezione. Sono indipendenti e possono essere combinati:
+
+| Livello | Cosa richiede |
+| --- | --- |
+| **Mandatory errors review** | Ogni rilevazione esaminata, o almeno contrassegnata come **seen**. |
+| **Mandatory errors report** | Ogni rilevazione **segnalata** come errore reale o come falso positivo. Contrassegnarla come seen non è sufficiente. |
+| **Mandatory final report** | Il [report finale OK / NON OK](#generazione-di-un-report-pdf-finale) confermato dall'operatore. Un report generato automaticamente non viene conteggiato. |
+
+Se un livello non è soddisfatto quando cercate di avviare l'ispezione successiva, un avviso indica cosa manca.
+
+Un livello si applica quando **uno qualsiasi** dei seguenti lo ha abilitato:
+
+- Il **RIFERIMENTO** caricato, nella sua finestra [Opzioni del Riferimento](Screen-layout.md#opzioni-del-riferimento).
+- Il **ruolo** dell'utente connesso, quando il [controllo di accesso utenti](../features/User_control.md#revisione-obbligatoria-per-ruolo) è abilitato. Il ruolo **admin** è influenzato solo dal RIFERIMENTO.
+- Le opzioni globali nelle [impostazioni del flusso di lavoro](Settings_menu.md#revisione-obbligatoria-degli-errori), quando il controllo di accesso utenti è disabilitato.
+
+Nessuno dei livelli è richiesto mentre la [Modalità Demo / Loop](Settings_menu.md#modalita-demo-loop) è attiva.
+
+Su una scheda a doppia faccia, l'ispezione dell'altro lato della stessa scheda non viene mai bloccata da ciò che è ancora in sospeso sul primo. Per avviare la **scheda successiva** i livelli applicabili devono essere soddisfatti su **entrambi** i lati. Per confermare il report finale dell'altro lato, passate a quel lato e generatene il report finale.
+
+Quando almeno un livello è abilitato, ogni report (PDF e JSON) indica a che punto era la revisione al momento della sua creazione, ad esempio `MANDATORY REVIEW - Detections: 5 (3 classified, 2 seen, 0 pending)`, e se il report finale è stato confermato. La riga viene mostrata in rosso se qualcosa era ancora in sospeso.
+
+#### Avviso per un lato non esaminato
+
+Indipendentemente dai livelli descritti sopra, prima che inizi la scheda successiva il software vi avvisa se un lato presenta rilevazioni ma **nessuna** di esse è stata esaminata o segnalata. La finestra indica il lato e vi permette di continuare comunque (**OK**) o di tornare indietro per esaminarlo (**CANCEL**).
+
+Questo avviso non viene mostrato quando l'acquisizione successiva è l'altro lato della stessa scheda, nelle ispezioni UV o in modalità Demo / Loop. Può essere disabilitato in [Impostazioni → Flusso di lavoro](Settings_menu.md#avvisa-se-un-lato-non-e-stato-esaminato).
 
 ### Generazione di un report PDF finale
 
@@ -184,3 +241,12 @@ Appare una finestra che consente di contrassegnare l'ispezione come **OK** o **N
 ![Report PDF](../assets/v7/pdf-report1.png){.center}
 
 ![Report PDF](../assets/v7/pdf-report2.png){.center}
+
+#### Report combinato TOP/BOTTOM
+
+Quando entrambi i lati di una scheda hanno un report, viene generato un unico PDF combinato nella cartella dei report del lato TOP: una pagina di copertina con il risultato complessivo e i dati di ciascun lato, seguita dal report TOP e dal report BOTTOM. Quando i [report JSON](Settings_menu.md#crea-report-json) sono abilitati, viene scritto anche un JSON combinato, con i dati di ciascun lato in `sides.TOP` e `sides.BOTTOM`.
+
+Una volta scritto il report combinato, i singoli report PDF e JSON di ciascun lato vengono eliminati, in modo che rimangano un solo PDF e un solo JSON per scheda. Una scheda con un solo lato ispezionato conserva il proprio report, e non viene eliminato nulla se non è stato possibile scrivere il report combinato. I file di ispezione in **PCB_OUT** non vengono modificati.
+
+!!! note "Nota"
+    Il report JSON indica inoltre, per ogni rilevazione, se l'operatore ha deciso che si tratta di un errore, di un falso positivo o se è ancora in sospeso (campo `verdict`).

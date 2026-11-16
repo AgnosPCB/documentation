@@ -129,11 +129,12 @@ difference between a clean integration and a stalled conveyor:
 | Setting | Location | Recommended value | Why |
 |---|---|---|---|
 | **Operator mode** | Workflow | Enabled | Hides reference capture and prevents an operator from altering the REFERENCE or sensitivity mid-shift. Protect it with a settings password (see the [settings menu](../how_to/Settings_menu.md)). |
-| **Mandatory errors review** | Workflow | **Disabled** | If enabled, the software waits for a human to review every fault before allowing the next inspection — this will block the line. |
+| **Mandatory errors review**, **Mandatory errors report** and **Mandatory final report** | Workflow | **Disabled** | If enabled, the software waits for a human to review every fault, classify it or confirm the final report before allowing the next inspection — this will block the line. With user access control enabled, also check the role of the user and the [Reference options](../how_to/Screen-layout.md#reference-options) of each REFERENCE. |
+| **Warn about a side not reviewed** | Workflow | Disabled | Prevents a confirmation window from waiting for input before the next board. |
 | **Show errors popup** | Workflow | Disabled | Prevents a modal dialog from waiting for input during automatic operation. |
 | **Show references mosaic** | Workflow | Disabled | Avoids a popup after image capture. |
 | **Auto report OK / NOK** | Reports | Both enabled | Generates the PDF for every board without operator action, so the line produces a complete traceability record. |
-| **Create JSON report** | Reports | Enabled | Machine-readable result for your MES/SCADA. Requires a license. |
+| **Create JSON report** | Reports | Enabled | Machine-readable result for your MES/SCADA. Requires a license. For double-sided boards, see the note below. |
 | **Use barcodes** | Workflow | Enabled | Lets the AOI load the correct REFERENCE automatically from the board barcode, so mixed-product lines do not need a manual product change. Requires a license. See [barcode reader](../features/Barcode_reader.md). |
 
 !!! note "Note"
@@ -141,6 +142,15 @@ difference between a clean integration and a stalled conveyor:
     With **Auto report** enabled, every fault is written to the PDF with the
     "unknown" label, because no operator classifies them. This is expected on a line —
     the classification is done later, offline, from the stored reports.
+
+!!! warning "JSON reports of double-sided boards"
+
+    Since version 7.11.4, when both sides of a board have been inspected the software
+    writes a single [combined report](../how_to/Inspection_workflow.md#combined-topbottom-report)
+    and deletes the individual PDF and JSON reports of each side. A system that read the
+    JSON of each side from the REPORTS folder must now read `sides.TOP` and
+    `sides.BOTTOM` of the combined JSON instead. The inspection files in PCB_OUT are
+    not affected.
 
 ### 2.3 Where the results are written
 
@@ -187,7 +197,7 @@ first tests with the conveyor in manual/jog mode.
 
 | Symptom | Check |
 |---|---|
-| The line stops after the first faulty board | **Mandatory errors review** is enabled. Disable it in Settings → Workflow. |
+| The line stops after the first faulty board | A mandatory review level is enabled (**Mandatory errors review**, **report** or **final report**). Disable it in Settings → Workflow, in the role of the user (Settings → Users) and in the Reference options of the REFERENCE. |
 | A dialog is waiting for input mid-cycle | Disable **Show errors popup** and **Show references mosaic** in Settings → Workflow. |
 | Every board fails on a new product | The loaded REFERENCE does not match the product. Check the barcode reading, or the REFERENCE selected for the batch. |
 | **WARNING / ROTATED** or **WARNING / SHIFTED** on most boards | The conveyor is not presenting boards in a repeatable position. Correct the mechanical stop; the AOI compares against the REFERENCE position. |

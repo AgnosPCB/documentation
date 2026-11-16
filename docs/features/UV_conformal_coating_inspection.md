@@ -64,4 +64,7 @@ Observe the PCB under UV lighting to verify the correct application and coverage
 
 The captured UV image is included in the final inspection report for documentation and traceability purposes.
 
+!!! note "UV inspections and double-sided boards"
+    A UV inspection is independent of the TOP/BOTTOM board in progress: it does not discard the sides already inspected or change their classifications, and it is not part of the [combined TOP/BOTTOM report](../how_to/Inspection_workflow.md#combined-topbottom-report). UV inspections do not show rotation or shift warnings, since the UV image is not aligned with the REFERENCE.
+
 ![UV inspection report](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

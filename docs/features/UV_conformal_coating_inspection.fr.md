@@ -61,4 +61,7 @@ Observez le PCB sous éclairage UV afin de vérifier la bonne application et la 
 
 L’image UV capturée est incluse dans le rapport final d’inspection à des fins de documentation et de traçabilité.
 
+!!! note "Inspections UV et cartes recto verso"
+    Une inspection UV est indépendante de la carte TOP/BOTTOM en cours : elle n’annule pas les faces déjà inspectées ni ne modifie leurs classifications, et elle ne fait pas partie du [rapport combiné TOP/BOTTOM](../how_to/Inspection_workflow.md#rapport-combine-topbottom). Les inspections UV n’affichent pas d’avertissements de rotation ou de décalage, car l’image UV n’est pas alignée sur la RÉFÉRENCE.
+
 ![Rapport d’inspection UV](../assets/v7/UV_inspection/UV_report.png){width=500px .center}

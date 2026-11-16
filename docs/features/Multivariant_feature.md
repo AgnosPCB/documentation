@@ -46,6 +46,9 @@ This variant will no longer be flagged as an error in future inspections.
 
 Even after creating a reference variant, the system will still detect real defects on that component if they occur.
 
+!!! note "Maximum number of variants"
+    Each REFERENCE uses up to 20 variants by default. The limit can be raised up to 50 with [Max. variants per Reference](../how_to/Settings_menu.md#max-variants-per-reference), at the cost of a slower variants panel and inspection. A REFERENCE with more variants than the limit only uses the first ones; the rest are kept untouched.
+
 The final inspection report will also include the reference variant, along with its image, assigned name, and any additional observations.
 
 ![Reference variant PDF report](../assets/ref-variant-report.png){width=600 .center}

@@ -49,8 +49,30 @@ Un rôle personnalisé apparaît alors aux côtés de **admin** et **operator** 
 
 ![Attribuer un rôle personnalisé à un utilisateur](../assets/v7/user_control/users-rol-assing.png){.center}
 
+Un nouveau rôle ne dispose au départ que des permissions nécessaires pour lancer des inspections, classer les détections et exporter les rapports. Tout le reste doit être accordé depuis **Edit permissions**.
+
+Lorsqu'une mise à jour du logiciel ajoute une nouvelle permission, le rôle **operator** la reçoit automatiquement. Les rôles personnalisés non : un administrateur doit la leur accorder explicitement. Les mises à jour récentes ont ajouté, entre autres :
+
+| Permission | Autorise |
+| --- | --- |
+| **Classify detected faults** | Signaler les détections comme erreurs réelles ou faux positifs. Sans elle, un message **Permission denied** s'affiche. Marquer une détection comme vue est toujours autorisé. |
+| **Max. variants per Reference** | Modifier [Nombre max. de variantes par référence](../how_to/Settings_menu.md#nombre-max-de-variantes-par-reference). |
+| **Reference statistics and heatmap option** | Modifier [Afficher les statistiques et la carte thermique des erreurs par référence](../how_to/Settings_menu.md#afficher-les-statistiques-et-la-carte-thermique-des-erreurs-par-reference). |
+| **Analysis preference** | Modifier [Préférence d'analyse](../how_to/Settings_menu.md#preference-danalyse). |
+| **Edit Reference options** | Modifier les niveaux de révision obligatoire d'une RÉFÉRENCE dans ses [options de la référence](../how_to/Screen-layout.md#options-de-la-reference). |
+
 !!! note "Note"
     Les rôles intégrés **admin** et **operator** ne peuvent être ni renommés, ni voir leurs permissions modifiées, ni être supprimés.
+
+### Révision obligatoire par rôle
+
+Lorsque le contrôle d'accès des utilisateurs est activé, les [niveaux de révision obligatoire](../how_to/Inspection_workflow.md#niveaux-de-revision-obligatoire) sont définis pour chaque rôle et non plus globalement : la liste **Roles** comporte une colonne pour chaque niveau (**Mandatory review**, **Mandatory report** et **Final report**), et la fenêtre **Edit permissions** du rôle comporte une case à cocher pour chacun d'eux. Les modifier nécessite l'accès à l'onglet **Users**.
+
+Les options globales de *Settings → Workflow* sont grisées tant que le contrôle d'accès des utilisateurs est activé, et conservent leur valeur pour le moment où il sera de nouveau désactivé.
+
+- Le rôle **admin** n'est jamais concerné par ces paramètres ; seule une RÉFÉRENCE qui exige un niveau s'applique à lui.
+- Les nouveaux rôles démarrent avec les trois niveaux désactivés.
+- La première fois que les rôles sont chargés après la mise à jour vers la version 7.11, chaque rôle existant prend la valeur qu'avait l'option globale **Mandatory errors review**, de sorte qu'aucune obligation existante n'est perdue. Les niveaux **report** et **final report** démarrent désactivés pour tous les rôles existants.
 
 ## Le configurer
 
@@ -104,7 +126,9 @@ Dès le prochain démarrage du logiciel, la fenêtre **User access required** de
 
 Le logiciel s'ouvre alors avec les autorisations de ce compte.
 
-Pour fermer la session et permettre à un autre utilisateur de se connecter, utilisez le bouton **logout** de la [zone d'état de la plateforme](../how_to/Screen-layout.md).
+L'utilisateur connecté est affiché dans le [journal d'activité](../how_to/Screen-layout.md#journal-dactivite).
+
+Pour fermer la session et permettre à un autre utilisateur de se connecter, utilisez le bouton **logout** de la [zone d'état de la plateforme](../how_to/Screen-layout.md#deconnexion). Il demande une confirmation, puis vide l'espace de travail (RÉFÉRENCE chargée et résultats d'inspection), afin que l'utilisateur suivant parte de zéro.
 
 ## Gérer les comptes
 
@@ -126,7 +150,7 @@ Lorsque le contrôle d'accès des utilisateurs est activé, le panneau **User ac
 
 ![Option Lock after inactivity](../assets/v7/user_control/users-general-settings.png){.center}
 
-Une fois ce délai écoulé, la fenêtre **User access required** réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.
+Une fois ce délai écoulé, la fenêtre **User access required** réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours. N'importe quel utilisateur actif peut le déverrouiller, pas seulement celui qui était connecté. Le verrouillage ne se déclenche jamais pendant une inspection ni lorsque le [Mode Démo / Boucle](../how_to/Settings_menu.md#mode-demo-boucle) est en cours d'exécution.
 
 !!! note "Note"
     Cette option n'apparaît que lorsque le contrôle d'accès des utilisateurs est activé, car verrouiller l'application nécessite un compte pour la déverrouiller.

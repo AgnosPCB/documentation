@@ -46,6 +46,9 @@ Cette variante ne sera plus signalée comme une erreur lors des inspections futu
 
 Même après avoir créé une variante de référence, le système continuera à détecter les défauts réels sur ce composant s’ils se produisent.
 
+!!! note "Nombre maximal de variantes"
+    Chaque RÉFÉRENCE utilise jusqu’à 20 variantes par défaut. Cette limite peut être portée jusqu’à 50 avec [Nombre max. de variantes par référence](../how_to/Settings_menu.md#nombre-max-de-variantes-par-reference), au prix d’un panneau des variantes et d’une inspection plus lents. Une RÉFÉRENCE ayant plus de variantes que la limite n’utilise que les premières ; les autres sont conservées intactes.
+
 Le rapport final d’inspection inclura également la variante de référence, ainsi que son image, le nom attribué et toute observation supplémentaire.
 
 ![Rapport PDF de la variante de référence](../assets/ref-variant-report.png){width=600 .center}
