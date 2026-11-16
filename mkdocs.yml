@@ -63,6 +63,7 @@ plugins:
             User interface: Interfaz de usuario
             Inspection workflow: Flujo de trabajo de inspección
             Settings menu: Menú de configuración
+            Keyboard shortcuts: Atajos de teclado
             Tips: Consejos
             Inspection tools: Herramientas de inspección
             Sensitivity: Sensibilidad
@@ -103,6 +104,7 @@ plugins:
             User interface: Interface utilisateur
             Inspection workflow: Flux de travail d'inspection
             Settings menu: Menu des paramètres
+            Keyboard shortcuts: Raccourcis clavier
             Tips: Conseils
             Inspection tools: Outils d'inspection
             Sensitivity: Sensibilité
@@ -143,6 +145,7 @@ plugins:
             User interface: Interfaccia utente
             Inspection workflow: Flusso di lavoro di ispezione
             Settings menu: Menu Impostazioni
+            Keyboard shortcuts: Scorciatoie da tastiera
             Tips: Suggerimenti
             Inspection tools: Strumenti di ispezione
             Sensitivity: Sensibilità
@@ -183,6 +186,7 @@ plugins:
             User interface: Benutzeroberfläche
             Inspection workflow: Inspektions-Workflow
             Settings menu: Einstellungsmenü
+            Keyboard shortcuts: Tastenkombinationen
             Tips: Tipps
             Inspection tools: Inspektionswerkzeuge
             Sensitivity: Empfindlichkeit
@@ -228,6 +232,7 @@ nav:
     - User interface: how_to/Screen-layout.md
     - Inspection workflow: how_to/Inspection_workflow.md
     - Settings menu: how_to/Settings_menu.md
+    - Keyboard shortcuts: how_to/Keyboard_shortcuts.md
     - Tips: help/Tips.md
     - Inspection tools:
       - Sensitivity: how_to/Set_sensitivity.md
