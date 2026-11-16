@@ -971,6 +971,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UUI to REFERENCE
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="UUI_to_REFERENCE.html" class="md-nav__link md-nav__link--active">
         
   
@@ -987,6 +1005,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#double-sided-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Double-sided REFERENCES
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1661,6 +1709,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#double-sided-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Double-sided REFERENCES
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1683,6 +1750,15 @@
 <p><img alt="UUI photo" class="center" src="../assets/UUI.png" /></p>
 <p>After pressing the <strong>UUI to REFERENCE</strong> button, the same PCBA is used as the <strong>REFERENCE</strong>.</p>
 <p><img alt="Same PCB as a REFERENCE photo" class="center" src="../assets/REFERENCE.png" /></p>
+<p>The name of the new REFERENCE must not already exist. If it does, the software shows a warning and asks for a different one.</p>
+<p>The new REFERENCE inherits the <a href="Screen-layout.html#reference-options">Reference options</a> (mandatory review levels) of the REFERENCE it came from.</p>
+<h2 id="double-sided-references">Double-sided REFERENCES</h2>
+<p>On a REFERENCE with <strong>TOP</strong> and <strong>BOTTOM</strong> sides, <strong>UUI to REFERENCE</strong> creates a complete TOP/BOTTOM pair:</p>
+<ul>
+<li>If <strong>both sides</strong> of the board have been inspected, the TOP and the BOTTOM of the new REFERENCE are the two inspected images.</li>
+<li>If <strong>only one side</strong> has been inspected, that side is taken from the inspection and the other one is copied from the REFERENCE you inspected against.</li>
+</ul>
+<p>It works the same whether you start from the TOP or from the BOTTOM side.</p>
 
 
 

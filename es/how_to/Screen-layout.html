@@ -871,6 +871,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Comparación lado a lado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-detecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista de detecciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#panel-de-informacion-de-la-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Panel de información de la Referencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -909,10 +937,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#alias-de-visualizacion" class="md-nav__link">
+  <a href="#opciones-de-la-referencia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Alias de visualización
+        Opciones de la Referencia
       
     </span>
   </a>
@@ -2098,6 +2126,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Comparación lado a lado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-detecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista de detecciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#panel-de-informacion-de-la-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Panel de información de la Referencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2136,10 +2192,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#alias-de-visualizacion" class="md-nav__link">
+  <a href="#opciones-de-la-referencia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Alias de visualización
+        Opciones de la Referencia
       
     </span>
   </a>
@@ -2314,51 +2370,119 @@
 <p>Esta área muestra el estado de la conexión con la plataforma de inspección y la cámara. Si la conexión falla, los iconos se volverán rojos. Esta área también contiene los siguientes botones de acción:</p>
 <h3 id="cerrar-sesion">Cerrar sesión</h3>
 <p><img alt="Botón de cerrar sesión" class="center" src="../../assets/v7/ui-logout.png" /></p>
-<p>Si hay usuarios definidos en el menú de configuración, este botón permite al usuario cerrar la sesión.</p>
+<p>Si el <a href="../features/User_control.html">control de acceso de usuarios</a> está habilitado, este botón permite al usuario cerrar la sesión. Pide confirmación y después limpia el espacio de trabajo (REFERENCIA cargada y resultados de inspección), de modo que el siguiente usuario empiece desde cero.</p>
 <h3 id="cargar-referencia-por-codigo-de-barras">Cargar REFERENCIA por código de barras</h3>
 <p><img alt="Carga de REFERENCIA por código de barras" class="center" src="../../assets/v7/ui-barcode-loading.png" /></p>
 <p><img alt="Carga de REFERENCIA por código de barras" class="center" src="../../assets/v7/ui-bc_ref.png" /></p>
-<p>Este botón abre una ventana emergente para insertar un número de código de barras. Al generar una REFERENCIA, cualquier <a href="#dibujo-de-area-de-codigo-de-barras">código de barras que contenga puede ser leído</a>. Este código de barras se asociará con la REFERENCIA y podrá cargarse usando ese número con esta función. También es posible leer el código de barras con un lector de mano e insertarlo en este campo. Más información sobre esta característica <a href="../features/Barcode_reader.html#cargar-una-referencia-por-codigo-de-barras">aquí</a>.</p>
+<p>Este botón abre una ventana emergente para insertar un código, y carga la REFERENCIA que lo tiene como <strong>Model ID</strong> (el código del modelo de placa, que es el mismo en todas las placas). También es posible leer el código con un lector de mano e insertarlo en este campo. Si varias REFERENCIAS tienen ese código, una lista breve le permite elegir cuál cargar. Más información sobre esta característica <a href="../features/Barcode_reader.html#cargar-una-referencia-por-codigo-de-barras">aquí</a>.</p>
 <h3 id="alternar-topbottom">Alternar TOP/BOTTOM</h3>
 <p><img alt="Botón TOP/BOTTOM" class="center" src="../../assets/v7/ui-top-bottom.png" width="80" /></p>
-<p>Si la imagen de REFERENCIA contiene tanto la cara superior como la inferior de la PCBA, alterna entre ambas imágenes.</p>
+<p>Si la imagen de REFERENCIA contiene tanto la cara superior como la inferior de la PCBA, alterna entre ambas imágenes. Una vez inspeccionadas ambas caras de una placa, alterna en su lugar entre los <strong>resultados</strong> de las dos caras. Las teclas <strong>Page Up</strong> (TOP) y <strong>Page Down</strong> (BOTTOM) hacen lo mismo. Consulte <a href="Inspection_workflow.html#inspeccion-de-ambas-caras-de-una-placa">Inspección de ambas caras de una placa</a>.</p>
 <p>Esto también puede ocurrir automáticamente al comenzar cada inspección: habilite <strong>Cambio automático TOP/BOTTOM</strong> en el <a href="Settings_menu.html#cambio-automatico-topbottom">menú de configuración</a>.</p>
 <h3 id="herramienta-de-medicion">Herramienta de medición</h3>
 <p><img alt="Botón de medición" class="center" src="../../assets/v7/ui-status-measure-button.png" width="80" /></p>
 <p>Este botón le permite seleccionar una región dentro del PCB para medir un área de interés. Encontrará más información sobre esta función <a href="../features/Measurement_tool.html">aquí</a>.</p>
 <h2 id="registro-de-actividad">Registro de actividad</h2>
 <p><img alt="Sección de funcionamiento interno" class="center" src="../../assets/activity-log.png" /></p>
-<p>El área de <strong>registro de actividad</strong> está ubicada en la parte superior derecha y muestra los <strong>créditos disponibles actuales</strong> y los detalles operativos de la aplicación, como el estado del proceso de análisis.</p>
+<p>El área de <strong>registro de actividad</strong> está ubicada en la parte superior derecha y muestra los <strong>créditos disponibles actuales</strong> y los detalles operativos de la aplicación, como el estado del proceso de análisis. Cuando el <a href="../features/User_control.html">control de acceso de usuarios</a> está habilitado, también muestra el usuario que ha iniciado sesión.</p>
 <h2 id="espacio-de-trabajo-principal">Espacio de trabajo principal</h2>
 <p><img alt="Sección principal" class="center" src="../../assets/v7/ui-working-area.png" /></p>
 <p>Esta es la sección principal donde se trabaja con las imágenes de <strong>REFERENCIA</strong> y <strong>UUI</strong>, las cuales se pueden alternar presionando la tecla TAB en el teclado o <a href="#intercambiar">el botón en la aplicación</a>. Los resultados de la inspección también se muestran en esta área utilizando retículos y números junto a los errores detectados.</p>
 <h2 id="comparacion-lado-a-lado">Comparación lado a lado</h2>
 <p><img alt="Sección de comparación" class="center" src="../../assets/v7/ui-side_by_side.png" width="400px" /></p>
 <p>Esta sección de la interfaz está dividida en dos partes. La parte superior muestra la imagen de <strong>REFERENCIA</strong>, que sirve como estándar para la comparación, mientras que la parte inferior muestra la imagen <strong>UUI</strong>. Estas imágenes se magnifican y se mueven en paralelo mostrando exactamente la misma área en la <strong>REFERENCIA</strong> y <strong>UUI</strong> donde apunta el cursor en el espacio de trabajo principal.</p>
+<h3 id="lista-de-detecciones">Lista de detecciones</h3>
+<p>Después de una inspección, al mover el ratón a esta área se muestra la <strong>lista de detecciones</strong>: una fila por detección, con su número, su tipo y una franja de color que indica su estado (sin revisar, error o falso positivo).</p>
+<table>
+<thead>
+<tr>
+<th>Acción</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pasar el ratón por una fila</td>
+<td>Resalta la detección en la imagen y muestra junto a ella dos miniaturas flotantes: la REFERENCIA arriba y la UUI abajo. Al cabo de un momento crecen a un tamaño mayor. Una vez que lo han hecho, mantener el puntero sobre la fila durante aproximadamente un segundo marca la detección como <strong>vista</strong>.</td>
+</tr>
+<tr>
+<td>Clic en una fila</td>
+<td>Se desplaza a esa detección en la imagen.</td>
+</tr>
+<tr>
+<td>Doble clic en una fila</td>
+<td>Se desplaza a esa detección y abre la ventana de reporte.</td>
+</tr>
+<tr>
+<td><strong>Cruz roja</strong> / <strong>tic verde</strong> al final de una fila</td>
+<td>Reporta la detección como error real / falso positivo, igual que las teclas de flecha <strong>arriba</strong> / <strong>abajo</strong>. En una detección ya reportada, el botón de su veredicto aparece contorneado.</td>
+</tr>
+<tr>
+<td>Rueda del ratón</td>
+<td>Mientras se muestran las miniaturas, cambia su zoom. Si no, desplaza la lista.</td>
+</tr>
+<tr>
+<td><strong>Shift</strong> + rueda del ratón</td>
+<td>Desplaza la lista, también mientras se muestran las miniaturas.</td>
+</tr>
+<tr>
+<td>Clic central</td>
+<td>Alterna la vista de la miniatura inferior: UUI, máscara de error, recuadro de error.</td>
+</tr>
+<tr>
+<td>Puntero en el borde superior o inferior de la lista</td>
+<td>Cuando la lista es más larga que el panel, se desplaza sola; cuanto más cerca del borde, más rápido. Una flecha tenue marca el borde hacia el que aún puede moverse.</td>
+</tr>
+</tbody>
+</table>
+<p>Con <a href="Settings_menu.html#preferencia-de-analisis">Preferencia de análisis</a> establecida en <strong>LIST</strong>, las teclas de flecha actúan sobre esta lista. Consulte <a href="Inspection_workflow.html#reporte-de-errores">Reporte de errores</a>.</p>
+<h3 id="panel-de-informacion-de-la-referencia">Panel de información de la Referencia</h3>
+<p>Según el modo de vista seleccionado con la tecla <strong>TAB</strong>, al pasar el ratón por la imagen de REFERENCIA se muestra en esta área el <strong>panel de información de la Referencia</strong>: nombre, fecha, códigos, óptica y secuencia de la REFERENCIA cargada, y si sus <a href="Inspection_workflow.html#niveles-de-revision-obligatoria">niveles de revisión obligatoria</a> están habilitados.</p>
+<p>Cuando <a href="Settings_menu.html#mostrar-estadisticas-y-mapa-de-calor-de-errores-por-referencia">Mostrar estadísticas y mapa de calor de errores por Referencia</a> está habilitado, el panel también muestra:</p>
+<ul>
+<li><strong>Estadísticas de inspección</strong>: total de inspecciones, OK y NO OK, rendimiento, errores confirmados, falsos positivos, detecciones aún sin revisar, los tipos de error más frecuentes y más.</li>
+<li><strong>Mapa de calor de errores</strong>: el área de placa de la REFERENCIA con una superposición de calor que muestra dónde fallan sus placas. Solo se cuentan los errores confirmados por el operador; los falsos positivos y las detecciones sin revisar nunca aparecen. Los errores se sitúan sobre la REFERENCIA usando la alineación de cada inspección, de modo que una placa ligeramente desplazada sigue cayendo en el lugar correcto.</li>
+</ul>
+<p>Una inspección se cuenta una sola vez, cuando se guarda su informe. Guardar de nuevo el informe de la misma inspección sustituye su entrada anterior en lugar de añadir una nueva.</p>
+<p>Al hacer clic derecho en la parte superior del panel se abren las <a href="#opciones-de-la-referencia">opciones de la Referencia</a> de la REFERENCIA cargada.</p>
 <h2 id="panel-de-botones">Panel de botones</h2>
 <p><img alt="Área de botones" class="center" src="../../assets/v7/ui-main_buttons.png" /></p>
 <p>Aquí se encuentran varias <strong>funciones y opciones</strong> diseñadas para <strong>optimizar</strong> su flujo de trabajo y acelerar sus tareas. Cada característica se define a continuación:</p>
 <h3 id="mosaico-de-referencias">Mosaico de referencias</h3>
 <p><img alt="Botón de mosaico de referencias" class="center" src="../../assets/v7/ui-button1.png" width="350px" /></p>
 <p><img alt="Menú Mosaico" class="center" src="../../assets/v7/2024-11-14_09-27.png" width="600px" /></p>
-<p>El mosaico de referencias se utiliza para almacenar REFERENCIAS como archivos para encontrar y cargar rápidamente cualquiera de ellas. El menú mosaico aparece automáticamente después de tomar una REFERENCIA usando el <a href="#tomar-una-imagen-de-referencia">botón para tomar foto de REFERENCIA</a> o cargándola <a href="#cargar-referencia-como-archivo">como un archivo</a>. En esta ventana también es posible nombrar la REFERENCIA tomada en la parte superior derecha de la ventana. Una REFERENCIA almacenada en el mosaico se puede cargar rápidamente presionando un <strong>botón F</strong> (F1-F10).</p>
+<p>El mosaico de referencias se utiliza para almacenar REFERENCIAS como archivos para encontrar y cargar rápidamente cualquiera de ellas. El menú mosaico aparece automáticamente después de tomar una REFERENCIA usando el <a href="#tomar-una-imagen-de-referencia">botón para tomar foto de REFERENCIA</a> o cargándola <a href="#cargar-referencia-como-archivo">como un archivo</a>. En esta ventana también es posible nombrar la REFERENCIA tomada en la parte superior derecha de la ventana. Una REFERENCIA almacenada en el mosaico se puede cargar rápidamente presionando un <strong>botón F</strong> (F1-F8). Al hacer clic derecho en un espacio se abren las <a href="#opciones-de-la-referencia">opciones de la Referencia</a> de esa REFERENCIA.</p>
 <h3 id="cargar-referencia-como-archivo">CARGAR REFERENCIA como archivo</h3>
 <p><img alt="Botón Abrir referencia" class="center" src="../../assets/v7/ui-button2.png" width="350px" /></p>
 <p><img alt="Menú Cargar REFERENCIA" class="center" src="../../assets/v7/ui-ref_search.png" /></p>
-<p>Use este icono para cargar una imagen capturada previamente como <strong>REFERENCIA</strong> y le permite ordenarlas por nombre o fecha. Todas las imágenes de <strong>REFERENCIA</strong> se pueden encontrar dentro de la carpeta <strong>APP/REFERENCE</strong> en una carpeta nombrada según la hora en que se tomó la foto.</p>
+<p>Use este icono para cargar una imagen capturada previamente como <strong>REFERENCIA</strong> y le permite ordenarlas por nombre o fecha, o filtrarlas por nombre, alias o <strong>Model ID</strong>. Todas las imágenes de <strong>REFERENCIA</strong> se pueden encontrar dentro de la carpeta <strong>APP/REFERENCE</strong> en una carpeta nombrada según la hora en que se tomó la foto.</p>
+<p>Una REFERENCIA de doble cara aparece en la lista una sola vez, por su cara TOP, con una marca en la columna <strong>Sides</strong>; a su cara BOTTOM se accede con el <a href="#alternar-topbottom">botón TOP/BOTTOM</a> una vez cargada. Las REFERENCIAS que no tienen <a href="../features/Barcode_reader.html#cargar-una-referencia-por-codigo-de-barras">Model ID</a> muestran atenuado el código con el que estaban indexadas antes.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Desde la versión 7, el software <strong>no permite</strong> cargar imágenes tomadas de cualquier fuente que no sea la plataforma misma, ya que las imágenes contienen parámetros específicos para la óptica. Cada imagen de REFERENCIA debe capturarse utilizando la <strong>AI-4050 AOI</strong>.</p>
 </div>
-<h4 id="alias-de-visualizacion">Alias de visualización</h4>
-<p>Una REFERENCIA puede recibir un <strong>alias de visualización</strong> opcional: un nombre más amigable que se muestra en la columna <strong>Alias</strong> de esta lista en lugar del nombre real de la REFERENCIA, sin renombrarla. Esto resulta útil cuando el nombre real de la REFERENCIA —un código de barras, una marca de tiempo— no es fácil de interpretar de un vistazo. El alias también se usa en el mosaico y en los informes de inspección (PDF y JSON).</p>
-<p>Seleccione una REFERENCIA en la lista y pulse <strong>ALIAS</strong>.</p>
-<p><img alt="Botón ALIAS y diálogo" class="center" src="../../assets/v7/ref-alias-name.png" /></p>
-<p>Escriba un nombre y pulse <strong>OK</strong>. Si deja el campo vacío y pulsa <strong>OK</strong>, el alias se elimina y la lista vuelve a mostrar el nombre real de la REFERENCIA.</p>
+<h4 id="opciones-de-la-referencia">Opciones de la Referencia</h4>
+<p>La ventana <strong>Reference options</strong> contiene los ajustes de cada REFERENCIA: su alias de visualización y sus niveles de revisión obligatoria. Ábrala de cualquiera de estas formas:</p>
+<ul>
+<li>Seleccione una REFERENCIA en esta lista y pulse <strong>OPTIONS</strong>.</li>
+<li>Haga clic derecho en un espacio del <a href="#mosaico-de-referencias">mosaico de referencias</a>.</li>
+<li>Haga clic derecho en la parte superior del <a href="#panel-de-informacion-de-la-referencia">panel de información de la Referencia</a>.</li>
+</ul>
+<p><img alt="Botón OPTIONS y diálogo" class="center" src="../../assets/v7/ref-alias-name.png" /></p>
+<p><strong>Alias de visualización</strong></p>
+<p>Una REFERENCIA puede recibir un <strong>alias de visualización</strong> opcional: un nombre más amigable que se muestra en la columna <strong>Alias</strong> de esta lista en lugar del nombre real de la REFERENCIA, sin renombrarla. Esto resulta útil cuando el nombre real de la REFERENCIA —un código de barras, una marca de tiempo— no es fácil de interpretar de un vistazo. El alias también se usa en el mosaico y en los informes de inspección (PDF y JSON), donde se muestra junto al nombre real.</p>
+<p>Si deja el campo vacío, el alias se elimina y la lista vuelve a mostrar el nombre real de la REFERENCIA.</p>
 <p><img alt="Lista de REFERENCIAS con alias" class="center" src="../../assets/v7/ref-alias.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>El alias es solo una etiqueta. Todo lo que identifica o carga la REFERENCIA —su nombre de archivo, su asociación con un código de barras— sigue usando su nombre real.</p>
+<p>El alias es solo una etiqueta. Todo lo que identifica o carga la REFERENCIA —su nombre de archivo, su Model ID— sigue usando su nombre real.</p>
+</div>
+<p><strong>Niveles de revisión obligatoria</strong></p>
+<p>Tres casillas —<strong>Revisión obligatoria de errores</strong>, <strong>Reporte obligatorio de errores</strong> e <strong>Informe final obligatorio</strong>— hacen obligatorio ese nivel para quien inspeccione con esta REFERENCIA, independientemente de su rol o de lo que indique la configuración global. Consulte <a href="Inspection_workflow.html#niveles-de-revision-obligatoria">Niveles de revisión obligatoria</a>.</p>
+<p>En una REFERENCIA de doble cara, los ajustes se guardan en ambas caras. Una REFERENCIA creada con <a href="UUI_to_REFERENCE.html">UUI a REFERENCIA</a> los hereda de la REFERENCIA de la que procede; una recién capturada empieza con todos ellos deshabilitados.</p>
+<div class="admonition note">
+<p class="admonition-title">Permisos</p>
+<p>Con el <a href="../features/User_control.html">control de acceso de usuarios</a> habilitado, el alias requiere el permiso <strong>Set Reference display alias</strong> y los niveles obligatorios requieren el permiso <strong>Edit Reference options</strong>.</p>
 </div>
 <h3 id="intercambiar">Intercambiar</h3>
 <p><img alt="Botón Intercambiar" class="center" src="../../assets/v7/ui-button3.png" width="350px" /></p>

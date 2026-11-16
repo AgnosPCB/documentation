@@ -1747,7 +1747,37 @@
 <p>Die AgnosPCB-Software enthält eine Barcode-Lesefunktion, die <strong>1D-Barcodes, QR und Datamatrix</strong> unterstützt.</p>
 <p>Sie können entweder ein <strong>REFERENZ</strong>-Foto aufnehmen oder eines direkt aus Ihren Dateien über die Schaltfläche <strong>"Referenz öffnen"</strong> hochladen.</p>
 <p><img alt="Ausgewählter Barcode-Bereich" class="center" src="../../assets/v7/ui-button4.png" /></p>
-<p>Drücken Sie die Schaltfläche <strong>"Barcode-Bereich zeichnen"</strong> und zeichnen Sie einen Bereich, in dem sich ein Code auf der Platine befindet. Legen Sie anschließend fest, um welchen Codetyp es sich handelt: <strong>ID, Batch ID, Model oder Misc</strong>. Wiederholen Sie dies für jeden Code, den die Software lesen soll — bis zu <strong>vier</strong> verschiedene Typen.</p>
+<p>Drücken Sie die Schaltfläche <strong>"Barcode-Bereich zeichnen"</strong> und zeichnen Sie einen Bereich, in dem sich ein Code auf der Platine befindet. Legen Sie anschließend fest, um welchen Codetyp es sich handelt. Wiederholen Sie dies für jeden Code, den die Software lesen soll — bis zu <strong>vier</strong> verschiedene Typen:</p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Serial Number</strong></td>
+<td>Die Seriennummer jeder einzelnen Platine. Sie ist auf jeder Platine anders und wird daher zur Benennung der Berichte verwendet, identifiziert die REFERENZ aber <strong>nicht</strong>.</td>
+</tr>
+<tr>
+<td><strong>Batch</strong></td>
+<td>Chargen- oder Losnummer.</td>
+</tr>
+<tr>
+<td><strong>Model ID</strong></td>
+<td>Der Code des Platinenmodells, der auf allen Platinen dieses Modells gleich ist. Er <strong>identifiziert die REFERENZ</strong> und wird verwendet, um sie <a href="#eine-referenz-per-barcode-laden">per Barcode zu laden</a>.</td>
+</tr>
+<tr>
+<td><strong>Misc.</strong></td>
+<td>Jeder andere Code. Sie werden aufgefordert, einen Namen dafür einzugeben.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Vor Version 7.11 hieß <strong>Serial Number</strong> noch <strong>PCB ID</strong> und <strong>Model ID</strong> hieß <strong>Model</strong>. Bestehende REFERENZEN funktionieren weiterhin und zeigen die neuen Namen an; nichts muss neu erstellt werden.</p>
+</div>
 <p><img alt="Code-Lesevorgang" class="center" src="../../assets/v7/barcode/1-bc-menu.png" /></p>
 <p>Ist die Option <strong>mandatory barcode</strong> für einen bestimmten Code aktiviert, setzt die Software die Inspektion erst fort, wenn dieser Code erfolgreich gelesen wurde. Wird er nicht automatisch erkannt, wird der Bediener aufgefordert, ihn manuell einzugeben, bevor fortgefahren werden kann.</p>
 <p>Sobald die REFERENZ geladen ist, fahren Sie mit der Inspektion fort, indem Sie ein Bild der UUI aufnehmen. Jeder Code der UUI wird automatisch in den auf der REFERENZ festgelegten Bereichen gelesen.</p>
@@ -1755,7 +1785,14 @@
 <p>Der gescannte Code wird in den endgültigen PDF-Bericht der UUI aufgenommen.</p>
 <p><img alt="Bericht mit enthaltenem Barcode" class="center" src="../../assets/barcode-report.png" /></p>
 <h2 id="eine-referenz-per-barcode-laden">Eine REFERENZ per Barcode laden</h2>
-<p>Wenn Sie bereits eine <strong>REFERENZ</strong> gespeichert haben, können Sie diese einfach mithilfe des zugehörigen Codes abrufen. Drücken Sie dazu die Schaltfläche <strong>"Barcode lesen"</strong>, lesen Sie dann den Barcode mit dem Handscanner, und die <strong>REFERENZ</strong> wird automatisch geladen. Es ist auch möglich, den Code manuell einzugeben.</p>
+<p>Wenn Sie bereits eine <strong>REFERENZ</strong> gespeichert haben, können Sie diese einfach mithilfe ihrer <strong>Model ID</strong> abrufen. Drücken Sie dazu die Schaltfläche <strong>"Barcode lesen"</strong>, lesen Sie dann den Barcode mit dem Handscanner, und die <strong>REFERENZ</strong> wird automatisch geladen. Es ist auch möglich, den Code manuell einzugeben.</p>
+<ul>
+<li>Haben <strong>mehrere</strong> REFERENZEN diese Model ID, können Sie in einer kurzen Liste (Name, Alias und Datum) auswählen, welche geladen werden soll.</li>
+<li>Hat <strong>keine</strong> REFERENZ diese Model ID, wird angeboten, den Code als Model ID der aktuell geladenen REFERENZ zuzuweisen. Ist die <a href="User_control.html">Benutzerzugriffskontrolle</a> aktiviert, ist dafür die Berechtigung <strong>Assign barcode to Reference</strong> erforderlich.</li>
+<li>Eine doppelseitige REFERENZ wird über ihre TOP-Seite gefunden.</li>
+<li>Eine REFERENZ ohne Model ID wird weiterhin über den Code gefunden, mit dem sie vor Version 7.11 verknüpft war. Eine REFERENZ mit Model ID wird nur über diese gefunden; eine Platinen-Seriennummer, mit der sie früher geladen wurde, funktioniert also nicht mehr.</li>
+<li>Solange die Ergebnisse einer Inspektion auf dem Bildschirm angezeigt werden, legt dieselbe Schaltfläche stattdessen die <strong>Serial Number</strong> der inspizierten Platine fest.</li>
+</ul>
 <p><img alt="REFERENZ per Barcode laden" class="center" src="../../assets/v7/ui-barcode-loading.png" /></p>
 <p><img alt="REFERENZ per Barcode laden" class="center" src="../../assets/v7/ui-bc_ref.png" /></p>
 <p><img alt="Handscanner für Barcode" class="center" src="../../assets/barcode-handhold.png" /></p>

@@ -2206,10 +2206,16 @@ und einem stehenden Förderband aus:</p>
 <td>Blendet die Referenzaufnahme aus und verhindert, dass ein Bediener die REFERENZ oder die Empfindlichkeit während der Schicht ändert. Schützen Sie es mit einem Einstellungspasswort (siehe <a href="../how_to/Settings_menu.html">Einstellungsmenü</a>).</td>
 </tr>
 <tr>
-<td><strong>Mandatory errors review</strong></td>
+<td><strong>Mandatory errors review</strong>, <strong>Mandatory errors report</strong> und <strong>Mandatory final report</strong></td>
 <td>Workflow</td>
 <td><strong>Deaktiviert</strong></td>
-<td>Ist diese Option aktiviert, wartet die Software, bis ein Mensch jeden Fehler überprüft hat, bevor die nächste Inspektion zugelassen wird — dies blockiert die Linie.</td>
+<td>Ist eine dieser Optionen aktiviert, wartet die Software, bis ein Mensch jeden Fehler überprüft, klassifiziert oder den Abschlussbericht bestätigt hat, bevor die nächste Inspektion zugelassen wird — dies blockiert die Linie. Bei aktivierter Benutzerzugriffskontrolle prüfen Sie außerdem die Rolle des Benutzers und die <a href="../how_to/Screen-layout.html#referenzoptionen">Referenzoptionen</a> jeder REFERENZ.</td>
+</tr>
+<tr>
+<td><strong>Warn about a side not reviewed</strong></td>
+<td>Workflow</td>
+<td>Deaktiviert</td>
+<td>Verhindert, dass vor der nächsten Platine ein Bestätigungsfenster auf eine Eingabe wartet.</td>
 </tr>
 <tr>
 <td><strong>Show errors popup</strong></td>
@@ -2233,7 +2239,7 @@ und einem stehenden Förderband aus:</p>
 <td><strong>Create JSON report</strong></td>
 <td>Reports</td>
 <td>Aktiviert</td>
-<td>Maschinenlesbares Ergebnis für Ihr MES/SCADA. Erfordert eine Lizenz.</td>
+<td>Maschinenlesbares Ergebnis für Ihr MES/SCADA. Erfordert eine Lizenz. Für doppelseitige Platinen beachten Sie den Hinweis unten.</td>
 </tr>
 <tr>
 <td><strong>Use barcodes</strong></td>
@@ -2249,6 +2255,16 @@ und einem stehenden Förderband aus:</p>
 „unknown“ in das PDF geschrieben, da kein Bediener ihn klassifiziert.
 Das ist auf einer Linie zu erwarten — die Klassifizierung erfolgt später,
 offline, anhand der gespeicherten Berichte.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">JSON-Berichte doppelseitiger Platinen</p>
+<p>Seit Version 7.11.4 schreibt die Software, wenn beide Seiten einer Platine
+inspiziert wurden, einen einzigen
+<a href="../how_to/Inspection_workflow.html#kombinierter-topbottom-bericht">kombinierten Bericht</a>
+und löscht die einzelnen PDF- und JSON-Berichte jeder Seite. Ein System, das
+bisher das JSON jeder Seite aus dem Ordner REPORTS gelesen hat, muss nun
+stattdessen <code>sides.TOP</code> und <code>sides.BOTTOM</code> des kombinierten JSON lesen. Die
+Inspektionsdateien in PCB_OUT sind nicht betroffen.</p>
 </div>
 <h3 id="23-wo-die-ergebnisse-gespeichert-werden">2.3 Wo die Ergebnisse gespeichert werden</h3>
 <p>Die Inspektionsergebnisse werden in den Ordner <strong>PCB_OUT</strong> geschrieben, der
@@ -2308,7 +2324,7 @@ manuellen/Tippbetrieb durch.</p>
 <tbody>
 <tr>
 <td>Die Linie stoppt nach der ersten fehlerhaften Platine</td>
-<td><strong>Mandatory errors review</strong> ist aktiviert. Deaktivieren Sie es unter Settings → Workflow.</td>
+<td>Eine verpflichtende Prüfstufe ist aktiviert (<strong>Mandatory errors review</strong>, <strong>report</strong> oder <strong>final report</strong>). Deaktivieren Sie sie unter Settings → Workflow, in der Rolle des Benutzers (Settings → Users) und in den Referenzoptionen der REFERENZ.</td>
 </tr>
 <tr>
 <td>Ein Dialog wartet mitten im Zyklus auf eine Eingabe</td>

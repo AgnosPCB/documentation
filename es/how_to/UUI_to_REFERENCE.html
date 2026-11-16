@@ -971,6 +971,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UUI a REFERENCIA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="UUI_to_REFERENCE.html" class="md-nav__link md-nav__link--active">
         
   
@@ -987,6 +1005,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-de-doble-cara" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REFERENCIAS de doble cara
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1661,6 +1709,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-de-doble-cara" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REFERENCIAS de doble cara
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1683,6 +1750,15 @@
 <p><img alt="Foto UUI" class="center" src="../../assets/UUI.png" /></p>
 <p>Y ahora, después de presionar el botón <strong>"UUI a REFERENCIA"</strong>, la misma PCBA se está utilizando como <strong>REFERENCIA</strong>.</p>
 <p><img alt="Misma PCB como foto de REFERENCIA" class="center" src="../../assets/REFERENCE.png" /></p>
+<p>El nombre de la nueva REFERENCIA no debe existir ya. Si existe, el software muestra un aviso y pide otro distinto.</p>
+<p>La nueva REFERENCIA hereda las <a href="Screen-layout.html#opciones-de-la-referencia">opciones de la Referencia</a> (niveles de revisión obligatoria) de la REFERENCIA de la que procede.</p>
+<h2 id="referencias-de-doble-cara">REFERENCIAS de doble cara</h2>
+<p>En una REFERENCIA con caras <strong>TOP</strong> y <strong>BOTTOM</strong>, <strong>UUI a REFERENCIA</strong> crea un par TOP/BOTTOM completo:</p>
+<ul>
+<li>Si se han inspeccionado <strong>ambas caras</strong> de la placa, la TOP y la BOTTOM de la nueva REFERENCIA son las dos imágenes inspeccionadas.</li>
+<li>Si solo se ha inspeccionado <strong>una cara</strong>, esa cara se toma de la inspección y la otra se copia de la REFERENCIA contra la que inspeccionó.</li>
+</ul>
+<p>Funciona igual tanto si empieza desde la cara TOP como desde la BOTTOM.</p>
 
 
 

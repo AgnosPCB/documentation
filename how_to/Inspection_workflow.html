@@ -881,6 +881,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#inspecting-both-sides-of-a-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspecting both sides of a board
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reporting-errors" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -892,6 +903,34 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#mandatory-review-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory review levels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mandatory review levels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#warning-about-a-side-not-reviewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warning about a side not reviewed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#generating-a-final-pdf-report" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -899,6 +938,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Generating a final PDF report">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#combined-topbottom-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined TOP/BOTTOM report
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1898,6 +1954,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#inspecting-both-sides-of-a-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspecting both sides of a board
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reporting-errors" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1909,6 +1976,34 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#mandatory-review-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory review levels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mandatory review levels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#warning-about-a-side-not-reviewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warning about a side not reviewed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#generating-a-final-pdf-report" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1916,6 +2011,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Generating a final PDF report">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#combined-topbottom-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined TOP/BOTTOM report
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1985,6 +2097,8 @@
 <p><img alt="Switch button" class="center" src="../assets/v7/references/switch-button.png" width="400" /></p>
 <p><img alt="TOP image" class="center" src="../assets/v7/references/top-image.png" /></p>
 <p><img alt="BOTTOM image" class="center" src="../assets/v7/references/bt-image.png" /></p>
+<p>The <strong>Page Up</strong> and <strong>Page Down</strong> keys also switch to the <strong>TOP</strong> and <strong>BOTTOM</strong> side respectively.</p>
+<p>See <a href="#inspecting-both-sides-of-a-board">Inspecting both sides of a board</a> for how to inspect a double-sided PCBA once its REFERENCE is ready.</p>
 <hr />
 <h4 id="focus">Focus</h4>
 <p>The system allows manual focusing of the PCB before starting the capture process. Press the <strong>FOCUS</strong> button to adjust the optics and verify that the selected area is correctly focused.</p>
@@ -2031,10 +2145,28 @@
 <p><img alt="Sensitivity button" class="center" src="../assets/v7/ui-button6.png" /></p>
 <p><img alt="UUI inference" class="center" src="../assets/v7/ui-uui_report.png" /></p>
 <p>If errors are detected, a <strong>red frame</strong> will appear around the main window. A <strong>green frame</strong> will appear if there are no errors.</p>
+<h3 id="inspecting-both-sides-of-a-board">Inspecting both sides of a board</h3>
+<p>With a double-sided REFERENCE you can inspect the <strong>TOP</strong> and the <strong>BOTTOM</strong> of the same board one after the other:</p>
+<ol>
+<li>Inspect the first side as usual. In the live preview, the <strong>START INSPECTION</strong> button shows on a second line which side you are about to inspect. Check that the board is placed face up on that side.</li>
+<li>Flip the board, switch to the other side (with the <a href="Screen-layout.html#switch-topbottom">TOP/BOTTOM button</a>, the <strong>Page Up</strong> / <strong>Page Down</strong> keys, or automatically with <a href="Settings_menu.html#topbottom-auto-switch">TOP/BOTTOM auto switch</a>) and inspect it.</li>
+<li>Once both sides have been inspected, the TOP/BOTTOM button and the <strong>Page Up</strong> / <strong>Page Down</strong> keys switch directly between the <strong>results</strong> of the two sides, so you can keep reviewing one side after capturing the other. Each side keeps its own detections, classifications and <a href="Set_sensitivity.html">sensitivity</a>.</li>
+</ol>
+<p>The results are saved in the background while you work. A loading notice is shown on the image while a side is being restored.</p>
+<p>When both sides have a report, a single <a href="#combined-topbottom-report">combined report</a> is generated for the whole board.</p>
+<div class="admonition note">
+<p class="admonition-title">UV inspections</p>
+<p>A <a href="../features/UV_conformal_coating_inspection.html">UV inspection</a> is independent of the TOP/BOTTOM board in progress: it does not discard the sides already inspected and it is not part of the combined report.</p>
+</div>
 <h3 id="reporting-errors">Reporting errors</h3>
 <p>Once the inspection is complete, the operator must monitor the flagged errors, marking them as an <strong>actual error</strong> or a <strong>false positive detection</strong>.
 To do this, simply scroll through the errors using the <strong>left and right arrows</strong> on the keyboard.</p>
-<p>Errors can also be reported directly with the mouse: <strong>left-click</strong> a detection to report it as an actual error, or <strong>right-click</strong> it to report it as a false positive — equivalent to the <strong>up</strong> and <strong>down</strong> arrow keys described below.</p>
+<div class="admonition note">
+<p class="admonition-title">Analysis preference</p>
+<p>By default, on new installations the review starts on the <a href="Screen-layout.html#detections-list">detections list</a>: the <strong>left</strong> and <strong>right</strong> arrows move from row to row of the list and the <strong>up</strong> and <strong>down</strong> arrows classify the row under the cursor. To review the detections directly on the image, as in previous versions, set <a href="Settings_menu.html#analysis-preference">Analysis preference</a> to <strong>CANVAS</strong>.</p>
+</div>
+<p>Errors can also be reported directly with the mouse: <strong>left-click</strong> a detection to report it as an actual error, or <strong>right-click</strong> it to report it as a false positive — equivalent to the <strong>up</strong> and <strong>down</strong> arrow keys described below. Each row of the <a href="Screen-layout.html#detections-list">detections list</a> also has a <strong>red cross</strong> (error) and a <strong>green tick</strong> (false positive) button.</p>
+<p>Left-clicking a detection that is already reported as an actual error asks for confirmation before undoing it.</p>
 <p>To mark a real error, just move to the fault and press the <strong>up arrow</strong> on your keyboard. A new window will appear showing the bug in detail and allowing you to categorise it by selecting a type of fault from the list.</p>
 <p><img alt="Report window" class="center" src="../assets/v7/ui-report.png" /></p>
 <p>In addition, there is an empty field to <strong>add a comment.</strong></p>
@@ -2045,7 +2177,48 @@ To do this, simply scroll through the errors using the <strong>left and right ar
 <p class="admonition-title">Note</p>
 <p>Note the <strong>red icon</strong> <img alt="Red icon" src="../assets/v7/ui-report_red.png" width="20px" /> marks the actual faults and the <strong>green icon</strong> <img alt="Green icon" src="../assets/v7/ui-report_green.png" width="20px" /> marks the false positive faults.</p>
 </div>
-<p>A detection that has not been reported as either is still <strong>unreviewed</strong>. When <a href="Settings_menu.html#mandatory-errors-review">Mandatory errors review</a> is enabled, simply hovering the cursor over such a detection marks it as <strong>viewed</strong>, which also satisfies the review requirement for that detection.</p>
+<div class="admonition note">
+<p class="admonition-title">Permissions</p>
+<p>With <a href="../features/User_control.html">user access control</a> enabled, reporting a detection requires the <strong>Classify detected faults</strong> permission. Without it, a <strong>Permission denied</strong> message is shown and nothing is reported.</p>
+</div>
+<p>A detection that has not been reported as either is still <strong>unreviewed</strong> (yellow). Keeping the pointer still over it for about <strong>one second</strong> marks it as <strong>seen</strong> (cyan): a small ring fills around the detection while you wait, and nothing is marked if you move away before it closes, so sweeping the mouse across the board does not mark detections you have not looked at. It works the same when you reach a detection with the arrow keys or from the detections list. A detection marked as seen can still be reported afterwards.</p>
+<h3 id="mandatory-review-levels">Mandatory review levels</h3>
+<p>The software can require three levels of review before a new inspection can start. They are independent and can be combined:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>What it requires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mandatory errors review</strong></td>
+<td>Every detection reviewed, or at least marked as <strong>seen</strong>.</td>
+</tr>
+<tr>
+<td><strong>Mandatory errors report</strong></td>
+<td>Every detection <strong>reported</strong> as an actual error or a false positive. Marking it as seen is not enough.</td>
+</tr>
+<tr>
+<td><strong>Mandatory final report</strong></td>
+<td>The <a href="#generating-a-final-pdf-report">final OK / NOT OK report</a> confirmed by the operator. A report generated automatically does not count.</td>
+</tr>
+</tbody>
+</table>
+<p>If a level is not met when you try to start the next inspection, a warning tells you what is missing.</p>
+<p>A level applies when <strong>any</strong> of the following has it enabled:</p>
+<ul>
+<li>The loaded <strong>REFERENCE</strong>, in its <a href="Screen-layout.html#reference-options">Reference options</a> window.</li>
+<li>The <strong>role</strong> of the logged-in user, when <a href="../features/User_control.html#mandatory-review-per-role">user access control</a> is enabled. The <strong>admin</strong> role is only affected by the REFERENCE.</li>
+<li>The global options in the <a href="Settings_menu.html#mandatory-errors-review">Workflow settings</a>, when user access control is disabled.</li>
+</ul>
+<p>None of the levels is required while <a href="Settings_menu.html#demo-loop-mode">Demo / Loop mode</a> is on.</p>
+<p>On a double-sided board, inspecting the other side of the same board is never blocked by what is still pending on the first one. Starting the <strong>next board</strong> requires the levels that apply to be met on <strong>both</strong> sides. To confirm the final report of the other side, switch to it and generate its final report.</p>
+<p>When at least one level is enabled, every report (PDF and JSON) states how far the review had gone when it was made, for example <code>MANDATORY REVIEW - Detections: 5 (3 classified, 2 seen, 0 pending)</code>, and whether the final report was confirmed. The line is shown in red if something was still pending.</p>
+<h4 id="warning-about-a-side-not-reviewed">Warning about a side not reviewed</h4>
+<p>Independently of the levels above, before the next board starts the software warns you if a side has detections but <strong>none</strong> of them has been reviewed or reported. The window names the side and lets you continue anyway (<strong>OK</strong>) or go back to review it (<strong>CANCEL</strong>).</p>
+<p>This warning is not shown when the next capture is the other side of the same board, in UV inspections or in Demo / Loop mode. It can be disabled in <a href="Settings_menu.html#warn-about-a-side-not-reviewed">Settings → Workflow</a>.</p>
 <h3 id="generating-a-final-pdf-report">Generating a final PDF report</h3>
 <p>Once the reporting has finished, the operator can generate a final PDF report by pressing the following button:</p>
 <p><img alt="Final report" class="center" src="../assets/v7/ui-button8.png" /></p>
@@ -2054,6 +2227,13 @@ To do this, simply scroll through the errors using the <strong>left and right ar
 <p>It is possible to add comments that will be included in the report. The PDF will be generated in the <strong>REPORTS</strong> folder.</p>
 <p><img alt="PDF report" class="center" src="../assets/v7/pdf-report1.png" /></p>
 <p><img alt="PDF report" class="center" src="../assets/v7/pdf-report2.png" /></p>
+<h4 id="combined-topbottom-report">Combined TOP/BOTTOM report</h4>
+<p>When both sides of a board have a report, a single combined PDF is generated in the report folder of the TOP side: a cover page with the overall result and the data of each side, followed by the TOP report and the BOTTOM report. When <a href="Settings_menu.html#create-json-report">JSON reports</a> are enabled, a combined JSON is written as well, with the data of each side under <code>sides.TOP</code> and <code>sides.BOTTOM</code>.</p>
+<p>Once the combined report has been written, the individual PDF and JSON reports of each side are deleted, so only one PDF and one JSON remain per board. A board with only one side inspected keeps its own report, and nothing is deleted if the combined report could not be written. The inspection files in <strong>PCB_OUT</strong> are not affected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The JSON report also states, for each detection, whether the operator decided it is an error, a false positive or is still pending (<code>verdict</code> field).</p>
+</div>
 
 
 

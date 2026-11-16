@@ -871,6 +871,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Side-by-side comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detections-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detections list
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-information-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference information panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -909,10 +937,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#display-alias" class="md-nav__link">
+  <a href="#reference-options" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Display alias
+        Reference options
       
     </span>
   </a>
@@ -2098,6 +2126,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Side-by-side comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detections-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detections list
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-information-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference information panel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2136,10 +2192,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#display-alias" class="md-nav__link">
+  <a href="#reference-options" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Display alias
+        Reference options
       
     </span>
   </a>
@@ -2314,51 +2370,119 @@
 <p>This area displays the connection status with the inspection platform and camera. If the connection fails, the icons will turn red. This area also contains the following action buttons:</p>
 <h3 id="logout">Logout</h3>
 <p><img alt="Logout button" class="center" src="../assets/v7/ui-logout.png" /></p>
-<p>If users are defined in the settings menu, this button allows the user to logout.</p>
+<p>If <a href="../features/User_control.html">user access control</a> is enabled, this button allows the user to logout. It asks for confirmation and then clears the workspace (loaded REFERENCE and inspection results), so the next user starts fresh.</p>
 <h3 id="loading-reference-by-barcode">Loading REFERENCE by barcode</h3>
 <p><img alt="Barcode REFERENCE loading" class="center" src="../assets/v7/ui-barcode-loading.png" /></p>
 <p><img alt="Barcode REFERENCE loading" class="center" src="../assets/v7/ui-bc_ref.png" /></p>
-<p>This button opens a pop-up window for inserting a barcode number. When generating a REFERENCE, any <a href="#barcode-area-drawing">barcode it contains can be read</a>. This barcode will be associated with the REFERENCE and can be loaded using that number with this function. It is also possible to read the barcode with a handheld reader and insert it into this field. More information about this feature <a href="../features/Barcode_reader.html#load-a-reference-by-barcode">here</a>.</p>
+<p>This button opens a pop-up window for inserting a code, and loads the REFERENCE that has it as its <strong>Model ID</strong> (the code of the board model, which is the same on every board). It is also possible to read the code with a handheld reader and insert it into this field. If several REFERENCES have that code, a short list lets you choose which one to load. More information about this feature <a href="../features/Barcode_reader.html#load-a-reference-by-barcode">here</a>.</p>
 <h3 id="switch-topbottom">Switch TOP/BOTTOM</h3>
 <p><img alt="TOP/BOTTOM button" class="center" src="../assets/v7/ui-top-bottom.png" width="80" /></p>
-<p>If the REFERENCE image contains both the top and bottom images of the PCBA, alternate between the two images.</p>
+<p>If the REFERENCE image contains both the top and bottom images of the PCBA, alternate between the two images. Once both sides of a board have been inspected, it switches between the <strong>results</strong> of the two sides instead. The <strong>Page Up</strong> (TOP) and <strong>Page Down</strong> (BOTTOM) keys do the same. See <a href="Inspection_workflow.html#inspecting-both-sides-of-a-board">Inspecting both sides of a board</a>.</p>
 <p>This can also happen automatically at the start of each inspection — enable <strong>TOP/BOTTOM auto switch</strong> in the <a href="Settings_menu.html#topbottom-auto-switch">settings menu</a>.</p>
 <h3 id="measurement-tool">Measurement tool</h3>
 <p><img alt="Measurement button" class="center" src="../assets/v7/ui-status-measure-button.png" width="80" /></p>
 <p>This button allows you to select a region within the PCB to measure an area of interest. More information about this feature can be found <a href="../features/Measurement_tool.html">here</a>.</p>
 <h2 id="activity-log">Activity log</h2>
 <p><img alt="Inner workings section" class="center" src="../assets/activity-log.png" /></p>
-<p>The <strong>activity log</strong> area is located in the top right side and shows the <strong>current available credits</strong> and the application's operational details such as the status of the analysis process.</p>
+<p>The <strong>activity log</strong> area is located in the top right side and shows the <strong>current available credits</strong> and the application's operational details such as the status of the analysis process. When <a href="../features/User_control.html">user access control</a> is enabled, it also shows the logged-in user.</p>
 <h2 id="main-workspace">Main workspace</h2>
 <p><img alt="Main section" class="center" src="../assets/v7/ui-working-area.png" /></p>
 <p>This is the main section where you work with the <strong>REFERENCE</strong> and the <strong>UUI</strong> images, which can be switched by pressing the TAB key on the keyboard or <a href="#swap">the button on the application</a>. The inspection results are also displayed in this area using crosshairs and numbers next to the detected errors.</p>
 <h2 id="side-by-side-comparison">Side-by-side comparison</h2>
 <p><img alt="comparison section" class="center" src="../assets/v7/ui-side_by_side.png" width="400px" /></p>
 <p>This interface section is divided into two parts. The top part displays the <strong>REFERENCE</strong> image, serving as a standard for comparison, while the bottom part shows the <strong>UUI</strong> image. These images are magnified and move in parallel, showing exactly the same area in the <strong>REFERENCE</strong> and <strong>UUI</strong> where the cursor is pointing in the main workspace.</p>
+<h3 id="detections-list">Detections list</h3>
+<p>After an inspection, moving the mouse into this area shows the <strong>detections list</strong>: one row per detection, with its number, its type and a colored strip showing its state (unreviewed, error or false positive).</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hover a row</td>
+<td>Highlights the detection on the image and shows two floating thumbnails next to it: the REFERENCE above and the UUI below. They grow to a larger size after a moment. Once they have, keeping the pointer on the row for about one second marks the detection as <strong>seen</strong>.</td>
+</tr>
+<tr>
+<td>Click a row</td>
+<td>Moves to that detection on the image.</td>
+</tr>
+<tr>
+<td>Double-click a row</td>
+<td>Moves to that detection and opens the reporting window.</td>
+</tr>
+<tr>
+<td><strong>Red cross</strong> / <strong>green tick</strong> at the end of a row</td>
+<td>Reports the detection as an actual error / a false positive, the same as the <strong>up</strong> / <strong>down</strong> arrow keys. On a detection already reported, the button of its verdict is outlined.</td>
+</tr>
+<tr>
+<td>Mouse wheel</td>
+<td>While the thumbnails are shown, changes their zoom. Otherwise, scrolls the list.</td>
+</tr>
+<tr>
+<td><strong>Shift</strong> + mouse wheel</td>
+<td>Scrolls the list, also while the thumbnails are shown.</td>
+</tr>
+<tr>
+<td>Middle click</td>
+<td>Cycles the view of the lower thumbnail: UUI, error mask, error box.</td>
+</tr>
+<tr>
+<td>Pointer at the top or bottom edge of the list</td>
+<td>When the list is longer than the panel, it scrolls by itself; the closer to the edge, the faster. A faint arrow marks the edge where it can still move.</td>
+</tr>
+</tbody>
+</table>
+<p>With <a href="Settings_menu.html#analysis-preference">Analysis preference</a> set to <strong>LIST</strong>, the arrow keys work on this list. See <a href="Inspection_workflow.html#reporting-errors">Reporting errors</a>.</p>
+<h3 id="reference-information-panel">Reference information panel</h3>
+<p>Depending on the view mode selected with the <strong>TAB</strong> key, hovering the REFERENCE image shows the <strong>Reference information panel</strong> in this area: name, date, codes, optics and sequence of the loaded REFERENCE, and whether its <a href="Inspection_workflow.html#mandatory-review-levels">mandatory review levels</a> are enabled.</p>
+<p>When <a href="Settings_menu.html#show-statistics-and-error-heatmap-per-reference">Show statistics and error heatmap per Reference</a> is enabled, the panel also shows:</p>
+<ul>
+<li><strong>Inspection statistics</strong>: total inspections, OK and NOT OK, yield, errors confirmed, false positives, detections still unreviewed, the most frequent error types and more.</li>
+<li><strong>Error heatmap</strong>: the board area of the REFERENCE with a heat overlay showing where its boards fail. Only errors confirmed by the operator are counted; false positives and unreviewed detections never appear. Errors are placed on the REFERENCE using the alignment of each inspection, so a slightly shifted board still lands on the right spot.</li>
+</ul>
+<p>An inspection is counted once, when its report is saved. Saving the report of the same inspection again replaces its previous entry instead of adding a new one.</p>
+<p>Right-clicking the upper part of the panel opens the <a href="#reference-options">Reference options</a> of the loaded REFERENCE.</p>
 <h2 id="buttons-panel">Buttons panel</h2>
 <p><img alt="Buttons area" class="center" src="../assets/v7/ui-main_buttons.png" /></p>
 <p>Here you will find various <strong>functions and options</strong> designed to <strong>optimize</strong> your workflow and speed up your tasks. Each feature is defined below:</p>
 <h3 id="reference-mosaic">Reference mosaic</h3>
 <p><img alt="Reference mosaic button" class="center" src="../assets/v7/ui-button1.png" width="350px" /></p>
 <p><img alt="Mosaic menu" class="center" src="../assets/v7/2024-11-14_09-27.png" width="600px" /></p>
-<p>The reference mosaic is used to store REFERENCES as files to quickly find and load any of them. The mosaic menu automatically appears after taking a REFERENCE by using the <a href="#take-a-reference-image">take REFERENCE photo button</a> or by loading it <a href="#load-reference-as-file">as a file</a>. In this window it is also possible to name the taken REFERENCE in the top right part of the window. A REFERENCE stored in the mosaic can be quickly loaded by pressing an <strong>F button</strong> (F1-F10).</p>
+<p>The reference mosaic is used to store REFERENCES as files to quickly find and load any of them. The mosaic menu automatically appears after taking a REFERENCE by using the <a href="#take-a-reference-image">take REFERENCE photo button</a> or by loading it <a href="#load-reference-as-file">as a file</a>. In this window it is also possible to name the taken REFERENCE in the top right part of the window. A REFERENCE stored in the mosaic can be quickly loaded by pressing an <strong>F button</strong> (F1-F8). Right-clicking a slot opens the <a href="#reference-options">Reference options</a> of that REFERENCE.</p>
 <h3 id="load-reference-as-file">LOAD REFERENCE as file</h3>
 <p><img alt="Open reference button" class="center" src="../assets/v7/ui-button2.png" width="350px" /></p>
 <p><img alt="Load REFERENCE menu" class="center" src="../assets/v7/ui-ref_search.png" /></p>
-<p>Use this icon to load an image previously captured as a <strong>REFERENCE</strong> and it allows you to sort them by name or date. All the <strong>REFERENCE</strong> images can be found inside the folder <strong>APP/REFERENCE</strong> in a folder named after the time the picture was taken.</p>
+<p>Use this icon to load an image previously captured as a <strong>REFERENCE</strong> and it allows you to sort them by name or date, or to filter them by name, alias or <strong>Model ID</strong>. All the <strong>REFERENCE</strong> images can be found inside the folder <strong>APP/REFERENCE</strong> in a folder named after the time the picture was taken.</p>
+<p>A double-sided REFERENCE is listed only once, by its TOP side, with a mark in the <strong>Sides</strong> column; its BOTTOM side is reached with the <a href="#switch-topbottom">TOP/BOTTOM button</a> once it is loaded. REFERENCES that have no <a href="../features/Barcode_reader.html#load-a-reference-by-barcode">Model ID</a> show the code they were indexed with before, dimmed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Since version 7, the software <strong>does not allow</strong> loading images taken from any source other than the platform itself, as the images contain specific parameters for the optics. Every REFERENCE image has to be captured using the <strong>AI-4050 AOI</strong>.</p>
 </div>
-<h4 id="display-alias">Display alias</h4>
-<p>A REFERENCE can be given an optional <strong>display alias</strong>: a friendlier name shown in the <strong>Alias</strong> column of this list, instead of the REFERENCE's real name, without renaming the REFERENCE itself. This is useful when the REFERENCE's real name — a barcode, a timestamp — is not meaningful to read at a glance. The alias is also used in the mosaic and in the inspection reports (PDF and JSON).</p>
-<p>Select a REFERENCE in the list and press <strong>ALIAS</strong>.</p>
-<p><img alt="ALIAS button and dialog" class="center" src="../assets/v7/ref-alias-name.png" /></p>
-<p>Type a name and press <strong>OK</strong>. Leaving the field empty and pressing <strong>OK</strong> clears the alias, so the list goes back to showing the REFERENCE's real name.</p>
+<h4 id="reference-options">Reference options</h4>
+<p>The <strong>Reference options</strong> window holds the settings of each REFERENCE: its display alias and its mandatory review levels. Open it in any of these ways:</p>
+<ul>
+<li>Select a REFERENCE in this list and press <strong>OPTIONS</strong>.</li>
+<li>Right-click a slot of the <a href="#reference-mosaic">Reference mosaic</a>.</li>
+<li>Right-click the upper part of the <a href="#reference-information-panel">Reference information panel</a>.</li>
+</ul>
+<p><img alt="OPTIONS button and dialog" class="center" src="../assets/v7/ref-alias-name.png" /></p>
+<p><strong>Display alias</strong></p>
+<p>A REFERENCE can be given an optional <strong>display alias</strong>: a friendlier name shown in the <strong>Alias</strong> column of this list, instead of the REFERENCE's real name, without renaming the REFERENCE itself. This is useful when the REFERENCE's real name — a barcode, a timestamp — is not meaningful to read at a glance. The alias is also used in the mosaic and in the inspection reports (PDF and JSON), where it is shown next to the real name.</p>
+<p>Leaving the field empty clears the alias, so the list goes back to showing the REFERENCE's real name.</p>
 <p><img alt="REFERENCE list with aliases" class="center" src="../assets/v7/ref-alias.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The alias is only a label. Everything that identifies or loads the REFERENCE — its file name, its barcode association — keeps using its real name.</p>
+<p>The alias is only a label. Everything that identifies or loads the REFERENCE — its file name, its Model ID — keeps using its real name.</p>
+</div>
+<p><strong>Mandatory review levels</strong></p>
+<p>Three checkboxes — <strong>Mandatory errors review</strong>, <strong>Mandatory errors report</strong> and <strong>Mandatory final report</strong> — make that level required for whoever inspects with this REFERENCE, whatever their role or the global settings say. See <a href="Inspection_workflow.html#mandatory-review-levels">Mandatory review levels</a>.</p>
+<p>On a double-sided REFERENCE, the settings are saved on both sides. A REFERENCE created with <a href="UUI_to_REFERENCE.html">UUI to REFERENCE</a> inherits them from the REFERENCE it came from; a newly captured one starts with all of them disabled.</p>
+<div class="admonition note">
+<p class="admonition-title">Permissions</p>
+<p>With <a href="../features/User_control.html">user access control</a> enabled, the alias requires the <strong>Set Reference display alias</strong> permission and the mandatory levels require the <strong>Edit Reference options</strong> permission.</p>
 </div>
 <h3 id="swap">Swap</h3>
 <p><img alt="Swap button" class="center" src="../assets/v7/ui-button3.png" width="350px" /></p>

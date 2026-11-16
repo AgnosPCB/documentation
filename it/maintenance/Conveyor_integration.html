@@ -2201,10 +2201,16 @@ differenza tra un'integrazione pulita e un nastro trasportatore bloccato:</p>
 <td>Nasconde l'acquisizione dei riferimenti e impedisce a un operatore di modificare il RIFERIMENTO o la sensibilità a metà turno. Proteggetelo con una password delle impostazioni (vedi <a href="../how_to/Settings_menu.html">menu Impostazioni</a>).</td>
 </tr>
 <tr>
-<td><strong>Mandatory errors review</strong></td>
+<td><strong>Mandatory errors review</strong>, <strong>Mandatory errors report</strong> e <strong>Mandatory final report</strong></td>
 <td>Workflow</td>
 <td><strong>Disabilitato</strong></td>
-<td>Se abilitato, il software attende che una persona esamini ogni difetto prima di consentire l'ispezione successiva: questo bloccherà la linea.</td>
+<td>Se abilitato, il software attende che una persona esamini ogni difetto, lo classifichi o confermi il report finale prima di consentire l'ispezione successiva: questo bloccherà la linea. Con il controllo di accesso utenti abilitato, verificate anche il ruolo dell'utente e le <a href="../how_to/Screen-layout.html#opzioni-del-riferimento">Opzioni del Riferimento</a> di ogni RIFERIMENTO.</td>
+</tr>
+<tr>
+<td><strong>Warn about a side not reviewed</strong></td>
+<td>Workflow</td>
+<td>Disabilitato</td>
+<td>Evita che una finestra di conferma attenda un input prima della scheda successiva.</td>
 </tr>
 <tr>
 <td><strong>Show errors popup</strong></td>
@@ -2228,7 +2234,7 @@ differenza tra un'integrazione pulita e un nastro trasportatore bloccato:</p>
 <td><strong>Create JSON report</strong></td>
 <td>Reports</td>
 <td>Abilitato</td>
-<td>Risultato leggibile da macchina per il vostro MES/SCADA. Richiede una licenza.</td>
+<td>Risultato leggibile da macchina per il vostro MES/SCADA. Richiede una licenza. Per le schede a doppia faccia, vedi la nota seguente.</td>
 </tr>
 <tr>
 <td><strong>Use barcodes</strong></td>
@@ -2244,6 +2250,15 @@ differenza tra un'integrazione pulita e un nastro trasportatore bloccato:</p>
 l'etichetta "unknown", perché nessun operatore lo classifica. Questo è
 previsto su una linea: la classificazione viene effettuata in seguito,
 offline, a partire dai report salvati.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Report JSON delle schede a doppia faccia</p>
+<p>Dalla versione 7.11.4, quando entrambi i lati di una scheda sono stati ispezionati il software
+scrive un unico <a href="../how_to/Inspection_workflow.html#report-combinato-topbottom">report combinato</a>
+ed elimina i singoli report PDF e JSON di ciascun lato. Un sistema che leggeva il
+JSON di ciascun lato dalla cartella REPORTS deve ora leggere invece <code>sides.TOP</code> e
+<code>sides.BOTTOM</code> del JSON combinato. I file di ispezione in PCB_OUT non vengono
+modificati.</p>
 </div>
 <h3 id="23-dove-vengono-scritti-i-risultati">2.3 Dove vengono scritti i risultati</h3>
 <p>Gli output dell'ispezione vengono scritti nella cartella <strong>PCB_OUT</strong>,
@@ -2302,7 +2317,7 @@ manuale/jog.</p>
 <tbody>
 <tr>
 <td>La linea si ferma dopo la prima scheda difettosa</td>
-<td><strong>Mandatory errors review</strong> è abilitato. Disabilitatelo in Settings → Workflow.</td>
+<td>È abilitato un livello di revisione obbligatoria (<strong>Mandatory errors review</strong>, <strong>report</strong> o <strong>final report</strong>). Disabilitatelo in Settings → Workflow, nel ruolo dell'utente (Settings → Users) e nelle Opzioni del Riferimento del RIFERIMENTO.</td>
 </tr>
 <tr>
 <td>Una finestra di dialogo attende un input a metà ciclo</td>

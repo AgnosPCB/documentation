@@ -1747,7 +1747,37 @@
 <p>El software AgnosPCB incorpora una función de lectura de código de barras que soporta <strong>códigos de barras 1D, QR y Datamatrix</strong>.</p>
 <p>Puede tomar una foto de <strong>REFERENCIA</strong> o subir una directamente desde sus archivos usando el botón <strong>"Abrir referencia"</strong>.</p>
 <p><img alt="Área de código de barras seleccionada" class="center" src="../../assets/v7/ui-button4.png" /></p>
-<p>Pulse el botón <strong>"dibujar área de código de barras"</strong> y dibuje un área donde se encuentra un código en el panel, luego defina de qué tipo de código se trata: <strong>ID, Batch ID, Model o Misc</strong>. Repita esto por cada código que quiera que el software lea, hasta <strong>cuatro</strong> tipos distintos.</p>
+<p>Pulse el botón <strong>"dibujar área de código de barras"</strong> y dibuje un área donde se encuentra un código en el panel, luego defina de qué tipo de código se trata. Repita esto por cada código que quiera que el software lea, hasta <strong>cuatro</strong> tipos distintos:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Serial Number</strong></td>
+<td>El número de serie de cada placa. Es distinto en cada placa, por lo que se usa para nombrar los informes, pero <strong>no</strong> identifica la REFERENCIA.</td>
+</tr>
+<tr>
+<td><strong>Batch</strong></td>
+<td>Identificador de lote.</td>
+</tr>
+<tr>
+<td><strong>Model ID</strong></td>
+<td>El código del modelo de placa, igual en todas las placas de ese modelo. <strong>Identifica la REFERENCIA</strong> y se usa para <a href="#cargar-una-referencia-por-codigo-de-barras">cargarla por código de barras</a>.</td>
+</tr>
+<tr>
+<td><strong>Misc.</strong></td>
+<td>Cualquier otro código. Se le pedirá que introduzca un nombre para él.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Antes de la versión 7.11, <strong>Serial Number</strong> se llamaba <strong>PCB ID</strong> y <strong>Model ID</strong> se llamaba <strong>Model</strong>. Las REFERENCIAS existentes siguen funcionando y muestran los nuevos nombres; no hay que rehacer nada.</p>
+</div>
 <p><img alt="Lectura de código" class="center" src="../../assets/v7/barcode/1-bc-menu.png" /></p>
 <p>Si la opción <strong>mandatory barcode</strong> está activada en un código concreto, la inspección no continuará hasta que ese código se haya leído correctamente. Si no se detecta automáticamente, se solicitará al operador que lo introduzca manualmente antes de continuar.</p>
 <p>Una vez que la REFERENCIA esté cargada, proceda con la inspección tomando una foto de la UUI. Cada uno de los códigos de la UUI se leerá automáticamente en las mismas áreas definidas en la REFERENCIA.</p>
@@ -1755,7 +1785,14 @@
 <p>El código escaneado se incluirá en el informe PDF final de la UUI.</p>
 <p><img alt="Informe con código de barras incluido" class="center" src="../../assets/barcode-report.png" /></p>
 <h2 id="cargar-una-referencia-por-codigo-de-barras">Cargar una REFERENCIA por código de barras</h2>
-<p>Si ya tiene una <strong>REFERENCIA</strong> almacenada, puede recuperarla fácilmente usando el código asociado a ella. Para hacer esto, presione el botón <strong>"leer código de barras"</strong>, luego lea el código de barras usando el lector de mano, y la <strong>REFERENCIA</strong> se cargará automáticamente. También es posible ingresar el código manualmente.</p>
+<p>Si ya tiene una <strong>REFERENCIA</strong> almacenada, puede recuperarla fácilmente usando su <strong>Model ID</strong>. Para hacer esto, presione el botón <strong>"leer código de barras"</strong>, luego lea el código de barras usando el lector de mano, y la <strong>REFERENCIA</strong> se cargará automáticamente. También es posible ingresar el código manualmente.</p>
+<ul>
+<li>Si <strong>varias</strong> REFERENCIAS tienen ese Model ID, una lista breve (nombre, alias y fecha) le permite elegir cuál cargar.</li>
+<li>Si <strong>ninguna</strong> REFERENCIA lo tiene, se le ofrece asignar el código como Model ID de la REFERENCIA cargada actualmente. Esto requiere el permiso <strong>Assign barcode to Reference</strong> cuando el <a href="User_control.html">control de acceso de usuarios</a> está habilitado.</li>
+<li>Una REFERENCIA de doble cara se encuentra a través de su cara TOP.</li>
+<li>Una REFERENCIA sin Model ID se sigue encontrando por el código con el que estaba asociada antes de la versión 7.11. Una REFERENCIA que tiene Model ID solo se encuentra por él, por lo que un número de serie de placa que antes la cargaba ya no lo hace.</li>
+<li>Mientras los resultados de una inspección están en pantalla, el mismo botón establece en su lugar el <strong>Serial Number</strong> de la placa inspeccionada.</li>
+</ul>
 <p><img alt="Carga de REFERENCIA por código de barras" class="center" src="../../assets/v7/ui-barcode-loading.png" /></p>
 <p><img alt="Carga de REFERENCIA por código de barras" class="center" src="../../assets/v7/ui-bc_ref.png" /></p>
 <p><img alt="Lector de código de barras de mano" class="center" src="../../assets/barcode-handhold.png" /></p>

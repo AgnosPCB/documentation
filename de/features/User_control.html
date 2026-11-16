@@ -1311,6 +1311,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Benutzerdefinierte Rollen und Berechtigungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pflichtprufung-pro-rolle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pflichtprüfung pro Rolle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1862,6 +1879,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Benutzerdefinierte Rollen und Berechtigungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pflichtprufung-pro-rolle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pflichtprüfung pro Rolle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2048,10 +2082,50 @@
 <p>Die Spalte <strong>Permissions granted</strong> zeigt, wie viele der verfügbaren Berechtigungen jede Rolle aktuell hat, z. B. <strong>23/35</strong>.</p>
 <p>Eine benutzerdefinierte Rolle erscheint dann im Feld <strong>Role</strong> beim Anlegen oder Bearbeiten eines Benutzers neben <strong>admin</strong> und <strong>operator</strong>.</p>
 <p><img alt="Einem Benutzer eine benutzerdefinierte Rolle zuweisen" class="center" src="../../assets/v7/user_control/users-rol-assing.png" /></p>
+<p>Eine neue Rolle beginnt nur mit den Berechtigungen, die zum Durchführen von Inspektionen, zum Klassifizieren von Erkennungen und zum Exportieren von Berichten nötig sind. Alles andere muss über <strong>Edit permissions</strong> gewährt werden.</p>
+<p>Fügt ein Software-Update eine neue Berechtigung hinzu, erhält die Rolle <strong>operator</strong> sie automatisch. Benutzerdefinierte Rollen nicht: Ein Administrator muss sie ihnen ausdrücklich gewähren. Neuere Updates haben unter anderem folgende Berechtigungen hinzugefügt:</p>
+<table>
+<thead>
+<tr>
+<th>Berechtigung</th>
+<th>Erlaubt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Classify detected faults</strong></td>
+<td>Erkennungen als tatsächliche Fehler oder Falsch-Positive zu melden. Ohne sie wird die Meldung <strong>Permission denied</strong> angezeigt. Eine Erkennung als gesehen zu markieren ist immer erlaubt.</td>
+</tr>
+<tr>
+<td><strong>Max. variants per Reference</strong></td>
+<td>Das Ändern von <a href="../how_to/Settings_menu.html#max-varianten-pro-referenz">Max. Varianten pro Referenz</a>.</td>
+</tr>
+<tr>
+<td><strong>Reference statistics and heatmap option</strong></td>
+<td>Das Ändern von <a href="../how_to/Settings_menu.html#statistiken-und-fehler-heatmap-pro-referenz-anzeigen">Statistiken und Fehler-Heatmap pro Referenz anzeigen</a>.</td>
+</tr>
+<tr>
+<td><strong>Analysis preference</strong></td>
+<td>Das Ändern der <a href="../how_to/Settings_menu.html#analysepraferenz">Analysepräferenz</a>.</td>
+</tr>
+<tr>
+<td><strong>Edit Reference options</strong></td>
+<td>Das Ändern der verpflichtenden Prüfstufen einer REFERENZ in ihren <a href="../how_to/Screen-layout.html#referenzoptionen">Referenzoptionen</a>.</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>Die integrierten Rollen <strong>admin</strong> und <strong>operator</strong> können weder umbenannt noch in ihren Berechtigungen bearbeitet noch gelöscht werden.</p>
 </div>
+<h3 id="pflichtprufung-pro-rolle">Pflichtprüfung pro Rolle</h3>
+<p>Bei aktivierter Benutzerzugriffskontrolle werden die <a href="../how_to/Inspection_workflow.html#verpflichtende-prufstufen">verpflichtenden Prüfstufen</a> pro Rolle statt global festgelegt: Die Liste <strong>Roles</strong> enthält eine Spalte für jede Stufe (<strong>Mandatory review</strong>, <strong>Mandatory report</strong> und <strong>Final report</strong>), und das Fenster <strong>Edit permissions</strong> der Rolle enthält für jede ein Kontrollkästchen. Um sie zu ändern, ist Zugriff auf die Registerkarte <strong>Users</strong> erforderlich.</p>
+<p>Die globalen Optionen unter <em>Settings → Workflow</em> sind ausgegraut, solange die Benutzerzugriffskontrolle aktiviert ist, und behalten ihren Wert für den Fall, dass sie wieder deaktiviert wird.</p>
+<ul>
+<li>Die Rolle <strong>admin</strong> ist von diesen Einstellungen nie betroffen; für sie gilt eine Stufe nur, wenn eine REFERENZ sie verlangt.</li>
+<li>Neue Rollen beginnen mit allen drei Stufen deaktiviert.</li>
+<li>Beim ersten Laden der Rollen nach dem Update auf 7.11 übernimmt jede bestehende Rolle den Wert, den die globale Option <strong>Pflichtprüfung der Fehler</strong> hatte, sodass keine bestehende Verpflichtung verloren geht. Die Stufen <strong>report</strong> und <strong>final report</strong> beginnen für jede bestehende Rolle deaktiviert.</li>
+</ul>
 <h2 id="einrichtung">Einrichtung</h2>
 <h3 id="1-die-registerkarte-users-offnen">1. Die Registerkarte Users öffnen</h3>
 <p>Öffnen Sie das <a href="../how_to/Settings_menu.html">Einstellungsmenü</a> und wechseln Sie zur Registerkarte <strong>Users</strong>. Bei einer Maschine, die noch nie konfiguriert wurde, ist die Liste leer und die Zugriffskontrolle deaktiviert.</p>
@@ -2080,7 +2154,8 @@
 <p>Ab dem nächsten Start der Software fragt der Dialog <strong>User access required</strong> nach den Zugangsdaten eines der von Ihnen erstellten Konten.</p>
 <p><img alt="Anmeldedialog" class="center" src="../../assets/v7/user_control/users-login.png" width="400px" /></p>
 <p>Die Software wird dann mit den Berechtigungen dieses Kontos geöffnet.</p>
-<p>Um die Sitzung zu beenden und einen anderen Benutzer anmelden zu lassen, verwenden Sie die Schaltfläche <strong>logout</strong> im <a href="../how_to/Screen-layout.html">Statusbereich der Plattform</a>.</p>
+<p>Der angemeldete Benutzer wird im <a href="../how_to/Screen-layout.html#aktivitatsprotokoll">Aktivitätsprotokoll</a> angezeigt.</p>
+<p>Um die Sitzung zu beenden und einen anderen Benutzer anmelden zu lassen, verwenden Sie die Schaltfläche <strong>logout</strong> im <a href="../how_to/Screen-layout.html#abmelden">Statusbereich der Plattform</a>. Sie fragt nach einer Bestätigung und leert dann den Arbeitsbereich (geladene REFERENZ und Inspektionsergebnisse), sodass der nächste Benutzer neu beginnt.</p>
 <h2 id="konten-verwalten">Konten verwalten</h2>
 <p>Wählen Sie ein Konto in der Liste aus, um damit zu arbeiten:</p>
 <ul>
@@ -2098,7 +2173,7 @@
 <h2 id="inaktivitatssperre">Inaktivitätssperre</h2>
 <p>Ist die Benutzerzugriffskontrolle aktiviert, bietet das Panel <strong>User access control</strong> der Registerkarte <strong>Users</strong> zusätzlich eine optionale Inaktivitätssperre: Aktivieren Sie <strong>Lock after inactivity</strong> und legen Sie fest, nach wie vielen Minuten ohne Tastatur- oder Mausaktivität sich die Anwendung sperren soll.</p>
 <p><img alt="Option Lock after inactivity" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
-<p>Nach Ablauf dieser Zeit erscheint erneut der Dialog <strong>User access required</strong>, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren.</p>
+<p>Nach Ablauf dieser Zeit erscheint erneut der Dialog <strong>User access required</strong>, genau wie beim Start, ohne die aktuelle REFERENZ zu schließen oder die Ergebnisse der laufenden Inspektion zu verlieren. Jeder aktive Benutzer kann die Sperre aufheben, nicht nur der zuvor angemeldete. Die Sperre wird nie ausgelöst, während eine Inspektion läuft oder der <a href="../how_to/Settings_menu.html#demo-loop-modus">Demo-/Loop-Modus</a> aktiv ist.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>Diese Option erscheint erst, wenn die Benutzerzugriffskontrolle aktiviert ist, da zum Entsperren der Anwendung ein Konto erforderlich ist.</p>

@@ -871,6 +871,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Seiten-an-Seiten-Vergleich">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erkennungsliste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erkennungsliste
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referenz-informationspanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referenz-Informationspanel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -909,10 +937,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anzeige-alias" class="md-nav__link">
+  <a href="#referenzoptionen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Anzeige-Alias
+        Referenzoptionen
       
     </span>
   </a>
@@ -2098,6 +2126,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Seiten-an-Seiten-Vergleich">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erkennungsliste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erkennungsliste
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referenz-informationspanel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referenz-Informationspanel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2136,10 +2192,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#anzeige-alias" class="md-nav__link">
+  <a href="#referenzoptionen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Anzeige-Alias
+        Referenzoptionen
       
     </span>
   </a>
@@ -2314,51 +2370,119 @@
 <p>Dieser Bereich zeigt den Verbindungsstatus zur Inspektionsplattform und Kamera an. Wenn die Verbindung fehlschlägt, werden die Symbole rot. Dieser Bereich enthält auch die folgenden Aktionsschaltflächen:</p>
 <h3 id="abmelden">Abmelden</h3>
 <p><img alt="Abmelde-Schaltfläche" class="center" src="../../assets/v7/ui-logout.png" /></p>
-<p>Wenn im Einstellungsmenü Benutzer definiert sind, kann sich der Benutzer über diese Schaltfläche abmelden.</p>
+<p>Ist die <a href="../features/User_control.html">Benutzerzugriffskontrolle</a> aktiviert, kann sich der Benutzer über diese Schaltfläche abmelden. Sie fragt nach einer Bestätigung und leert dann den Arbeitsbereich (geladene REFERENZ und Inspektionsergebnisse), sodass der nächste Benutzer neu beginnt.</p>
 <h3 id="referenz-per-barcode-laden">REFERENZ per Barcode laden</h3>
 <p><img alt="REFERENZ per Barcode laden" class="center" src="../../assets/v7/ui-barcode-loading.png" /></p>
 <p><img alt="REFERENZ per Barcode laden" class="center" src="../../assets/v7/ui-bc_ref.png" /></p>
-<p>Diese Schaltfläche öffnet ein Pop-up-Fenster zur Eingabe einer Barcode-Nummer. Beim Generieren einer REFERENZ kann jeder <a href="#barcode-bereich-zeichnen">enthaltene Barcode gelesen werden</a>. Dieser Barcode wird der REFERENZ zugeordnet und kann mit dieser Funktion unter Verwendung dieser Nummer geladen werden. Es ist auch möglich, den Barcode mit einem Handscanner zu lesen und in dieses Feld einzufügen. Weitere Informationen zu dieser Funktion finden Sie <a href="../features/Barcode_reader.html#eine-referenz-per-barcode-laden">hier</a>.</p>
+<p>Diese Schaltfläche öffnet ein Pop-up-Fenster zur Eingabe eines Codes und lädt die REFERENZ, die diesen Code als <strong>Model ID</strong> hat (der Code des Platinenmodells, der auf jeder Platine gleich ist). Es ist auch möglich, den Code mit einem Handscanner zu lesen und in dieses Feld einzufügen. Haben mehrere REFERENZEN diesen Code, können Sie in einer kurzen Liste auswählen, welche geladen werden soll. Weitere Informationen zu dieser Funktion finden Sie <a href="../features/Barcode_reader.html#eine-referenz-per-barcode-laden">hier</a>.</p>
 <h3 id="topbottom-umschalten">TOP/BOTTOM umschalten</h3>
 <p><img alt="TOP/BOTTOM-Schaltfläche" class="center" src="../../assets/v7/ui-top-bottom.png" width="80" /></p>
-<p>Wenn das REFERENZ-Bild sowohl die Ober- als auch die Unterseite der PCBA enthält, wechselt diese Schaltfläche zwischen den beiden Bildern.</p>
+<p>Wenn das REFERENZ-Bild sowohl die Ober- als auch die Unterseite der PCBA enthält, wechselt diese Schaltfläche zwischen den beiden Bildern. Sobald beide Seiten einer Platine inspiziert wurden, wechselt sie stattdessen zwischen den <strong>Ergebnissen</strong> der beiden Seiten. Die Tasten <strong>Page Up</strong> (TOP) und <strong>Page Down</strong> (BOTTOM) bewirken dasselbe. Siehe <a href="Inspection_workflow.html#beide-seiten-einer-platine-inspizieren">Beide Seiten einer Platine inspizieren</a>.</p>
 <p>Dies kann auch automatisch zu Beginn jeder Inspektion geschehen — aktivieren Sie <strong>TOP/BOTTOM automatisch umschalten</strong> im <a href="Settings_menu.html#topbottom-automatisch-umschalten">Einstellungsmenü</a>.</p>
 <h3 id="messwerkzeug">Messwerkzeug</h3>
 <p><img alt="Mess-Schaltfläche" class="center" src="../../assets/v7/ui-status-measure-button.png" width="80" /></p>
 <p>Mit dieser Schaltfläche können Sie einen Bereich der Platine auswählen, um einen interessanten Bereich zu vermessen. Weitere Informationen zu dieser Funktion finden Sie <a href="../features/Measurement_tool.html">hier</a>.</p>
 <h2 id="aktivitatsprotokoll">Aktivitätsprotokoll</h2>
 <p><img alt="Abschnitt Innere Arbeitsweise" class="center" src="../../assets/activity-log.png" /></p>
-<p>Der Bereich <strong>Aktivitätsprotokoll</strong> befindet sich oben rechts und zeigt die <strong>aktuell verfügbaren Credits</strong> sowie operative Details der Anwendung, wie den Status des Analyseprozesses.</p>
+<p>Der Bereich <strong>Aktivitätsprotokoll</strong> befindet sich oben rechts und zeigt die <strong>aktuell verfügbaren Credits</strong> sowie operative Details der Anwendung, wie den Status des Analyseprozesses. Ist die <a href="../features/User_control.html">Benutzerzugriffskontrolle</a> aktiviert, wird dort auch der angemeldete Benutzer angezeigt.</p>
 <h2 id="hauptarbeitsbereich">Hauptarbeitsbereich</h2>
 <p><img alt="Hauptbereich" class="center" src="../../assets/v7/ui-working-area.png" /></p>
 <p>Dies ist der Hauptbereich, in dem Sie mit den <strong>REFERENZ</strong>- und <strong>UUI</strong>-Bildern arbeiten, die durch Drücken der TAB-Taste auf der Tastatur oder <a href="#wechseln-swap">der Schaltfläche in der Anwendung</a> umgeschaltet werden können. Die Inspektionsergebnisse werden ebenfalls in diesem Bereich mithilfe von Fadenkreuzen und Nummern neben den erkannten Fehlern angezeigt.</p>
 <h2 id="seiten-an-seiten-vergleich">Seiten-an-Seiten-Vergleich</h2>
 <p><img alt="Abschnitt Vergleich" class="center" src="../../assets/v7/ui-side_by_side.png" width="400px" /></p>
 <p>Dieser Bereich der Benutzeroberfläche ist in zwei Teile unterteilt. Der obere Teil zeigt das <strong>REFERENZ</strong>-Bild, das als Standard für den Vergleich dient, während der untere Teil das <strong>UUI</strong>-Bild zeigt. Diese Bilder werden vergrößert und bewegen sich parallel, wobei genau derselbe Bereich in der <strong>REFERENZ</strong> und <strong>UUI</strong> angezeigt wird, auf den der Cursor im Hauptarbeitsbereich zeigt.</p>
+<h3 id="erkennungsliste">Erkennungsliste</h3>
+<p>Nach einer Inspektion wird die <strong>Erkennungsliste</strong> angezeigt, wenn Sie die Maus in diesen Bereich bewegen: eine Zeile pro Erkennung, mit ihrer Nummer, ihrem Typ und einem farbigen Streifen, der ihren Zustand anzeigt (ungeprüft, Fehler oder Falsch-Positiv).</p>
+<table>
+<thead>
+<tr>
+<th>Aktion</th>
+<th>Wirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zeile mit der Maus überfahren</td>
+<td>Hebt die Erkennung auf dem Bild hervor und zeigt daneben zwei schwebende Miniaturansichten: oben die REFERENZ, unten die UUI. Nach einem Moment werden sie größer. Bleibt der Zeiger danach etwa eine Sekunde auf der Zeile, wird die Erkennung als <strong>gesehen</strong> markiert.</td>
+</tr>
+<tr>
+<td>Klick auf eine Zeile</td>
+<td>Springt auf dem Bild zu dieser Erkennung.</td>
+</tr>
+<tr>
+<td>Doppelklick auf eine Zeile</td>
+<td>Springt zu dieser Erkennung und öffnet das Meldefenster.</td>
+</tr>
+<tr>
+<td><strong>Rotes Kreuz</strong> / <strong>grüner Haken</strong> am Ende einer Zeile</td>
+<td>Meldet die Erkennung als tatsächlichen Fehler / als Falsch-Positiv, genau wie die Pfeiltasten <strong>nach oben</strong> / <strong>nach unten</strong>. Bei einer bereits gemeldeten Erkennung ist die Schaltfläche ihrer Einstufung umrandet.</td>
+</tr>
+<tr>
+<td>Mausrad</td>
+<td>Ändert den Zoom der Miniaturansichten, solange sie angezeigt werden. Andernfalls wird die Liste gescrollt.</td>
+</tr>
+<tr>
+<td><strong>Umschalt</strong> + Mausrad</td>
+<td>Scrollt die Liste, auch während die Miniaturansichten angezeigt werden.</td>
+</tr>
+<tr>
+<td>Mittelklick</td>
+<td>Wechselt die Ansicht der unteren Miniaturansicht: UUI, Fehlermaske, Fehlerrahmen.</td>
+</tr>
+<tr>
+<td>Zeiger am oberen oder unteren Rand der Liste</td>
+<td>Ist die Liste länger als das Panel, scrollt sie von selbst; je näher am Rand, desto schneller. Ein dezenter Pfeil markiert den Rand, in dessen Richtung sie sich noch bewegen kann.</td>
+</tr>
+</tbody>
+</table>
+<p>Ist die <a href="Settings_menu.html#analysepraferenz">Analysepräferenz</a> auf <strong>LIST</strong> gestellt, wirken die Pfeiltasten auf diese Liste. Siehe <a href="Inspection_workflow.html#melden-von-fehlern">Melden von Fehlern</a>.</p>
+<h3 id="referenz-informationspanel">Referenz-Informationspanel</h3>
+<p>Je nach dem mit der Taste <strong>TAB</strong> gewählten Ansichtsmodus zeigt dieser Bereich beim Überfahren des REFERENZ-Bildes das <strong>Referenz-Informationspanel</strong> an: Name, Datum, Codes, Optik und Sequenz der geladenen REFERENZ sowie, ob ihre <a href="Inspection_workflow.html#verpflichtende-prufstufen">verpflichtenden Prüfstufen</a> aktiviert sind.</p>
+<p>Ist <a href="Settings_menu.html#statistiken-und-fehler-heatmap-pro-referenz-anzeigen">Statistiken und Fehler-Heatmap pro Referenz anzeigen</a> aktiviert, zeigt das Panel außerdem:</p>
+<ul>
+<li><strong>Inspektionsstatistiken</strong>: Gesamtzahl der Inspektionen, OK und NICHT OK, Ausbeute, bestätigte Fehler, Falsch-Positive, noch ungeprüfte Erkennungen, die häufigsten Fehlertypen und mehr.</li>
+<li><strong>Fehler-Heatmap</strong>: die Platinenfläche der REFERENZ mit einer Wärmeüberlagerung, die zeigt, wo ihre Platinen Fehler aufweisen. Es werden nur vom Bediener bestätigte Fehler gezählt; Falsch-Positive und ungeprüfte Erkennungen erscheinen nie. Die Fehler werden anhand der Ausrichtung jeder Inspektion auf der REFERENZ platziert, sodass auch eine leicht verschobene Platine an der richtigen Stelle landet.</li>
+</ul>
+<p>Eine Inspektion wird einmal gezählt, nämlich wenn ihr Bericht gespeichert wird. Wird der Bericht derselben Inspektion erneut gespeichert, ersetzt er ihren vorherigen Eintrag, statt einen neuen hinzuzufügen.</p>
+<p>Ein Rechtsklick auf den oberen Teil des Panels öffnet die <a href="#referenzoptionen">Referenzoptionen</a> der geladenen REFERENZ.</p>
 <h2 id="schaltflachen-panel">Schaltflächen-Panel</h2>
 <p><img alt="Schaltflächen-Bereich" class="center" src="../../assets/v7/ui-main_buttons.png" /></p>
 <p>Hier befinden sich verschiedene <strong>Funktionen und Optionen</strong>, die darauf ausgelegt sind, Ihren Workflow zu <strong>optimieren</strong> und Ihre Aufgaben zu beschleunigen. Jede Funktion wird unten definiert:</p>
 <h3 id="referenz-mosaik">Referenz-Mosaik</h3>
 <p><img alt="Schaltfläche Referenz-Mosaik" class="center" src="../../assets/v7/ui-button1.png" width="350px" /></p>
 <p><img alt="Mosaik-Menü" class="center" src="../../assets/v7/2024-11-14_09-27.png" width="600px" /></p>
-<p>Das Referenz-Mosaik wird verwendet, um REFERENZEN als Dateien zu speichern, um jede davon schnell zu finden und zu laden. Das Mosaik-Menü wird automatisch angezeigt, nachdem eine REFERENZ mit der <a href="#ein-referenz-bild-aufnehmen">Schaltfläche Foto REFERENZ aufnehmen</a> aufgenommen oder <a href="#referenz-als-datei-laden">als Datei geladen</a> wurde. In diesem Fenster ist es auch möglich, die aufgenommene REFERENZ im oberen rechten Teil des Fensters zu benennen. Eine im Mosaik gespeicherte REFERENZ kann schnell durch Drücken einer <strong>F-Taste</strong> (F1-F10) geladen werden.</p>
+<p>Das Referenz-Mosaik wird verwendet, um REFERENZEN als Dateien zu speichern, um jede davon schnell zu finden und zu laden. Das Mosaik-Menü wird automatisch angezeigt, nachdem eine REFERENZ mit der <a href="#ein-referenz-bild-aufnehmen">Schaltfläche Foto REFERENZ aufnehmen</a> aufgenommen oder <a href="#referenz-als-datei-laden">als Datei geladen</a> wurde. In diesem Fenster ist es auch möglich, die aufgenommene REFERENZ im oberen rechten Teil des Fensters zu benennen. Eine im Mosaik gespeicherte REFERENZ kann schnell durch Drücken einer <strong>F-Taste</strong> (F1-F8) geladen werden. Ein Rechtsklick auf einen Speicherplatz öffnet die <a href="#referenzoptionen">Referenzoptionen</a> dieser REFERENZ.</p>
 <h3 id="referenz-als-datei-laden">REFERENZ als Datei laden</h3>
 <p><img alt="Schaltfläche Referenz öffnen" class="center" src="../../assets/v7/ui-button2.png" width="350px" /></p>
 <p><img alt="Menü REFERENZ laden" class="center" src="../../assets/v7/ui-ref_search.png" /></p>
-<p>Verwenden Sie dieses Symbol, um ein zuvor als <strong>REFERENZ</strong> aufgenommenes Bild zu laden, und es ermöglicht Ihnen, diese nach Name oder Datum zu sortieren. Alle <strong>REFERENZ</strong>-Bilder finden Sie innerhalb des Ordners <strong>APP/REFERENCE</strong> in einem Ordner, der nach der Uhrzeit der Aufnahme benannt ist.</p>
+<p>Verwenden Sie dieses Symbol, um ein zuvor als <strong>REFERENZ</strong> aufgenommenes Bild zu laden, und es ermöglicht Ihnen, diese nach Name oder Datum zu sortieren oder nach Name, Alias oder <strong>Model ID</strong> zu filtern. Alle <strong>REFERENZ</strong>-Bilder finden Sie innerhalb des Ordners <strong>APP/REFERENCE</strong> in einem Ordner, der nach der Uhrzeit der Aufnahme benannt ist.</p>
+<p>Eine doppelseitige REFERENZ wird nur einmal aufgeführt, über ihre TOP-Seite, mit einer Markierung in der Spalte <strong>Sides</strong>; ihre BOTTOM-Seite erreichen Sie nach dem Laden mit der <a href="#topbottom-umschalten">TOP/BOTTOM-Schaltfläche</a>. REFERENZEN ohne <a href="../features/Barcode_reader.html#eine-referenz-per-barcode-laden">Model ID</a> zeigen abgeblendet den Code an, unter dem sie zuvor indexiert waren.</p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
 <p>Seit Version 7 <strong>erlaubt</strong> die Software <strong>nicht</strong>, Bilder zu laden, die von einer anderen Quelle als der Plattform selbst stammen, da die Bilder spezifische Parameter für die Optik enthalten. Jedes REFERENZ-Bild muss mit der <strong>AI-4050 AOI</strong> aufgenommen werden.</p>
 </div>
-<h4 id="anzeige-alias">Anzeige-Alias</h4>
-<p>Eine REFERENZ kann einen optionalen <strong>Anzeige-Alias</strong> erhalten: einen freundlicheren Namen, der in der Spalte <strong>Alias</strong> dieser Liste anstelle des tatsächlichen Namens der REFERENZ angezeigt wird, ohne sie umzubenennen. Das ist nützlich, wenn der tatsächliche Name der REFERENZ — ein Barcode, ein Zeitstempel — auf den ersten Blick wenig aussagt. Der Alias wird auch im Mosaik und in den Inspektionsberichten (PDF und JSON) verwendet.</p>
-<p>Wählen Sie eine REFERENZ in der Liste aus und drücken Sie <strong>ALIAS</strong>.</p>
-<p><img alt="Schaltfläche ALIAS und Dialog" class="center" src="../../assets/v7/ref-alias-name.png" /></p>
-<p>Geben Sie einen Namen ein und drücken Sie <strong>OK</strong>. Lassen Sie das Feld leer und drücken Sie <strong>OK</strong>, wird der Alias entfernt, und die Liste zeigt wieder den tatsächlichen Namen der REFERENZ an.</p>
+<h4 id="referenzoptionen">Referenzoptionen</h4>
+<p>Das Fenster <strong>Referenzoptionen</strong> enthält die Einstellungen jeder REFERENZ: ihren Anzeige-Alias und ihre verpflichtenden Prüfstufen. Sie können es auf jede der folgenden Arten öffnen:</p>
+<ul>
+<li>Wählen Sie eine REFERENZ in dieser Liste aus und drücken Sie <strong>OPTIONS</strong>.</li>
+<li>Rechtsklick auf einen Speicherplatz des <a href="#referenz-mosaik">Referenz-Mosaiks</a>.</li>
+<li>Rechtsklick auf den oberen Teil des <a href="#referenz-informationspanel">Referenz-Informationspanels</a>.</li>
+</ul>
+<p><img alt="Schaltfläche OPTIONS und Dialog" class="center" src="../../assets/v7/ref-alias-name.png" /></p>
+<p><strong>Anzeige-Alias</strong></p>
+<p>Eine REFERENZ kann einen optionalen <strong>Anzeige-Alias</strong> erhalten: einen freundlicheren Namen, der in der Spalte <strong>Alias</strong> dieser Liste anstelle des tatsächlichen Namens der REFERENZ angezeigt wird, ohne sie umzubenennen. Das ist nützlich, wenn der tatsächliche Name der REFERENZ — ein Barcode, ein Zeitstempel — auf den ersten Blick wenig aussagt. Der Alias wird auch im Mosaik und in den Inspektionsberichten (PDF und JSON) verwendet, wo er neben dem tatsächlichen Namen angezeigt wird.</p>
+<p>Lassen Sie das Feld leer, wird der Alias entfernt, und die Liste zeigt wieder den tatsächlichen Namen der REFERENZ an.</p>
 <p><img alt="REFERENZ-Liste mit Aliassen" class="center" src="../../assets/v7/ref-alias.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Hinweis</p>
-<p>Der Alias ist nur eine Bezeichnung. Alles, was die REFERENZ identifiziert oder lädt — ihr Dateiname, ihre Barcode-Zuordnung — verwendet weiterhin ihren tatsächlichen Namen.</p>
+<p>Der Alias ist nur eine Bezeichnung. Alles, was die REFERENZ identifiziert oder lädt — ihr Dateiname, ihre Model ID — verwendet weiterhin ihren tatsächlichen Namen.</p>
+</div>
+<p><strong>Verpflichtende Prüfstufen</strong></p>
+<p>Drei Kontrollkästchen — <strong>Pflichtprüfung der Fehler</strong>, <strong>Pflichtmeldung der Fehler</strong> und <strong>Verpflichtender Abschlussbericht</strong> — machen die jeweilige Stufe für jeden verpflichtend, der mit dieser REFERENZ inspiziert, unabhängig von seiner Rolle oder den globalen Einstellungen. Siehe <a href="Inspection_workflow.html#verpflichtende-prufstufen">Verpflichtende Prüfstufen</a>.</p>
+<p>Bei einer doppelseitigen REFERENZ werden die Einstellungen auf beiden Seiten gespeichert. Eine mit <a href="UUI_to_REFERENCE.html">UUI zu REFERENZ</a> erstellte REFERENZ übernimmt sie von der REFERENZ, aus der sie hervorgegangen ist; eine neu aufgenommene beginnt mit allen Stufen deaktiviert.</p>
+<div class="admonition note">
+<p class="admonition-title">Berechtigungen</p>
+<p>Bei aktivierter <a href="../features/User_control.html">Benutzerzugriffskontrolle</a> erfordert der Alias die Berechtigung <strong>Set Reference display alias</strong> und die verpflichtenden Stufen die Berechtigung <strong>Edit Reference options</strong>.</p>
 </div>
 <h3 id="wechseln-swap">Wechseln (Swap)</h3>
 <p><img alt="Schaltfläche Wechseln" class="center" src="../../assets/v7/ui-button3.png" width="350px" /></p>

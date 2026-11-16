@@ -971,6 +971,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UUI a RIFERIMENTO
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="UUI_to_REFERENCE.html" class="md-nav__link md-nav__link--active">
         
   
@@ -987,6 +1005,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#riferimenti-a-doppia-faccia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RIFERIMENTI a doppia faccia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1661,6 +1709,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#riferimenti-a-doppia-faccia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RIFERIMENTI a doppia faccia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1683,6 +1750,15 @@
 <p><img alt="Foto UUI" class="center" src="../../assets/UUI.png" /></p>
 <p>E ora, dopo aver premuto il pulsante <strong>"Da UUI a RIFERIMENTO"</strong>, la stessa PCBA viene utilizzata come <strong>RIFERIMENTO</strong>.</p>
 <p><img alt="Stessa PCB come foto RIFERIMENTO" class="center" src="../../assets/REFERENCE.png" /></p>
+<p>Il nome del nuovo RIFERIMENTO non deve esistere già. In tal caso, il software mostra un avviso e ne chiede uno diverso.</p>
+<p>Il nuovo RIFERIMENTO eredita le <a href="Screen-layout.html#opzioni-del-riferimento">Opzioni del Riferimento</a> (livelli di revisione obbligatoria) del RIFERIMENTO da cui proviene.</p>
+<h2 id="riferimenti-a-doppia-faccia">RIFERIMENTI a doppia faccia</h2>
+<p>Su un RIFERIMENTO con lati <strong>TOP</strong> e <strong>BOTTOM</strong>, <strong>Da UUI a RIFERIMENTO</strong> crea una coppia TOP/BOTTOM completa:</p>
+<ul>
+<li>Se <strong>entrambi i lati</strong> della scheda sono stati ispezionati, il TOP e il BOTTOM del nuovo RIFERIMENTO sono le due immagini ispezionate.</li>
+<li>Se è stato ispezionato <strong>un solo lato</strong>, quel lato viene preso dall'ispezione e l'altro viene copiato dal RIFERIMENTO con cui avete eseguito l'ispezione.</li>
+</ul>
+<p>Funziona allo stesso modo sia che partiate dal lato TOP sia dal lato BOTTOM.</p>
 
 
 

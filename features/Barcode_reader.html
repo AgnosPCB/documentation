@@ -1747,7 +1747,37 @@
 <p>The AgnosPCB software incorporates a barcode reader function that supports <strong>1D barcodes, QR and Datamatrix</strong>.</p>
 <p>You can either take a <strong>REFERENCE</strong> photo or upload one directly from your files using the <strong>"Open reference"</strong> button.</p>
 <p><img alt="Barcode area selected" class="center" src="../assets/v7/ui-button4.png" /></p>
-<p>Press the <strong>"draw barcode area"</strong> button and draw an area where a code is placed on the panel, then define what type of code it is: <strong>ID, Batch ID, Model or Misc</strong>. Repeat this for every code you want the software to read — up to <strong>four</strong> different types.</p>
+<p>Press the <strong>"draw barcode area"</strong> button and draw an area where a code is placed on the panel, then define what type of code it is. Repeat this for every code you want the software to read — up to <strong>four</strong> different types:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Serial Number</strong></td>
+<td>The serial number of each board. It is different on every board, so it is used to name the reports but it does <strong>not</strong> identify the REFERENCE.</td>
+</tr>
+<tr>
+<td><strong>Batch</strong></td>
+<td>Batch or lot identifier.</td>
+</tr>
+<tr>
+<td><strong>Model ID</strong></td>
+<td>The code of the board model, the same on every board of that model. It <strong>identifies the REFERENCE</strong> and is used to <a href="#load-a-reference-by-barcode">load it by barcode</a>.</td>
+</tr>
+<tr>
+<td><strong>Misc.</strong></td>
+<td>Any other code. You are asked to enter a name for it.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before version 7.11, <strong>Serial Number</strong> was called <strong>PCB ID</strong> and <strong>Model ID</strong> was called <strong>Model</strong>. Existing REFERENCES keep working and show the new names; nothing has to be redone.</p>
+</div>
 <p><img alt="Barcode read" class="center" src="../assets/v7/barcode/1-bc-menu.png" /></p>
 <p>If the <strong>mandatory barcode</strong> option is set on a specific code, the inspection won't continue until that code has been read successfully. If it isn't detected automatically, the operator is prompted to enter it manually before proceeding.</p>
 <p>Once the REFERENCE is loaded, proceed with the inspection by taking a picture of the UUI. Each of the UUI's codes will be read automatically from the same areas defined on the REFERENCE.</p>
@@ -1755,7 +1785,14 @@
 <p>The scanned codes will be included in the final PDF report of the UUI.</p>
 <p><img alt="Report with barcode included" class="center" src="../assets/barcode-report.png" /></p>
 <h2 id="load-a-reference-by-barcode">Load a REFERENCE by barcode</h2>
-<p>If you already have a <strong>REFERENCE</strong> stored, you can easily retrieve it using the code associated with it. To do this, press the <strong>"read barcode"</strong> button, then read the barcode using the handheld reader, and the <strong>REFERENCE</strong> will load automatically. It is also possible to enter the code manually.</p>
+<p>If you already have a <strong>REFERENCE</strong> stored, you can easily retrieve it using its <strong>Model ID</strong>. To do this, press the <strong>"read barcode"</strong> button, then read the barcode using the handheld reader, and the <strong>REFERENCE</strong> will load automatically. It is also possible to enter the code manually.</p>
+<ul>
+<li>If <strong>several</strong> REFERENCES have that Model ID, a short list (name, alias and date) lets you choose which one to load.</li>
+<li>If <strong>no</strong> REFERENCE has it, you are offered to assign the code as the Model ID of the REFERENCE currently loaded. This requires the <strong>Assign barcode to Reference</strong> permission when <a href="User_control.html">user access control</a> is enabled.</li>
+<li>A double-sided REFERENCE is found through its TOP side.</li>
+<li>A REFERENCE with no Model ID is still found by the code it was associated with before version 7.11. A REFERENCE that has a Model ID is only found by it, so a board serial number that used to load it no longer does.</li>
+<li>While the results of an inspection are on screen, the same button sets the <strong>Serial Number</strong> of the inspected board instead.</li>
+</ul>
 <p><img alt="Barcode REFERENCE loading" class="center" src="../assets/v7/ui-barcode-loading.png" /></p>
 <p><img alt="Barcode REFERENCE loading" class="center" src="../assets/v7/ui-bc_ref.png" /></p>
 <p><img alt="Barcode handhold" class="center" src="../assets/barcode-handhold.png" /></p>

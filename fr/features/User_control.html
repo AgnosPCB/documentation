@@ -1311,6 +1311,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Rôles personnalisés et permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revision-obligatoire-par-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Révision obligatoire par rôle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1862,6 +1879,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Rôles personnalisés et permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revision-obligatoire-par-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Révision obligatoire par rôle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2048,10 +2082,50 @@
 <p>La colonne <strong>Permissions granted</strong> indique combien de permissions disponibles chaque rôle possède actuellement, par exemple <strong>23/35</strong>.</p>
 <p>Un rôle personnalisé apparaît alors aux côtés de <strong>admin</strong> et <strong>operator</strong> dans le champ <strong>Role</strong> lors de la création ou de la modification d'un utilisateur.</p>
 <p><img alt="Attribuer un rôle personnalisé à un utilisateur" class="center" src="../../assets/v7/user_control/users-rol-assing.png" /></p>
+<p>Un nouveau rôle ne dispose au départ que des permissions nécessaires pour lancer des inspections, classer les détections et exporter les rapports. Tout le reste doit être accordé depuis <strong>Edit permissions</strong>.</p>
+<p>Lorsqu'une mise à jour du logiciel ajoute une nouvelle permission, le rôle <strong>operator</strong> la reçoit automatiquement. Les rôles personnalisés non : un administrateur doit la leur accorder explicitement. Les mises à jour récentes ont ajouté, entre autres :</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Autorise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Classify detected faults</strong></td>
+<td>Signaler les détections comme erreurs réelles ou faux positifs. Sans elle, un message <strong>Permission denied</strong> s'affiche. Marquer une détection comme vue est toujours autorisé.</td>
+</tr>
+<tr>
+<td><strong>Max. variants per Reference</strong></td>
+<td>Modifier <a href="../how_to/Settings_menu.html#nombre-max-de-variantes-par-reference">Nombre max. de variantes par référence</a>.</td>
+</tr>
+<tr>
+<td><strong>Reference statistics and heatmap option</strong></td>
+<td>Modifier <a href="../how_to/Settings_menu.html#afficher-les-statistiques-et-la-carte-thermique-des-erreurs-par-reference">Afficher les statistiques et la carte thermique des erreurs par référence</a>.</td>
+</tr>
+<tr>
+<td><strong>Analysis preference</strong></td>
+<td>Modifier <a href="../how_to/Settings_menu.html#preference-danalyse">Préférence d'analyse</a>.</td>
+</tr>
+<tr>
+<td><strong>Edit Reference options</strong></td>
+<td>Modifier les niveaux de révision obligatoire d'une RÉFÉRENCE dans ses <a href="../how_to/Screen-layout.html#options-de-la-reference">options de la référence</a>.</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les rôles intégrés <strong>admin</strong> et <strong>operator</strong> ne peuvent être ni renommés, ni voir leurs permissions modifiées, ni être supprimés.</p>
 </div>
+<h3 id="revision-obligatoire-par-role">Révision obligatoire par rôle</h3>
+<p>Lorsque le contrôle d'accès des utilisateurs est activé, les <a href="../how_to/Inspection_workflow.html#niveaux-de-revision-obligatoire">niveaux de révision obligatoire</a> sont définis pour chaque rôle et non plus globalement : la liste <strong>Roles</strong> comporte une colonne pour chaque niveau (<strong>Mandatory review</strong>, <strong>Mandatory report</strong> et <strong>Final report</strong>), et la fenêtre <strong>Edit permissions</strong> du rôle comporte une case à cocher pour chacun d'eux. Les modifier nécessite l'accès à l'onglet <strong>Users</strong>.</p>
+<p>Les options globales de <em>Settings → Workflow</em> sont grisées tant que le contrôle d'accès des utilisateurs est activé, et conservent leur valeur pour le moment où il sera de nouveau désactivé.</p>
+<ul>
+<li>Le rôle <strong>admin</strong> n'est jamais concerné par ces paramètres ; seule une RÉFÉRENCE qui exige un niveau s'applique à lui.</li>
+<li>Les nouveaux rôles démarrent avec les trois niveaux désactivés.</li>
+<li>La première fois que les rôles sont chargés après la mise à jour vers la version 7.11, chaque rôle existant prend la valeur qu'avait l'option globale <strong>Mandatory errors review</strong>, de sorte qu'aucune obligation existante n'est perdue. Les niveaux <strong>report</strong> et <strong>final report</strong> démarrent désactivés pour tous les rôles existants.</li>
+</ul>
 <h2 id="le-configurer">Le configurer</h2>
 <h3 id="1-ouvrir-longlet-users">1. Ouvrir l'onglet Users</h3>
 <p>Ouvrez le <a href="../how_to/Settings_menu.html">menu des paramètres</a> et allez dans l'onglet <strong>Users</strong>. Sur une machine n'ayant jamais été configurée, la liste est vide et le contrôle d'accès est désactivé.</p>
@@ -2080,7 +2154,8 @@
 <p>Dès le prochain démarrage du logiciel, la fenêtre <strong>User access required</strong> demande les identifiants de l'un des comptes que vous avez créés.</p>
 <p><img alt="Fenêtre de connexion" class="center" src="../../assets/v7/user_control/users-login.png" width="400px" /></p>
 <p>Le logiciel s'ouvre alors avec les autorisations de ce compte.</p>
-<p>Pour fermer la session et permettre à un autre utilisateur de se connecter, utilisez le bouton <strong>logout</strong> de la <a href="../how_to/Screen-layout.html">zone d'état de la plateforme</a>.</p>
+<p>L'utilisateur connecté est affiché dans le <a href="../how_to/Screen-layout.html#journal-dactivite">journal d'activité</a>.</p>
+<p>Pour fermer la session et permettre à un autre utilisateur de se connecter, utilisez le bouton <strong>logout</strong> de la <a href="../how_to/Screen-layout.html#deconnexion">zone d'état de la plateforme</a>. Il demande une confirmation, puis vide l'espace de travail (RÉFÉRENCE chargée et résultats d'inspection), afin que l'utilisateur suivant parte de zéro.</p>
 <h2 id="gerer-les-comptes">Gérer les comptes</h2>
 <p>Sélectionnez un compte dans la liste pour agir dessus :</p>
 <ul>
@@ -2098,7 +2173,7 @@
 <h2 id="verrouillage-pour-inactivite">Verrouillage pour inactivité</h2>
 <p>Lorsque le contrôle d'accès des utilisateurs est activé, le panneau <strong>User access control</strong> de l'onglet <strong>Users</strong> propose également un verrouillage pour inactivité optionnel : activez <strong>Lock after inactivity</strong> et définissez le nombre de minutes d'inactivité du clavier et de la souris au bout desquelles l'application doit se verrouiller.</p>
 <p><img alt="Option Lock after inactivity" class="center" src="../../assets/v7/user_control/users-general-settings.png" /></p>
-<p>Une fois ce délai écoulé, la fenêtre <strong>User access required</strong> réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours.</p>
+<p>Une fois ce délai écoulé, la fenêtre <strong>User access required</strong> réapparaît, comme au démarrage, sans fermer la RÉFÉRENCE en cours ni perdre les résultats de l'inspection en cours. N'importe quel utilisateur actif peut le déverrouiller, pas seulement celui qui était connecté. Le verrouillage ne se déclenche jamais pendant une inspection ni lorsque le <a href="../how_to/Settings_menu.html#mode-demo-boucle">Mode Démo / Boucle</a> est en cours d'exécution.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Cette option n'apparaît que lorsque le contrôle d'accès des utilisateurs est activé, car verrouiller l'application nécessite un compte pour la déverrouiller.</p>

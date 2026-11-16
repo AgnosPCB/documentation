@@ -971,6 +971,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UUI zu REFERENZ
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="UUI_to_REFERENCE.html" class="md-nav__link md-nav__link--active">
         
   
@@ -987,6 +1005,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#doppelseitige-referenzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Doppelseitige REFERENZEN
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1661,6 +1709,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#doppelseitige-referenzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Doppelseitige REFERENZEN
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1683,6 +1750,15 @@
 <p><img alt="UUI-Foto" class="center" src="../../assets/UUI.png" /></p>
 <p>Und nun, nach dem Drücken der Schaltfläche <strong>"UUI zu REFERENZ"</strong>, wird dieselbe PCBA als <strong>REFERENZ</strong> verwendet.</p>
 <p><img alt="Dieselbe PCB als REFERENZ-Foto" class="center" src="../../assets/REFERENCE.png" /></p>
+<p>Der Name der neuen REFERENZ darf noch nicht existieren. Ist das der Fall, zeigt die Software eine Warnung an und fragt nach einem anderen Namen.</p>
+<p>Die neue REFERENZ übernimmt die <a href="Screen-layout.html#referenzoptionen">Referenzoptionen</a> (verpflichtende Prüfstufen) der REFERENZ, aus der sie hervorgegangen ist.</p>
+<h2 id="doppelseitige-referenzen">Doppelseitige REFERENZEN</h2>
+<p>Bei einer REFERENZ mit <strong>TOP</strong>- und <strong>BOTTOM</strong>-Seite erstellt <strong>UUI zu REFERENZ</strong> ein vollständiges TOP/BOTTOM-Paar:</p>
+<ul>
+<li>Wurden <strong>beide Seiten</strong> der Platine inspiziert, sind TOP und BOTTOM der neuen REFERENZ die beiden inspizierten Bilder.</li>
+<li>Wurde <strong>nur eine Seite</strong> inspiziert, wird diese Seite aus der Inspektion übernommen und die andere aus der REFERENZ kopiert, gegen die Sie inspiziert haben.</li>
+</ul>
+<p>Es funktioniert gleich, egal ob Sie von der TOP- oder von der BOTTOM-Seite aus beginnen.</p>
 
 
 

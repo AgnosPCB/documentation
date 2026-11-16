@@ -971,6 +971,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UUI vers RÉFÉRENCE
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="UUI_to_REFERENCE.html" class="md-nav__link md-nav__link--active">
         
   
@@ -987,6 +1005,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references-recto-verso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RÉFÉRENCES recto verso
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1661,6 +1709,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references-recto-verso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RÉFÉRENCES recto verso
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1683,6 +1750,15 @@
 <p><img alt="Photo UUI" class="center" src="../../assets/UUI.png" /></p>
 <p>Et maintenant, après avoir appuyé sur le bouton <strong>"UUI vers RÉFÉRENCE"</strong>, la même PCBA est utilisée comme <strong>RÉFÉRENCE</strong>.</p>
 <p><img alt="Même PCB comme photo RÉFÉRENCE" class="center" src="../../assets/REFERENCE.png" /></p>
+<p>Le nom de la nouvelle RÉFÉRENCE ne doit pas déjà exister. Si c'est le cas, le logiciel affiche un avertissement et vous en demande un autre.</p>
+<p>La nouvelle RÉFÉRENCE hérite des <a href="Screen-layout.html#options-de-la-reference">options de la référence</a> (niveaux de révision obligatoire) de la RÉFÉRENCE dont elle provient.</p>
+<h2 id="references-recto-verso">RÉFÉRENCES recto verso</h2>
+<p>Sur une RÉFÉRENCE avec des faces <strong>TOP</strong> et <strong>BOTTOM</strong>, <strong>UUI vers RÉFÉRENCE</strong> crée une paire TOP/BOTTOM complète :</p>
+<ul>
+<li>Si <strong>les deux faces</strong> de la carte ont été inspectées, le TOP et le BOTTOM de la nouvelle RÉFÉRENCE sont les deux images inspectées.</li>
+<li>Si <strong>une seule face</strong> a été inspectée, cette face est reprise de l'inspection et l'autre est copiée depuis la RÉFÉRENCE par rapport à laquelle vous avez inspecté.</li>
+</ul>
+<p>Le fonctionnement est le même que vous partiez de la face TOP ou de la face BOTTOM.</p>
 
 
 

@@ -1311,6 +1311,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Custom roles and permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mandatory-review-per-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory review per role
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1862,6 +1879,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Custom roles and permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mandatory-review-per-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory review per role
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2048,10 +2082,50 @@
 <p>The <strong>Permissions granted</strong> column shows how many of the available permissions each role currently has, e.g. <strong>23/35</strong>.</p>
 <p>A custom role then appears alongside <strong>admin</strong> and <strong>operator</strong> in the <strong>Role</strong> field when adding or editing a user.</p>
 <p><img alt="Assigning a custom role to a user" class="center" src="../assets/v7/user_control/users-rol-assing.png" /></p>
+<p>A new role starts with only the permissions needed to run inspections, classify detections and export reports. Everything else has to be granted from <strong>Edit permissions</strong>.</p>
+<p>When a software update adds a new permission, the <strong>operator</strong> role receives it automatically. Custom roles do not: an administrator has to grant it to them explicitly. Recent updates added, among others:</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Allows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Classify detected faults</strong></td>
+<td>Reporting detections as actual errors or false positives. Without it, a <strong>Permission denied</strong> message is shown. Marking a detection as seen is always allowed.</td>
+</tr>
+<tr>
+<td><strong>Max. variants per Reference</strong></td>
+<td>Changing <a href="../how_to/Settings_menu.html#max-variants-per-reference">Max. variants per Reference</a>.</td>
+</tr>
+<tr>
+<td><strong>Reference statistics and heatmap option</strong></td>
+<td>Changing <a href="../how_to/Settings_menu.html#show-statistics-and-error-heatmap-per-reference">Show statistics and error heatmap per Reference</a>.</td>
+</tr>
+<tr>
+<td><strong>Analysis preference</strong></td>
+<td>Changing <a href="../how_to/Settings_menu.html#analysis-preference">Analysis preference</a>.</td>
+</tr>
+<tr>
+<td><strong>Edit Reference options</strong></td>
+<td>Changing the mandatory review levels of a REFERENCE in its <a href="../how_to/Screen-layout.html#reference-options">Reference options</a>.</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The built-in <strong>admin</strong> and <strong>operator</strong> roles cannot be renamed, have their permissions edited, or be deleted.</p>
 </div>
+<h3 id="mandatory-review-per-role">Mandatory review per role</h3>
+<p>With user access control enabled, the <a href="../how_to/Inspection_workflow.html#mandatory-review-levels">mandatory review levels</a> are set for each role instead of globally: the <strong>Roles</strong> list has a column for each level (<strong>Mandatory review</strong>, <strong>Mandatory report</strong> and <strong>Final report</strong>), and the <strong>Edit permissions</strong> window of the role has a checkbox for each one. Changing them requires access to the <strong>Users</strong> tab.</p>
+<p>The global options in <em>Settings → Workflow</em> are grayed out while user access control is enabled, and keep their value for when it is disabled again.</p>
+<ul>
+<li>The <strong>admin</strong> role is never affected by these settings; only a REFERENCE that requires a level applies to it.</li>
+<li>New roles start with the three levels disabled.</li>
+<li>The first time the roles are loaded after updating to 7.11, each existing role takes the value that the global <strong>Mandatory errors review</strong> option had, so no existing obligation is lost. The <strong>report</strong> and <strong>final report</strong> levels start disabled for every existing role.</li>
+</ul>
 <h2 id="setting-it-up">Setting it up</h2>
 <h3 id="1-open-the-users-tab">1. Open the Users tab</h3>
 <p>Open the <a href="../how_to/Settings_menu.html">settings menu</a> and go to the <strong>Users</strong> tab. On a machine that has never been configured, the list is empty and the access control is disabled.</p>
@@ -2080,7 +2154,8 @@
 <p>From the next start of the software, the <strong>User access required</strong> dialog asks for the credentials of one of the accounts you created.</p>
 <p><img alt="Login dialog" class="center" src="../assets/v7/user_control/users-login.png" width="400px" /></p>
 <p>The software then opens with the permissions of that account.</p>
-<p>To close the session and let a different user log in, use the <strong>logout</strong> button of the <a href="../how_to/Screen-layout.html">platform status area</a>.</p>
+<p>The logged-in user is shown in the <a href="../how_to/Screen-layout.html#activity-log">activity log</a>.</p>
+<p>To close the session and let a different user log in, use the <strong>logout</strong> button of the <a href="../how_to/Screen-layout.html#logout">platform status area</a>. It asks for confirmation and then clears the workspace (loaded REFERENCE and inspection results), so the next user starts fresh.</p>
 <h2 id="managing-the-accounts">Managing the accounts</h2>
 <p>Select an account in the list to work with it:</p>
 <ul>
@@ -2098,7 +2173,7 @@
 <h2 id="inactivity-lock">Inactivity lock</h2>
 <p>With user access control enabled, the <strong>User access control</strong> panel of the <strong>Users</strong> tab also offers an optional inactivity lock: enable <strong>Lock after inactivity</strong> and set the number of minutes of keyboard and mouse inactivity after which the application should lock itself.</p>
 <p><img alt="Lock after inactivity option" class="center" src="../assets/v7/user_control/users-general-settings.png" /></p>
-<p>Once that time elapses, the <strong>User access required</strong> dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress.</p>
+<p>Once that time elapses, the <strong>User access required</strong> dialog appears again, the same as at startup, without closing the current REFERENCE or losing the results of the inspection in progress. Any active user can unlock it, not only the one who was logged in. The lock never triggers while an inspection is in progress or while <a href="../how_to/Settings_menu.html#demo-loop-mode">Demo / Loop mode</a> is running.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This option only appears once user access control is enabled, since locking the application requires an account to unlock it with.</p>

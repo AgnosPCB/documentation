@@ -881,6 +881,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#show-statistics-and-error-heatmap-per-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show statistics and error heatmap per Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#language" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1008,10 +1019,76 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#mandatory-errors-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory errors report
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mandatory-final-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory final report
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warn-about-a-side-not-reviewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warn about a side not reviewed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#topbottom-auto-switch" class="md-nav__link">
     <span class="md-ellipsis">
       
         TOP/BOTTOM auto switch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-preference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis preference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-variants-per-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Max. variants per Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-loop-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo / Loop mode
       
     </span>
   </a>
@@ -2285,6 +2362,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#show-statistics-and-error-heatmap-per-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show statistics and error heatmap per Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#language" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2412,10 +2500,76 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#mandatory-errors-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory errors report
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mandatory-final-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mandatory final report
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warn-about-a-side-not-reviewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warn about a side not reviewed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#topbottom-auto-switch" class="md-nav__link">
     <span class="md-ellipsis">
       
         TOP/BOTTOM auto switch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-preference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis preference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-variants-per-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Max. variants per Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-loop-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demo / Loop mode
       
     </span>
   </a>
@@ -2783,6 +2937,9 @@
 <p>By default, the software numbers each error after the inspection. When this option is disabled, only the affected area is highlighted in color, without a number.</p>
 <h4 id="mask-color">Mask color</h4>
 <p>This option allows you to change the color of the marked error. When the color of the marked error matches the color of the PCBA, it's advisable to change it to a higher contrast color to make the marked areas more visible.</p>
+<h4 id="show-statistics-and-error-heatmap-per-reference">Show statistics and error heatmap per Reference</h4>
+<p>Adds the inspection statistics of the loaded REFERENCE and a heatmap of where its boards fail to the <a href="Screen-layout.html#reference-information-panel">Reference information panel</a>. Disabled by default.</p>
+<p>The statistics are collected even while this option is disabled, so the history is already there when you enable it. Inspections made before version 7.10 are not included.</p>
 <h4 id="language">Language</h4>
 <p>Change the interface language. The current available languages are: <strong>English, French, German, Italian and Spanish</strong>.</p>
 <h2 id="workflow-options">Workflow options</h2>
@@ -2804,10 +2961,41 @@
 <h4 id="remember-sensibility">Remember sensibility</h4>
 <p>By activating this option, the software will maintain the configured inspection sensitivity after performing a new inspection.</p>
 <h4 id="mandatory-errors-review">Mandatory errors review</h4>
-<p>If this option is enabled, the software will not continue inspecting new panels until every detection in the current inspection has been reviewed: <a href="Inspection_workflow.html#reporting-errors">reported</a> as an error or a false positive, or at least marked as <strong>viewed</strong> by hovering the cursor over it.</p>
+<p>If this option is enabled, the software will not start a new inspection until every detection in the current one has been reviewed: <a href="Inspection_workflow.html#reporting-errors">reported</a> as an error or a false positive, or at least marked as <strong>seen</strong>.</p>
+<h4 id="mandatory-errors-report">Mandatory errors report</h4>
+<p>If this option is enabled, every detection must be <strong>classified</strong> as an error or a false positive before a new inspection can start. Marking it as seen is not enough. It includes the review above.</p>
+<h4 id="mandatory-final-report">Mandatory final report</h4>
+<p>If this option is enabled, the operator must confirm the <a href="Inspection_workflow.html#generating-a-final-pdf-report">final OK / NOT OK report</a> of the inspection before a new one can start. A report generated automatically by <a href="#auto-report">Auto report</a> does not count.</p>
+<div class="admonition note">
+<p class="admonition-title">Where these three options apply</p>
+<p>These options apply to everyone only while <a href="../features/User_control.html">user access control</a> is disabled. With it enabled, the three checkboxes are grayed out and each <strong>role</strong> has its own setting instead. A REFERENCE can also require any of them, whoever inspects with it. See <a href="Inspection_workflow.html#mandatory-review-levels">Mandatory review levels</a> for how they combine.</p>
+</div>
+<h4 id="warn-about-a-side-not-reviewed">Warn about a side not reviewed</h4>
+<p>Before the next board starts, the software warns you if a side of the current board has detections but none of them has been reviewed or reported, and lets you continue (<strong>OK</strong>) or go back (<strong>CANCEL</strong>). It is a warning, not a block. Enabled by default. See <a href="Inspection_workflow.html#warning-about-a-side-not-reviewed">Mandatory review levels</a>.</p>
 <h4 id="topbottom-auto-switch">TOP/BOTTOM auto switch</h4>
 <p>For double-sided REFERENCES, enabling this option automatically switches to the other side (<strong>TOP</strong>/<strong>BOTTOM</strong>) at the start of the next inspection, instead of requiring a <a href="Screen-layout.html#switch-topbottom">manual switch</a>.</p>
 <p><img alt="TOP/BOTTOM auto switch option" class="center" src="../assets/v7/settings/top-bottom-settings.png" /></p>
+<h4 id="analysis-preference">Analysis preference</h4>
+<p>Sets where you review the detections after an inspection:</p>
+<ul>
+<li><strong>LIST</strong> (default on new installations): the cursor goes to the first row of the <a href="Screen-layout.html#detections-list">detections list</a>. The <strong>left</strong> and <strong>right</strong> arrow keys move along the list and the <strong>up</strong> and <strong>down</strong> arrow keys classify the row under the cursor as an error or a false positive.</li>
+<li><strong>CANVAS</strong>: the cursor goes to the first detection on the image, and the arrow keys move between the detections on the image.</li>
+</ul>
+<p>Installations updated from a previous version keep the value they already had.</p>
+<h4 id="max-variants-per-reference">Max. variants per Reference</h4>
+<p>Maximum number of <a href="../features/Multivariant_feature.html">Reference Variants</a> used for each REFERENCE: 20 by default, up to 50. Raising it shows a warning, because the variants panel and the inspection get slower with more variants. A REFERENCE that has more variants than the limit only uses the first ones; the rest are kept untouched.</p>
+<h4 id="demo-loop-mode">Demo / Loop mode</h4>
+<p>After the operator runs the first inspection manually, the software keeps repeating the capture and the inspection automatically. It is meant for unattended demonstrations.</p>
+<ul>
+<li>It turns itself off when the application is closed, so the next start is always in normal mode.</li>
+<li>While it is on, none of the mandatory review levels is required.</li>
+<li>Checking any of the three mandatory options above unchecks this mode, and the other way round.</li>
+<li>With <a href="../features/User_control.html">user access control</a> enabled, only the <strong>admin</strong> role can change it.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Long unattended runs with very large capture sequences (12 or more images) can use up the memory of the computer. Avoid leaving very large sequences looping for long periods.</p>
+</div>
 <h2 id="report-options">Report options</h2>
 <p><img alt="Settings menu report section" class="center" src="../assets/v7/settings/reports-settings.png" /></p>
 <h4 id="operator-id">Operator ID</h4>
@@ -2826,7 +3014,7 @@
 <p>When this option is enabled, a final PDF report labeled OK will be automatically generated if no errors are detected after the inspection. The final PDF report can also be generated if any errors are detected during the inspection.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When generating a PDF report automatically, all errors detected will be marked with the "unknown" label.</p>
+<p>When generating a PDF report automatically, all errors detected will be marked with the "unknown" label. An automatic report does not count as a confirmed final report for <a href="#mandatory-final-report">Mandatory final report</a>.</p>
 </div>
 <h4 id="show-all-faults">Show all faults</h4>
 <p>Displays all detected errors in the PDF report even if the operator has not reported them.</p>
@@ -2870,7 +3058,7 @@
 </div>
 <h2 id="users">Users</h2>
 <p><img alt="Settings menu users section" class="center" src="../assets/v7/settings/users-settings.png" /></p>
-<p>This tab is only available to users with the <strong>admin</strong> role. It allows you to create the accounts that can operate the AOI, each one with an <strong>admin</strong> or <strong>operator</strong> role, and to require a username and password every time the software starts.</p>
+<p>This tab is only available to users with the <strong>admin</strong> role, or with a role that has been granted access to it. It allows you to create the accounts that can operate the AOI, to define their roles and permissions, and to require a username and password every time the software starts.</p>
 <p>Enabling <strong>Enable user access control</strong> requires at least one active <strong>admin</strong> account to exist.</p>
 <p>Learn more about this functionality in the following section: <a href="../features/User_control.html">User access control</a></p>
 <h2 id="sequences">Sequences</h2>
@@ -2884,35 +3072,48 @@
 </div>
 <h2 id="machine">Machine</h2>
 <p><img alt="Settings menu machine section" class="center" src="../assets/v7/settings/machine-settings.png" /></p>
-<p>This tab is only available to users with the <strong>admin</strong> role. It displays the hardware parameters of your unit, stored in the <strong>machine.json</strong> file.</p>
-<p>Most of the values are shown grayed out: they are displayed <strong>for reference only</strong> and cannot be modified. The fields highlighted in blue are the editable ones:</p>
+<p>This tab is only available to users with the <strong>admin</strong> role. It shows the hardware parameters of your unit that can be modified, stored in the <strong>machine.json</strong> file, grouped by what they affect and each with a short explanation:</p>
 <table>
 <thead>
 <tr>
+<th>Group</th>
 <th>Field</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>xacc</strong> / <strong>yacc</strong> / <strong>zacc</strong></td>
-<td>Acceleration of each axis.</td>
+<td>Motion</td>
+<td><strong>Acceleration (X / Y / Z)</strong></td>
+<td>Acceleration of each axis. Higher values move faster but can cause skipped steps or vibration.</td>
 </tr>
 <tr>
-<td><strong>xhome</strong> / <strong>yhome</strong> / <strong>zhome</strong></td>
-<td>Home position offset of each axis.</td>
+<td>Motion</td>
+<td><strong>Homing sensitivity (X / Y / Z)</strong></td>
+<td>How each axis detects that it has reached its home position.</td>
 </tr>
 <tr>
-<td><strong>capture_gain</strong></td>
-<td>Camera gain during the capture.</td>
+<td>Camera</td>
+<td><strong>Capture gain</strong></td>
+<td>Camera gain during the capture. Higher values brighten the image but add noise.</td>
 </tr>
 <tr>
-<td><strong>exposure</strong></td>
-<td>Camera exposure time.</td>
+<td>Camera</td>
+<td><strong>Exposure (µs)</strong></td>
+<td>Camera exposure time. Higher values let in more light but increase the risk of blur from vibration.</td>
+</tr>
+<tr>
+<td>Camera</td>
+<td><strong>Rotate image 180°</strong></td>
+<td>Rotates the camera image 180°. Enable it only if the camera is mounted upside down.</td>
 </tr>
 </tbody>
 </table>
-<p>Press <strong>Save changes</strong> to apply the new values, or <strong>Reset to factory default</strong> to restore every parameter to its original value.</p>
+<p>Press <strong>Save changes</strong> to store the new values, or <strong>Reset to factory default</strong> to restore every parameter to its original value.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The changes are not applied immediately. Restart the application for the new values to take effect.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>These parameters affect how the platform moves and how the images are captured. Modifying them incorrectly may degrade the image quality or the movement of the axes. Change them only when <a href="mailto:support@agnospcb.com">support</a> asks you to.</p>

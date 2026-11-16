@@ -2202,10 +2202,16 @@ la différence entre une intégration propre et un convoyeur bloqué :</p>
 <td>Masque la capture de référence et empêche un opérateur de modifier la RÉFÉRENCE ou la sensibilité en cours de poste. Protégez-le avec un mot de passe des paramètres (voir le <a href="../how_to/Settings_menu.html">menu des paramètres</a>).</td>
 </tr>
 <tr>
-<td><strong>Mandatory errors review</strong></td>
+<td><strong>Mandatory errors review</strong>, <strong>Mandatory errors report</strong> et <strong>Mandatory final report</strong></td>
 <td>Workflow</td>
 <td><strong>Désactivé</strong></td>
-<td>Si cette option est activée, le logiciel attend qu'une personne examine chaque défaut avant d'autoriser l'inspection suivante — cela bloquera la ligne.</td>
+<td>Si ces options sont activées, le logiciel attend qu'une personne examine chaque défaut, le classe ou confirme le rapport final avant d'autoriser l'inspection suivante — cela bloquera la ligne. Lorsque le contrôle d'accès des utilisateurs est activé, vérifiez également le rôle de l'utilisateur et les <a href="../how_to/Screen-layout.html#options-de-la-reference">options de la référence</a> de chaque RÉFÉRENCE.</td>
+</tr>
+<tr>
+<td><strong>Warn about a side not reviewed</strong></td>
+<td>Workflow</td>
+<td>Désactivé</td>
+<td>Empêche une fenêtre de confirmation d'attendre une saisie avant la carte suivante.</td>
 </tr>
 <tr>
 <td><strong>Show errors popup</strong></td>
@@ -2229,7 +2235,7 @@ la différence entre une intégration propre et un convoyeur bloqué :</p>
 <td><strong>Create JSON report</strong></td>
 <td>Reports</td>
 <td>Activé</td>
-<td>Résultat lisible par machine pour votre MES/SCADA. Nécessite une licence.</td>
+<td>Résultat lisible par machine pour votre MES/SCADA. Nécessite une licence. Pour les cartes recto verso, voir la remarque ci-dessous.</td>
 </tr>
 <tr>
 <td><strong>Use barcodes</strong></td>
@@ -2245,6 +2251,16 @@ la différence entre une intégration propre et un convoyeur bloqué :</p>
 l'étiquette « unknown », car aucun opérateur ne les classe. C'est normal
 sur une ligne : la classification est effectuée plus tard, hors ligne, à
 partir des rapports enregistrés.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Rapports JSON des cartes recto verso</p>
+<p>Depuis la version 7.11.4, lorsque les deux faces d'une carte ont été
+inspectées, le logiciel écrit un seul
+<a href="../how_to/Inspection_workflow.html#rapport-combine-topbottom">rapport combiné</a>
+et supprime les rapports PDF et JSON individuels de chaque face. Un système
+qui lisait le JSON de chaque face dans le dossier REPORTS doit désormais
+lire <code>sides.TOP</code> et <code>sides.BOTTOM</code> du JSON combiné. Les fichiers
+d'inspection dans PCB_OUT ne sont pas concernés.</p>
 </div>
 <h3 id="23-ou-les-resultats-sont-ecrits">2.3 Où les résultats sont écrits</h3>
 <p>Les sorties d'inspection sont écrites dans le dossier <strong>PCB_OUT</strong>,
@@ -2302,7 +2318,7 @@ manuel/jog.</p>
 <tbody>
 <tr>
 <td>La ligne s'arrête après la première carte défectueuse</td>
-<td><strong>Mandatory errors review</strong> est activé. Désactivez-le dans Settings → Workflow.</td>
+<td>Un niveau de révision obligatoire est activé (<strong>Mandatory errors review</strong>, <strong>report</strong> ou <strong>final report</strong>). Désactivez-le dans Settings → Workflow, dans le rôle de l'utilisateur (Settings → Users) et dans les options de la référence de la RÉFÉRENCE.</td>
 </tr>
 <tr>
 <td>Une boîte de dialogue attend une saisie en cours de cycle</td>

@@ -2202,10 +2202,16 @@ detenida:</p>
 <td>Oculta la captura de referencias e impide que un operador altere la REFERENCIA o la sensibilidad a mitad de turno. Protéjalo con una contraseña de configuración (vea el <a href="../how_to/Settings_menu.html">menú de configuración</a>).</td>
 </tr>
 <tr>
-<td><strong>Mandatory errors review</strong></td>
+<td><strong>Mandatory errors review</strong>, <strong>Mandatory errors report</strong> y <strong>Mandatory final report</strong></td>
 <td>Workflow</td>
 <td><strong>Deshabilitado</strong></td>
-<td>Si está habilitado, el software espera a que una persona revise cada fallo antes de permitir la siguiente inspección; esto bloqueará la línea.</td>
+<td>Si están habilitados, el software espera a que una persona revise cada fallo, lo clasifique o confirme el informe final antes de permitir la siguiente inspección; esto bloqueará la línea. Con el control de acceso de usuarios habilitado, compruebe también el rol del usuario y las <a href="../how_to/Screen-layout.html#opciones-de-la-referencia">opciones de la Referencia</a> de cada REFERENCIA.</td>
+</tr>
+<tr>
+<td><strong>Warn about a side not reviewed</strong></td>
+<td>Workflow</td>
+<td>Deshabilitado</td>
+<td>Evita que una ventana de confirmación espere entrada antes de la siguiente placa.</td>
 </tr>
 <tr>
 <td><strong>Show errors popup</strong></td>
@@ -2229,7 +2235,7 @@ detenida:</p>
 <td><strong>Create JSON report</strong></td>
 <td>Reports</td>
 <td>Habilitado</td>
-<td>Resultado legible por máquina para su MES/SCADA. Requiere licencia.</td>
+<td>Resultado legible por máquina para su MES/SCADA. Requiere licencia. Para placas de doble cara, vea la nota siguiente.</td>
 </tr>
 <tr>
 <td><strong>Use barcodes</strong></td>
@@ -2245,6 +2251,15 @@ detenida:</p>
 etiqueta "unknown", porque ningún operador los clasifica. Esto es lo
 esperado en una línea: la clasificación se realiza más tarde, fuera de
 línea, a partir de los informes almacenados.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Informes JSON de placas de doble cara</p>
+<p>Desde la versión 7.11.4, cuando se han inspeccionado ambas caras de una placa, el
+software escribe un único <a href="../how_to/Inspection_workflow.html#informe-combinado-topbottom">informe combinado</a>
+y elimina los informes PDF y JSON individuales de cada cara. Un sistema que leía el
+JSON de cada cara de la carpeta REPORTS debe leer ahora <code>sides.TOP</code> y
+<code>sides.BOTTOM</code> del JSON combinado. Los archivos de inspección de PCB_OUT no se
+ven afectados.</p>
 </div>
 <h3 id="23-donde-se-escriben-los-resultados">2.3 Dónde se escriben los resultados</h3>
 <p>Las salidas de inspección se escriben en la carpeta <strong>PCB_OUT</strong>, configurable
@@ -2301,7 +2316,7 @@ Ejecute las primeras pruebas con la cinta transportadora en modo manual/jog.</p>
 <tbody>
 <tr>
 <td>La línea se detiene tras la primera placa defectuosa</td>
-<td><strong>Mandatory errors review</strong> está habilitado. Deshabilítelo en Settings → Workflow.</td>
+<td>Hay un nivel de revisión obligatoria habilitado (<strong>Mandatory errors review</strong>, <strong>report</strong> o <strong>final report</strong>). Deshabilítelo en Settings → Workflow, en el rol del usuario (Settings → Users) y en las opciones de la Referencia de la REFERENCIA.</td>
 </tr>
 <tr>
 <td>Un diálogo espera entrada a mitad de ciclo</td>
