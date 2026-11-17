@@ -8,12 +8,6 @@ This feature allows operators to visually inspect the conformal coating on PCBAs
     This function requires installing a separate hardware kit. To install the UV kit, follow the instructions in the following section:
     [UV conformal coating installation guide](../maintenance/UV_kit_install.md)
 
-!!! warning "Caution"
-    The conformal coating inspection uses UV lighting so **we recommend using the safety glasses** included with the kit.
-
-
-    ![UV warning](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
-
 ## Video 
 
 For a complete walkthrough of this feature, watch the following video:

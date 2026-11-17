@@ -8,11 +8,6 @@ Esta función permite a los operadores inspeccionar visualmente el recubrimiento
     Esta función requiere la instalación de un kit de hardware adicional. Para instalar el kit UV, siga las instrucciones en la siguiente sección:
     [Guía de instalación del recubrimiento conformal UV](../maintenance/UV_kit_install.md)
 
-!!! warning "Precaución"
-    La inspección del recubrimiento conformal utiliza iluminación UV, por lo que **recomendamos usar las gafas de seguridad** incluidas con el kit.
-
-    ![Advertencia UV](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
-
 ## Video 
 
 Para una explicación completa de esta funcionalidad, vea el siguiente video:

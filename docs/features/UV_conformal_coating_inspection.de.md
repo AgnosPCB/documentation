@@ -8,11 +8,6 @@ Diese Funktion ermöglicht es den Bedienern, die konforme Beschichtung auf PCBAs
     Diese Funktion erfordert die Installation eines separaten Hardware-Kits. Um das UV-Kit zu installieren, folgen Sie den Anweisungen im folgenden Abschnitt:
     [Installationsanleitung für die UV-konforme Beschichtung](../maintenance/UV_kit_install.md)
 
-!!! warning "Achtung"
-    Die Inspektion der konformen Beschichtung verwendet UV-Beleuchtung, daher **empfehlen wir, die im Kit enthaltene Schutzbrille zu tragen**.
-
-    ![UV-Warnung](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
-
 ## Video 
 
 Für eine vollständige Einführung in diese Funktion sehen Sie sich das folgende Video an:

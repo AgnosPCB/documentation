@@ -8,11 +8,6 @@ Cette fonctionnalité permet aux opérateurs d’inspecter visuellement le revê
     Cette fonctionnalité nécessite l’installation d’un kit matériel séparé. Pour installer le kit UV, suivez les instructions dans la section suivante :
     [Guide d’installation du revêtement conforme UV](../maintenance/UV_kit_install.md)
 
-!!! warning "Attention"
-    L’inspection du revêtement conforme utilise un éclairage UV, donc **nous recommandons de porter les lunettes de sécurité** incluses dans le kit.
-
-    ![Avertissement UV](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
-
 ## Vidéo
 
 Pour une présentation complète de cette fonctionnalité, regardez la vidéo suivante :

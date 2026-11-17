@@ -8,11 +8,6 @@ Questa funzione consente agli operatori di ispezionare visivamente il rivestimen
     Questa funzione richiede l'installazione di un kit hardware separato. Per installare il kit UV, seguire le istruzioni nella seguente sezione:
     [Guida all'installazione del rivestimento conformale UV](../maintenance/UV_kit_install.md)
 
-!!! warning "Attenzione"
-    L'ispezione del rivestimento conformale utilizza illuminazione UV, quindi **si consiglia di utilizzare gli occhiali di sicurezza** inclusi nel kit.
-
-    ![Avviso UV](../assets/v7/UV_inspection/warning_icon.png){width=200px .center}
-
 ## Video
 
 Per una panoramica completa di questa funzionalità, guarda il seguente video:
