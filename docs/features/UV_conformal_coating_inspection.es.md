@@ -35,11 +35,6 @@ Una vez activada, se mostrará una simulación del PCB bajo iluminación UV.
 
 ![Simulación UV](../assets/v7/UV_inspection/UV_active.png){.center}
 
-!!! warning "Precaución"
-    A partir de este momento, es obligatorio usar las gafas de seguridad incluidas con el kit.
-
-    ![Advertencia UV](../assets/v7/UV_inspection/warning_icon.png){width=100px .center}
-
 Luego, coloque la UUI en el centro del área de inspección y presione el botón **Iniciar Inspección** para comenzar el proceso.
 
 ![Botón iniciar inspección](../assets/v7/UV_inspection/start-inspection-button.png){width=250px .center}
